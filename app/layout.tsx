@@ -18,7 +18,7 @@ export default function RootLayout({ children }: { children: any }) {
         <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width"/>
     </head>
     <body>
-    <MantineProvider theme={theme}>
+    <MantineProvider theme={theme} defaultColorScheme="light">
         <Header/>
         {children}
         

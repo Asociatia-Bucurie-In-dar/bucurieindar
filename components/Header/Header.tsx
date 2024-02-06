@@ -1,6 +1,8 @@
 "use client";
 
-import { Menu, Group, Center, Burger, Container } from '@mantine/core';
+import { usePathname } from 'next/navigation'
+import Link from 'next/link';
+import {Menu, Group, Center, Burger, Container, Drawer, Text, Title} from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import { IconChevronDown } from '@tabler/icons-react';
 import { Image } from '@mantine/core';
@@ -13,7 +15,7 @@ const links = [
     { link: '/gallery', label: 'Gallery' },
     { link: '/blog', label: 'Blog' },
     {
-        link: '#1',
+        link: '/contact',
         label: 'Contact',
         links: [
             { link: '/contact', label: 'Contact' },
@@ -23,7 +25,8 @@ const links = [
 ];
 
 export function Header() {
-    const [opened, { toggle }] = useDisclosure(false);
+    const pathname = usePathname();
+    const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] = useDisclosure(false);
 
     const items = links.map((link) => {
         const menuItems = link.links?.map((item) => (
@@ -34,16 +37,14 @@ export function Header() {
             return (
                 <Menu key={link.label} trigger="hover" transitionProps={{ exitDuration: 0 }} withinPortal >
                     <Menu.Target>
-                        <a
-                            href={link.link}
-                            className={classes.link}
-                            onClick={(event) => event.preventDefault()}
-                        >
+                        <Link href={link.link} key={link.label}
+                              className={classes.link}
+                              data-active={pathname === link.link || undefined}>
                             <Center>
                                 <span className={classes.linkLabel}>{link.label}</span>
                                 <IconChevronDown size="0.9rem" stroke={1.5} />
                             </Center>
-                        </a>
+                        </Link>
                     </Menu.Target>
                     <Menu.Dropdown>{menuItems}</Menu.Dropdown>
                 </Menu>
@@ -51,14 +52,11 @@ export function Header() {
         }
 
         return (
-            <a
-                key={link.label}
-                href={link.link}
-                className={classes.link}
-                onClick={(event) => event.preventDefault()}
-            >
+        <Link href={link.link} key={link.label} 
+              className={classes.link} 
+              data-active={pathname === link.link || undefined}>
                 {link.label}
-            </a>
+        </Link>
         );
     });
 
@@ -66,13 +64,27 @@ export function Header() {
         <header className={classes.header}>
             <Container size="md">
                 <div className={classes.inner}>
-                    <Image src={"/logo.png"} width={45} height={45}/>
+                    <Title className={classes.title} size={18}>
+                        <Text inherit variant="gradient" component="span" gradient={{ from: 'pink', to: 'yellow' }}>
+                            <Link href="/">Bucurie in Dar</Link>
+                        </Text>
+                    </Title>
                     <Group gap={5} visibleFrom="sm">
                         {items}
                     </Group>
-                    <Burger opened={opened} onClick={toggle} size="sm" hiddenFrom="sm" />
+                    <Burger opened={drawerOpened} onClick={toggleDrawer} size="sm" hiddenFrom="sm" />
                 </div>
             </Container>
+            <Drawer
+                opened={drawerOpened}
+                onClose={closeDrawer}
+                size="100%"
+                padding="lg"
+                hiddenFrom="sm"
+                zIndex={1000000}
+            >
+                {items}
+            </Drawer>
         </header>
     );
 }
