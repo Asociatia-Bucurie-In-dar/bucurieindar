@@ -3,6 +3,7 @@
 import { usePathname } from 'next/navigation'
 import Link from 'next/link';
 import {Menu, Group, Center, Burger, Container, Drawer, Text, Title} from '@mantine/core';
+import { ThemeSwitcher } from '@/components/ThemeSwitcher';
 import { useDisclosure } from '@mantine/hooks';
 import { IconChevronDown } from '@tabler/icons-react';
 import { Image } from '@mantine/core';
@@ -72,6 +73,7 @@ export function Header() {
                     <Group gap={5} visibleFrom="sm">
                         {items}
                     </Group>
+                    <ThemeSwitcher />
                     <Burger opened={drawerOpened} onClick={toggleDrawer} size="sm" hiddenFrom="sm" />
                 </div>
             </Container>
