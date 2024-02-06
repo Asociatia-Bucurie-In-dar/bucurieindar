@@ -1,6 +1,7 @@
 import '@mantine/core/styles.css';
 import React from 'react';
 import { MantineProvider, ColorSchemeScript } from '@mantine/core';
+import { Header } from '@/components/Header/Header';
 import { theme } from '@/theme';
 
 export const metadata = {
@@ -17,7 +18,11 @@ export default function RootLayout({ children }: { children: any }) {
         <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width"/>
     </head>
     <body>
-    <MantineProvider theme={theme}>{children}</MantineProvider>
+    <MantineProvider theme={theme}>
+        <Header/>
+        {children}
+        
+    </MantineProvider>
     </body>
     </html>
   );
