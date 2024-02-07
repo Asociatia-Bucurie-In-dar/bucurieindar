@@ -10,21 +10,18 @@ import confetti from 'canvas-confetti';
 import { Image } from '@mantine/core';
 import classes from './Header.module.css';
 
-const links = [
-    { link: '/', label: 'Home' },
-    { link: '/projects', label: 'Projects'},
-    { link: '/about', label: 'About' },
-    { link: '/gallery', label: 'Gallery' },
-    { link: '/blog', label: 'Blog' },
-    {
-        link: '/contact',
-        label: 'Contact',
-        links: [
-            { link: '/contact', label: 'Contact' },
-            { link: '/dash', label: 'My Donations' },
-        ],
-    },
-];
+const home = { link: '/', label: 'Home', links: null};
+const projects = { link: '/projects', label: 'Projects', links: null };
+const about = { link: '/about', label: 'About', links: null };
+const gallery = { link: '/gallery', label: 'Gallery', links: null };
+const blog = { link: '/blog', label: 'Blog', links: null };
+const dash = { link: '/dash', label: 'My Donations', links: null };
+const contact = { link: '/contact', label: 'Contact', links: null };
+const contactParent = { link: contact.link, label: contact.label, links: [contact, dash,] };
+
+const headerLinks = [ home, projects, about, gallery, blog, contactParent ];
+const mobileMenuLinks = [ home, projects, about, gallery, blog, contact, dash ];
+
 
 export function Header() {
     const pathname = usePathname();
@@ -39,7 +36,7 @@ export function Header() {
         });
     };
     
-    const DonateBtn = (<Link href="/projects" passHref>
+    const DonateBtn = (<Link href={projects.link} passHref>
         <Button onClick={confettiClicked}
                 variant="gradient"
                 gradient={{ from: 'pink', to: 'yellow', deg: 90 }}
@@ -49,39 +46,46 @@ export function Header() {
         </Button>
     </Link>);
 
-    const items = links.map((link) => {
-        const menuItems = link.links?.map((item) => (
-            <Menu.Item key={item.link} component={Link} href={item.link}>
-                {item.label}
-            </Menu.Item>
-        ));
+    const renderLinks = (links: any) => {
+        return links.map((link: any) => {
+            if (link.links) { // If the link has sub-links
+                const menuItems = link.links.map((item: any) => (
+                    <Menu.Item key={item.link} component={Link} href={item.link}>
+                        {item.label}
+                    </Menu.Item>
+                ));
 
-        if (menuItems) {
-            return (
-                <Menu key={link.label} trigger="hover" transitionProps={{ exitDuration: 0 }} withinPortal >
-                    <Menu.Target>
-                        <Link href={""} key={link.label}
-                              className={classes.link}
-                              data-active={pathname === link.link || undefined}>
-                            <Center inline>
-                                <span className={classes.linkLabel}>{link.label}</span>
-                                <IconChevronDown size="0.9rem" stroke={1.5} />
-                            </Center>
-                        </Link>
-                    </Menu.Target>
-                    <Menu.Dropdown>{menuItems}</Menu.Dropdown>
-                </Menu>
-            );
-        }
+                return (
+                    <Menu key={link.label} trigger="hover" transitionProps={{ exitDuration: 0 }} withinPortal>
+                        <Menu.Target>
+                            <Link href={""} key={link.label}
+                                  className={classes.link}
+                                  data-active={pathname === link.link || undefined}>
+                                <Center inline>
+                                    <span className={classes.linkLabel}>{link.label}</span>
+                                    <IconChevronDown size="0.9rem" stroke={1.5} />
+                                </Center>
+                            </Link>
+                        </Menu.Target>
+                        <Menu.Dropdown>{menuItems}</Menu.Dropdown>
+                    </Menu>
+                );
+            } else {
+                // Render a simple link if there are no sub-links
+                return (
+                    <Link href={link.link} key={link.label}
+                          className={classes.link}
+                          data-active={pathname === link.link || undefined}>
+                        {link.label}
+                    </Link>
+                );
+            }
+        });
+    };
 
-        return (
-        <Link href={link.link} key={link.label} 
-              className={classes.link} 
-              data-active={pathname === link.link || undefined}>
-                {link.label}
-        </Link>
-        );
-    });
+// Usage in your component
+    const headerItems = renderLinks(headerLinks);
+    const mobileMenuItems = renderLinks(mobileMenuLinks);
 
     return (
         <header className={classes.header}>
@@ -93,7 +97,7 @@ export function Header() {
                         </Text>
                     </Title>
                     <Group h="100%" gap={0} visibleFrom="sm">
-                        {items}
+                        {headerItems}
                     </Group>
                     <Group visibleFrom="sm">
                         {DonateBtn}
@@ -108,13 +112,13 @@ export function Header() {
             <Drawer
                 opened={drawerOpened}
                 onClose={closeDrawer}
-                size="70%"
+                size="60%"
                 padding="lg"
                 hiddenFrom="sm"
-                zIndex={1000000}
+                zIndex={10000}
             >
                 <Divider my="sm" />
-                    {items}
+                    {mobileMenuItems}
                 <Divider my="sm" />
                 <Group justify="left" px="md">
                     <ThemeSwitcher/>
