@@ -113,6 +113,7 @@ export function Header() {
                 hiddenFrom="sm"
                 zIndex={1000000}
             >
+                <Divider my="sm" />
                     {items}
                 <Divider my="sm" />
                 <Group justify="left" px="md">
