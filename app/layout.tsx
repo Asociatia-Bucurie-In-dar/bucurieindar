@@ -5,6 +5,8 @@ import { Header } from '@/components/Header/Header';
 import { Footer } from '@/components/Footer/Footer';
 import { theme } from '@/theme';
 
+import FirstTimeConfetti from "@/components/FirstTimeConfetti/FirstTimeConfetti";
+
 export const metadata = {
   title: 'Mantine Next.js template',
   description: 'I am using Mantine with Next.js!',
@@ -24,6 +26,8 @@ export default function RootLayout({ children }: { children: any }) {
         {children}
         <Footer/>
     </MantineProvider>
+    
+    <FirstTimeConfetti/>
     </body>
     </html>
   );
