@@ -2,7 +2,7 @@
 
 import { usePathname } from 'next/navigation'
 import Link from 'next/link';
-import {Menu, Group, Center, Burger, Container, Drawer, Text, Title, Button} from '@mantine/core';
+import { Menu, Group, Center, Burger, Container, Drawer, Text, Title, Button, Divider } from '@mantine/core';
 import { ThemeSwitcher } from '@/components/ThemeSwitcher';
 import { useDisclosure } from '@mantine/hooks';
 import { IconChevronDown } from '@tabler/icons-react';
@@ -51,17 +51,19 @@ export function Header() {
 
     const items = links.map((link) => {
         const menuItems = link.links?.map((item) => (
-            <Menu.Item key={item.link}>{item.label}</Menu.Item>
+            <Menu.Item key={item.link} component={"a"} href={item.link}>
+                {item.label}
+            </Menu.Item>
         ));
 
         if (menuItems) {
             return (
                 <Menu key={link.label} trigger="hover" transitionProps={{ exitDuration: 0 }} withinPortal >
                     <Menu.Target>
-                        <Link href={link.link} key={link.label}
+                        <Link href={""} key={link.label}
                               className={classes.link}
                               data-active={pathname === link.link || undefined}>
-                            <Center>
+                            <Center inline>
                                 <span className={classes.linkLabel}>{link.label}</span>
                                 <IconChevronDown size="0.9rem" stroke={1.5} />
                             </Center>
@@ -97,18 +99,26 @@ export function Header() {
                         {DonateBtn}
                         <ThemeSwitcher/>
                     </Group>
-                    <Burger opened={drawerOpened} onClick={toggleDrawer} size="sm" hiddenFrom="sm" />
+                    <Group hiddenFrom="sm">
+                        {DonateBtn}
+                        <Burger opened={drawerOpened} onClick={toggleDrawer} size="sm" />
+                    </Group>
                 </div>
             </Container>
             <Drawer
                 opened={drawerOpened}
                 onClose={closeDrawer}
-                size="100%"
+                size="70%"
                 padding="lg"
                 hiddenFrom="sm"
                 zIndex={1000000}
             >
-                {items}
+                <Divider my="sm" />
+                    {items}
+                <Divider my="sm" />
+                <Group justify="left" px="md">
+                    <ThemeSwitcher/>
+                </Group>
             </Drawer>
         </header>
     );
