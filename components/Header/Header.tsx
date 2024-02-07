@@ -51,7 +51,7 @@ export function Header() {
                         <Link href={link.link} key={link.label}
                               className={classes.link}
                               data-active={pathname === link.link || undefined}>
-                            <Center>
+                            <Center inline>
                                 <span className={classes.linkLabel}>{link.label}</span>
                                 <IconChevronDown size="0.9rem" stroke={1.5} />
                             </Center>
@@ -94,7 +94,10 @@ export function Header() {
                         </Link>
                         <ThemeSwitcher/>
                     </Group>
-                    <Burger opened={drawerOpened} onClick={toggleDrawer} size="sm" hiddenFrom="sm" />
+                    <Group hiddenFrom="sm">
+                        {DonateBtn}
+                        <Burger opened={drawerOpened} onClick={toggleDrawer} size="sm" />
+                    </Group>
                 </div>
             </Container>
             <Drawer
