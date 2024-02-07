@@ -51,14 +51,16 @@ export function Header() {
 
     const items = links.map((link) => {
         const menuItems = link.links?.map((item) => (
-            <Menu.Item key={item.link}>{item.label}</Menu.Item>
+            <Menu.Item key={item.link} component={"a"} href={item.link}>
+                {item.label}
+            </Menu.Item>
         ));
 
         if (menuItems) {
             return (
                 <Menu key={link.label} trigger="hover" transitionProps={{ exitDuration: 0 }} withinPortal >
                     <Menu.Target>
-                        <Link href={link.link} key={link.label}
+                        <Link href={""} key={link.label}
                               className={classes.link}
                               data-active={pathname === link.link || undefined}>
                             <Center inline>
