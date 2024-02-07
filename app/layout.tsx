@@ -6,7 +6,7 @@ import { Footer } from '@/components/Footer/Footer';
 import WavySeparator from '@/components/WavySeparator/WavySeparator';
 import { theme } from '@/theme';
 
-import FirstTimeConfetti from "@/components/FirstTimeConfetti/FirstTimeConfetti";
+import FirstTimeConfetti from "@/components/CoolEffects/FirstTimeConfetti";
 
 export const metadata = {
   title: 'Asociatia Bucurie in Dar',

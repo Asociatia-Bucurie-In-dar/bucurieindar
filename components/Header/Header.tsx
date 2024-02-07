@@ -6,7 +6,7 @@ import { Menu, Group, Center, Burger, Container, Drawer, Text, Title, Button, Di
 import { ThemeSwitcher } from '@/components/ThemeSwitcher';
 import { useDisclosure } from '@mantine/hooks';
 import { IconChevronDown } from '@tabler/icons-react';
-import confetti from 'canvas-confetti';
+import {ConfettiButton} from "@/components/ConfettiButton/ConfettiButton";
 import { Image } from '@mantine/core';
 import classes from './Header.module.css';
 
@@ -26,26 +26,7 @@ const mobileMenuLinks = [ home, projects, about, gallery, blog, contact, dash ];
 export function Header() {
     const pathname = usePathname();
     const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] = useDisclosure(false);
-
-    const confettiClicked = () => {
-        confetti({
-            // Customize your confetti here
-            particleCount: 100,
-            spread: 70,
-            origin: { y: 0.6 },
-        });
-    };
     
-    const DonateBtn = (<Link href={projects.link} passHref>
-        <Button onClick={confettiClicked}
-                variant="gradient"
-                gradient={{ from: 'pink', to: 'yellow', deg: 90 }}
-                name={"Donate"}
-        >
-            Donate
-        </Button>
-    </Link>);
-
     const renderLinks = (links: any) => {
         return links.map((link: any) => {
             if (link.links) { // If the link has sub-links
@@ -100,11 +81,11 @@ export function Header() {
                         {headerItems}
                     </Group>
                     <Group visibleFrom="sm">
-                        {DonateBtn}
+                        <ConfettiButton/>
                         <ThemeSwitcher/>
                     </Group>
                     <Group hiddenFrom="sm">
-                        {DonateBtn}
+                        <ConfettiButton/>
                         <Burger opened={drawerOpened} onClick={toggleDrawer} size="sm" />
                     </Group>
                 </div>

@@ -1,11 +1,9 @@
-import { Welcome } from '@/components/Welcome/Welcome';
-import { ColorSchemeToggle } from '@/components/ColorSchemeToggle/ColorSchemeToggle';
+import {HomeHero} from '@/components/Home/HomeHero';
 
 export default function HomePage() {
   return (
     <>
-      <Welcome />
-        <ColorSchemeToggle />
+      <HomeHero />
     </>
   );
 }
