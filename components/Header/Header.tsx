@@ -2,7 +2,7 @@
 
 import { usePathname } from 'next/navigation'
 import Link from 'next/link';
-import {Menu, Group, Center, Burger, Container, Drawer, Text, Title, Button} from '@mantine/core';
+import { Menu, Group, Center, Burger, Container, Drawer, Text, Title, Button, Divider } from '@mantine/core';
 import { ThemeSwitcher } from '@/components/ThemeSwitcher';
 import { useDisclosure } from '@mantine/hooks';
 import { IconChevronDown } from '@tabler/icons-react';
@@ -108,12 +108,16 @@ export function Header() {
             <Drawer
                 opened={drawerOpened}
                 onClose={closeDrawer}
-                size="100%"
+                size="70%"
                 padding="lg"
                 hiddenFrom="sm"
                 zIndex={1000000}
             >
-                {items}
+                    {items}
+                <Divider my="sm" />
+                <Group justify="left" px="md">
+                    <ThemeSwitcher/>
+                </Group>
             </Drawer>
         </header>
     );
