@@ -2,7 +2,7 @@
 
 import { usePathname } from 'next/navigation'
 import Link from 'next/link';
-import {Menu, Group, Center, Burger, Container, Drawer, Text, Title} from '@mantine/core';
+import {Menu, Group, Center, Burger, Container, Drawer, Text, Title, Button} from '@mantine/core';
 import { ThemeSwitcher } from '@/components/ThemeSwitcher';
 import { useDisclosure } from '@mantine/hooks';
 import { IconChevronDown } from '@tabler/icons-react';
@@ -70,10 +70,18 @@ export function Header() {
                             <Link href="/">Bucurie in Dar</Link>
                         </Text>
                     </Title>
-                    <Group gap={5} visibleFrom="sm">
+                    <Group h="100%" gap={0} visibleFrom="sm">
                         {items}
                     </Group>
-                    <ThemeSwitcher />
+                    <Group visibleFrom="sm">
+                        <Button
+                            variant="gradient"
+                            gradient={{ from: 'pink', to: 'yellow', deg: 90 }}
+                        >
+                            Donate
+                        </Button>
+                        <ThemeSwitcher/>
+                    </Group>
                     <Burger opened={drawerOpened} onClick={toggleDrawer} size="sm" hiddenFrom="sm" />
                 </div>
             </Container>
