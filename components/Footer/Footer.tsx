@@ -36,10 +36,11 @@ const data = [
 export function Footer() {
     const groups = data.map((group) => {
         const links = group.links.map((link, index) => (
-            <Text<'a'>
+            <Text
                 key={index}
                 className={classes.link}
-                component="a"
+                component={Link}
+                href={link.link}
             >
                 {link.label}
             </Text>
@@ -70,7 +71,7 @@ export function Footer() {
             </Container>
             <Container className={classes.afterFooter}>
                 <Text c="dimmed" size="sm">
-                    © 2020 mantine.dev. All rights reserved.
+                    © {new Date().getFullYear()} Asociatia Bucurie in Dar. All rights reserved.
                 </Text>
 
                 <Group gap={0} className={classes.social} justify="flex-end" wrap="nowrap">
