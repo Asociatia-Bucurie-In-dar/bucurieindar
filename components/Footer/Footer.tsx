@@ -36,10 +36,11 @@ const data = [
 export function Footer() {
     const groups = data.map((group) => {
         const links = group.links.map((link, index) => (
-            <Text<'a'>
+            <Text
                 key={index}
                 className={classes.link}
-                component="a"
+                component={Link}
+                href={link.link}
             >
                 {link.label}
             </Text>
