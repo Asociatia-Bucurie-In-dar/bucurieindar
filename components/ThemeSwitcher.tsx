@@ -1,29 +1,19 @@
-"use client";
-
 import { useState } from 'react';
 import { Switch, useMantineTheme, useMantineColorScheme, rem } from '@mantine/core';
-import { IconSun, IconMoonStars } from '@tabler/icons-react';
 
 export function ThemeSwitcher() {
     const theme = useMantineTheme();
     const { colorScheme, toggleColorScheme } = useMantineColorScheme();
     const isDark = colorScheme === 'dark';
     const [checked, setChecked] = useState(false);
+    
 
     const sunIcon = (
-        <IconSun
-            style={{ width: rem(16), height: rem(16) }}
-            stroke={2.5}
-            color={theme.colors.yellow[4]}
-        />
+        <div></div>
     );
 
     const moonIcon = (
-        <IconMoonStars
-            style={{ width: rem(16), height: rem(16) }}
-            stroke={2.5}
-            color={theme.colors.blue[6]}
-        />
+        <div></div>
     );
 
     return <Switch checked={isDark} onChange={(event) => {
