@@ -38,6 +38,16 @@ export function Header() {
             origin: { y: 0.6 },
         });
     };
+    
+    const DonateBtn = (<Link href="/projects" passHref>
+        <Button onClick={confettiClicked}
+                variant="gradient"
+                gradient={{ from: 'pink', to: 'yellow', deg: 90 }}
+                name={"Donate"}
+        >
+            Donate
+        </Button>
+    </Link>);
 
     const items = links.map((link) => {
         const menuItems = link.links?.map((item) => (
@@ -84,14 +94,7 @@ export function Header() {
                         {items}
                     </Group>
                     <Group visibleFrom="sm">
-                        <Link href="/projects" passHref>
-                            <Button onClick={confettiClicked}
-                                variant="gradient"
-                                gradient={{ from: 'pink', to: 'yellow', deg: 90 }}
-                            >
-                                Donate
-                            </Button>
-                        </Link>
+                        {DonateBtn}
                         <ThemeSwitcher/>
                     </Group>
                     <Burger opened={drawerOpened} onClick={toggleDrawer} size="sm" hiddenFrom="sm" />
