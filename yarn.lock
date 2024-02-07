@@ -4193,6 +4193,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/canvas-confetti@npm:^1":
+  version: 1.6.4
+  resolution: "@types/canvas-confetti@npm:1.6.4"
+  checksum: 4a821690f0b9cdd81b0d02c0946c5b4e9e80f189e868fd8a159884d5eb9da0bdf0bfc380a61c971cc5d7b9ca2521625d46bcb5e4653988375118f57523ebe5a4
+  languageName: node
+  linkType: hard
+
 "@types/connect@npm:*":
   version: 3.4.38
   resolution: "@types/connect@npm:3.4.38"
@@ -6125,6 +6132,13 @@ __metadata:
   version: 1.0.30001584
   resolution: "caniuse-lite@npm:1.0.30001584"
   checksum: 9f353d7b14ea218bf90f9aa908947be1119f3744bb4080aeef59dd2fbca2ca663a6eecad29deba41f7d02ef9f516240353809f31208396a1ec9824b515467d87
+  languageName: node
+  linkType: hard
+
+"canvas-confetti@npm:^1.9.2":
+  version: 1.9.2
+  resolution: "canvas-confetti@npm:1.9.2"
+  checksum: 6247eb95bf710522f5822728dc29d74d0747b7ca0a85dfa90fd159f0f405527fbaedbdbb0e6917f6cd1560cf1355286c2c94bd3e89bc2147fb0fcf8e1c64126a
   languageName: node
   linkType: hard
 
@@ -11012,12 +11026,14 @@ __metadata:
     "@testing-library/jest-dom": "npm:^6.1.4"
     "@testing-library/react": "npm:^14.0.0"
     "@testing-library/user-event": "npm:^14.5.1"
+    "@types/canvas-confetti": "npm:^1"
     "@types/jest": "npm:^29.5.7"
     "@types/node": "npm:^20.8.10"
     "@types/react": "npm:18.2.34"
     "@typescript-eslint/eslint-plugin": "npm:^6.9.1"
     "@typescript-eslint/parser": "npm:^6.9.1"
     babel-loader: "npm:^9.1.3"
+    canvas-confetti: "npm:^1.9.2"
     eslint: "npm:^8.53.0"
     eslint-config-airbnb: "npm:19.0.4"
     eslint-config-airbnb-typescript: "npm:^17.1.0"

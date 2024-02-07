@@ -6,6 +6,7 @@ import {Menu, Group, Center, Burger, Container, Drawer, Text, Title, Button} fro
 import { ThemeSwitcher } from '@/components/ThemeSwitcher';
 import { useDisclosure } from '@mantine/hooks';
 import { IconChevronDown } from '@tabler/icons-react';
+import confetti from 'canvas-confetti';
 import { Image } from '@mantine/core';
 import classes from './Header.module.css';
 
@@ -28,6 +29,15 @@ const links = [
 export function Header() {
     const pathname = usePathname();
     const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] = useDisclosure(false);
+
+    const confettiClicked = () => {
+        confetti({
+            // Customize your confetti here
+            particleCount: 100,
+            spread: 70,
+            origin: { y: 0.6 },
+        });
+    };
 
     const items = links.map((link) => {
         const menuItems = link.links?.map((item) => (
@@ -74,12 +84,14 @@ export function Header() {
                         {items}
                     </Group>
                     <Group visibleFrom="sm">
-                        <Button
-                            variant="gradient"
-                            gradient={{ from: 'pink', to: 'yellow', deg: 90 }}
-                        >
-                            Donate
-                        </Button>
+                        <Link href="/projects" passHref>
+                            <Button onClick={confettiClicked}
+                                variant="gradient"
+                                gradient={{ from: 'pink', to: 'yellow', deg: 90 }}
+                            >
+                                Donate
+                            </Button>
+                        </Link>
                         <ThemeSwitcher/>
                     </Group>
                     <Burger opened={drawerOpened} onClick={toggleDrawer} size="sm" hiddenFrom="sm" />
