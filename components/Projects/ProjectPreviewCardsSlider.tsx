@@ -19,8 +19,9 @@ export function ProjectPreviewCardsSlider() {
     return (
         <Container size="md" py="xl" mt={33}>
 
+            {/* TODO: move title and button etc */}
             <Title order={2} className={classes.title} ta="center" mt="sm">
-                Proiectele noastre.
+                Proiectele noastre
             </Title>
 
             <Text c="dimmed" className={classes.description} ta="center" mt="md">

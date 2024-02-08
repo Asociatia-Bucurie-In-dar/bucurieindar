@@ -10,6 +10,7 @@ import {ConfettiButton} from "@/components/ConfettiButton/ConfettiButton";
 import { Image } from '@mantine/core';
 import classes from './Header.module.css';
 import {MyRoutePaths} from "@/utils/route-paths";
+import {MyZIndexes} from "@/utils/my-constants";
 
 const home = { link: MyRoutePaths.Home.link, label: MyRoutePaths.Home.label, links: null};
 const projects = { link: MyRoutePaths.Projects.link, label: MyRoutePaths.Projects.label, links: null};
@@ -69,6 +70,7 @@ export function Header() {
 // Usage in your component
     const headerItems = renderLinks(headerLinks);
     const mobileMenuItems = renderLinks(mobileMenuLinks);
+    var headerZIndex = MyZIndexes.Header;
 
     return (
         
@@ -77,7 +79,7 @@ export function Header() {
             top: 0,
             left: 0,
             right: 0,
-            zIndex: 1000000,
+            zIndex: headerZIndex,
             transform: `translate3d(0, ${pinned ? 0 : rem(-110)}, 0)`,
             transition: 'transform 400ms ease',
             backgroundColor: 'var(--mantine-color-body)',
@@ -108,7 +110,7 @@ export function Header() {
                 size="60%"
                 padding="lg"
                 hiddenFrom="sm"
-                zIndex={10000}
+                zIndex={MyZIndexes.MobileMenu}
             >
                 <Divider my="sm" />
                 {mobileMenuItems}
