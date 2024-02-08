@@ -10,8 +10,10 @@ import {
     Center,
     Avatar,
     useMantineTheme,
-    rem,
+    rem, Progress, Divider,
 } from '@mantine/core';
+
+import {ConfettiButton} from "@/components/ConfettiButton/ConfettiButton";
 
 import classes from './ProjectPreviewCard.module.css';
 
@@ -25,7 +27,8 @@ export function ProjectPreviewCard(props: { id: string, imagePath: string, title
             <Card withBorder radius="md" className={classes.card}>
                 <Card.Section>
                     <a {...linkProps}>
-                        <Image src="https://i.imgur.com/Cij5vdL.png" height={180} />
+                        <Image src="https://images.unsplash.com/photo-1477554193778-9562c28588c0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80" 
+                               height={180} />
                     </a>
                 </Card.Section>
 
@@ -37,38 +40,25 @@ export function ProjectPreviewCard(props: { id: string, imagePath: string, title
                     {props.title}
                 </Text>
 
-                <Text fz="sm" c="dimmed" lineClamp={4}>
+                <Text fz="sm" c="dimmed" lineClamp={3}>
                     {props.description}
                 </Text>
 
-                <Group justify="space-between" className={classes.footer}>
-                    <Center>
-                        <Avatar
-                            src="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/avatars/avatar-1.png"
-                            size={24}
-                            radius="xl"
-                            mr="xs"
-                        />
-                        <Text fz="sm" inline>
-                            Bill Wormeater
-                        </Text>
-                    </Center>
-
-                    <Group gap={8} mr={0}>
-                        <ActionIcon className={classes.action}>
-                            <IconHeart style={{ width: rem(16), height: rem(16) }} color={theme.colors.red[6]} />
-                        </ActionIcon>
-                        <ActionIcon className={classes.action}>
-                            <IconBookmark
-                                style={{ width: rem(16), height: rem(16) }}
-                                color={theme.colors.yellow[7]}
-                            />
-                        </ActionIcon>
-                        <ActionIcon className={classes.action}>
-                            <IconShare style={{ width: rem(16), height: rem(16) }} color={theme.colors.blue[6]} />
-                        </ActionIcon>
-                    </Group>
-                </Group>
+                <Card padding={0} mt="sm">
+                    <Text fz="xs" tt="uppercase" fw={700} c="dimmed" mt="sm">
+                        Suma Necesară
+                    </Text>
+                    <Text fz="lg" fw={500}>
+                        ${props.donatedSoFar} / ${props.donationGoal}
+                    </Text>
+                    <Progress animated value={(props.donatedSoFar/props.donationGoal) * 100} mt="sm" size="lg" radius="xl"
+                              classNames={{
+                                  root: classes.progressTrack,
+                                  section: classes.progressSection,
+                              }}/>
+                    
+                    <ConfettiButton text={"Donează"} size="sm" mt="md"/>
+                </Card>
             </Card>
     );
 }

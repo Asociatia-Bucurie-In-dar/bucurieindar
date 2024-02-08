@@ -5,7 +5,7 @@ import confetti from "canvas-confetti";
 import {MyRoutePaths} from "@/utils/route-paths";
 
 
-export function ConfettiButton(props: any) {
+export function ConfettiButton(props: {text: string, size?: string, mt?: string, }) {
     const confettiClicked = () => {
         confetti({
             // Customize your confetti here

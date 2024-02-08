@@ -7,12 +7,12 @@ import classes from './ProjectPreviewCardsSlider.module.css';
 export function ProjectPreviewCardsSlider() {
 
     const projectsData = [
-        {id: '1', imagePath: '/public/favicon.svg', title: 'Proiect 1', description: 'Lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi', donationGoal: 100, donatedSoFar: 33 },
-        {id: '2', imagePath: '/public/favicon.svg', title: 'Proiect 2', description: 'Lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi', donationGoal: 100, donatedSoFar: 33 },
-        {id: '3', imagePath: '/public/favicon.svg', title: 'Proiect 3', description: 'Lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi', donationGoal: 100, donatedSoFar: 33 },
+        {id: '1', imagePath: '/public/favicon.svg', title: 'Proiect 1', description: 'Lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi', donationGoal: 30000, donatedSoFar: 5000 },
+        {id: '2', imagePath: '/public/favicon.svg', title: 'Proiect 2', description: 'Lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi', donationGoal: 50000, donatedSoFar: 30000 },
+        {id: '3', imagePath: '/public/favicon.svg', title: 'Proiect 3', description: 'Lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi', donationGoal: 80000, donatedSoFar: 10000 },
     ];
     
-    const features = projectsData.map((proj) => (
+    const cards = projectsData.map((proj) => (
         <ProjectPreviewCard {...proj}/>
     ));
 
@@ -28,11 +28,11 @@ export function ProjectPreviewCardsSlider() {
             </Text>
 
             <SimpleGrid cols={{ base: 1, md: 3 }} spacing="xl" mt={50}>
-                {features}
+                {cards}
             </SimpleGrid>
 
             <Group justify="center" mt="xl">
-                <ConfettiButton text={"Vezi toate proiectele"}/>
+                <ConfettiButton text={"Vezi toate proiectele"} size="md"/>
             </Group>
             
         </Container>
