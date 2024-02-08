@@ -2,9 +2,9 @@
 
 import { usePathname } from 'next/navigation'
 import Link from 'next/link';
-import { Menu, Group, Center, Burger, Container, Drawer, Text, Title, Button, Divider } from '@mantine/core';
+import {Menu, Group, Center, Burger, Container, Drawer, Text, Title, Divider, rem,} from '@mantine/core';
 import { ThemeSwitcher } from '@/components/ThemeSwitcher';
-import { useDisclosure } from '@mantine/hooks';
+import { useDisclosure, useHeadroom } from '@mantine/hooks';
 import { IconChevronDown } from '@tabler/icons-react';
 import {ConfettiButton} from "@/components/ConfettiButton/ConfettiButton";
 import { Image } from '@mantine/core';
@@ -27,6 +27,7 @@ const mobileMenuLinks = [ home, projects, about, gallery, blog, contact, dash ];
 export function Header() {
     const pathname = usePathname();
     const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] = useDisclosure(false);
+    const pinned = useHeadroom({ fixedAt: 120 });
 
     const renderLinks = (links: any) => {
         return links.map((link: any) => {
@@ -70,7 +71,17 @@ export function Header() {
     const mobileMenuItems = renderLinks(mobileMenuLinks);
 
     return (
-        <header className={classes.header}>
+        
+        <header className={classes.header} style={{
+            position: 'fixed',
+            top: 0,
+            left: 0,
+            right: 0,
+            zIndex: 1000000,
+            transform: `translate3d(0, ${pinned ? 0 : rem(-110)}, 0)`,
+            transition: 'transform 400ms ease',
+            backgroundColor: 'var(--mantine-color-body)',
+        }}>
             <Container size="md">
                 <div className={classes.inner}>
                     <Title className={classes.title} size={18}>
@@ -107,5 +118,6 @@ export function Header() {
                 </Group>
             </Drawer>
         </header>
+        
     );
 }
