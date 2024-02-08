@@ -9,14 +9,14 @@ export function HomeHero() {
                 <div className={classes.inner}>
                     <div className={classes.content}>
                         <Title className={classes.title}>
-                            Din această viață plecăm doar cu{' '}
+                            Din această lume plecăm doar cu
                             <Text
                                 component="span"
                                 inherit
                                 variant="gradient"
                                 gradient={{ from: 'pink', to: 'yellow' }}
                             >
-                                faptele noastre.
+                                {' '}faptele noastre.{' '}
                             </Text>
                         </Title>
 
