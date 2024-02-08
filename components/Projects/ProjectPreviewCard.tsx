@@ -29,9 +29,9 @@ export function ProjectPreviewCard(props: { id: string, imagePath: string, title
                     </a>
                 </Card.Section>
 
-                <Badge className={classes.rating} variant="gradient" gradient={{ from: 'yellow', to: 'red' }}>
-                    outstanding
-                </Badge>
+                {/*<Badge className={classes.rating} variant="gradient" gradient={{ from: 'yellow', to: 'red' }}>*/}
+                {/*    outstanding*/}
+                {/*</Badge>*/}
 
                 <Text className={classes.title} fw={500} component="a" {...linkProps}>
                     {props.title}
