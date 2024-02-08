@@ -2,6 +2,7 @@
 import Link from "next/link";
 import {Button} from "@mantine/core";
 import confetti from "canvas-confetti";
+import {MyRoutePaths} from "@/utils/route-paths";
 
 
 export function ConfettiButton(props: any) {
@@ -15,15 +16,15 @@ export function ConfettiButton(props: any) {
     };
     
     return (
-        <Link href={"/projects"} passHref>
+        <Link href={MyRoutePaths.Projects.link} passHref>
                 <Button onClick={confettiClicked}
                         variant="gradient"
                         gradient={{ from: 'pink', to: 'yellow', deg: 90 }}
-                        name={"Donate"}
+                        name={MyRoutePaths.Projects.label}
                         size={props.size}
                         mt={props.mt}
                 >
-                    {props.text? props.text : "Donate"}
+                    {props.text}
                 </Button>
             </Link>
     );

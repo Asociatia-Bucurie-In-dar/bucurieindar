@@ -2,33 +2,34 @@ import {Text, Container, ActionIcon, Group, rem, Title} from '@mantine/core';
 import { IconBrandTwitter, IconBrandYoutube, IconBrandInstagram } from '@tabler/icons-react';
 import classes from './Footer.module.css';
 import Link from "next/link";
+import {MyRoutePaths} from "@/utils/route-paths";
 
 const data = [
     {
         title: 'About',
         links: [
-            { label: 'Features', link: '/' },
-            { label: 'Pricing', link: '/' },
-            { label: 'Support', link: '/' },
-            { label: 'Forums', link: '/' },
+            { label: 'Features', link: MyRoutePaths.Home.link },
+            { label: 'Pricing', link: MyRoutePaths.Home.link },
+            { label: 'Support', link: MyRoutePaths.Home.link },
+            { label: 'Forums', link: MyRoutePaths.Home.link },
         ],
     },
     {
         title: 'Project',
         links: [
-            { label: 'Contribute', link: '/' },
-            { label: 'Media assets', link: '/' },
-            { label: 'Changelog', link: '/' },
-            { label: 'Releases', link: '/' },
+            { label: 'Contribute', link: MyRoutePaths.Home.link },
+            { label: 'Media assets', link: MyRoutePaths.Home.link },
+            { label: 'Changelog', link: MyRoutePaths.Home.link },
+            { label: 'Releases', link: MyRoutePaths.Home.link },
         ],
     },
     {
         title: 'Community',
         links: [
-            { label: 'Join Discord', link: '/' },
-            { label: 'Follow on Twitter', link: '/' },
-            { label: 'Email newsletter', link: '/' },
-            { label: 'GitHub discussions', link: '/' },
+            { label: 'Join Discord', link: MyRoutePaths.Home.link },
+            { label: 'Follow on Twitter', link: MyRoutePaths.Home.link },
+            { label: 'Email newsletter', link: MyRoutePaths.Home.link },
+            { label: 'GitHub discussions', link: MyRoutePaths.Home.link },
         ],
     },
 ];
@@ -60,7 +61,7 @@ export function Footer() {
                 <div className={classes.logo}>
                     <Title className={classes.title} size={18}>
                         <Text inherit variant="gradient" component="span" gradient={{ from: 'pink', to: 'yellow' }}>
-                            <Link href="/">Bucurie in Dar</Link>
+                            <Link href={MyRoutePaths.Home.link}>Bucurie in Dar</Link>
                         </Text>
                     </Title>
                     <Text size="xs" c="dimmed" className={classes.description}>

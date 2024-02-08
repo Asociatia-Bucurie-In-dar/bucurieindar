@@ -9,15 +9,16 @@ import { IconChevronDown } from '@tabler/icons-react';
 import {ConfettiButton} from "@/components/ConfettiButton/ConfettiButton";
 import { Image } from '@mantine/core';
 import classes from './Header.module.css';
+import {MyRoutePaths} from "@/utils/route-paths";
 
-const home = { link: '/', label: 'Home', links: null};
-const projects = { link: '/projects', label: 'Projects', links: null };
-const about = { link: '/about', label: 'About', links: null };
-const gallery = { link: '/gallery', label: 'Gallery', links: null };
-const blog = { link: '/blog', label: 'Blog', links: null };
-const dash = { link: '/dash', label: 'My Donations', links: null };
-const contact = { link: '/contact', label: 'Contact', links: null };
-const contactParent = { link: contact.link, label: contact.label, links: [contact, dash,] };
+const home = { link: MyRoutePaths.Home.link, label: MyRoutePaths.Home.label, links: null};
+const projects = { link: MyRoutePaths.Projects.link, label: MyRoutePaths.Projects.label, links: null};
+const about = { link: MyRoutePaths.About.link, label: MyRoutePaths.About.label, links: null};
+const gallery = { link: MyRoutePaths.Gallery.link, label: MyRoutePaths.Gallery.label, links: null};
+const blog = { link: MyRoutePaths.Blog.link, label: MyRoutePaths.Blog.label, links: null};
+const dash = { link: MyRoutePaths.Dash.link, label: MyRoutePaths.Dash.label, links: null};
+const contact = { link: MyRoutePaths.Contact.link, label: MyRoutePaths.Contact.label, links: null};
+const contactParent = { link: contact.link, label: contact.label, links: [contact, dash] };
 
 const headerLinks = [ home, projects, about, gallery, blog, contactParent ];
 const mobileMenuLinks = [ home, projects, about, gallery, blog, contact, dash ];
@@ -26,7 +27,7 @@ const mobileMenuLinks = [ home, projects, about, gallery, blog, contact, dash ];
 export function Header() {
     const pathname = usePathname();
     const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] = useDisclosure(false);
-    
+
     const renderLinks = (links: any) => {
         return links.map((link: any) => {
             if (link.links) { // If the link has sub-links
@@ -81,11 +82,11 @@ export function Header() {
                         {headerItems}
                     </Group>
                     <Group visibleFrom="sm">
-                        <ConfettiButton/>
+                        <ConfettiButton text={"Donează"}/>
                         <ThemeSwitcher/>
                     </Group>
                     <Group hiddenFrom="sm">
-                        <ConfettiButton/>
+                        <ConfettiButton text={"Donează"}/>
                         <Burger opened={drawerOpened} onClick={toggleDrawer} size="sm" />
                     </Group>
                 </div>
@@ -99,7 +100,7 @@ export function Header() {
                 zIndex={10000}
             >
                 <Divider my="sm" />
-                    {mobileMenuItems}
+                {mobileMenuItems}
                 <Divider my="sm" />
                 <Group justify="left" px="md">
                     <ThemeSwitcher/>

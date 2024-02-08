@@ -9,21 +9,21 @@ export function HomeHero() {
                 <div className={classes.inner}>
                     <div className={classes.content}>
                         <Title className={classes.title}>
-                            From this life we leave only with our{' '}
+                            Din această viață plecăm doar cu{' '}
                             <Text
                                 component="span"
                                 inherit
                                 variant="gradient"
                                 gradient={{ from: 'pink', to: 'yellow' }}
                             >
-                                deeds.
+                                faptele noastre.
                             </Text>
                         </Title>
 
                         <Text className={classes.description} mt={30}>
-                            Bucurie in Dar Association is a non-profit organization that aims to help children and young people from disadvantaged families, to have a better life and a better future.
+                            <b>Asoociația Bucurie în Dar</b> este o organizație non-profit care își propune să ajute copiii și tinerii din familii defavorizate, să aibă o viață mai bună și un viitor mai bun.
                         </Text>
-                        <ConfettiButton size={"lg"} mt={40} text={"Donate now"}/>
+                        <ConfettiButton size={"lg"} mt={40} text={"Donează acum"}/>
                         
                     </div>
                 </div>
