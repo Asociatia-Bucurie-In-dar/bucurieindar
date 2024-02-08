@@ -23,7 +23,7 @@ export function HomeHero() {
                         <Text className={classes.description} mt={30}>
                             <b>Asoociația Bucurie în Dar</b> este o organizație non-profit care își propune să ajute copiii și tinerii din familii defavorizate, să aibă o viață mai bună și un viitor mai bun.
                         </Text>
-                        <ConfettiButton size={"lg"} mt={40} text={"Donează acum"}/>
+                        <ConfettiButton size={"lg"} mt="xl" text={"Donează acum"}/>
                         
                     </div>
                 </div>
