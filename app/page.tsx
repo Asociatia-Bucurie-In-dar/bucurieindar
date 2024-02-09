@@ -1,7 +1,7 @@
 import {HomeHero} from '@/components/Home/Hero/HomeHero';
 import {HomeProjects} from '@/components/Home/HomeProjects/HomeProjects';
-import {CompaniesWeWorkWith} from '@/components/Companies/CompaniesWeWorkWith';
 import {HomeFeeding} from '@/components/Home/HomeFeeding/HomeFeeding';
+import {HomeAboutGeneral} from '@/components/Home/HomeAboutGeneral/HomeAboutGeneral';
 
 export default function HomePage() {
   return (
@@ -9,6 +9,7 @@ export default function HomePage() {
       <HomeHero />
         <HomeProjects />
       <HomeFeeding />
+        <HomeAboutGeneral />
         {/* ... 
         //<HomeProjects />
             //<ProjectPreviewCard />

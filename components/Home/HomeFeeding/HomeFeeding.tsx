@@ -7,17 +7,17 @@ const data = [
     {
         title: 'Beneficiari',
         stats: '6,000',
-        description: '24% more than in the same month last year, 33% more that two years ago',
+        description: 'Beneficiarii noștri primesc mese sănătoase în fiecare zi.',
     },
     {
-        title: 'Mese precedente',
+        title: 'Mese oferite',
         stats: '30,000',
-        description: '13% less compared to last month, new user engagement up by 6%',
+        description: 'Mesele oferite de către asociația noastră până în prezent.',
     },
     {
-        title: 'Mese lunarss',
+        title: 'Mese lunar',
         stats: '48,000',
-        description: '1994 orders were completed this month, 97% satisfaction rate',
+        description: 'Mesele oferite lunar de către asociația noastră.',
     },
 ];
 
