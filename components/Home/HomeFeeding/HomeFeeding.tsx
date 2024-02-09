@@ -30,18 +30,11 @@ export function HomeFeeding() {
         </div>
     ));
     return <>
-        <Container size="full" className={classes.background}>
+        <Container size="full" mt="xl" className={classes.background}>
         <Container size="md" py="xl">
-
-            <Title order={2} className={classes.titleBig} ta="center" mt="sm">
-                Masa Bucuriei
-            </Title>
-
-            <Text c="dimmed" className={classes.descriptionBig} ta="center" mt="md">
-                Programul nostru de hrănire își propune să hrănească trupurile și spiritele celor care au nevoie. 
-                Prin oferirea de mese sănătoase, oferim hrana și speranță multora, asigurându-ne că niciun copil nu merge la culcare flămând în comunitățile noastre.
-                Alăturați-vă nouă în această cauză vitală.
-            </Text>
+            
+            <TitleWithDescription title={"Masa Bucuriei"} 
+                                  description={"Programul nostru de hrănire își propune să hrănească trupurile și spiritele celor care au nevoie. Prin oferirea de mese sănătoase, oferim hrana și speranță multora, asigurându-ne că niciun copil nu merge la culcare flămând în comunitățile noastre.Alăturați-vă nouă în această cauză vitală."}/>
             
         <Container mt={50} className={classes.root}>{stats}</Container>
         </Container>

@@ -1,7 +1,7 @@
-import { Badge, Group, Title, Text, Card, SimpleGrid, Container, rem, useMantineTheme,} from '@mantine/core';
+import {Group, SimpleGrid, Container, Title, Text} from '@mantine/core';
 import {ProjectPreviewCard} from "@/components/Projects/ProjectPreviewCard";
 import {ConfettiButton} from "@/components/ConfettiButton/ConfettiButton";
-import { IconGauge, IconUser, IconCookie } from '@tabler/icons-react';
+import {TitleWithDescription} from "@/components/Common/TitleWithDescription";
 import classes from './ProjectPreviewCardsSlider.module.css';
 
 export function ProjectPreviewCardsSlider() {
@@ -18,15 +18,9 @@ export function ProjectPreviewCardsSlider() {
 
     return (
         <Container size="md" py="xl" mt={33}>
-
-            {/* TODO: move title and button etc */}
-            <Title order={2} className={classes.title} ta="center" mt="sm">
-                Proiectele noastre
-            </Title>
-
-            <Text c="dimmed" className={classes.description} ta="center" mt="md">
-                Descoperă câteva din proiectele noastre care au nevoie de ajutorul tău. Asociatia noastră are nevoie de tine pentru a putea ajuta cât mai multe persoane.
-            </Text>
+            
+            <TitleWithDescription title="Proiectele noastre" 
+                                  description="Descoperă câteva din proiectele noastre care au nevoie de ajutorul tău. Asociatia noastră are nevoie de tine pentru a putea ajuta cât mai multe persoane." />
 
             <SimpleGrid cols={{ base: 1, md: 3 }} spacing="xl" mt={50}>
                 {cards}
@@ -39,5 +33,3 @@ export function ProjectPreviewCardsSlider() {
         </Container>
     );
 }
-
-//NEW-------
