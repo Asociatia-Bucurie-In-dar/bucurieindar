@@ -56,7 +56,7 @@ export function OurTeam() {
     });
     
     return (
-        <Container mt={50} mb={60}>
+        <Container mt="xl" mb={55} size="md">
             <Container className={classes.wrapper}>
                 <Title className={classes.title}>Echipa noastră</Title>
 
@@ -67,16 +67,14 @@ export function OurTeam() {
                 </Container>
                 
                 <Divider mt="xl" mb="sm" color="transparent" />
-
-                <Center>
+                
                 <SimpleGrid
-                    cols={{ base: 2, sm: 2, md: 3 }}
+                    cols={{ base: 2, sm: 3, md: 3 }}
                     spacing={{ base: 'xl', md: 50 }}
                     verticalSpacing={{ base: 'xl', md: 50 }}
                 >
                     {items}
                 </SimpleGrid>
-                </Center>
         </Container>
     </Container>
     );

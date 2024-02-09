@@ -36,7 +36,7 @@ export function HomeFeeding() {
             <TitleWithDescription title={"Masa bucuriei"} 
                                   description={"Programul nostru de hrănire își propune să hrănească trupurile și spiritele celor care au nevoie. Prin oferirea de mese sănătoase, oferim hrana și speranță multora, asigurându-ne că niciun copil nu merge la culcare flămând în comunitățile noastre. Alăturați-vă nouă în această cauză vitală."}/>
             
-        <Container mt={50} className={classes.root}>{stats}</Container>
+        <Container mt="xl" className={classes.root}>{stats}</Container>
         </Container>
             <Divider mt="sm" color="transparent" />
         </Container>

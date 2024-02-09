@@ -6,7 +6,7 @@ import {
     Card,
     SimpleGrid,
     Container,
-    rem, DEFAULT_THEME,
+    rem, DEFAULT_THEME, Divider,
 } from '@mantine/core';
 import { IconBowl, IconBackpack, IconMedicalCross } from '@tabler/icons-react';
 import classes from './HomeAboutProjects.module.css';
@@ -57,7 +57,7 @@ export function HomeAboutProjects() {
     ));
 
     return (
-<Container size="full" py="xl" mt={50} className={classes.background}>
+<Container size="full" py="xl" className={classes.background}>
         <Container size="md" mt="md">
             <Group justify="center">
                 <Badge variant="gradient" size="lg" gradient={{ from: 'yellow', to: 'orange', deg: -60 }}>
@@ -77,6 +77,9 @@ export function HomeAboutProjects() {
                 {features}
             </SimpleGrid>
         </Container>
+    
+    <Divider color="transparent" mb="md"/>
+    
 </Container>
     );
 }
