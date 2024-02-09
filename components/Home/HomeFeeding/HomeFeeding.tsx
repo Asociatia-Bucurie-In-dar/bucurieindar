@@ -1,5 +1,5 @@
 
-import {Container, Space, Text} from '@mantine/core';
+import {Container, Divider, Space, Text} from '@mantine/core';
 import classes from './HomeFeeding.module.css';
 import {TitleWithDescription} from "@/components/Common/TitleWithDescription";
 
@@ -33,11 +33,12 @@ export function HomeFeeding() {
         <Container size="full" mt="xl" className={classes.background}>
         <Container size="md" py="xl">
             
-            <TitleWithDescription title={"Masa Bucuriei"} 
-                                  description={"Programul nostru de hrănire își propune să hrănească trupurile și spiritele celor care au nevoie. Prin oferirea de mese sănătoase, oferim hrana și speranță multora, asigurându-ne că niciun copil nu merge la culcare flămând în comunitățile noastre.Alăturați-vă nouă în această cauză vitală."}/>
+            <TitleWithDescription title={"Masa bucuriei"} 
+                                  description={"Programul nostru de hrănire își propune să hrănească trupurile și spiritele celor care au nevoie. Prin oferirea de mese sănătoase, oferim hrana și speranță multora, asigurându-ne că niciun copil nu merge la culcare flămând în comunitățile noastre. Alăturați-vă nouă în această cauză vitală."}/>
             
         <Container mt={50} className={classes.root}>{stats}</Container>
         </Container>
+            <Divider mt="sm" color="transparent" />
         </Container>
         
         </>;

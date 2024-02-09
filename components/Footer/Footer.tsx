@@ -61,7 +61,7 @@ export function Footer() {
                 <div className={classes.logo}>
                     <Title className={classes.title} size={18}>
                         <Text inherit variant="gradient" component="span" gradient={{ from: 'pink', to: 'yellow' }}>
-                            <Link href={MyRoutePaths.Home.link}>Bucurie in Dar</Link>
+                            <Link href={MyRoutePaths.Home.link}>LOGO</Link>
                         </Text>
                     </Title>
                     <Text size="xs" c="dimmed" className={classes.description}>

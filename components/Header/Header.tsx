@@ -88,7 +88,7 @@ export function Header() {
                 <div className={classes.inner}>
                     <Title className={classes.title} size={18}>
                         <Text inherit variant="gradient" component="span" gradient={{ from: 'pink', to: 'yellow' }}>
-                            <Link href="/">Bucurie in Dar</Link>
+                            <Link href={MyRoutePaths.Home.link}>LOGO</Link>
                         </Text>
                     </Title>
                     <Group h="100%" gap={0} visibleFrom="sm">

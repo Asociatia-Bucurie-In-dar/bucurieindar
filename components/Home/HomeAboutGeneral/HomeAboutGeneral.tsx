@@ -1,8 +1,7 @@
 
 import classes from './HomeAboutGeneral.module.css';
-import {Container, Avatar, Title, Text, Image, Divider, Center} from "@mantine/core";
+import {Container, Avatar, Title, Text, Divider, Center} from "@mantine/core";
 import image from '/public/favicon.svg';
-import {TitleWithDescription} from "@/components/Common/TitleWithDescription";
 
 export function HomeAboutGeneral() {
     return <>
@@ -17,7 +16,9 @@ export function HomeAboutGeneral() {
                         </Text>
                     </div>
                 <Center>
-                    <Avatar className={classes.image} size={250} src="https://images.unsplash.com/photo-1477554193778-9562c28588c0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80"/>
+                    <Avatar className={classes.image}
+                            placeholder="blur"
+                            size={250} src="https://images.unsplash.com/photo-1477554193778-9562c28588c0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80"/>
                 </Center>
         </Container>
     </>;

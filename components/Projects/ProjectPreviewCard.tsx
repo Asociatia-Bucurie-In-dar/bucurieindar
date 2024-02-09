@@ -16,19 +16,23 @@ import {
 import {ConfettiButton} from "@/components/ConfettiButton/ConfettiButton";
 
 import classes from './ProjectPreviewCard.module.css';
+import Link from "next/link";
 
 
 export function ProjectPreviewCard(props: { id: string, imagePath: string, title: string, description: string, donationGoal: number, donatedSoFar: number}) {
 
     const theme = useMantineTheme();
-    const linkProps = { href: 'https://mantine.dev', target: '_blank', rel: 'noopener noreferrer' };
+    const linkProps = { href: '/projects' };
     
     return (
             <Card withBorder radius="md" className={classes.card}>
                 <Card.Section>
                     <a {...linkProps}>
                         <Image src="https://images.unsplash.com/photo-1477554193778-9562c28588c0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80" 
-                               height={180} />
+                               height={180}
+                               layout="responsive"
+                               loading="lazy"
+                            placeholder="blur"/>
                     </a>
                 </Card.Section>
 
@@ -36,11 +40,11 @@ export function ProjectPreviewCard(props: { id: string, imagePath: string, title
                 {/*    outstanding*/}
                 {/*</Badge>*/}
 
-                <Text className={classes.title} fw={500} component="a" {...linkProps}>
+                <Text className={classes.title} fw={500} component={Link} {...linkProps}>
                     {props.title}
                 </Text>
 
-                <Text fz="sm" c="dimmed" lineClamp={3}>
+                <Text fz="sm" c="dimmed" lineClamp={3} component={Link} {...linkProps}>
                     {props.description}
                 </Text>
 
