@@ -29,7 +29,7 @@
 
 .card {
     border: rem(1px) solid light-dark(var(--mantine-color-gray-1), var(--mantine-color-dark-5));
-    background-color: light-dark(var(--mantine-color-gray-0), var(--mantine-color-dark-7));
+    background-color: light-dark(var(--mantine-color-white), var(--mantine-color-dark-7));
 }
 
 .cardTitle {

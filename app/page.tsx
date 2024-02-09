@@ -5,6 +5,7 @@ import {HomeAboutGeneral} from '@/components/Home/HomeAboutGeneral/HomeAboutGene
 import {HomeAboutProjects} from '@/components/Home/HomeAboutProjects/HomeAboutProjects';
 import {OurTeam} from '@/components/OurTeam/OurTeam';
 import {FAQ} from '@/components/FAQ/FAQ';
+import {HomeBlogPosts} from '@/components/Home/HomeBlogPosts/HomeBlogPosts';
 
 export default function HomePage() {
   return (
@@ -16,6 +17,7 @@ export default function HomePage() {
         <HomeAboutProjects />
         <OurTeam />
         <FAQ />
+        <HomeBlogPosts />
         {/* ... 
         //<HomeProjects />
             //<ProjectPreviewCard />
