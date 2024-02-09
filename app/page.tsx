@@ -23,8 +23,8 @@ export default function HomePage() {
        
         //<HomeAboutGeneral />
         //<HomeAboutProjects />
-        <OurTeam />
-        <FAQ />
+        //<OurTeam />
+        //<FAQ />
         <HomeBlogPosts />
             <BlogPostPreviewCard />
                 <BlogPostFullPage />  
