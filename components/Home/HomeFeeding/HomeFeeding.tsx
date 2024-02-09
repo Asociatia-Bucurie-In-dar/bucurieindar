@@ -1,5 +1,5 @@
 
-import {Badge, Container, Divider, Group, Text, Title} from '@mantine/core';
+import {Container, Space, Text} from '@mantine/core';
 import classes from './HomeFeeding.module.css';
 import {TitleWithDescription} from "@/components/Common/TitleWithDescription";
 

@@ -1,22 +1,24 @@
 
 import classes from './HomeAboutGeneral.module.css';
-import {Container, SimpleGrid, Title, Text, Image} from "@mantine/core";
+import {Container, Avatar, Title, Text, Image, Divider, Center} from "@mantine/core";
 import image from '/public/favicon.svg';
 import {TitleWithDescription} from "@/components/Common/TitleWithDescription";
 
 export function HomeAboutGeneral() {
     return <>
-        <Container size="md" mt={50} className={classes.wrapper}>
+        <Container size="md" mt="xl" className={classes.wrapper}>
                     <div className={classes.body}>
-                        <Title className={classes.title}>Wait a minute...</Title>
-                        <Text fw={500} fz="lg" mb={5}>
-                            Subscribe to our newsletter!
-                        </Text>
-                        <Text fz="sm" c="dimmed">
-                            Join us in unlocking a child’s potential. Your donation to our cause creates brighter futures, providing essential education, health, and nourishment to children in need. Every contribution brings hope and opens doors to a world of possibilities. Let’s build a brighter tomorrow together. Donate now and make a difference! Your support is vital in our mission to unlock a child’s potential. With each donation, we can offer more than just basic needs; we provide a foundation for lifelong learning and growth. Our programs focus on education, healthcare, and empowering communities to uplift their youngest members. Every dollar you give helps us reach another child, turning small steps today into giant leaps for their future. Your contribution is an investment in a world where every child has the opportunity to thrive. Join us, donate today, and be a part of this transformative journey.
+                        <Title className={classes.titleBig} align="center">
+                            Potențialul copiilor
+                        </Title>
+                        <Divider mt="md" color="transparent"/>
+                        <Text fz="md" c="dimmed" align="center">
+                            Donația ta pentru cauza noastră creează un viitor mai strălucitor, oferind educație, sănătate și hrănire esențiale copiilor nevoiași. Fiecare contribuție aduce speranță și deschide uși către un univers de posibilități. Să construim împreună un viitor mai strălucitor. Donează acum și fă o diferență! Sprijinul tău este vital în misiunea noastră de a debloca potențialul unui copil. Cu fiecare donație, putem oferi mai mult decât nevoile de bază; oferim o bază pentru învățare și creștere pe tot parcursul vieții. Programele noastre se concentrează pe educație, îngrijire medicală și împuternicirea comunităților pentru a-și ridica cei mai tineri membri.
                         </Text>
                     </div>
-                    <Image src={image.src} className={classes.image}/>
+                <Center>
+                    <Avatar className={classes.image} size={250} src="https://images.unsplash.com/photo-1477554193778-9562c28588c0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80"/>
+                </Center>
         </Container>
     </>;
 }
