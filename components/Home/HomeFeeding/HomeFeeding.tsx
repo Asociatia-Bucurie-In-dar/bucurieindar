@@ -1,6 +1,7 @@
 
 import {Badge, Container, Divider, Group, Text, Title} from '@mantine/core';
 import classes from './HomeFeeding.module.css';
+import {TitleWithDescription} from "@/components/Common/TitleWithDescription";
 
 const data = [
     {
@@ -30,13 +31,7 @@ export function HomeFeeding() {
     ));
     return <>
         <Container size="full" className={classes.background}>
-        <Container size="md" py="xl" mt={33}>
-
-            <Group justify="center">
-                <Badge variant="filled" size="lg">
-                    Despre Mese
-                </Badge>
-            </Group>
+        <Container size="md" py="xl">
 
             <Title order={2} className={classes.titleBig} ta="center" mt="sm">
                 Masa Bucuriei
@@ -51,5 +46,6 @@ export function HomeFeeding() {
         <Container mt={50} className={classes.root}>{stats}</Container>
         </Container>
         </Container>
+        
         </>;
 }
