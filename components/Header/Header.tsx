@@ -41,7 +41,7 @@ export function Header() {
 
                 return (
                     <Menu key={link.label} trigger="hover" transitionProps={{ exitDuration: 0 }} 
-                          closeDelay="200" withinPortal zIndex={MyZIndexes.HeaderDropdown}>
+                          closeDelay={200} withinPortal zIndex={MyZIndexes.HeaderDropdown}>
                         <Menu.Target>
                             <Link href={""} key={link.label}
                                   className={classes.link}

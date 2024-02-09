@@ -1,4 +1,4 @@
-import {Avatar, Center, Container, Divider, Grid, Group, SimpleGrid, Text, Title} from '@mantine/core';
+import {Avatar, Container, Divider, Group, SimpleGrid, Text, Title} from '@mantine/core';
 import classes from './OurTeam.module.css';
 
 const data = [
