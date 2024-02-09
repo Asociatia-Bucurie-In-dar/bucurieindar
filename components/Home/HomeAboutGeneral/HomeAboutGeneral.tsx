@@ -5,14 +5,14 @@ import image from '/public/favicon.svg';
 
 export function HomeAboutGeneral() {
     return <>
-        <Container size="md" mt="xl" className={classes.wrapper}>
+        <Container size="md" mt={50} mb={50} className={classes.wrapper}>
                     <div className={classes.body}>
                         <Center>
                         <Title className={classes.titleBig} >
                             Potențialul copiilor
                         </Title>
                         </Center>
-                        <Divider mt="md" color="transparent"/>
+                        
                         <Center>
                         <Text fz="md" c="dimmed" style={{textAlign: "center"}}>
                             Donația ta pentru cauza noastră creează un viitor mai strălucitor, oferind educație, sănătate și hrănire esențiale copiilor nevoiași. Fiecare contribuție aduce speranță și deschide uși către un univers de posibilități. Să construim împreună un viitor mai strălucitor. Donează acum și fă o diferență! Sprijinul tău este vital în misiunea noastră de a debloca potențialul unui copil. Cu fiecare donație, putem oferi mai mult decât nevoile de bază; oferim o bază pentru învățare și creștere pe tot parcursul vieții. Programele noastre se concentrează pe educație, îngrijire medicală și împuternicirea comunităților pentru a-și ridica cei mai tineri membri.

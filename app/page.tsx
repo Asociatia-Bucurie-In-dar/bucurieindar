@@ -3,22 +3,26 @@ import {HomeProjects} from '@/components/Home/HomeProjects/HomeProjects';
 import {HomeFeeding} from '@/components/Home/HomeFeeding/HomeFeeding';
 import {HomeAboutGeneral} from '@/components/Home/HomeAboutGeneral/HomeAboutGeneral';
 import {HomeAboutProjects} from '@/components/Home/HomeAboutProjects/HomeAboutProjects';
+import {OurTeam} from '@/components/OurTeam/OurTeam';
+import {FAQ} from '@/components/FAQ/FAQ';
 
 export default function HomePage() {
   return (
     <>
       <HomeHero />
         <HomeProjects />
-      <HomeFeeding />
+        <HomeFeeding />
         <HomeAboutGeneral />
         <HomeAboutProjects />
+        <OurTeam />
+        <FAQ />
         {/* ... 
         //<HomeProjects />
             //<ProjectPreviewCard />
                 <ProjectFullPage/>
        
-        <HomeAboutGeneral />
-        <HomeAboutProjects />
+        //<HomeAboutGeneral />
+        //<HomeAboutProjects />
         <OurTeam />
         <FAQ />
         <HomeBlogPosts />
