@@ -17,12 +17,12 @@ export function ProjectPreviewCardsSlider() {
     ));
 
     return (
-        <Container size="md" py="xl" mt={33}>
+        <Container size="md" py="xl" mt={33} className={classes.container}>
             
             <TitleWithDescription title="Proiecte"
                                   description="Descoperă câteva din proiectele noastre care au nevoie de ajutorul tău. Asociatia noastră are nevoie de tine pentru a putea ajuta cât mai multe persoane." />
 
-            <SimpleGrid cols={{ base: 1, md: 3 }} spacing="xl" mt={50}>
+            <SimpleGrid cols={{ base: 1, sm: 3, md: 3 }} spacing="xl" mt={50}>
                 {cards}
             </SimpleGrid>
 
