@@ -57,7 +57,10 @@ const articlesData: BlogArticleType[] = [
         article_id: '7',
         category: 'Tech',
         title: 'The best laptop for Frontend engineers in 2022',
-        content: 'The best laptop for Frontend engineers in 2022 is
+        content: 'The best laptop for Frontend engineers in 2022 is',
+        date: '',
+        image_url: 'https://images.adsttc.com/media/images/6184/1718/5850/5474/268f/3212/slideshow/desenho-parque-01d.jpg?1636046637',
+    }
 ];
 
 export function BlogPostsGrid(props: { amount: number; cols: number }) {
