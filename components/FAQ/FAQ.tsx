@@ -31,7 +31,7 @@ const questions = [
 export function FAQ() {
 
     const items = questions.map((item) => (
-        <Accordion.Item className={classes.item} value={item.value}>
+        <Accordion.Item className={classes.item} value={item.value} key={item.value}>
             <Accordion.Control>{item.question}</Accordion.Control>
             <Accordion.Panel>{item.answer}</Accordion.Panel>
         </Accordion.Item>
@@ -52,7 +52,7 @@ export function FAQ() {
                             Întrebări Frecvente
                         </Title>
 
-                        <Accordion chevronPosition="right" defaultValue={questions[0].value} variant="separated">
+                        <Accordion chevronPosition="right" variant="separated" defaultValue={questions[0].value}>
                             {items}
                         </Accordion>
                     </Grid.Col>

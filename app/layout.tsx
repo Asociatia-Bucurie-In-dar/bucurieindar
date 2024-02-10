@@ -3,7 +3,7 @@ import React from 'react';
 import { MantineProvider, ColorSchemeScript } from '@mantine/core';
 import { Header } from '@/components/Header/Header';
 import { Footer } from '@/components/Footer/Footer';
-import WavySeparator from '@/components/WavySeparator/WavySeparator';
+//import WavySeparator from '@/components/WavySeparator/WavySeparator';
 import { theme } from '@/theme';
 
 import FirstTimeConfetti from "@/components/CoolEffects/FirstTimeConfetti";

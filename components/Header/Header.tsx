@@ -114,7 +114,9 @@ export function Header() {
                 zIndex={MyZIndexes.MobileMenu}
             >
                 <Divider my="sm" />
-                {mobileMenuItems}
+                <div onClick={closeDrawer}>
+                    {mobileMenuItems}
+                </div>
                 <Divider my="sm" />
                 <Group justify="left" px="md">
                     <ThemeSwitcher/>
