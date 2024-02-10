@@ -16,7 +16,7 @@ export function BlogPostPreviewCard( props: { article: BlogArticleType }) {
                 />
                 <div className={classes.body}>
                     <Text tt="uppercase" c="dimmed" fw={700} size="xs">
-                        {article}
+                        technology
                     </Text>
                     <Text className={classes.title} mt="xs" mb="md" lineClamp={2}>
                         The best laptop for Frontend engineers in 2022
