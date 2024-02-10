@@ -66,7 +66,7 @@ export function HomeAboutProjects() {
             </Group>
 
             <Title order={2} className={classes.title} ta="center" mt="sm">
-                Implică-te pentru a ajuta vieți
+                Despre proiecte
             </Title>
 
             <Text c="dimmed" className={classes.description} ta="center" mt="md">

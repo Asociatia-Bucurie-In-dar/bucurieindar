@@ -1,5 +1,6 @@
 import { SimpleGrid, Container } from '@mantine/core';
 import {BlogPostPreviewCard} from "@/components/Blog/BlogPostPreviewCard/BlogPostPreviewCard";
+import {BlogArticleType} from "@/utils/my-types";
 
 import classes from './BlogPostsGrid.module.css';
 
@@ -45,11 +46,13 @@ const articlesData = [
 export function BlogPostsGrid(props: { amount: number, cols: number } ) {
     const previews = articlesData
         .slice(0, props.amount > 0 ? props.amount : articlesData.length)
-        .map((article: { /* article type here */ }) => (
+        .map((article: BlogArticleType ) => (
             <BlogPostPreviewCard article={article} />
         ));
 
     return (
-        <SimpleGrid cols={{ base: 1, sm: props.cols }}>{previews}</SimpleGrid>
+        <SimpleGrid cols={{ base: 1, sm: props.cols }}>
+            {previews}
+        </SimpleGrid>
     );
 }
