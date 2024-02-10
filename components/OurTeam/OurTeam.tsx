@@ -1,5 +1,6 @@
 import {Avatar, Container, Divider, Group, SimpleGrid, Text, Title} from '@mantine/core';
 import classes from './OurTeam.module.css';
+import {TitleWithDescription} from "@/components/Common/TitleWithDescription";
 
 const data = [
     {
@@ -58,13 +59,9 @@ export function OurTeam() {
     return (
         <Container mt="xl" mb={55} size="md">
             <Container className={classes.wrapper}>
-                <Title className={classes.title}>Echipa noastră</Title>
-
-                <Container size={560} p={0}>
-                    <Text size="sm" c="dimmed" className={classes.description}>
-                        Fa conostință cu echipa noastră. Suntem oameni pasionați de ceea ce facem și ne dorim să aducem un impact pozitiv în lumea în care trăim.
-                    </Text>
-                </Container>
+                
+                <TitleWithDescription title={"Echipa noastră"} 
+                                      description={"Fa conostință cu echipa noastră. Suntem oameni pasionați de ceea ce facem și ne dorim să aducem un impact pozitiv în lumea în care trăim."}/>
                 
                 <Divider mt="xl" mb="sm" color="transparent" />
                 

@@ -16,7 +16,7 @@ export const metadata = {
 
 export default function RootLayout({ children }: { children: any }) {
   return (
-    <html lang="ro">
+    <html lang={"ro"}>
     <head>
         <ColorSchemeScript/>
         <link rel="shortcut icon" href="/favicon.svg"/>
