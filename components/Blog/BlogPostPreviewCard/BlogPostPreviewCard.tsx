@@ -4,7 +4,7 @@ import Link from "next/link";
 import {MyRoutePaths} from "@/utils/route-paths";
 import {BlogArticleType} from "@/utils/my-types";
 
-export function BlogPostPreviewCard( props: { article: BlogArticleType }) {
+export function BlogPostPreviewCard( ) {
     return (
         <Card withBorder radius="md" p={0} className={classes.card}
             component={Link} href={MyRoutePaths.Blog.link}>
@@ -12,7 +12,7 @@ export function BlogPostPreviewCard( props: { article: BlogArticleType }) {
                 <Image
                     src="https://images.unsplash.com/photo-1602080858428-57174f9431cf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80"
                     height={160}
-                    alt="{ 'blog article cover for' + ' ' + props.article.title }"
+                    alt="{ 'blog article cover for'"
                 />
                 <div className={classes.body}>
                     <Text tt="uppercase" c="dimmed" fw={700} size="xs">

@@ -47,7 +47,7 @@ export function BlogPostsGrid(props: { amount: number, cols: number } ) {
     const previews = articlesData
         .slice(0, props.amount > 0 ? props.amount : articlesData.length)
         .map((article: BlogArticleType ) => (
-            <BlogPostPreviewCard article={article} />
+            <BlogPostPreviewCard  />
         ));
 
     return (
