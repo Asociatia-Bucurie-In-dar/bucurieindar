@@ -4,50 +4,70 @@ import {BlogArticleType} from "@/utils/my-types";
 
 import classes from './BlogPostsGrid.module.css';
 
-const articlesData = [
+const articlesData: BlogArticleType[] = [
     {
-        title: 'Top 10 places to visit in Norway this summer',
-        image:
-            'https://images.unsplash.com/photo-1527004013197-933c4bb611b3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=720&q=80',
-        date: 'August 18, 2022',
+        article_id: 1,
+        category: 'Tech',
+        title: 'The best laptop for Frontend engineers in 2022',
+        content: 'The best laptop for Frontend engineers in 2022 is verrri ver veri veri veri veri nais',
+        date: '',
+        image_url: 'https://images.adsttc.com/media/images/6184/1718/5850/5474/268f/3212/slideshow/desenho-parque-01d.jpg?1636046637',
     },
     {
-        title: 'Best forests to visit in North America',
-        image:
-            'https://images.unsplash.com/photo-1448375240586-882707db888b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=720&q=80',
-        date: 'August 27, 2022',
+        article_id: 2,
+        category: 'Fruits',
+        title: 'The best carrot of the year',
+        content: 'The best carrot for juice in 2022 is verrri ver veri veri veri veri nais',
+        date: '',
+        image_url: 'https://images.adsttc.com/media/images/6184/1718/5850/5474/268f/3212/slideshow/desenho-parque-01d.jpg?1636046637',
     },
     {
-        title: 'Hawaii beaches review: better than you think',
-        image:
-            'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=720&q=80',
-        date: 'September 9, 2022',
+        article_id: 3,
+        category: 'Tech',
+        title: 'The best laptop for Frontend engineers in 2022',
+        content: 'The best laptop for Frontend engineers in 2022 is verrri ver veri veri veri veri nais',
+        date: '',
+        image_url: 'https://images.adsttc.com/media/images/6184/1718/5850/5474/268f/3212/slideshow/desenho-parque-01d.jpg?1636046637',
     },
     {
-        title: 'Mountains at night: 12 best locations to enjoy the view',
-        image:
-            'https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=720&q=80',
-        date: 'September 12, 2022',
+        article_id: 4,
+        category: 'Fruits',
+        title: 'The best carrot of the year',
+        content: 'The best carrot for juice in 2022 is verrri ver veri veri veri veri nais',
+        date: '',
+        image_url: 'https://images.adsttc.com/media/images/6184/1718/5850/5474/268f/3212/slideshow/desenho-parque-01d.jpg?1636046637',
     },
     {
-        title: 'Mountains at night: 12 best locations to enjoy the view',
-        image:
-            'https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=720&q=80',
-        date: 'September 12, 2022',
+        article_id: 5,
+        category: 'Tech',
+        title: 'The best laptop for Frontend engineers in 2022',
+        content: 'The best laptop for Frontend engineers in 2022 is verrri ver veri veri veri veri nais',
+        date: '',
+        image_url: 'https://images.adsttc.com/media/images/6184/1718/5850/5474/268f/3212/slideshow/desenho-parque-01d.jpg?1636046637',
     },
     {
-        title: 'Mountains at night: 12 best locations to enjoy the view',
-        image:
-            'https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=720&q=80',
-        date: 'September 12, 2022',
+        article_id: 6,
+        category: 'Fruits',
+        title: 'The best carrot of the year',
+        content: 'The best carrot for juice in 2022 is verrri ver veri veri veri veri nais',
+        date: '',
+        image_url: 'https://images.adsttc.com/media/images/6184/1718/5850/5474/268f/3212/slideshow/desenho-parque-01d.jpg?1636046637',
     },
+    {
+        article_id: 7,
+        category: 'Tech',
+        title: 'The best laptop for Frontend engineers in 2022',
+        content: 'The best laptop for Frontend engineers in 2022 is verrri ver veri veri veri veri nais',
+        date: '',
+        image_url: 'https://images.adsttc.com/media/images/6184/1718/5850/5474/268f/3212/slideshow/desenho-parque-01d.jpg?1636046637',
+    }
 ];
 
-export function BlogPostsGrid(props: { amount: number, cols: number } ) {
+export function BlogPostsGrid(props: { amount: number; cols: number }) {
     const previews = articlesData
         .slice(0, props.amount > 0 ? props.amount : articlesData.length)
-        .map((article ) => (
-            <BlogPostPreviewCard  />
+        .map((article    ) => (
+            <BlogPostPreviewCard article={article} />
         ));
 
     return (

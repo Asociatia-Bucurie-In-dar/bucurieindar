@@ -13,3 +13,11 @@
 .body {
     padding: var(--mantine-spacing-md);
 }
+
+.image {
+    width: 100%;
+    
+    @media (max-width: 768px) {
+        width: 50%;
+    }
+}

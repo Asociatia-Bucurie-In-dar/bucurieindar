@@ -18,7 +18,7 @@ const data = [
         title: 'Mese lunar',
         stats: '48,000',
         description: 'Mesele oferite lunar de către asociația noastră.',
-    },
+    }
 ];
 
 export function HomeFeeding() {
