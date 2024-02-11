@@ -2,9 +2,10 @@
 
 import { usePathname } from 'next/navigation'
 import Link from 'next/link';
-import {Menu, Group, Center, Burger, Container, Drawer, Text, Title, Divider, rem,} from '@mantine/core';
+import {Menu, Group, Center, Burger, Container, Drawer, Text, Title, Divider, rem, Button,} from '@mantine/core';
 import { ThemeSwitcher } from '@/components/ThemeSwitcher';
 import { useDisclosure, useHeadroom } from '@mantine/hooks';
+import {LanguagePicker} from "@/components/LanguagePicker/LanguagePicker";
 import { IconChevronDown } from '@tabler/icons-react';
 import {ConfettiButton} from "@/components/ConfettiButton/ConfettiButton";
 import { Image } from '@mantine/core';
@@ -87,11 +88,17 @@ export function Header() {
         }}>
             <Container size="md">
                 <div className={classes.inner}>
-                    <Title className={classes.title} size={18}>
-                        <Text inherit variant="gradient" component="span" gradient={{ from: 'pink', to: 'yellow' }}>
-                            <Link href={MyRoutePaths.Home.link}>LOGO</Link>
-                        </Text>
-                    </Title>
+                    
+                    <Group>
+                        <Title className={classes.title} size={18}>
+                            <Text inherit variant="gradient" component="span" gradient={{ from: 'pink', to: 'yellow' }}>
+                                <Link href={MyRoutePaths.Home.link}>LOGO</Link>
+                            </Text>
+                        </Title>
+                        <LanguagePicker />
+                    </Group>
+                    
+                    
                     <Group h="100%" gap={0} visibleFrom="sm">
                         {headerItems}
                     </Group>
