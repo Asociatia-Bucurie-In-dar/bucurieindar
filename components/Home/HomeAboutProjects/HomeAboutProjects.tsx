@@ -10,6 +10,8 @@ import {
 } from '@mantine/core';
 import { IconBowl, IconBackpack, IconMedicalCross } from '@tabler/icons-react';
 import classes from './HomeAboutProjects.module.css';
+import Link from "next/link";
+import {MyRoutePaths} from "@/utils/route-paths";
 
 const mockdata = [
     {
@@ -41,7 +43,8 @@ export function HomeAboutProjects() {
             var(--mantine-color-orange-7) 100%`;
     
     const features = mockdata.map((feature) => (
-        <Card key={feature.title} shadow="md" radius="md" className={classes.card} padding="xl">
+        <Card key={feature.title} shadow="md" radius="md" className={classes.card} padding="xl"
+        component={Link} href={MyRoutePaths.Projects.link}>
             <feature.icon
                 style={{ width: rem(50), height: rem(50) }}
                 stroke={2}

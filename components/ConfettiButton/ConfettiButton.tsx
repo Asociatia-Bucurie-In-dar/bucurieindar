@@ -4,7 +4,6 @@ import {Button} from "@mantine/core";
 import confetti from "canvas-confetti";
 import {MyRoutePaths} from "@/utils/route-paths";
 import {MyZIndexes} from "@/utils/my-constants";
-import ConfettiExplosion from "@/components/CoolEffects/ConfettiExplosion";
 
 
 export function ConfettiButton(props: {text: string, size?: string, mt?: string, }) {
