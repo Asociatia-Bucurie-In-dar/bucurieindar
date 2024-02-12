@@ -1,7 +1,7 @@
 import classes from './TitleWithDescription.module.css';
 import {Container, StyleProp, Text, Title} from "@mantine/core";
 
-export function TitleWithDescription(props: {title: string, description: string }) {
+export function TitleWithDescription(props: {title: string, description?: string }) {
     
     return  <>
             <Title order={2} className={classes.titleBig} ta="center">

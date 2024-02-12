@@ -83,6 +83,8 @@ export function Header() {
             left: 0,
             right: 0,
             zIndex: headerZIndex,
+            transform: `translate3d(0, ${pinned ? 0 : rem(-110)}, 0)`,
+            transition: 'transform 400ms ease',
             backgroundColor: 'var(--mantine-color-body)',
         }}>
             <Container size="md">

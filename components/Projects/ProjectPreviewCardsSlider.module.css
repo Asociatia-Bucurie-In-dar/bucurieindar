@@ -1,9 +1,5 @@
 .container {
     
-    @media (max-width: $mantine-breakpoint-md) {
-        padding-left: var(--mantine-spacing-xl);
-        padding-right: var(--mantine-spacing-xl);
-    }
 }
 
 .title {

@@ -62,7 +62,7 @@ export function Footer() {
                     <Title className={classes.title} size={18} mb="xs">
                         <Text inherit variant="gradient" component="span" gradient={{ from: 'pink', to: 'yellow' }}>
                             <Link href={MyRoutePaths.Home.link}>
-                                {"Asociatia Bucurie în Dar"}
+                                {"Asociația Bucurie în Dar"}
                             </Link>
                         </Text>
                     </Title>

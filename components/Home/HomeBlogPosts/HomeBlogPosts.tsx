@@ -5,6 +5,7 @@ import {Button, Container, Divider, Group} from "@mantine/core";
 import {TitleWithDescription} from "@/components/Common/TitleWithDescription";
 import {MyRoutePaths} from "@/utils/route-paths";
 import Link from "next/link";
+import {ConfettiButton} from "@/components/ConfettiButton/ConfettiButton";
 
 export function HomeBlogPosts() {
     return (
@@ -13,7 +14,6 @@ export function HomeBlogPosts() {
                                   description={"Aici este un sub-titlu opțional pentru secțiunea Blog de pe prima pagina."}/>
             <Divider mb="xl" color="transparent" />
             <BlogPostsGrid amount={4} cols={2}/>
-            <Divider mb="xl" color="transparent" />
         </Container>
     );
 }
