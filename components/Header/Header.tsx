@@ -12,6 +12,7 @@ import { Image } from '@mantine/core';
 import classes from './Header.module.css';
 import {MyRoutePaths} from "@/utils/route-paths";
 import {MyZIndexes} from "@/utils/my-constants";
+import logo from '@/public/logoPng.png';
 
 const home = { link: MyRoutePaths.Home.link, label: MyRoutePaths.Home.label, links: null};
 const projects = { link: MyRoutePaths.Projects.link, label: MyRoutePaths.Projects.label, links: null};
@@ -90,11 +91,7 @@ export function Header() {
                 <div className={classes.inner}>
                     
                     <Group>
-                        <Title className={classes.title} size={18}>
-                            <Text inherit variant="gradient" component="span" gradient={{ from: 'pink', to: 'yellow' }}>
-                                <Link href={MyRoutePaths.Home.link}>LOGO</Link>
-                            </Text>
-                        </Title>
+                        <Image src={logo.src} alt="Logo" width={50} height={50} />
                         <LanguagePicker />
                     </Group>
                     
