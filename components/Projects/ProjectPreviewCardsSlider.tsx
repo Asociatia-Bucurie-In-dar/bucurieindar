@@ -17,7 +17,7 @@ export function ProjectPreviewCardsSlider() {
     ));
 
     return (
-        <Container size="md" py="xl" mt={33} className={classes.container}>
+        <Container size="md" py="xl" mt="2" className={classes.container}>
             
             <TitleWithDescription title="Proiecte"
                                   description="Descoperă câteva din proiectele noastre care au nevoie de ajutorul tău. Asociatia noastră are nevoie de tine pentru a putea ajuta cât mai multe persoane." />

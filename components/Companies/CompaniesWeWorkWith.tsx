@@ -1,5 +1,6 @@
-import {Paper, Text, Title, Button, SimpleGrid, Container, Avatar, Center} from '@mantine/core';
+import {Paper, Text, Title, Button, SimpleGrid, Container, Avatar, Center, Divider} from '@mantine/core';
 import classes from './CompaniesWeWorkWith.module.css';
+import {TitleWithDescription} from "@/components/Common/TitleWithDescription";
 
 interface CardProps {
     image: string;
@@ -44,6 +45,18 @@ const data = [
         title: 'Active volcanos reviews: travel at your own risk',
         category: 'nature',
     },
+    {
+        image:
+            'https://images.unsplash.com/photo-1582721478779-0ae163c05a60?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80',
+        title: 'Active volcanos reviews: travel at your own risk',
+        category: 'nature',
+    },
+    {
+        image:
+            'https://images.unsplash.com/photo-1582721478779-0ae163c05a60?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80',
+        title: 'Active volcanos reviews: travel at your own risk',
+        category: 'nature',
+    },
 ];
 
 function Card({ image, title, category }: CardProps) {
@@ -57,16 +70,23 @@ function Card({ image, title, category }: CardProps) {
 
 export function CompaniesWeWorkWith() {
     const slides = data.map((item) => (
-            <Card {...item} />
+            <Center><Card {...item} /></Center>
     ));
 
     return (
-        <Container mt="xl" size="md">
+        <Container size="full" className={classes.background}>
+        <Container size="md" pt={50} pb={67}>
+            <TitleWithDescription title={"Parteneri"} 
+                                  description={"Mulțumim partenerilor noștri pentru sprijinul acordat în realizarea proiectelor noastre. Fără ajutorul lor, nu am fi putut ajuta atât de multe persoane."}/>
+            
+            <Divider mb="xl" color="transparent"></Divider>
+            
             <Center>
-            <SimpleGrid cols={{ base: 3, sm: 6 }} spacing={100}>
+            <SimpleGrid cols={{ base: 4, sm: 8 }} spacing={75} className={classes.companies} verticalSpacing={35}>
                 {slides}
             </SimpleGrid>
             </Center>
+        </Container>
         </Container>
     );
 }
