@@ -75,7 +75,7 @@ export function CompaniesWeWorkWith() {
 
     return (
         <Container size="full" className={classes.background}>
-        <Container size="md" pt={50} pb={67}>
+        <Container size="md" pt={50} pb={65}>
             <TitleWithDescription title={"Parteneri"} 
                                   description={"Mulțumim partenerilor noștri pentru sprijinul acordat în realizarea proiectelor noastre. Fără ajutorul lor, nu am fi putut ajuta atât de multe persoane."}/>
             
