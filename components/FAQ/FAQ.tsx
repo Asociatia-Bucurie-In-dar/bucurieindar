@@ -50,7 +50,7 @@ export function FAQ() {
                     </Grid.Col>
                     <Grid.Col span={{ base: 12, md: 6 }}>
                         
-                        <TitleWithDescription title={"Întrebări"} description={""} ta="left"/>
+                        <TitleWithDescription title={"Întrebări"} description={""} />
 
                         <Accordion chevronPosition="right" variant="separated" defaultValue={questions[0].value}>
                             {items}
