@@ -1,13 +1,12 @@
-import classes from "@/components/Welcome/Welcome.module.css";
-import {Title} from "@mantine/core";
-import ConfettiExplosion from "@/components/CoolEffects/ConfettiExplosion";
+import { Container, Divider } from "@mantine/core";
+import {TitleWithDescription} from "@/components/Common/TitleWithDescription";
+import commonClasses from "@/utils/commonClasses.module.css";
 
 export default function ProjectsPage() {
     return (
-    <>
-      <Title className={classes.title} ta="center" mt={100}>
-        Projects.
-      </Title>
-    </>
+    <Container className={commonClasses.container}>
+      <TitleWithDescription title="Test" 
+                            description={"Test"}/>
+    </Container>
   );
 }

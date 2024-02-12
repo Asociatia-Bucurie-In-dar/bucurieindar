@@ -3,6 +3,8 @@ import {ProjectPreviewCard} from "@/components/Projects/ProjectPreviewCard";
 import {ConfettiButton} from "@/components/ConfettiButton/ConfettiButton";
 import {TitleWithDescription} from "@/components/Common/TitleWithDescription";
 import classes from './ProjectPreviewCardsSlider.module.css';
+import Link from "next/link";
+import {MyRoutePaths} from "@/utils/route-paths";
 
 export function ProjectPreviewCardsSlider() {
 
@@ -17,11 +19,11 @@ export function ProjectPreviewCardsSlider() {
     ));
 
     return (
-        <Container size="md" py="xl" mt="1" className={classes.container}>
+        <Container size="md" mt={30} className={classes.container}>
             
             <TitleWithDescription title="Proiecte"
                                   description="Descoperă câteva din proiectele noastre care au nevoie de ajutorul tău. Asociatia noastră are nevoie de tine pentru a putea ajuta cât mai multe persoane." />
-
+            
             <SimpleGrid cols={{ base: 1, sm: 3, md: 3 }} spacing="xl" mt={50}>
                 {cards}
             </SimpleGrid>

@@ -2,6 +2,7 @@
 import {Image, Accordion, Grid, Container, Title, Center} from '@mantine/core';
 import image from '@/public/faq.svg';
 import classes from './FAQ.module.css';
+import {TitleWithDescription} from "@/components/Common/TitleWithDescription";
 
 const placeholder =
     'It can’t help but hear a pin drop from over half a mile away, so it lives deep in the mountains where there aren’t many people or Pokémon.';
@@ -48,9 +49,8 @@ export function FAQ() {
                         </Center>
                     </Grid.Col>
                     <Grid.Col span={{ base: 12, md: 6 }}>
-                        <Title order={2} ta="left" className={classes.title}>
-                            Întrebări Frecvente
-                        </Title>
+                        
+                        <TitleWithDescription title={"Întrebări"} description={""} ta="left"/>
 
                         <Accordion chevronPosition="right" variant="separated" defaultValue={questions[0].value}>
                             {items}

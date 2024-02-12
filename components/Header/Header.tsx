@@ -83,15 +83,15 @@ export function Header() {
             left: 0,
             right: 0,
             zIndex: headerZIndex,
-            transform: `translate3d(0, ${pinned ? 0 : rem(-110)}, 0)`,
-            transition: 'transform 400ms ease',
             backgroundColor: 'var(--mantine-color-body)',
         }}>
             <Container size="md">
                 <div className={classes.inner}>
                     
                     <Group>
-                        <Image src={logo.src} alt="Logo" width={50} height={50} />
+                        <Link href={home.link} key={home.label}>
+                            <Image src={logo.src} alt="Logo" width={50} height={50} />
+                        </Link>
                         <LanguagePicker />
                     </Group>
                     

@@ -59,20 +59,22 @@ export function Footer() {
         <footer className={classes.footer}>
             <Container className={classes.inner}>
                 <div className={classes.logo}>
-                    <Title className={classes.title} size={18}>
+                    <Title className={classes.title} size={18} mb="xs">
                         <Text inherit variant="gradient" component="span" gradient={{ from: 'pink', to: 'yellow' }}>
-                            <Link href={MyRoutePaths.Home.link}>LOGO</Link>
+                            <Link href={MyRoutePaths.Home.link}>
+                                {"Asociatia Bucurie în Dar"}
+                            </Link>
                         </Text>
                     </Title>
                     <Text size="xs" c="dimmed" className={classes.description}>
-                        Build fully functional accessible web applications faster than ever
+                        {"Aici o mini-descriere a asociației. Sau un motto. Sau ceva frumos. Bla bla bla."}
                     </Text>
                 </div>
                 <div className={classes.groups}>{groups}</div>
             </Container>
             <Container className={classes.afterFooter}>
                 <Text c="dimmed" size="sm">
-                    © {new Date().getFullYear()} Asociatia Bucurie in Dar. All rights reserved.
+                    © {new Date().getFullYear()} Asociația Bucurie in Dar
                 </Text>
 
                 <Group gap={0} className={classes.social} justify="flex-end" wrap="nowrap">

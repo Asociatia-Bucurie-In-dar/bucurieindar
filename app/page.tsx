@@ -30,8 +30,8 @@ export default function HomePage() {
         //<HomeAboutProjects />
         //<OurTeam />
         //<FAQ />
-        <HomeBlogPosts />
-            <BlogPostPreviewCard />
+        //<HomeBlogPosts />
+            //<BlogPostPreviewCard />
                 <BlogPostFullPage />  
                 */}
     </>

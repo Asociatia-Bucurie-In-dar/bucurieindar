@@ -9,7 +9,7 @@ export function HomeHero() {
                 <div className={classes.inner}>
                     <div className={classes.content}>
                         <Title className={classes.title}>
-                            Din această lume plecăm doar cu
+                            Din această lume plecăm doar cu <br/>
                             <Text
                                 component="span"
                                 inherit
