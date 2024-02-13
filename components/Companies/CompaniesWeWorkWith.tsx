@@ -1,5 +1,6 @@
 import {Paper, Text, Title, Button, SimpleGrid, Container, Avatar, Center, Divider} from '@mantine/core';
 import classes from './CompaniesWeWorkWith.module.css';
+import commonClasses from '@/utils/commonClasses.module.css';
 import {TitleWithDescription} from "@/components/Common/TitleWithDescription";
 import favIcon from "@/public/favicon.svg";
 
@@ -69,7 +70,7 @@ export function CompaniesWeWorkWith() {
     ));
 
     return (
-        <Container size="full">
+        <Container size="full" className={commonClasses.darkerBackground}>
         <Container size="md" pt={50} pb={65}>
             <TitleWithDescription title={"Parteneri"} 
                                   maxWidth={"700px"}

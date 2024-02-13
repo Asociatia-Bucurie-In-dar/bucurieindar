@@ -1,6 +1,5 @@
 import {Avatar, Container, Divider, Group, SimpleGrid, Text, Title} from '@mantine/core';
 import classes from './OurTeam.module.css';
-import commonClasses from '@/utils/commonClasses.module.css';
 import {TitleWithDescription} from "@/components/Common/TitleWithDescription";
 import member from '@/public/team/member.svg';
 
@@ -59,8 +58,7 @@ export function OurTeam() {
     });
     
     return (
-<Container size="full" className={commonClasses.darkerBackground}>
-        <Container pt="xl" pb={55} size="md">
+        <Container mt="xl" mb={55} size="md">
             <Container className={classes.wrapper}>
                 
                 <TitleWithDescription title={"Echipa noastră"} 
@@ -77,6 +75,5 @@ export function OurTeam() {
                 </SimpleGrid>
         </Container>
     </Container>
-</Container>
     );
 }

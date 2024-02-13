@@ -10,6 +10,7 @@ import {
 } from '@mantine/core';
 import { IconBowl, IconBackpack, IconMedicalCross } from '@tabler/icons-react';
 import classes from './HomeAboutProjects.module.css';
+import commonClasses from '@/utils/commonClasses.module.css';
 import Link from "next/link";
 import {MyRoutePaths} from "@/utils/route-paths";
 
@@ -60,7 +61,7 @@ export function HomeAboutProjects() {
     ));
 
     return (
-<Container size="full" py="xl">
+<Container size="full" py="xl" className={commonClasses.darkerBackground}>
         <Container size="md" mt="md">
             <Group justify="center">
                 <Badge variant="gradient" size="lg" gradient={{ from: 'yellow', to: 'orange', deg: -60 }}>

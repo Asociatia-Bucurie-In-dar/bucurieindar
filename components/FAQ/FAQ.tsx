@@ -2,6 +2,7 @@
 import {Image, Accordion, Grid, Container, Title, Center} from '@mantine/core';
 import image from '@/public/faq.svg';
 import classes from './FAQ.module.css';
+import commonClasses from '@/utils/commonClasses.module.css';
 import {TitleWithDescription} from "@/components/Common/TitleWithDescription";
 
 const placeholder =
@@ -39,7 +40,7 @@ export function FAQ() {
     ));
     
     return (
-        <Container size="full">
+        <Container className={commonClasses.darkerBackground} size="full">
             <Container size="md" className={classes.wrapper}>
                 <Grid id="faq-grid" gutter={50}>
                     <Grid.Col span={{ base: 12, md: 6 }}>

@@ -9,7 +9,7 @@ import {MyRoutePaths} from "@/utils/route-paths";
 
 export default function ContactPage() {
   return (
-      <Container size="full" className={commonClasses.darkerBackground}>
+      <Container size="full">
           <Container className={commonClasses.container} size="md">
               
               <ContactPanel />

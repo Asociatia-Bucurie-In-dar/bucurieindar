@@ -1,6 +1,7 @@
 
 import {Container, Divider, Space, Text} from '@mantine/core';
 import classes from './HomeFeeding.module.css';
+import commonClasses from '@/utils/commonClasses.module.css';
 import {TitleWithDescription} from "@/components/Common/TitleWithDescription";
 
 const data = [
@@ -30,7 +31,7 @@ export function HomeFeeding() {
         </div>
     ));
     return <>
-        <Container size="full">
+        <Container size="full" mt="xl" className={commonClasses.darkerBackground}>
         <Container size="md" py="xl">
             
             <TitleWithDescription title={"Masa bucuriei"} 
