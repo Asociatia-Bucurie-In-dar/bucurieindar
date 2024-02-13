@@ -52,7 +52,7 @@ const data = [
     },
 ];
 
-function Card({ image, title, category }: CardProps) {
+function CompanyCard({ image, title, category }: CardProps) {
     return (
         <Avatar size="xl"
             src={image}
@@ -63,14 +63,17 @@ function Card({ image, title, category }: CardProps) {
 
 export function CompaniesWeWorkWith() {
     const slides = data.map((item) => (
-            <Center><Card {...item} /></Center>
+            <Center>
+                <CompanyCard {...item} />
+            </Center>
     ));
 
     return (
         <Container size="full" className={classes.background}>
         <Container size="md" pt={50} pb={65}>
             <TitleWithDescription title={"Parteneri"} 
-                                  description={"Mulțumim partenerilor noștri pentru sprijinul acordat în realizarea proiectelor noastre. Fără ajutorul lor, nu am fi putut ajuta atât de multe persoane."}/>
+                                  maxWidth={"700px"}
+                description={"Mulțumim partenerilor noștri pentru sprijinul acordat în realizarea proiectelor noastre. Fără ajutorul lor, nu am fi putut ajuta atât de multe persoane."}/>
             
             <Divider mb="xl" color="transparent"></Divider>
             

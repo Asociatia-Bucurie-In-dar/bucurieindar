@@ -14,6 +14,7 @@ import classes from './ContactPanel.module.css';
 import commonClasses from '@/utils/commonClasses.module.css';
 import Link from "next/link";
 import {TitleWithDescription} from "@/components/Common/TitleWithDescription";
+import {MyRoutePaths} from "@/utils/route-paths";
 
 const social = 
     [{icon: IconBrandFacebook, link: 'https://www.facebook.com/asociatiabucurieindar/'},
@@ -29,11 +30,19 @@ export function ContactPanel() {
 
     return (
         <Container>
-            <TitleWithDescription title={"Contactați-ne"} description={"Dacă aveți întrebări, sugestii, sau pentru anularea unei plăți recurente nu ezitați să ne contactați."}/>
+            <TitleWithDescription title={"Contactați-ne"}/>
             <Divider color="transparent" mb="xl"/>
         <div className={classes.wrapper}>
             <SimpleGrid cols={{ base: 1, sm: 2 }} spacing={50}>
                 <div>
+                    <Text className={classes.description}>
+                        {"Anularea plăților recurente se poate face şi în secțiunea"}{" "}
+                        <Text inherit variant="gradient" component="span" gradient={{ from: 'yellow', to: 'yellow' }}>
+                            <Link href={MyRoutePaths.Home.link}>
+                                <b>{MyRoutePaths.Dash.label}</b>
+                            </Link>
+                        </Text>
+                    </Text>
                     <Text className={classes.description} mt="sm" mb={30}>
                         <b>
                             {"Vă rugăm să sunați inainte de a veni la sediul nostru. Vă mulțumim!"}
