@@ -1,7 +1,7 @@
 import { SimpleGrid, Container } from '@mantine/core';
 import {BlogPostPreviewCard} from "@/components/Blog/BlogPostPreviewCard/BlogPostPreviewCard";
 import {BlogArticleType} from "@/utils/my-types";
-import blogImage from '@/public/blog/blogPost1.svg';
+import blogImage from '@/public/flowers.jpg';
 
 import classes from './BlogPostsGrid.module.css';
 

@@ -19,6 +19,7 @@
             var(--mantine-font-family);
     color: var(--mantine-color-white);
     line-height: 1;
+    
 }
 
 .description {

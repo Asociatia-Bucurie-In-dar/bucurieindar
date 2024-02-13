@@ -7,7 +7,7 @@ export default function ProjectsPage() {
     
     return (
         <Container size="full">
-        <Container className={commonClasses.container} size="md">
+        <Container className={commonClasses.container} size="lg">
       <TitleWithDescription title={"Proiectele noastre"} />
         <Divider mb="xl" color="transparent" />
 

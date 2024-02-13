@@ -30,11 +30,13 @@ export function ContactPanel() {
 
     return (
         <Container>
-            <TitleWithDescription title={"Contactați-ne"}/>
             <Divider color="transparent" mb="xl"/>
         <div className={classes.wrapper}>
             <SimpleGrid cols={{ base: 1, sm: 2 }} spacing={50}>
                 <div>
+                    <Title mb="sm" className={classes.title}>
+                        Contactați-ne
+                    </Title>
                     <Text className={classes.description}>
                         {"Anularea plăților recurente se poate face şi în secțiunea"}{" "}
                         <Text inherit variant="gradient" component="span" gradient={{ from: 'yellow', to: 'yellow' }}>
