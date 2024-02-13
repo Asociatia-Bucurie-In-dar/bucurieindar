@@ -1,7 +1,7 @@
 import {Paper, Text, Title, Button, SimpleGrid, Container, Avatar, Center, Divider} from '@mantine/core';
 import classes from './CompaniesWeWorkWith.module.css';
 import {TitleWithDescription} from "@/components/Common/TitleWithDescription";
-import favIcon from '@/public/favIcon.svg';
+import favIcon from "/public/favIcon.svg";
 
 interface CardProps {
     image: string;

@@ -6,12 +6,14 @@ import {
     Textarea,
     Button,
     Group,
-    ActionIcon, Divider,
+    ActionIcon, Divider, Container,
 } from '@mantine/core';
 import { IconBrandFacebook, IconBrandWhatsapp } from '@tabler/icons-react';
 import { ContactIcons } from './ContactIcons';
 import classes from './ContactPanel.module.css';
+import commonClasses from '@/utils/commonClasses.module.css';
 import Link from "next/link";
+import {TitleWithDescription} from "@/components/Common/TitleWithDescription";
 
 const social = 
     [{icon: IconBrandFacebook, link: 'https://www.facebook.com/asociatiabucurieindar/'},
@@ -26,13 +28,13 @@ export function ContactPanel() {
     ));
 
     return (
+        <Container>
+            <TitleWithDescription title={"Contactați-ne"} description={"Dacă aveți întrebări, sugestii, sau pentru anularea unei plăți recurente nu ezitați să ne contactați."}/>
+            <Divider color="transparent" mb="xl"/>
         <div className={classes.wrapper}>
             <SimpleGrid cols={{ base: 1, sm: 2 }} spacing={50}>
                 <div>
-                    <Title className={classes.title}> {"Contactați-ne"} </Title>
                     <Text className={classes.description} mt="sm" mb={30}>
-                        {"Dacă aveți întrebări, sugestii, sau pentru anularea unei plăți recurente nu ezitați să ne contactați."}
-                        <br/><br/>
                         <b>
                             {"Vă rugăm să sunați inainte de a veni la sediul nostru. Vă mulțumim!"}
                         </b>
@@ -67,5 +69,6 @@ export function ContactPanel() {
                 </div>
             </SimpleGrid>
         </div>
+        </Container>
     );
 }
