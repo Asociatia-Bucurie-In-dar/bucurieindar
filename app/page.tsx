@@ -7,6 +7,7 @@ import {OurTeam} from '@/components/OurTeam/OurTeam';
 import {FAQ} from '@/components/FAQ/FAQ';
 import {HomeBlogPosts} from '@/components/Home/HomeBlogPosts/HomeBlogPosts';
 import {CompaniesWeWorkWith} from "@/components/Companies/CompaniesWeWorkWith";
+import {Divider} from "@mantine/core";
 
 export default function HomePage() {
   return (
@@ -20,6 +21,7 @@ export default function HomePage() {
         <OurTeam />
         <FAQ />
         <HomeBlogPosts />
+      <Divider color="transparent" mb={100}/>
         {/* ... 
         //<HomeProjects />
             //<ProjectPreviewCard />

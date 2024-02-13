@@ -13,6 +13,7 @@ export default function BlogPage() {
 
             <BlogPostsGrid amount={25} cols={1} />
 
+            <Divider color="transparent" mb={100}/>
         </Container>
     </>
   );

@@ -1,11 +1,6 @@
-import {Group, SimpleGrid, Container, Title, Text} from '@mantine/core';
+import { SimpleGrid, Container } from '@mantine/core';
 import {ProjectPreviewCard} from "@/components/Projects/ProjectPreviewCard";
-import {ConfettiButton} from "@/components/ConfettiButton/ConfettiButton";
-import {TitleWithDescription} from "@/components/Common/TitleWithDescription";
 import classes from './ProjectPreviewCardsSlider.module.css';
-import Link from "next/link";
-import {MyRoutePaths} from "@/utils/route-paths";
-
 export function ProjectPreviewCardsSlider(props: {amount: number}) {
 
     const projectsData = [
