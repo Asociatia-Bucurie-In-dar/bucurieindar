@@ -1,40 +1,41 @@
 import {Avatar, Container, Divider, Group, SimpleGrid, Text, Title} from '@mantine/core';
 import classes from './OurTeam.module.css';
 import {TitleWithDescription} from "@/components/Common/TitleWithDescription";
+import member from '@/public/team/member.svg';
 
 const data = [
     {
-        avatar: 'https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/avatars/avatar-1.png',
+        avatar: member.src,
         name: 'Robert Wolfkisser',
         job: 'Engineer',
     },
     {
         avatar:
-            'https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/avatars/avatar-5.png',
+            member.src,
         name: 'Jill Jailbreaker',
         job: 'Engineer',
     },
     {
         avatar:
-            'https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/avatars/avatar-3.png',
+            member.src,
         name: 'Henry Silkeater',
         job: 'Designer',
     },
     {
         avatar:
-            'https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/avatars/avatar-3.png',
+            member.src,
         name: 'Bill Horsefighter',
         job: 'Designer',
     },
     {
         avatar:
-            'https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/avatars/avatar-2.png',
+            member.src,
         name: 'Jeremy Footviewer',
         job: 'Manager',
     },
     {
         avatar:
-            'https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/avatars/avatar-2.png',
+            member.src,
         name: 'Jeremy Footviewer',
         job: 'Manager',
     },

@@ -1,6 +1,7 @@
 import { SimpleGrid, Container } from '@mantine/core';
 import {BlogPostPreviewCard} from "@/components/Blog/BlogPostPreviewCard/BlogPostPreviewCard";
 import {BlogArticleType} from "@/utils/my-types";
+import blogImage from '@/public/blog/blogPost1.svg';
 
 import classes from './BlogPostsGrid.module.css';
 
@@ -11,7 +12,7 @@ const articlesData: BlogArticleType[] = [
         title: 'The best laptop for Frontend engineers in 2022',
         content: 'The best laptop for Frontend engineers in 2022 is verrri ver veri veri veri veri nais',
         date: '',
-        image_url: 'https://images.adsttc.com/media/images/6184/1718/5850/5474/268f/3212/slideshow/desenho-parque-01d.jpg?1636046637',
+        image_url: blogImage.src,
     },
     {
         article_id: '2',
@@ -19,7 +20,7 @@ const articlesData: BlogArticleType[] = [
         title: 'The best carrot of the year',
         content: 'The best carrot for juice in 2022 is verrri ver veri veri veri veri nais',
         date: '',
-        image_url: 'https://images.adsttc.com/media/images/6184/1718/5850/5474/268f/3212/slideshow/desenho-parque-01d.jpg?1636046637',
+        image_url: blogImage.src,
     },
     {
         article_id: '3',
@@ -27,7 +28,7 @@ const articlesData: BlogArticleType[] = [
         title: 'The best laptop for Frontend engineers in 2022',
         content: 'The best laptop for Frontend engineers in 2022 is verrri ver veri veri veri veri nais',
         date: '',
-        image_url: 'https://images.adsttc.com/media/images/6184/1718/5850/5474/268f/3212/slideshow/desenho-parque-01d.jpg?1636046637',
+        image_url: blogImage.src,
     },
     {
         article_id: '4',
@@ -35,7 +36,7 @@ const articlesData: BlogArticleType[] = [
         title: 'The best carrot of the year',
         content: 'The best carrot for juice in 2022 is verrri ver veri veri veri veri nais',
         date: '',
-        image_url: 'https://images.adsttc.com/media/images/6184/1718/5850/5474/268f/3212/slideshow/desenho-parque-01d.jpg?1636046637',
+        image_url: blogImage.src,
     },
     {
         article_id: '5',
@@ -43,7 +44,7 @@ const articlesData: BlogArticleType[] = [
         title: 'The best laptop for Frontend engineers in 2022',
         content: 'The best laptop for Frontend engineers in 2022 is verrri ver veri veri veri veri nais',
         date: '',
-        image_url: 'https://images.adsttc.com/media/images/6184/1718/5850/5474/268f/3212/slideshow/desenho-parque-01d.jpg?1636046637',
+        image_url: blogImage.src,
     },
     {
         article_id: '6',
@@ -51,7 +52,7 @@ const articlesData: BlogArticleType[] = [
         title: 'The best carrot of the year',
         content: 'The best carrot for juice in 2022 is verrri ver veri veri veri veri nais',
         date: '',
-        image_url: 'https://images.adsttc.com/media/images/6184/1718/5850/5474/268f/3212/slideshow/desenho-parque-01d.jpg?1636046637',
+        image_url: blogImage.src,
     },
     {
         article_id: '7',
@@ -59,7 +60,7 @@ const articlesData: BlogArticleType[] = [
         title: 'The best laptop for Frontend engineers in 2022',
         content: 'The best laptop for Frontend engineers in 2022 is',
         date: '',
-        image_url: 'https://images.adsttc.com/media/images/6184/1718/5850/5474/268f/3212/slideshow/desenho-parque-01d.jpg?1636046637',
+        image_url: blogImage.src,
     }
 ];
 

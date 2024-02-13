@@ -3,7 +3,7 @@
     padding-top: calc(var(--mantine-spacing-xl) * 3.5);
     padding-bottom: calc(var(--mantine-spacing-xl) * 3);
     overflow: hidden;
-    z-index: -2;
+    z-index: 0;
 }
 
 .background {
@@ -12,7 +12,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: -1;
+    z-index: 0;
 }
 
 .overlay {
@@ -22,7 +22,7 @@
     right: 0;
     bottom: 0;
     background: linear-gradient(250deg, rgba(130, 201, 30, 0) 0%, #062343 70%);
-    z-index: -1;
+    z-index: 0;
 }
 
 /* ... rest of your CSS ... */
@@ -33,6 +33,7 @@
 .inner {
     display: flex;
     justify-content: space-between;
+    z-index: 1;
 
     @media (max-width: $mantine-breakpoint-md) {
         flex-direction: column;
@@ -49,6 +50,7 @@
     padding-top: calc(var(--mantine-spacing-md) * 1);
     padding-bottom: calc(var(--mantine-spacing-md) * 1);
     margin-right: calc(var(--mantine-spacing-xl) * 3);
+    z-index: 1;
 
     @media (max-width: $mantine-breakpoint-md) {
         margin-right: 0;
@@ -64,6 +66,7 @@
     line-height: 1.05;
     max-width: rem(500px);
     font-size: rem(48px);
+    z-index: 1;
 
     @media (max-width: $mantine-breakpoint-md) {
         max-width: 100%;

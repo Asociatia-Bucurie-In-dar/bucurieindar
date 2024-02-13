@@ -9,7 +9,7 @@ export default function ProjectsPage() {
     
     return (
     <Container className={commonClasses.container} size="md">
-      <TitleWithDescription title={"Toate proiectele noastre"} />
+      <TitleWithDescription title={"Proiectele noastre"} />
         <Divider mb="xl" color="transparent" />
 
         <ProjectPreviewCardsSlider amount={100}/>
