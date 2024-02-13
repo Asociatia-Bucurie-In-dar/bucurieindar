@@ -2,10 +2,11 @@
 import classes from './HomeAboutGeneral.module.css';
 import {Container, Avatar, Title, Text, Divider, Center} from "@mantine/core";
 import image from '/public/favicon.svg';
+import commonClasses from "@/utils/commonClasses.module.css";
 
 export function HomeAboutGeneral() {
-    return <>
-        <Container size="md" mt={35} mb={45} className={classes.wrapper}>
+    return <Container size="full" className={commonClasses.darkerBackground}>
+        <Container size="md" pt={35} pb={45} className={classes.wrapper}>
                     <div className={classes.body}>
                         <Center>
                         <Title className={classes.titleBig} >
@@ -25,5 +26,5 @@ export function HomeAboutGeneral() {
                             size={250} src={image.src}/>
                 </Center>
         </Container>
-    </>;
+    </Container>;
 }

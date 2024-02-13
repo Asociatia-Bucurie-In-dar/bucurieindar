@@ -30,7 +30,7 @@ export function HomeFeeding() {
         </div>
     ));
     return <>
-        <Container size="full" mt="xl" className={classes.background}>
+        <Container size="full">
         <Container size="md" py="xl">
             
             <TitleWithDescription title={"Masa bucuriei"} 

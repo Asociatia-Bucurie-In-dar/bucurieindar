@@ -60,7 +60,7 @@ export function HomeAboutProjects() {
     ));
 
     return (
-<Container size="full" py="xl" className={classes.background}>
+<Container size="full" py="xl">
         <Container size="md" mt="md">
             <Group justify="center">
                 <Badge variant="gradient" size="lg" gradient={{ from: 'yellow', to: 'orange', deg: -60 }}>

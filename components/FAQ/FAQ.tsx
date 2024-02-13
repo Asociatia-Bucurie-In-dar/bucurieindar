@@ -39,7 +39,7 @@ export function FAQ() {
     ));
     
     return (
-        <Container className={classes.background} size="full">
+        <Container size="full">
             <Container size="md" className={classes.wrapper}>
                 <Grid id="faq-grid" gutter={50}>
                     <Grid.Col span={{ base: 12, md: 6 }}>

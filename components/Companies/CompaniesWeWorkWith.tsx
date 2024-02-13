@@ -69,7 +69,7 @@ export function CompaniesWeWorkWith() {
     ));
 
     return (
-        <Container size="full" className={classes.background}>
+        <Container size="full">
         <Container size="md" pt={50} pb={65}>
             <TitleWithDescription title={"Parteneri"} 
                                   maxWidth={"700px"}
