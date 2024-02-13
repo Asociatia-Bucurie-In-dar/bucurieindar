@@ -6,13 +6,15 @@ import {ProjectPreviewCardsSlider} from "@/components/Projects/ProjectPreviewCar
 export default function ProjectsPage() {
     
     return (
-    <Container className={commonClasses.container} size="md">
+        <Container size="full" className={commonClasses.darkerBackground}>
+        <Container className={commonClasses.container} size="md">
       <TitleWithDescription title={"Proiectele noastre"} />
         <Divider mb="xl" color="transparent" />
 
         <ProjectPreviewCardsSlider amount={100}/>
 
-        <Divider color="transparent" mb={100}/>
-    </Container>
+        <Divider color="transparent" pb={100}/>
+        </Container>
+        </Container>
   );
 }

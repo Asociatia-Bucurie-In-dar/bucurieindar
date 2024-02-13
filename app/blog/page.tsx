@@ -6,15 +6,15 @@ import {BlogPostsGrid} from "@/components/Blog/BlogPostsGrid/BlogPostsGrid";
 
 export default function BlogPage() {
   return (
-    <>
-        <Container className={commonClasses.container} size="md">
+      <Container size="full" className={commonClasses.darkerBackground}>
+      <Container className={commonClasses.container} size="md">
             <TitleWithDescription title={"Articolele noastre"} />
             <Divider mb="xl" color="transparent" />
 
             <BlogPostsGrid amount={25} cols={1} />
 
-            <Divider color="transparent" mb={100}/>
+            <Divider color="transparent" pb={100}/>
         </Container>
-    </>
+    </Container>
   );
 }
