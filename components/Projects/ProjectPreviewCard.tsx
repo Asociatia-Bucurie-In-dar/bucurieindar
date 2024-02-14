@@ -1,4 +1,4 @@
-import {Card, Image, Text, Progress, CardSection} from '@mantine/core';
+import {Card, Image, Text, Progress, CardSection, Button, Container} from '@mantine/core';
 
 import {ConfettiButton} from "@/components/ConfettiButton/ConfettiButton";
 
@@ -6,6 +6,7 @@ import classes from './ProjectPreviewCard.module.css';
 import Link from "next/link";
 import {ProjectType} from "@/utils/my-types";
 import {MyRoutePaths} from "@/utils/route-paths";
+import {DonatePopupButton} from "@/components/Popups/DonatePopup/DonatePopupButton";
 
 const imagesFolder = '/projects/';
 
@@ -42,6 +43,7 @@ export function ProjectPreviewCard(props: ProjectType ) {
                     <Text fz="xs" tt="uppercase" fw={700} c="dimmed" mt="sm">
                         Suma Necesară
                     </Text>
+                    
                     {/*SEPARATE*/}
                     <Text fz="lg" fw={500}>
                         ${props.currentAmount} / ${props.goalAmount}
@@ -52,8 +54,8 @@ export function ProjectPreviewCard(props: ProjectType ) {
                                   section: classes.progressSection,
                               }}/>
                     {/*SEPARATE*/}
-                    
-                    <ConfettiButton text={"Donează"} size="sm" mt="md"/>
+
+                    <DonatePopupButton projectId={props.id} projectTile={props.title}/>
                 </Card>
             </Card>
     );
