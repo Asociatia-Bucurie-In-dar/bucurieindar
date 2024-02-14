@@ -18,7 +18,8 @@ export default function AboutPage() {
     }
     
   return (
-    <>
+      <>
+    <Container>
       <Container className={commonClasses.container} size="md">
         <TitleWithDescription title={"Despre noi"} />
           <Divider mb="xl" color="transparent" />
@@ -74,14 +75,15 @@ export default function AboutPage() {
                   </Stack>
               </Center>
           </SimpleGrid>
+      </Container>
+    </Container>
 
           <Divider color="transparent" pb="xl"/>
-          
+
           <OurTeam />
 
           <Divider color="transparent" mb="xl"/>
           
-      </Container>
-    </>
+      </>
   );
 }

@@ -7,7 +7,7 @@ import {ConfettiButton} from "@/components/ConfettiButton/ConfettiButton";
 
 export function HomeProjects() {
     return (
-        <>
+        <Container>
             
             <Divider mt="xl" color="transparent" />
             
@@ -22,6 +22,6 @@ export function HomeProjects() {
                 <ConfettiButton text={"Vezi toate proiectele"} size="md"/>
             </Group>
             
-        </>
+        </Container>
     );
 }

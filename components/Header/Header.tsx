@@ -94,6 +94,7 @@ export function Header() {
                         <Link href={home.link} key={home.label}>
                             <Image src={logo.src} alt="Logo" width={50} height={50} />
                         </Link>
+                        <Divider orientation="vertical" color="transparent"/>
                         <LanguagePicker />
                     </Group>
                     
