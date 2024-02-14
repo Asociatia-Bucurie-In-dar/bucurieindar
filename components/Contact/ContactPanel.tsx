@@ -29,7 +29,7 @@ export function ContactPanel() {
     ));
 
     return (
-        <Container>
+        <div>
             <Divider color="transparent" mb="xl"/>
         <div className={classes.wrapper}>
             <SimpleGrid cols={{ base: 1, sm: 2 }} spacing={50}>
@@ -80,6 +80,6 @@ export function ContactPanel() {
                 </div>
             </SimpleGrid>
         </div>
-        </Container>
+        </div>
     );
 }

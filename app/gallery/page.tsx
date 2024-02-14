@@ -7,7 +7,7 @@ import {Gallery} from "@/components/Gallery/Gallery";
 export default function GalleryPage() {
   return (
     <>
-        <Container className={commonClasses.container} size="md">
+        <Container className={commonClasses.container} size="lg">
           <TitleWithDescription title={"Munca noastră"} />
           <Divider mb="xl" color="transparent" />
             

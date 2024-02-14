@@ -78,8 +78,8 @@ export default function AboutPage() {
       </Container>
     </Container>
           
-<Container size="full" className={commonClasses.darkerBackground}>
-          <Divider color="transparent" mt={50}/>
+<Container size="full">
+          <Divider mt={50} my="sm" />
 
           <OurTeam />
 
