@@ -1,66 +1,70 @@
 import { SimpleGrid, Container } from '@mantine/core';
 import {BlogPostPreviewCard} from "@/components/Blog/BlogPostPreviewCard/BlogPostPreviewCard";
 import {BlogArticleType} from "@/utils/my-types";
-import blogImage from '@/public/flowers.jpg';
-
-import classes from './BlogPostsGrid.module.css';
 
 const articlesData: BlogArticleType[] = [
     {
-        article_id: '1',
+        id: '1',
+        slug: 'blog-post-1',
         category: 'Tech',
         title: 'The best laptop for Frontend engineers in 2022',
         content: 'The best laptop for Frontend engineers in 2022 is verrri ver veri veri veri veri nais',
         date: '',
-        image_url: blogImage.src,
+        image_name: 'flowers.jpg',
     },
     {
-        article_id: '2',
+        id: '2',
+        slug: 'blog-post-2',
         category: 'Fruits',
         title: 'The best carrot of the year',
         content: 'The best carrot for juice in 2022 is verrri ver veri veri veri veri nais',
         date: '',
-        image_url: blogImage.src,
+        image_name: 'flowers.jpg',
     },
     {
-        article_id: '3',
+        id: '3',
+        slug: 'blog-post-3',
         category: 'Tech',
         title: 'The best laptop for Frontend engineers in 2022',
         content: 'The best laptop for Frontend engineers in 2022 is verrri ver veri veri veri veri nais',
         date: '',
-        image_url: blogImage.src,
+        image_name: 'flowers.jpg',
     },
     {
-        article_id: '4',
+        id: '4',
+        slug: 'blog-post-4',
         category: 'Fruits',
         title: 'The best carrot of the year',
         content: 'The best carrot for juice in 2022 is verrri ver veri veri veri veri nais',
         date: '',
-        image_url: blogImage.src,
+        image_name: 'flowers.jpg',
     },
     {
-        article_id: '5',
+        id: '5',
+        slug: 'blog-post-5',
         category: 'Tech',
         title: 'The best laptop for Frontend engineers in 2022',
         content: 'The best laptop for Frontend engineers in 2022 is verrri ver veri veri veri veri nais',
         date: '',
-        image_url: blogImage.src,
+        image_name: 'flowers.jpg',
     },
     {
-        article_id: '6',
+        id: '6',
+        slug: 'blog-post-6',
         category: 'Fruits',
         title: 'The best carrot of the year',
         content: 'The best carrot for juice in 2022 is verrri ver veri veri veri veri nais',
         date: '',
-        image_url: blogImage.src,
+        image_name: 'flowers.jpg',
     },
     {
-        article_id: '7',
+        id: '7',
+        slug: 'blog-post-7',
         category: 'Tech',
         title: 'The best laptop for Frontend engineers in 2022',
         content: 'The best laptop for Frontend engineers in 2022 is',
         date: '',
-        image_url: blogImage.src,
+        image_name: 'flowers.jpg',
     }
 ];
 

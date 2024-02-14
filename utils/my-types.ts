@@ -1,23 +1,27 @@
 export type BlogArticleType = {
-    article_id: string; //Primary Key
+    id: string; //Primary Key
+    slug: string;
+    
     title: string;
-    image_url: string;
+    image_name: string;
     date: string;
     content: string;
     category: string;
 };
 
 export type ProjectType = {
-    project_id: string; //Primary Key
+    id: string; //Primary Key
+    slug: string;
+    
     title: string;
-    image_url: string;
+    image_name: string;
     content: string;
     currentAmount: number;
     goalAmount: number;
 };
 
 export type Donation = {
-    donation_id: string; //Primary Key
+    id: string; //Primary Key
     project_id: string; //Foreign Key
     donor_id: string; //Foreign Key
     stripe_payment_id: string;
@@ -35,7 +39,7 @@ export type Donation = {
 };
 
 export type Donor = {
-    donor_id: string; //Primary Key
+    id: string; //Primary Key
     first_name: string;
     last_name: string;
     email: string;

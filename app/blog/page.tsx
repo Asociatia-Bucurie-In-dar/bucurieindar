@@ -1,5 +1,4 @@
-import classes from "@/components/Welcome/Welcome.module.css";
-import {Container, Divider, Title} from "@mantine/core";
+import {Container, Divider} from "@mantine/core";
 import commonClasses from "@/utils/commonClasses.module.css";
 import {TitleWithDescription} from "@/components/Common/TitleWithDescription";
 import {BlogPostsGrid} from "@/components/Blog/BlogPostsGrid/BlogPostsGrid";

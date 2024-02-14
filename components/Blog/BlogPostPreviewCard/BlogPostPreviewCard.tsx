@@ -4,13 +4,15 @@ import Link from "next/link";
 import {MyRoutePaths} from "@/utils/route-paths";
 import {BlogArticleType} from "@/utils/my-types";
 
+const imageFolder = '/blogImages/';
+
 export function BlogPostPreviewCard(props: { article: BlogArticleType }) {
     return (
         <Card withBorder radius="md" p={0} className={classes.card}
-            component={Link} href={MyRoutePaths.Blog.link}>
+            component={Link} href={MyRoutePaths.Blog.link + '/' + props.article.slug}>
             <Group wrap="nowrap" gap={0}>
                 <Image
-                    src={props.article.image_url}
+                    src={imageFolder + props.article.image_name}
                     alt="{ 'blog article cover for' + ' ' + props.article.title }"
                     className={classes.image}
                     height={160}
