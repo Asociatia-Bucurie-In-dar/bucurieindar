@@ -4,7 +4,7 @@ import Link from "next/link";
 import {MyRoutePaths} from "@/utils/route-paths";
 import {BlogArticleType} from "@/utils/my-types";
 
-const imageFolder = '/blogImages/';
+const imageFolder = '/blog/';
 
 export function BlogPostPreviewCard(props: { article: BlogArticleType }) {
     return (

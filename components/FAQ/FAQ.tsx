@@ -1,5 +1,15 @@
-"use client";
-import {Image, Accordion, Grid, Container, Title, Center} from '@mantine/core';
+
+import {
+    Image,
+    Accordion,
+    AccordionItem,
+    Grid,
+    Container,
+    GridCol,
+    Center,
+    AccordionControl,
+    AccordionPanel
+} from '@mantine/core';
 import image from '@/public/faq.svg';
 import classes from './FAQ.module.css';
 import commonClasses from '@/utils/commonClasses.module.css';
@@ -33,30 +43,30 @@ const questions = [
 export function FAQ() {
 
     const items = questions.map((item) => (
-        <Accordion.Item className={classes.item} value={item.value} key={item.value}>
-            <Accordion.Control className={classes.question}>{item.question}</Accordion.Control>
-            <Accordion.Panel>{item.answer}</Accordion.Panel>
-        </Accordion.Item>
+        <AccordionItem className={classes.item} value={item.value} key={item.value}>
+            <AccordionControl className={classes.question}>{item.question}</AccordionControl>
+            <AccordionPanel>{item.answer}</AccordionPanel>
+        </AccordionItem>
     ));
     
     return (
         <Container className={commonClasses.darkerBackground} size="full">
             <Container size="md" className={classes.wrapper}>
                 <Grid id="faq-grid" gutter={50}>
-                    <Grid.Col span={{ base: 12, md: 6 }}>
+                    <GridCol span={{ base: 12, md: 6 }}>
                         <Center>
                         <Image src={image.src} alt="Frequently Asked Questions" 
                             loading="lazy" placeholder="blur"/>
                         </Center>
-                    </Grid.Col>
-                    <Grid.Col span={{ base: 12, md: 6 }}>
+                    </GridCol>
+                    <GridCol span={{ base: 12, md: 6 }}>
                         
                         <TitleWithDescription title={"Răspunsuri"} description={""} />
 
                         <Accordion chevronPosition="right" variant="separated" defaultValue={questions[0].value}>
                             {items}
                         </Accordion>
-                    </Grid.Col>
+                    </GridCol>
                 </Grid>
             </Container>
         </Container>

@@ -1,5 +1,4 @@
-"use client";
-import { Card, Image, Text,  Progress } from '@mantine/core';
+import {Card, Image, Text, Progress, CardSection} from '@mantine/core';
 
 import {ConfettiButton} from "@/components/ConfettiButton/ConfettiButton";
 
@@ -18,14 +17,14 @@ export function ProjectPreviewCard(props: ProjectType ) {
     
     return (
             <Card withBorder radius="md" className={classes.card}>
-                <Card.Section>
+                <CardSection>
                     <Link {...linkProps}>
                         <Image src={imagesFolder + props.image_name} 
                                height={180}
                                loading={"lazy"}
                             placeholder="blur"/>
                     </Link>
-                </Card.Section>
+                </CardSection>
 
                 {/*<Badge className={classes.rating} variant="gradient" gradient={{ from: 'yellow', to: 'red' }}>*/}
                 {/*    outstanding*/}
@@ -43,6 +42,7 @@ export function ProjectPreviewCard(props: ProjectType ) {
                     <Text fz="xs" tt="uppercase" fw={700} c="dimmed" mt="sm">
                         Suma Necesară
                     </Text>
+                    {/*SEPARATE*/}
                     <Text fz="lg" fw={500}>
                         ${props.currentAmount} / ${props.goalAmount}
                     </Text>
@@ -51,6 +51,7 @@ export function ProjectPreviewCard(props: ProjectType ) {
                                   root: classes.progressTrack,
                                   section: classes.progressSection,
                               }}/>
+                    {/*SEPARATE*/}
                     
                     <ConfettiButton text={"Donează"} size="sm" mt="md"/>
                 </Card>
