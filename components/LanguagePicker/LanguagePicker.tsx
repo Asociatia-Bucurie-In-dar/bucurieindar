@@ -11,7 +11,7 @@ export function LanguagePicker() {
     const menuItems = MyLanguages.map((item: any) => (
         <Menu.Item key={item.label}>
             <div style={{borderRadius: '3px', overflow: 'hidden'}}>
-                <Image src={item.image} width={18} height={18} alt={item.label}/>
+                <Image src={item.image} width={20} height={20} alt={item.label}/>
             </div>
         </Menu.Item>
 ));
