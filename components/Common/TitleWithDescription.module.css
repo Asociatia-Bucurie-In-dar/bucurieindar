@@ -6,3 +6,9 @@
         font-size: rem(24px);
     }
 }
+
+.descriptionBig
+{
+    max-width: rem(600px);
+    margin: auto;
+}
