@@ -17,7 +17,7 @@
 }
 
 .titleBigLight {
-    font-size: rem(34px);
+    font-size: rem(32px);
 
     @media (max-width: $mantine-breakpoint-sm) {
         font-size: rem(24px);

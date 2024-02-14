@@ -77,13 +77,14 @@ export default function AboutPage() {
           </SimpleGrid>
       </Container>
     </Container>
-
-          <Divider color="transparent" pb="xl"/>
+          
+<Container size="full" className={commonClasses.darkerBackground}>
+          <Divider color="transparent" mt={50}/>
 
           <OurTeam />
 
-          <Divider color="transparent" mb="xl"/>
-          
+          <Divider color="transparent" pb="xl"/>
+</Container>
       </>
   );
 }
