@@ -14,7 +14,7 @@ export type ProjectType = {
     slug: string;
     
     title: string;
-    image_name: string;
+    image_path: string;
     content: string;
     currentAmount: number;
     goalAmount: number;

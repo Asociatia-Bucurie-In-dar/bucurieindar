@@ -8,8 +8,6 @@ import {ProjectType} from "@/utils/my-types";
 import {MyRoutePaths} from "@/utils/route-paths";
 import {DonatePopupButton} from "@/components/Popups/DonatePopup/DonatePopupButton";
 
-const imagesFolder = '/projects/';
-
 export function ProjectPreviewCard(props: ProjectType ) {
     
     const linkProps = {
@@ -20,7 +18,7 @@ export function ProjectPreviewCard(props: ProjectType ) {
             <Card withBorder radius="md" className={classes.card}>
                 <CardSection>
                     <Link {...linkProps}>
-                        <Image src={imagesFolder + props.image_name} 
+                        <Image src={props.image_path} 
                                height={180}
                                loading={"lazy"}
                             placeholder="blur"/>

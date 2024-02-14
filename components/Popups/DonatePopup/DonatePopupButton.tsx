@@ -44,13 +44,12 @@ export function DonatePopupButton(props: {projectId: string, projectTile: string
             </Text></Center>
             <Divider mt="sm" mb="sm"/>
 
-            <TextInput
-                type="number"
-                placeholder="100 EUR"
-                label={"Suma dorită"}
-                rightSection={select}
-                rightSectionWidth={115} 
-                size="lg"/>
+            <TextInput type="number" 
+                       placeholder="100 EUR" 
+                       label={"Suma dorită"} 
+                       rightSection={select} 
+                       rightSectionWidth={115} 
+                       size="lg"/>
 
                 <Divider mb="lg"/>
                 
