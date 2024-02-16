@@ -38,11 +38,11 @@ export function ProjectPreviewCard(props: ProjectType ) {
                     {props.content}
                 </Text>
 
-                <Card padding={0} mt="sm">
+                <Card padding={0} mt="sm" key={props.id}>
                     
-                    <ProjectDonationProgress id={props.id}/>
+                    <ProjectDonationProgress id={props.id}/> 
 
-                    <DonatePopupButton projectId={props.id} projectTile={props.title}/>
+                    <DonatePopupButton projectId={props.id} projectTile={props.title} stripeLink={props.stripeLink}/>
                 </Card>
             </Card>
     );

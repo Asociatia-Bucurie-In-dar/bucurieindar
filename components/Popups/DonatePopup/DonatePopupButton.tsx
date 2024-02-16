@@ -6,6 +6,7 @@ import {MyRoutePaths} from "@/utils/route-paths";
 import {Button, Center, Divider, Modal, NativeSelect, Text, TextInput, rem} from "@mantine/core";
 import {MyZIndexes} from "@/utils/my-constants";
 import {Form} from "@storybook/components";
+import Link from "next/link";
 
 const data = [
     { value: 'eur', label: '🇪🇺 EUR' },
@@ -15,57 +16,56 @@ const data = [
     // { value: 'aud', label: '🇦🇺 AUD' },
 ];
 
-export function DonatePopupButton(props: {projectId: string, projectTile: string, fullWidth?: boolean}) {
-    const [opened, { open, close }] = useDisclosure(false);
+export function DonatePopupButton(props: {projectId: string, projectTile: string, stripeLink: string, fullWidth?: boolean}) {
+   // const [opened, { open, close }] = useDisclosure(false);
 
-    const select = (
-        <NativeSelect
-            data={data}
-            rightSectionWidth={28}
-            styles={{
-                input: {
-                    fontWeight: 500,
-                    borderTopLeftRadius: 0,
-                    borderBottomLeftRadius: 0,
-                    width: rem(115),
-                    marginRight: rem(-2),
-                },
-            }}
-        />
-    );
+    // const select = (
+    //     <NativeSelect
+    //         data={data}
+    //         rightSectionWidth={28}
+    //         styles={{
+    //             input: {
+    //                 fontWeight: 500,
+    //                 borderTopLeftRadius: 0,
+    //                 borderBottomLeftRadius: 0,
+    //                 width: rem(115),
+    //                 marginRight: rem(-2),
+    //             },
+    //         }}
+    //     />
+    // );
     
     return <>
-        <Modal opened={opened} onClose={close} withCloseButton={false} zIndex={MyZIndexes.DonateModal} 
-        size="auto">
-            <Form>
-            <Center><Text size="lg">
-                {"Donează pentru"} <b>{props.projectTile}</b>
-            </Text></Center>
-            <Divider mt="sm" mb="sm"/>
-
-            <TextInput type="number" 
-                       placeholder="10 EUR" 
-                       label={"Suma dorită"} 
-                       rightSection={select} 
-                       rightSectionWidth={115} 
-                       size="lg"/>
-
-                <Divider mb="lg"/>
-                
-                <Center>
-                <Button type="submit" variant="gradient" gradient={{ from: 'green', to: 'lime', deg: 60 }} size="lg">
-                    {"Continuă"}
-                </Button>
-                </Center>
-            </Form>
-        </Modal>
+        {/*<Modal opened={opened} onClose={close} withCloseButton={false} zIndex={MyZIndexes.DonateModal} */}
+        {/*size="auto">*/}
+        {/*    <Form>*/}
+        {/*    <Center><Text size="lg">*/}
+        {/*        {"Donează pentru"} <b>{props.projectTile}</b>*/}
+        {/*    </Text></Center>*/}
+        {/*    <Divider mt="sm" mb="sm"/>*/}
+        
+        {/*    <TextInput type="number" */}
+        {/*               placeholder="10 EUR" */}
+        {/*               label={"Suma dorită"} */}
+        {/*               rightSection={select} */}
+        {/*               rightSectionWidth={115} */}
+        {/*               size="lg"/>*/}
+        
+        {/*        <Divider mb="lg"/>*/}
+        {/*        */}
+        {/*        <Center>*/}
+        {/*        <Button type="submit" variant="gradient" gradient={{ from: 'green', to: 'lime', deg: 60 }} size="lg">*/}
+        {/*            {"Continuă"}*/}
+        {/*        </Button>*/}
+        {/*        </Center>*/}
+        {/*    </Form>*/}
+        {/*</Modal>*/}
         
         <Button style={{width: props.fullWidth ? 'auto' : 'max-content', minWidth: rem(100)}}
                 variant="gradient"
                 gradient={{ from: 'pink', to: 'yellow', deg: 90 }}
-                name={MyRoutePaths.Projects.label}
                 size="sm"
-                mt="md" onClick={open}>
+                mt="md" component={Link} href={props.stripeLink}>
             {"Donează"}
         </Button>
         </>;

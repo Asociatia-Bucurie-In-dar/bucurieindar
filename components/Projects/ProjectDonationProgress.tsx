@@ -11,7 +11,7 @@ export function ProjectDonationProgress(props :{id: string} ) {
             Suma Necesară
         </Text>
         <Text fz="lg" fw={500}>
-            ${currentAmount} / ${goalAmount}
+            {currentAmount} RON / {goalAmount} RON
         </Text>
         <Progress animated value={(currentAmount/goalAmount) * 100} mt="sm" size="lg" radius="xl"
                   classNames={{
