@@ -1,0 +1,24 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Donation {
+  id         Int      @id @default(autoincrement())
+  email      String
+  amount     Float
+  paymentId  String   @unique
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+  // Additional fields can include:
+  currency   String   // To store the currency of the donation
+  status     String   // To record the payment status (e.g., "succeeded", "pending")
+  // Consider any other data you might receive from Stripe and find useful
+}
