@@ -20,7 +20,7 @@ export function LanguagePicker() {
 
 return (
     <>
-        <Menu trigger="hover" transitionProps={{ exitDuration: 0 }}
+        <Menu trigger="click-hover"  transitionProps={{ exitDuration: 0 }}
               closeDelay={200} withinPortal zIndex={MyZIndexes.HeaderDropdown}>
             <Menu.Target>
                 <Link href="#">

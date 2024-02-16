@@ -4,7 +4,6 @@ import commonClasses from "@/utils/commonClasses.module.css";
 import { useDisclosure } from '@mantine/hooks';
 import {MyRoutePaths} from "@/utils/route-paths";
 import {Button, Center, Divider, Modal, NativeSelect, Text, TextInput, rem} from "@mantine/core";
-import {ProjectType} from "@/utils/my-types";
 import {MyZIndexes} from "@/utils/my-constants";
 import {Form} from "@storybook/components";
 
@@ -16,7 +15,7 @@ const data = [
     // { value: 'aud', label: '🇦🇺 AUD' },
 ];
 
-export function DonatePopupButton(props: {projectId: string, projectTile: string }) {
+export function DonatePopupButton(props: {projectId: string, projectTile: string, fullWidth?: boolean}) {
     const [opened, { open, close }] = useDisclosure(false);
 
     const select = (
@@ -36,7 +35,7 @@ export function DonatePopupButton(props: {projectId: string, projectTile: string
     );
     
     return <>
-        <Modal opened={opened} onClose={close} centered withCloseButton={false} zIndex={MyZIndexes.DonateModal} 
+        <Modal opened={opened} onClose={close} withCloseButton={false} zIndex={MyZIndexes.DonateModal} 
         size="auto">
             <Form>
             <Center><Text size="lg">
@@ -45,7 +44,7 @@ export function DonatePopupButton(props: {projectId: string, projectTile: string
             <Divider mt="sm" mb="sm"/>
 
             <TextInput type="number" 
-                       placeholder="100 EUR" 
+                       placeholder="10 EUR" 
                        label={"Suma dorită"} 
                        rightSection={select} 
                        rightSectionWidth={115} 
@@ -61,7 +60,7 @@ export function DonatePopupButton(props: {projectId: string, projectTile: string
             </Form>
         </Modal>
         
-        <Button className={classes.donateButton}
+        <Button style={{width: props.fullWidth ? 'auto' : 'max-content', minWidth: rem(100)}}
                 variant="gradient"
                 gradient={{ from: 'pink', to: 'yellow', deg: 90 }}
                 name={MyRoutePaths.Projects.label}

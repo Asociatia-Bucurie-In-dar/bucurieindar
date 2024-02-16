@@ -7,6 +7,7 @@ import Link from "next/link";
 import {ProjectType} from "@/utils/my-types";
 import {MyRoutePaths} from "@/utils/route-paths";
 import {DonatePopupButton} from "@/components/Popups/DonatePopup/DonatePopupButton";
+import {ProjectDonationProgress} from "@/components/Projects/ProjectDonationProgress";
 
 export function ProjectPreviewCard(props: ProjectType ) {
     
@@ -38,20 +39,8 @@ export function ProjectPreviewCard(props: ProjectType ) {
                 </Text>
 
                 <Card padding={0} mt="sm">
-                    <Text fz="xs" tt="uppercase" fw={700} c="dimmed" mt="sm">
-                        Suma Necesară
-                    </Text>
                     
-                    {/*SEPARATE*/}
-                    <Text fz="lg" fw={500}>
-                        ${props.currentAmount} / ${props.goalAmount}
-                    </Text>
-                    <Progress animated value={(props.currentAmount/props.goalAmount) * 100} mt="sm" size="lg" radius="xl"
-                              classNames={{
-                                  root: classes.progressTrack,
-                                  section: classes.progressSection,
-                              }}/>
-                    {/*SEPARATE*/}
+                    <ProjectDonationProgress id={props.id}/>
 
                     <DonatePopupButton projectId={props.id} projectTile={props.title}/>
                 </Card>
