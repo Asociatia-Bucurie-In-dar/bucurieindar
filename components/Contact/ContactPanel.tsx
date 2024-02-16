@@ -1,3 +1,5 @@
+"use client";
+
 import {
     Text,
     Title,
@@ -6,7 +8,7 @@ import {
     Textarea,
     Button,
     Group,
-    ActionIcon, Divider, Container,
+    ActionIcon, Divider, Container, Center,
 } from '@mantine/core';
 import { IconBrandFacebook, IconBrandWhatsapp } from '@tabler/icons-react';
 import { ContactIcons } from './ContactIcons';
@@ -15,6 +17,7 @@ import commonClasses from '@/utils/commonClasses.module.css';
 import Link from "next/link";
 import {TitleWithDescription} from "@/components/Common/TitleWithDescription";
 import {MyRoutePaths} from "@/utils/route-paths";
+import {useState} from "react";
 
 const social = 
     [{icon: IconBrandFacebook, link: 'https://www.facebook.com/asociatiabucurieindar/'},
@@ -27,6 +30,30 @@ export function ContactPanel() {
             <props.icon size="1.4rem" stroke={1.5} />
         </ActionIcon>
     ));
+    
+    //SUBMISSION STUFF
+
+    const [email, setEmail] = useState('');
+    const [name, setName] = useState('');
+    const [message, setMessage] = useState('');
+
+    const handleSubmit = async (e: any) => {
+        e.preventDefault();
+
+        // POST form data to API route
+        const response = await fetch('/api/send', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ email, name, message }),
+        });
+
+        const data = await response.json();
+        console.log(data); // Process response data, e.g., show a success message
+    };
+
+    //END SUBMISSION STUFF
 
     return (
         <div>
@@ -37,14 +64,14 @@ export function ContactPanel() {
                     <Title mb="sm" className={classes.title}>
                         Contactați-ne
                     </Title>
-                    <Text className={classes.description}>
-                        {"Anularea plăților recurente se poate face şi în secțiunea"}{" "}
-                        <Text inherit variant="gradient" component="span" gradient={{ from: 'yellow', to: 'yellow' }}>
-                            <Link href={MyRoutePaths.Home.link}>
-                                <b>{MyRoutePaths.Dash.label}</b>
-                            </Link>
-                        </Text>
-                    </Text>
+                    {/*<Text className={classes.description}>*/}
+                    {/*    {"Anularea plăților recurente se poate face şi în secțiunea"}{" "}*/}
+                    {/*    <Text inherit variant="gradient" component="span" gradient={{ from: 'yellow', to: 'yellow' }}>*/}
+                    {/*        <Link href={MyRoutePaths.Home.link}>*/}
+                    {/*            <b>{MyRoutePaths.Dash.label}</b>*/}
+                    {/*        </Link>*/}
+                    {/*    </Text>*/}
+                    {/*</Text>*/}
                     <Text className={classes.description} mt="sm" mb={30}>
                         <b>
                             {"Vă rugăm să sunați inainte de a veni la sediul nostru. Vă mulțumim!"}
@@ -55,18 +82,29 @@ export function ContactPanel() {
 
                     <Group mt="xl">{icons}</Group>
                 </div>
-                <div className={classes.form}>
+                <form className={classes.form} onSubmit={handleSubmit}>
+                   <Center> <Text c="dimmed"><b>În construcție</b></Text> </Center>
+                    <Divider color="transparent" mb="md"/>
                     <TextInput
+                        disabled
+                        value={email}
+                        onChange={(e) => setEmail(e.currentTarget.value)}
                         label="Email"
                         required
                         classNames={{ input: classes.input, label: classes.inputLabel }}
                     />
                     <TextInput
+                        disabled
+                        value={name}
+                        onChange={(e) => setName(e.currentTarget.value)}
                         label={"Nume"}
                         mt="md"
                         classNames={{ input: classes.input, label: classes.inputLabel }}
                     />
                     <Textarea
+                        disabled
+                        value={message}
+                        onChange={(e) => setMessage(e.currentTarget.value)}
                         required
                         label={"Mesajul tău"}
                         minRows={4}
@@ -75,9 +113,9 @@ export function ContactPanel() {
                     />
 
                     <Group justify="flex-end" mt="md">
-                        <Button className={classes.control}> {"Trimite mesaj"} </Button>
+                        <Button disabled className={classes.control} type="submit"> {"În construcție"} </Button>
                     </Group>
-                </div>
+                </form>
             </SimpleGrid>
         </div>
         </div>
