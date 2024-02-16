@@ -4,7 +4,6 @@ export type BlogArticleType = {
     
     title: string;
     image_name: string;
-    date: string;
     content: string;
     category: string;
 };
