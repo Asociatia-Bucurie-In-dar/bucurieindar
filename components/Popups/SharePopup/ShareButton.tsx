@@ -12,6 +12,7 @@ import {
     WhatsappIcon,
     WhatsappShareButton
 } from "next-share";
+import {IconShare} from "@tabler/icons-react";
 
 export function ShareButton(props: {quote: string} ) {
     const [opened, { open, close }] = useDisclosure(false);
@@ -21,7 +22,7 @@ export function ShareButton(props: {quote: string} ) {
         <Modal opened={opened} onClose={close} withCloseButton={false} zIndex={MyZIndexes.DonateModal}
                size="auto">
             <Center>
-                <Text className={commonClasses.titleBigLight}>Ajută distribuind!</Text>
+                <Text className={commonClasses.titleBigLight}>Ajută distribuind! </Text>
             </Center>
             <Divider mt="sm" mb="sm"/>
             <SimpleGrid verticalSpacing={0} cols={5}>
@@ -47,7 +48,7 @@ export function ShareButton(props: {quote: string} ) {
                 gradient={{ from: 'violet', to: 'grape', deg: 60 }}
                 fullWidth
                 onClick={open}>
-            {"Ajută distribuind!"}
+            <IconShare size={20} style={{marginRight: 5}}/>{"Ajută distribuind!"}
         </Button>
         </>;
 }

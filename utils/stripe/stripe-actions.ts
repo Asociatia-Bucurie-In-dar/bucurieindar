@@ -9,52 +9,33 @@ import { stripe } from "@/lib/stripe";
 
 const CURRENCY = "eur";
 
-export async function createCheckoutSession( data: {projectId : string, projectTitle: string} ): Promise<{ client_secret: string | null; url: string | null }> {
+export async function createCheckoutSession( data: {projectId : string, projectTitle: string, currencyAmount: number  } ): Promise<{ client_secret: string | null; url: string | null }> {
     const origin: string = headers().get("origin") as string;
 
     const checkoutSession: Stripe.Checkout.Session =
         await stripe.checkout.sessions.create({
             mode: "payment",
             submit_type: "donate",
+            payment_method_types: ["card"],
             line_items: [
                 {
-                    quantity: 1,
                     price_data: {
                         currency: CURRENCY,
                         product_data: {
                             name: data.projectTitle,
                         },
-                        unit_amount: formatAmountForStripe(
-                            Number('10' as string),
-                            CURRENCY,
-                        ),
+                        unit_amount: formatAmountForStripe(data.currencyAmount, CURRENCY),
                     },
+                    quantity: 1,
                 },
             ],
-            ...({
-                success_url: `${origin}/donate-with-checkout/result?session_id={CHECKOUT_SESSION_ID}`,
-                cancel_url: `${origin}/donate-with-checkout`,
-            })
+            success_url: `${origin}`,//TODO
+            cancel_url: `${origin}`,//TODO
+            locale: "auto",
         });
 
     return {
         client_secret: checkoutSession.client_secret,
         url: checkoutSession.url,
     };
-}
-
-export async function createPaymentIntent(
-    data: FormData,
-): Promise<{ client_secret: string }> {
-    const paymentIntent: Stripe.PaymentIntent =
-        await stripe.paymentIntents.create({
-            amount: formatAmountForStripe(
-                Number(data.get("customDonation") as string),
-                CURRENCY,
-            ),
-            automatic_payment_methods: { enabled: true },
-            currency: CURRENCY,
-        });
-
-    return { client_secret: paymentIntent.client_secret as string };
 }
