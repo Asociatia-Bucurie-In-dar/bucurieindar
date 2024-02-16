@@ -6,7 +6,7 @@ import {GetArticleStaticContentWithSlug} from "@/content/blog/blog-content";
 export default function BlogPage({params} : any) {
     const article = GetArticleStaticContentWithSlug(params.slug);
   return (
-      <Container size="full">
+      <div>
           <Container className={commonClasses.container} size="md">
               <TitleWithDescription title={article.title}/>
 
@@ -27,6 +27,6 @@ export default function BlogPage({params} : any) {
               <Divider color="transparent" pb={100}/>
               
           </Container>
-      </Container>
+      </div>
 );
 }

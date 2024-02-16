@@ -23,7 +23,7 @@ export function DonatePopupButton(props: {projectId: string, projectTile: string
         
         const data = 
             {projectId: props.projectId, projectTitle: props.projectTile, currencyAmount: Number(input.customDonation) };
-        const { url } = await createCheckoutSession(data);
+        const { client_secret, url } = await createCheckoutSession(data);
 
         window.location.assign(url as string);
     }

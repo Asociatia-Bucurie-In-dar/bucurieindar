@@ -9,7 +9,7 @@ import { stripe } from "@/lib/stripe";
 
 const CURRENCY = "eur";
 
-export async function createCheckoutSession( data: {projectId : string, projectTitle: string, currencyAmount: number  } ): Promise<{ url: string | null }> {
+export async function createCheckoutSession( data: {projectId : string, projectTitle: string, currencyAmount: number  } ): Promise<{ client_secret: string | null; url: string | null }> {
     const origin: string = headers().get("origin") as string;
 
     const checkoutSession: Stripe.Checkout.Session =
@@ -35,7 +35,7 @@ export async function createCheckoutSession( data: {projectId : string, projectT
         });
 
     return {
-        //client_secret: checkoutSession.client_secret,
+        client_secret: checkoutSession.client_secret,
         url: checkoutSession.url,
     };
 }

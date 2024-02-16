@@ -10,7 +10,6 @@ export default function FullProjectPage({params}:any) {
     const projectContent = GetProjectStaticContentWithSlug(params.slug);
     
     return (
-        <Container size="full">
         <Container className={commonClasses.container} size="md">
             <Title> 
                 {projectContent.title} 
@@ -46,7 +45,6 @@ export default function FullProjectPage({params}:any) {
         </Grid>
 
         <Divider color="transparent" pb={100}/>
-        </Container>
         </Container>
   );
 }
