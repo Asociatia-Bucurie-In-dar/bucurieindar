@@ -1,25 +1,18 @@
 "use client";
 
-import type Stripe from "stripe";
-
 import React, { useState } from "react";
 
-import { formatAmountForDisplay } from "@/utils/stripe/stripe-helpers";
 import { createCheckoutSession } from "@/utils/stripe/stripe-actions";
-import getStripe from "@/utils/stripe/get-stripejs";
 import {Button, Center, Divider, Modal, NativeSelect, Text, TextInput, rem} from "@mantine/core";
 import {Form} from "@storybook/components";
 import {MyZIndexes} from "@/utils/my-constants";
 
 import { useDisclosure } from '@mantine/hooks';
-import {MyRoutePaths} from "@/utils/route-paths";
-import {ProjectType} from "@/utils/my-types";
 import {
     IconBrandApple,
     IconBrandGoogle,
     IconBuildingBank,
-    IconCreditCard,
-    IconCreditCardPay
+    IconCreditCard
 } from "@tabler/icons-react";
 
 
@@ -30,7 +23,7 @@ export function DonatePopupButton(props: {projectId: string, projectTile: string
         
         const data = 
             {projectId: props.projectId, projectTitle: props.projectTile, currencyAmount: Number(input.customDonation) };
-        const { client_secret, url } = await createCheckoutSession(data);
+        const { url } = await createCheckoutSession(data);
 
         window.location.assign(url as string);
     }
@@ -85,7 +78,7 @@ export function DonatePopupButton(props: {projectId: string, projectTile: string
                     </Text></Center>
                     <Divider mt="sm" mb="sm"/>
                     <Center>
-                        <IconCreditCardPay size={iconSize}/><IconBrandGoogle size={iconSize}/><IconBrandApple  size={iconSize}/>
+                        <IconCreditCard size={iconSize}/><IconBrandGoogle size={iconSize}/><IconBrandApple  size={iconSize}/>
                         <IconBuildingBank size={iconSize}/> Transfer bancar
                     </Center>
                     <Divider mt="sm" mb="sm"/>
