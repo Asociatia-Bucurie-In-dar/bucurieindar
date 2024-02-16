@@ -3,6 +3,7 @@ import commonClasses from "@/utils/commonClasses.module.css";
 import {GetProjectStaticContentWithSlug} from "@/content/projects/projects-content";
 import {ProjectDonationProgress} from "@/components/Projects/ProjectDonationProgress";
 import {DonatePopupButton} from "@/components/Popups/DonatePopup/DonatePopupButton";
+import {ShareButton} from "@/components/ShareButton/ShareButton";
 
 export default function FullProjectPage({params}:any) {
     
@@ -39,11 +40,7 @@ export default function FullProjectPage({params}:any) {
                                        projectTile={projectContent.title}
                                         fullWidth={true}/>
                     <Divider color="transparent" mb={10}/>
-                    <Button variant="gradient"
-                            gradient={{ from: 'violet', to: 'grape', deg: 60 }}
-                            fullWidth>
-                        Distribuie
-                    </Button>
+                    <ShareButton quote = {projectContent.title}/>
                 </Card>
             </GridCol>
         </Grid>
