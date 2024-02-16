@@ -42,7 +42,7 @@ export function ProjectPreviewCard(props: ProjectType ) {
                     
                     <ProjectDonationProgress id={props.id}/> 
 
-                    <DonatePopupButton projectId={props.id} projectTile={props.title} stripeLink={props.stripeLink}/>
+                    <DonatePopupButton projectId={props.id} projectTile={props.title}/>
                 </Card>
             </Card>
     );

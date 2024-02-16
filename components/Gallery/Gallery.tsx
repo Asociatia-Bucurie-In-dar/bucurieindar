@@ -48,7 +48,7 @@ const mockdata = [
 export function Gallery() {
     
     const allCards = mockdata.map((article) => (
-        <Card key={article.title} p="md" radius="md" className={classes.card}>
+        <Card p="md" radius="md" className={classes.card}>
             <AspectRatio ratio={1920 / 1080}>
                 <Image src={article.image} />
             </AspectRatio>

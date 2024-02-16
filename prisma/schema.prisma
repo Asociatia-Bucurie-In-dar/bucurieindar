@@ -7,18 +7,17 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  url      = env("DATABASE_URL")
+  url = env("POSTGRES_PRISMA_URL") // uses connection pooling
+  directUrl = env("POSTGRES_URL_NON_POOLING") // uses a direct connection
 }
 
 model Donation {
   id         Int      @id @default(autoincrement())
+  causeId    String
   email      String
   amount     Float
   paymentId  String   @unique
   createdAt  DateTime @default(now())
-  updatedAt  DateTime @updatedAt
-  // Additional fields can include:
   currency   String   // To store the currency of the donation
-  status     String   // To record the payment status (e.g., "succeeded", "pending")
-  // Consider any other data you might receive from Stripe and find useful
+  status     String   // (e.g., "succeeded", "pending")
 }

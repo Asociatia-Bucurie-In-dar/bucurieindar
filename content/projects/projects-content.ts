@@ -10,7 +10,6 @@ const projectsData : ProjectType[] = [
         content: 'Lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi',
         goalAmount: 60000, 
         currentAmount: 0,
-        stripeLink: 'https://donate.stripe.com/7sIdRo0gqaLG2Pu7su'
     },
     {
         id: '2',
@@ -20,7 +19,6 @@ const projectsData : ProjectType[] = [
         content: 'Lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi',
         goalAmount: 60000,
         currentAmount: 0,
-        stripeLink: 'https://donate.stripe.com/5kA14C1kubPK1LqdQT'
     },
     {
         id: '3',
@@ -30,7 +28,6 @@ const projectsData : ProjectType[] = [
         content: 'Lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi',
         goalAmount: 60000,
         currentAmount: 0,
-        stripeLink: 'https://donate.stripe.com/00g8x42oy1b6gGkdQU'
     },
     {
         id: '4',
@@ -40,7 +37,6 @@ const projectsData : ProjectType[] = [
         content: 'Lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi',
         goalAmount: 60000,
         currentAmount: 0,
-        stripeLink: 'https://donate.stripe.com/dR69B84wG1b61Lq14a'
     },
     {
         id: '5',
@@ -50,8 +46,16 @@ const projectsData : ProjectType[] = [
         content: 'Lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi',
         goalAmount: 60000,
         currentAmount: 0,
-        stripeLink: 'https://donate.stripe.com/fZe4gOgfo5rm1Lq005'
-    }
+    },
+    {
+        id: '6',
+        slug: 'adopta-o-familie',
+        image_path: imagesPath + 'flowers.jpg',
+        title: 'Adoptă o familie',
+        content: 'Lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi',
+        goalAmount: 60000,
+        currentAmount: 0,
+    },
 ];
 
 export function GetProjectsStaticContent(amount: number): ProjectType[] {

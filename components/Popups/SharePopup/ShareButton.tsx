@@ -12,11 +12,10 @@ import {
     WhatsappIcon,
     WhatsappShareButton
 } from "next-share";
-import { usePathname } from 'next/navigation'
 
 export function ShareButton(props: {quote: string} ) {
     const [opened, { open, close }] = useDisclosure(false);
-    const pathname = window.location.origin + usePathname();
+    const pathname =  window.location.href;
     
     return <>
         <Modal opened={opened} onClose={close} withCloseButton={false} zIndex={MyZIndexes.DonateModal}
@@ -32,7 +31,7 @@ export function ShareButton(props: {quote: string} ) {
                 <TwitterShareButton url={pathname} title={props.quote}>
                     <TwitterIcon size={40} round />
                 </TwitterShareButton>
-                <WhatsappShareButton url={pathname} title={props.quote} separator=":: ">
+                <WhatsappShareButton url={pathname} title={props.quote} separator=": ">
                     <WhatsappIcon size={40} round />
                 </WhatsappShareButton>
                 <LinkedinShareButton url={pathname} title={props.quote}>

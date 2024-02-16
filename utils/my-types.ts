@@ -17,7 +17,6 @@ export type ProjectType = {
     content: string;
     currentAmount: number;
     goalAmount: number;
-    stripeLink: string;
 };
 
 export type Donation = {

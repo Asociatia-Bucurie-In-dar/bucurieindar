@@ -3,7 +3,7 @@ import commonClasses from "@/utils/commonClasses.module.css";
 import {GetProjectStaticContentWithSlug} from "@/content/projects/projects-content";
 import {ProjectDonationProgress} from "@/components/Projects/ProjectDonationProgress";
 import {DonatePopupButton} from "@/components/Popups/DonatePopup/DonatePopupButton";
-import {ShareButton} from "@/components/ShareButton/ShareButton";
+import {ShareButton} from "@/components/Popups/SharePopup/ShareButton";
 
 export default function FullProjectPage({params}:any) {
     
@@ -38,7 +38,7 @@ export default function FullProjectPage({params}:any) {
                     
                     <DonatePopupButton projectId={projectContent.id} 
                                        projectTile={projectContent.title}
-                                        fullWidth={true} stripeLink={projectContent.stripeLink}/>
+                                        fullWidth={true}/>
                     <Divider color="transparent" mb={10}/>
                     <ShareButton quote = {projectContent.title}/>
                 </Card>
