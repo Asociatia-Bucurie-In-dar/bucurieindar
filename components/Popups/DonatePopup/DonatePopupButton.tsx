@@ -19,6 +19,7 @@ import {
 export function DonatePopupButton(props: {projectId: string, projectTile: string, fullWidth?: boolean}) {
 
     const [loading, setLoading] = useState(false);
+    const [badSum, setBadSum] = useState(true);
     
     const callDonateAPI = async (event: any) => {
         event.preventDefault();
@@ -27,7 +28,6 @@ export function DonatePopupButton(props: {projectId: string, projectTile: string
         const data = 
             {projectId: props.projectId, projectTitle: props.projectTile, currencyAmount: Number(input.customDonation) };
         const { client_secret, url } = await createCheckoutSession(data);
-
         
         setLoading(false);
         window.location.assign(url as string);
@@ -42,9 +42,12 @@ export function DonatePopupButton(props: {projectId: string, projectTile: string
             numberAsString = numberAsString.slice(1);
         }
         numberAsString = numberAsString.replace(/\D/g, '');
+        
+        setBadSum(Number(numberAsString) < 1);
+        
         setInput({customDonation: numberAsString});
     };
-
+    
     const data = [
         { value: 'eur', label: '🇪🇺 EUR' },
         // { value: 'usd', label: '🇺🇸 USD' },
@@ -101,7 +104,7 @@ export function DonatePopupButton(props: {projectId: string, projectTile: string
 
                     <Center>
                         <Button type="submit" variant="gradient" gradient={{from: 'green', to: 'green', deg: 60}} size="lg"
-                            disabled={loading}>
+                            disabled={loading || badSum}>
                             {"Continuare"}
                         </Button>
                     </Center>

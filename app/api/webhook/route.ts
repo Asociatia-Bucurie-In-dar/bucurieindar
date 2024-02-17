@@ -4,10 +4,18 @@ import { NextResponse } from "next/server";
 
 import {stripe} from "@/utils/stripe/stripe";
 
+import {Donation, PrismaClient} from '@prisma/client';
+
+const prisma = new PrismaClient();
+
+async function saveDonation(donationData: any) {
+    return prisma.donation.create({
+        data: donationData,
+    });
+}
+
 export async function POST(req: Request) {
     let event: Stripe.Event;
-
-    console.log(`💰 POSTTTTTTTTTT !!!!!!!!!!!!!`);
     
     try {
         event = stripe.webhooks.constructEvent(
@@ -36,7 +44,7 @@ export async function POST(req: Request) {
     ];
 
     if (permittedEvents.includes(event.type)) {
-        let data;
+        let data : Stripe.Checkout.Session | Stripe.PaymentIntent | undefined;
 
         try {
             switch (event.type) {
@@ -51,10 +59,29 @@ export async function POST(req: Request) {
                 case "payment_intent.succeeded":
                     data = event.data.object as Stripe.PaymentIntent;
                     console.log(`💰 PaymentIntent status: ${data.status}`);
+                    
+                    const donationData = {
+                        causeId: data.metadata.projectId,
+                        email: data.receipt_email === null ? '' : data.receipt_email,
+                        amount: data.amount / 100, // Stripe amounts are in cents
+                        paymentId: data.id,
+                        currency: data.currency,
+                        status: data.status,
+                    };
+
+                    // Save the donation data to the database
+                    try {
+                        const savedDonation = await saveDonation(donationData);
+                        console.log(`Donation saved: ${savedDonation.id}`);
+                    } catch (error: any) {
+                        console.error(`Error saving donation: ${error.message}`);
+                    }
+                    
                     break;
                 default:
                     throw new Error(`Unhandled event: ${event.type}`);
             }
+            
         } catch (error) {
             console.log(error);
             return NextResponse.json(

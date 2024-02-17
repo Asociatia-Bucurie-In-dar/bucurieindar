@@ -32,6 +32,9 @@ export async function createCheckoutSession( data: {projectId : string, projectT
             success_url: `${origin}/result?session_id={CHECKOUT_SESSION_ID}`,
             cancel_url: `${origin}`,
             locale: "auto",
+            metadata: {
+                projectId: data.projectId,
+            },
         });
 
     return {
