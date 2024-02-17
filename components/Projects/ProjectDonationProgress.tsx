@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from 'react';
 import classes from './ProjectDonationProgress.module.css';
-import {Progress, Text} from "@mantine/core";
+import {Progress, Skeleton, Text} from "@mantine/core";
 
 export function ProjectDonationProgress (props :{id: string, goalAmount: number} ) {
     const [currentAmount, setCurrentAmount] = useState(0);
@@ -20,8 +20,8 @@ export function ProjectDonationProgress (props :{id: string, goalAmount: number}
             }
             setLoading(false);
         };
-
-        fetchDonationAmount();
+        
+        fetchDonationAmount().then(r => r);
     }, [props.id]);
     
     if (loading) {
@@ -29,7 +29,9 @@ export function ProjectDonationProgress (props :{id: string, goalAmount: number}
             <Text fz="xs" tt="uppercase" fw={700} c="dimmed" mt="sm">
                 Suma Necesară
             </Text>
-            <Text>Se încarcǎ </Text>;
+            <Skeleton height={8} mt={12} radius="xl" />
+            <Skeleton height={8} mt={6} radius="xl" />
+            <Skeleton height={8} mt={6} mb={4} radius="xl" />
             </>;
     }
     
