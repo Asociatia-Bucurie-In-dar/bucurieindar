@@ -6,6 +6,7 @@ import {Progress, Skeleton, Text} from "@mantine/core";
 export function ProjectDonationProgress (props :{id: string, goalAmount: number} ) {
     const [currentAmount, setCurrentAmount] = useState(0);
     const [loading, setLoading] = useState(true);
+    const [progressValue, setProgressValue] = useState(0);
 
     useEffect(() => {
         const fetchDonationAmount = async () => {
@@ -14,6 +15,10 @@ export function ProjectDonationProgress (props :{id: string, goalAmount: number}
                 const response = await fetch(`/api/projects/${props.id}`);
                 const data = await response.json();
                 setCurrentAmount(data.totalDonated);
+                let progress = (data.totalDonated / props.goalAmount) * 100;
+                if (progress < 5 && progress > 0)
+                    setProgressValue(5);
+                else setProgressValue(progress);
             } catch (error) {
                 console.error('Failed to fetch donation amount:', error);
                 // Handle error appropriately
@@ -42,7 +47,7 @@ export function ProjectDonationProgress (props :{id: string, goalAmount: number}
         <Text fz="lg" fw={500}>
             {currentAmount.toLocaleString()} EUR / {props.goalAmount.toLocaleString()} EUR
         </Text>
-        <Progress animated value={(currentAmount/props.goalAmount) * 100} mt="sm" size="lg" radius="xl"
+        <Progress animated value={progressValue} mt="sm" size="lg" radius="xl"
                   classNames={{
                       root: classes.progressTrack,
                       section: classes.progressSection,
