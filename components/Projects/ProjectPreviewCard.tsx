@@ -40,7 +40,7 @@ export function ProjectPreviewCard(props: ProjectType ) {
 
                 <Card padding={0} mt="sm" key={props.id}>
                     
-                    <ProjectDonationProgress id={props.id}/> 
+                    <ProjectDonationProgress id={props.id} goalAmount={props.goalAmount}/> 
 
                     <DonatePopupButton projectId={props.id} projectTile={props.title}/>
                 </Card>

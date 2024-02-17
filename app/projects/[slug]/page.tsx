@@ -31,7 +31,7 @@ export default function FullProjectPage({params}:any) {
             {/* RIGHT SIDE */}
             <GridCol span={{base: 12, sm: 4}}>
                 <Card shadow="sm" padding="lg">
-                    <ProjectDonationProgress id={projectContent.id}/>
+                    <ProjectDonationProgress id={projectContent.id} goalAmount={projectContent.goalAmount}/>
 
                     <Divider color="transparent" mb={10}/>
                     
