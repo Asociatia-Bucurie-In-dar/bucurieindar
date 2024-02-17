@@ -22,7 +22,7 @@ export function ShareButton(props: {quote: string} ) {
         <Modal opened={opened} onClose={close} withCloseButton={false} zIndex={MyZIndexes.DonateModal}
                size="auto">
             <Center>
-                <Text className={commonClasses.titleBigLight}>Ajută distribuind! </Text>
+                <Text style={{fontSize: 23, fontWeight: 500}}>Ajută distribuind!</Text>
             </Center>
             <Divider mt="sm" mb="sm"/>
             <SimpleGrid verticalSpacing={0} cols={5}>

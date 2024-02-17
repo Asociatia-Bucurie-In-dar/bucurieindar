@@ -5,7 +5,7 @@ import type { Stripe } from "stripe";
 import { headers } from "next/headers";
 
 import { formatAmountForStripe } from "@/utils/stripe/stripe-helpers";
-import { stripe } from "@/lib/stripe";
+import { stripe } from "@/utils/stripe/stripe";
 
 const CURRENCY = "eur";
 
@@ -29,8 +29,8 @@ export async function createCheckoutSession( data: {projectId : string, projectT
                     quantity: 1,
                 },
             ],
-            success_url: `${origin}`,//TODO
-            cancel_url: `${origin}`,//TODO
+            success_url: `${origin}/result?session_id={CHECKOUT_SESSION_ID}`,
+            cancel_url: `${origin}`,
             locale: "auto",
         });
 

@@ -18,13 +18,18 @@ import {
 
 export function DonatePopupButton(props: {projectId: string, projectTile: string, fullWidth?: boolean}) {
 
+    const [loading, setLoading] = useState(false);
+    
     const callDonateAPI = async (event: any) => {
         event.preventDefault();
         
+        setLoading(true);
         const data = 
             {projectId: props.projectId, projectTitle: props.projectTile, currencyAmount: Number(input.customDonation) };
         const { client_secret, url } = await createCheckoutSession(data);
 
+        
+        setLoading(false);
         window.location.assign(url as string);
     }
     
@@ -95,7 +100,8 @@ export function DonatePopupButton(props: {projectId: string, projectTile: string
                     <Divider mb="lg"/>
 
                     <Center>
-                        <Button type="submit" variant="gradient" gradient={{from: 'green', to: 'green', deg: 60}} size="lg">
+                        <Button type="submit" variant="gradient" gradient={{from: 'green', to: 'green', deg: 60}} size="lg"
+                            disabled={loading}>
                             {"Continuare"}
                         </Button>
                     </Center>

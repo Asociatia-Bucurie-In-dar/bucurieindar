@@ -2,11 +2,13 @@ import type { Stripe } from "stripe";
 
 import { NextResponse } from "next/server";
 
-import {stripe} from "@/lib/stripe";
+import {stripe} from "@/utils/stripe/stripe";
 
 export async function POST(req: Request) {
     let event: Stripe.Event;
 
+    console.log(`💰 POSTTTTTTTTTT !!!!!!!!!!!!!`);
+    
     try {
         event = stripe.webhooks.constructEvent(
             await (await req.blob()).text(),

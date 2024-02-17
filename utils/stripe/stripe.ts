@@ -6,6 +6,6 @@ export const stripe = new Stripe(process.env.STRIPE_SECRET_KEY as string, {
     // https://github.com/stripe/stripe-node#configuration
     appInfo: {
         name: "Bucurie in Dar",
-        url: "https://bucurieindar.vercel.app",
+        url: "https://bucurieindar.org",
     },
 });
