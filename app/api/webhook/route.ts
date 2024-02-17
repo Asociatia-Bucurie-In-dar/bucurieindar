@@ -51,19 +51,14 @@ export async function POST(req: Request) {
                 case "checkout.session.completed":
                     data = event.data.object as Stripe.Checkout.Session;
                     console.log(`💰 CheckoutSession status: ${data.payment_status}`);
-                    break;
-                case "payment_intent.payment_failed":
-                    data = event.data.object as Stripe.PaymentIntent;
-                    console.log(`❌ Payment failed: ${data.last_payment_error?.message}`);
-                    break;
-                case "payment_intent.succeeded":
-                    data = event.data.object as Stripe.PaymentIntent;
-                    console.log(`💰 PaymentIntent status: ${data.status}`);
                     
                     const donationData = {
+                        // @ts-ignore
                         causeId: data.metadata.projectId,
-                        email: data.receipt_email === null ? '' : data.receipt_email,
-                        amount: data.amount / 100, // Stripe amounts are in cents
+                        // @ts-ignore
+                        email: data.customer_details.email,
+                        // @ts-ignore
+                        amount: data.amount_total / 100, // Stripe amounts are in cents
                         paymentId: data.id,
                         currency: data.currency,
                         status: data.status,
@@ -77,6 +72,14 @@ export async function POST(req: Request) {
                         console.error(`Error saving donation: ${error.message}`);
                     }
                     
+                    break;
+                case "payment_intent.payment_failed":
+                    data = event.data.object as Stripe.PaymentIntent;
+                    console.log(`❌ Payment failed: ${data.last_payment_error?.message}`);
+                    break;
+                case "payment_intent.succeeded":
+                    data = event.data.object as Stripe.PaymentIntent;
+                    console.log(`💰 PaymentIntent status: ${data.status}`);
                     break;
                 default:
                     throw new Error(`Unhandled event: ${event.type}`);
