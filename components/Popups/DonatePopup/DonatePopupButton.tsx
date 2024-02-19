@@ -3,9 +3,21 @@
 import React, { useState } from "react";
 
 import { createCheckoutSession } from "@/utils/stripe/stripe-actions";
-import {Button, Center, Divider, Modal, NativeSelect, Text, TextInput, rem} from "@mantine/core";
+import {
+    Button,
+    Center,
+    Divider,
+    Modal,
+    NativeSelect,
+    Text,
+    TextInput,
+    rem,
+    SegmentedControl,
+    Title, Badge, Paper
+} from "@mantine/core";
 import {Form} from "@storybook/components";
 import {MyZIndexes} from "@/utils/my-constants";
+import classes from "./DonatePopupButton.module.css";
 
 import { useDisclosure } from '@mantine/hooks';
 import {
@@ -18,8 +30,12 @@ import {
 
 export function DonatePopupButton(props: {projectId: string, projectTile: string, fullWidth?: boolean}) {
 
+    const payOption1 = "Card / Google Pay / Apple Pay";
+    const payOption2 = "Transfer bancar";
+    
     const [loading, setLoading] = useState(false);
     const [badSum, setBadSum] = useState(true);
+    const [payMethod, setPayMethod] = useState(payOption1);
     
     const callDonateAPI = async (event: any) => {
         event.preventDefault();
@@ -75,39 +91,66 @@ export function DonatePopupButton(props: {projectId: string, projectTile: string
                 }}
             />
         );
+        
+        const forCard = <>
+            <TextInput type="number"
+                       placeholder="10 EUR"
+                       label={"Suma dorită"}
+                       rightSection={select}
+                       rightSectionWidth={115}
+                       size="lg"
+                       onChange={handleInputChange}
+                       value={input.customDonation}/>
 
-        return <>
+            <Divider mb="lg"/>
 
-            <Modal opened={opened} onClose={close} withCloseButton={false} zIndex={MyZIndexes.DonateModal}
+            <Center>
+                <Button type="submit" variant="gradient" gradient={{from: 'green', to: 'green', deg: 60}} size="lg"
+                        disabled={loading || badSum}>
+                    {"Continuare"}
+                </Button>
+            </Center>
+        </>;
+
+    const forBank = <>
+        <Paper withBorder p="lg" radius="md" shadow="md">
+            <Center>
+                <Text size="lg"><b>RON</b> - RO89BTRLEURCRT0610749701</Text>
+            </Center>
+            <br></br>
+            <Center>
+                <Text size ="lg"><b>EUR</b> - RO42BTRLRONCRT0610749701</Text>
+            </Center>
+        </Paper>
+    </>;
+
+    return <>
+        <Modal opened={opened} onClose={close} withCloseButton={false} zIndex={MyZIndexes.DonateModal}
                    size="auto">
                 <Form onSubmit={callDonateAPI}>
                     <Center><Text size="lg">
                         {"Donează pentru"} <b>{props.projectTile}</b>
                     </Text></Center>
-                    <Divider mt="sm" mb="sm"/>
+
+                    <Divider mt="sm" mb="sm" color="transparent"/>
+
+                    {/* RADIO */}
                     <Center>
-                        <IconCreditCard size={iconSize}/><IconBrandGoogle size={iconSize}/><IconBrandApple  size={iconSize}/>
-                        <IconBuildingBank size={iconSize}/> Transfer bancar
+                    <SegmentedControl
+                        radius="xl"
+                        size="md"
+                        defaultValue={payOption1}
+                        data={[payOption1, payOption2]}
+                        classNames={classes}
+                        onChange={(value) => setPayMethod(value)}
+                    />
                     </Center>
-                    <Divider mt="sm" mb="sm"/>
+                    {/* RADIO */}
+                    
+                    <Divider mt="sm" mb="sm" color="transparent"/>
 
-                    <TextInput type="number"
-                               placeholder="10 EUR"
-                               label={"Suma dorită"}
-                               rightSection={select}
-                               rightSectionWidth={115}
-                               size="lg"
-                               onChange={handleInputChange}
-                               value={input.customDonation}/>
-
-                    <Divider mb="lg"/>
-
-                    <Center>
-                        <Button type="submit" variant="gradient" gradient={{from: 'green', to: 'green', deg: 60}} size="lg"
-                            disabled={loading || badSum}>
-                            {"Continuare"}
-                        </Button>
-                    </Center>
+                    {payMethod === payOption1 ? forCard : forBank}
+                    
                 </Form>
             </Modal>
 
