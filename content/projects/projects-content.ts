@@ -8,7 +8,7 @@ const projectsData : ProjectType[] = [
         image_path: imagesPath + 'flowers.jpg', 
         title: 'Ajută o comunitate', 
         content: 'Lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi lorem ipsum veni vidi',
-        goalAmount: 60000, 
+        goalAmount: 50000, 
         currentAmount: 0,
     },
     {
