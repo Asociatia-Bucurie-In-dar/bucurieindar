@@ -19,7 +19,7 @@ export default function RootLayout({ children }: { children: any }) {
     <html lang={"ro"}>
     <head>
         <ColorSchemeScript/>
-        <link rel="shortcut icon" href="/favicon.svg"/>
+        <link rel="shortcut icon" href="/logoPng.png"/>
         <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width"/>
     </head>
     <body>

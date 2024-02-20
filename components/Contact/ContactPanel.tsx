@@ -75,7 +75,7 @@ export function ContactPanel() {
             <SimpleGrid cols={{ base: 1, sm: 2 }} spacing={50}>
                 <div>
                     <Title mb="sm" className={classes.title}>
-                        Contactați-ne
+                        {"Contactați-ne"}
                     </Title>
                     {/*<Text className={classes.description}>*/}
                     {/*    {"Anularea plăților recurente se poate face şi în secțiunea"}{" "}*/}
