@@ -5,17 +5,13 @@ import { NextResponse } from "next/server";
 import {stripe} from "@/utils/stripe/stripe";
 
 import {Donation, PrismaClient} from '@prisma/client';
-import {revalidateTag} from "next/cache";
-import {revalidateDonationsProgressTag} from "@/utils/cache-tags";
 
 const prisma = new PrismaClient();
 
 async function saveDonation(donationData: any) {
-    const dbResult = prisma.donation.create({
+    const dbResult =  prisma.donation.create({
         data: donationData,
     });
-    
-    revalidateTag(revalidateDonationsProgressTag + donationData.causeId);
     
     return dbResult;
 }
