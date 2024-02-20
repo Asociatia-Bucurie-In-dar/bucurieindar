@@ -5,7 +5,6 @@ import { NextResponse } from "next/server";
 import {stripe} from "@/utils/stripe/stripe";
 
 import {Donation, PrismaClient} from '@prisma/client';
-import {revalidatePath} from "next/cache";
 
 const prisma = new PrismaClient();
 
@@ -13,8 +12,6 @@ async function saveDonation(donationData: any) {
     const dbResult =  prisma.donation.create({
         data: donationData,
     });
-    
-    revalidatePath('/');
     
     return dbResult;
 }
