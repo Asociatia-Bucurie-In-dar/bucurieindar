@@ -5,6 +5,7 @@ import { NextResponse } from "next/server";
 import {stripe} from "@/utils/stripe/stripe";
 
 import {Donation, PrismaClient} from '@prisma/client';
+import {revalidatePath} from "next/cache";
 
 const prisma = new PrismaClient();
 
@@ -12,6 +13,8 @@ async function saveDonation(donationData: any) {
     const dbResult =  prisma.donation.create({
         data: donationData,
     });
+    
+    revalidatePath('/');
     
     return dbResult;
 }
@@ -95,6 +98,6 @@ export async function POST(req: Request) {
             );
         }
     }
-    // Return a response to acknowledge receipt of the event.
+    
     return NextResponse.json({ message: "Received" }, { status: 200 });
 }
