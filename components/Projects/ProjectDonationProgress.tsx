@@ -14,7 +14,7 @@ export function ProjectDonationProgress (props :{id: string, goalAmount: number}
             setLoading(true);
             try {
                 const response = await fetch(`/api/projects/${props.id}`,
-                    { cache: "default" } );
+                    { next: { revalidate: 5 } } );
                 
                 const data = await response.json();
                 setCurrentAmount(data.totalDonated);
@@ -22,9 +22,9 @@ export function ProjectDonationProgress (props :{id: string, goalAmount: number}
                 if (progress < 5 && progress > 0)
                     setProgressValue(5);
                 else setProgressValue(progress);
+                
             } catch (error) {
                 console.error('Failed to fetch donation amount:', error);
-                // Handle error appropriately
             }
             setLoading(false);
         };
