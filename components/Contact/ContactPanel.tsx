@@ -15,10 +15,8 @@ import { ContactIcons } from './ContactIcons';
 import classes from './ContactPanel.module.css';
 import commonClasses from '@/utils/commonClasses.module.css';
 import Link from "next/link";
-import {TitleWithDescription} from "@/components/Common/TitleWithDescription";
 import {MyRoutePaths} from "@/utils/route-paths";
 import {useState} from "react";
-import {router} from "next/client";
 
 const social = 
     [{icon: IconBrandFacebook, link: 'https://www.facebook.com/asociatiabucurieindar/'},

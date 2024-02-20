@@ -26,10 +26,9 @@ function ContactIcon({ icon: Icon, title, description, ...others }: ContactIconP
 }
 
 const MOCKDATA = [
-    { title: 'Email', description: 'office@bucurieindar.org', icon: IconAt },
+    { title: 'Email', description: 'office@bucurieindar.ro', icon: IconAt },
     { title: 'Telefon', description: '+4 0727 786 725', icon: IconPhone },
-    { title: 'Adresa', description: 'Str. Poteraș 14, București, România 040266',
-        icon: IconMapPin },
+    { title: 'Adresa', description: 'Str. Poteraș 14, București, România 040266', icon: IconMapPin },
     { title: "Ore lucru", description: '9 a.m. – 5:30 p.m.', icon: IconSun },
 ];
 

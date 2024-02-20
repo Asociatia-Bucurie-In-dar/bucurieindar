@@ -14,4 +14,5 @@
 .title {
     font-family: 'Greycliff CF', var(--mantine-font-family);
     font-weight: bold;
+    text-align: center;
 }
