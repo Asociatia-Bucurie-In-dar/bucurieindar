@@ -1,10 +1,9 @@
 import type { Stripe } from "stripe";
-
 import { NextResponse } from "next/server";
-
 import {stripe} from "@/utils/stripe/stripe";
-
 import {Donation, PrismaClient} from '@prisma/client';
+import {revalidateTag} from "next/cache";
+import {revalidateDonationsProgressTag} from "@/utils/cache-tags";
 
 const prisma = new PrismaClient();
 
@@ -13,10 +12,13 @@ async function saveDonation(donationData: any) {
         data: donationData,
     });
     
+    revalidateTag(revalidateDonationsProgressTag+donationData.causeId);
+    
     return dbResult;
 }
 
 export async function POST(req: Request) {
+
     let event: Stripe.Event;
     
     try {
@@ -39,11 +41,7 @@ export async function POST(req: Request) {
     // Successfully constructed event.
     console.log("✅ Success:", event.id);
 
-    const permittedEvents: string[] = [
-        "checkout.session.completed",
-        "payment_intent.succeeded",
-        "payment_intent.payment_failed",
-    ];
+    const permittedEvents: string[] = ["checkout.session.completed", "payment_intent.succeeded", "payment_intent.payment_failed"];
 
     if (permittedEvents.includes(event.type)) {
         let data : Stripe.Checkout.Session | Stripe.PaymentIntent | undefined;

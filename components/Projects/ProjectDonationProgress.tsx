@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import classes from './ProjectDonationProgress.module.css';
 import {Progress, Skeleton, Text} from "@mantine/core";
 import {revalidateDonationsProgressTag} from "@/utils/cache-tags";
+import {unstable_cache} from "next/cache";
 
 export function ProjectDonationProgress (props :{id: string, goalAmount: number} ) {
     const [currentAmount, setCurrentAmount] = useState(0);
@@ -13,8 +14,8 @@ export function ProjectDonationProgress (props :{id: string, goalAmount: number}
         const fetchDonationAmount = async () => {
             setLoading(true);
             try {
-                const response = await fetch(`/api/projects/${props.id}`,
-                    { next: { revalidate: 5 } } );
+                const response = await fetch(`/api/projects/${props.id}`);
+                // now with unstable_cache
                 
                 const data = await response.json();
                 setCurrentAmount(data.totalDonated);
