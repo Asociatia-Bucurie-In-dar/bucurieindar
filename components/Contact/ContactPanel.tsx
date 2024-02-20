@@ -18,6 +18,7 @@ import Link from "next/link";
 import {TitleWithDescription} from "@/components/Common/TitleWithDescription";
 import {MyRoutePaths} from "@/utils/route-paths";
 import {useState} from "react";
+import {router} from "next/client";
 
 const social = 
     [{icon: IconBrandFacebook, link: 'https://www.facebook.com/asociatiabucurieindar/'},
@@ -36,12 +37,14 @@ export function ContactPanel() {
     const [email, setEmail] = useState('');
     const [name, setName] = useState('');
     const [message, setMessage] = useState('');
+    const [loading, setLoading] = useState(false);
 
     const handleSubmit = async (e: any) => {
         e.preventDefault();
+        setLoading(true);
 
         // POST form data to API route
-        const response = await fetch('/api/send', {
+        const response = await fetch('/api/sendemail', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -50,7 +53,17 @@ export function ContactPanel() {
         });
 
         const data = await response.json();
-        console.log(data); // Process response data, e.g., show a success message
+        
+        if (response.ok) {
+            alert('Mesajul a fost trimis cu succes!');
+            setEmail('');
+            setName('');
+            setMessage('');
+        } else {
+            alert('A apărut o eroare. Vă rugăm să încercați din nou.');
+        }
+        
+        setLoading(false);
     };
 
     //END SUBMISSION STUFF
@@ -83,10 +96,9 @@ export function ContactPanel() {
                     <Group mt="xl">{icons}</Group>
                 </div>
                 <form className={classes.form} onSubmit={handleSubmit}>
-                   <Center> <Text c="dimmed"><b>În construcție</b></Text> </Center>
+                   {/*<Center> <Text c="dimmed"><b>În construcție</b></Text> </Center>*/}
                     <Divider color="transparent" mb="md"/>
                     <TextInput
-                        disabled
                         value={email}
                         onChange={(e) => setEmail(e.currentTarget.value)}
                         label="Email"
@@ -94,7 +106,6 @@ export function ContactPanel() {
                         classNames={{ input: classes.input, label: classes.inputLabel }}
                     />
                     <TextInput
-                        disabled
                         value={name}
                         onChange={(e) => setName(e.currentTarget.value)}
                         label={"Nume"}
@@ -102,7 +113,6 @@ export function ContactPanel() {
                         classNames={{ input: classes.input, label: classes.inputLabel }}
                     />
                     <Textarea
-                        disabled
                         value={message}
                         onChange={(e) => setMessage(e.currentTarget.value)}
                         required
@@ -113,7 +123,9 @@ export function ContactPanel() {
                     />
 
                     <Group justify="flex-end" mt="md">
-                        <Button disabled className={classes.control} type="submit"> {"În construcție"} </Button>
+                        <Button className={classes.control} type="submit" disabled={loading}>
+                            {"Trimite"} 
+                        </Button>
                     </Group>
                 </form>
             </SimpleGrid>

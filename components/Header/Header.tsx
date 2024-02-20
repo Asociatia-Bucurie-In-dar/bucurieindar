@@ -21,10 +21,10 @@ const gallery = { link: MyRoutePaths.Gallery.link, label: MyRoutePaths.Gallery.l
 const blog = { link: MyRoutePaths.Blog.link, label: MyRoutePaths.Blog.label, links: null};
 const dash = { link: MyRoutePaths.Dash.link, label: MyRoutePaths.Dash.label, links: null};
 const contact = { link: MyRoutePaths.Contact.link, label: MyRoutePaths.Contact.label, links: null};
-const contactParent = { link: contact.link, label: contact.label, links: [contact, dash] };
+//const contactParent = { link: contact.link, label: contact.label, links: [contact, dash] };
 
-const headerLinks = [ home, projects, about, gallery, blog, contactParent ];
-const mobileMenuLinks = [ home, projects, about, gallery, blog, contact, dash ];
+const headerLinks = [ home, projects, about, gallery, blog, contact ];
+const mobileMenuLinks = [ home, projects, about, gallery, blog, contact ];
 
 
 export function Header() {
