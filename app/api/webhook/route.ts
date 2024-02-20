@@ -15,7 +15,7 @@ async function saveDonation(donationData: any) {
         data: donationData,
     });
     
-    revalidateTag(revalidateDonationsProgressTag);
+    revalidateTag(revalidateDonationsProgressTag + donationData.causeId);
     
     return dbResult;
 }

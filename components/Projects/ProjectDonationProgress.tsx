@@ -15,7 +15,8 @@ export function ProjectDonationProgress (props :{id: string, goalAmount: number}
             try {
                 
                 const response = await fetch(`/api/projects/${props.id}`,
-                    { cache: "force-cache", next: { tags: [revalidateDonationsProgressTag] } });
+                    { cache: "force-cache", next: 
+                            { tags: [revalidateDonationsProgressTag + props.id] } });
                 
                 const data = await response.json();
                 setCurrentAmount(data.totalDonated);
