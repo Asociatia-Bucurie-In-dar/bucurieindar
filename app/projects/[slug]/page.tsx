@@ -53,6 +53,7 @@ export default function FullProjectPage({params}:any) {
                     <DonatePopupButton projectId={projectContent.id} 
                                        projectTile={projectContent.title}
                                         fullWidth={true}/>
+                    
                     <Divider color="transparent" mb={10}/>
                     <ShareButton quote = {projectContent.title}/>
                 </Card>

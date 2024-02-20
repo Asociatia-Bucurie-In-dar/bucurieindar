@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import { createCheckoutSession } from "@/utils/stripe/stripe-actions";
 import {
@@ -36,6 +36,12 @@ export function DonatePopupButton(props: {projectId: string, projectTile: string
     const [loading, setLoading] = useState(false);
     const [badSum, setBadSum] = useState(true);
     const [payMethod, setPayMethod] = useState(payOption1);
+    const [redirectTo, setRedirectTo] = useState('');
+    useEffect(() => {
+        if (redirectTo) {
+            window.location.assign(redirectTo);
+        }
+    }, [redirectTo]);
     
     const callDonateAPI = async (event: any) => {
         event.preventDefault();
@@ -46,7 +52,8 @@ export function DonatePopupButton(props: {projectId: string, projectTile: string
         const { client_secret, url } = await createCheckoutSession(data);
         
         setLoading(false);
-        window.location.assign(url as string);
+        
+        setRedirectTo(url as string);
     }
     
     const [input, setInput] = useState<{ customDonation: string }> ({ customDonation: '' } );
