@@ -58,7 +58,7 @@ const projectsData : ProjectType[] = [
     },
 ];
 
-export function GetProjectsStaticContent(amount: number): ProjectType[] {
+export function GetAllProjectsStaticContent(amount: number): ProjectType[] {
     return projectsData.slice(0, amount);
 }
 

@@ -1,8 +1,15 @@
 import {Center, Container, Divider, Image, Text} from "@mantine/core";
 import commonClasses from "@/utils/commonClasses.module.css";
 import {TitleWithDescription} from "@/components/Common/TitleWithDescription";
-import {GetArticleStaticContentWithSlug} from "@/content/blog/blog-content";
+import {GetArticleStaticContentWithSlug, GetAllArticlesStaticContent} from "@/content/blog/blog-content";
 import {Metadata} from "next";
+
+export function generateStaticParams() {
+    const allArticles = GetAllArticlesStaticContent(99);
+    return allArticles.map(article => ({
+        params: { slug: article.slug }
+    }));
+}
 
 export function generateMetadata({params}:any) : Metadata {
     const article = GetArticleStaticContentWithSlug(params.slug);

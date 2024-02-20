@@ -2,11 +2,11 @@ import { SimpleGrid, Container } from '@mantine/core';
 import {ProjectPreviewCard} from "@/components/Projects/ProjectPreviewCard";
 import classes from './ProjectPreviewCardsSlider.module.css';
 import {ProjectType} from "@/utils/my-types";
-import {GetProjectsStaticContent} from "@/content/projects/projects-content";
+import {GetAllProjectsStaticContent} from "@/content/projects/projects-content";
 
 export function ProjectPreviewCardsSlider(props: {amount: number}) {
 
-    const projectsStaticContent: ProjectType[] = GetProjectsStaticContent(props.amount);
+    const projectsStaticContent: ProjectType[] = GetAllProjectsStaticContent(props.amount);
     
     const cards = projectsStaticContent.map((proj) => (
         <ProjectPreviewCard {...proj}/>

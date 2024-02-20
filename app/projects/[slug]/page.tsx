@@ -1,9 +1,16 @@
 import {Container, Divider, Title, Grid, GridCol, Card, Image, Text, Button} from "@mantine/core";
 import commonClasses from "@/utils/commonClasses.module.css";
-import {GetProjectStaticContentWithSlug} from "@/content/projects/projects-content";
+import {GetProjectStaticContentWithSlug, GetAllProjectsStaticContent} from "@/content/projects/projects-content";
 import {ProjectDonationProgress} from "@/components/Projects/ProjectDonationProgress";
 import {DonatePopupButton} from "@/components/Popups/DonatePopup/DonatePopupButton";
 import {ShareButton} from "@/components/Popups/SharePopup/ShareButton";
+
+export function generateStaticParams() {
+    const allProjects = GetAllProjectsStaticContent(99);
+    return allProjects.map(project => ({
+        params: { slug: project.slug }
+    }));
+}
 
 export function generateMetadata({params}:any) {
     const projectContent = GetProjectStaticContentWithSlug(params.slug);
