@@ -6,18 +6,17 @@ import {revalidateDonationsProgressTag} from "@/utils/cache-tags";
 
 const prisma = new PrismaClient();
 
+const getTotalDonations = unstable_cache(async (projectId: any) => {
+    return await prisma.donation.aggregate({
+        _sum: { amount: true },
+        where: { causeId: projectId} }).then(r => r._sum.amount ?? 0);
+},
+    [(revalidateDonationsProgressTag)],
+    { tags: [revalidateDonationsProgressTag]});
 
 export async function GET(req: NextRequest) {
     
     const projectId = req.nextUrl.pathname.split('/').pop();
-
-    const getTotalDonations = unstable_cache(async (projectId: any) => {
-            return prisma.donation.aggregate({
-                _sum: { amount: true },
-                where: { causeId: projectId} }).then(r => r._sum.amount ?? 0);
-        },
-        [(revalidateDonationsProgressTag+projectId)],
-        { tags: [revalidateDonationsProgressTag+projectId]});
     
     const totalAmount = await getTotalDonations(projectId);
     
