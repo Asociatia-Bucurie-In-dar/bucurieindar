@@ -3,6 +3,11 @@ import commonClasses from "@/utils/commonClasses.module.css";
 import {TitleWithDescription} from "@/components/Common/TitleWithDescription";
 import {BlogPostsGrid} from "@/components/Blog/BlogPostsGrid/BlogPostsGrid";
 
+export const metadata = {
+    title: "Blog",
+    description: "Articolele noastre.",
+};
+
 export default function BlogPage() {
   return (
       <div>

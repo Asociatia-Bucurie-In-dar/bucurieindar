@@ -3,6 +3,11 @@ import {TitleWithDescription} from "@/components/Common/TitleWithDescription";
 import commonClasses from "@/utils/commonClasses.module.css";
 import {ProjectPreviewCardsSlider} from "@/components/Projects/ProjectPreviewCardsSlider";
 
+export const metadata = {
+    title: "Proiectele noastre",
+    description: "Vezi toate proiectele noastre."
+};
+
 export default function ProjectsPage() {
     
     return (

@@ -9,8 +9,11 @@ import { theme } from '@/theme';
 import FirstTimeConfetti from "@/components/CoolEffects/FirstTimeConfetti";
 
 export const metadata = {
-  title: 'Asociatia Bucurie in Dar',
-  description: 'With the help of the Good Lord and your support, in a joint effort, we want to bring joy to the hearts of many people, young and old, young and elderly. We have the freedom to choose what we do in this life, and we have chosen to help, and we do it with all our joy and all our love. Give joy too, together with us.',
+  title: {
+      default: 'Asociația Bucurie in Dar',
+      template: '%s | Asociația Bucurie in Dar',
+  },
+  description: 'Cu ajutorul Bunului Dumnezeu și a sprijinului vostru, într-un efort comun, vrem să aducem bucurie în inimile multor oameni, tineri și bătrâni. Avem libertatea să alegem ce facem în această viață, și am ales să ajutăm, și o facem cu toată bucuria și tot dragostea noastră. Imparte și tu bucurie, împreună cu noi.',
 };
 
 

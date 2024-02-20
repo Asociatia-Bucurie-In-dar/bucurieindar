@@ -7,6 +7,11 @@ const spacing = "lg";
 const division = 75;
 const cols = { base: 1, sm: 2, md: 2, lg: 2, xl: 2 };
 
+export const metadata = {
+    title: "Despre noi",
+    description: "Cine suntem, ce facem și de ce să ajutăm."
+}
+
 export default function AboutPage() {
     
     const roundedImage = (src: string) => {

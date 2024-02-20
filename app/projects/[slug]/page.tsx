@@ -5,6 +5,14 @@ import {ProjectDonationProgress} from "@/components/Projects/ProjectDonationProg
 import {DonatePopupButton} from "@/components/Popups/DonatePopup/DonatePopupButton";
 import {ShareButton} from "@/components/Popups/SharePopup/ShareButton";
 
+export function generateMetadata({params}:any) {
+    const projectContent = GetProjectStaticContentWithSlug(params.slug);
+    return {
+        title: projectContent.title,
+        description: projectContent.content.slice(0, 100),
+    };
+}
+
 export default function FullProjectPage({params}:any) {
     
     const projectContent = GetProjectStaticContentWithSlug(params.slug);
