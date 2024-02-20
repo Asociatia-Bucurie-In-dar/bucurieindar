@@ -20,18 +20,18 @@ import {MyZIndexes} from "@/utils/my-constants";
 import classes from "./DonatePopupButton.module.css";
 
 import { useDisclosure } from '@mantine/hooks';
-import {
-    IconBrandApple,
-    IconBrandGoogle,
-    IconBuildingBank,
-    IconCreditCard
-} from "@tabler/icons-react";
+// import {
+//     IconBrandApple,
+//     IconBrandGoogle,
+//     IconBuildingBank,
+//     IconCreditCard
+// } from "@tabler/icons-react";
+
+const payOption1 = "Card / Google Pay / Apple Pay";
+const payOption2 = "Transfer bancar";
 
 
 export function DonatePopupButton(props: {projectId: string, projectTile: string, fullWidth?: boolean}) {
-
-    const payOption1 = "Card / Google Pay / Apple Pay";
-    const payOption2 = "Transfer bancar";
     
     const [loading, setLoading] = useState(false);
     const [badSum, setBadSum] = useState(true);
@@ -139,8 +139,8 @@ export function DonatePopupButton(props: {projectId: string, projectTile: string
                     <SegmentedControl
                         radius="xl"
                         size="md"
-                        defaultValue={payOption1}
                         data={[payOption1, payOption2]}
+                        defaultValue={payOption1}
                         classNames={classes}
                         onChange={(value) => setPayMethod(value)}
                     />

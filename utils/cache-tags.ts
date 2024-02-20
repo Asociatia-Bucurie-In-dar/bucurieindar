@@ -1,0 +1,1 @@
+export const revalidateDonationsProgressTag = 'donations-progress-tag';
