@@ -8,8 +8,7 @@ import commonClasses from "@/utils/commonClasses.module.css";
 
 export function HomeProjects() {
     return (
-        <Container size="full" className={commonClasses.darkerBackground}>
-            <Container size="lg" pt="sm" pb="sm">
+        <Container size="full" className={commonClasses.darkerBackground} pt="sm" pb="sm">
             
             <Divider mt="xl" color="transparent" />
             
@@ -24,7 +23,6 @@ export function HomeProjects() {
             {/*    <ConfettiButton text={"Vezi toate proiectele"} size="md"/>*/}
             {/*</Group>*/}
             <Divider mb={52} color="transparent"/>
-            </Container>
         </Container>
     );
 }

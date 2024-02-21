@@ -1,7 +1,7 @@
 
 import classes from './HomeAboutGeneral.module.css';
 import {Container, Avatar, Title, Text, Divider, Center} from "@mantine/core";
-import image from '/public/favicon.svg';
+import image from '/public/portret.png';
 
 export function HomeAboutGeneral() {
     return <>
