@@ -9,10 +9,10 @@ export async function POST(req: Request)
     try {
         
         const {data} = await resend.emails.send({
-            from: 'office@bucurieindar.ro',
+            from: 'Bucurie in Dar <office@bucurieindar.ro>',
             to: 'office@bucurieindar.ro',
-            subject: `Mesaj de la ${body.name}, pe bucurieindar.org`,
-            html: '<p>' + body.message + ' ---- ' + body.email + '</p>'
+            subject: `Mesaj pe bucurieindar.org, de la ${body.name}`,
+            html: '<p>' + body.message + ' ---- de la: ' + body.email + '</p>',
         });
 
         console.log('email sent');

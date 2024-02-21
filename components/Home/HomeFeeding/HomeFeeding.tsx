@@ -6,22 +6,22 @@ import {TitleWithDescription} from "@/components/Common/TitleWithDescription";
 
 const data = [
     {
-        title: 'Ceva',
+        title: 'Ceva1',
         stats: '99,999',
         description: 'Descriere descriere descriere descriere descriere descriere.',
     },
     {
-        title: 'Ceva',
+        title: 'Ceva2',
         stats: '99,999',
         description: 'Descriere descriere descriere descriere descriere descriere.',
     },
     {
-        title: 'Ceva',
+        title: 'Ceva3',
         stats: '99,999',
         description: 'Descriere descriere descriere descriere descriere descriere.',
     },
     {
-        title: 'Ceva',
+        title: 'Ceva4',
         stats: '99,999',
         description: 'Descriere descriere descriere descriere descriere descriere.',
     },

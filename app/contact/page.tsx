@@ -10,7 +10,7 @@ export const metadata = {
 export default function ContactPage() {
   return (
       <Container size="full">
-          <Container className={commonClasses.container} size="md">
+          <Container className={commonClasses.container} size="lg">
               
               <ContactPanel />
 

@@ -8,7 +8,7 @@ import {
     Container,
     rem, DEFAULT_THEME, Divider,
 } from '@mantine/core';
-import { IconBowl, IconBackpack, IconMedicalCross } from '@tabler/icons-react';
+import {IconBasketHeart, IconUsersGroup, IconScript} from '@tabler/icons-react';
 import classes from './HomeAboutProjects.module.css';
 import commonClasses from '@/utils/commonClasses.module.css';
 import Link from "next/link";
@@ -16,22 +16,22 @@ import {MyRoutePaths} from "@/utils/route-paths";
 
 const mockdata = [
     {
-        title: 'Hrană & apă',
+        title: 'Bunuri materiale',
         description:
             'Feeding the hungry, quenching thirst: Join us in providing essential food and water to impoverished communities. Every bit helps.',
-        icon: IconBowl,
+        icon: IconBasketHeart,
     },
     {
-        title: 'Ajutor educație',
+        title: 'Formulare',
         description:
             'People say it can run at the same speed as lightning striking, Its icy body is so cold, it will not melt even if it is immersed in magma',
-        icon: IconBackpack,
+        icon: IconScript,
     },
     {
-        title: 'Ajutor medical',
+        title: 'Voluntariat',
         description:
             'They’re popular, but they’re rare. Trainers who show them off recklessly may be targeted by thieves',
-        icon: IconMedicalCross,
+        icon: IconUsersGroup,
     },
 ];
 
@@ -65,16 +65,16 @@ export function HomeAboutProjects() {
         <Container size="lg" mt="md">
             <Group justify="center">
                 <Badge variant="gradient" size="lg" gradient={{ from: 'yellow', to: 'orange', deg: -60 }}>
-                    Cum putem ajuta
+                    Ajută altfel
                 </Badge>
             </Group>
 
             <Title order={2} className={classes.title} ta="center" mt="sm">
-                Despre proiecte
+                Alte moduri de a ajuta
             </Title>
 
             <Text c="dimmed" className={classes.description} ta="center" mt="md">
-                Acestea sunt categoriile de proiecte pe care le avem în desfășurare.
+                Există multe moduri de a ajuta, nu doar prin donații. Fiecare gest contează. Iată câteva din modalitățile prin care poți contribui.
             </Text>
 
             <SimpleGrid cols={{ base: 1, md: 3 }} spacing="xl" mt={50}>

@@ -3,7 +3,7 @@ import {TitleWithDescription} from "@/components/Common/TitleWithDescription";
 import {Center, Container, Divider, Image, SimpleGrid, Stack, Text, Title} from "@mantine/core";
 import {OurTeam} from "@/components/OurTeam/OurTeam";
 
-const spacing = "lg";
+const spacing = "xl";
 const division = 75;
 const cols = { base: 1, sm: 2, md: 2, lg: 2, xl: 2 };
 
@@ -24,8 +24,8 @@ export default function AboutPage() {
     
   return (
       <>
-    <Container>
-      <Container className={commonClasses.container} size="md">
+    <div>
+      <Container className={commonClasses.container} size="lg">
         <TitleWithDescription title={"Despre noi"} />
           <Divider mb="xl" color="transparent" />
 
@@ -81,11 +81,11 @@ export default function AboutPage() {
               </Center>
           </SimpleGrid>
       </Container>
-    </Container>
+    </div>
           
-<Container size="full">
-          <Divider mt={50} my="sm" />
-
+<Container size="full" className={commonClasses.darkerBackground}>
+          <Divider mt={division} my="sm" color="transparent" pt={25}/>
+        
           <OurTeam />
 
           <Divider color="transparent" pb="xl"/>

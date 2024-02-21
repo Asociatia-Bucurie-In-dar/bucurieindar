@@ -24,9 +24,9 @@ const social =
 
 export function ContactPanel() {
     const icons = social.map((props, index) => (
-        <ActionIcon key={index} size={28} className={classes.social} variant="transparent"
+        <ActionIcon key={index} size={33} className={classes.social} variant="transparent"
         component={Link} href={props.link}>
-            <props.icon size="1.4rem" stroke={1.5} />
+            <props.icon size="1.6rem" stroke={1.5} />
         </ActionIcon>
     ));
     
