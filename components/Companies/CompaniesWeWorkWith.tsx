@@ -6,17 +6,18 @@ import {TitleWithDescription} from "@/components/Common/TitleWithDescription";
 interface CardProps {
     image: string;
     title: string;
-    category: string;
 }
 
 const add = "/companies/";
 
 const data = [
     {
-        image: "actionlabs.jpeg"
+        image: "actionlabs.jpeg",
+        title: "Action Labs"
     },
     {
-        image: "autototal.jpeg"
+        image: "autototal.jpeg",
+        title: "Auto Total"
     },
 ];
 
