@@ -62,7 +62,7 @@ export function HomeAboutProjects() {
 
     return (
 <Container size="full" py="xl" className={commonClasses.darkerBackground}>
-        <Container size="md" mt="md">
+        <Container size="lg" mt="md">
             <Group justify="center">
                 <Badge variant="gradient" size="lg" gradient={{ from: 'yellow', to: 'orange', deg: -60 }}>
                     Cum putem ajuta

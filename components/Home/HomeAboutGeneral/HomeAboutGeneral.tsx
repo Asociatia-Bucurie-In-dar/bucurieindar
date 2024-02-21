@@ -5,7 +5,7 @@ import image from '/public/favicon.svg';
 
 export function HomeAboutGeneral() {
     return <>
-        <Container size="md" mt={35} mb={45} className={classes.wrapper}>
+        <Container size="lg" mt={35} mb={45} className={classes.wrapper}>
                     <div className={classes.body}>
                         <Center>
                         <Title className={classes.titleBig} >

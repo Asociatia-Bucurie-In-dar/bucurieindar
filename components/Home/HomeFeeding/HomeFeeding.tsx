@@ -6,20 +6,25 @@ import {TitleWithDescription} from "@/components/Common/TitleWithDescription";
 
 const data = [
     {
-        title: 'Beneficiari',
-        stats: '6,000',
-        description: 'Beneficiarii noștri primesc mese sănătoase în fiecare zi.',
+        title: 'Ceva',
+        stats: '99,999',
+        description: 'Descriere descriere descriere descriere descriere descriere.',
     },
     {
-        title: 'Mese oferite',
-        stats: '30,000',
-        description: 'Mesele oferite de către asociația noastră până în prezent.',
+        title: 'Ceva',
+        stats: '99,999',
+        description: 'Descriere descriere descriere descriere descriere descriere.',
     },
     {
-        title: 'Mese lunar',
-        stats: '48,000',
-        description: 'Mesele oferite lunar de către asociația noastră.',
-    }
+        title: 'Ceva',
+        stats: '99,999',
+        description: 'Descriere descriere descriere descriere descriere descriere.',
+    },
+    {
+        title: 'Ceva',
+        stats: '99,999',
+        description: 'Descriere descriere descriere descriere descriere descriere.',
+    },
 ];
 
 export function HomeFeeding() {
@@ -31,15 +36,15 @@ export function HomeFeeding() {
         </div>
     ));
     return <>
-        <Container size="full" mt="xl" className={commonClasses.darkerBackground}>
-        <Container size="md" py="xl">
+        <Container size="full" pt="xl">
+        <Container size="lg" py="xl">
             
-            <TitleWithDescription title={"Masa bucuriei"} 
-                                  description={"Programul nostru de hrănire își propune să hrănească trupurile și spiritele celor care au nevoie. Prin oferirea de mese sănătoase, oferim hrana și speranță multora, asigurându-ne că niciun copil nu merge la culcare flămând în comunitățile noastre. Alăturați-vă nouă în această cauză vitală."}/>
+            <TitleWithDescription title={"Activitatea noastră"} 
+                                  description={"Acesta este ajutorul oferit de voi prin noi, de la înființarea Asociației Bucurie în Dar."}/>
             
-        <Container mt="xl" className={classes.root}>{stats}</Container>
+        <Container size="lg" mt="xl" className={classes.root}>{stats}</Container>
         </Container>
-            <Divider mt="sm" color="transparent" />
+            <Divider mt={50} color="transparent" />
         </Container>
         
         </>;

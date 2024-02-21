@@ -51,13 +51,13 @@ export function FAQ() {
     
     return (
         <Container className={commonClasses.darkerBackground} size="full">
-            <Container size="md" className={classes.wrapper}>
+            <Container size="lg" className={classes.wrapper}>
                 <Grid id="faq-grid" gutter={50}>
                     <GridCol span={{ base: 12, md: 6 }}>
-                        <Center>
+                        
                         <Image src={image.src} alt="Frequently Asked Questions" 
                             loading="lazy" placeholder="blur"/>
-                        </Center>
+                       
                     </GridCol>
                     <GridCol span={{ base: 12, md: 6 }}>
                         

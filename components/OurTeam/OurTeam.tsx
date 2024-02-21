@@ -44,7 +44,7 @@ const data = [
 export function OurTeam() {
     
     const items = data.map((item, index) => {
-        return <Group gap="sm">
+        return <Group gap="xl">
                 <Avatar size="lg" src={item.avatar} radius={40} placeholder="blur"/>
                 <div>
                     <Text fz="md" fw={500}>
@@ -58,7 +58,7 @@ export function OurTeam() {
     });
     
     return (
-        <Container mt="xl" mb={55} size="md">
+        <Container mt="xl" mb={55} size="lg">
             <Container className={classes.wrapper}>
                 
                 <TitleWithDescription title={"Echipa noastră"} 

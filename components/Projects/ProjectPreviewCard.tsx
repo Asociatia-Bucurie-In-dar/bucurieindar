@@ -20,7 +20,7 @@ export function ProjectPreviewCard(props: ProjectType ) {
                 <CardSection>
                     <Link {...linkProps}>
                         <Image src={props.image_path} 
-                               height={180}
+                               height={200}
                                loading={"lazy"}
                             placeholder="blur"/>
                     </Link>
@@ -34,7 +34,7 @@ export function ProjectPreviewCard(props: ProjectType ) {
                     {props.title}
                 </Text>
 
-                <Text fz="sm" c="dimmed" lineClamp={3} component={Link} {...linkProps}>
+                <Text fz="sm" c="dimmed" lineClamp={4} component={Link} {...linkProps}>
                     {props.content}
                 </Text>
 

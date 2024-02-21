@@ -2,7 +2,6 @@ import {Paper, Text, Title, Button, SimpleGrid, Container, Avatar, Center, Divid
 import classes from './CompaniesWeWorkWith.module.css';
 import commonClasses from '@/utils/commonClasses.module.css';
 import {TitleWithDescription} from "@/components/Common/TitleWithDescription";
-import favIcon from "@/public/favicon.svg";
 
 interface CardProps {
     image: string;
@@ -10,54 +9,22 @@ interface CardProps {
     category: string;
 }
 
+const add = "/companies/";
+
 const data = [
     {
-        image: favIcon.src,
-        title: 'Best forests to visit in North America',
-        category: 'nature',
+        image: "actionlabs.jpeg"
     },
     {
-        image: favIcon.src,
-        title: 'Hawaii beaches review: better than you think',
-        category: 'beach',
-    },
-    {
-        image: favIcon.src,
-        title: 'Mountains at night: 12 best locations to enjoy the view',
-        category: 'nature',
-    },
-    {
-        image: favIcon.src,
-        title: 'Aurora in Norway: when to visit for best experience',
-        category: 'nature',
-    },
-    {
-        image: favIcon.src,
-        title: 'Best places to visit this winter',
-        category: 'tourism',
-    },
-    {
-        image: favIcon.src,
-        title: 'Active volcanos reviews: travel at your own risk',
-        category: 'nature',
-    },
-    {
-        image: favIcon.src,
-        title: 'Active volcanos reviews: travel at your own risk',
-        category: 'nature',
-    },
-    {
-        image: favIcon.src,
-        title: 'Active volcanos reviews: travel at your own risk',
-        category: 'nature',
+        image: "autototal.jpeg"
     },
 ];
 
-function CompanyCard({ image, title, category }: CardProps) {
+function CompanyCard({ image }: CardProps) {
     return (
         <Avatar size="xl"
-            src={image}
-            alt={title}
+            src={ add + image}
+            alt={image}
         />
     );
 }
@@ -71,7 +38,7 @@ export function CompaniesWeWorkWith() {
 
     return (
         <Container size="full" className={commonClasses.darkerBackground}>
-        <Container size="md" pt={50} pb={65}>
+        <Container size="lg" pt={50} pb={65}>
             <TitleWithDescription title={"Parteneri"} 
                                   maxWidth={"700px"}
                 description={"Mulțumim partenerilor noștri pentru sprijinul acordat în realizarea proiectelor noastre. Fără ajutorul lor, nu am fi putut ajuta atât de multe persoane."}/>

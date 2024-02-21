@@ -6,7 +6,7 @@ import {TitleWithDescription} from "@/components/Common/TitleWithDescription";
 
 export function HomeBlogPosts() {
     return (
-        <Container size="lg" pt="xl">
+        <Container size="xl" pt="xl">
             <TitleWithDescription title={"Blog"} 
                                   description={"Aici este un sub-titlu opțional pentru secțiunea Blog de pe prima pagina."}/>
             <Divider mb="xl" color="transparent" />

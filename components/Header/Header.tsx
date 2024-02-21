@@ -87,7 +87,7 @@ export function Header() {
             transition: 'transform 400ms ease',
             backgroundColor: 'var(--mantine-color-body)',
         }}>
-            <Container size="md">
+            <Container size="lg">
                 <div className={classes.inner}>
                     
                     <Group>
@@ -99,7 +99,7 @@ export function Header() {
                     </Group>
                     
                     
-                    <Group h="100%" gap={0} visibleFrom="sm">
+                    <Group h="100%" gap="sm" visibleFrom="sm">
                         {headerItems}
                     </Group>
                     <Group visibleFrom="sm">
