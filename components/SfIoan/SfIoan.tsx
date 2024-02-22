@@ -15,10 +15,10 @@ export function SfIoan() {
     
     return (
         <Container className={commonClasses.darkerBackground} size="full" pt={0} pb={53}>
-            <Container size="lg" className={classes.wrapper}>
+            <Container size="md" className={classes.wrapper}>
                 <Center>
                     <div className={classes.roundedImageWrapper}>
-                        <Image src="/sfIoan.png" alt={"Icoana Sfantul Ioan"} loading="lazy" width={rem(280)} height={rem(280)}/>
+                        <Image src="/sfIoan.png" alt={"Icoana Sfantul Ioan"} loading="lazy" width={rem(280)} height={rem(280)} className={classes.image}/>
                     </div>
                 </Center>
                 <div className={classes.body}>
@@ -30,7 +30,7 @@ export function SfIoan() {
 
                     <Center>
                         <Text fz="md" c="dimmed" style={{textAlign: "center"}} component={Link} {...linkProps}>
-                            Avem deasemenea proiectul Centrul Sfantul Ioan cel Milostiv, pentru tratarea dependentelor de multe feluri. Suntem aici pentru a vă ajuta pe dumneavoastră și pe cei în nevoie. Puteti vedea mai multe detalii pe site-ul oficial dand <b>click aici</b>.
+                            Avem deasemenea proiectul Centrul Sfantul Ioan cel Milostiv, pentru tratarea dependentelor de multe feluri. Dorim sa fim aici pentru a vă ajuta pe dumneavoastră și pe cei în nevoie. Puteti vedea mai multe detalii pe site-ul oficial dand <b>click aici</b>.
                         </Text>
                     </Center>
                 </div>

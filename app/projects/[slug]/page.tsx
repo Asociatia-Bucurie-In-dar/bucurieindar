@@ -25,7 +25,7 @@ export default function FullProjectPage({params}:any) {
     const projectContent = GetProjectStaticContentWithSlug(params.slug);
     
     return (
-        <Container className={commonClasses.container} size="md">
+        <Container className={commonClasses.container} size="lg">
             <Title> 
                 {projectContent.title} 
             </Title>

@@ -27,8 +27,7 @@
 }
 
 .image {
-    @media (max-width: $mantine-breakpoint-sm) {
-    }
+    
 }
 
 .titleBig {
@@ -73,4 +72,5 @@
     width: rem(250px);
     height: rem(250px);
     position: relative;
+    border: 2px solid light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-4));
 }

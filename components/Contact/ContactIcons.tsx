@@ -1,6 +1,7 @@
 import { Text, Box, Stack, rem } from '@mantine/core';
 import { IconSun, IconPhone, IconMapPin, IconAt } from '@tabler/icons-react';
 import classes from './ContactIcons.module.css';
+import {contactInfo} from "@/content/contact/my-contact";
 
 interface ContactIconProps extends Omit<React.ComponentPropsWithoutRef<'div'>, 'title'> {
     icon: typeof IconSun;
@@ -26,9 +27,9 @@ function ContactIcon({ icon: Icon, title, description, ...others }: ContactIconP
 }
 
 const MOCKDATA = [
-    { title: 'Email', description: 'office@bucurieindar.ro', icon: IconAt },
-    { title: 'Telefon', description: '+4 0727 786 725', icon: IconPhone },
-    { title: 'Adresa', description: 'Str. Poteraș 14, București, România 040266', icon: IconMapPin },
+    { title: 'Email', description: contactInfo.email, icon: IconAt },
+    { title: 'Telefon', description: contactInfo.phone, icon: IconPhone },
+    { title: 'Adresa', description: contactInfo.address, icon: IconMapPin },
     { title: "Ore lucru", description: '9 a.m. – 5:30 p.m.', icon: IconSun },
 ];
 

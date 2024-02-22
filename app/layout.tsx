@@ -3,6 +3,7 @@ import React from 'react';
 import { MantineProvider, ColorSchemeScript } from '@mantine/core';
 import { Header } from '@/components/Header/Header';
 import { Footer } from '@/components/Footer/Footer';
+import { ChatButton } from '@/components/ChatButton/ChatButton';
 //import WavySeparator from '@/components/WavySeparator/WavySeparator';
 import { theme } from '@/theme';
 
@@ -29,6 +30,7 @@ export default function RootLayout({ children }: { children: any }) {
     <MantineProvider theme={theme} defaultColorScheme="light">
         <Header/>
         {children}
+        <ChatButton />
         <Footer/>
     </MantineProvider>
 

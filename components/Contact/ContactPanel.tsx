@@ -17,10 +17,11 @@ import commonClasses from '@/utils/commonClasses.module.css';
 import Link from "next/link";
 import {MyRoutePaths} from "@/utils/route-paths";
 import {useState} from "react";
+import {contactInfo} from "@/content/contact/my-contact";
 
 const social = 
-    [{icon: IconBrandFacebook, link: 'https://www.facebook.com/asociatiabucurieindar/'},
-        {icon: IconBrandWhatsapp, link: 'https://wa.me/40727786725'}];
+    [{icon: IconBrandFacebook, link: contactInfo.facebookLink},
+        {icon: IconBrandWhatsapp, link: "https://wa.me/" + contactInfo.phoneForWhatsapp}];
 
 export function ContactPanel() {
     const icons = social.map((props, index) => (
