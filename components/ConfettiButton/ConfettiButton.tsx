@@ -6,7 +6,7 @@ import {MyRoutePaths} from "@/utils/route-paths";
 import {MyZIndexes} from "@/utils/my-constants";
 
 
-export function ConfettiButton(props: {text: string, size?: string, mt?: string, }) {
+export function ConfettiButton(props: {text: string, size?: string, mt?: string, disabled?: boolean }) {
     const handleButtonClicked = () => {
         fire(0.25, {spread: 26, startVelocity: 55,});
         fire(0.2, {spread: 60,});
@@ -31,6 +31,7 @@ export function ConfettiButton(props: {text: string, size?: string, mt?: string,
                         name={MyRoutePaths.Projects.label}
                         size={props.size}
                         mt={props.mt}
+                        disabled={props.disabled ?? false}
                 >
                     {props.text}
                 </Button>

@@ -24,7 +24,7 @@ export default function BlogPage({params} : any) {
     
   return (
       <div>
-          <Container className={commonClasses.container} size="md">
+          <Container className={commonClasses.container} size="lg">
               <TitleWithDescription title={article.title}/>
 
               <Divider mb="xl" color="transparent"/>

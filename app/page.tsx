@@ -6,16 +6,16 @@ import {HomeAboutProjects} from '@/components/Home/HomeAboutProjects/HomeAboutPr
 import {OurTeam} from '@/components/OurTeam/OurTeam';
 import {FAQ} from '@/components/FAQ/FAQ';
 import {HomeBlogPosts} from '@/components/Home/HomeBlogPosts/HomeBlogPosts';
-import {CompaniesWeWorkWith} from "@/components/Companies/CompaniesWeWorkWith";
+import {SfIoan} from "@/components/SfIoan/SfIoan";
 import {Divider} from "@mantine/core";
 
 export default function HomePage() {
   return (
     <>
       <HomeHero />
-      {/*<CompaniesWeWorkWith />*/}
         <HomeFeeding />
         <HomeProjects />
+      <SfIoan />
         <HomeAboutGeneral />
         <HomeAboutProjects />
         <OurTeam />

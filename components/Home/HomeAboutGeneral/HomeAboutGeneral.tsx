@@ -1,7 +1,6 @@
 
 import classes from './HomeAboutGeneral.module.css';
-import {Container, Avatar, Title, Text, Divider, Center} from "@mantine/core";
-import image from '/public/portret.png';
+import {Container, Avatar, Title, Text, Divider, Center, Image, rem} from "@mantine/core";
 
 export function HomeAboutGeneral() {
     return <>
@@ -20,9 +19,9 @@ export function HomeAboutGeneral() {
                         </Center>
                     </div>
                 <Center>
-                    <Avatar className={classes.image}
-                            placeholder={"blur"}
-                            size={250} src={image.src}/>
+                    <div className={classes.roundedImageWrapper}>
+                        <Image src="/portret.png" alt={"Portret copil"} loading="lazy" width={rem(250)} height={rem(250)}/>
+                    </div>
                 </Center>
         </Container>
     </>;

@@ -22,7 +22,7 @@ export function BlogPostPreviewCard(props: { article: BlogArticleType }) {
                         {props.article.category}
                     </Text>
                     <Text className={classes.title} mt="xs" mb="md" lineClamp={2}>
-                        The best laptop for Frontend engineers in 2022
+                        {props.article.title}
                     </Text>
                     <Group wrap="nowrap" gap="xs">
                         <Button variant="light">{"Citeşte articolul"}</Button>

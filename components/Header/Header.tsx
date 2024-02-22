@@ -31,6 +31,7 @@ export function Header() {
     const pathname = usePathname();
     const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] = useDisclosure(false);
     const pinned = useHeadroom({ fixedAt: 120 });
+    const isDonateDisabled = pathname === MyRoutePaths.Projects.link;
 
     const renderLinks = (links: any) => {
         return links.map((link: any) => {
@@ -103,11 +104,11 @@ export function Header() {
                         {headerItems}
                     </Group>
                     <Group visibleFrom="sm">
-                        <ConfettiButton text={"Donează"}/>
+                        <ConfettiButton text={"Donează"} disabled={isDonateDisabled}/>
                         <ThemeSwitcher/>
                     </Group>
                     <Group hiddenFrom="sm">
-                        <ConfettiButton text={"Donează"}/>
+                        <ConfettiButton text={"Donează"} disabled={isDonateDisabled}/> 
                         <Burger opened={drawerOpened} onClick={toggleDrawer} size="sm" />
                     </Group>
                 </div>

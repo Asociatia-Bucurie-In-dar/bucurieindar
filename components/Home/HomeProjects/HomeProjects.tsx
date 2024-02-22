@@ -22,7 +22,7 @@ export function HomeProjects() {
             {/*<Group justify="center" mt="xl" mb={52}>*/}
             {/*    <ConfettiButton text={"Vezi toate proiectele"} size="md"/>*/}
             {/*</Group>*/}
-            <Divider mb={52} color="transparent"/>
+            <Divider mb="xl" color="transparent"/>
         </Container>
     );
 }

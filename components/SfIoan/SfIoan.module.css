@@ -3,8 +3,9 @@
     align-items: center;
 
     @media (max-width: $mantine-breakpoint-sm) {
-        flex-direction: column-reverse;
-        padding: var(--mantine-spacing-xl);
+        flex-direction: column;
+        padding-left: var(--mantine-spacing-xl);
+        padding-right: var(--mantine-spacing-xl);
     }
 }
 
@@ -34,6 +35,9 @@
     font-size: rem(34px);
     font-weight: 900;
     margin-bottom: var(--mantine-spacing-lg);
+    color: var(--mantine-color-text);
+    text-decoration: none;
+    text-align: center;
 
     @media (max-width: $mantine-breakpoint-sm) {
         font-size: rem(24px);
@@ -46,9 +50,9 @@
 }
 
 .body {
-    padding-right: calc(var(--mantine-spacing-xl) * 2);
+    padding-left: calc(var(--mantine-spacing-xl) * 2);
     @media (max-width: $mantine-breakpoint-sm) {
-        padding-right: 0;
+        padding-left: 0;
         margin-top: var(--mantine-spacing-xl);
     }
 }
@@ -64,9 +68,9 @@
 }
 
 .roundedImageWrapper {
-   border-radius: 50%;
-   overflow: hidden;
-   width: rem(250px);
-   height: rem(250px); 
-   position: relative; 
- }
+    border-radius: 3%;
+    overflow: hidden;
+    width: rem(250px);
+    height: rem(250px);
+    position: relative;
+}

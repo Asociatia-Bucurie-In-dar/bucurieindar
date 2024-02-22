@@ -1,14 +1,13 @@
 import { Container, Title, Text, Button, Image } from '@mantine/core';
 import classes from './HomeHero.module.css';
 import { ConfettiButton } from '@/components/ConfettiButton/ConfettiButton';
-import heroTemp from '@/public/hero3.png';
 
 export function HomeHero() {
     return (
         <div className={classes.root}>
             <div className={classes.background}>
                 <Image
-                    src={heroTemp.src}
+                    src="/hero3.png"
                     alt="Background"
                     style={{ objectFit: 'cover', objectPosition: 'center', width: '100%', height: '100%', position: 'absolute'}}
                     fetchPriority="auto" />

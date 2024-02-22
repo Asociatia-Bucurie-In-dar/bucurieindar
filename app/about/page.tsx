@@ -2,6 +2,7 @@ import commonClasses from "@/utils/commonClasses.module.css";
 import {TitleWithDescription} from "@/components/Common/TitleWithDescription";
 import {Center, Container, Divider, Image, SimpleGrid, Stack, Text, Title} from "@mantine/core";
 import {OurTeam} from "@/components/OurTeam/OurTeam";
+import {AnimatedThing} from "@/components/CoolEffects/AnimatedNumber/AnimatedThing";
 
 const spacing = "xl";
 const division = 75;
@@ -16,7 +17,7 @@ export default function AboutPage() {
     
     const roundedImage = (src: string) => {
         return (
-            <div style={{borderRadius: '5px', overflow: 'hidden'}}>
+            <div style={{borderRadius: '10px', overflow: 'hidden'}}>
                 <Image src={src}/>
             </div>
         );
@@ -32,12 +33,12 @@ export default function AboutPage() {
           {/* FIRST */}
           <SimpleGrid cols={cols} spacing={spacing}>
               <Center>
-                    {roundedImage("/flowers.jpg")}
+                    {roundedImage("/despre/oameni.jpg")}
               </Center>
 
               <Center>
               <Stack>
-                      <Title className={commonClasses.titleBigLight}>Cine suntem?</Title>
+                      <AnimatedThing thing={"Cine suntem?"} class={commonClasses.titleBigLight} />
                       <Text c="dimmed">
                           Suntem oameni care trăiesc și pentru alții, oameni cu rațiune, cu sentimente și cu dorințe, iar dorința noastră cea mare este să nu trăim doar pentru noi înșine. Cu ajutorul Bunului Dumnezeu și cu sprijinul vostru, într-o împreună lucrare, vrem să aducem bucurie în inimile multor oameni, mari și mici, tineri și bătrâni. Avem libertatea de a alege ce facem în această viață, iar noi am ales să ajutăm și o facem cu toata bucuria și cu toată dragostea. Dăruiește și tu bucurie, împreună cu noi.
                       </Text>
@@ -51,7 +52,7 @@ export default function AboutPage() {
           <SimpleGrid cols={cols} spacing={spacing}>
               <Center>
                   <Stack>
-                      <Title className={commonClasses.titleBigLight}>Ce facem?</Title>
+                      <AnimatedThing thing={"Ce facem?"} class={commonClasses.titleBigLight} />
                       <Text c="dimmed">
                           Ascultăm poveștile de viață ale celor care sunt mai puțin importanți pentru o parte a societății. Suntem sprijin, cu tot ce ne stă în putere, pentru cei care nu mai au pe cine să se sprijine. Îi ajutăm pe cei care strigă: ajutați-ne! Alege să ajuți împreună cu noi! Este atât de simplu. Doar alege.
                       </Text>
@@ -59,7 +60,7 @@ export default function AboutPage() {
               </Center>
               
               <Center>
-                    {roundedImage("/flowers.jpg")}
+                    {roundedImage("/despre/biserica.jpg")}
               </Center>
           </SimpleGrid>
 
@@ -68,12 +69,12 @@ export default function AboutPage() {
           {/* THIRD */}
           <SimpleGrid cols={cols} spacing={spacing}>
               <Center>
-                    {roundedImage("/flowers.jpg")}
+                    {roundedImage("/despre/ajutor.jpeg")}
               </Center>
 
               <Center>
                   <Stack>
-                      <Title className={commonClasses.titleBigLight}>De ce să ajutăm?</Title>
+                      <AnimatedThing thing={"De ce să ajutăm?"} class={commonClasses.titleBigLight} />
                       <Text c="dimmed">
                           Pentru că avem puterea să alegem ce facem cu timpul nostru, cu viața noastră. Moștenirea pe care o lăsăm copiilor noștri sunt faptele noastre, pe care le transmit și ei mai departe. Oameni buni, din această viață, plecăm doar cu faptele noastre. Voi, cei care veniți și ajutați, sacrificați din timpul vostru, din confortul și banii voștri unor oameni pe care nu-i cunoașteți. Ați ales să dăruiți din viața voastră aproapelui vostru. Aceasta este darul și el vine din iubire.
                       </Text>
