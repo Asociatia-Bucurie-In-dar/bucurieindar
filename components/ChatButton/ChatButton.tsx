@@ -19,16 +19,16 @@ export function ChatButton() {
                 variant="gradient"
                 aria-label="Gradient action icon"
                 gradient={{ from: 'green', to: 'lime', deg: 90 }}
-                        component={Link} href={"https://wa.me/" + contactInfo.phoneForWhatsapp}
-            >
+                        component={Link} href={"https://wa.me/" + contactInfo.phoneForWhatsapp} 
+                        rel="noopener noreferrer" target="_blank">
                 <IconBrandWhatsapp style={{ width: '70%', height: '70%' }} stroke={1.5}/>
             </ActionIcon>
             <ActionIcon size={50}
                         variant="gradient"
                         aria-label="Gradient action icon"
                         gradient={{ from: 'indigo', to: 'blue', deg: 90 }}
-                        component={Link} href={contactInfo.facebookLink}
-            >
+                        component={Link} href={contactInfo.facebookLink} 
+                        rel="noopener noreferrer" target="_blank">
                 <IconBrandFacebook style={{ width: '70%', height: '70%' }} stroke={1.5}/>
             </ActionIcon>
         </div>

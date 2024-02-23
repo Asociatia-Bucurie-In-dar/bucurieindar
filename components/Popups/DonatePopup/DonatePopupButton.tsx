@@ -142,7 +142,7 @@ export function DonatePopupButton(props: {projectId: string, projectTile: string
                     <Divider mt="sm" mb="sm" color="transparent"/>
 
                     {/* RADIO */}
-                    <Center>
+                    
                     <SegmentedControl
                         radius="xl"
                         size="md"
@@ -151,7 +151,6 @@ export function DonatePopupButton(props: {projectId: string, projectTile: string
                         classNames={classes}
                         onChange={(value) => setPayMethod(value)}
                     />
-                    </Center>
                     {/* RADIO */}
                     
                     <Divider mt="sm" mb="sm" color="transparent"/>

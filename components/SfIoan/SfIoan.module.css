@@ -67,7 +67,7 @@
 }
 
 .roundedImageWrapper {
-    border-radius: 3%;
+    border-radius: 50%;
     overflow: hidden;
     width: rem(250px);
     height: rem(250px);
