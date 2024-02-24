@@ -1,10 +1,36 @@
 {
-  "HEADER": {
-    "HOME": "Home",
-    "PROJECTS": "Projects",
-    "ABOUT": "About",
-    "GALLERY": "Gallery",
-    "BLOG": "Blog",
-    "CONTACT": "Contact"
+  "COMMON": 
+  {
+    "DONATE": "Donate",
+    "DONATE_NOW": "Donate now",
+    "ASSOCIATION": "Bucurie în Dar (Gift of Joy)",
+    "ASSOCIATION_FULL": "Bucurie în Dar (Gift of Joy) Association"
+  },
+  "HEADER": 
+  {
+    "HOME": {
+      "LABEL": "Home",
+      "LINK": "/en"
+    },
+    "PROJECTS": {
+      "LABEL": "Projects",
+      "LINK": "/en/projects"
+    },
+    "ABOUT": {
+      "LABEL": "About",
+      "LINK": "/en/about"
+    },
+    "GALLERY": {
+      "LABEL": "Gallery",
+      "LINK": "/en/gallery"
+    },
+    "BLOG": {
+      "LABEL": "Blog",
+      "LINK": "/en/blog"
+    },
+    "CONTACT": {
+      "LABEL": "Contact",
+      "LINK": "/en/contact"
+    }
   }
 }

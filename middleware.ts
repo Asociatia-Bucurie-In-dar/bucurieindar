@@ -8,6 +8,8 @@ export default createMiddleware({
 
     // Used when no locale matches
     defaultLocale: locales[0],
+    
+    localePrefix: 'as-needed',
 });
 
 export const config = {

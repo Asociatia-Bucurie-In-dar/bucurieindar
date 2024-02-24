@@ -8,17 +8,14 @@ import {FAQ} from '@/components/FAQ/FAQ';
 import {HomeBlogPosts} from '@/components/Home/HomeBlogPosts/HomeBlogPosts';
 import {SfIoan} from "@/components/SfIoan/SfIoan";
 import {Divider} from "@mantine/core";
-import {useTranslations} from 'next-intl';
 import {unstable_setRequestLocale} from "next-intl/server";
 
 export default function HomePage({params: {locale}}:{ params: { locale: string } }) {
     unstable_setRequestLocale(locale);
-    const t = useTranslations('HEADER');
     
   return (
       <>
           <HomeHero/>
-          <h1>{t('HOME')}</h1>
           <HomeFeeding/>
           <HomeProjects/>
           <SfIoan/>

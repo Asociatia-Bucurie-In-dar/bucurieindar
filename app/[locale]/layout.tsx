@@ -9,6 +9,7 @@ import FirstTimeConfetti from "@/components/CoolEffects/FirstTimeConfetti";
 //import WavySeparator from '@/components/WavySeparator/WavySeparator';
 import {locales} from "@/middleware";
 import {unstable_setRequestLocale} from 'next-intl/server';
+import {useTranslations} from "next-intl";
 
 export function generateStaticParams() {
     return locales.map((locale:string) => ({locale}));
@@ -22,9 +23,21 @@ export const metadata = {
   description: 'Cu ajutorul Bunului Dumnezeu și a sprijinului vostru, într-un efort comun, vrem să aducem bucurie în inimile multor oameni, tineri și bătrâni. Avem libertatea să alegem ce facem în această viață, și am ales să ajutăm, și o facem cu toată bucuria și tot dragostea noastră. Imparte și tu bucurie, împreună cu noi.',
 };
 
-
-export default async function RootLayout({children, params: {locale}}: { children: React.ReactNode; params: {locale: string}; }) {
+export default function RootLayout({children, params: {locale}}: { children: React.ReactNode; params: {locale: string}; }) {
     unstable_setRequestLocale(locale);
+
+    const headerT = useTranslations('HEADER');
+    const commonT = useTranslations('COMMON');
+
+    const headerTranslations = {
+        home: { label: headerT('HOME.LABEL'), link: headerT('HOME.LINK') },
+        projects: { label: headerT('PROJECTS.LABEL'), link: headerT('PROJECTS.LINK') },
+        about: { label: headerT('ABOUT.LABEL'), link: headerT('ABOUT.LINK') },
+        gallery: { label: headerT('GALLERY.LABEL'), link: headerT('GALLERY.LINK') },
+        blog: { label: headerT('BLOG.LABEL'), link: headerT('BLOG.LINK') },
+        contact: { label: headerT('CONTACT.LABEL'), link: headerT('CONTACT.LINK') },
+        donate: commonT('DONATE')
+    };
     
   return (
     <html lang={"ro"}>
@@ -35,7 +48,7 @@ export default async function RootLayout({children, params: {locale}}: { childre
     </head>
     <body>
     <MantineProvider theme={theme} defaultColorScheme="light">
-        <Header/>
+        <Header headerTranslations={headerTranslations} locale={locale}/>
         {children}
         <ChatButton />
         <Footer/>

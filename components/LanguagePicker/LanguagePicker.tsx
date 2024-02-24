@@ -1,22 +1,25 @@
 import {Button, Center, Image, Menu, rem} from '@mantine/core';
 import { IconChevronDown } from '@tabler/icons-react';
-import {MyLanguages} from "@/utils/my-lanaguages";
+import {MyLocales} from "@/utils/my-lanaguages";
 import classes from './LanguagePicker.module.css';
 import {MyZIndexes} from "@/utils/my-constants";
-import Link from "next/link";
+import {useLocale} from 'next-intl';
+import {Link} from '@/navigation';
+
+
 
 export function LanguagePicker() {
+    const curLocale = useLocale();
+    const curImage = MyLocales.find((locale: any) => locale.locale === curLocale)?.image;
     const icon = <IconChevronDown style={{ width: rem(16), height: rem(16) }} />;
     
-    const menuItems = MyLanguages.map((item: any) => (
-        <Menu.Item key={item.label}>
+    const menuItems = MyLocales.map((locale: any) => (
+        <Menu.Item component={Link} locale={locale.locale} href={'/'}>
             <div style={{borderRadius: '3px', overflow: 'hidden'}}>
-                <Image src={item.image} width={20} height={20} alt={item.label}/>
+                <Image src={locale.image} width={20} height={20} alt={locale.locale}/>
             </div>
         </Menu.Item>
 ));
-
-
 
 return (
     <>
@@ -26,7 +29,7 @@ return (
                 <Link href="#">
                     <Center>
                         <div style={{borderRadius: '3px', overflow: 'hidden', marginRight: '5px'}}>
-                            <Image src={MyLanguages[0].image} width={22} height={22} alt={MyLanguages[0].label}/>
+                            <Image src={curImage} width={22} height={22} alt={curLocale}/>
                         </div>
                         <IconChevronDown size="0.9rem" stroke={1.5} />
                     </Center>

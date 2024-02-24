@@ -2,23 +2,25 @@ import {Text, Container, ActionIcon, Group, rem, Title, Center, SimpleGrid, Divi
 import { IconBrandTwitter, IconBrandYoutube, IconBrandInstagram } from '@tabler/icons-react';
 import classes from './Footer.module.css';
 import Link from "next/link";
-import {MyRoutePaths} from "@/utils/route-paths";
+import {useTranslations} from "next-intl";
 
-function link(link: { label: string, link: string }) {
+function link(link: string, label: string) {
     return (
-        <Text component={Link} href={link.link} c="dimmed" size="sm">
-                {link.label}
+        <Text component={Link} href={link} c="dimmed" size="sm">
+            <Center>{label}</Center>
         </Text>
     );
 }
 export function Footer() {
+    const t = useTranslations('HEADER');
+    
     return (
         <footer className={classes.footer}>
             <Container className={classes.inner} size="lg">
                 <div className={classes.logo}>
                     <Title className={classes.title} size={18} mb="xs">
                         <Text inherit variant="gradient" component="span" gradient={{ from: 'pink', to: 'yellow' }}>
-                            <Link href={MyRoutePaths.Home.link}>
+                            <Link href={t('HOME.LINK')}>
                                 {"Asociația Bucurie în Dar"}
                             </Link>
                         </Text>
@@ -32,12 +34,12 @@ export function Footer() {
             <Container size="md">
                 <Center>
             <SimpleGrid cols={6}>
-                {link(MyRoutePaths.Home)}
-                {link(MyRoutePaths.Projects)}
-                {link(MyRoutePaths.About)}
-                {link(MyRoutePaths.Gallery)}
-                {link(MyRoutePaths.Blog)}
-                {link(MyRoutePaths.Contact)}
+                {link(t('HOME.LINK'), t('HOME.LABEL'))}
+                {link(t('PROJECTS.LINK'), t('PROJECTS.LABEL'))}
+                {link(t('ABOUT.LINK'), t('ABOUT.LABEL'))}
+                {link(t('GALLERY.LINK'), t('GALLERY.LABEL'))}
+                {link(t('BLOG.LINK'), t('BLOG.LABEL'))}
+                {link(t('CONTACT.LINK'), t('CONTACT.LABEL'))}
             </SimpleGrid>
                 </Center>
             </Container>

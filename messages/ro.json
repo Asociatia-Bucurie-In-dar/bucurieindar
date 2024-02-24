@@ -1,10 +1,36 @@
 {
-  "HEADER": {
-    "HOME": "Acasă",
-    "PROJECTS": "Proiecte",
-    "ABOUT": "Despre",
-    "GALLERY": "Galerie",
-    "BLOG": "Blog",
-    "CONTACT": "Contact"
+  "COMMON":
+  {
+    "DONATE": "Donează",
+    "DONATE_NOW": "Donează acum",
+    "ASSOCIATION": "Bucurie în Dar",
+    "ASSOCIATION_FULL": "Asociația Bucurie în Dar"
+  },
+  "HEADER": 
+  {
+    "HOME": {
+      "LABEL": "Acasă",
+      "LINK": "/"
+    },
+    "PROJECTS": {
+      "LABEL": "Proiecte",
+      "LINK": "/projects"
+    },
+    "ABOUT": {
+      "LABEL": "Despre",
+      "LINK": "/about"
+    },
+    "GALLERY": {
+      "LABEL": "Galerie",
+      "LINK": "/gallery"
+    },
+    "BLOG": {
+      "LABEL": "Blog",
+      "LINK": "/blog"
+    },
+    "CONTACT": {
+      "LABEL": "Contact",
+      "LINK": "/contact"
+    }
   }
 }

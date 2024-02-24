@@ -1,7 +1,6 @@
-export const MyLanguages = [  
-    { label: 'RO', image: '/flags/ro.svg' },
-    { label: 'EN', image: '/flags/gb.svg' },
-    // { label: 'DE', image: '/flags/de.svg' },
-    // { label: 'IT', image: '/flags/it.svg' },
-    // { label: 'FR', image: '/flags/fr.svg' }
-    ];
+import {locales} from "@/middleware";
+
+export const MyLocales = [  
+    { locale: locales[0], image: '/flags/ro.svg' },
+    { locale: locales[1], image: '/flags/gb.svg' },
+];

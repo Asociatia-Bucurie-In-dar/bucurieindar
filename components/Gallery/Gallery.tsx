@@ -48,11 +48,11 @@ const imagesData = [
 const videosData = [
     {
         title: 'Video - Masa bucuriei',
-        videoPath: '/videos/video1.mp4',
+        youtubeId: 'jFgOPkkIP-I',
     },
     {
         title: ' Video - Ajută o comunitate',
-        videoPath: '/videos/video2.mp4',
+        youtubeId: 'FKUvxS3grqg',
     }
 ];
 
@@ -72,10 +72,11 @@ export function Gallery() {
     const allVideoCards = videosData.map((video) => (
         <Card p="md" radius="md" className={classes.card}>
             <AspectRatio ratio={1920 / 1080}>
-                <video width="320" height="240" controls>
-                    <source src={video.videoPath} type="video/mp4"/>
-                    Your browser does not support the video tag.
-                </video>
+                <iframe
+                    src={"https://www.youtube-nocookie.com/embed/" + video.youtubeId}
+                    allowFullScreen
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                />
             </AspectRatio>
             <Text className={classes.title} mt={5} pt={5}>
                 {video.title}

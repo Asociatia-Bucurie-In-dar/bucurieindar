@@ -1,6 +1,7 @@
 
 export const MyRoutePaths = {
-    Home: { link: "/", label: "Acasă" },
+    
+    Home: { link: "/", label: "Acasă"},
     Projects: { link: "/projects", label: "Proiecte" },
     About: { link: "/about", label: "Despre" },
     Gallery: { link: "/gallery", label: "Galerie" },
