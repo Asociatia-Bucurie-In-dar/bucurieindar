@@ -2,9 +2,15 @@
   "COMMON": 
   {
     "DONATE": "Donate",
-    "DONATE_NOW": "Donate now",
+    "DONATE_NOW": "Donate Now",
     "ASSOCIATION": "Bucurie în Dar (Gift of Joy)",
     "ASSOCIATION_FULL": "Bucurie în Dar (Gift of Joy) Association"
+  }, 
+  "HERO":
+  {
+    "MOTTO_FIRST_PART": "From this world we leave only with",
+    "MOTTO_SECOND_PART": "our deeds",
+    "DESCRIPTION": "We are support, with all our might, for those who have no one else to lean on. Our mission is to bring joy to the hearts of as many people as possible, both young and old, together with you."
   },
   "HEADER": 
   {

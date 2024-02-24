@@ -2,9 +2,15 @@
   "COMMON":
   {
     "DONATE": "Donează",
-    "DONATE_NOW": "Donează acum",
+    "DONATE_NOW": "Donează Acum",
     "ASSOCIATION": "Bucurie în Dar",
     "ASSOCIATION_FULL": "Asociația Bucurie în Dar"
+  },
+  "HERO":
+  {
+    "MOTTO_FIRST_PART": "Din această lume plecăm doar cu",
+    "MOTTO_SECOND_PART": "faptele noastre",
+    "DESCRIPTION": "Suntem sprijin, cu tot ce ne stă în putere, pentru cei care nu mai au pe cine să se sprijine. Misiunea noastră este să aducem bucurie în inimile cât mai multor oameni, mari și mici, tineri și bătrâni, împreună cu voi."
   },
   "HEADER": 
   {

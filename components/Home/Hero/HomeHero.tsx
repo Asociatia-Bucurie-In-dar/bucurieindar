@@ -1,14 +1,18 @@
 import { Container, Title, Text, Button, Image } from '@mantine/core';
 import classes from './HomeHero.module.css';
 import { ConfettiButton } from '@/components/ConfettiButton/ConfettiButton';
+import {useTranslations} from "next-intl";
 
 export function HomeHero() {
+    const commonT = useTranslations('COMMON');
+    const heroT = useTranslations('HERO');
+    
     return (
         <div className={classes.root}>
             <div className={classes.background}>
                 <Image
                     src="/hero3.png"
-                    alt="Background"
+                    alt={"Background"}
                     style={{ objectFit: 'cover', objectPosition: 'center', width: '100%', height: '100%', position: 'absolute'}}
                     fetchPriority="auto" />
             </div>
@@ -17,22 +21,22 @@ export function HomeHero() {
                 <div className={classes.inner}>
                     <div className={classes.content}>
                         <Title className={classes.title}>
-                            Din această lume plecăm doar cu <br/>
+                            {heroT('MOTTO_FIRST_PART')} <br/>
                             <Text
                                 component="span"
                                 inherit
                                 variant="gradient"
                                 gradient={{from: 'pink', to: 'yellow'}}
                             >
-                                {' '}faptele noastre.{' '}
+                                {' '}{heroT('MOTTO_SECOND_PART')}.{' '}
                             </Text>
                         </Title>
 
                         <Text className={classes.description} mt={30}>
-                            <b>Asoociația Bucurie în Dar</b> - Suntem sprijin, cu tot ce ne stă în putere, pentru cei care nu mai au pe cine să se sprijine. Misiunea noastră este să aducem bucurie în inimile cât mai multor oameni, mari și mici, tineri și bătrâni, împreună cu voi.
+                            <b>{commonT('ASSOCIATION_FULL')}</b> - {heroT('DESCRIPTION')} <br/>
 
                         </Text>
-                        <ConfettiButton size={"lg"} mt="xl" text={"Donează acum"}/>
+                        <ConfettiButton size={"lg"} mt="xl" text={commonT('DONATE_NOW')}/>
                     </div>
                 </div>
             </Container>
