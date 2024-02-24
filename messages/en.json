@@ -53,7 +53,7 @@
     "DESCRIPTION": "Your donation to our cause can create a brighter future, providing essential education, health, and nourishment to children in need. Each contribution brings hope and opens doors to a universe of possibilities. Let's build a brighter future together. Donate now and make a difference! Your support is vital in our mission to unlock a child's potential. With every donation, we can offer more than just basic needs; we provide a foundation for lifelong learning and growth. Our programs focus on education, healthcare, and empowering communities to uplift their youngest members.",
     "IMAGE_ALT": "Portrait of a child"
   },
-  
+
   "HOME_HELP": {
     "BADGE": "HELP DIFFERENTLY",
     "TITLE": "Other ways to help",
@@ -70,6 +70,64 @@
       "TITLE": "Volunteering",
       "DESCRIPTION": "We are always looking for volunteers to help us. We'll help you find a way to volunteer that best suits you."
     }
+  },
+  
+  "OUR_TEAM": {
+    "TITLE": "Our Team",
+    "DESCRIPTION": "Meet our team! We are passionate people when it comes to our work and we wish to bring a positive impact in the world.",
+    "TEAM_MEMBERS": {
+      "FIRST": {
+        "NAME": "First Name",
+        "ROLE": "First Role"
+      },
+      "SECOND": {
+        "NAME": "Second Name",
+        "ROLE": "Second Role"
+      },
+      "THIRD": {
+        "NAME": "Third Name",
+        "ROLE": "Third Role"
+      },
+      "FOURTH": {
+        "NAME": "Fourth Name",
+        "ROLE": "Fourth Role"
+      },
+      "FIFTH": {
+        "NAME": "Fifth Name",
+        "ROLE": "Fifth Role"
+      },
+      "SIXTH": {
+        "NAME": "Sixth Name",
+        "ROLE": "Sixth Role"
+      }
+    }
+  },
+  
+  "FAQ": {
+    "TITLE": "FAQ",
+    "QUESTIONS": {
+      "FIRST": {
+        "QUESTION": "First question?",
+        "ANSWER": "First answer."
+      },
+      "SECOND": {
+        "QUESTION": "Second question?",
+        "ANSWER": "Second answer."
+      },
+      "THIRD": {
+        "QUESTION": "Third question?",
+        "ANSWER": "Third answer."
+      },
+      "FOURTH": {
+        "QUESTION": "Fourth question?",
+        "ANSWER": "Fourth answer."
+      }
+    }
+  },
+  
+  "HOME_BLOG": {
+    "TITLE": "Blog",
+    "DESCRIPTION": "Here you can find some articles about various topics. We hope you will find them interesting and useful."
   },
   
   "HEADER": 

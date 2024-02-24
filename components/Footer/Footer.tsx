@@ -13,6 +13,7 @@ function link(link: string, label: string) {
 }
 export function Footer() {
     const t = useTranslations('HEADER');
+    const commonT = useTranslations('COMMON');
     
     return (
         <footer className={classes.footer}>
@@ -21,7 +22,7 @@ export function Footer() {
                     <Title className={classes.title} size={18} mb="xs">
                         <Text inherit variant="gradient" component="span" gradient={{ from: 'pink', to: 'yellow' }}>
                             <Link href={t('HOME.LINK')}>
-                                {"Asociația Bucurie în Dar"}
+                                {commonT('ASSOCIATION_FULL')}
                             </Link>
                         </Text>
                     </Title>
@@ -45,7 +46,7 @@ export function Footer() {
             </Container>
             <Container className={classes.afterFooter}>
                 <Text c="dimmed" size="sm">
-                    © {new Date().getFullYear()} Asociația Bucurie in Dar
+                    © {new Date().getFullYear()} {commonT('ASSOCIATION_FULL')}
                 </Text>
 
                 <Group gap={0} className={classes.social} justify="flex-end" wrap="nowrap">

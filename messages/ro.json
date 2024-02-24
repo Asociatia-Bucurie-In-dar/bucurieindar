@@ -53,7 +53,7 @@
     "DESCRIPTION": "Donația ta pentru cauza noastră creează un viitor mai strălucitor, oferind educație, sănătate și hrănire esențiale copiilor nevoiași. Fiecare contribuție aduce speranță și deschide uși către un univers de posibilități. Să construim împreună un viitor mai strălucitor. Donează acum și fă o diferență! Sprijinul tău este vital în misiunea noastră de a debloca potențialul unui copil. Cu fiecare donație, putem oferi mai mult decât nevoile de bază; oferim o bază pentru învățare și creștere pe tot parcursul vieții. Programele noastre se concentrează pe educație, îngrijire medicală și împuternicirea comunităților pentru a-și ridica cei mai tineri membri.",
     "IMAGE_ALT": "Portretul unui copil"
   },
-  
+
   "HOME_HELP": {
     "BADGE": "Ajută altfel",
     "TITLE": "Alte moduri de a ajuta",
@@ -70,6 +70,64 @@
       "TITLE": "Voluntariat",
       "DESCRIPTION": "Fii voluntar și implică-te în activitățile noastre. Fiecare ajutor contează."
     }
+  },
+
+  "OUR_TEAM": {
+    "TITLE": "Echipa noastră",
+    "DESCRIPTION": "Fa conostință cu echipa noastră! Suntem oameni pasionați de ceea ce facem și ne dorim să aducem un impact pozitiv în lumea în care trăim.",
+    "TEAM_MEMBERS": {
+      "FIRST": {
+        "NAME": "Primul Nume",
+        "ROLE": "Primul Rol"
+      },
+      "SECOND": {
+        "NAME": "Al Doilea Nume",
+        "ROLE": "Al Doilea Rol"
+      },
+      "THIRD": {
+        "NAME": "Al Treilea Nume",
+        "ROLE": "Al Treilea Rol"
+      },
+      "FOURTH": {
+        "NAME": "Al Patrulea Nume",
+        "ROLE": "Al Patrulea Rol"
+      },
+      "FIFTH": {
+        "NAME": "Al Cincilea Nume",
+        "ROLE": "Al Cincilea Rol"
+      },
+      "SIXTH": {
+        "NAME": "Al Șaselea Nume",
+        "ROLE": "Al Șaselea Rol"
+      }
+    }
+  },
+
+  "FAQ": {
+    "TITLE": "Răspunsuri",
+    "QUESTIONS": {
+      "FIRST": {
+        "QUESTION": "Prima întrebare?",
+        "ANSWER": "Primul răspuns"
+      },
+      "SECOND": {
+        "QUESTION": "A doua întrebare?",
+        "ANSWER": "Al doilea răspuns."
+      },
+      "THIRD": {
+        "QUESTION": "A treia întrebare?",
+        "ANSWER": "Al treilea răspuns."
+      },
+      "FOURTH": {
+        "QUESTION": "A patra întrebare?",
+        "ANSWER": "Al patrulea răspuns."
+      }
+    }
+  },
+  
+  "HOME_BLOG": {
+    "TITLE": "Blog",
+    "DESCRIPTION": "Aici vei găsi articole despre diferite subiecte. Sperăm să găsești ceva care să fie interesant sau de folos."
   },
   
   "HEADER": 

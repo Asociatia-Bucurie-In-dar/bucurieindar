@@ -13,36 +13,32 @@ import {
 import classes from './FAQ.module.css';
 import commonClasses from '@/utils/commonClasses.module.css';
 import {TitleWithDescription} from "@/components/Common/TitleWithDescription";
+import {useTranslations} from "next-intl";
 
-const placeholder =
-    'It can’t help but hear a pin drop from over half a mile away, so it lives deep in the mountains where there aren’t many people or Pokémon.';
-
-const questions = [
-    {
-        question: 'How can I reset my password?',
-        answer: placeholder,
-        value: 'reset-password',
-    },
-    {
-        question: 'Can I create more that one account?',
-        answer: placeholder,
-        value: 'another-account',
-    },
-    {
-        question: 'How can I subscribe to monthly newsletter?',
-        answer: placeholder,
-        value: 'newsletter',
-    },
-    {
-        question: 'Do you store credit card information securely?',
-        answer: placeholder,
-        value: 'credit-card',
-    }];
 
 export function FAQ() {
+    const t = useTranslations('FAQ');
+
+    const questions = [
+        {
+            question: t('QUESTIONS.FIRST.QUESTION'),
+            answer: t('QUESTIONS.FIRST.ANSWER'),
+        },
+        {
+            question: t('QUESTIONS.SECOND.QUESTION'),
+            answer: t('QUESTIONS.SECOND.ANSWER'),
+        },
+        {
+            question: t('QUESTIONS.THIRD.QUESTION'),
+            answer: t('QUESTIONS.THIRD.ANSWER'),
+        },
+        {
+            question: t('QUESTIONS.FOURTH.QUESTION'),
+            answer: t('QUESTIONS.FOURTH.ANSWER'),
+        }];
 
     const items = questions.map((item) => (
-        <AccordionItem className={classes.item} value={item.value} key={item.value}>
+        <AccordionItem className={classes.item} value={item.question} key={item.question}>
             <AccordionControl className={classes.question}>{item.question}</AccordionControl>
             <AccordionPanel>{item.answer}</AccordionPanel>
         </AccordionItem>
@@ -54,15 +50,15 @@ export function FAQ() {
                 <Grid id="faq-grid" gutter={50}>
                     <GridCol span={{ base: 12, md: 6 }}>
                         
-                        <Image src="/faq.svg" alt="Frequently Asked Questions" 
+                        <Image src="/faq.svg" alt={t('TITLE')} 
                             loading="lazy" placeholder="blur"/>
                        
                     </GridCol>
                     <GridCol span={{ base: 12, md: 6 }}>
                         
-                        <TitleWithDescription title={"Răspunsuri"} description={""} />
+                        <TitleWithDescription title={t('TITLE')} description={""} />
 
-                        <Accordion chevronPosition="right" variant="separated" defaultValue={questions[0].value}>
+                        <Accordion chevronPosition="right" variant="separated" defaultValue={questions[0].question}>
                             {items}
                         </Accordion>
                     </GridCol>
