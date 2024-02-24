@@ -4,11 +4,12 @@ import { stripe } from "@/utils/stripe/stripe";
 import {Center, Container, Divider} from "@mantine/core";
 import commonClasses from "@/utils/commonClasses.module.css";
 import {TitleWithDescription} from "@/components/Common/TitleWithDescription";
-//import confetti from "canvas-confetti";
+
 import {MyZIndexes} from "@/utils/my-constants";
 import {ConfettiButton} from "@/components/ConfettiButton/ConfettiButton";
+//import confetti from "canvas-confetti";
 
-export default async function ResultPage({searchParams}: { searchParams: { session_id: string }; }){
+export default async function ResultPage({searchParams}: { searchParams: { session_id: string } }) {
     if (!searchParams.session_id)
         throw new Error("Please provide a valid session_id (`cs_test_...`)");
 
@@ -66,4 +67,4 @@ export default async function ResultPage({searchParams}: { searchParams: { sessi
             <Divider color="transparent" mb={150}/>
         </Container>
     );
-}
+};

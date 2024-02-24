@@ -3,6 +3,7 @@ import commonClasses from "@/utils/commonClasses.module.css";
 import {TitleWithDescription} from "@/components/Common/TitleWithDescription";
 import {GetArticleStaticContentWithSlug, GetAllArticlesStaticContent} from "@/content/blog/blog-content";
 import {Metadata} from "next";
+import {unstable_setRequestLocale} from "next-intl/server";
 
 export function generateStaticParams() {
     const allArticles = GetAllArticlesStaticContent(99);
@@ -11,16 +12,19 @@ export function generateStaticParams() {
     }));
 }
 
-export function generateMetadata({params}:any) : Metadata {
-    const article = GetArticleStaticContentWithSlug(params.slug);
+export function generateMetadata({params: {locale, slug}}:{ params: { locale: string, slug: string } }) : Metadata {
+    const article = GetArticleStaticContentWithSlug(slug);//TODO pass locale
     return {
         title: article.title,
         description: article.content.slice(0, 100)
     };
 }
 
-export default function BlogPage({params} : any) {
-    const article = GetArticleStaticContentWithSlug(params.slug);
+export default function BlogPage({params: {locale, slug}}:{ params: { locale: string, slug: string } }) {
+    unstable_setRequestLocale(locale);
+    
+    const imageFolder = '/blog/';
+    const article = GetArticleStaticContentWithSlug(slug);
     
   return (
       <div>
@@ -30,7 +34,7 @@ export default function BlogPage({params} : any) {
               <Divider mb="xl" color="transparent"/>
 
               <div style={{borderRadius: '5px', overflow: 'hidden'}}>
-                  <Image src={article.image_name}/>
+                  <Image src={imageFolder + article.image_name}/>
               </div>
 
               <Divider mb="xl" mt="md" color="transparent"/>

@@ -4,10 +4,15 @@ import { MantineProvider, ColorSchemeScript } from '@mantine/core';
 import { Header } from '@/components/Header/Header';
 import { Footer } from '@/components/Footer/Footer';
 import { ChatButton } from '@/components/ChatButton/ChatButton';
-//import WavySeparator from '@/components/WavySeparator/WavySeparator';
 import { theme } from '@/theme';
-
 import FirstTimeConfetti from "@/components/CoolEffects/FirstTimeConfetti";
+//import WavySeparator from '@/components/WavySeparator/WavySeparator';
+import {locales} from "@/middleware";
+import {unstable_setRequestLocale} from 'next-intl/server';
+
+export function generateStaticParams() {
+    return locales.map((locale:string) => ({locale}));
+}
 
 export const metadata = {
   title: {
@@ -18,7 +23,9 @@ export const metadata = {
 };
 
 
-export default function RootLayout({ children }: { children: any }) {
+export default async function RootLayout({children, params: {locale}}: { children: React.ReactNode; params: {locale: string}; }) {
+    unstable_setRequestLocale(locale);
+    
   return (
     <html lang={"ro"}>
     <head>

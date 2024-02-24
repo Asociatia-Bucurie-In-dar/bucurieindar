@@ -4,6 +4,7 @@ import {GetProjectStaticContentWithSlug, GetAllProjectsStaticContent} from "@/co
 import {ProjectDonationProgress} from "@/components/Projects/ProjectDonationProgress";
 import {ShareButton} from "@/components/Popups/SharePopup/ShareButton";
 import {DonatePopupButton} from "@/components/Popups/DonatePopup/DonatePopupButton";
+import {unstable_setRequestLocale} from "next-intl/server";
 
 // export function generateStaticParams() {
 //     const allProjects = GetAllProjectsStaticContent(99);
@@ -12,17 +13,18 @@ import {DonatePopupButton} from "@/components/Popups/DonatePopup/DonatePopupButt
 //     }));
 // }
 
-export function generateMetadata({params}:any) {
-    const projectContent = GetProjectStaticContentWithSlug(params.slug);
+export function generateMetadata({params: {locale, slug}}:{ params: { locale: string, slug: string } }) {
+    const projectContent = GetProjectStaticContentWithSlug(slug); //TODO pass locale too
     return {
         title: projectContent.title,
         description: projectContent.content.slice(0, 100),
     };
 }
 
-export default function FullProjectPage({params}:any) {
+export default function FullProjectPage({params: {locale, slug}}:{ params: { locale: string, slug: string } }) {
+    unstable_setRequestLocale(locale);
     
-    const projectContent = GetProjectStaticContentWithSlug(params.slug);
+    const projectContent = GetProjectStaticContentWithSlug(slug);
     
     return (
         <Container className={commonClasses.container} size="lg">

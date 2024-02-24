@@ -3,6 +3,7 @@ import {TitleWithDescription} from "@/components/Common/TitleWithDescription";
 import {Center, Container, Divider, Image, SimpleGrid, Stack, Text, Title} from "@mantine/core";
 import {OurTeam} from "@/components/OurTeam/OurTeam";
 import {AnimatedThing} from "@/components/CoolEffects/AnimatedNumber/AnimatedThing";
+import {unstable_setRequestLocale} from "next-intl/server";
 
 const spacing = "xl";
 const division = 75;
@@ -13,8 +14,8 @@ export const metadata = {
     description: "Cine suntem, ce facem și de ce să ajutăm."
 }
 
-export default function AboutPage() {
-    
+export default function AboutPage( {params: {locale}} : {params: {locale: string}} ) {
+    unstable_setRequestLocale(locale);
     const roundedImage = (src: string) => {
         return (
             <div style={{borderRadius: '10px', overflow: 'hidden'}}>

@@ -8,21 +8,27 @@ import {FAQ} from '@/components/FAQ/FAQ';
 import {HomeBlogPosts} from '@/components/Home/HomeBlogPosts/HomeBlogPosts';
 import {SfIoan} from "@/components/SfIoan/SfIoan";
 import {Divider} from "@mantine/core";
+import {useTranslations} from 'next-intl';
+import {unstable_setRequestLocale} from "next-intl/server";
 
-export default function HomePage() {
+export default function HomePage({params: {locale}}:{ params: { locale: string } }) {
+    unstable_setRequestLocale(locale);
+    const t = useTranslations('HEADER');
+    
   return (
-    <>
-      <HomeHero />
-        <HomeFeeding />
-        <HomeProjects />
-      <SfIoan />
-        <HomeAboutGeneral />
-        <HomeAboutProjects />
-        <OurTeam />
-        <FAQ />
-        <HomeBlogPosts />
-      <Divider color="transparent" mb={100}/>
-        {/* ... 
+      <>
+          <HomeHero/>
+          <h1>{t('HOME')}</h1>
+          <HomeFeeding/>
+          <HomeProjects/>
+          <SfIoan/>
+          <HomeAboutGeneral/>
+          <HomeAboutProjects/>
+          <OurTeam/>
+          <FAQ/>
+          <HomeBlogPosts/>
+          <Divider color="transparent" mb={100}/>
+          {/* ... 
         //<HomeProjects />
             //<ProjectPreviewCard />
                 <DonateModal />
@@ -36,6 +42,6 @@ export default function HomePage() {
             //<BlogPostPreviewCard />
                 <BlogPostFullPage />  
                 */}
-    </>
+      </>
   );
 }
