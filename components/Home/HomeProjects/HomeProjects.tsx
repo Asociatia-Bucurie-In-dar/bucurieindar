@@ -5,15 +5,18 @@ import {TitleWithDescription} from "@/components/Common/TitleWithDescription";
 import {Center, Container, Divider, Group} from "@mantine/core";
 import {ConfettiButton} from "@/components/ConfettiButton/ConfettiButton";
 import commonClasses from "@/utils/commonClasses.module.css";
+import {useTranslations} from "next-intl";
 
 export function HomeProjects() {
+    const t = useTranslations('HOME_PROJECTS');
+    
     return (
         <Container size="full" className={commonClasses.darkerBackground} pt="sm" pb="sm">
             
             <Divider mt="xl" color="transparent" />
             
-            <TitleWithDescription title="Proiecte"
-                                  description="Descoperă câteva din proiectele noastre și află cum poți să-i ajuți pe cei care au nevoie de tine." />
+            <TitleWithDescription title={t('TITLE')}
+                                  description={t('DESCRIPTION')} />
 
             <Divider mb={45} color="transparent" />
             

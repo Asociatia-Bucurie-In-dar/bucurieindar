@@ -5,7 +5,7 @@ import {useTranslations} from "next-intl";
 
 export function HomeHero() {
     const commonT = useTranslations('COMMON');
-    const heroT = useTranslations('HERO');
+    const heroT = useTranslations('HOME_HERO');
     
     return (
         <div className={classes.root}>

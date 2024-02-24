@@ -6,37 +6,79 @@
     "ASSOCIATION": "Bucurie în Dar",
     "ASSOCIATION_FULL": "Asociația Bucurie în Dar"
   },
-  "HERO":
+  
+  "HOME_HERO":
   {
     "MOTTO_FIRST_PART": "Din această lume plecăm doar cu",
     "MOTTO_SECOND_PART": "faptele noastre",
     "DESCRIPTION": "Suntem sprijin, cu tot ce ne stă în putere, pentru cei care nu mai au pe cine să se sprijine. Misiunea noastră este să aducem bucurie în inimile cât mai multor oameni, mari și mici, tineri și bătrâni, împreună cu voi."
   },
+  
+  "HOME_ACTIVITY": {
+    "TITLE": "Activitatea noastră",
+    "DESCRIPTION": "Acesta este ajutorul oferit de voi prin noi, de la înființarea Asociației Bucurie în Dar. Suntem oameni care trăiesc și pentru alții, oameni cu rațiune, cu sentimente și cu dorințe, iar dorința noastră cea mare este să nu trăim doar pentru noi înșine.",
+    "ACTIVITIES": {
+      "FIRST": {
+        "TITLE": "Ceva1",
+        "DESCRIPTION": "Descrierea primei statistici se va scrie aici."
+      },
+      "SECOND": {
+        "TITLE": "Ceva2",
+        "DESCRIPTION": "Descrierea celei de-a doua statistici se va scrie aici."
+      },
+      "THIRD": {
+        "TITLE": "Ceva3",
+        "DESCRIPTION": "Descrierea celei de-a treia statistici se va scrie aici."
+      },
+      "FOURTH": {
+        "TITLE": "Ceva4",
+        "DESCRIPTION": "Descrierea celei de-a patra statistici se va scrie aici."
+      }
+    }
+  },
+  
+  "HOME_PROJECTS": {
+    "TITLE": "Proiecte",
+    "DESCRIPTION": "Descoperă câteva din proiectele noastre și află cum poți să-i ajuți pe cei care au nevoie de tine."
+  },
+  
+  "SAINT_JOHN": {
+    "TITLE": "Centrul Sf. Ioan cel Milostiv",
+    "DESCRIPTION": "Avem deasemenea proiectul Centrul Sfantul Ioan cel Milostiv, pentru tratarea dependentelor de multe feluri. Dorim sa fim aici pentru a vă ajuta pe dumneavoastră și pe cei în nevoie. Puteti vedea mai multe detalii pe site-ul oficial dand click aici.",
+    "IMAGE_ALT": "Icoana Sfântul Ioan cel Milostiv"
+  },
+  
+  "HOME_POTENTIAL": {
+    "TITLE": "Potențialul copiilor",
+    "DESCRIPTION": "Donația ta pentru cauza noastră creează un viitor mai strălucitor, oferind educație, sănătate și hrănire esențiale copiilor nevoiași. Fiecare contribuție aduce speranță și deschide uși către un univers de posibilități. Să construim împreună un viitor mai strălucitor. Donează acum și fă o diferență! Sprijinul tău este vital în misiunea noastră de a debloca potențialul unui copil. Cu fiecare donație, putem oferi mai mult decât nevoile de bază; oferim o bază pentru învățare și creștere pe tot parcursul vieții. Programele noastre se concentrează pe educație, îngrijire medicală și împuternicirea comunităților pentru a-și ridica cei mai tineri membri.",
+    "IMAGE_ALT": "Portretul unui copil"
+  },
+  
+  "HOME_HELP": {
+    "BADGE": "Ajută altfel",
+    "TITLE": "Alte moduri de a ajuta",
+    "DESCRIPTION": "Există multe moduri de a ajuta, nu doar prin donații. Fiecare gest contează. Iată câteva din modalitățile prin care poți contribui.",
+    "FIRST": {
+      "TITLE": "Bunuri materiale",
+      "DESCRIPTION": "Donează haine, jucării, cărți, mobilă, obiecte de igiena sau alte bunuri materiale pe care nu le mai folosești."
+    },
+    "SECOND": {
+      "TITLE": "Formulare",
+      "DESCRIPTION": "Completează formularul 220 pentru a ne redirecționa din impozitul pe venit sau contractul de sponsorizare."
+    },
+    "THIRD": {
+      "TITLE": "Voluntariat",
+      "DESCRIPTION": "Fii voluntar și implică-te în activitățile noastre. Fiecare ajutor contează."
+    }
+  },
+  
   "HEADER": 
   {
-    "HOME": {
-      "LABEL": "Acasă",
-      "LINK": "/"
-    },
-    "PROJECTS": {
-      "LABEL": "Proiecte",
-      "LINK": "/projects"
-    },
-    "ABOUT": {
-      "LABEL": "Despre",
-      "LINK": "/about"
-    },
-    "GALLERY": {
-      "LABEL": "Galerie",
-      "LINK": "/gallery"
-    },
-    "BLOG": {
-      "LABEL": "Blog",
-      "LINK": "/blog"
-    },
-    "CONTACT": {
-      "LABEL": "Contact",
-      "LINK": "/contact"
-    }
+    "HOME": { "LABEL": "Acasă", "LINK": "/" },
+    "PROJECTS": { "LABEL": "Proiecte", "LINK": "/projects" },
+    "ABOUT": { "LABEL": "Despre", "LINK": "/about" },
+    "GALLERY": { "LABEL": "Galerie", "LINK": "/gallery"},
+    "BLOG": { "LABEL": "Blog", "LINK": "/blog" },
+    "CONTACT": { "LABEL": "Contact", "LINK": "/contact" }
   }
 }

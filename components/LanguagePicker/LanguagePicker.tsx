@@ -14,7 +14,7 @@ export function LanguagePicker() {
     const icon = <IconChevronDown style={{ width: rem(16), height: rem(16) }} />;
     
     const menuItems = MyLocales.map((locale: any) => (
-        <Menu.Item component={Link} locale={locale.locale} href={'/'}>
+        <Menu.Item component={Link} locale={locale.locale} href={'/'} key={locale.locale}>
             <div style={{borderRadius: '3px', overflow: 'hidden'}}>
                 <Image src={locale.image} width={20} height={20} alt={locale.locale}/>
             </div>

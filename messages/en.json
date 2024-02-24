@@ -5,38 +5,80 @@
     "DONATE_NOW": "Donate Now",
     "ASSOCIATION": "Bucurie în Dar (Gift of Joy)",
     "ASSOCIATION_FULL": "Bucurie în Dar (Gift of Joy) Association"
-  }, 
-  "HERO":
+  },
+  
+  "HOME_HERO":
   {
     "MOTTO_FIRST_PART": "From this world we leave only with",
     "MOTTO_SECOND_PART": "our deeds",
     "DESCRIPTION": "We are support, with all our might, for those who have no one else to lean on. Our mission is to bring joy to the hearts of as many people as possible, both young and old, together with you."
   },
+  
+  "HOME_ACTIVITY": {
+    "TITLE": "Our Activity",
+    "DESCRIPTION": "This is the help you have given, through us, from the beginning of the Bucurie în Dar (Gift of Joy) Association. We are people who enjoy living also for others, rational people, with feelings and wishes. And our greatest wish is to not live only for ourselves.",
+    "ACTIVITIES": {
+      "FIRST": {
+        "TITLE": "Something1",
+        "DESCRIPTION": "First description will be here."
+      },
+      "SECOND": {
+        "TITLE": "Something2",
+        "DESCRIPTION": "Second description will be here."
+      },
+      "THIRD": {
+        "TITLE": "Something3",
+        "DESCRIPTION": "Third description will be here."
+      },
+      "FOURTH": {
+        "TITLE": "Something4",
+        "DESCRIPTION": "Fourth description will be here."
+      }
+    }
+  },
+  
+  "HOME_PROJECTS": {
+    "TITLE": "Projects",
+    "DESCRIPTION": "Discover some of our projects and find out how you could help the people in need of your help."
+  },
+  
+  "SAINT_JOHN": {
+    "TITLE": "Saint John the Merciful Center",
+    "DESCRIPTION": "We also have the project Saint John the Merciful Center, for the treatment of addictions. We wish to be here to help you and those in need. You can see more details on the official website by clicking here.",
+    "IMAGE_ALT": "Icon of Saint John the Merciful Center"
+  },
+  
+  "HOME_POTENTIAL": {
+    "TITLE": "Children's potential",
+    "DESCRIPTION": "Your donation to our cause can create a brighter future, providing essential education, health, and nourishment to children in need. Each contribution brings hope and opens doors to a universe of possibilities. Let's build a brighter future together. Donate now and make a difference! Your support is vital in our mission to unlock a child's potential. With every donation, we can offer more than just basic needs; we provide a foundation for lifelong learning and growth. Our programs focus on education, healthcare, and empowering communities to uplift their youngest members.",
+    "IMAGE_ALT": "Portrait of a child"
+  },
+  
+  "HOME_HELP": {
+    "BADGE": "HELP DIFFERENTLY",
+    "TITLE": "Other ways to help",
+    "DESCRIPTION": "There are many ways you can help, not only by donating. Every gesture matters. Here are a few of the ways you contribute.",
+    "FIRST": {
+      "TITLE": "Material goods",
+      "DESCRIPTION": "Donate clothes, toys, books, furniture, hygiene items, or other material goods that you no longer use."
+    },
+    "SECOND": {
+      "TITLE": "Forms",
+      "DESCRIPTION": "Form 220, sponsorship contract, etc."
+    },
+    "THIRD": {
+      "TITLE": "Volunteering",
+      "DESCRIPTION": "We are always looking for volunteers to help us. We'll help you find a way to volunteer that best suits you."
+    }
+  },
+  
   "HEADER": 
   {
-    "HOME": {
-      "LABEL": "Home",
-      "LINK": "/en"
-    },
-    "PROJECTS": {
-      "LABEL": "Projects",
-      "LINK": "/en/projects"
-    },
-    "ABOUT": {
-      "LABEL": "About",
-      "LINK": "/en/about"
-    },
-    "GALLERY": {
-      "LABEL": "Gallery",
-      "LINK": "/en/gallery"
-    },
-    "BLOG": {
-      "LABEL": "Blog",
-      "LINK": "/en/blog"
-    },
-    "CONTACT": {
-      "LABEL": "Contact",
-      "LINK": "/en/contact"
-    }
+    "HOME": { "LABEL": "Home", "LINK": "/en" },
+    "PROJECTS": { "LABEL": "Projects", "LINK": "/en/projects" },
+    "ABOUT": { "LABEL": "About", "LINK": "/en/about" },
+    "GALLERY": { "LABEL": "Gallery", "LINK": "/en/gallery" },
+    "BLOG": { "LABEL": "Blog", "LINK": "/en/blog" },
+    "CONTACT": { "LABEL": "Contact", "LINK": "/en/contact" }
   }
 }

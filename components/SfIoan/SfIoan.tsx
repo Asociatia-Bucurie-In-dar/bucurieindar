@@ -4,8 +4,11 @@ import commonClasses from '@/utils/commonClasses.module.css';
 import {IconExternalLink} from "@tabler/icons-react";
 import Link from "next/link";
 import {MyRoutePaths} from "@/utils/route-paths";
+import {useTranslations} from "next-intl";
 
 export function SfIoan() {
+    
+    const t = useTranslations('SAINT_JOHN');
     
     const linkProps = {
         href: "https://centrulsfantulioancelmilostiv.org",
@@ -18,19 +21,19 @@ export function SfIoan() {
             <Container size="md" className={classes.wrapper}>
                 <Center>
                     <div className={classes.roundedImageWrapper}>
-                        <Image src="/sfIoan.png" alt={"Icoana Sfantul Ioan"} loading="lazy" width={rem(280)} height={rem(280)} className={classes.image}/>
+                        <Image src="/sfIoan.png" alt={t('IMAGE_ALT')} loading="lazy" width={rem(280)} height={rem(280)} className={classes.image}/>
                     </div>
                 </Center>
                 <div className={classes.body}>
                     <Center>
                         <Title className={classes.titleBig} component={Link} {...linkProps}>
-                            Centrul Sf. Ioan cel Milostiv <IconExternalLink color="green"/>
+                            {t('TITLE')} <IconExternalLink color="green"/>
                         </Title>
                     </Center>
 
                     <Center>
                         <Text fz="md" c="dimmed" style={{textAlign: "center"}} component={Link} {...linkProps}>
-                            Avem deasemenea proiectul Centrul Sfantul Ioan cel Milostiv, pentru tratarea dependentelor de multe feluri. Dorim sa fim aici pentru a vă ajuta pe dumneavoastră și pe cei în nevoie. Puteti vedea mai multe detalii pe site-ul oficial dand <b>click aici</b>.
+                            {t('DESCRIPTION')}
                         </Text>
                     </Center>
                 </div>
