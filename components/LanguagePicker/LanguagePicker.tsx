@@ -26,14 +26,12 @@ return (
         <Menu trigger="click-hover"  transitionProps={{ exitDuration: 0 }}
               closeDelay={200} withinPortal zIndex={MyZIndexes.HeaderDropdown}>
             <Menu.Target>
-                <Link href="#">
-                    <Center>
+                    <Center className={classes.flagHover}>
                         <div style={{borderRadius: '3px', overflow: 'hidden', marginRight: '5px'}}>
                             <Image src={curImage} width={22} height={22} alt={curLocale}/>
                         </div>
                         <IconChevronDown size="0.9rem" stroke={1.5} />
                     </Center>
-                </Link>
             </Menu.Target>
             <Menu.Dropdown>
                 {menuItems}
