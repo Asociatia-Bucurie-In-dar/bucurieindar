@@ -29,7 +29,7 @@ export default function BlogPage({params: {locale, slug}}:{ params: { locale: st
   return (
       <div>
           <Container className={commonClasses.container} size="lg">
-              <TitleWithDescription title={article.title}/>
+              <TitleWithDescription title={article.title} description={"🛠️ " + "Blog-ul este încă în construcție"}/>
 
               <Divider mb="xl" color="transparent"/>
 

@@ -6,6 +6,6 @@ export const MyRoutePaths = {
     About: { link: "/about", label: "Despre" },
     Gallery: { link: "/gallery", label: "Galerie" },
     Blog: { link: "/blog", label: "Blog" },
-    Dash: { link: "/dash", label: "Donațiile Mele" },
+    //Dash: { link: "/dash", label: "Donațiile Mele" },
     Contact: { link: "/contact", label: "Contact" },
 }
