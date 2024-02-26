@@ -130,8 +130,7 @@
     "DESCRIPTION": "Here you can find some articles about various topics. We hope you will find them interesting and useful."
   },
   
-  "HEADER": 
-  {
+  "HEADER": {
     "HOME": { "LABEL": "Home", "LINK": "/en" },
     "PROJECTS": { "LABEL": "Projects", "LINK": "/en/projects" },
     "ABOUT": { "LABEL": "About", "LINK": "/en/about" },

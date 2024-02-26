@@ -71,7 +71,7 @@ export function Header({ headerTranslations, locale }: { headerTranslations: any
                     </Group>
                     
                     
-                    <Group h="100%" gap="sm" visibleFrom="sm">
+                    <Group h="100%" gap={5} visibleFrom="sm">
                         {headerItems}
                     </Group>
                     <Group visibleFrom="sm">

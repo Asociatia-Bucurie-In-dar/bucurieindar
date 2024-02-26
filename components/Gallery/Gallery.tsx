@@ -47,12 +47,12 @@ const imagesData = [
 
 const videosData = [
     {
-        title: 'Video - Masa bucuriei',
-        youtubeId: 'jFgOPkkIP-I',
+        title: 'Video - Reportaj, Universul Credinței',
+        youtubeId: 'FKUvxS3grqg',
     },
     {
-        title: ' Video - Ajută o comunitate',
-        youtubeId: 'FKUvxS3grqg',
+        title: ' Video - Fondator Bucurie în Dar',
+        youtubeId: 'OBcBR5o5TpM',
     }
 ];
 

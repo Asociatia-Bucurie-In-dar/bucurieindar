@@ -7,6 +7,7 @@ import {TitleWithDescription} from "@/components/Common/TitleWithDescription";
 
 import {MyZIndexes} from "@/utils/my-constants";
 import {ConfettiButton} from "@/components/ConfettiButton/ConfettiButton";
+import DonationConfetti from "@/components/CoolEffects/DonationConfetti";
 //import confetti from "canvas-confetti";
 
 export default async function ResultPage({searchParams}: { searchParams: { session_id: string } }) {
@@ -51,6 +52,8 @@ export default async function ResultPage({searchParams}: { searchParams: { sessi
             <Center>
             <ConfettiButton text={"Înapoi la proiecte"} size={"lg"} mt={"xl"} />
             </Center>
+            
+            <DonationConfetti />
             
             <Divider color="transparent" mb={150}/>
         </Container>
