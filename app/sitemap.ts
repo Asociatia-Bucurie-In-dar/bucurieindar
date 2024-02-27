@@ -8,7 +8,7 @@ function getUrlsOfLocale(localeAsString: string): { url: string, alternates: { h
     const locale = localeAsString === "" ? "" : "/" + localeAsString;
     const baseUrl = "https://bucurieindar.org" + locale;
 
-    const paths = Object.values(MyRoutePaths).map(x => x.link);
+    const paths = Object.values(MyRoutePaths).map(x => x);
     let urls = paths.map(link => {
         const url = baseUrl + link;
         const alternates = locales.map((loc) => {
@@ -21,10 +21,10 @@ function getUrlsOfLocale(localeAsString: string): { url: string, alternates: { h
     // Add projects
     const projects = GetAllProjectsStaticContent(99);
     projects.forEach(x => {
-        const projectUrl = baseUrl + MyRoutePaths.Projects.link + "/" + x.slug;
+        const projectUrl = baseUrl + MyRoutePaths.Projects + "/" + x.slug;
         const alternates = locales.map((loc) => {
             const locPrefix = loc === defaultLocale ? "" : "/" + loc;
-            return { hreflang: loc, href: `https://bucurieindar.org${locPrefix}${MyRoutePaths.Projects.link}/${x.slug}` };
+            return { hreflang: loc, href: `https://bucurieindar.org${locPrefix}${MyRoutePaths.Projects}/${x.slug}` };
         });
         urls.push({ url: projectUrl, alternates });
     });
@@ -32,10 +32,10 @@ function getUrlsOfLocale(localeAsString: string): { url: string, alternates: { h
     // Add articles
     const articles = GetAllArticlesStaticContent(99);
     articles.forEach(x => {
-        const articleUrl = baseUrl + MyRoutePaths.Blog.link + "/" + x.slug;
+        const articleUrl = baseUrl + MyRoutePaths.Blog + "/" + x.slug;
         const alternates = locales.map((loc) => {
             const locPrefix = loc === defaultLocale ? "" : "/" + loc;
-            return { hreflang: loc, href: `https://bucurieindar.org${locPrefix}${MyRoutePaths.Blog.link}/${x.slug}` };
+            return { hreflang: loc, href: `https://bucurieindar.org${locPrefix}${MyRoutePaths.Blog }/${x.slug}` };
         });
         urls.push({ url: articleUrl, alternates });
     });

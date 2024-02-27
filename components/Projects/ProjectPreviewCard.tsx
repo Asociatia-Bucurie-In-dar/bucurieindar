@@ -1,7 +1,5 @@
 import {Card, Image, Text, Progress, CardSection, Button, Container} from '@mantine/core';
 
-import {ConfettiButton} from "@/components/ConfettiButton/ConfettiButton";
-
 import classes from './ProjectPreviewCard.module.css';
 import Link from "next/link";
 import {ProjectType} from "@/utils/my-types";
@@ -9,17 +7,17 @@ import {MyRoutePaths} from "@/utils/route-paths";
 import {DonatePopupButton} from "@/components/Popups/DonatePopup/DonatePopupButton";
 import {ProjectDonationProgress} from "@/components/Projects/ProjectDonationProgress";
 
-export function ProjectPreviewCard(props: ProjectType ) {
+export function ProjectPreviewCard(props: { project: ProjectType, title: string, description: string} ) {
     
     const linkProps = {
-        href: MyRoutePaths.Projects.link + '/' + props.slug
+        href: MyRoutePaths.Projects + '/' + props.project.slug
     };
     
     return (
             <Card withBorder radius="md" className={classes.card}>
                 <CardSection>
                     <Link {...linkProps}>
-                        <Image src={props.image_path} 
+                        <Image src={props.project.image_path} 
                                height={200}
                                loading={"lazy"}
                             placeholder="blur"/>
@@ -35,14 +33,14 @@ export function ProjectPreviewCard(props: ProjectType ) {
                 </Text>
 
                 <Text fz="sm" c="dimmed" lineClamp={4} component={Link} {...linkProps}>
-                    {props.content}
+                    {props.description}
                 </Text>
 
-                <Card padding={0} mt="sm" key={props.id}>
+                <Card padding={0} mt="sm" key={props.project.id}>
                     
-                    <ProjectDonationProgress id={props.id} goalAmount={props.goalAmount}/> 
+                    <ProjectDonationProgress id={props.project.id} goalAmount={props.project.goalAmount}/> 
 
-                    <DonatePopupButton projectId={props.id} projectTile={props.title}/>
+                    <DonatePopupButton projectId={props.project.id} projectTile={props.title}/>
                 </Card>
             </Card>
     );

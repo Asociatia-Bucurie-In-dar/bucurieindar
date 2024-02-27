@@ -61,7 +61,7 @@ export default function AboutPage( {params: {locale}} : {params: {locale: string
               </Center>
               
               <Center>
-                    {roundedImage("/despre/biserica.jpg")}
+                    {roundedImage("/despre/ajutor.jpeg")}
               </Center>
           </SimpleGrid>
 
@@ -70,7 +70,7 @@ export default function AboutPage( {params: {locale}} : {params: {locale: string
           {/* THIRD */}
           <SimpleGrid cols={cols} spacing={spacing}>
               <Center>
-                    {roundedImage("/despre/ajutor.jpeg")}
+                    {roundedImage("/despre/biserica.jpg")}
               </Center>
 
               <Center>

@@ -8,7 +8,7 @@ import commonClasses from "@/utils/commonClasses.module.css";
 import {useTranslations} from "next-intl";
 
 export function HomeProjects() {
-    const t = useTranslations('HOME_PROJECTS');
+    const t = useTranslations('PROJECTS');
     
     return (
         <Container size="full" className={commonClasses.darkerBackground} pt="sm" pb="sm">

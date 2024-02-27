@@ -25,10 +25,10 @@ export function ConfettiButton(props: {text: string, size?: string, mt?: string,
     }
     
     return (
-        <Link href={MyRoutePaths.Projects.link} passHref onClick={handleButtonClicked}>
+        <Link href={MyRoutePaths.Projects} passHref onClick={handleButtonClicked}>
                 <Button variant="gradient"
                         gradient={{ from: 'pink', to: 'yellow', deg: 90 }}
-                        name={MyRoutePaths.Projects.label}
+                        name={props.text}
                         size={props.size}
                         mt={props.mt}
                         disabled={props.disabled ?? false}

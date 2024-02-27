@@ -3,14 +3,20 @@ import {ProjectPreviewCard} from "@/components/Projects/ProjectPreviewCard";
 import classes from './ProjectPreviewCardsSlider.module.css';
 import {ProjectType} from "@/utils/my-types";
 import {GetAllProjectsStaticContent} from "@/content/projects/projects-content";
+import {useTranslations} from "next-intl";
 
 export function ProjectPreviewCardsSlider(props: {amount: number}) {
 
     const projectsStaticContent: ProjectType[] = GetAllProjectsStaticContent(props.amount);
+    const t = useTranslations('PROJECTS');
     
-    const cards = projectsStaticContent.map((proj) => (
-        <ProjectPreviewCard {...proj}/>
-    ));
+    const cards = projectsStaticContent.map((proj) => {
+        const title = t(proj.translation_key + '.TITLE');
+        const description = t(proj.translation_key + '.DESCRIPTION');
+        return (
+            <ProjectPreviewCard project={proj} title={title} description={description}/>
+        );
+    });
 
     return (
         <Container className={classes.container} size="lg">

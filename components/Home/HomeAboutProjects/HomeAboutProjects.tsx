@@ -1,7 +1,4 @@
-import {
-    Badge,
-    Group,
-    Title,
+import { Badge, Group, Title,
     Text,
     Card,
     SimpleGrid,
@@ -45,7 +42,7 @@ export function HomeAboutProjects() {
     
     const features = data.map((feature) => (
         <Card key={feature.title} shadow="md" radius="md" className={classes.card} padding="xl"
-        component={Link} href={MyRoutePaths.Contact.link}>
+        component={Link} href={ MyRoutePaths.Contact }>
             <feature.icon
                 style={{ width: rem(50), height: rem(50) }}
                 stroke={2}

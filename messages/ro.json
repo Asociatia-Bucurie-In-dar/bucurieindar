@@ -4,14 +4,15 @@
     "DONATE": "Donează",
     "DONATE_NOW": "Donează Acum",
     "ASSOCIATION": "Bucurie în Dar",
-    "ASSOCIATION_FULL": "Asociația Bucurie în Dar"
+    "ASSOCIATION_FULL": "Asociația Bucurie în Dar",
+    "NECCESARY_AMOUNT": "Suma necesară"
   },
   
   "HOME_HERO":
   {
     "MOTTO_FIRST_PART": "Din această lume plecăm doar cu",
     "MOTTO_SECOND_PART": "faptele noastre",
-    "DESCRIPTION": "Suntem sprijin, cu tot ce ne stă în putere, pentru cei care nu mai au pe cine să se sprijine. Misiunea noastră este să aducem bucurie în inimile cât mai multor oameni, mari și mici, tineri și bătrâni, împreună cu voi."
+    "DESCRIPTION": "Suntem sprijin cu tot ce ne stă în putere, pentru cei care nu mai au pe cine să se sprijine. Misiunea noastră este să aducem bucurie acolo unde nu mai este, în inimile cât mai multor oameni, mari și mici, tineri și bătrâni, împreună cu voi."
   },
   
   "HOME_ACTIVITY": {
@@ -35,11 +36,6 @@
         "DESCRIPTION": "Descrierea celei de-a patra statistici se va scrie aici."
       }
     }
-  },
-  
-  "HOME_PROJECTS": {
-    "TITLE": "Proiecte",
-    "DESCRIPTION": "Descoperă câteva din proiectele noastre și află cum poți să-i ajuți pe cei care au nevoie de tine."
   },
   
   "SAINT_JOHN": {
@@ -71,35 +67,24 @@
       "DESCRIPTION": "Fii voluntar și implică-te în activitățile noastre. Fiecare ajutor contează."
     }
   },
+  
+  "HOME_BLOG": {
+    "TITLE": "Blog",
+    "DESCRIPTION": "Aici vei găsi articole despre diferite subiecte. Sperăm să găsești ceva care să fie interesant sau de folos."
+  },
 
   "OUR_TEAM": {
-    "TITLE": "Echipa noastră",
-    "DESCRIPTION": "Fa conostință cu echipa noastră! Suntem oameni pasionați de ceea ce facem și ne dorim să aducem un impact pozitiv în lumea în care trăim.",
+    "TITLE": "Our Team",
+    "DESCRIPTION": "Meet our team! We are passionate people when it comes to our work and we wish to bring a positive impact in the world.",
     "TEAM_MEMBERS": {
-      "FIRST": {
-        "NAME": "Primul Nume",
-        "ROLE": "Primul Rol"
-      },
-      "SECOND": {
-        "NAME": "Al Doilea Nume",
-        "ROLE": "Al Doilea Rol"
-      },
-      "THIRD": {
-        "NAME": "Al Treilea Nume",
-        "ROLE": "Al Treilea Rol"
-      },
-      "FOURTH": {
-        "NAME": "Al Patrulea Nume",
-        "ROLE": "Al Patrulea Rol"
-      },
-      "FIFTH": {
-        "NAME": "Al Cincilea Nume",
-        "ROLE": "Al Cincilea Rol"
-      },
-      "SIXTH": {
-        "NAME": "Al Șaselea Nume",
-        "ROLE": "Al Șaselea Rol"
-      }
+      "FIRST": { "NAME": "Alexandru Ionescu", "ROLE": "Președinte" },
+      "SECOND": { "NAME": "Andreea Constantinescu", "ROLE": "VP & Coordonator marketing" },
+      "THIRD": { "NAME": "Cioltan Marius", "ROLE": "VP & Coordonator logistică" },
+      "FOURTH": { "NAME": "Teodor Nemțeanu", "ROLE": "Coordonator principal situații de urgență" },
+      "FIFTH": { "NAME": "Alina Cernea", "ROLE": "Asistent & coordonator principal" },
+      "SIXTH": { "NAME": "Cristian Simionescu", "ROLE": "Specialist comunicare & relații publice" },
+      "SEVENTH": { "NAME": "Evelin", "ROLE": "Asistent social principal" },
+      "EIGHTH": { "NAME": "Ovidiu Horațiu", "ROLE": "Doctor arhitect" }
     }
   },
 
@@ -108,7 +93,7 @@
     "QUESTIONS": {
       "FIRST": {
         "QUESTION": "Prima întrebare?",
-        "ANSWER": "Primul răspuns"
+        "ANSWER": "Primul răspuns."
       },
       "SECOND": {
         "QUESTION": "A doua întrebare?",
@@ -124,10 +109,34 @@
       }
     }
   },
-  
-  "HOME_BLOG": {
-    "TITLE": "Blog",
-    "DESCRIPTION": "Aici vei găsi articole despre diferite subiecte. Sperăm să găsești ceva care să fie interesant sau de folos."
+
+  "PROJECTS": {
+    "TITLE": "Proiecte",
+    "DESCRIPTION": "Descoperă câteva din proiectele noastre și află cum poți să-i ajuți pe cei care au nevoie de tine.",
+    "TABLE_OF_JOY": {
+      "TITLE": "Masa bucuriei",
+      "DESCRIPTION": "Ați fost în situația de a nu avea ce să mâncați, cel puțin o zi? Prin acest program, Masa bucuriei, oferim mâncare la mii de persoane. Oferă și tu o porție de mâncare unui om sărman și vei primi în schimb cel mai onest MULȚUMESC din viața ta. Pe cine ajutăm? Familii cu mulți copii, persoane fără venit, femei văduve, bolnave și care își cresc singure copiii, persoane nedeplasabile, adulți sau copii, copii asistați social, bătrâni singuri, oameni ai străzii. Ei postesc și când nu este post."
+    },
+    "LOVE_AND_MEDICINE": {
+      "TITLE": "Dragoste & medicamente",
+      "DESCRIPTION": "Vrei sa fim prieteni? Acești copii se hrănesc cu dragostea noastră și trăiesc cu medicamente. Ce nevoi au acești copii? Unii tratament, alții proteze, alții cărucior mobil sau operație. Ajută-i să nu mai aibe nevoie de tratament și să rămână doar cu dragostea și bucuria că s-au vindecat cu ajutorul oferit de tine. NOTĂ - banii obținuți din donații vor fi redirecționați în contul spitalului sau clinicii, și postarea facturilor/costurilor aferente."
+    },
+    "SCHOOL_OF_JOY": {
+      "TITLE": "Şcoala bucuriei",
+      "DESCRIPTION": "Copiii ajutați azi sunt adulții educați de maine. Educația este fundamentală. Iar prin susținerea și accesul acestor copii la educație, ajutați și comunitatea, dar si aportul pe care ei îl vor aduce la rândul lor comunității și acestei țări. Prin ajutorul dumneavoastră acești copii vor descoperi lumea, o lume diferită de cea în care trăiesc acum. Prin ei te vei bucura și tu! Deasemenea, cu toții știm că în România fenomenul bullying-ului a luat amploare, iar foarte mulți copii sunt victime. Noi credem că este mai ușor să previi decât să combați un fenomen și că împreună îi putem ajuta pe cei mici să aibă relații sănătoase cu semenii lor. Vă împărtășim proiectul de atelier „Școala bucuriei”, care pornește de la o poveste – „Inima ariciului. O aventură în căutarea prietenilor adevărați” (autor: Mariana Buric).Atelierul conține jocuri și activități care pot fi realizate cu copiii atât de cadre didactice, în grădinițe și în școli, dar și de părinți, acasă. Ne-am bucura dacă printre dumneavoastră sunt cadre didactice și părinți care vor să ni se alăture în acest proiect.Haideți să-i ajutăm pe cei mici să meargă cu drag la grădiniță sau la școală și să se bucure de prietenia semenilor lor. Pentru detalii despre proiect, vă rugăm să ne contactați. Vă mulțumim!"
+    },
+    "CAMPS_TRIPS_WORKSHOPS": {
+      "TITLE": "Tabere, excursii, ateliere",
+      "DESCRIPTION": "Avem o țară tare frumoasă și ar fi minunat ca acești copii să își cunoască propria țară și să se bucure de frumusețile ei."
+    },
+    "ADOPT_A_FAMILY": {
+      "TITLE": "Adoptă o familie",
+      "DESCRIPTION": "Ajută pe cel puțin unul dintre prietenii noștri mici și mari, tineri sau bătrâni. Oameni dragi, aveți posibilitatea să adoptați o familie de care să aveți grijă, ajutându-i în nevoile și neputințele lor. Orice ajutor, cât de puțin este binevenit. Sunați-ne pentru a vă oferi datele lor de contact. Asigură ce poți din nevoile unei familii defavorizate: un medicament sau o cutie de lapte praf, alimente de primă necesitate, un caiet sau un creion pentru un elev, sunt lucruri pe care, din păcate, unii nu și le pot permite în mod constant. Noi îți facem cunoscute cazurile, voi alegeți familia pe care doriți să o vizitați și să o ajutați pe termen mediu sau lung."
+    },
+    "HELP_A_COMMUNITY": {
+      "TITLE": "Ajută o comunitate",
+      "DESCRIPTION": "Suntem implicați în ajutorarea multor comunități, prieteni ai noștri spunem acum cu bucurie, sunt sute de familii, oameni minunați și mulți copii frumoși. Orice lucru bun aveți de oferit, cum ar fi alimente, medicamente (siropuri impotriva tusei, antifebrile, pamperși, etc), încălțăminte, îmbrăcăminte, produse de igienă și igienă intimă, jucării, electrocasnice, mobilier și alte bunuri, vă așteptăm în fiecare zi la cele două puncte de colectă situate la următoarele adrese: Supermarket La Cocoș, în interiorul magazinului. Adresa Sos. Vitan Bârzești 7A. Program luni - sâmbătă 07.30 – 20.30, duminică 07.30 – 18-30. Sau Str. Poteraș nr. 14, în intervalul orar 09.00 – 16.00. Pentru cantități mai mari de produse și bunuri, vă rugăm să ne contactați la telefon."
+    }
   },
   
   "HEADER": 

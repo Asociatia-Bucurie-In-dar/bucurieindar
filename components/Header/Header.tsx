@@ -2,15 +2,13 @@
 
 import { usePathname } from 'next/navigation'
 import Link from 'next/link';
-import {Menu, Group, Center, Burger, Container, Drawer, Text, Title, Divider, rem, Button,} from '@mantine/core';
+import { Group, Burger, Container, Drawer, Divider, rem } from '@mantine/core';
 import { ThemeSwitcher } from '@/components/ThemeSwitcher';
 import { useDisclosure, useHeadroom } from '@mantine/hooks';
 import {LanguagePicker} from "@/components/LanguagePicker/LanguagePicker";
-import { IconChevronDown } from '@tabler/icons-react';
 import {ConfettiButton} from "@/components/ConfettiButton/ConfettiButton";
 import { Image } from '@mantine/core';
 import classes from './Header.module.css';
-import {MyRoutePaths} from "@/utils/route-paths";
 import {MyZIndexes} from "@/utils/my-constants";
 import logo from '@/public/logoPng.png';
 //const contactParent = { link: contact.link, label: contact.label, links: [contact, dash] };

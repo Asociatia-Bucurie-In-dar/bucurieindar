@@ -3,6 +3,7 @@ import { IconBrandTwitter, IconBrandYoutube, IconBrandInstagram } from '@tabler/
 import classes from './Footer.module.css';
 import Link from "next/link";
 import {useTranslations} from "next-intl";
+import {MyRoutePaths} from "@/utils/route-paths";
 
 function link(link: string, label: string) {
     return (
@@ -35,12 +36,12 @@ export function Footer() {
             <Container size="md">
                 <Center>
             <SimpleGrid cols={6}>
-                {link(t('HOME.LINK'), t('HOME.LABEL'))}
-                {link(t('PROJECTS.LINK'), t('PROJECTS.LABEL'))}
-                {link(t('ABOUT.LINK'), t('ABOUT.LABEL'))}
-                {link(t('GALLERY.LINK'), t('GALLERY.LABEL'))}
-                {link(t('BLOG.LINK'), t('BLOG.LABEL'))}
-                {link(t('CONTACT.LINK'), t('CONTACT.LABEL'))}
+                {link(MyRoutePaths.Home, t('HOME.LABEL'))}
+                {link(MyRoutePaths.Projects, t('PROJECTS.LABEL'))}
+                {link(MyRoutePaths.About, t('ABOUT.LABEL'))}
+                {link(MyRoutePaths.Gallery, t('GALLERY.LABEL'))}
+                {link(MyRoutePaths.Blog, t('BLOG.LABEL'))}
+                {link(MyRoutePaths.Contact, t('CONTACT.LABEL'))}
             </SimpleGrid>
                 </Center>
             </Container>

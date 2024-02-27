@@ -4,12 +4,13 @@ import {TitleWithDescription} from "@/components/Common/TitleWithDescription";
 import {GetArticleStaticContentWithSlug, GetAllArticlesStaticContent} from "@/content/blog/blog-content";
 import {Metadata} from "next";
 import {unstable_setRequestLocale} from "next-intl/server";
+import {locales} from "@/middleware";
 
 export function generateStaticParams() {
     const allArticles = GetAllArticlesStaticContent(99);
-    return allArticles.map(article => ({
-        params: { slug: article.slug }
-    }));
+    return allArticles.flatMap(article => locales.map(locale => ({
+        params: { locale, slug: article.slug }
+    })));
 }
 
 export function generateMetadata({params: {locale, slug}}:{ params: { locale: string, slug: string } }) : Metadata {

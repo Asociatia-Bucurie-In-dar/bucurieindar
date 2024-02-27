@@ -24,21 +24,8 @@ export default function HomePage({params: {locale}}:{ params: { locale: string }
           <OurTeam/>
           <FAQ/>
           <HomeBlogPosts/>
+          
           <Divider color="transparent" mb={100}/>
-          {/* ... 
-        //<HomeProjects />
-            //<ProjectPreviewCard />
-                <DonateModal />
-                <ProjectFullPage/>
-       
-        //<HomeAboutGeneral />
-        //<HomeAboutProjects />
-        //<OurTeam />
-        //<FAQ />
-        //<HomeBlogPosts />
-            //<BlogPostPreviewCard />
-                <BlogPostFullPage />  
-                */}
       </>
   );
 }

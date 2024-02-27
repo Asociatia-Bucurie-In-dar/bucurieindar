@@ -3,10 +3,9 @@ import classes from './SfIoan.module.css';
 import commonClasses from '@/utils/commonClasses.module.css';
 import {IconExternalLink} from "@tabler/icons-react";
 import Link from "next/link";
-import {MyRoutePaths} from "@/utils/route-paths";
 import {useTranslations} from "next-intl";
 
-export function SfIoan() {
+export function SfIoan(props: { disableBackground?: boolean }) {
     
     const t = useTranslations('SAINT_JOHN');
     
@@ -17,7 +16,7 @@ export function SfIoan() {
     };
     
     return (
-        <Container className={commonClasses.darkerBackground} size="full" pt={0} pb={53}>
+        <Container className={props.disableBackground ? '' : commonClasses.darkerBackground} size="full" pt={0} pb={53}>
             <Container size="md" className={classes.wrapper}>
                 <Center>
                     <div className={classes.roundedImageWrapper}>

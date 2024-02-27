@@ -37,11 +37,6 @@
     }
   },
   
-  "HOME_PROJECTS": {
-    "TITLE": "Projects",
-    "DESCRIPTION": "Discover some of our projects and find out how you could help the people in need of your help."
-  },
-  
   "SAINT_JOHN": {
     "TITLE": "Saint John the Merciful Center",
     "DESCRIPTION": "We also have the project Saint John the Merciful Center, for the treatment of addictions. We wish to be here to help you and those in need. You can see more details on the official website by clicking here.",
@@ -76,30 +71,14 @@
     "TITLE": "Our Team",
     "DESCRIPTION": "Meet our team! We are passionate people when it comes to our work and we wish to bring a positive impact in the world.",
     "TEAM_MEMBERS": {
-      "FIRST": {
-        "NAME": "First Name",
-        "ROLE": "First Role"
-      },
-      "SECOND": {
-        "NAME": "Second Name",
-        "ROLE": "Second Role"
-      },
-      "THIRD": {
-        "NAME": "Third Name",
-        "ROLE": "Third Role"
-      },
-      "FOURTH": {
-        "NAME": "Fourth Name",
-        "ROLE": "Fourth Role"
-      },
-      "FIFTH": {
-        "NAME": "Fifth Name",
-        "ROLE": "Fifth Role"
-      },
-      "SIXTH": {
-        "NAME": "Sixth Name",
-        "ROLE": "Sixth Role"
-      }
+      "FIRST": { "NAME": "Alexandru Ionescu", "ROLE": "President" },
+        "SECOND": { "NAME": "Andreea Constantinescu", "ROLE": "VP & Marketing coordinator" },
+        "THIRD": { "NAME": "Cioltan Marius", "ROLE": "VP & Logistics coordinator" },
+        "FOURTH": { "NAME": "Teodor Nemțeanu", "ROLE": "Principal coordinator of emergency stuations" },
+        "FIFTH": { "NAME": "Alina Cernea", "ROLE": "Assistant & Principal coordinator" },
+        "SIXTH": { "NAME": "Cristian Simionescu", "ROLE": "Communications & Public relations specialist" },
+        "SEVENTH": { "NAME": "Evelin", "ROLE": "Principal social assistant" },
+        "EIGHTH": { "NAME": "Ovidiu Horațiu", "ROLE": "Doctor architect" }
     }
   },
   
@@ -128,6 +107,35 @@
   "HOME_BLOG": {
     "TITLE": "Blog",
     "DESCRIPTION": "Here you can find some articles about various topics. We hope you will find them interesting and useful."
+  },
+
+  "PROJECTS": {
+    "TITLE": "Proiecte",
+    "DESCRIPTION": "Descoperă câteva din proiectele noastre și află cum poți să-i ajuți pe cei care au nevoie de tine.",
+    "TABLE_OF_JOY": {
+      "TITLE": "Meals of joy",
+      "DESCRIPTION": "Ați fost în situația de a nu avea ce să mâncați, cel puțin o zi? Prin acest program, Masa bucuriei, oferim mâncare la mii de persoane. Oferă și tu o porție de mâncare unui om sărman și vei primi în schimb cel mai onest MULȚUMESC din viața ta. Pe cine ajutăm? Familii cu mulți copii, persoane fără venit, femei văduve, bolnave și care își cresc singure copiii, persoane nedeplasabile, adulți sau copii, copii asistați social, bătrâni singuri, oameni ai străzii. Ei postesc și când nu este post."
+    },
+    "LOVE_AND_MEDICINE": {
+      "TITLE": "Love & medicine",
+      "DESCRIPTION": "Vrei sa fim prieteni? Acești copii se hrănesc cu dragostea noastră și trăiesc cu medicamente. Ce nevoi au acești copii? Unii tratament, alții proteze, alții cărucior mobil sau operație. Ajută-i să nu mai aibe nevoie de tratament și să rămână doar cu dragostea și bucuria că s-au vindecat cu ajutorul oferit de tine. NOTĂ - banii obținuți din donații vor fi redirecționați în contul spitalului sau clinicii, și postarea facturilor/costurilor aferente."
+    },
+    "SCHOOL_OF_JOY": {
+      "TITLE": "School of joy",
+      "DESCRIPTION": "Copiii ajutați azi sunt adulții educați de maine. Educația este fundamentală. Iar prin susținerea și accesul acestor copii la educație, ajutați și comunitatea, dar si aportul pe care ei îl vor aduce la rândul lor comunității și acestei țări. Prin ajutorul dumneavoastră acești copii vor descoperi lumea, o lume diferită de cea în care trăiesc acum. Prin ei te vei bucura și tu! Deasemenea, cu toții știm că în România fenomenul bullying-ului a luat amploare, iar foarte mulți copii sunt victime. Noi credem că este mai ușor să previi decât să combați un fenomen și că împreună îi putem ajuta pe cei mici să aibă relații sănătoase cu semenii lor. Vă împărtășim proiectul de atelier „Școala bucuriei”, care pornește de la o poveste – „Inima ariciului. O aventură în căutarea prietenilor adevărați” (autor: Mariana Buric).Atelierul conține jocuri și activități care pot fi realizate cu copiii atât de cadre didactice, în grădinițe și în școli, dar și de părinți, acasă. Ne-am bucura dacă printre dumneavoastră sunt cadre didactice și părinți care vor să ni se alăture în acest proiect.Haideți să-i ajutăm pe cei mici să meargă cu drag la grădiniță sau la școală și să se bucure de prietenia semenilor lor. Pentru detalii despre proiect, vă rugăm să ne contactați. Vă mulțumim!"
+    },
+    "CAMPS_TRIPS_WORKSHOPS": {
+      "TITLE": "Camps, trips & workshops",
+      "DESCRIPTION": "Avem o țară tare frumoasă și ar fi minunat ca acești copii să își cunoască propria țară și să se bucure de frumusețile ei."
+    },
+    "ADOPT_A_FAMILY": {
+      "TITLE": "Adopt a family",
+      "DESCRIPTION": "Ajută pe cel puțin unul dintre prietenii noștri mici și mari, tineri sau bătrâni. Oameni dragi, aveți posibilitatea să adoptați o familie de care să aveți grijă, ajutându-i în nevoile și neputințele lor. Orice ajutor, cât de puțin este binevenit. Sunați-ne pentru a vă oferi datele lor de contact. Asigură ce poți din nevoile unei familii defavorizate: un medicament sau o cutie de lapte praf, alimente de primă necesitate, un caiet sau un creion pentru un elev, sunt lucruri pe care, din păcate, unii nu și le pot permite în mod constant. Noi îți facem cunoscute cazurile, voi alegeți familia pe care doriți să o vizitați și să o ajutați pe termen mediu sau lung."
+    },
+    "HELP_A_COMMUNITY": {
+      "TITLE": "Help a community",
+      "DESCRIPTION": "Suntem implicați în ajutorarea multor comunități, prieteni ai noștri spunem acum cu bucurie, sunt sute de familii, oameni minunați și mulți copii frumoși. Orice lucru bun aveți de oferit, cum ar fi alimente, medicamente (siropuri impotriva tusei, antifebrile, pamperși, etc), încălțăminte, îmbrăcăminte, produse de igienă și igienă intimă, jucării, electrocasnice, mobilier și alte bunuri, vă așteptăm în fiecare zi la cele două puncte de colectă situate la următoarele adrese: Supermarket La Cocoș, în interiorul magazinului. Adresa Sos. Vitan Bârzești 7A. Program luni - sâmbătă 07.30 – 20.30, duminică 07.30 – 18-30. Sau Str. Poteraș nr. 14, în intervalul orar 09.00 – 16.00. Pentru cantități mai mari de produse și bunuri, vă rugăm să ne contactați la telefon."
+    }
   },
   
   "HEADER": {

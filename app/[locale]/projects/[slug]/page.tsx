@@ -5,31 +5,43 @@ import {ProjectDonationProgress} from "@/components/Projects/ProjectDonationProg
 import {ShareButton} from "@/components/Popups/SharePopup/ShareButton";
 import {DonatePopupButton} from "@/components/Popups/DonatePopup/DonatePopupButton";
 import {unstable_setRequestLocale} from "next-intl/server";
+import {getTranslations} from "next-intl/server";
+import {useTranslations} from "next-intl";
+import {locales} from "@/middleware";
 
-// export function generateStaticParams() {
-//     const allProjects = GetAllProjectsStaticContent(99);
-//     return allProjects.map(project => ({
-//         params: { slug: project.slug }
-//     }));
-// }
+export function generateStaticParams() {
+    const allProjects = GetAllProjectsStaticContent(99);
+    return allProjects.flatMap(project => locales.map(locale => ({
+        params: { locale, slug: project.slug }
+    })));
+}
 
-export function generateMetadata({params: {locale, slug}}:{ params: { locale: string, slug: string } }) {
-    const projectContent = GetProjectStaticContentWithSlug(slug); //TODO pass locale too
+export async function generateMetadata({params: {locale, slug}}:{ params: { locale: string, slug: string } }) {
+    const projectContent = GetProjectStaticContentWithSlug(slug);
+    const t = await getTranslations({locale: locale, namespace: 'PROJECTS'});
+    const title = t(projectContent.translation_key + '.TITLE');
+    const description = t(projectContent.translation_key + '.DESCRIPTION');
+    
     return {
-        title: projectContent.title,
-        description: projectContent.content.slice(0, 100),
+        title: title,
+        description: description.slice(0, 100),
     };
 }
 
 export default function FullProjectPage({params: {locale, slug}}:{ params: { locale: string, slug: string } }) {
     unstable_setRequestLocale(locale);
-    
+
     const projectContent = GetProjectStaticContentWithSlug(slug);
+    const t = useTranslations('PROJECTS');
+    const title = t(projectContent.translation_key + '.TITLE');
+    const description = t(projectContent.translation_key + '.DESCRIPTION');
+    
+    
     
     return (
         <Container className={commonClasses.container} size="lg">
             <Title> 
-                {projectContent.title} 
+                {title} 
             </Title>
         <Divider mb="xl" color="transparent" />
 
@@ -37,11 +49,11 @@ export default function FullProjectPage({params: {locale, slug}}:{ params: { loc
             {/* LEFT SIDE */}
             <GridCol span={{base: 12, sm: 8}}>
                 <div style={{borderRadius: '5px', overflow: 'hidden'}}>
-                    <Image src={projectContent.image_path} alt={projectContent.title} />
+                    <Image src={projectContent.image_path} alt={title} />
                 </div>
                 <Divider color="transparent" mb="xl"/>
                 <Text c="dimmed">
-                    {projectContent.content}
+                    {description}
                 </Text>
             </GridCol>
 
@@ -53,11 +65,11 @@ export default function FullProjectPage({params: {locale, slug}}:{ params: { loc
                     <Divider color="transparent" mb={10}/>
                     
                     <DonatePopupButton projectId={projectContent.id} 
-                                       projectTile={projectContent.title}
+                                       projectTile={title}
                                         fullWidth={true}/>
                     
                     <Divider color="transparent" mb={10}/>
-                    <ShareButton quote = {projectContent.title}/>
+                    <ShareButton quote = {title}/>
                 </Card>
             </GridCol>
         </Grid>
