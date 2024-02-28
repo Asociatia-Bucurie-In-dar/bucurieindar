@@ -4,7 +4,8 @@
     "DONATE": "Donate",
     "DONATE_NOW": "Donate Now",
     "ASSOCIATION": "Bucurie în Dar (Gift of Joy)",
-    "ASSOCIATION_FULL": "Bucurie în Dar (Gift of Joy) Association"
+    "ASSOCIATION_FULL": "Bucurie în Dar (Gift of Joy) Association",
+    "NECCESARY_AMOUNT": "Suma necesară"
   },
   
   "HOME_HERO":
@@ -66,6 +67,11 @@
       "DESCRIPTION": "We are always looking for volunteers to help us. We'll help you find a way to volunteer that best suits you."
     }
   },
+
+  "HOME_BLOG": {
+    "TITLE": "Blog",
+    "DESCRIPTION": "Here you can find some articles about various topics. We hope you will find them interesting and useful."
+  },
   
   "OUR_TEAM": {
     "TITLE": "Our Team",
@@ -103,11 +109,6 @@
       }
     }
   },
-  
-  "HOME_BLOG": {
-    "TITLE": "Blog",
-    "DESCRIPTION": "Here you can find some articles about various topics. We hope you will find them interesting and useful."
-  },
 
   "PROJECTS": {
     "TITLE": "Projects",
@@ -136,6 +137,14 @@
       "TITLE": "Help a community",
       "DESCRIPTION": "We are involved in helping many communities, our friends we now say with joy, are hundreds of families, wonderful people, and many beautiful children. Whatever good thing you have to offer, such as food, medicine (cough syrups, fever reducers, diapers, etc.), footwear, clothing, personal hygiene and intimate hygiene products, toys, appliances, furniture, and other goods, we await you every day at the two collection points located at the following addresses: Supermarket La Cocoș, inside the store. Address Sos. Vitan Bârzești 7A. Hours Monday - Saturday 07:30 – 20:30, Sunday 07:30 – 18:30. Or Str. Poteraș nr. 14, between 09:00 – 16:00. For larger quantities of products and goods, please contact us by phone."
     }
+  },
+
+  "ABOUT": {
+    "TITLE": "About us",
+    "DESCRIPTION": "Who we are, what we do, and why we do it.",
+    "WHO_ARE_WE": "We are volunteers who, after several years of humanitarian activities, founded the Bucurie în Dar (Gift of Joy) Association to help on a larger scale. We are people who live for others, not just for ourselves. With the help of The Good Lord and with your support, in a joint work, we want to bring joy to the hearts of many people, big and small, young and old. We have the freedom to choose what we do in this life, and we chose to help, and we do it with all the joy and love. Give joy too, together with us.",
+    "WHAT_WE_DO": "We listen to the life stories of those who are less important to a part of society. We are support, with everything in our power, for those who have no one left to lean on. We help those who shout: help us! Choose to help with us! It's that simple. Just choose.",
+    "WHY_WE_HELP": "Because we have the power to choose what we do with our time, with our lives. The legacy we leave to our children are our deeds, which they also pass on. Dear people, from this life, we only leave with our deeds. You who come and help, sacrifice your time, your comfort and your money for people you don't know. You chose to give your life to your neighbor. This is the gift and it comes from love."
   },
   
   "HEADER": {

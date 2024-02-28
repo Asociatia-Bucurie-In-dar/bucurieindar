@@ -3,19 +3,27 @@ import {TitleWithDescription} from "@/components/Common/TitleWithDescription";
 import {Center, Container, Divider, Image, SimpleGrid, Stack, Text, Title} from "@mantine/core";
 import {OurTeam} from "@/components/OurTeam/OurTeam";
 import {AnimatedThing} from "@/components/CoolEffects/AnimatedNumber/AnimatedThing";
-import {unstable_setRequestLocale} from "next-intl/server";
+import {getTranslations, unstable_setRequestLocale} from "next-intl/server";
+import {useTranslations} from "next-intl";
 
 const spacing = "xl";
 const division = 75;
 const cols = { base: 1, sm: 2, md: 2, lg: 2, xl: 2 };
 
-export const metadata = {
-    title: "Despre noi",
-    description: "Cine suntem, ce facem și de ce să ajutăm."
+export async function generateMetadata({params: {locale}}:{ params: { locale: string } }) {
+    const t = await getTranslations({locale: locale, namespace: 'ABOUT'});
+    const title = t('TITLE');
+    const description = t('DESCRIPTION');
+    return {
+        title: title,
+        description: description.slice(0, 100),
+    };
 }
-
 export default function AboutPage( {params: {locale}} : {params: {locale: string}} ) {
     unstable_setRequestLocale(locale);
+    
+    const t = useTranslations('ABOUT');
+    
     const roundedImage = (src: string) => {
         return (
             <div style={{borderRadius: '10px', overflow: 'hidden'}}>
@@ -28,7 +36,7 @@ export default function AboutPage( {params: {locale}} : {params: {locale: string
       <>
     <div>
       <Container className={commonClasses.container} size="lg">
-        <TitleWithDescription title={"Despre noi"} />
+        <TitleWithDescription title={t('TITLE')} />
           <Divider mb="xl" color="transparent" />
 
           {/* FIRST */}
@@ -41,7 +49,7 @@ export default function AboutPage( {params: {locale}} : {params: {locale: string
               <Stack>
                       <AnimatedThing thing={"Cine suntem?"} class={commonClasses.titleBigLight} />
                       <Text c="dimmed">
-                          Suntem oameni care trăiesc și pentru alții, oameni cu rațiune, cu sentimente și cu dorințe, iar dorința noastră cea mare este să nu trăim doar pentru noi înșine. Cu ajutorul Bunului Dumnezeu și cu sprijinul vostru, într-o împreună lucrare, vrem să aducem bucurie în inimile multor oameni, mari și mici, tineri și bătrâni. Avem libertatea de a alege ce facem în această viață, iar noi am ales să ajutăm și o facem cu toata bucuria și cu toată dragostea. Dăruiește și tu bucurie, împreună cu noi.
+                          {t('WHO_ARE_WE')}
                       </Text>
                   </Stack>
               </Center>
@@ -55,7 +63,7 @@ export default function AboutPage( {params: {locale}} : {params: {locale: string
                   <Stack>
                       <AnimatedThing thing={"Ce facem?"} class={commonClasses.titleBigLight} />
                       <Text c="dimmed">
-                          Ascultăm poveștile de viață ale celor care sunt mai puțin importanți pentru o parte a societății. Suntem sprijin, cu tot ce ne stă în putere, pentru cei care nu mai au pe cine să se sprijine. Îi ajutăm pe cei care strigă: ajutați-ne! Alege să ajuți împreună cu noi! Este atât de simplu. Doar alege.
+                          {t('WHAT_WE_DO')}
                       </Text>
                   </Stack>
               </Center>
@@ -77,7 +85,7 @@ export default function AboutPage( {params: {locale}} : {params: {locale: string
                   <Stack>
                       <AnimatedThing thing={"De ce să ajutăm?"} class={commonClasses.titleBigLight} />
                       <Text c="dimmed">
-                          Pentru că avem puterea să alegem ce facem cu timpul nostru, cu viața noastră. Moștenirea pe care o lăsăm copiilor noștri sunt faptele noastre, pe care le transmit și ei mai departe. Oameni buni, din această viață, plecăm doar cu faptele noastre. Voi, cei care veniți și ajutați, sacrificați din timpul vostru, din confortul și banii voștri unor oameni pe care nu-i cunoașteți. Ați ales să dăruiți din viața voastră aproapelui vostru. Aceasta este darul și el vine din iubire.
+                          {t('WHY_WE_HELP')}
                       </Text>
                   </Stack>
               </Center>
