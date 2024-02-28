@@ -47,9 +47,9 @@ export default function AboutPage( {params: {locale}} : {params: {locale: string
 
               <Center>
               <Stack>
-                      <AnimatedThing thing={"Cine suntem?"} class={commonClasses.titleBigLight} />
+                      <AnimatedThing thing={t('WHO_ARE_WE.TITLE')} class={commonClasses.titleBigLight} />
                       <Text c="dimmed">
-                          {t('WHO_ARE_WE')}
+                          {t('WHO_ARE_WE.DESCRIPTION')}
                       </Text>
                   </Stack>
               </Center>
@@ -61,9 +61,9 @@ export default function AboutPage( {params: {locale}} : {params: {locale: string
           <SimpleGrid cols={cols} spacing={spacing}>
               <Center>
                   <Stack>
-                      <AnimatedThing thing={"Ce facem?"} class={commonClasses.titleBigLight} />
+                      <AnimatedThing thing={t('WHAT_WE_DO.TITLE')} class={commonClasses.titleBigLight} />
                       <Text c="dimmed">
-                          {t('WHAT_WE_DO')}
+                          {t('WHAT_WE_DO.DESCRIPTION')}
                       </Text>
                   </Stack>
               </Center>
@@ -83,9 +83,9 @@ export default function AboutPage( {params: {locale}} : {params: {locale: string
 
               <Center>
                   <Stack>
-                      <AnimatedThing thing={"De ce să ajutăm?"} class={commonClasses.titleBigLight} />
+                      <AnimatedThing thing={t('WHY_WE_HELP.TITLE')} class={commonClasses.titleBigLight} />
                       <Text c="dimmed">
-                          {t('WHY_WE_HELP')}
+                          {t('WHY_WE_HELP.DESCRIPTION')}
                       </Text>
                   </Stack>
               </Center>
