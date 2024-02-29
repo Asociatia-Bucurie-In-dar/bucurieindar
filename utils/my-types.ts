@@ -2,10 +2,8 @@ export type BlogArticleType = {
     id: string; //Primary Key
     slug: string;
     
-    title: string;
     image_name: string;
-    content: string;
-    category: string;
+    translation_key: string;
 };
 
 export type ProjectType = {

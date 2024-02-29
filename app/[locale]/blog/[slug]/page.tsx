@@ -3,8 +3,9 @@ import commonClasses from "@/utils/commonClasses.module.css";
 import {TitleWithDescription} from "@/components/Common/TitleWithDescription";
 import {GetArticleStaticContentWithSlug, GetAllArticlesStaticContent} from "@/content/blog/blog-content";
 import {Metadata} from "next";
-import {unstable_setRequestLocale} from "next-intl/server";
+import {getTranslations, unstable_setRequestLocale} from "next-intl/server";
 import {locales} from "@/middleware";
+import {useTranslations} from "next-intl";
 
 export function generateStaticParams() {
     const allArticles = GetAllArticlesStaticContent(99);
@@ -13,11 +14,12 @@ export function generateStaticParams() {
     })));
 }
 
-export function generateMetadata({params: {locale, slug}}:{ params: { locale: string, slug: string } }) : Metadata {
-    const article = GetArticleStaticContentWithSlug(slug);//TODO pass locale
+export async function generateMetadata({params: {locale, slug}}:{ params: { locale: string, slug: string } }) : Promise<Metadata> {
+    const article = GetArticleStaticContentWithSlug(slug);
+    const t = await getTranslations({locale, namespace: 'BLOG.ARTICLES.' + article.translation_key });
     return {
-        title: article.title,
-        description: article.content.slice(0, 100)
+        title: t('TITLE'),
+        description: t('DESCRIPITION').slice(0, 100)
     };
 }
 
@@ -26,11 +28,12 @@ export default function BlogPage({params: {locale, slug}}:{ params: { locale: st
     
     const imageFolder = '/blog/';
     const article = GetArticleStaticContentWithSlug(slug);
+    const t = useTranslations('BLOG.ARTICLES.' + article.translation_key);
     
   return (
       <div>
           <Container className={commonClasses.container} size="lg">
-              <TitleWithDescription title={article.title} description={"🛠️ " + "Blog-ul este încă în construcție"}/>
+              <TitleWithDescription title={t('TITLE')} />
 
               <Divider mb="xl" color="transparent"/>
 
@@ -42,7 +45,7 @@ export default function BlogPage({params: {locale, slug}}:{ params: { locale: st
 
               <Center>
                   <Text c="dimmed">
-                      {article.content}
+                      {t('DESCRIPTION')}
                   </Text>
               </Center>
 

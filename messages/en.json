@@ -193,10 +193,33 @@
       "14": { "DESCRIPTION": "...❤️" }
     }
   },
-  
+
   "BLOG": {
     "TITLE": "Our articles",
-    "DESCRIPTION": "Our blog articles"
+    "DESCRIPTION": "Our blog articles.",
+    "READ_ARTICLE": "Read article",
+    "ARTICLES": {
+      "1": {
+        "TITLE": "The Importance of Charitable Donations",
+        "DESCRIPTION": "In a world full of uncertainty and challenges, acts of charity shine like beacons of hope and humanity. Charity is not just a gesture of compassion; it is a bridge that connects souls, offering those less fortunate a chance at a better life. Charitable donations are vital for supporting this noble cause, and here's why. Direct Impact on People's Lives Through donations made to charitable organizations, we contribute directly to improving the lives of those in need. Whether it's food, shelter, education, or access to medical services, every donated dollar can make the difference between despair and hope for someone. Strengthening the Community Our donations help build and strengthen the community. When we support charitable causes, we join forces with other donors and volunteers to fight against inequalities and to create a fairer and more compassionate society. Education for Future Generations Donations in the field of education ensure that future generations will have the necessary resources to learn and thrive. Education is the foundation upon which the future is built, and our support can open doors that would otherwise remain closed. Personal Fulfillment Donations are not just about giving; they're also about receiving. The personal fulfillment and inner peace we feel when helping others are priceless. It's proof that, regardless of our own difficulties, we can make a positive difference in the world. Positive Influence Through our example, we inspire others to be generous and to engage in acts of charity. Generosity is contagious, and when we show our support for charitable causes, we motivate those around us to do the same. In conclusion, charitable donations are much more than a simple transfer of financial resources. They are our expression of solidarity and empathy towards those in need. Every contribution, no matter its size, matters and has the power to transform lives. So, let's open our hearts and be generous. Every act of charity is a seed of goodness planted for a brighter future.",
+        "TAG": "Charity"
+      },
+      "2": {
+        "TITLE": "The Importance of Mental Health and Well-Being",
+        "DESCRIPTION": "In today's tumultuous times, mental health has become a crucial topic in discussions about well-being. Maintaining mental health is not just about preventing or treating specific conditions, but it's about creating a balance in our daily lives that allows us to realize our potential and cope with everyday stress. Mental health influences the way we think, feel, and act. Therefore, it is essential to take time for self-care and to seek support when necessary. Creating a supportive environment around us, where open dialogue about emotions and internal struggles is encouraged, can have a significant impact on our well-being. Activities such as meditation, physical exercises, and creative hobbies can contribute to improving mental health. It's also important to recognize that seeking professional help is a sign of strength, not weakness. In the end, mental health is not a destination but a continuous process of growth and adaptation, and every step we take to care for our minds is a step towards a more fulfilled and happier life.",
+        "TAG": "Charity"
+      },
+      "3": {
+        "TITLE": "",
+        "DESCRIPTION": "",
+        "TAG": ""
+      },
+      "4": {
+        "TITLE": "",
+        "DESCRIPTION": "",
+        "TAG": ""
+      }
+    }
   },
   
   "CONTACT": {

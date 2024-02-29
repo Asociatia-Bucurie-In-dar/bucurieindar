@@ -3,10 +3,14 @@ import classes from './BlogPostPreviewCard.module.css';
 import Link from "next/link";
 import {MyRoutePaths} from "@/utils/route-paths";
 import {BlogArticleType} from "@/utils/my-types";
+import {useTranslations} from "next-intl";
 
 const imageFolder = '/blog/';
 
 export function BlogPostPreviewCard(props: { article: BlogArticleType }) {
+    const t = useTranslations('BLOG');
+    const articleT = useTranslations('BLOG.ARTICLES.' + props.article.translation_key);
+    
     return (
         <Card withBorder radius="md" p={0} className={classes.card}
             component={Link} href={MyRoutePaths.Blog + '/' + props.article.slug}>
@@ -19,13 +23,13 @@ export function BlogPostPreviewCard(props: { article: BlogArticleType }) {
                 />
                 <div className={classes.body}>
                     <Text tt="uppercase" c="dimmed" fw={700} size="xs">
-                        {props.article.category}
+                        {articleT('TAG')}
                     </Text>
                     <Text className={classes.title} mt="xs" mb="md" lineClamp={2}>
-                        {props.article.title}
+                        {articleT('TITLE')}
                     </Text>
                     <Group wrap="nowrap" gap="xs">
-                        <Button variant="light">{"Citeşte articolul"}</Button>
+                        <Button variant="light">{t('READ_ARTICLE')}</Button>
                     </Group>
                 </div>
             </Group>
