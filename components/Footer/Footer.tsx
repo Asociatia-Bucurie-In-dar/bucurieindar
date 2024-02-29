@@ -15,6 +15,7 @@ function link(link: string, label: string) {
 export function Footer() {
     const t = useTranslations('HEADER');
     const commonT = useTranslations('COMMON');
+    const heroT = useTranslations('HOME_HERO');
     
     return (
         <footer className={classes.footer}>
@@ -28,7 +29,7 @@ export function Footer() {
                         </Text>
                     </Title>
                     <Text size="xs" c="dimmed" className={classes.description}>
-                        {"Misiunea noastră este să aducem bucurie în inimile cât mai multor oameni, mici și mari, tineri și bătrâni, împreună cu voi."}
+                        {heroT('MOTTO_FIRST_PART')}{' '}{heroT('MOTTO_SECOND_PART')}.
                     </Text>
                 </div>
             </Container>
