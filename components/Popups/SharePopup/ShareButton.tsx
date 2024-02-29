@@ -14,7 +14,7 @@ import {
 } from "next-share";
 import {IconShare} from "@tabler/icons-react";
 
-export function ShareButton(props: {quote: string} ) {
+export function ShareButton(props: { quote: string, translation: string } ) {
     const [opened, { open, close }] = useDisclosure(false);
     const pathname =  window.location.href;
     
@@ -22,7 +22,7 @@ export function ShareButton(props: {quote: string} ) {
         <Modal opened={opened} onClose={close} withCloseButton={false} zIndex={MyZIndexes.DonateModal}
                size="auto">
             <Center>
-                <Text style={{fontSize: 23, fontWeight: 500}}>Ajută distribuind!</Text>
+                <Text style={{fontSize: 23, fontWeight: 500}}>{props.translation}</Text>
             </Center>
             <Divider mt="sm" mb="sm"/>
             <SimpleGrid verticalSpacing={0} cols={5}>
@@ -48,7 +48,8 @@ export function ShareButton(props: {quote: string} ) {
                 gradient={{ from: 'violet', to: 'grape', deg: 60 }}
                 fullWidth
                 onClick={open}>
-            <IconShare size={20} style={{marginRight: 5}}/>{"Ajută distribuind!"}
+            <IconShare size={20} style={{marginRight: 5}}/>
+            {props.translation}
         </Button>
         </>;
 }

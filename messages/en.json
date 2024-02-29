@@ -147,6 +147,10 @@
     "CONTINUE": "Continue",
     "DONATE_FOR": "Donate for"
   },
+  
+  "SHARE": {
+    "MAIN": "Help by sharing!"
+  },
 
   "ABOUT": {
     "TITLE": "About us",

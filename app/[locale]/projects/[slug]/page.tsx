@@ -36,6 +36,7 @@ export default function FullProjectPage({params: {locale, slug}}:{ params: { loc
     const t = useTranslations('PROJECTS');
     const commonT = useTranslations('COMMON');
     const donateT = useTranslations('PROJECTS_MORE');
+    const shareT = useTranslations('SHARE');
     const title = t(projectContent.translation_key + '.TITLE');
     const description = t(projectContent.translation_key + '.DESCRIPTION');
     
@@ -81,7 +82,7 @@ export default function FullProjectPage({params: {locale, slug}}:{ params: { loc
                                        translations={donatePopupTranslations}/>
                     
                     <Divider color="transparent" mb={10}/>
-                    <ShareButton quote = {title}/>
+                    <ShareButton quote = {title} translation={shareT('MAIN')}/>
                 </Card>
             </GridCol>
         </Grid>
