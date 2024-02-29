@@ -2,6 +2,7 @@ import { Text, Box, Stack, rem } from '@mantine/core';
 import { IconSun, IconPhone, IconMapPin, IconAt } from '@tabler/icons-react';
 import classes from './ContactIcons.module.css';
 import {contactInfo} from "@/content/contact/my-contact";
+import {ContactTranslationType} from "@/utils/my-types";
 
 interface ContactIconProps extends Omit<React.ComponentPropsWithoutRef<'div'>, 'title'> {
     icon: typeof IconSun;
@@ -26,14 +27,14 @@ function ContactIcon({ icon: Icon, title, description, ...others }: ContactIconP
     );
 }
 
-const MOCKDATA = [
-    { title: 'Email', description: contactInfo.email, icon: IconAt },
-    { title: 'Telefon', description: contactInfo.phone, icon: IconPhone },
-    { title: 'Adresa', description: contactInfo.address, icon: IconMapPin },
-    { title: "Ore lucru", description: '9 a.m. – 5:30 p.m.', icon: IconSun },
-];
-
-export function ContactIcons() {
+export function ContactIcons(props: {translations:ContactTranslationType}) {
+    const MOCKDATA = [
+        { title: props.translations.Email, description: contactInfo.email, icon: IconAt },
+        { title: props.translations.Phone, description: contactInfo.phone, icon: IconPhone },
+        { title: props.translations.Address, description: contactInfo.address, icon: IconMapPin },
+        { title: props.translations.WorkingHours, description: '9 a.m. – 5:30 p.m.', icon: IconSun },
+    ];
+    
     const items = MOCKDATA.map((item, index) => <ContactIcon key={index} {...item} />);
     return <Stack>{items}</Stack>;
 }

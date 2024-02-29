@@ -18,12 +18,13 @@ import Link from "next/link";
 import {MyRoutePaths} from "@/utils/route-paths";
 import {useState} from "react";
 import {contactInfo} from "@/content/contact/my-contact";
+import {ContactTranslationType} from "@/utils/my-types";
 
 const social = 
     [{icon: IconBrandFacebook, link: contactInfo.facebookLink},
         {icon: IconBrandWhatsapp, link: "https://wa.me/" + contactInfo.phoneForWhatsapp}];
 
-export function ContactPanel() {
+export function ContactPanel(props: { translations: ContactTranslationType }) {
     const icons = social.map((props, index) => (
         <ActionIcon key={index} size={33} className={classes.social} variant="transparent"
         component={Link} href={props.link}>
@@ -54,12 +55,12 @@ export function ContactPanel() {
         const data = await response.json();
         
         if (response.ok) {
-            alert('Mesajul a fost trimis cu succes!');
+            alert(props.translations.Success);
             setEmail('');
             setName('');
             setMessage('');
         } else {
-            alert('A apărut o eroare. Vă rugăm să încercați din nou.');
+            alert(props.translations.Error);
         }
         
         setLoading(false);
@@ -74,7 +75,7 @@ export function ContactPanel() {
             <SimpleGrid cols={{ base: 1, sm: 2 }} spacing={50}>
                 <div>
                     <Title mb="sm" className={classes.title}>
-                        {"Contactați-ne"}
+                        {props.translations.FormTitle}
                     </Title>
                     {/*<Text className={classes.description}>*/}
                     {/*    {"Anularea plăților recurente se poate face şi în secțiunea"}{" "}*/}
@@ -86,11 +87,11 @@ export function ContactPanel() {
                     {/*</Text>*/}
                     <Text className={classes.description} mt="sm" mb={30}>
                         <b>
-                            {"Vă rugăm să sunați inainte de a veni la sediul nostru. Vă mulțumim!"}
+                            {props.translations.Disclaimer}
                         </b>
                     </Text>
 
-                    <ContactIcons />
+                    <ContactIcons translations={props.translations}/>
 
                     <Group mt="xl">{icons}</Group>
                 </div>
@@ -100,14 +101,14 @@ export function ContactPanel() {
                     <TextInput
                         value={email}
                         onChange={(e) => setEmail(e.currentTarget.value)}
-                        label="Email"
+                        label={props.translations.Email}
                         required
                         classNames={{ input: classes.input, label: classes.inputLabel }}
                     />
                     <TextInput
                         value={name}
                         onChange={(e) => setName(e.currentTarget.value)}
-                        label={"Nume"}
+                        label={props.translations.Name}
                         mt="md"
                         classNames={{ input: classes.input, label: classes.inputLabel }}
                     />
@@ -115,7 +116,7 @@ export function ContactPanel() {
                         value={message}
                         onChange={(e) => setMessage(e.currentTarget.value)}
                         required
-                        label={"Mesajul tău"}
+                        label={props.translations.YourMessage}
                         minRows={4}
                         mt="md"
                         classNames={{ input: classes.input, label: classes.inputLabel }}
@@ -123,7 +124,7 @@ export function ContactPanel() {
 
                     <Group justify="flex-end" mt="md">
                         <Button className={classes.control} type="submit" disabled={loading}>
-                            {"Trimite"} 
+                            {props.translations.Send} 
                         </Button>
                     </Group>
                 </form>

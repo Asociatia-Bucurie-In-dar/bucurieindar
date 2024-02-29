@@ -185,6 +185,24 @@
     "TITLE": "Articolele noastre",
     "DESCRIPTION": "Articolele noastre blog"
   },
+
+  "CONTACT": {
+    "TITLE": "Contact",
+    "DESCRIPTION": "Contact us for any questions or suggestions.",
+    "FORM": {
+      "TITLE": "Contactează-ne",
+      "DISCLAIMER": "Vă rugăm să sunați inainte de a veni la sediul nostru. Vă mulțumim!",
+      "NAME": "Nume",
+      "EMAIL": "Email",
+      "PHONE": "Telefon",
+      "ADDRESS": "Adresa",
+      "WORKING_HOURS": "Ore lucru",
+      "YOUR_MESSAGE": "Mesajul tău",
+      "SEND": "Trimite",
+      "SUCCESS": "Mesajul tău a fost trimis cu succes!",
+      "ERROR": "A apărut o eroare. Te rugăm să încerci din nou."
+    }
+  },
   
   "HEADER": {
     "HOME": { "LABEL": "Acasă", "LINK": "/" },

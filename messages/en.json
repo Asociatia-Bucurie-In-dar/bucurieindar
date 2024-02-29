@@ -186,6 +186,24 @@
     "DESCRIPTION": "Our blog articles"
   },
   
+  "CONTACT": {
+    "TITLE": "Contact",
+    "DESCRIPTION": "Contact us for any questions or suggestions.",
+    "FORM": {
+      "TITLE": "Contact us!",
+      "DISCLAIMER": "Please call before visiting us. Thank you!",
+      "NAME": "Name",
+      "EMAIL": "Email",
+      "PHONE": "Phone",
+      "ADDRESS": "Address",
+      "WORKING_HOURS": "Working hours",
+      "YOUR_MESSAGE": "Your message",
+      "SEND": "Send",
+      "SUCCESS": "Your message has been sent successfully!",
+      "ERROR": "An error occurred while sending your message. Please try again later."
+    }
+  },
+  
   "HEADER": {
     "HOME": { "LABEL": "Home", "LINK": "/en" },
     "PROJECTS": { "LABEL": "Projects", "LINK": "/en/projects" },

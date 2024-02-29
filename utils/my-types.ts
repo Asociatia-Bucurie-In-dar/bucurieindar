@@ -42,3 +42,17 @@ export type Donor = {
     last_name: string;
     email: string;
 };
+
+export type ContactTranslationType = {
+    FormTitle: string;
+    Disclaimer: string;
+    Email: string;
+    Phone: string;
+    Address: string;
+    WorkingHours: string;
+    Name: string;
+    YourMessage: string;
+    Send: string;
+    Success: string;
+    Error: string;
+};

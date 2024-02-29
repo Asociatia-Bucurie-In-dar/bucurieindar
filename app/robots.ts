@@ -6,7 +6,7 @@ export default function robots() {
             {
                 userAgent: "",
                 allow: "/",
-                disallow: ["/admin"],
+                disallow: ["/admin", "/result"],
             }
         ],
         sitemap: "https://bucurieindar.org/sitemap.xml"

@@ -2,14 +2,19 @@ import {Container, Divider, Group, SimpleGrid} from "@mantine/core";
 import {TitleWithDescription} from "@/components/Common/TitleWithDescription";
 import commonClasses from "@/utils/commonClasses.module.css";
 import {ProjectPreviewCardsSlider} from "@/components/Projects/ProjectPreviewCardsSlider";
-import {unstable_setRequestLocale} from "next-intl/server";
+import {getTranslations, unstable_setRequestLocale} from "next-intl/server";
 import {SfIoan} from "@/components/SfIoan/SfIoan";
 import {useTranslations} from "next-intl";
 
-export const metadata = {
-    title: "Proiectele noastre",
-    description: "Vezi toate proiectele noastre."
-};
+export async function generateMetadata({params: {locale}}:{ params: { locale: string } }) {
+    const t = await getTranslations({ locale, namespace: 'PROJECTS' });
+    const title = t('TITLE');
+    const description = t('DESCRIPTION');
+    return {
+        title: title,
+        description: description,
+    };
+}
 
 export default function ProjectsPage( {params: {locale}} : {params: {locale: string}} ) {
     unstable_setRequestLocale(locale);
