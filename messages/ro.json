@@ -158,7 +158,27 @@
 
   "GALLERY": {
     "TITLE": "Munca noastră",
-    "DESCRIPTION": ""
+    "DESCRIPTION": "Galerie foto şi video cu activităţile noastre.",
+    "VIDEOS": {
+      "1": { "DESCRIPTION": "Video - Reportaj, Universul Credinței" },
+      "2": { "DESCRIPTION": "Video - Fondator Bucurie în Dar" }
+    },
+    "PHOTOS": {
+      "1": { "DESCRIPTION": "Bunul Dumnezeu lucrează prin oameni, prin voi toți care ați contribuit la fericirea acestor copii." },
+      "2": { "DESCRIPTION": "Mulțumim doamnei Monica și Asociației Amprenta că ne-au oferit increderea și ajutorul lor și uite așa am ajuns să sprijinim cel puțin 300 de copii." },
+      "3": { "DESCRIPTION": "Ne-am găndit să le facem o surpriză copiilor din Com. Budești, oferindu-le 30 de hanorace pe care să le folosească la antrenament. Dar surpriza lor a fost cu mult mai mare decăt a noastră. Le-am surprins pe fete pregatindu-ne mărțișoare." },
+      "4": { "DESCRIPTION": "Vă anunțăm că am reușit și în acest an, cu ajutorul Bunului Dumnezeu și al vostru să trimitem la mare 16 copii! Mulțumim tare, tare mult gazdelor de la CASA DEXTER, Vali și Cami, pentru că au avut grijă de copii!" },
+      "5": { "DESCRIPTION": "Mulțumim Asociației Medicover pentru produsele de igienă donate!" },
+      "6": { "DESCRIPTION": "Noi vă mulțumim pentru implicare și grijă!" },
+      "7": { "DESCRIPTION": "In ultimii ani, împreună cu voi, am venit în ajutorul multor persoane, familii, copii, oameni ai străzii, nu cred ca am omis pe cineva, am ajutat fără rezerve, necondiționat, și continuam să o facem."},
+      "8": { "DESCRIPTION": "Copiii ajutați azi sunt adulții educați de maine. Educația este fundamentală. Iar prin susținerea și accesul acestor copii la educație, ajutați și comunitatea, dar si aportul pe care ei îl vor aduce la rândul lor comunității și acestei țări."},
+      "9": { "DESCRIPTION": "Vă mulțumim pentru implicare în proiectul MASA BUCURIEI 🌺 Este atât de ușor să-i ajutații prin noi!" },
+      "10": { "DESCRIPTION": "Azi am fost în satul Podul Pitarului. Jud. Călărași. Îi mulțumim lui Gina pentru implicare și grija pentru familiile din comunitate!"},
+      "11": { "DESCRIPTION": "Magazinul Supermarket La Cocoș 🐓,  ne-au oferit încă un spațiu de colectă 🎉. Acesta este destinat doar pentru donațiile care constau in îmbrăcăminte, încălțăminte, jucării, produse de igienă."},
+      "12": { "DESCRIPTION": "Să nu îi uitam pe cei bolnavi și singuri și, copii internați din spitale." },
+      "13": { "DESCRIPTION": "Să vă bucurați de incălțăminte copii și mulțumim donatorilor" },
+      "14": { "DESCRIPTION": "...❤️" }
+    }
   },
 
   "BLOG": {

@@ -31,7 +31,7 @@ export default function GalleryPage( {params: {locale}} : {params: {locale: stri
     
   return (
     <>
-        <Container className={commonClasses.container} size="lg">
+        <Container className={commonClasses.container} size="xl">
           <TitleWithDescription title={t('TITLE')} />
             {/*<Center>*/}
             {/*<Text component={Link} {...linkProps}>*/}

@@ -158,7 +158,27 @@
   
   "GALLERY": {
     "TITLE": "Our work",
-    "DESCRIPTION": "Gallery with photos and videos of our work"
+    "DESCRIPTION": "Gallery with photos and videos of our work.",
+    "VIDEOS": {
+      "1": { "DESCRIPTION": "Video - Report, The Universe of Faith" },
+      "2": { "DESCRIPTION": "Video - Founder" }
+    },
+    "PHOTOS": {
+      "1": { "DESCRIPTION": "God works through people, through all of you who contributed to the happiness of these children." },
+      "2": { "DESCRIPTION": "We thank Mrs. Monica and Amprenta Association for giving us their trust and help, and so we have managed to support at least 300 children." },
+      "3": { "DESCRIPTION": "We thought to surprise the children from Budești Commune by giving them 30 hoodies to use at training. But their surprise was much bigger than ours. We caught the girls preparing martisoare for us." },
+      "4": { "DESCRIPTION": "We announce that this year, with God's help and yours, we managed to send 16 children to the sea! Many thanks to the hosts at CASA DEXTER, Vali and Cami, for taking care of the children!" },
+      "5": { "DESCRIPTION": "Thank you to the Medicover Association for the donated hygiene products!" },
+      "6": { "DESCRIPTION": "We thank you for your involvement and care!" },
+      "7": { "DESCRIPTION": "In recent years, together with you, we have come to the aid of many people, families, children, homeless people, I don't think we missed anyone, we helped unreservedly, unconditionally, and we continue to do so." },
+      "8" : { "DESCRIPTION": "The children helped today are tomorrow's educated adults. Education is fundamental. And by supporting and providing these children with access to education, you are helping the community, as well as the contribution they will in turn make to the community and this country." },
+      "9": { "DESCRIPTION": "Thank you for your involvement in the JOY MEAL project 🌺 It's so easy to help others through us!" },
+      "10": { "DESCRIPTION": "Today we were in the village of Podul Pitarului, Călărași County. We thank Gina for her involvement and care for the families in the community!" },
+      "11": { "DESCRIPTION": "The Supermarket La Cocoș 🐓 has offered us another collection space 🎉. It is intended only for donations consisting of clothing, footwear, toys, hygiene products." },
+      "12": { "DESCRIPTION": "Let's not forget the sick and lonely, and the children hospitalized." },
+      "13": { "DESCRIPTION": "Enjoy the children's footwear and thank you to the donors. 🙋🏻🙋‍♀️Or as my mom says when I buy footwear 'Honey, wear them out healthily'." },
+      "14": { "DESCRIPTION": "...❤️" }
+    }
   },
   
   "BLOG": {
