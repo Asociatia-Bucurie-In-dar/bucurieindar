@@ -36,12 +36,14 @@ export type Donation = {
     organization_name: string;
 };
 
-export type Donor = {
-    id: string; //Primary Key
-    first_name: string;
-    last_name: string;
-    email: string;
-};
+export type ProjectTranslationsType = {
+    Donate: string;
+    CardOption: string;
+    BankTransferOption: string;
+    DesiredAmount: string;
+    Continue: string;
+    DonateFor: string;
+}
 
 export type ContactTranslationType = {
     FormTitle: string;

@@ -7,6 +7,7 @@ import {DonatePopupButton} from "@/components/Popups/DonatePopup/DonatePopupButt
 import {unstable_setRequestLocale} from "next-intl/server";
 import {getTranslations} from "next-intl/server";
 import {useTranslations} from "next-intl";
+import {ProjectTranslationsType} from "@/utils/my-types";
 //import {locales} from "@/middleware";
 
 //export function generateStaticParams() {
@@ -33,10 +34,19 @@ export default function FullProjectPage({params: {locale, slug}}:{ params: { loc
 
     const projectContent = GetProjectStaticContentWithSlug(slug);
     const t = useTranslations('PROJECTS');
+    const commonT = useTranslations('COMMON');
+    const donateT = useTranslations('PROJECTS_MORE');
     const title = t(projectContent.translation_key + '.TITLE');
     const description = t(projectContent.translation_key + '.DESCRIPTION');
     
-    
+    const donatePopupTranslations : ProjectTranslationsType = {
+        Donate: donateT('DONATE'),
+        CardOption: donateT('CARD_OPTION'),
+        BankTransferOption: donateT('BANK_TRANSFER_OPTION'),
+        DesiredAmount: donateT('DESIRED_AMOUNT'),
+        Continue: donateT('CONTINUE'),
+        DonateFor: donateT('DONATE_FOR')
+    };
     
     return (
         <Container className={commonClasses.container} size="lg">
@@ -60,13 +70,15 @@ export default function FullProjectPage({params: {locale, slug}}:{ params: { loc
             {/* RIGHT SIDE */}
             <GridCol span={{base: 12, sm: 4}}>
                 <Card shadow="sm" padding="lg">
-                    <ProjectDonationProgress id={projectContent.id} goalAmount={projectContent.goalAmount}/>
+                    <ProjectDonationProgress id={projectContent.id} goalAmount={projectContent.goalAmount}
+                        sumTranslation={commonT('NECESSARY_AMOUNT')}/>
 
                     <Divider color="transparent" mb={10}/>
                     
                     <DonatePopupButton projectId={projectContent.id} 
                                        projectTile={title}
-                                        fullWidth={true}/>
+                                       fullWidth={true}
+                                       translations={donatePopupTranslations}/>
                     
                     <Divider color="transparent" mb={10}/>
                     <ShareButton quote = {title}/>

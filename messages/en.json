@@ -5,7 +5,7 @@
     "DONATE_NOW": "Donate Now",
     "ASSOCIATION": "Bucurie în Dar (Gift of Joy)",
     "ASSOCIATION_FULL": "Bucurie în Dar (Gift of Joy) Association",
-    "NECCESARY_AMOUNT": "Suma necesară"
+    "NECESSARY_AMOUNT": "Necessary amount"
   },
   
   "HOME_HERO":
@@ -137,6 +137,15 @@
       "TITLE": "Help a community",
       "DESCRIPTION": "We are involved in helping many communities, our friends we now say with joy, are hundreds of families, wonderful people, and many beautiful children. Whatever good thing you have to offer, such as food, medicine (cough syrups, fever reducers, diapers, etc.), footwear, clothing, personal hygiene and intimate hygiene products, toys, appliances, furniture, and other goods, we await you every day at the two collection points located at the following addresses: Supermarket La Cocoș, inside the store. Address Sos. Vitan Bârzești 7A. Hours Monday - Saturday 07:30 – 20:30, Sunday 07:30 – 18:30. Or Str. Poteraș nr. 14, between 09:00 – 16:00. For larger quantities of products and goods, please contact us by phone."
     }
+  },
+
+  "PROJECTS_MORE": {
+    "DONATE": "Donate",
+    "CARD_OPTION": "Card / Google Pay / Apple Pay",
+    "BANK_TRANSFER_OPTION": "Bank transfer",
+    "DESIRED_AMOUNT": "Desired amount",
+    "CONTINUE": "Continue",
+    "DONATE_FOR": "Donate for"
   },
 
   "ABOUT": {

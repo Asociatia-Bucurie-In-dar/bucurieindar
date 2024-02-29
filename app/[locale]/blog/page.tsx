@@ -9,10 +9,7 @@ export async function generateMetadata({params: {locale}}:{ params: { locale: st
     const t = await getTranslations({ locale, namespace: 'BLOG' });
     const title = t('TITLE');
     const description = t('DESCRIPTION');
-    return {
-        title: title,
-        description: description,
-    };
+    return { title: title, description: description };
 }
 
 export default function BlogPage( {params: {locale}} : {params: {locale: string}} ) {

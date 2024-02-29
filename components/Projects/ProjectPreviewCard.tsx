@@ -2,12 +2,23 @@ import {Card, Image, Text, Progress, CardSection, Button, Container} from '@mant
 
 import classes from './ProjectPreviewCard.module.css';
 import Link from "next/link";
-import {ProjectType} from "@/utils/my-types";
+import {ProjectTranslationsType, ProjectType} from "@/utils/my-types";
 import {MyRoutePaths} from "@/utils/route-paths";
 import {DonatePopupButton} from "@/components/Popups/DonatePopup/DonatePopupButton";
 import {ProjectDonationProgress} from "@/components/Projects/ProjectDonationProgress";
+import {useTranslations} from "next-intl";
 
 export function ProjectPreviewCard(props: { project: ProjectType, title: string, description: string} ) {
+    const t = useTranslations('COMMON');
+    const donateT = useTranslations('PROJECTS_MORE');
+    const donatePopupTranslations : ProjectTranslationsType = {
+        Donate: donateT('DONATE'),
+        CardOption: donateT('CARD_OPTION'),
+        BankTransferOption: donateT('BANK_TRANSFER_OPTION'),
+        DesiredAmount: donateT('DESIRED_AMOUNT'),
+        Continue: donateT('CONTINUE'),
+        DonateFor: donateT('DONATE_FOR')
+    };
     
     const linkProps = {
         href: MyRoutePaths.Projects + '/' + props.project.slug
@@ -38,9 +49,11 @@ export function ProjectPreviewCard(props: { project: ProjectType, title: string,
 
                 <Card padding={0} mt="sm" key={props.project.id}>
                     
-                    <ProjectDonationProgress id={props.project.id} goalAmount={props.project.goalAmount}/> 
+                    <ProjectDonationProgress id={props.project.id} goalAmount={props.project.goalAmount}
+                        sumTranslation={t('NECESSARY_AMOUNT')}/> 
 
-                    <DonatePopupButton projectId={props.project.id} projectTile={props.title}/>
+                    <DonatePopupButton projectId={props.project.id} projectTile={props.title} 
+                                       translations={donatePopupTranslations}/>
                 </Card>
             </Card>
     );

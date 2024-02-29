@@ -5,7 +5,7 @@
     "DONATE_NOW": "Donează Acum",
     "ASSOCIATION": "Bucurie în Dar",
     "ASSOCIATION_FULL": "Asociația Bucurie în Dar",
-    "NECCESARY_AMOUNT": "Suma necesară"
+    "NECESSARY_AMOUNT": "Suma necesară"
   },
   
   "HOME_HERO":
@@ -137,6 +137,15 @@
       "TITLE": "Ajută o comunitate",
       "DESCRIPTION": "Suntem implicați în ajutorarea multor comunități, prieteni ai noștri spunem acum cu bucurie, sunt sute de familii, oameni minunați și mulți copii frumoși. Orice lucru bun aveți de oferit, cum ar fi alimente, medicamente (siropuri impotriva tusei, antifebrile, pamperși, etc), încălțăminte, îmbrăcăminte, produse de igienă și igienă intimă, jucării, electrocasnice, mobilier și alte bunuri, vă așteptăm în fiecare zi la cele două puncte de colectă situate la următoarele adrese: Supermarket La Cocoș, în interiorul magazinului. Adresa Sos. Vitan Bârzești 7A. Program luni - sâmbătă 07.30 – 20.30, duminică 07.30 – 18-30. Sau Str. Poteraș nr. 14, în intervalul orar 09.00 – 16.00. Pentru cantități mai mari de produse și bunuri, vă rugăm să ne contactați la telefon."
     }
+  },
+  
+  "PROJECTS_MORE": {
+    "DONATE": "Donează",
+    "CARD_OPTION": "Card / Google Pay / Apple Pay",
+    "BANK_TRANSFER_OPTION": "Transfer bancar",
+    "DESIRED_AMOUNT": "Suma dorită",
+    "CONTINUE": "Continuare",
+    "DONATE_FOR": "Donează pentru"
   },
   
   "ABOUT": {

@@ -20,6 +20,7 @@ import {MyZIndexes} from "@/utils/my-constants";
 import classes from "./DonatePopupButton.module.css";
 
 import { useDisclosure } from '@mantine/hooks';
+import {ProjectTranslationsType} from "@/utils/my-types";
 // import {
 //     IconBrandApple,
 //     IconBrandGoogle,
@@ -27,11 +28,14 @@ import { useDisclosure } from '@mantine/hooks';
 //     IconCreditCard
 // } from "@tabler/icons-react";
 
-const payOption1 = "Card / Google Pay / Apple Pay";
-const payOption2 = "Transfer bancar";
 
+export function DonatePopupButton(props: {projectId: string,
+    projectTile: string,
+    translations: ProjectTranslationsType,
+    fullWidth?: boolean}) {
 
-export function DonatePopupButton(props: {projectId: string, projectTile: string, fullWidth?: boolean}) {
+    const payOption1 = props.translations.CardOption;
+    const payOption2 = props.translations.BankTransferOption;
     
     const [loading, setLoading] = useState(false);
     const [badSum, setBadSum] = useState(true);
@@ -102,7 +106,7 @@ export function DonatePopupButton(props: {projectId: string, projectTile: string
         const forCard = <>
             <TextInput type="number"
                        placeholder="10 EUR"
-                       label={"Suma dorită"}
+                       label={props.translations.DesiredAmount}
                        rightSection={select}
                        rightSectionWidth={115}
                        size="lg"
@@ -114,7 +118,7 @@ export function DonatePopupButton(props: {projectId: string, projectTile: string
             <Center>
                 <Button type="submit" variant="gradient" gradient={{from: 'green', to: 'green', deg: 60}} size="lg"
                         disabled={loading || badSum}>
-                    {"Continuare"}
+                    {props.translations.Continue}
                 </Button>
             </Center>
         </>;
@@ -136,7 +140,7 @@ export function DonatePopupButton(props: {projectId: string, projectTile: string
                    size="auto">
                 <Form onSubmit={callDonateAPI}>
                     <Center><Text size="lg">
-                        {"Donează pentru"} <b>{props.projectTile}</b>
+                        {props.translations.DonateFor} <b>{props.projectTile}</b>
                     </Text></Center>
 
                     <Divider mt="sm" mb="sm" color="transparent"/>
@@ -165,7 +169,7 @@ export function DonatePopupButton(props: {projectId: string, projectTile: string
                     gradient={{from: 'pink', to: 'yellow', deg: 90}}
                     size="sm"
                     mt="md" onClick={open}>
-                <b>{"Donează"}</b>
+                <b>{props.translations.Donate}</b>
             </Button>
         </>;
 }

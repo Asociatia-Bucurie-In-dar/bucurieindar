@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import classes from './ProjectDonationProgress.module.css';
 import {Progress, Skeleton, Text} from "@mantine/core";
 
-export function ProjectDonationProgress (props :{id: string, goalAmount: number} ) {
+export function ProjectDonationProgress (props :{id: string, goalAmount: number, sumTranslation: string } ) {
     const [currentAmount, setCurrentAmount] = useState(0);
     const [loading, setLoading] = useState(true);
     const [progressValue, setProgressValue] = useState(0);
@@ -33,7 +33,7 @@ export function ProjectDonationProgress (props :{id: string, goalAmount: number}
     if (loading) {
         return <>
             <Text fz="xs" tt="uppercase" fw={700} c="dimmed" mt="sm">
-                Suma Necesară
+                {props.sumTranslation}
             </Text>
             <Skeleton height={8} mt={12} radius="xl" />
             <Skeleton height={8} mt={6} radius="xl" />
@@ -43,7 +43,7 @@ export function ProjectDonationProgress (props :{id: string, goalAmount: number}
     
     return <>
         <Text fz="xs" tt="uppercase" fw={700} c="dimmed" mt="sm">
-            Suma Necesară
+            {props.sumTranslation}
         </Text>
         <Text fz="lg" fw={500}>
             {currentAmount.toLocaleString()} EUR / {props.goalAmount.toLocaleString()} EUR
