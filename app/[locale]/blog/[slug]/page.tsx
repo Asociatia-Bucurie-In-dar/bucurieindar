@@ -42,12 +42,10 @@ export default function BlogPage({params: {locale, slug}}:{ params: { locale: st
               </div>
 
               <Divider mb="xl" mt="md" color="transparent"/>
-
-              <Center>
-                  <Text c="dimmed">
+              
+                  <Text c="dimmed" style={{textAlign: 'center'}}>
                       {t('DESCRIPTION')}
                   </Text>
-              </Center>
 
               <Divider color="transparent" pb={100}/>
               
