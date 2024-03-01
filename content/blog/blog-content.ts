@@ -7,14 +7,14 @@ const articlesData : BlogArticleType[] = [
         slug: "importanta-donatiilor-de-caritate",
         image_name: 'flowers.jpg',
         translation_key: "1",
-        category: 'Caritate',
+        tag: 'Caritate',
     },
     {
         id: '2',
         slug: "importanta-donatiilor-de-caritate",
         image_name: 'flowers.jpg',
         translation_key: "2",
-        category: 'Caritate',
+        tag: 'Caritate',
     },
     // {
     //     id: '3',

@@ -2,6 +2,7 @@ export type BlogArticleType = {
     id: string; //Primary Key
     slug: string;
     
+    tag: string;
     image_name: string;
     translation_key: string;
 };
