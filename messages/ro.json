@@ -74,8 +74,8 @@
   },
 
   "OUR_TEAM": {
-    "TITLE": "Our Team",
-    "DESCRIPTION": "Meet our team! We are passionate people when it comes to our work and we wish to bring a positive impact in the world.",
+    "TITLE": "Echipa noastră",
+    "DESCRIPTION": "Fă cunoștință cu echipa noastră. Suntem oameni pasionați de ceea ce facem și ne dorim să aducem un impact pozitiv în lumea în care trăim.",
     "TEAM_MEMBERS": {
       "FIRST": { "NAME": "Alexandru Ionescu", "ROLE": "Președinte" },
       "SECOND": { "NAME": "Andreea Constantinescu", "ROLE": "VP & Coordonator marketing" },
