@@ -126,18 +126,22 @@ export function DonatePopupButton(props: {projectId: string,
     const forBank = <>
         <Paper withBorder p="lg" radius="md" shadow="md">
             <Center>
-                <Text size="lg"><b>RON</b> - RO89BTRLEURCRT0610749701</Text>
+                <Text size="lg"><b>RON</b> - RO42BTRLRONCRT0610749701</Text>
             </Center>
             <br></br>
             <Center>
-                <Text size ="lg"><b>EUR</b> - RO42BTRLRONCRT0610749701</Text>
+                <Text size="lg"><b>EUR</b> - RO89BTRLEURCRT0610749701</Text>
+            </Center>
+            <br></br>
+            <Center>
+                <Text size="lg"><b>USD</b> - RO93BTRLUSDCRT0610749701</Text>
             </Center>
         </Paper>
     </>;
 
     return <>
         <Modal opened={opened} onClose={close} withCloseButton={false} zIndex={MyZIndexes.DonateModal}
-                   size="auto">
+               size="auto">
                 <Form onSubmit={callDonateAPI}>
                     <Center><Text size="lg">
                         {props.translations.DonateFor} <b>{props.projectTile}</b>
