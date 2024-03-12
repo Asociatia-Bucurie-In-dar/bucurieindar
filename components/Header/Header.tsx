@@ -27,7 +27,7 @@ export function Header({ headerTranslations, locale }: { headerTranslations: any
                 return (
                     <Link href={link.link} key={link.label}
                           className={classes.link}
-                          data-active={isCurrent|| undefined}>
+                          data-active={isCurrent || undefined}>
                         {link.label}
                     </Link>
                 );

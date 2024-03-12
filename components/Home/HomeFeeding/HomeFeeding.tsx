@@ -11,22 +11,22 @@ export function HomeFeeding() {
     const data = [
         {
             title: activityT('ACTIVITIES.FIRST.TITLE'),
-            stats: 99999,
+            stats: '38,000+',
             description: activityT('ACTIVITIES.FIRST.DESCRIPTION'),
         },
         {
             title: activityT('ACTIVITIES.SECOND.TITLE'),
-            stats: 99999,
+            stats: '24+',
             description: activityT('ACTIVITIES.SECOND.DESCRIPTION'),
         },
         {
             title: activityT('ACTIVITIES.THIRD.TITLE'),
-            stats: 99999,
+            stats: '3+',
             description: activityT('ACTIVITIES.THIRD.DESCRIPTION'),
         },
         {
             title: activityT('ACTIVITIES.FOURTH.TITLE'),
-            stats: 99999,
+            stats: '2,500+',
             description: activityT('ACTIVITIES.FOURTH.DESCRIPTION'),
         },
     ];

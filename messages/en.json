@@ -20,20 +20,20 @@
     "DESCRIPTION": "This is the help you have given, through us, from the beginning of the Bucurie în Dar (Gift of Joy) Association. We are people who enjoy living also for others, rational people, with feelings and wishes. And our greatest wish is to not live only for ourselves.",
     "ACTIVITIES": {
       "FIRST": {
-        "TITLE": "Something1",
-        "DESCRIPTION": "First description will be here."
+        "TITLE": "Meals",
+        "DESCRIPTION": "offered to people in need."
       },
       "SECOND": {
-        "TITLE": "Something2",
-        "DESCRIPTION": "Second description will be here."
+        "TITLE": "Tons of Non-perishable",
+        "DESCRIPTION": "items donated until now."
       },
       "THIRD": {
-        "TITLE": "Something3",
-        "DESCRIPTION": "Third description will be here."
+        "TITLE": "Tons of hygene",
+        "DESCRIPTION": "products gifted."
       },
       "FOURTH": {
-        "TITLE": "Something4",
-        "DESCRIPTION": "Fourth description will be here."
+        "TITLE": "People helped",
+        "DESCRIPTION": "so far, and counting."
       }
     }
   },

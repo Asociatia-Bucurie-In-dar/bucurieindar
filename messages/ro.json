@@ -20,20 +20,20 @@
     "DESCRIPTION": "Acesta este ajutorul oferit de voi prin noi, de la înființarea Asociației Bucurie în Dar. Suntem oameni care trăiesc și pentru alții, oameni cu rațiune, cu sentimente și cu dorințe, iar dorința noastră cea mare este să nu trăim doar pentru noi înșine.",
     "ACTIVITIES": {
       "FIRST": {
-        "TITLE": "Ceva1",
-        "DESCRIPTION": "Descrierea primei statistici se va scrie aici."
+        "TITLE": "Porții de hrană",
+        "DESCRIPTION": "oferite persoanelor nevoiașe."
       },
       "SECOND": {
-        "TITLE": "Ceva2",
-        "DESCRIPTION": "Descrierea celei de-a doua statistici se va scrie aici."
+        "TITLE": "Tone de alimente",
+        "DESCRIPTION": "nepersiabile donate."
       },
       "THIRD": {
-        "TITLE": "Ceva3",
-        "DESCRIPTION": "Descrierea celei de-a treia statistici se va scrie aici."
+        "TITLE": "Tone de produse",
+        "DESCRIPTION": "de igienă dăruite."
       },
       "FOURTH": {
-        "TITLE": "Ceva4",
-        "DESCRIPTION": "Descrierea celei de-a patra statistici se va scrie aici."
+        "TITLE": "Oameni ajutați",
+        "DESCRIPTION": "până acum, si continuăm."
       }
     }
   },
