@@ -5,7 +5,8 @@
     "DONATE_NOW": "Donează Acum",
     "ASSOCIATION": "Bucurie în Dar",
     "ASSOCIATION_FULL": "Asociația Bucurie în Dar",
-    "NECESSARY_AMOUNT": "Suma necesară"
+    "NECESSARY_AMOUNT": "Suma necesară",
+    "TONS": "Tone"
   },
   
   "HOME_HERO":
@@ -24,12 +25,12 @@
         "DESCRIPTION": "oferite persoanelor nevoiașe."
       },
       "SECOND": {
-        "TITLE": "Tone de alimente",
+        "TITLE": "Alimente nepersiabile",
         "DESCRIPTION": "nepersiabile donate."
       },
       "THIRD": {
-        "TITLE": "Tone de produse",
-        "DESCRIPTION": "de igienă dăruite."
+        "TITLE": "Produse de igienă",
+        "DESCRIPTION": "dăruite până acum."
       },
       "FOURTH": {
         "TITLE": "Oameni ajutați",

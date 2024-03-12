@@ -5,7 +5,8 @@
     "DONATE_NOW": "Donate Now",
     "ASSOCIATION": "Bucurie în Dar (Gift of Joy)",
     "ASSOCIATION_FULL": "Bucurie în Dar (Gift of Joy) Association",
-    "NECESSARY_AMOUNT": "Necessary amount"
+    "NECESSARY_AMOUNT": "Necessary amount",
+    "TONS": "Tons"
   },
   
   "HOME_HERO":
@@ -24,11 +25,11 @@
         "DESCRIPTION": "offered to people in need."
       },
       "SECOND": {
-        "TITLE": "Tons of Non-perishable",
+        "TITLE": "Non-perishable",
         "DESCRIPTION": "items donated until now."
       },
       "THIRD": {
-        "TITLE": "Tons of hygene",
+        "TITLE": "Hygene",
         "DESCRIPTION": "products gifted."
       },
       "FOURTH": {

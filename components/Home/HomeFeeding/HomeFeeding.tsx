@@ -7,6 +7,7 @@ import {useTranslations} from "next-intl";
 
 export function HomeFeeding() {
     const activityT = useTranslations('HOME_ACTIVITY');
+    const commonT = useTranslations('COMMON');
 
     const data = [
         {
@@ -16,12 +17,12 @@ export function HomeFeeding() {
         },
         {
             title: activityT('ACTIVITIES.SECOND.TITLE'),
-            stats: '24+',
+            stats: '24' + ' ' + commonT('TONS') + '+',
             description: activityT('ACTIVITIES.SECOND.DESCRIPTION'),
         },
         {
             title: activityT('ACTIVITIES.THIRD.TITLE'),
-            stats: '3+',
+            stats: '3' + ' ' + commonT('TONS') + '+',
             description: activityT('ACTIVITIES.THIRD.DESCRIPTION'),
         },
         {
