@@ -6,7 +6,7 @@ import classes from './AnimatedNumber.module.css';
 import {animate, useMotionValue, useTransform, motion, useInView} from "framer-motion";
 import {useEffect, useRef} from "react";
 
-export function AnimatedThing(props: {thing: string, class: string, suffix:string}) {
+export function AnimatedThing(props: { thing: string, class: string }) {
     const ref = useRef(null);
     const isSeen = useInView(ref, { once: true });
     
@@ -17,7 +17,7 @@ export function AnimatedThing(props: {thing: string, class: string, suffix:strin
            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0s"
        }}>
            <motion.div className={props.class} ref={ref}>
-               {props.thing}{' '}{props.suffix || ''}
+               {props.thing}
            </motion.div>
        </div>
    );
