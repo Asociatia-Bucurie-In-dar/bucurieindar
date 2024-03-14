@@ -65,7 +65,7 @@ export function OurTeam() {
     });
     
     return (
-        <Container mt="xl" mb={55} size="lg">
+        <Container mt="xl" mb={55} size="full">
             <Container className={classes.wrapper}>
                 
                 <TitleWithDescription title={t('TITLE')} 
@@ -76,7 +76,7 @@ export function OurTeam() {
                 <SimpleGrid
                     cols={{ base: 2, sm: 4, md: 4 }}
                     spacing={{ base: 'xl', md: 50 }}
-                    verticalSpacing={{ base: 'xl', md: 50 }}
+                    verticalSpacing={{ base: 'xl', md: 50 }} className={classes.grid}
                 >
                     {items}
                 </SimpleGrid>

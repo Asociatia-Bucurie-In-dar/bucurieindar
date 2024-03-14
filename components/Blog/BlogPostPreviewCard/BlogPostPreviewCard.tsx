@@ -1,4 +1,4 @@
-import {Card, Image, Avatar, Text, Group, Button} from '@mantine/core';
+import {Card, Image, Avatar, Text, Group, Button, AspectRatio} from '@mantine/core';
 import classes from './BlogPostPreviewCard.module.css';
 import Link from "next/link";
 import {MyRoutePaths} from "@/utils/route-paths";
