@@ -1,4 +1,4 @@
-import {Container, Divider, Space, Text} from '@mantine/core';
+import {Container, Divider, rem, Space, Text} from '@mantine/core';
 import classes from './HomeFeeding.module.css';
 import commonClasses from '@/utils/commonClasses.module.css';
 import {TitleWithDescription} from "@/components/Common/TitleWithDescription";
@@ -44,7 +44,7 @@ export function HomeFeeding() {
         <Container size="lg" py="xl">
             
             <TitleWithDescription title={activityT('TITLE')} 
-                                  description={activityT('DESCRIPTION')}/>
+                                  description={activityT('DESCRIPTION')} maxWidth={rem(750)}/>
             
         <Container size="lg" mt="xl" className={classes.root}>{stats}</Container>
         </Container>
