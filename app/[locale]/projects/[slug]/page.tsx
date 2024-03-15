@@ -8,14 +8,15 @@ import {unstable_setRequestLocale} from "next-intl/server";
 import {getTranslations} from "next-intl/server";
 import {useTranslations} from "next-intl";
 import {ProjectTranslationsType} from "@/utils/my-types";
-//import {locales} from "@/middleware";
+import {MyRoutePaths} from "@/utils/route-paths";
+import {locales} from "@/middleware";
 
-//export function generateStaticParams() {
-//    const allProjects = GetAllProjectsStaticContent(99);
-//    return allProjects.flatMap(project => locales.map(locale => ({
-//        params: { locale, slug: project.slug }
-//    })));
-//}
+export function generateStaticParams() {
+    const allProjects = GetAllProjectsStaticContent(99);
+    return allProjects.flatMap(project => locales.map(locale => ({
+        params: { locale, slug: project.slug }
+    })));
+}
 
 export async function generateMetadata({params: {locale, slug}}:{ params: { locale: string, slug: string } }) {
     const projectContent = GetProjectStaticContentWithSlug(slug);
@@ -82,7 +83,7 @@ export default function FullProjectPage({params: {locale, slug}}:{ params: { loc
                                        translations={donatePopupTranslations}/>
                     
                     <Divider color="transparent" mb={10}/>
-                    <ShareButton quote = {title} translation={shareT('MAIN')}/>
+                    <ShareButton quote = {title} translation={shareT('MAIN')} path={`/${locale}${MyRoutePaths.Projects}/${slug}`}/>
                 </Card>
             </GridCol>
         </Grid>
