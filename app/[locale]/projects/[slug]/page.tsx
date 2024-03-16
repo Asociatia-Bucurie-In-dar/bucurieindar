@@ -65,7 +65,7 @@ export default function FullProjectPage({params: {locale, slug}}:{ params: { loc
                     <Image src={projectContent.image_path} alt={title} />
                 </div>
                 <Divider color="transparent" mb="xl"/>
-                <Text c="dimmed">
+                <Text c="dimmed" fw={500}>
                     {description}
                 </Text>
             </GridCol>
