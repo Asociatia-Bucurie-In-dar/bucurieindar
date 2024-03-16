@@ -28,6 +28,76 @@ const linkProps = {
 export default function GalleryPage( {params: {locale}} : {params: {locale: string}} ) {
     unstable_setRequestLocale(locale);
     const t = useTranslations('GALLERY');
+
+    const videosData = [
+        {
+            title: t('VIDEOS.1.DESCRIPTION'),
+            youtubeId: 'FKUvxS3grqg',
+        },
+        {
+            title: t('VIDEOS.2.DESCRIPTION'),
+            youtubeId: 'OBcBR5o5TpM',
+        }
+    ];
+
+    const imagesData = [
+        {
+            title: t('PHOTOS.1.DESCRIPTION'),
+            image: 'copii.jpeg',
+        },
+        {
+            title: t('PHOTOS.2.DESCRIPTION'),
+            image: 'supermarket.jpeg',
+        },
+        {
+            title: t('PHOTOS.3.DESCRIPTION'),
+            image: 'martisoare.jpeg',
+        },
+        {
+            title: t('PHOTOS.4.DESCRIPTION'),
+            image: 'mare.jpeg',
+        },
+        {
+            title: t('PHOTOS.5.DESCRIPTION'),
+            image: 'medicover.jpeg',
+        },
+        {
+            title: t('PHOTOS.6.DESCRIPTION'),
+            image: 'mancare.jpeg',
+        },
+        {
+            title: t('PHOTOS.7.DESCRIPTION'),
+            image: 'scoala.jpeg',
+        },
+        {
+            title: t('PHOTOS.8.DESCRIPTION'),
+            image: 'camion.jpeg',
+        },
+        {
+            title: t('PHOTOS.9.DESCRIPTION'),
+            image: 'masabucuriei.jpeg',
+        },
+        {
+            title: t('PHOTOS.10.DESCRIPTION'),
+            image: 'comunitate.jpeg',
+        },
+        {
+            title: t('PHOTOS.11.DESCRIPTION'),
+            image: 'cocos.jpeg',
+        },
+        {
+            title: t('PHOTOS.12.DESCRIPTION'),
+            image: 'portocale.jpeg',
+        },
+        {
+            title: t('PHOTOS.13.DESCRIPTION'),
+            image: 'pantofi.jpeg',
+        },
+        {
+            title: t('PHOTOS.14.DESCRIPTION'),
+            image: `copil.png`,
+        },
+    ];
     
   return (
     <>
@@ -40,7 +110,7 @@ export default function GalleryPage( {params: {locale}} : {params: {locale: stri
             {/*</Center>*/}
           <Divider mb="xl" color="transparent" />
             
-            <Gallery />
+            <Gallery imagesData={imagesData} videosData={videosData} />
             
           <Divider color="transparent" pb={100}/>
         </Container>

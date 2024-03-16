@@ -10,6 +10,7 @@ import {useTranslations} from "next-intl";
 import {ProjectTranslationsType} from "@/utils/my-types";
 import {MyRoutePaths} from "@/utils/route-paths";
 import {locales} from "@/middleware";
+import {Gallery} from "@/components/Gallery/Gallery";
 
 export function generateStaticParams() {
     const allProjects = GetAllProjectsStaticContent(99);
@@ -87,6 +88,10 @@ export default function FullProjectPage({params: {locale, slug}}:{ params: { loc
                 </Card>
             </GridCol>
         </Grid>
+
+            {/* BOTTOM GALLERY */}
+            
+            {/*<Gallery />*/}
 
         <Divider color="transparent" pb={100}/>
         </Container>

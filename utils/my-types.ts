@@ -2,7 +2,6 @@ export type BlogArticleType = {
     id: string; //Primary Key
     slug: string;
     
-    tag: string;
     image_name: string;
     translation_key: string;
 };
@@ -56,4 +55,14 @@ export type ContactTranslationType = {
     Send: string;
     Success: string;
     Error: string;
+};
+
+export type GalleryVideo = {
+    title: string;
+    youtubeId: string;
+};
+
+export type GalleryImage = {
+    title: string;
+    image: string;
 };
