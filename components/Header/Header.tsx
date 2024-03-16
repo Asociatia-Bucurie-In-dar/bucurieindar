@@ -22,16 +22,9 @@ export function Header({ headerTranslations, locale }: { headerTranslations: any
     
 
     const renderLinks = (links: any) => {
-        const allBools:boolean[] = [];
-        links.map((link: any) => {
-            const isCurrent = pathname === link.link;
-            allBools.push(isCurrent);
-        });
-        const allFalse = allBools.every((val) => val === false);
         return links.map((link: any) => {
             let isCurrent = pathname === link.link;
-            if (link.label === headerTranslations.home.label && allFalse && pathname === headerTranslations.home.link) 
-            {
+            if (link.label === headerTranslations.home.label && pathname === '') {
                 isCurrent = true;
             }
                 return (
