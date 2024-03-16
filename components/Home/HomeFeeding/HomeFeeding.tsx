@@ -36,7 +36,7 @@ export function HomeFeeding() {
         <div key={stat.title} className={classes.stat}>
             <AnimatedThing thing={stat.stats.toLocaleString()} class={classes.count}/>
             <Text className={classes.title}>{stat.title}</Text>
-            <Text className={classes.description}>{stat.description}</Text>
+            <Text className={classes.description} fw={500}>{stat.description}</Text>
         </div>
     ));
     return <>
