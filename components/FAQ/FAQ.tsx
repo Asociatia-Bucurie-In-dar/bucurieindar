@@ -17,24 +17,21 @@ import {useTranslations} from "next-intl";
 
 
 export function FAQ() {
-    const t = useTranslations('FAQ');
+    //const t = useTranslations('FAQ');
+    const t = useTranslations('ABOUT');
 
     const questions = [
         {
-            question: t('QUESTIONS.FIRST.QUESTION'),
-            answer: t('QUESTIONS.FIRST.ANSWER'),
+            question: t('WHO_ARE_WE.TITLE') + '?',
+            answer: t('WHO_ARE_WE.DESCRIPTION'),
         },
         {
-            question: t('QUESTIONS.SECOND.QUESTION'),
-            answer: t('QUESTIONS.SECOND.ANSWER'),
+            question: t('WHAT_WE_DO.TITLE') + '?',
+            answer: t('WHAT_WE_DO.DESCRIPTION'),
         },
         {
-            question: t('QUESTIONS.THIRD.QUESTION'),
-            answer: t('QUESTIONS.THIRD.ANSWER'),
-        },
-        {
-            question: t('QUESTIONS.FOURTH.QUESTION'),
-            answer: t('QUESTIONS.FOURTH.ANSWER'),
+            question: t('WHY_WE_HELP.TITLE') + '?',
+            answer: t('WHY_WE_HELP.DESCRIPTION'),
         }];
 
     const items = questions.map((item) => (
