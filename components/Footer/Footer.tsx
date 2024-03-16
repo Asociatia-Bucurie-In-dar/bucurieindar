@@ -7,7 +7,7 @@ import {MyRoutePaths} from "@/utils/route-paths";
 
 function link(link: string, label: string) {
     return (
-        <Text component={Link} href={link} c="dimmed" size="sm">
+        <Text component={Link} href={link} c="dimmed" size="sm" fw={500}>
             <Center>{label}</Center>
         </Text>
     );
@@ -47,7 +47,7 @@ export function Footer() {
                 </Center>
             </Container>
             <Container className={classes.afterFooter}>
-                <Text c="dimmed" size="sm">
+                <Text c="dimmed" size="sm" fw={400}>
                     © {new Date().getFullYear()} {commonT('ASSOCIATION_FULL')}
                 </Text>
 

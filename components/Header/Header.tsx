@@ -30,7 +30,7 @@ export function Header({ headerTranslations, locale }: { headerTranslations: any
         const allFalse = allBools.every((val) => val === false);
         return links.map((link: any) => {
             let isCurrent = pathname === link.link;
-            if (link.label === headerTranslations.home.label && allFalse) 
+            if (link.label === headerTranslations.home.label && allFalse && pathname === headerTranslations.home.link) 
             {
                 isCurrent = true;
             }
