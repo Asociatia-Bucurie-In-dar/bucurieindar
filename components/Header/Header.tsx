@@ -62,11 +62,6 @@ export function Header({ headerTranslations, locale }: { headerTranslations: any
         }}>
             <Container size="lg">
                 <div className={classes.inner}>
-                    
-                    <Group>
-                        Test: ({pathname})
-                    </Group>
-                    
                     <Group>
                         <Link href={headerTranslations.home.link} key={headerTranslations.home.label}>
                             <Image src={logo.src} alt="Logo" width={50} height={50} />
