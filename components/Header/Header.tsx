@@ -24,7 +24,7 @@ export function Header({ headerTranslations, locale }: { headerTranslations: any
     const renderLinks = (links: any) => {
         return links.map((link: any) => {
             let isCurrent = pathname === link.link;
-            if (link.label === headerTranslations.home.label && pathname === '') {
+            if (link.label === headerTranslations.home.label && pathname === `/${locale}`) {
                 isCurrent = true;
             }
                 return (
