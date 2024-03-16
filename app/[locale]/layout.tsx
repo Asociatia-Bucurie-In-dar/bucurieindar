@@ -6,6 +6,7 @@ import { Footer } from '@/components/Footer/Footer';
 import { ChatButton } from '@/components/ChatButton/ChatButton';
 import { theme } from '@/theme';
 import FirstTimeConfetti from "@/components/CoolEffects/FirstTimeConfetti";
+import {createTheme} from "@mantine/core";
 //import WavySeparator from '@/components/WavySeparator/WavySeparator';
 import {locales} from "@/middleware";
 import {unstable_setRequestLocale} from 'next-intl/server';
@@ -14,7 +15,6 @@ import {useTranslations} from "next-intl";
 export function generateStaticParams() {
     return locales.map((locale:string) => ({locale}));
 }
-
 export const metadata = {
   title: {
       default: 'Asociația Bucurie in Dar',

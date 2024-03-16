@@ -31,6 +31,7 @@ export function ConfettiButton(props: {text: string, size?: string, mt?: string,
                         name={props.text}
                         size={props.size}
                         mt={props.mt}
+                        fw={600}
                         disabled={props.disabled ?? false}
                 >
                     {props.text}

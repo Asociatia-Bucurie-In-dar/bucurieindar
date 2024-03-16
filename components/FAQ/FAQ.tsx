@@ -8,7 +8,7 @@ import {
     GridCol,
     Center,
     AccordionControl,
-    AccordionPanel
+    AccordionPanel, Text, rem
 } from '@mantine/core';
 import classes from './FAQ.module.css';
 import commonClasses from '@/utils/commonClasses.module.css';
@@ -36,8 +36,14 @@ export function FAQ() {
 
     const items = questions.map((item) => (
         <AccordionItem className={classes.item} value={item.question} key={item.question}>
-            <AccordionControl className={classes.question}>{item.question}</AccordionControl>
-            <AccordionPanel>{item.answer}</AccordionPanel>
+            <AccordionControl className={classes.question}>
+                <Text fw={500}>{item.question}</Text>
+            </AccordionControl>
+            <AccordionPanel>
+                <Text fz={rem(14)} fw={400}>
+                    {item.answer}
+                </Text>
+            </AccordionPanel>
         </AccordionItem>
     ));
     

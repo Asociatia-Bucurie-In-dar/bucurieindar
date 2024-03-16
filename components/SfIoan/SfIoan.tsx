@@ -31,7 +31,7 @@ export function SfIoan(props: { disableBackground?: boolean }) {
                     </Center>
 
                     <Center>
-                        <Text fz="md" c="dimmed" style={{textAlign: "center"}} component={Link} {...linkProps}>
+                        <Text fz="md" c="dimmed" fw={500} style={{textAlign: "center"}} component={Link} {...linkProps}>
                             {t('DESCRIPTION')}
                         </Text>
                     </Center>

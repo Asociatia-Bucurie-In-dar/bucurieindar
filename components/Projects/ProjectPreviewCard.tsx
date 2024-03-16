@@ -43,7 +43,7 @@ export function ProjectPreviewCard(props: { project: ProjectType, title: string,
                     {props.title}
                 </Text>
 
-                <Text fz="sm" c="dimmed" lineClamp={4} component={Link} {...linkProps}>
+                <Text fz="sm" c="dimmed" fw={500} lineClamp={4} component={Link} {...linkProps}>
                     {props.description}
                 </Text>
 

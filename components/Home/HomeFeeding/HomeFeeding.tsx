@@ -46,7 +46,9 @@ export function HomeFeeding() {
             <TitleWithDescription title={activityT('TITLE')} 
                                   description={activityT('DESCRIPTION')} maxWidth={rem(750)}/>
             
-        <Container size="lg" mt="xl" className={classes.root}>{stats}</Container>
+        <Container size="lg" mt="xl" className={classes.root}>
+            {stats}
+        </Container>
         </Container>
             <Divider mt={50} color="transparent" />
         </Container>

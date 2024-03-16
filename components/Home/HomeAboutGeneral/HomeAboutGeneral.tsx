@@ -14,7 +14,7 @@ export function HomeAboutGeneral() {
                         </Center>
                         
                         <Center>
-                        <Text fz="md" c="dimmed" style={{textAlign: "center"}}>
+                        <Text fz="md" c="dimmed" style={{textAlign: "center"}} fw={500}>
                             {t('DESCRIPTION')}
                         </Text>
                         </Center>

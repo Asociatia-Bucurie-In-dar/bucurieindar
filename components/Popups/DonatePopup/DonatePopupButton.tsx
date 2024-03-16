@@ -171,9 +171,9 @@ export function DonatePopupButton(props: {projectId: string,
             <Button style={{width: props.fullWidth ? 'auto' : 'max-content', minWidth: rem(100)}}
                     variant="gradient"
                     gradient={{from: 'pink', to: 'yellow', deg: 90}}
-                    size="sm"
+                    size="sm" fw={600}
                     mt="md" onClick={open}>
-                <b>{props.translations.Donate}</b>
+                {props.translations.Donate}
             </Button>
         </>;
 }

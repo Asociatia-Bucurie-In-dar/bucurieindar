@@ -28,7 +28,7 @@ export function Footer() {
                             </Link>
                         </Text>
                     </Title>
-                    <Text size="xs" c="dimmed" className={classes.description}>
+                    <Text size="sm" c="dimmed" className={classes.description} fw={500}>
                         {heroT('MOTTO_FIRST_PART')}{' '}{heroT('MOTTO_SECOND_PART')}.
                     </Text>
                 </div>

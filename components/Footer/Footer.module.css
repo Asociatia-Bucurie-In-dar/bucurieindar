@@ -6,7 +6,7 @@
 }
 
 .logo {
-    max-width: rem(300px);
+    max-width: rem(500px);
     text-align: center;
     display: flex;
     flex-direction: column;

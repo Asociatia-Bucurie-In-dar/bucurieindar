@@ -11,6 +11,7 @@ import commonClasses from '@/utils/commonClasses.module.css';
 import Link from "next/link";
 import {MyRoutePaths} from "@/utils/route-paths";
 import {useTranslations} from "next-intl";
+import {TitleWithDescription} from "@/components/Common/TitleWithDescription";
 
 export function HomeAboutProjects() {
     const t = useTranslations('HOME_HELP')
@@ -51,7 +52,7 @@ export function HomeAboutProjects() {
             <Text fz="lg" fw={600} className={classes.cardTitle} mt="md">
                 {feature.title}
             </Text>
-            <Text fz="sm" c="dimmed" mt="sm">
+            <Text fz="sm" c="dimmed" mt="sm" fw={500}>
                 {feature.description}
             </Text>
         </Card>
@@ -65,16 +66,12 @@ export function HomeAboutProjects() {
                     {t('BADGE')}
                 </Badge>
             </Group>
+            
+            <Divider color="transparent" mb={15}/>
+            
+            <TitleWithDescription title={t('TITLE')} description={t('DESCRIPTION')} />
 
-            <Title order={2} className={classes.title} ta="center" mt="sm">
-                {t('TITLE')}
-            </Title>
-
-            <Text c="dimmed" className={classes.description} ta="center" mt="md">
-                {t('DESCRIPTION')}
-            </Text>
-
-            <SimpleGrid cols={{ base: 1, md: 3 }} spacing="xl" mt={50}>
+            <SimpleGrid cols={{ base: 1, md: 3 }} spacing="xl" mt={45}>
                 {features}
             </SimpleGrid>
         </Container>
