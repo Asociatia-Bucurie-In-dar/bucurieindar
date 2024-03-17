@@ -91,7 +91,7 @@ export default function FullProjectPage({params: {locale, slug}}:{ params: { loc
 
             {/* BOTTOM GALLERY */}
             
-            {/*<Gallery />*/}
+            <Gallery imagesData={projectContent.other_images} videosData={[]}/>
 
         <Divider color="transparent" pb={100}/>
         </Container>

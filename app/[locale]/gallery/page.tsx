@@ -40,62 +40,63 @@ export default function GalleryPage( {params: {locale}} : {params: {locale: stri
         }
     ];
 
+    const imgPrepath = '/gallery/';
     const imagesData = [
         {
             title: t('PHOTOS.1.DESCRIPTION'),
-            image: 'copii.jpeg',
+            image: imgPrepath + 'copii.jpeg',
         },
         {
             title: t('PHOTOS.2.DESCRIPTION'),
-            image: 'supermarket.jpeg',
+            image: imgPrepath + 'supermarket.jpeg',
         },
         {
             title: t('PHOTOS.3.DESCRIPTION'),
-            image: 'martisoare.jpeg',
+            image: imgPrepath + 'martisoare.jpeg',
         },
         {
             title: t('PHOTOS.4.DESCRIPTION'),
-            image: 'mare.jpeg',
+            image: imgPrepath + 'mare.jpeg',
         },
         {
             title: t('PHOTOS.5.DESCRIPTION'),
-            image: 'medicover.jpeg',
+            image: imgPrepath + 'medicover.jpeg',
         },
         {
             title: t('PHOTOS.6.DESCRIPTION'),
-            image: 'mancare.jpeg',
+            image: imgPrepath + 'mancare.jpeg',
         },
         {
             title: t('PHOTOS.7.DESCRIPTION'),
-            image: 'scoala.jpeg',
+            image: imgPrepath + 'scoala.jpeg',
         },
         {
             title: t('PHOTOS.8.DESCRIPTION'),
-            image: 'camion.jpeg',
+            image: imgPrepath + 'camion.jpeg',
         },
         {
             title: t('PHOTOS.9.DESCRIPTION'),
-            image: 'masabucuriei.jpeg',
+            image: imgPrepath + 'masabucuriei.jpeg',
         },
         {
             title: t('PHOTOS.10.DESCRIPTION'),
-            image: 'comunitate.jpeg',
+            image: imgPrepath + 'comunitate.jpeg',
         },
         {
             title: t('PHOTOS.11.DESCRIPTION'),
-            image: 'cocos.jpeg',
+            image: imgPrepath + 'cocos.jpeg',
         },
         {
             title: t('PHOTOS.12.DESCRIPTION'),
-            image: 'portocale.jpeg',
+            image: imgPrepath + 'portocale.jpeg',
         },
         {
             title: t('PHOTOS.13.DESCRIPTION'),
-            image: 'pantofi.jpeg',
+            image: imgPrepath + 'pantofi.jpeg',
         },
         {
             title: t('PHOTOS.14.DESCRIPTION'),
-            image: `copil.png`,
+            image: imgPrepath + `copil.png`,
         },
     ];
     
