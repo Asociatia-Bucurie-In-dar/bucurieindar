@@ -5,7 +5,7 @@
     "DONATE_NOW": "Donează Acum",
     "ASSOCIATION": "Bucurie în Dar",
     "ASSOCIATION_FULL": "Asociația Bucurie în Dar",
-    "NON_PROFIT": "Non-profit",
+    "NON_PROFIT": "Organizație Nonguvernamentală",
     "NECESSARY_AMOUNT": "Suma necesară",
     "TONS": "Tone"
   },
@@ -133,7 +133,12 @@
     },
     "ADOPT_A_FAMILY": {
       "TITLE": "Adoptă o familie",
-      "DESCRIPTION": "Ajută pe cel puțin unul dintre prietenii noștri mici și mari, tineri sau bătrâni. Oameni dragi, aveți posibilitatea să adoptați o familie de care să aveți grijă, ajutându-i în nevoile și neputințele lor. Orice ajutor, cât de puțin este binevenit. Sunați-ne pentru a vă oferi datele lor de contact. Asigură ce poți din nevoile unei familii defavorizate: un medicament sau o cutie de lapte praf, alimente de primă necesitate, un caiet sau un creion pentru un elev, sunt lucruri pe care, din păcate, unii nu și le pot permite în mod constant. Noi îți facem cunoscute cazurile, voi alegeți familia pe care doriți să o vizitați și să o ajutați pe termen mediu sau lung."
+      "DESCRIPTION": "Ajută pe cel puțin unul dintre prietenii noștri mici și mari, tineri sau bătrâni. Oameni dragi, aveți posibilitatea să adoptați o familie de care să aveți grijă, ajutându-i în nevoile și neputințele lor. Orice ajutor, cât de puțin este binevenit. Sunați-ne pentru a vă oferi datele lor de contact. Asigură ce poți din nevoile unei familii defavorizate: un medicament sau o cutie de lapte praf, alimente de primă necesitate, un caiet sau un creion pentru un elev, sunt lucruri pe care, din păcate, unii nu și le pot permite în mod constant. Noi îți facem cunoscute cazurile, voi alegeți familia pe care doriți să o vizitați și să o ajutați pe termen mediu sau lung.",
+      "PHOTOS": {
+        "1": "Test1",
+        "2": "Test2",
+        "3": "Test3"
+      }
     },
     "HELP_A_COMMUNITY": {
       "TITLE": "Ajută o comunitate",

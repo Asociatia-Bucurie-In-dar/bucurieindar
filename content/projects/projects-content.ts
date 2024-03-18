@@ -52,17 +52,11 @@ const projectsData : ProjectType[] = [
         slug: 'adopta-o-familie',
         image_path: imagesPath + 'adopta.jpeg',
         other_images: [
-            //title used for translation key until better idea
-            {title: '0', image: imagesPath + 'fam11.jpeg'},
-            {title: '1', image: imagesPath + 'fam10.jpeg'},
-            {title: '2', image: imagesPath + 'fam8.jpeg'},
-            {title: '3', image: imagesPath + 'fam7.jpeg'},
-            {title: '4', image: imagesPath + 'fam6.jpeg'},
-            {title: '5', image: imagesPath + 'fam5.jpeg'},
-            {title: '6', image: imagesPath + 'fam4.jpeg'},
-            {title: '7', image: imagesPath + 'fam3.jpeg'},
-            {title: '8', image: imagesPath + 'fam2.jpeg'},
-            {title: '9', image: imagesPath + 'fam1.jpeg'},
+            //TITLE used as TRANSLATION KEY until better solution!!
+            //MARK no translation with -1
+            {title: '1', image: imagesPath + 'fam11.jpeg'},
+            {title: '2', image: imagesPath + 'fam10.jpeg'},
+            {title: '3', image: imagesPath + 'fam8.jpeg'}
         ],
         translation_key: 'ADOPT_A_FAMILY',
         goalAmount: 5000,

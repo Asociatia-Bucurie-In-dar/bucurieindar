@@ -42,6 +42,16 @@ export default function FullProjectPage({params: {locale, slug}}:{ params: { loc
     const title = t(projectContent.translation_key + '.TITLE');
     const description = t(projectContent.translation_key + '.DESCRIPTION');
     
+    if (projectContent.other_images.length > 0) {
+        for (let i = 0; i < projectContent.other_images.length; i++) {
+            if (projectContent.other_images[i].title === '-1')
+                continue;
+            
+            const key = (projectContent.translation_key + '.PHOTOS.' + projectContent.other_images[i].title);
+            projectContent.other_images[i].title = t(key);
+        }
+    }
+    
     const donatePopupTranslations : ProjectTranslationsType = {
         Donate: donateT('DONATE'),
         CardOption: donateT('CARD_OPTION'),

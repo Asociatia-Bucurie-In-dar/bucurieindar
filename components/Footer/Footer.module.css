@@ -17,8 +17,6 @@
 }
 
 .description {
-    margin-top: rem(5px);
-    margin-top: var(--mantine-spacing-xs);
     text-align: center;
     @media (max-width: $mantine-breakpoint-sm) {
         

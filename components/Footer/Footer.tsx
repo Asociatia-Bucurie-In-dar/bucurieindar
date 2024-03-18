@@ -21,13 +21,16 @@ export function Footer() {
         <footer className={classes.footer}>
             <Container className={classes.inner} size="lg">
                 <div className={classes.logo}>
-                    <Title className={classes.title} size={18} mb="xs">
+                    <Title className={classes.title} size={18}>
                         <Text inherit variant="gradient" component="span" gradient={{ from: 'pink', to: 'yellow' }}>
                             <Link href={t('HOME.LINK')}>
-                                {commonT('ASSOCIATION_FULL')} ({commonT('NON_PROFIT')})
+                                {commonT('ASSOCIATION_FULL')}
                             </Link>
                         </Text>
                     </Title>
+                    <Text size="md" c="dimmed" className={classes.description} fw={500} mt={5} mb="md">
+                        {commonT('NON_PROFIT')}
+                    </Text>
                     <Text size="sm" c="dimmed" className={classes.description} fw={500}>
                         {heroT('MOTTO_FIRST_PART')}{' '}{heroT('MOTTO_SECOND_PART')}.
                     </Text>

@@ -5,7 +5,7 @@
     "DONATE_NOW": "Donate Now",
     "ASSOCIATION": "Bucurie în Dar (Gift of Joy)",
     "ASSOCIATION_FULL": "Bucurie în Dar (Gift of Joy) Association",
-    "NON_PROFIT": "Non-profit",
+    "NON_PROFIT": "Nonprofit Organization",
     "NECESSARY_AMOUNT": "Necessary amount",
     "TONS": "Tons"
   },
@@ -133,7 +133,12 @@
     },
     "ADOPT_A_FAMILY": {
       "TITLE": "Adopt a family",
-      "DESCRIPTION": "Help at least one of our small and large friends, young or old. Dear people, you have the opportunity to adopt a family to take care of, helping them in their needs and helplessness. Any help, no matter how small, is welcome. Call us to provide you with their contact details. Ensure what you can from the needs of a disadvantaged family: a medicine or a box of milk powder, basic food items, a notebook or a pencil for a student, are things that, unfortunately, some cannot afford on a constant basis. We make the cases known to you, and you choose the family you wish to visit and help in the medium or long term."
+      "DESCRIPTION": "Help at least one of our small and large friends, young or old. Dear people, you have the opportunity to adopt a family to take care of, helping them in their needs and helplessness. Any help, no matter how small, is welcome. Call us to provide you with their contact details. Ensure what you can from the needs of a disadvantaged family: a medicine or a box of milk powder, basic food items, a notebook or a pencil for a student, are things that, unfortunately, some cannot afford on a constant basis. We make the cases known to you, and you choose the family you wish to visit and help in the medium or long term.",
+      "PHOTOS": {
+        "1": "Test1",
+        "2": "Test2",
+        "3": "Test3"
+      }
     },
     "HELP_A_COMMUNITY": {
       "TITLE": "Help a community",
