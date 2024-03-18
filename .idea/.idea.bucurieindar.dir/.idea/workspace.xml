@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32e33542-bd06-42e3-bf1b-3883da34adf9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.bucurieindar.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.bucurieindar.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Home/HomeFeeding/HomeFeeding.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/HomeFeeding/HomeFeeding.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Home/HomeFeeding/HomeFeeding.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/HomeFeeding/HomeFeeding.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Projects/ProjectDonationProgress.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/Projects/ProjectDonationProgress.module.css" afterDir="false" />
-    </list>
+    <list default="true" id="32e33542-bd06-42e3-bf1b-3883da34adf9" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -94,7 +89,7 @@
       <workItem from="1710442078377" duration="1020000" />
       <workItem from="1710581471782" duration="627000" />
       <workItem from="1710607715725" duration="1638000" />
-      <workItem from="1710714998633" duration="12333000" />
+      <workItem from="1710714998633" duration="12642000" />
     </task>
     <servers />
   </component>

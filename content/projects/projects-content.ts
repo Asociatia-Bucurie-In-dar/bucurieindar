@@ -50,7 +50,7 @@ const projectsData : ProjectType[] = [
     {
         id: '6',
         slug: 'adopta-o-familie',
-        image_path: imagesPath + 'adopta.png',
+        image_path: imagesPath + 'adopta.jpeg',
         other_images: [
             //title used for translation key until better idea
             {title: '0', image: imagesPath + 'fam11.jpeg'},
