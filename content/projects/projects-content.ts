@@ -44,7 +44,7 @@ const projectsData : ProjectType[] = [
         image_path: imagesPath + 'scoala.png',
         other_images: [],
         translation_key: 'SCHOOL_OF_JOY',
-        goalAmount: 5000,
+        goalAmount: 7000,
         currentAmount: 0,
     },
     {
