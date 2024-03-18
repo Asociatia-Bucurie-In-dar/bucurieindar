@@ -22,15 +22,15 @@ export function FAQ() {
 
     const questions = [
         {
-            question: aboutT('WHO_ARE_WE.TITLE') + '?',
+            question: aboutT('WHO_ARE_WE.TITLE'),
             answer: aboutT('WHO_ARE_WE.DESCRIPTION'),
         },
         {
-            question: aboutT('WHAT_WE_DO.TITLE') + '?',
+            question: aboutT('WHAT_WE_DO.TITLE'),
             answer: aboutT('WHAT_WE_DO.DESCRIPTION'),
         },
         {
-            question: aboutT('WHY_WE_HELP.TITLE') + '?',
+            question: aboutT('WHY_WE_HELP.TITLE'),
             answer: aboutT('WHY_WE_HELP.DESCRIPTION'),
         }];
 

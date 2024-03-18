@@ -35,7 +35,7 @@ export function HomeHero() {
                         <Text className={classes.description} mt={30}>
                             <b>{commonT('ASSOCIATION_FULL')}</b>{' '}({commonT('NON_PROFIT')})
                         </Text>
-                        <Text className={classes.description} mt="sm">
+                        <Text className={classes.description} mt="xs">
                             {heroT('DESCRIPTION')} <br/>
                         </Text>
                         <ConfettiButton size={"lg"} mt="xl" text={commonT('DONATE_NOW')}/>
