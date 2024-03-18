@@ -24,7 +24,7 @@ export function Footer() {
                     <Title className={classes.title} size={18} mb="xs">
                         <Text inherit variant="gradient" component="span" gradient={{ from: 'pink', to: 'yellow' }}>
                             <Link href={t('HOME.LINK')}>
-                                {commonT('ASSOCIATION_FULL')}
+                                {commonT('ASSOCIATION_FULL')} ({commonT('NON_PROFIT')})
                             </Link>
                         </Text>
                     </Title>

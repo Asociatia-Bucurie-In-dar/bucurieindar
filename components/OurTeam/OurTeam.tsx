@@ -54,7 +54,7 @@ export function OurTeam() {
                 <Avatar size="xl" src={item.avatar} radius={40} placeholder="blur" alt={item.name + " " + item.job}/>
             <br/>
                 <div>
-                    <Title fz="md" fw={600}>
+                    <Title fz="md" fw={500}>
                         {item.name}
                     </Title>
                     <Text c="dimmed" fz="sm" fw={500}>

@@ -9,19 +9,24 @@ import FirstTimeConfetti from "@/components/CoolEffects/FirstTimeConfetti";
 import {createTheme} from "@mantine/core";
 //import WavySeparator from '@/components/WavySeparator/WavySeparator';
 import {locales} from "@/middleware";
-import {unstable_setRequestLocale} from 'next-intl/server';
+import {getTranslations, unstable_setRequestLocale} from 'next-intl/server';
 import {useTranslations} from "next-intl";
 
 export function generateStaticParams() {
     return locales.map((locale:string) => ({locale}));
 }
-export const metadata = {
-  title: {
-      default: 'Asociația Bucurie in Dar',
-      template: '%s | Asociația Bucurie in Dar',
-  },
-  description: 'Cu ajutorul Bunului Dumnezeu și a sprijinului vostru, într-un efort comun, vrem să aducem bucurie în inimile multor oameni, tineri și bătrâni. Avem libertatea să alegem ce facem în această viață, și am ales să ajutăm, și o facem cu toată bucuria și tot dragostea noastră. Imparte și tu bucurie, împreună cu noi.',
-};
+export async function generateMetadata({children, params: {locale}}: { children: React.ReactNode; params: {locale: string}; }) {
+    const commonT = await getTranslations({locale: locale, namespace: 'COMMON'});
+    const heroT = await getTranslations({locale: locale, namespace: 'HOME_HERO'});
+    const assosiationName = commonT('ASSOCIATION_FULL');
+    return {
+        title: {
+            default: assosiationName,
+            template: '%s | ' + assosiationName,
+        },
+        description: heroT('MOTTO_FIRST_PART') + ' ' + heroT('MOTTO_SECOND_PART'),
+    };
+}
 
 export default function RootLayout({children, params: {locale}}: { children: React.ReactNode; params: {locale: string}; }) {
     unstable_setRequestLocale(locale);

@@ -37,7 +37,7 @@ export function FAQ() {
     const items = questions.map((item) => (
         <AccordionItem className={classes.item} value={item.question} key={item.question}>
             <AccordionControl className={classes.question}>
-                <Text fw={600}>{item.question}</Text>
+                <Text fw={550}>{item.question}</Text>
             </AccordionControl>
             <AccordionPanel>
                 <Text fz={rem(14)} fw={500} c="dimmed">
