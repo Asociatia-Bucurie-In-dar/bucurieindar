@@ -2,6 +2,14 @@
     background-color: light-dark(var(--mantine-color-gray-0), var(--mantine-color-dark-6));
 }
 
+.progressSection {
+    background-color: var(--mantine-color-green-5);
+}
+
+.progressTrack {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 7px;
+}
+
 .root {
     display: flex;
     background-image: linear-gradient(
