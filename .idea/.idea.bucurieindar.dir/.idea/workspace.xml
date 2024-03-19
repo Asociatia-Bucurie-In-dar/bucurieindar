@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32e33542-bd06-42e3-bf1b-3883da34adf9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/public/base/230.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/base/contract-de-sponsorizare.doc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.bucurieindar.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.bucurieindar.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/[locale]/projects/[slug]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/[locale]/projects/[slug]/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Footer/Footer.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/Footer/Footer.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Footer/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Footer/Footer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/projects/projects-content.ts" beforeDir="false" afterPath="$PROJECT_DIR$/content/projects/projects-content.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Home/HomeAboutProjects/HomeAboutProjects.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/HomeAboutProjects/HomeAboutProjects.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/messages/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/messages/en.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/messages/ro.json" beforeDir="false" afterPath="$PROJECT_DIR$/messages/ro.json" afterDir="false" />
     </list>
@@ -97,7 +96,7 @@
       <workItem from="1710442078377" duration="1020000" />
       <workItem from="1710581471782" duration="627000" />
       <workItem from="1710607715725" duration="1638000" />
-      <workItem from="1710714998633" duration="15429000" />
+      <workItem from="1710714998633" duration="18295000" />
     </task>
     <servers />
   </component>

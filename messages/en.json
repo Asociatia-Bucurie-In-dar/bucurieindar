@@ -54,19 +54,19 @@
 
   "HOME_HELP": {
     "BADGE": "HELP DIFFERENTLY",
-    "TITLE": "Other ways to help",
-    "DESCRIPTION": "There are many ways you can help, not only by donating. Every gesture matters. Here are a few of the ways you contribute.",
+    "TITLE": "Other ways of helping",
+    "DESCRIPTION": "There are other ways of helping. Here are some ways you can contribute:",
     "FIRST": {
       "TITLE": "Material goods",
-      "DESCRIPTION": "Donate clothes, toys, books, furniture, hygiene items, or other material goods that you no longer use."
+      "DESCRIPTION": "Donate clothing, food, medicine, hygiene products, books, toys, furniture, or other goods that could benefit families or children!"
     },
     "SECOND": {
       "TITLE": "Forms",
-      "DESCRIPTION": "Form 220, sponsorship contract, etc."
+      "DESCRIPTION": "Complete form 220 to redirect a percentage of your income tax, or download the sponsorship contract."
     },
     "THIRD": {
       "TITLE": "Volunteering",
-      "DESCRIPTION": "We are always looking for volunteers to help us. We'll help you find a way to volunteer that best suits you."
+      "DESCRIPTION": "If you have some free time and want to get involved, you can become a volunteer and help us in our activities. Every help matters!"
     }
   },
 

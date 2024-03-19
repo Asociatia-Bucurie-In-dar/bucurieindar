@@ -1,9 +1,10 @@
-import { Badge, Group, Title,
+import {
+    Badge, Group, Title,
     Text,
     Card,
     SimpleGrid,
     Container,
-    rem, DEFAULT_THEME, Divider,
+    rem, DEFAULT_THEME, Divider, Button, CardSection,
 } from '@mantine/core';
 import {IconBasketHeart, IconUsersGroup, IconScript} from '@tabler/icons-react';
 import classes from './HomeAboutProjects.module.css';
@@ -42,8 +43,8 @@ export function HomeAboutProjects() {
             var(--mantine-color-orange-7) 100%`;
     
     const features = data.map((feature) => (
-        <Card key={feature.title} shadow="md" radius="md" className={classes.card} padding="xl"
-        component={Link} href={ MyRoutePaths.Contact }>
+        <Card key={feature.title} shadow="md" radius="md" className={classes.card} padding="xl">
+         {/*component={Link} href={ MyRoutePaths.Contact }>*/}
             <feature.icon
                 style={{ width: rem(50), height: rem(50) }}
                 stroke={2}

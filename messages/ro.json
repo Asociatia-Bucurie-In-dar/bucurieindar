@@ -55,18 +55,18 @@
   "HOME_HELP": {
     "BADGE": "Ajută altfel",
     "TITLE": "Alte moduri de a ajuta",
-    "DESCRIPTION": "Există multe moduri de a ajuta, nu doar prin donații. Fiecare gest contează. Iată câteva din modalitățile prin care poți contribui.",
+    "DESCRIPTION": "Există și alte moduri de a ajuta. Iată câteva modalități prin care poți contribui:",
     "FIRST": {
       "TITLE": "Bunuri materiale",
-      "DESCRIPTION": "Donează haine, jucării, cărți, mobilă, obiecte de igiena sau alte bunuri materiale pe care nu le mai folosești."
+      "DESCRIPTION": "Donează îmbrăcăminte, alimente, medicamente, produse de igienă, cărți, jucării, mobilier, sau alte bunuri care pot fi de folos unor familii sau copii!"
     },
     "SECOND": {
       "TITLE": "Formulare",
-      "DESCRIPTION": "Completează formularul 220 pentru a ne redirecționa din impozitul pe venit sau contractul de sponsorizare."
+      "DESCRIPTION": "Completează formularul 220 pentru a ne redirecționa din impozitul pe venit, sau descarcă contractul de sponsorizare."
     },
     "THIRD": {
       "TITLE": "Voluntariat",
-      "DESCRIPTION": "Fii voluntar și implică-te în activitățile noastre. Fiecare ajutor contează."
+      "DESCRIPTION": "Dacă ai timp liber și vrei să te implici, poți deveni voluntar și să ne ajuți în activitățile noastre. Fiecare ajutor contează!"
     }
   },
   
