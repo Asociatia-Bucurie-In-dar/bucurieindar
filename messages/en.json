@@ -6,6 +6,7 @@
     "ASSOCIATION": "Bucurie în Dar (Gift of Joy)",
     "ASSOCIATION_FULL": "Bucurie în Dar (Gift of Joy) Association",
     "NON_PROFIT": "Nonprofit Organization",
+    "INDEPENDENT_NON_PROFIT": "Independent Nonprofit Organization",
     "NECESSARY_AMOUNT": "Necessary amount",
     "TONS": "Tons"
   },
@@ -58,15 +59,25 @@
     "DESCRIPTION": "There are other ways of helping. Here are some ways you can contribute:",
     "FIRST": {
       "TITLE": "Material goods",
-      "DESCRIPTION": "Donate clothing, food, medicine, hygiene products, books, toys, furniture, or other goods that could benefit families or children!"
+      "DESCRIPTION": "Donate clothing, food, medicine, hygiene products, books, toys, furniture, or other goods that could benefit families or children!",
+      "BUTTONS": [
+        "Contact us"
+      ]
     },
     "SECOND": {
       "TITLE": "Forms",
-      "DESCRIPTION": "Complete form 220 to redirect a percentage of your income tax, or download the sponsorship contract."
+      "DESCRIPTION": "Complete form 230 to redirect 3.5% of your income tax, or download the sponsorship contract.",
+      "BUTTONS": [
+        "220",
+        "Sponsorship"
+      ]
     },
     "THIRD": {
       "TITLE": "Volunteering",
-      "DESCRIPTION": "If you have some free time and want to get involved, you can become a volunteer and help us in our activities. Every help matters!"
+      "DESCRIPTION": "If you have some free time and want to get involved, you can become a volunteer and help us in our activities. Every help matters!",
+      "BUTTONS": [
+        "Contact us"
+      ]
     }
   },
 

@@ -29,7 +29,7 @@ export function Footer() {
                         </Text>
                     </Title>
                     <Text size="md" c="dimmed" className={classes.description} fw={500} mt={5} mb="md">
-                        {commonT('NON_PROFIT')}
+                        {commonT('INDEPENDENT_NON_PROFIT')}
                     </Text>
                     <Text size="sm" c="dimmed" className={classes.description} fw={500}>
                         {heroT('MOTTO_FIRST_PART')}{' '}{heroT('MOTTO_SECOND_PART')}.

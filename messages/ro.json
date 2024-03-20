@@ -6,6 +6,7 @@
     "ASSOCIATION": "Bucurie în Dar",
     "ASSOCIATION_FULL": "Asociația Bucurie în Dar",
     "NON_PROFIT": "Organizație Nonguvernamentală",
+    "INDEPENDENT_NON_PROFIT": "Organizație Nonguvernamentală Independentă",
     "NECESSARY_AMOUNT": "Suma necesară",
     "TONS": "Tone"
   },
@@ -62,7 +63,7 @@
     },
     "SECOND": {
       "TITLE": "Formulare",
-      "DESCRIPTION": "Completează formularul 220 pentru a ne redirecționa din impozitul pe venit, sau descarcă contractul de sponsorizare."
+      "DESCRIPTION": "Completează formularul 230 pentru a ne redirecționa 3.5% din impozitul pe venit, sau descarcă contractul de sponsorizare."
     },
     "THIRD": {
       "TITLE": "Voluntariat",
@@ -114,7 +115,7 @@
 
   "PROJECTS": {
     "TITLE": "Proiecte",
-    "DESCRIPTION": "Descoperă câteva din proiectele noastre și află cum poți să-i ajuți pe cei care au nevoie de tine.",
+    "DESCRIPTION": "Descoperă o parte dintre proiectele noastre și află cum poți să-i ajuți pe cei care au nevoie de tine.",
     "TABLE_OF_JOY": {
       "TITLE": "Masa Bucuriei",
       "DESCRIPTION": "Ați fost în situația de a nu avea ce să mâncați, cel puțin o zi? Prin acest program, Masa bucuriei, oferim mâncare la mii de persoane. Oferă și tu o porție de mâncare unui om sărman și vei primi în schimb cel mai onest MULȚUMESC din viața ta. Pe cine ajutăm? Familii cu mulți copii, persoane fără venit, femei văduve, bolnave și care își cresc singure copiii, persoane nedeplasabile, adulți sau copii, copii asistați social, bătrâni singuri, oameni ai străzii. Ei postesc și când nu este post."
