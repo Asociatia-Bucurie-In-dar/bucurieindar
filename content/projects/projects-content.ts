@@ -1,12 +1,26 @@
 import {ProjectType} from "@/utils/my-types";
 
+//TITLE used as TRANSLATION KEY until better solution!!
+//MARK no translation with '' (empty title)
+
 const imagesPath = '/projects/';
 const projectsData : ProjectType[] = [
     {
         id: '2',
         slug: 'masa-bucuriei',
         image_path: imagesPath + 'hrana.png',
-        other_images: [],
+        other_images: [
+            {title: '', image: imagesPath + 'masa1.jpeg'},
+            {title: '', image: imagesPath + 'masa2.jpeg'},
+            {title: '', image: imagesPath + 'masa3.jpeg'},
+            {title: '', image: imagesPath + 'masa4.jpeg'},
+            {title: '', image: imagesPath + 'masa5.jpeg'},
+            {title: '', image: imagesPath + 'masa6.jpeg'},
+            {title: '', image: imagesPath + 'masa7.jpeg'},
+            {title: '', image: imagesPath + 'masa8.jpeg'},
+            {title: '', image: imagesPath + 'masa9.jpeg'}
+        ],
+        other_videos: [],
         translation_key: 'TABLE_OF_JOY',
         goalAmount: 12000,
         currentAmount: 0,
@@ -16,6 +30,7 @@ const projectsData : ProjectType[] = [
         slug: 'ajuta-o-comunitate', 
         image_path: imagesPath + 'comunitate.png',
         other_images: [],
+        other_videos: [],
         translation_key: 'HELP_A_COMMUNITY',
         goalAmount: 7000, 
         currentAmount: 0,
@@ -25,6 +40,7 @@ const projectsData : ProjectType[] = [
         slug: 'cazuri-medicale',
         image_path: imagesPath + 'medical.png',
         other_images: [],
+        other_videos: [],
         translation_key: 'LOVE_AND_MEDICINE',
         goalAmount: 20000,
         currentAmount: 0,
@@ -34,6 +50,7 @@ const projectsData : ProjectType[] = [
         slug: 'oameni-ai-strazii',
         image_path: imagesPath + 'beggar.jpeg',
         other_images: [],
+        other_videos: [],
         translation_key: 'STREET_PEOPLE',
         goalAmount: 10000,
         currentAmount: 0,
@@ -43,6 +60,7 @@ const projectsData : ProjectType[] = [
         slug: 'scoala-bucuriei',
         image_path: imagesPath + 'scoala.png',
         other_images: [],
+        other_videos: [],
         translation_key: 'SCHOOL_OF_JOY',
         goalAmount: 7000,
         currentAmount: 0,
@@ -52,12 +70,18 @@ const projectsData : ProjectType[] = [
         slug: 'adopta-o-familie',
         image_path: imagesPath + 'adopta.jpeg',
         other_images: [
-            //TITLE used as TRANSLATION KEY until better solution!!
-            //MARK no translation with -1
-            {title: '1', image: imagesPath + 'fam11.jpeg'},
-            {title: '2', image: imagesPath + 'fam10.jpeg'},
-            {title: '3', image: imagesPath + 'fam8.jpeg'}
+            {title: '', image: imagesPath + 'fam11.jpeg'},
+            {title: '', image: imagesPath + 'fam10.jpeg'},
+            {title: '', image: imagesPath + 'fam8.jpeg'},
+            {title: '', image: imagesPath + 'fam7.jpeg'},
+            {title: '', image: imagesPath + 'fam6.jpeg'},
+            {title: '', image: imagesPath + 'fam5.jpeg'},
+            {title: '', image: imagesPath + 'fam4.jpeg'},
+            {title: '', image: imagesPath + 'fam3.jpeg'},
+            {title: '', image: imagesPath + 'fam2.jpeg'},
+            {title: '', image: imagesPath + 'fam1.jpeg'}
         ],
+        other_videos: [],
         translation_key: 'ADOPT_A_FAMILY',
         goalAmount: 5000,
         currentAmount: 0,

@@ -1,16 +1,28 @@
-import {Card, Text, SimpleGrid, Image, AspectRatio, Divider} from '@mantine/core';
+'use client';
+import {Card, Text, SimpleGrid, Image, AspectRatio, Divider, Modal} from '@mantine/core';
 import classes from './Gallery.module.css';
-import {useTranslations} from "next-intl";
 import {GalleryImage, GalleryVideo} from "@/utils/my-types";
 import {namedTypes} from "ast-types";
-import JSXElement = namedTypes.JSXElement;
+import {useDisclosure} from "@mantine/hooks";
+import {MyZIndexes} from "@/utils/my-constants";
+import {useState} from "react";
 
 export function Gallery(props: { videosData: GalleryVideo[], imagesData: GalleryImage[] }) {
+
+    const [opened, {open, close}] = useDisclosure(false);
+    const [imageToOpen, setImageToOpen] = useState('');
+
+    function openModal(image: string) {
+        return () => {
+            setImageToOpen(image);
+            open();
+        }
+    }
     
     const allImageCards = props.imagesData ? props.imagesData.map((imagePath) => (
         <Card p="md" radius="md" className={classes.card}>
             <AspectRatio ratio={16 / 10}>
-                <Image src={imagePath.image} />
+                <Image src={imagePath.image} loading="lazy" onClick={openModal(imagePath.image)} style={{cursor: 'pointer'}} />
             </AspectRatio>
             <Text className={classes.title} mt={5} pt={5}>
                 {imagePath.title}
@@ -42,6 +54,10 @@ export function Gallery(props: { videosData: GalleryVideo[], imagesData: Gallery
             <SimpleGrid cols={{base: 1, sm: 2, md: 2}} spacing="lg" verticalSpacing="xl">
                 {allImageCards}
             </SimpleGrid>
+
+            <Modal opened={opened} onClose={close} zIndex={MyZIndexes.DonateModal} size="auto" >
+                <Image src={imageToOpen} />
+            </Modal>
         </>
     );
 }

@@ -5,13 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32e33542-bd06-42e3-bf1b-3883da34adf9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/public/projects/masa1.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/projects/masa2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/projects/masa3.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/projects/masa4.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/projects/masa5.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/projects/masa6.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/projects/masa7.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/projects/masa8.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/projects/masa9.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.bucurieindar.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.bucurieindar.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/[locale]/projects/[slug]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/[locale]/projects/[slug]/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Home/HomeAboutProjects/HomeAboutProjects.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/HomeAboutProjects/HomeAboutProjects.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Popups/DonatePopup/DonatePopupButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Popups/DonatePopup/DonatePopupButton.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Projects/ProjectPreviewCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Projects/ProjectPreviewCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Gallery/Gallery.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Gallery/Gallery.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/projects/projects-content.ts" beforeDir="false" afterPath="$PROJECT_DIR$/content/projects/projects-content.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/messages/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/messages/en.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/messages/ro.json" beforeDir="false" afterPath="$PROJECT_DIR$/messages/ro.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/projects/Switch_ACNH_ND0220_screen_14_copy.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/projects/path_by_ddkruno_dgrxjdf-pre.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/my-types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/utils/my-types.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,6 +32,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../VIRTUOUS/Assets/__STUFF/Scripts/Player/PlayerAnimationFunctions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/messages/en.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/package-lock.json" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -99,7 +109,7 @@
       <workItem from="1710581471782" duration="627000" />
       <workItem from="1710607715725" duration="1638000" />
       <workItem from="1710714998633" duration="18953000" />
-      <workItem from="1710923327121" duration="31286000" />
+      <workItem from="1710923327121" duration="40705000" />
     </task>
     <servers />
   </component>

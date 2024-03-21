@@ -44,8 +44,9 @@ export default function FullProjectPage({params: {locale, slug}}:{ params: { loc
     
     if (projectContent.other_images.length > 0) {
         for (let i = 0; i < projectContent.other_images.length; i++) {
-            if (projectContent.other_images[i].title === '-1')
+            if (projectContent.other_images[i].title === '') {
                 continue;
+            }
             
             const key = (projectContent.translation_key + '.PHOTOS.' + projectContent.other_images[i].title);
             projectContent.other_images[i].title = t(key);

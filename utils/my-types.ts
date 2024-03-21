@@ -13,6 +13,7 @@ export type ProjectType = {
     translation_key: string;
     image_path: string;
     other_images: GalleryImage[];
+    other_videos: GalleryVideo[];
     currentAmount: number;
     goalAmount: number;
 };
