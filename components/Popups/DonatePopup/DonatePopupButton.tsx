@@ -92,6 +92,8 @@ export function DonatePopupButton(props: {projectId: string,
         // { value: 'aud', label: '🇦🇺 AUD' },
     ];
     
+    const stopPropagation = (e: React.MouseEvent<HTMLAnchorElement>) => e.stopPropagation();
+    
     const iconSize = 25;
     
         const [opened, {open, close}] = useDisclosure(false);
@@ -147,13 +149,14 @@ export function DonatePopupButton(props: {projectId: string,
                     mr="md"
                     styles={{ input: { cursor: 'pointer' } }}
                     aria-hidden
+                    onClick={() => onAgreeChange(!agreeValue)}
                 />
                 <div>
                     <Text fw={500} mb={7} lh={1}>
                         I agree to:
                     </Text>
                     <Text fz="sm" fw={600}>
-                        <Link href={"/terms"} target="_blank" className={classes.link}>Terms and Conditions</Link> & <Link href={"/privacy"} target="_blank" className={classes.link}>Privacy Policy</Link>
+                        <Link href={"/terms"} target="_blank" onClick={stopPropagation} className={classes.link}>Terms and Conditions</Link> & <Link href={"/privacy"} target="_blank"  onClick={stopPropagation} className={classes.link}>Privacy Policy</Link>
                     </Text>
                 </div>
             </UnstyledButton>
