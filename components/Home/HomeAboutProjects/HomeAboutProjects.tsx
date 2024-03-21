@@ -4,15 +4,16 @@ import {
     Card,
     SimpleGrid,
     Container,
-    rem, DEFAULT_THEME, Divider, Button, CardSection,
+    rem, DEFAULT_THEME, Divider, Button,
 } from '@mantine/core';
-import {IconBasketHeart, IconUsersGroup, IconScript, IconMailbox, IconMail} from '@tabler/icons-react';
+import {IconBasketHeart, IconUsersGroup, IconScript, IconDownload, IconExternalLink} from '@tabler/icons-react';
 import classes from './HomeAboutProjects.module.css';
 import commonClasses from '@/utils/commonClasses.module.css';
 import Link from "next/link";
 import {MyRoutePaths} from "@/utils/route-paths";
 import {useTranslations} from "next-intl";
 import {TitleWithDescription} from "@/components/Common/TitleWithDescription";
+import React from "react";
 
 export function HomeAboutProjects() {
     const t = useTranslations('HOME_HELP');
@@ -28,6 +29,7 @@ export function HomeAboutProjects() {
                     title: 'Contact',
                     href: headerT('CONTACT.LINK'),
                     newTab: false,
+                    icon: undefined
                 }
             ]
         },
@@ -38,13 +40,15 @@ export function HomeAboutProjects() {
             links: [
                 {
                     title: '230',
-                    href: '/base/230.pdf',
+                    href: 'https://formular230.ro/asociatia-bucurie-in-dar',
                     newTab: true,
+                    icon: undefined
                 },
                 {
                     title: 'Sponsor',
                     href: '/base/contract-de-sponsorizare.doc',
                     newTab: false,
+                    icon: <IconDownload size={18}/>
                 }
             ]
         },
@@ -57,6 +61,7 @@ export function HomeAboutProjects() {
                     title: 'Contact',
                     href: headerT('CONTACT.LINK'),
                     newTab: false,
+                    icon: undefined
                 }
             ]
         },
@@ -91,7 +96,7 @@ export function HomeAboutProjects() {
                         color="orange"
                         mr="xs"
                         size="sm"
-                    >{link.title}</Button>
+                    >{link.title}{' '}{link.icon}</Button>
                 ))}
             </div>
             
@@ -100,6 +105,27 @@ export function HomeAboutProjects() {
             </Text>
         </Card>
     ));
+    
+    // const modal = <div>
+    //     <Modal opened={opened} onClose={close} withCloseButton={false} zIndex={MyZIndexes.DonateModal}
+    //            size="auto" transitionProps={{ transition: 'slide-up' }}>
+    //         <>
+    //                 <Center><Text size="lg">
+    //                     Title
+    //                 </Text></Center>
+    //
+    //                 <Divider mt="sm" mb="sm" color="transparent"/>
+    //         </>
+    //     </Modal>
+    //
+    //     <Button style={{width: props.fullWidth ? 'auto' : 'max-content', minWidth: rem(100)}}
+    //             variant="gradient"
+    //             gradient={{from: 'pink', to: 'yellow', deg: 90}}
+    //             size="sm" fw={600}
+    //             mt="md" onClick={open}>
+    //         test
+    //     </Button>
+    // </div>
 
     return (
         <Container size="full" py="xl" className={commonClasses.darkerBackground}>
