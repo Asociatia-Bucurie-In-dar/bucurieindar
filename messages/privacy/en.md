@@ -1,10 +1,10 @@
 Last updated: 2024-03-21
 
-# Privacy Policy
+# _Privacy Policy_
 
 ## Introduction
 
-[Your Charity Name] is committed to protecting your privacy. This policy outlines how we collect, use, protect, and disclose information and data when you use our website. We comply with the General Data Protection Regulation (GDPR) and other relevant privacy laws.
+Bucurie în Dar (Gift of Joy) Association is committed to protecting your privacy. This policy outlines how we collect, use, protect, and disclose information and data when you use our website. We comply with the General Data Protection Regulation (GDPR) and other relevant privacy laws.
 
 ## Information Collection and Use
 
@@ -17,8 +17,9 @@ Donations are processed using Stripe, a third-party payment processor. Your paym
 
 ## Use of Data
 
-[Your Charity Name] uses the collected data for various purposes, including:
+Bucurie în Dar (Gift of Joy) Association uses the collected data for various purposes, including:
 - To process donations
+- To display donation progress
 - To communicate with you
 - To provide and maintain our service
 - To notify you about changes to our service
@@ -33,5 +34,5 @@ Under GDPR and other data protection laws, you have rights including access to y
 
 ## Contact Us
 
-If you have any questions about this Privacy Policy, please contact us at [Your Contact Information].
+If you have any questions about this Privacy Policy, please [contact](contact) us.
 
