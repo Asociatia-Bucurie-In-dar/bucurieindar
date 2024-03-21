@@ -7,20 +7,14 @@ import {
     Button,
     Center,
     Divider,
-    Modal,
-    NativeSelect,
-    Text,
-    TextInput,
-    rem,
-    SegmentedControl,
-    Title, Badge, Paper
+    Modal, NativeSelect, Text, TextInput, rem, SegmentedControl, Paper, UnstyledButton, Checkbox, Container
 } from "@mantine/core";
 import {Form} from "@storybook/components";
 import {MyZIndexes} from "@/utils/my-constants";
 import classes from "./DonatePopupButton.module.css";
-
 import { useDisclosure } from '@mantine/hooks';
 import {ProjectTranslationsType} from "@/utils/my-types";
+import Link from "next/link";
 // import {
 //     IconBrandApple,
 //     IconBrandGoogle,
@@ -52,17 +46,26 @@ export function DonatePopupButton(props: {projectId: string,
         
         setLoading(true);
         const data = 
-            {projectId: props.projectId, projectTitle: props.projectTile, currencyAmount: Number(input.customDonation) };
+            {
+                projectId: props.projectId,
+                projectTitle: props.projectTile,
+                currencyAmount: Number(input.customDonation),
+                //email: input.email,
+                agreed: agreeValue,
+            };
         const { client_secret, url } = await createCheckoutSession(data);
         
         setLoading(false);
         
+        if (url)
+        {
         setRedirectTo(url as string);
+        }
     }
     
-    const [input, setInput] = useState<{ customDonation: string }> ({ customDonation: '' } );
-    const handleInputChange: React.ChangeEventHandler<HTMLInputElement> = (
-        e,
+    const [input, setInput] = useState<{ customDonation: string, email: string }> ({ customDonation: '', email: '' } );
+    const handleMoneyChange: React.ChangeEventHandler<HTMLInputElement> = (
+        e
     ): void => {
         let numberAsString = e.target.value;
         if (numberAsString.length > 0 && numberAsString[0] === '0') {
@@ -72,8 +75,14 @@ export function DonatePopupButton(props: {projectId: string,
         
         setBadSum(Number(numberAsString) < 1);
         
-        setInput({customDonation: numberAsString});
+        setInput({customDonation: numberAsString, email: input.email});
     };
+    
+    const handleEmailChange: React.ChangeEventHandler<HTMLInputElement> = (e): void => {
+        setInput({customDonation: input.customDonation, email: e.target.value});
+    };
+
+    const [agreeValue, onAgreeChange] = useState(false);
     
     const data = [
         { value: 'eur', label: '🇪🇺 EUR' },
@@ -104,20 +113,56 @@ export function DonatePopupButton(props: {projectId: string,
         );
         
         const forCard = <>
+            {/* EMAIL */}
+            {/*<TextInput type="email"*/}
+            {/*           autoComplete="email"*/}
+            {/*           placeholder=""*/}
+            {/*           label={"Email"}*/}
+            {/*           required*/}
+            {/*           size="md"*/}
+            {/*           onChange={handleEmailChange}*/}
+            {/*           value={input.email}/>*/}
+            
+            {/*<Divider mb="xs" color="transparent"/>*/}
+            {/* MONEY */}
             <TextInput type="number"
                        placeholder="10 EUR"
+                       required
                        label={props.translations.DesiredAmount}
                        rightSection={select}
                        rightSectionWidth={115}
-                       size="lg"
-                       onChange={handleInputChange}
+                       size="md"
+                       onChange={handleMoneyChange}
                        value={input.customDonation}/>
 
-            <Divider mb="lg"/>
+            <Divider mb="sm" color="transparent"/>
+            {/* AGREE CHECK */}
+            <UnstyledButton onClick={() => onAgreeChange(!agreeValue)} className={classes.button}>
+                <Checkbox
+                    checked={agreeValue}
+                    required
+                    onChange={() => {}}
+                    tabIndex={-1}
+                    size="md"
+                    mr="md"
+                    styles={{ input: { cursor: 'pointer' } }}
+                    aria-hidden
+                />
+                <div>
+                    <Text fw={500} mb={7} lh={1}>
+                        I agree to:
+                    </Text>
+                    <Text fz="sm" fw={600}>
+                        <Link href={"/terms"} target="_blank" className={classes.link}>Terms and Conditions</Link> & <Link href={"/privacy"} target="_blank" className={classes.link}>Privacy Policy</Link>
+                    </Text>
+                </div>
+            </UnstyledButton>
 
+            <Divider mb={30} color="transparent"/>
+            {/* CONTINUE BUTTON */}
             <Center>
-                <Button type="submit" variant="gradient" gradient={{from: 'green', to: 'green', deg: 60}} size="lg"
-                        disabled={loading || badSum}>
+                <Button type="submit" variant="gradient" gradient={{from: 'green', to: 'green', deg: 60}} size="md"
+                        disabled={loading} mb="xs">
                     {props.translations.Continue}
                 </Button>
             </Center>
@@ -138,10 +183,11 @@ export function DonatePopupButton(props: {projectId: string,
             </Center>
         </Paper>
     </>;
-
+    
     return <>
         <Modal opened={opened} onClose={close} withCloseButton={false} zIndex={MyZIndexes.DonateModal}
-               size="auto">
+               size="auto" transitionProps={{ transition: 'slide-up' }}>
+            <>
                 <Form onSubmit={callDonateAPI}>
                     <Center><Text size="lg">
                         {props.translations.DonateFor} <b>{props.projectTile}</b>
@@ -149,8 +195,7 @@ export function DonatePopupButton(props: {projectId: string,
 
                     <Divider mt="sm" mb="sm" color="transparent"/>
 
-                    {/* RADIO */}
-                    
+                    {/* SEGMENTED CONTROL */}
                     <SegmentedControl
                         radius="xl"
                         size="md"
@@ -159,13 +204,13 @@ export function DonatePopupButton(props: {projectId: string,
                         classNames={classes}
                         onChange={(value) => setPayMethod(value)}
                     />
-                    {/* RADIO */}
                     
                     <Divider mt="sm" mb="sm" color="transparent"/>
 
                     {payMethod === payOption1 ? forCard : forBank}
                     
                 </Form>
+            </>
             </Modal>
 
             <Button style={{width: props.fullWidth ? 'auto' : 'max-content', minWidth: rem(100)}}

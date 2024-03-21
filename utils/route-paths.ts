@@ -7,4 +7,6 @@ export const MyRoutePaths = {
     Gallery: "/gallery",
     Blog: "/blog",
     Contact: "/contact",
+    Terms: "/terms",
+    Privacy: "/privacy",
 }

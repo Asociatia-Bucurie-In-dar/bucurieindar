@@ -13,7 +13,7 @@
   
   "HOME_HERO":
   {
-    "MOTTO_FIRST_PART": "Din această lume plecăm doar cu",
+    "MOTTO_FIRST_PART": "Din această viață plecăm doar cu",
     "MOTTO_SECOND_PART": "faptele noastre",
     "DESCRIPTION": "Suntem sprijin cu tot ce ne stă în putere, pentru cei care nu mai au pe cine să se sprijine. Misiunea noastră este să aducem bucurie acolo unde nu mai este, în inimile cât mai multor oameni, mari și mici, tineri și bătrâni, împreună cu voi."
   },
@@ -63,7 +63,7 @@
     },
     "SECOND": {
       "TITLE": "Formulare",
-      "DESCRIPTION": "Completează formularul 230 pentru a ne redirecționa 3.5% din impozitul pe venit, sau descarcă contractul de sponsorizare."
+      "DESCRIPTION": "Completează online formularul 230 pentru a ne redirecționa 3.5% gratuit din impozitul pe venit, sau descarcă contractul de sponsorizare."
     },
     "THIRD": {
       "TITLE": "Voluntariat",
@@ -153,7 +153,11 @@
     "BANK_TRANSFER_OPTION": "Transfer bancar",
     "DESIRED_AMOUNT": "Suma dorită",
     "CONTINUE": "Continuare",
-    "DONATE_FOR": "Donează pentru"
+    "DONATE_FOR": "Donează pentru",
+    "I_AGREE_TO_THE": "Sunt de acord cu",
+    "TERMS_AND_CONDITIONS": "Termenii și condițiile",
+    "AND": "și",
+    "PRIVACY_POLICY": "Politica de confidențialitate"
   },
 
   "SHARE": {
@@ -254,6 +258,8 @@
     "ABOUT": { "LABEL": "Despre", "LINK": "/about" },
     "GALLERY": { "LABEL": "Galerie", "LINK": "/gallery"},
     "BLOG": { "LABEL": "Blog", "LINK": "/blog" },
-    "CONTACT": { "LABEL": "Contact", "LINK": "/contact" }
+    "CONTACT": { "LABEL": "Contact", "LINK": "/contact" },
+    "TERMS": { "LABEL": "Termeni şi Condiții", "LINK": "/terms" },
+    "PRIVACY": { "LABEL": "Politica de Confidențialitate", "LINK": "/privacy" }
   }
 }
