@@ -15,6 +15,8 @@ import {useTranslations} from "next-intl";
 import {TitleWithDescription} from "@/components/Common/TitleWithDescription";
 import React from "react";
 
+const iconSize = 17;
+
 export function HomeAboutProjects() {
     const t = useTranslations('HOME_HELP');
     const headerT = useTranslations('HEADER');
@@ -42,13 +44,13 @@ export function HomeAboutProjects() {
                     title: '230',
                     href: 'https://formular230.ro/asociatia-bucurie-in-dar',
                     newTab: true,
-                    icon: undefined
+                    icon: <IconExternalLink size={iconSize} style={{marginLeft: '2px'}}/>
                 },
                 {
                     title: 'Sponsor',
                     href: '/base/contract-de-sponsorizare.doc',
                     newTab: false,
-                    icon: <IconDownload size={18}/>
+                    icon: <IconDownload size={iconSize} style={{marginLeft: '2px'}}/>
                 }
             ]
         },
@@ -96,7 +98,8 @@ export function HomeAboutProjects() {
                         color="orange"
                         mr="xs"
                         size="sm"
-                    >{link.title}{' '}{link.icon}</Button>
+                        fw={600}
+                    >{link.title}{link.icon}</Button>
                 ))}
             </div>
             

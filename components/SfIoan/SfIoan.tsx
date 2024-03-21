@@ -4,6 +4,7 @@ import commonClasses from '@/utils/commonClasses.module.css';
 import {IconExternalLink} from "@tabler/icons-react";
 import Link from "next/link";
 import {useTranslations} from "next-intl";
+import {TitleWithDescription} from "@/components/Common/TitleWithDescription";
 
 export function SfIoan(props: { disableBackground?: boolean }) {
     
@@ -29,6 +30,11 @@ export function SfIoan(props: { disableBackground?: boolean }) {
                             {t('TITLE')} <IconExternalLink color="green"/>
                         </Title>
                     </Center>
+                    {/*<Center>*/}
+                    {/*    <Title className={classes.subTitle} component={Link} {...linkProps}>*/}
+                    {/*        {t('SUBTITLE')}*/}
+                    {/*    </Title>*/}
+                    {/*</Center>*/}
 
                     <Center>
                         <Text fz="md" c="dimmed" fw={500} style={{textAlign: "center"}} component={Link} {...linkProps}>

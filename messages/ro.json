@@ -43,6 +43,7 @@
   
   "SAINT_JOHN": {
     "TITLE": "Centrul Sf. Ioan Cel Milostiv",
+    "SUBTITLE": "pentru tratarea dependențelor",
     "DESCRIPTION": "Împreună salvăm vieți, schimbăm destine, vindecăm suflete. Fiecare dintre noi am trecut cel puțin o dată în viață printr-o perioadă neagră din care nu mai știam cum să ieșim sau când se va termina. I-am văzut pe cei din familie, pe prieteni, pe oamenii dragi din viața nostră suferind și nu aveam cum să-i ajutăm. Cât de mult contează ajutorul oferit cu empatie, cu drag și dragoste. În acele momente ai nevoie de un sprijin și cred cu tărie că echipa Centrului Sf. Ioan Cel Milostiv se va strădui să aducă alinare, vindecare și să fie sprijin celor ce spun: \"Ajută-mă!\".",
     "IMAGE_ALT": "Icoana Sfântul Ioan cel Milostiv"
   },
@@ -155,7 +156,7 @@
     "CONTINUE": "Continuare",
     "DONATE_FOR": "Donează pentru",
     "I_AGREE_TO_THE": "Sunt de acord cu",
-    "TERMS_AND_CONDITIONS": "Termenii și condițiile",
+    "TERMS_AND_CONDITIONS": "Termenii și Condițiile",
     "AND": "și",
     "PRIVACY_POLICY": "Politica de confidențialitate"
   },

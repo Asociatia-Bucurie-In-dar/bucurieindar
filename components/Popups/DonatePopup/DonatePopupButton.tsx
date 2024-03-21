@@ -15,6 +15,7 @@ import classes from "./DonatePopupButton.module.css";
 import { useDisclosure } from '@mantine/hooks';
 import {ProjectTranslationsType} from "@/utils/my-types";
 import Link from "next/link";
+import {MyRoutePaths} from "@/utils/route-paths";
 // import {
 //     IconBrandApple,
 //     IconBrandGoogle,
@@ -153,10 +154,10 @@ export function DonatePopupButton(props: {projectId: string,
                 />
                 <div>
                     <Text fw={500} mb={7} lh={1}>
-                        I agree to:
+                        {props.translations.IAgreeWith}:
                     </Text>
                     <Text fz="sm" fw={600}>
-                        <Link href={"/terms"} target="_blank" onClick={stopPropagation} className={classes.link}>Terms and Conditions</Link> & <Link href={"/privacy"} target="_blank"  onClick={stopPropagation} className={classes.link}>Privacy Policy</Link>
+                        <Link href={MyRoutePaths.Terms} target="_blank" onClick={stopPropagation} className={classes.link}>{props.translations.TermsAndConditions}</Link> {props.translations.And} <Link href={MyRoutePaths.Privacy} target="_blank"  onClick={stopPropagation} className={classes.link}>{props.translations.PrivacyPolicy}</Link>
                     </Text>
                 </div>
             </UnstyledButton>

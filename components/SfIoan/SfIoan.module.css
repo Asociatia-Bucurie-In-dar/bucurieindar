@@ -43,6 +43,20 @@
     }
 }
 
+.subTitle {
+    font-size: rem(30px);
+    font-weight: 900;
+    margin-bottom: var(--mantine-spacing-lg);
+    color: var(--mantine-color-text);
+    text-decoration: none;
+    text-align: center;
+
+    @media (max-width: $mantine-breakpoint-sm) {
+        font-size: rem(24px);
+    }
+}
+
+
 .descriptionBig {
     max-width: rem(600px);
     margin: auto;
