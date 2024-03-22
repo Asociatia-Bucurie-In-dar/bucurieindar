@@ -5,26 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32e33542-bd06-42e3-bf1b-3883da34adf9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/public/projects/comunitate1.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/projects/comunitate10.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/projects/comunitate11.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/projects/comunitate12.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/projects/comunitate13.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/projects/comunitate14.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/projects/comunitate15.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/projects/comunitate16.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/projects/comunitate17.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/projects/comunitate2.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/projects/comunitate3.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/projects/comunitate4.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/projects/comunitate5.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/projects/comunitate6.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/projects/comunitate7.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/projects/comunitate8.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/projects/comunitate9.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.bucurieindar.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.bucurieindar.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Gallery/Gallery.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Gallery/Gallery.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/projects/projects-content.ts" beforeDir="false" afterPath="$PROJECT_DIR$/content/projects/projects-content.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Contact/ContactPanel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Contact/ContactPanel.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +94,7 @@
       <workItem from="1710581471782" duration="627000" />
       <workItem from="1710607715725" duration="1638000" />
       <workItem from="1710714998633" duration="18953000" />
-      <workItem from="1710923327121" duration="43185000" />
+      <workItem from="1710923327121" duration="43567000" />
     </task>
     <servers />
   </component>
