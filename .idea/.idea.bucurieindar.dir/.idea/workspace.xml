@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32e33542-bd06-42e3-bf1b-3883da34adf9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.bucurieindar.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.bucurieindar.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Contact/ContactPanel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Contact/ContactPanel.tsx" afterDir="false" />
-    </list>
+    <list default="true" id="32e33542-bd06-42e3-bf1b-3883da34adf9" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -94,7 +91,7 @@
       <workItem from="1710581471782" duration="627000" />
       <workItem from="1710607715725" duration="1638000" />
       <workItem from="1710714998633" duration="18953000" />
-      <workItem from="1710923327121" duration="43567000" />
+      <workItem from="1710923327121" duration="43620000" />
     </task>
     <servers />
   </component>
