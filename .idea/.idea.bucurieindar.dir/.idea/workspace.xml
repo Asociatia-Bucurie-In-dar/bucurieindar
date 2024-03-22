@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32e33542-bd06-42e3-bf1b-3883da34adf9" name="Changes" comment="" />
+    <list default="true" id="32e33542-bd06-42e3-bf1b-3883da34adf9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.bucurieindar.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.bucurieindar.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/[locale]/gallery/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/[locale]/gallery/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/[locale]/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/[locale]/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Contact/ContactPanel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Contact/ContactPanel.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/contact/my-contact.ts" beforeDir="false" afterPath="$PROJECT_DIR$/content/contact/my-contact.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -92,6 +100,8 @@
       <workItem from="1710607715725" duration="1638000" />
       <workItem from="1710714998633" duration="18953000" />
       <workItem from="1710923327121" duration="43620000" />
+      <workItem from="1711069085021" duration="599000" />
+      <workItem from="1711094114013" duration="572000" />
     </task>
     <servers />
   </component>

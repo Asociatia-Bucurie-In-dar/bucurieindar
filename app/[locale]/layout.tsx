@@ -6,11 +6,12 @@ import { Footer } from '@/components/Footer/Footer';
 import { ChatButton } from '@/components/ChatButton/ChatButton';
 import { theme } from '@/theme';
 import FirstTimeConfetti from "@/components/CoolEffects/FirstTimeConfetti";
-import {createTheme} from "@mantine/core";
-//import WavySeparator from '@/components/WavySeparator/WavySeparator';
 import {locales} from "@/middleware";
 import {getTranslations, unstable_setRequestLocale} from 'next-intl/server';
 import {useTranslations} from "next-intl";
+import { Analytics } from '@vercel/analytics/react';
+
+//import WavySeparator from '@/components/WavySeparator/WavySeparator';
 
 export function generateStaticParams() {
     return locales.map((locale:string) => ({locale}));
@@ -57,6 +58,8 @@ export default function RootLayout({children, params: {locale}}: { children: Rea
         {children}
         <ChatButton />
         <Footer/>
+        
+        <Analytics />
     </MantineProvider>
 
     <FirstTimeConfetti/>

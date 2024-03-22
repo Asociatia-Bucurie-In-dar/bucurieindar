@@ -16,12 +16,6 @@ export async function generateMetadata({params: {locale}}:{ params: { locale: st
     };
 }
 
-const linkProps = {
-    href: contactInfo.facebookLink,
-    rel:"noopener noreferrer",
-    target:"_blank"
-};
-
 export default function GalleryPage( {params: {locale}} : {params: {locale: string}} ) {
     unstable_setRequestLocale(locale);
     const t = useTranslations('GALLERY');
