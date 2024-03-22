@@ -5,6 +5,7 @@ import {Gallery} from "@/components/Gallery/Gallery";
 import {getTranslations, unstable_setRequestLocale} from "next-intl/server";
 import {useTranslations} from "next-intl";
 import {contactInfo} from "@/content/contact/my-contact";
+import {GalleryTranslations} from "@/utils/my-types";
 
 export async function generateMetadata({params: {locale}}:{ params: { locale: string } }) {
     const t = await getTranslations({ locale, namespace: 'GALLERY' });
@@ -19,6 +20,11 @@ export async function generateMetadata({params: {locale}}:{ params: { locale: st
 export default function GalleryPage( {params: {locale}} : {params: {locale: string}} ) {
     unstable_setRequestLocale(locale);
     const t = useTranslations('GALLERY');
+    const commonT = useTranslations('COMMON');
+    const translations: GalleryTranslations = {
+        ShowMore: commonT('SHOW_MORE'),
+        Hide: commonT('HIDE'),
+    };
 
     const videosData = [
         {
@@ -102,7 +108,7 @@ export default function GalleryPage( {params: {locale}} : {params: {locale: stri
             {/*</Center>*/}
           <Divider mb="xl" color="transparent" />
             
-            <Gallery imagesData={imagesData} videosData={videosData} />
+            <Gallery imagesData={imagesData} videosData={videosData} translations={translations}/>
             
           <Divider color="transparent" pb={100}/>
         </Container>

@@ -8,7 +8,9 @@
     "NON_PROFIT": "Organizație Nonguvernamentală",
     "INDEPENDENT_NON_PROFIT": "Organizație Nonguvernamentală Independentă",
     "NECESSARY_AMOUNT": "Suma necesară",
-    "TONS": "Tone"
+    "TONS": "Tone",
+    "SHOW_MORE": "Mai mult",
+    "HIDE": "Ascunde"
   },
   
   "HOME_HERO":
@@ -139,7 +141,15 @@
       "PHOTOS": {
         "1": "Test1",
         "2": "Test2",
-        "3": "Test3"
+        "3": "Test3",
+        "4": "Test4",
+        "5": "Test5",
+        "6": "Test6",
+        "7": "Test7",
+        "8": "Test8",
+        "9": "Test9",
+        "10": "Test10",
+        "11": "Test11"
       }
     },
     "HELP_A_COMMUNITY": {

@@ -72,3 +72,8 @@ export type GalleryImage = {
     title: string;
     image: string;
 };
+
+export type GalleryTranslations = {
+    ShowMore: string;
+    Hide: string;
+};

@@ -7,7 +7,7 @@ import {DonatePopupButton} from "@/components/Popups/DonatePopup/DonatePopupButt
 import {unstable_setRequestLocale} from "next-intl/server";
 import {getTranslations} from "next-intl/server";
 import {useTranslations} from "next-intl";
-import {ProjectTranslationsType} from "@/utils/my-types";
+import {GalleryTranslations, ProjectTranslationsType} from "@/utils/my-types";
 import {MyRoutePaths} from "@/utils/route-paths";
 import {locales} from "@/middleware";
 import {Gallery} from "@/components/Gallery/Gallery";
@@ -41,17 +41,19 @@ export default function FullProjectPage({params: {locale, slug}}:{ params: { loc
     const shareT = useTranslations('SHARE');
     const title = t(projectContent.translation_key + '.TITLE');
     const description = t(projectContent.translation_key + '.DESCRIPTION');
+    const translations: GalleryTranslations = {
+        ShowMore: commonT('SHOW_MORE'),
+        Hide: commonT('HIDE'),
+    };
+
+    const images = projectContent.other_images ? projectContent.other_images : [];
+    images.forEach((image, index) => {
+        const imgTitle = projectContent.other_images[index].title;
+        const key = `${projectContent.translation_key}.PHOTOS.${imgTitle}`;
+        image.title = t(key);
+    });
     
-    if (projectContent.other_images.length > 0) {
-        for (let i = 0; i < projectContent.other_images.length; i++) {
-            if (projectContent.other_images[i].title === '') {
-                continue;
-            }
-            
-            const key = (projectContent.translation_key + '.PHOTOS.' + projectContent.other_images[i].title);
-            projectContent.other_images[i].title = t(key);
-        }
-    }
+    projectContent.other_images = images;
     
     const donatePopupTranslations : ProjectTranslationsType = {
         Donate: donateT('DONATE'),
@@ -106,7 +108,7 @@ export default function FullProjectPage({params: {locale, slug}}:{ params: { loc
 
             {/* BOTTOM GALLERY */}
             
-            <Gallery imagesData={projectContent.other_images} videosData={[]}/>
+            <Gallery imagesData={projectContent.other_images} videosData={[]} translations={translations}/>
 
         <Divider color="transparent" pb={100}/>
         </Container>

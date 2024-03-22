@@ -9,7 +9,6 @@ import FirstTimeConfetti from "@/components/CoolEffects/FirstTimeConfetti";
 import {locales} from "@/middleware";
 import {getTranslations, unstable_setRequestLocale} from 'next-intl/server';
 import {useTranslations} from "next-intl";
-import { Analytics } from '@vercel/analytics/react';
 
 //import WavySeparator from '@/components/WavySeparator/WavySeparator';
 
@@ -58,8 +57,6 @@ export default function RootLayout({children, params: {locale}}: { children: Rea
         {children}
         <ChatButton />
         <Footer/>
-        
-        <Analytics />
     </MantineProvider>
 
     <FirstTimeConfetti/>
