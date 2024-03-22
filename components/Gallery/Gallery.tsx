@@ -19,8 +19,8 @@ export function Gallery(props: { videosData: GalleryVideo[], imagesData: Gallery
         }
     }
     
-    const allImageCards = props.imagesData ? props.imagesData.map((imagePath) => (
-        <Card p="md" radius="md" className={classes.card}>
+    const allImageCards = props.imagesData ? props.imagesData.map((imagePath, index) => (
+        <Card p="md" radius="md" className={classes.card} key={index}>
             <AspectRatio ratio={16 / 10}>
                 <Image src={imagePath.image} 
                        loading="lazy" 
@@ -35,8 +35,8 @@ export function Gallery(props: { videosData: GalleryVideo[], imagesData: Gallery
         </Card>
 )) : [];
     
-    const allVideoCards = props.videosData ? props.videosData.map((video) => (
-        <Card p="md" radius="md" className={classes.card}>
+    const allVideoCards = props.videosData ? props.videosData.map((video, index) => (
+        <Card p="md" radius="md" className={classes.card} key={index}>
             <AspectRatio ratio={16 / 9}>
                 <iframe
                     src={"https://www.youtube-nocookie.com/embed/" + video.youtubeId}

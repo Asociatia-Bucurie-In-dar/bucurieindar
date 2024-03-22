@@ -46,14 +46,12 @@ export default function FullProjectPage({params: {locale, slug}}:{ params: { loc
         Hide: commonT('HIDE'),
     };
 
-    const images = projectContent.other_images ? projectContent.other_images : [];
-    images.forEach((image, index) => {
-        const imgTitle = projectContent.other_images[index].title;
-        const key = `${projectContent.translation_key}.PHOTOS.${imgTitle}`;
-        image.title = t(key);
+    projectContent.other_images.forEach((image, index) => {
+        image.title = '';
     });
-    
-    projectContent.other_images = images;
+    projectContent.other_videos.forEach((video, index) => {
+        video.title = '';
+    });
     
     const donatePopupTranslations : ProjectTranslationsType = {
         Donate: donateT('DONATE'),
