@@ -7,7 +7,7 @@ import {
     Button,
     Center,
     Divider,
-    Modal, NativeSelect, Text, TextInput, rem, SegmentedControl, Paper, UnstyledButton, Checkbox, Container
+    Modal, NativeSelect, Text, TextInput, rem, SegmentedControl, Paper, UnstyledButton, Checkbox
 } from "@mantine/core";
 import {Form} from "@storybook/components";
 import {MyZIndexes} from "@/utils/my-constants";

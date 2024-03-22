@@ -9,7 +9,7 @@ import FirstTimeConfetti from "@/components/CoolEffects/FirstTimeConfetti";
 import {locales} from "@/middleware";
 import {getTranslations, unstable_setRequestLocale} from 'next-intl/server';
 import {useTranslations} from "next-intl";
-
+import {Analytics} from "@vercel/analytics/next";
 //import WavySeparator from '@/components/WavySeparator/WavySeparator';
 
 export function generateStaticParams() {
@@ -18,11 +18,11 @@ export function generateStaticParams() {
 export async function generateMetadata({children, params: {locale}}: { children: React.ReactNode; params: {locale: string}; }) {
     const commonT = await getTranslations({locale: locale, namespace: 'COMMON'});
     const heroT = await getTranslations({locale: locale, namespace: 'HOME_HERO'});
-    const assosiationName = commonT('ASSOCIATION_FULL');
+    const association = commonT('ASSOCIATION_FULL');
     return {
         title: {
-            default: assosiationName,
-            template: '%s | ' + assosiationName,
+            default: association,
+            template: '%s | ' + association,
         },
         description: heroT('MOTTO_FIRST_PART') + ' ' + heroT('MOTTO_SECOND_PART'),
     };
@@ -58,7 +58,7 @@ export default function RootLayout({children, params: {locale}}: { children: Rea
         <ChatButton />
         <Footer/>
     </MantineProvider>
-
+    <Analytics />
     <FirstTimeConfetti/>
     </body>
     </html>
