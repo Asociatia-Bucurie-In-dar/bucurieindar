@@ -22,7 +22,7 @@ export function Gallery(props: { videosData: GalleryVideo[], imagesData: Gallery
     const allImageCards = props.imagesData ? props.imagesData.map((imagePath) => (
         <Card p="md" radius="md" className={classes.card}>
             <AspectRatio ratio={16 / 10}>
-                <Image src={imagePath.image} loading="lazy" onClick={openModal(imagePath.image)} style={{cursor: 'pointer'}} />
+                <Image src={imagePath.image} loading="lazy" onClick={openModal(imagePath.image)} style={{cursor: 'pointer'}} radius="sm"/>
             </AspectRatio>
             <Text className={classes.title} mt={5} pt={5}>
                 {imagePath.title}
@@ -56,7 +56,7 @@ export function Gallery(props: { videosData: GalleryVideo[], imagesData: Gallery
             </SimpleGrid>
 
             <Modal opened={opened} onClose={close} zIndex={MyZIndexes.DonateModal} size="auto" >
-                <Image src={imageToOpen} />
+                <Image src={imageToOpen} radius="sm"/>
             </Modal>
         </>
     );
