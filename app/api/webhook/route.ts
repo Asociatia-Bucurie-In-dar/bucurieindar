@@ -4,6 +4,7 @@ import {stripe} from "@/utils/stripe/stripe";
 import {Donation, PrismaClient} from '@prisma/client';
 import {revalidateTag} from "next/cache";
 import {revalidateDonationsProgressTag} from "@/utils/cache-tags";
+import {contactInfo} from "@/content/contact/my-contact";
 
 const prisma = new PrismaClient();
 
@@ -65,6 +66,7 @@ export async function POST(req: Request) {
                         const savedDonation = await saveDonation(donationData);
                         revalidateTag(revalidateDonationsProgressTag);
                         console.log(`Donation saved: ${savedDonation.id}`);
+                        //await sendEmail(savedDonation.amount);
                     } catch (error: any) {
                         console.error(`Error saving donation: ${error.message}`);
                     }
@@ -92,4 +94,22 @@ export async function POST(req: Request) {
     }
     
     return NextResponse.json({ message: "Received" }, { status: 200 });
+}
+
+async function sendEmail(euroAmount: number) {
+    try {
+        const email = contactInfo.email;
+        const name = 'Admin';
+        const message = "Donatie noua! ( " + euroAmount + "EUR )";
+        const response = await fetch('/api/sendemail', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({email, name, message}),
+        });
+    }
+    catch (error) {
+        console.error(`Error sending donation email`);
+    }
 }
