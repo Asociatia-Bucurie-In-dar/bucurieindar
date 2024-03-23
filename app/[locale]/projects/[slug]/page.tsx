@@ -42,6 +42,7 @@ export default function FullProjectPage({params: {locale, slug}}:{ params: { loc
     const shareT = useTranslations('SHARE');
     const title = projT('TITLE');
     const description = projT('DESCRIPTION');
+    const secondDescription = projT('SECOND_DESCRIPTION');
     const translations: GalleryTranslations = {
         ShowMore: commonT('SHOW_MORE'),
         Hide: commonT('HIDE'),
@@ -95,6 +96,10 @@ export default function FullProjectPage({params: {locale, slug}}:{ params: { loc
                 <Divider color="transparent" mb="xl"/>
                 <Text c="dimmed" fw={500}>
                     {description}
+                </Text>
+                <Divider color="transparent" mb="xl"/>
+                <Text c="dimmed" fw={500}>
+                    {secondDescription}
                 </Text>
             </GridCol>
 

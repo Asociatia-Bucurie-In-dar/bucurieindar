@@ -27,7 +27,9 @@ export function Gallery(props: { videosData: GalleryVideo[], imagesData: Gallery
                        onClick={openModal(imagePath.image)} 
                        style={{cursor: 'pointer'}} radius="sm"/>
             </AspectRatio>
-            <Spoiler maxHeight={120} showLabel={props.translations.ShowMore} hideLabel={props.translations.Hide} transitionDuration={0}>
+            <Spoiler maxHeight={110} showLabel={props.translations.ShowMore} 
+                     hideLabel={props.translations.Hide} 
+                     transitionDuration={100}>
                 <Text className={classes.title} mt={5} pt={5}>
                     {imagePath.title}
                 </Text>
