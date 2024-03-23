@@ -36,21 +36,34 @@ export default function FullProjectPage({params: {locale, slug}}:{ params: { loc
 
     const projectContent = GetProjectStaticContentWithSlug(slug);
     const t = useTranslations('PROJECTS');
+    const projT = useTranslations('PROJECTS.' + projectContent.translation_key);
     const commonT = useTranslations('COMMON');
     const donateT = useTranslations('PROJECTS_MORE');
     const shareT = useTranslations('SHARE');
-    const title = t(projectContent.translation_key + '.TITLE');
-    const description = t(projectContent.translation_key + '.DESCRIPTION');
+    const title = projT('TITLE');
+    const description = projT('DESCRIPTION');
     const translations: GalleryTranslations = {
         ShowMore: commonT('SHOW_MORE'),
         Hide: commonT('HIDE'),
     };
-
+    
     projectContent.other_images.forEach((image, index) => {
-        image.title = '';
+        if (image.title === '' || image.title === undefined) {
+            //nothing
+        }
+        else {
+            if (image.title.length < 3)
+                image.title = projT('PHOTOS.' + image.title);
+        }
     });
     projectContent.other_videos.forEach((video, index) => {
-        video.title = '';
+        if (video.title === '' || video.title === undefined) {
+            //nothing
+        }
+        else {
+            if (video.title.length < 3)
+                video.title = projT('PHOTOS.' + video.title);
+        }
     });
     
     const donatePopupTranslations : ProjectTranslationsType = {
@@ -106,7 +119,7 @@ export default function FullProjectPage({params: {locale, slug}}:{ params: { loc
 
             {/* BOTTOM GALLERY */}
             
-            <Gallery imagesData={projectContent.other_images} videosData={[]} translations={translations}/>
+            <Gallery imagesData={projectContent.other_images} videosData={projectContent.other_videos} translations={translations}/>
 
         <Divider color="transparent" pb={100}/>
         </Container>

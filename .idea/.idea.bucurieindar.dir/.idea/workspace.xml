@@ -5,10 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32e33542-bd06-42e3-bf1b-3883da34adf9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Folder.DotSettings.user" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/projects/fam12.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.bucurieindar.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.bucurieindar.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/[locale]/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/[locale]/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Contact/ContactPanel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Contact/ContactPanel.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Popups/DonatePopup/DonatePopupButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Popups/DonatePopup/DonatePopupButton.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/[locale]/projects/[slug]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/[locale]/projects/[slug]/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Home/HomeFeeding/HomeFeeding.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/HomeFeeding/HomeFeeding.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/projects/projects-content.ts" beforeDir="false" afterPath="$PROJECT_DIR$/content/projects/projects-content.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/messages/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/messages/en.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/messages/ro.json" beforeDir="false" afterPath="$PROJECT_DIR$/messages/ro.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/projects/fam3.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/projects/fam4.jpeg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +49,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -50,18 +57,18 @@
     &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
     &quot;npm.dev.executor&quot;: &quot;Run&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/mac/wkspaces/bucurieindar/node_modules/typescript/lib&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\fabia\\wkspaces\\bucurieindar\\node_modules\\typescript\\lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
     &quot;rider.external.source.directories&quot;: [
-      &quot;/Users/mac/Library/Application Support/JetBrains/Rider2023.3/resharper-host/DecompilerCache&quot;,
-      &quot;/Users/mac/Library/Application Support/JetBrains/Rider2023.3/resharper-host/SourcesCache&quot;,
-      &quot;/Users/mac/.local/share/Symbols/src&quot;
+      &quot;C:\\Users\\fabia\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\fabia\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\fabia\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.dev">
     <configuration name="dev" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -100,6 +107,8 @@
       <workItem from="1711069085021" duration="599000" />
       <workItem from="1711094114013" duration="7602000" />
       <workItem from="1711134107306" duration="4979000" />
+      <workItem from="1711199053495" duration="626000" />
+      <workItem from="1711199698918" duration="3590000" />
     </task>
     <servers />
   </component>

@@ -97,14 +97,14 @@ const projectsData : ProjectType[] = [
         other_images: [
             {title: '1', image: imagesPath + 'fam11.jpeg'},
             {title: '2', image: imagesPath + 'fam10.jpeg'},
-            {title: '3', image: imagesPath + 'fam8.jpeg'},
-            {title: '4', image: imagesPath + 'fam7.jpeg'},
-            {title: '5', image: imagesPath + 'fam6.jpeg'},
-            {title: '6', image: imagesPath + 'fam5.jpeg'},
-            {title: '7', image: imagesPath + 'fam4.jpeg'},
-            {title: '8', image: imagesPath + 'fam3.jpeg'},
-            {title: '9', image: imagesPath + 'fam2.jpeg'},
-            {title: '10', image: imagesPath + 'fam1.jpeg'}
+            {title: '3', image: imagesPath + 'fam9.jpeg'},
+            {title: '4', image: imagesPath + 'fam8.jpeg'},
+            {title: '5', image: imagesPath + 'fam7.jpeg'},
+            {title: '6', image: imagesPath + 'fam6.jpeg'},
+            {title: '7', image: imagesPath + 'fam5.jpeg'},
+            {title: '8', image: imagesPath + 'fam2.jpeg'},
+            {title: '9', image: imagesPath + 'fam1.jpeg'},
+            {title: '10', image: imagesPath + 'fam12.jpeg'}
         ],
         other_videos: [],
         translation_key: 'ADOPT_A_FAMILY',

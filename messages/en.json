@@ -26,19 +26,19 @@
     "ACTIVITIES": {
       "FIRST": {
         "TITLE": "Meals",
-        "DESCRIPTION": "offered to people in need."
+        "DESCRIPTION": "for those in need." 
       },
       "SECOND": {
         "TITLE": "Non-perishable",
         "DESCRIPTION": "items donated until now."
       },
       "THIRD": {
-        "TITLE": "Hygene",
+        "TITLE": "Hygiene",
         "DESCRIPTION": "products gifted."
       },
       "FOURTH": {
-        "TITLE": "People helped",
-        "DESCRIPTION": "so far, and counting."
+        "TITLE": "Clothing",
+        "DESCRIPTION": "for the ones in need."
       }
     }
   },
@@ -149,17 +149,16 @@
       "TITLE": "Adopt a family",
       "DESCRIPTION": "Help at least one of our small and large friends, young or old. Dear people, you have the opportunity to adopt a family to take care of, helping them in their needs and helplessness. Any help, no matter how small, is welcome. Call us to provide you with their contact details. Ensure what you can from the needs of a disadvantaged family: a medicine or a box of milk powder, basic food items, a notebook or a pencil for a student, are things that, unfortunately, some cannot afford on a constant basis. We make the cases known to you, and you choose the family you wish to visit and help in the medium or long term.",
       "PHOTOS": {
-        "1": "Test1",
-        "2": "Test2",
-        "3": "Test3",
-        "4": "Test4",
-        "5": "Test5",
-        "6": "Test6",
-        "7": "Test7",
-        "8": "Test8",
-        "9": "Test9",
-        "10": "Test10",
-        "11": "Test11"
+        "1": "This family consists of four members: the mother, the grandfather, and the two children, Ionuț, 14 years old, in 6th grade, who attended a special school in Bragadiru, and Iulian, 8 years old, in 2nd grade, who studies at the school in the Plătărești commune. The boy Ionuț, 14 years old, has serious health problems and numerous surgeries. The main diagnosis - mixed specific developmental disorders. Secondary diagnosis: operated sacral myelomeningocele, internal hydrocephalus, bilateral convex foot, skeletal dysplasia, microcephaly, detected left frontal focus, scoliotic posture, divergent strabismus, hypermetropic astigmatism, severe mental retardation, decubitus ulceration of the right foot sole, agenesis of the left fm1 finger, weight stature hypotrophy, nutritional difficulties, hypovitaminosis. The child receives a disability pension, and the mother has a caretaker, she cannot go to work because she needs to be with Ionuț 24 hours a day. Ionuț wears size 6 Pampers due to his issues and attended a special school in Bragadiru. Now, due to the surgery at the beginning of the year and his frail health condition, he is temporarily at home. They need help for Ionuț's treatment, food, Pampers, clothes, and school supplies for him and his brother.",
+        "2": "The family consists of five members: the mother, the father, and the three children, Alex, 11 years old, in 6th grade, Ștefan, 10 years old, in 4th grade, Nicol, 5 years old, kindergarten. They live in a 4 square meter room with their parents in the maternal grandmother's house. A few years ago, they saved some money, and last year God helped them to build a small house, but they have not moved because they still have a lot to finish on it. They had to make many sacrifices to be able to build the house. The father works on construction sites, and the mother as a janitor in apartment buildings, without a work contract. The children go to school daily, are educated, clean, and well cared for.",
+        "3": "A family consisting of eight members: the father, the mother, the grandmother, and the five children, plus the mother is pregnant again. All the children go to school, have very good grades, are educated, well-behaved, obedient, children who help their parents with household chores. The father goes to cut reeds, which are used for crowns and are cut from the reed beds, from a lake. When the children come home from school and their father is gone to the reed beds to cut reeds, they go and help him to take it out. They also receive social assistance, which is their only income. Their house consists of two livable rooms, one where the parents sleep, and the other where the children sleep. There is also an unfinished room. Despite their minimal situation, they are very clean, educated, hard-working. The children need all the necessities, clothing, shoes, school supplies, food, any help is welcome. As you can see in the pictures above, they don't have ceilings in the house's hallway, only the rafters and the tin roof are visible.",
+        "4": "The family consists of six members: the parents and the four children. In this picture, there is also a grandchild who lives with them in the yard. The four children are Viorel, 9 years old, in 2nd grade, Maria, 10 years old, in 2nd grade, Cătălina, 4 years old, kindergarten, and Andreea, 5 years old, kindergarten. The house they live in consists of two rooms, one livable and one unfinished. The children Viorel and Maria are deaf-mute, they need check-ups and hearing aids. All go to a normal school in the Plătărești commune, where they live. School is very difficult for the children because they cannot hear what the teachers are saying, and some hearing aids would be of great help. Only the father works, and Viorel and Maria also have disability pensions. Beautiful children, but with so many problems and such a modest house.",
+        "5": "The family consists of five members: the mother, the father, and the three children, Andrei, 9 years old, in 2nd grade, more? 8 years old, in 1st grade, Darius, 5 years old, kindergarten. The family's only income is the father's salary, who works at a sanitation company. The mother is a homemaker, taking care of the children, who go to school and have very good grades. They have a modest house and many needs. The father has a hand injury from an accident, but he keeps going for the children, to provide them with the bare necessities.",
+        "6": "Mrs. Ionela Tănase is 36 years old, divorced, and has two children, Ștefan, 11 years old, in 5th grade, and Diana, 8 years old, in 2nd grade. The family lives with the maternal grandparents. Ștefan, due to some problems he had when he was very young, wears a hearing aid, and Diana is undergoing treatment for a passing depression. Even though they have problems, the children go to school and have high grades. The children periodically visit their father. They struggle a lot, but the mother tries her best to provide them with the bare necessities.",
+        "7": "These are the children of the Androne family. This family consists of five members: the mother, the father, and the three children, Mario, 13 years old, in 6th grade, Mihai, 4 years old, kindergarten, Eric, 3 years old, kindergarten. The only income of this family is the husband's salary, which is not full due to garnishments for unpaid loans. Trying to be a good person, he co-signed loans at the Credit Union for other people, but unfortunately, those people turned their backs and did not pay, and as you know, the co-signer remains to pay in place of the debtor. The house they live in has two livable rooms and a small unfinished room. The house they live in belongs to the great-grandmother, and there, both the father of the Androne children and a cousin of theirs have rights, so the house is split in half. The children go to school and kindergarten, and the mother takes care of the little ones, the house, and the household. The mother no longer works because she needs to take care of the children.",
+        "8": "The family consists of three adult members. Toma Maria, a retiree, Țincu Mirel, a person with a disability, Matei Lică, a person with a disability. Ms. Toma Maria is the mother of Țincu Mirel and the sister of Matei Lică. Mirel and Lică both receive a disability pension, Mirel grade 1- 600 RON, Lică grade 2 - 400 RON, and Ms. Toma Maria is retired and has a pension of 1250 RON. They have a house made of three rooms, roofed with cardboard, and it rains inside on rainy days. A large part of their money goes to bills, treatment, etc.",
+        "9": "The family consists of four members: the mother and the three children. The boy in the picture above is the youngest of the house. The three children are Emil, 17 years old, in 11th grade, George, 15 years old, in 5th grade, and Ștefan, 11 years old, in 4th grade. Last year, the family went through a great loss, the father of the children died at the age of 36 in an accident. They were left with only tears, pain, and three wonderful children, with an exemplary mother, and many needs. The children go to school, have very good grades, especially Emil, the 17-year-old boy, who wants a good career to help his mother and brothers. He wants to be the pillar of the house, to be relied upon by the other members and to help as much as he can. The mother works at a cleaning company where she earns a net salary of 2200 RON and 600 RON meal vouchers, out of which 1100 have garnishments from the bank. The children receive a survivor's pension, amounting to 3000 RON. It's hard for them with bills from Enel, water, sewage, internet, TV, the mother's train transportation, food, clothes, school supplies, etc.",
+        "10": "A 60-year-old widow, suffering from uterine cancer. Operated in 2020, health condition: abdominal pains, unhealed wound in the operation area (4 years), back pains, blood pressure issues. The only income 1200 lei: Bills (Enel, gas cylinder, tv), treatment, the greatest need is for food, she lives alone."
       }
     },
     "HELP_A_COMMUNITY": {

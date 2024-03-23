@@ -26,19 +26,19 @@
     "ACTIVITIES": {
       "FIRST": {
         "TITLE": "Porții de hrană",
-        "DESCRIPTION": "oferite persoanelor nevoiașe."
+        "DESCRIPTION": "pentru cei nevoiași."
       },
       "SECOND": {
-        "TITLE": "Alimente neperisabile",
+        "TITLE": "Neperisabile",
         "DESCRIPTION": "donate până acum."
       },
       "THIRD": {
-        "TITLE": "Produse de igienă",
+        "TITLE": "Produse igienă",
         "DESCRIPTION": "dăruite până acum."
       },
       "FOURTH": {
-        "TITLE": "Oameni ajutați",
-        "DESCRIPTION": "până acum, si continuăm."
+        "TITLE": "Îmbrăcăminte",
+        "DESCRIPTION": "celor în nevoie."
       }
     }
   },
@@ -139,17 +139,16 @@
       "TITLE": "Adoptă o familie",
       "DESCRIPTION": "Ajută pe cel puțin unul dintre prietenii noștri mici și mari, tineri sau bătrâni. Oameni dragi, aveți posibilitatea să adoptați o familie de care să aveți grijă, ajutându-i în nevoile și neputințele lor. Orice ajutor, cât de puțin este binevenit. Sunați-ne pentru a vă oferi datele lor de contact. Asigură ce poți din nevoile unei familii defavorizate: un medicament sau o cutie de lapte praf, alimente de primă necesitate, un caiet sau un creion pentru un elev, sunt lucruri pe care, din păcate, unii nu și le pot permite în mod constant. Noi îți facem cunoscute cazurile, voi alegeți familia pe care doriți să o vizitați și să o ajutați pe termen mediu sau lung.",
       "PHOTOS": {
-        "1": "Test1",
-        "2": "Test2",
-        "3": "Test3",
-        "4": "Test4",
-        "5": "Test5",
-        "6": "Test6",
-        "7": "Test7",
-        "8": "Test8",
-        "9": "Test9",
-        "10": "Test10",
-        "11": "Test11"
+        "1": "Această familie este formată din patru membri, mama, bunicul și cei doi copii, Ionuț, în vârstă de 14 ani, clasa a VI-a, a învățat la o școala ajutătoare din Bragadiru, iar Iulian, 8 ani, clasa a II-a, învață la școala din comuna Plătărești. Băiețelul Ionuț, în vârstă de 14 ani, are probleme mari de sănătate și nenumărate operații. Diagnosticul principal - tulburări de dezvoltare specifice mixte. Diagnostic secundar: mielomeningocel sacrat operat, hidrocefalie internă, picior convex bilateral, displazie scheletală, microcefalie, focar frontal stâng decelat, atitudine scoliotică, strabism divergent, astigmatism hipermetropic, retard mental sever, ulcerație de decubitus plante picior drept, agenezia deget fm1 stâng, hipotrofie statură ponderală, dificultăți nutriționale, hipovitaminoză. Copilul beneficiază de pensie de handicap, iar mama de însoțitor, nu poate merge la serviciu deoarece trebuie să fie alături de Ionuț 24 de ore din 24. Ionuț poartă Pampers numărul 6 din cauza problemelor pe care le are și a mers la o școală ajutătoare din Bragadiru. Acum din cauza operației de la începutul anului și a stării de sănătate șubrede este momentan acasă. Au nevoie de ajutor pentru tratamentul lui Ionuț, alimente, Pampers, hăinuțe, rechizite pentru el și fratele lui.",
+        "2": "Familia este formată din cinci membri, mama, tatăl și cei trei copii, Alex, 11 ani, clasa a VI-a, Ștefan, 10 ani, clasa a IV-a, Nicol, 5 ani, grădiniță. Trăiesc într-o cameră de 4 metri pătrați împreună cu părinții lor în casa bunicii materne. Cu câțiva ani din urmă au strâns niște bănuți și anul trecut Dumnezeu le-a ajutat  și și-au ridicat o căsuță, dar nu s-au mutat deoarece mai au foarte multe lucruri de terminat la ea. Au trebuit să facă multe sacrificii pentru a putea ridica căsuța. Tatăl lucrează pe șantier, iar mama ca femeie de serviciu la scări de bloc, fără carte de muncă. Copiii se duc zilnic la școală, sunt educați, curați și îngrijiți.",
+        "3": "O familie formată din opt membri, tatăl, mama, bunica și cei cinci copii, plus că mămica este din nou însărcinată. Copiii merg toți la școală, au note foarte bune, sunt educați, cuminți, ascultători, copii care își ajută părinții în treburile gospodăriei. Tatăl se duce la papură, se folosește pentru coroane și se taie de pe gârlă, de pe un lac. Copiii după ce vin de la școală și tatăl lor este plecat la gârlă pentru a tăia papură se duc și îl ajută pentru a o scoate afară. Ei mai beneficiază și de un ajutor social, acesta este singurul lor venit. Căsuța lor este formată din două camere locuibile, una în care dorm părinții, iar cealaltă în care dorm copiii. Mai este o cameră neterminată. Cu toate că situația lor este una minimă, sunt foarte curați, educați, muncitori. Copiii au nevoie de toate cele necesare, îmbrăcăminte, încălțăminte, rechizite, alimente, orice ajutor este bine venit. După cum puteți vedea în pozele de mai sus, nu au tavane la holul casei, se văd doar căpriorii și tabla.",
+        "4": "Familia este formată din șase membri, părinții și cei patru copii. În această poză este și un nepoțel care locuiește cu ei în curte. Cei patru copii sunt Viorel, 9 ani, clasa a II-a, Maria, 10 ani, clasa a II-a, Cătălina, 4 ani, grădiniță și Andreea, 5 ani, grădiniță. Căsuța în care locuiesc este formată din două camere, una locuibilă și una neterminată. Copiii Viorel și Maria sunt surdomuți, au nevoie de control și aparate auditive. Toți merg la o școală normală din comuna Plătărești, unde locuiesc. Copiilor le este foarte greu la școală, deoarece nu aud ce spun învățătorii, iar niște aparate auditive le-ar fi de mare ajutor. Lucrează doar tatăl, iar Viorel și Maria au și pensii cu grad de handicap. Copii frumoși, dar cu atâtea probleme și cu o căsuță atât de modestă.",
+        "5": "Familia este formată din cinci membri, mama, tatăl și cei trei copii, Andrei, în vârstă de 9 ani, clasa a II-a, mai? în vârstă de 8 ani, clasa întâi, Darius, 5 ani, grădiniță. Singurul venit al familiei este salariul tatălui, care lucrează la o firmă de salubritate. Mama este casnică, ocupându-se de copii, care merg la școală și au note foarte bune. Au o căsuță modestă și necesități multe. Tatăl lor are o problemă la mână în urma unui accident, dar merge mai departe pentru copii, pentru a le oferi strictul necesar.",
+        "6": "Doamna Ionela Tănase are 36 de ani, este divorțată și are doi copii, Ștefan, în vârstă de 11 ani, în clasa a V-a și Diana, în vârstă de 8 ani, clasa a II-a. Familia locuiește cu bunicii materni. Ștefan, din cauza unor probleme pe care le-a avut când era foarte mic, poartă aparat auditiv, iar Diana urmează tratament pentru o depresie trecătoare. Chiar dacă au probleme, copiii merg la școală și au note mari. Periodic copiii merg și la tatăl lor în vizită. Se descurcă foarte greu, dar mama încearcă din răsputeri să le ofere strictul necesar.",
+        "7": "Ei sunt copiii familiei Androne. Această familie este formată din cinci membri, mama, tatăl și cei trei copii, Mario, 13 ani, clasa a VI-a, Mihai, 4 ani, grădiniță, Eric, 3 ani, grădiniță. Singurul venit al acestei familii este salariul soțului, care nu este întreg, deoarece are și popriri din cauza ratelor neachitate. Încercând să fie un om bun a ajutat pe alți oameni fiind girant pentru CAR, dar din păcate oamenii i-au întors spatele și nu au mai plătit, iar după cum bine știți, girantul rămâne să plătească în locul creditorului. În căsuța în care locuiesc au două camere locuibile și o cameră mică neterminată. Căsuța în care locuiesc este a străbunicii, iar acolo are dreptul atât tatăl copiilor Androne, cât și un văr al lor, așa că căsuța este dată pe jumătate. Copiii sunt la școală și la grădiniță, iar mama se ocupă de copilași, de casă, de gospodărie. Mămica nu mai lucrează, deoarece trebuie să aibă grijă de copii.",
+        "8": "Familia este formată din trei membri adulți. Toma Maria, pensionară, Țincu Mirel, bolnav cu handicap, Matei Lică, bolnav cu handicap. Doamna Toma Maria este mama lui Țincu Mirel și sora lui Matei Lică. Mirel și Lică beneficiază amândoi de pensie pentru handicap, Mirel gradul 1- 600 RON, Lică gradul 2 - 400 RON, iar doamna Toma Maria este pensionară și are o pensie în valoare de 1250 RON. Au o casă formată din trei camere, învelită cu carton, în zilele ploioase înăuntru plouă. O mare parte din bani se duc pe facturi, tratament etc.",
+        "9": "Familia este formată din patru membri, mama și cei trei copii. Băiatul din imaginea de mai sus este mezinul casei. Cei trei copii sunt Emil, 17 ani, clasa a XI-a, George, 15 ani, clasa a V-a și Ștefan, 11 ani, clasa a IV-a. Familia a trecut anul trecut printr-o pierdere mare, tatăl copiilor a decedat la vârsta de 36 de ani în urma unui accident. Au rămas în urma lui doar lacrimi, durere și trei copii minunați, cu o mamă exemplară, și multe necesități. Copiii merg la școală, au note foarte bune, în special Emil, băiatul de 17 ani, își dorește o carieră bună pentru a-și ajuta mama și frații. Dorește să fie stâlpul casei, să se poată baza pe el ceilalți membri și să-i ajute atât cât va putea. Mama lucrează la o firmă de curățenie unde câștigă un salariu net de 2200 RON și 600 RON bonuri de masă, din care 1100 are popriri de la bancă. Copiii beneficiază de pensie de urmaș, în valoare de 3000 RON. Le este greu cu facturile de la Enel, apă, canalizare, internet, TV, transportul mamei cu trenul, alimente, hăinuțe, rechizite etc.",
+        "10": "Văduvă în vârstă de 60 ani, bolnavă de cancer de col uterin. Operată în 2020, starea sănătății: are dureri de burtă, rană nevindecată în zona operației (4 ani), dureri de coloană, probleme cu tensiunea. Singurul venit 1200 lei: Facturi (Enel, butelie, tv), tratament, nevoia cea mai mare este de alimente, trăiește singură."
       }
     },
     "HELP_A_COMMUNITY": {
