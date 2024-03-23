@@ -21,7 +21,9 @@ export function SfIoan(props: { disableBackground?: boolean }) {
             <Container size="md" className={classes.wrapper}>
                 <Center>
                     <div className={classes.roundedImageWrapper}>
-                        <Image src="/sfIoan.png" alt={t('IMAGE_ALT')} width={rem(280)} height={rem(280)} className={classes.image}/>
+                        <Image src="/sfIoan.png" alt={t('IMAGE_ALT')} 
+                               width={rem(280)} height={rem(280)} 
+                               className={classes.image} loading="lazy"/>
                     </div>
                 </Center>
                 <div className={classes.body}>

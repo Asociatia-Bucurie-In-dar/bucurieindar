@@ -11,7 +11,7 @@ export function HomeHero() {
         <div className={classes.root}>
             <div className={classes.background}>
                 <Image
-                    src="/hero3.png"
+                    src="/hero3.webp"
                     alt={"Background"}
                     style={{ objectFit: 'cover', objectPosition: 'center', width: '100%', height: '100%', position: 'absolute'}}
                     fetchPriority="auto" />

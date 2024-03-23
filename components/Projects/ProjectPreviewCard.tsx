@@ -34,7 +34,7 @@ export function ProjectPreviewCard(props: { project: ProjectType, title: string,
                     <Link {...linkProps}>
                         <Image src={props.project.image_path} 
                                height={200}
-                               loading={"lazy"}
+                               loading="lazy"
                             placeholder="blur"/>
                     </Link>
                 </CardSection>
@@ -50,6 +50,9 @@ export function ProjectPreviewCard(props: { project: ProjectType, title: string,
                 <Text fz="sm" c="dimmed" fw={500} lineClamp={4} component={Link} {...linkProps}>
                     {props.description}
                 </Text>
+                {/*<Text c="orange" fw={500} mt={3} component={Link} {...linkProps}>*/}
+                {/*    {commonT('SHOW_MORE')}*/}
+                {/*</Text>*/}
 
                 <Card padding={0} mt="sm" key={props.project.id}>
                     

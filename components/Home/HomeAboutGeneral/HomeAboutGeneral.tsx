@@ -21,7 +21,7 @@ export function HomeAboutGeneral() {
                     </div>
                 <Center>
                     <div className={classes.roundedImageWrapper}>
-                        <Image src="/portret.png" alt={t('IMAGE_ALT')} width={rem(250)} height={rem(250)}/>
+                        <Image src="/portret.png" alt={t('IMAGE_ALT')} width={rem(250)} height={rem(250)} loading="lazy"/>
                     </div>
                 </Center>
         </Container>
