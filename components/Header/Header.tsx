@@ -20,7 +20,6 @@ export function Header({ headerTranslations, locale }: { headerTranslations: any
     const pinned = useHeadroom({ fixedAt: 120 });
     const isDonateDisabled = pathname === headerTranslations.projects.link;
     
-
     const renderLinks = (links: any) => {
         return links.map((link: any) => {
             let isCurrent = pathname === link.link;
@@ -47,7 +46,7 @@ export function Header({ headerTranslations, locale }: { headerTranslations: any
     links.push({ label: headerTranslations.contact.label, link: headerTranslations.contact.link });
 
     const headerItems = renderLinks(links);
-    var headerZIndex = MyZIndexes.Header;
+    const headerZIndex = MyZIndexes.Header;
 
     return (
         <header className={classes.header} style={{
@@ -80,7 +79,7 @@ export function Header({ headerTranslations, locale }: { headerTranslations: any
                     </Group>
                     <Group hiddenFrom="sm">
                         <ConfettiButton text={headerTranslations.donate} disabled={isDonateDisabled}/> 
-                        <Burger opened={drawerOpened} onClick={toggleDrawer} size="sm" />
+                        <Burger opened={drawerOpened} onClick={toggleDrawer} size="sm" aria-label={headerTranslations.burgerMenuLabel}/>
                     </Group>
                 </div>
             </Container>

@@ -42,6 +42,7 @@ export function HomeFeeding() {
             <Text className={classes.title}>{stat.title}</Text>
             <Text className={classes.description} fw={500}>{stat.description}</Text>
             <Progress animated value={stat.progress} mt="md" size="lg" radius="xl"
+                      aria-label={stat.title}
                       classNames={{
                           root: classes.progressTrack,
                           section: classes.progressSection,

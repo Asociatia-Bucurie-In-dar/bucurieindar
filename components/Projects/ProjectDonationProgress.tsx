@@ -49,6 +49,7 @@ export function ProjectDonationProgress (props :{id: string, goalAmount: number,
             {currentAmount.toLocaleString()} EUR / {props.goalAmount.toLocaleString()} EUR
         </Text>
         <Progress animated value={progressValue} mt="sm" size="lg" radius="xl"
+                  aria-label="{currentAmount} / {props.goalAmount} EUR"
                   classNames={{
                       root: classes.progressTrack,
                       section: classes.progressSection,
