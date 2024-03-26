@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="32e33542-bd06-42e3-bf1b-3883da34adf9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.bucurieindar.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.bucurieindar.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middleware.ts" beforeDir="false" afterPath="$PROJECT_DIR$/middleware.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,6 +102,8 @@
       <workItem from="1711199053495" duration="626000" />
       <workItem from="1711199698918" duration="10838000" />
       <workItem from="1711213836906" duration="183000" />
+      <workItem from="1711238322647" duration="914000" />
+      <workItem from="1711440039060" duration="342000" />
     </task>
     <servers />
   </component>
