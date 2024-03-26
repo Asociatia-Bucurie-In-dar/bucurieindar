@@ -28,10 +28,10 @@ export function Footer() {
                             </Link>
                         </Text>
                     </Title>
-                    <Text size="md" c="dimmed" className={classes.description} fw={500} mt={5} mb="md">
+                    <Text size="sm" c="dimmed" className={classes.description} fw={500} mt={5} mb="md">
                         {commonT('INDEPENDENT_NON_PROFIT')}
                     </Text>
-                    <Text size="sm" c="dimmed" className={classes.description} fw={500}>
+                    <Text size="md" c="dimmed" className={classes.description} fw={500}>
                         {heroT('MOTTO_FIRST_PART')}{' '}{heroT('MOTTO_SECOND_PART')}.
                     </Text>
                 </div>

@@ -24,7 +24,7 @@ export async function generateMetadata({children, params: {locale}}: { children:
             default: association,
             template: '%s | ' + association,
         },
-        description: heroT('MOTTO_FIRST_PART') + ' ' + heroT('MOTTO_SECOND_PART'),
+        description: commonT('ASSOCIATION_FULL') + ' ' + '(' + commonT('INDEPENDENT_NON_PROFIT') + ')' + ' - ' + heroT('MOTTO_FIRST_PART') + ' ' + heroT('MOTTO_SECOND_PART'),
     };
 }
 

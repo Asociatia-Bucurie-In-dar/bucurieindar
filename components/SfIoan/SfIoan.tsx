@@ -28,8 +28,9 @@ export function SfIoan(props: { disableBackground?: boolean }) {
                 </Center>
                 <div className={classes.body}>
                     <Center>
-                        <Title className={classes.titleBig} component={Link} {...linkProps}>
-                            {t('TITLE')} <IconExternalLink color="green"/>
+                        <Title className={classes.titleBig} >
+                                {/*component={Link} {...linkProps}>*/}
+                            {t('TITLE')} {/*<IconExternalLink color="green"/>*/}
                         </Title>
                     </Center>
                     {/*<Center>*/}
@@ -39,7 +40,8 @@ export function SfIoan(props: { disableBackground?: boolean }) {
                     {/*</Center>*/}
 
                     <Center>
-                        <Text fz="md" c="dimmed" fw={500} style={{textAlign: "center"}} component={Link} {...linkProps}>
+                        <Text fz="md" c="dimmed" fw={500} style={{textAlign: "center"}} >
+                               {/*component={Link} {...linkProps}>*/}
                             {t('DESCRIPTION')}
                         </Text>
                     </Center>
