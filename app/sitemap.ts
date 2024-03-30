@@ -30,15 +30,15 @@ function getUrlsOfLocale(localeAsString: string): { url: string, alternates: { h
     });
 
     // Add articles
-    const articles = GetAllArticlesStaticContent(99);
-    articles.forEach(x => {
-        const articleUrl = baseUrl + MyRoutePaths.Blog + "/" + x.slug;
-        const alternates = locales.map((loc) => {
-            const locPrefix = loc === defaultLocale ? "" : "/" + loc;
-            return { hreflang: loc, href: `https://bucurieindar.org${locPrefix}${MyRoutePaths.Blog }/${x.slug}` };
-        });
-        urls.push({ url: articleUrl, alternates });
-    });
+    // const articles = GetAllArticlesStaticContent(99);
+    // articles.forEach(x => {
+    //     const articleUrl = baseUrl + MyRoutePaths.Blog + "/" + x.slug;
+    //     const alternates = locales.map((loc) => {
+    //         const locPrefix = loc === defaultLocale ? "" : "/" + loc;
+    //         return { hreflang: loc, href: `https://bucurieindar.org${locPrefix}${MyRoutePaths.Blog }/${x.slug}` };
+    //     });
+    //     urls.push({ url: articleUrl, alternates });
+    // });
 
     return urls;
 }
