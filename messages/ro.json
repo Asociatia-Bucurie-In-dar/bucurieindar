@@ -166,10 +166,10 @@
   
   "PROJECTS_MORE": {
     "DONATE": "Donează",
-    "CARD_OPTION": "Card / Google Pay / Apple Pay",
-    "BANK_TRANSFER_OPTION": "Transfer bancar",
+    "CARD_OPTION": "Card",
+    "BANK_TRANSFER_OPTION": "Transfer Bancar",
     "DESIRED_AMOUNT": "Suma dorită",
-    "CONTINUE": "Continuare",
+    "CONTINUE": "Spre plată",
     "DONATE_FOR": "Donează pentru",
     "I_AGREE_TO_THE": "Sunt de acord cu",
     "TERMS_AND_CONDITIONS": "Termenii și Condițiile",
@@ -194,7 +194,7 @@
     },
     "WHY_WE_HELP": {
       "TITLE": "De ce să ajutăm?",
-      "DESCRIPTION": "Pentru că avem puterea să alegem ce facem cu timpul nostru, cu viața noastră. Moștenirea pe care o lăsăm copiilor noștri sunt faptele noastre, pe care le transmit și ei mai departe. Oameni buni, din această viață, plecăm doar cu faptele noastre. Voi, cei care veniți și ajutați, sacrificați din timpul vostru, din confortul și banii voștri unor oameni pe care nu-i cunoașteți. Ați ales să dăruiți din viața voastră aproapelui vostru. Aceasta este darul și el vine din iubire."
+      "DESCRIPTION": "Pentru că avem puterea să alegem ce facem cu timpul nostru, cu viața noastră. Moștenirea pe care o lăsăm copiilor noștri sunt faptele noastre, pe care le transmit și ei mai departe. Oameni buni, din această viață plecăm doar cu faptele noastre! Voi, cei ce veniți și ajutați, sunteți cei ce ați ales să sacrificați din timpul vostru, din confortul și banii voștri în favoarea unor oameni pe care nu-i cunoașteți. Ați ales să dăruiți din viața voastră aproapelui vostru. Aceasta este darul ‒ și el vine din iubire."
     }
   },
 

@@ -16,7 +16,15 @@ import { useDisclosure } from '@mantine/hooks';
 import {ProjectTranslationsType} from "@/utils/my-types";
 import Link from "next/link";
 import {MyRoutePaths} from "@/utils/route-paths";
-import {IconDownload} from "@tabler/icons-react";
+import {
+    IconArrowBigRight,
+    IconArrowRight, IconBounceRight,
+    IconBrandApple,
+    IconBrandGoogle,
+    IconBuildingBank, IconCaretRight, IconChevronRight, IconChevronsRight,
+    IconCreditCard, IconCreditCardPay,
+    IconDownload
+} from "@tabler/icons-react";
 // import {
 //     IconBrandApple,
 //     IconBrandGoogle,
@@ -166,9 +174,9 @@ export function DonatePopupButton(props: {projectId: string,
             <Divider mb={30} color="transparent"/>
             {/* CONTINUE BUTTON */}
             <Center>
-                <Button type="submit" variant="gradient" gradient={{from: 'green', to: 'green', deg: 60}} size="md"
+                <Button type="submit" variant="gradient" gradient={{from: 'green', to: 'lime', deg: 60}} size="md"
                         disabled={loading} mb="xs">
-                    {props.translations.Continue}
+                     {props.translations.Continue}<IconChevronRight style={{marginLeft:3}} size={20} stroke={2}/>
                 </Button>
             </Center>
         </>;
@@ -204,7 +212,26 @@ export function DonatePopupButton(props: {projectId: string,
                     <SegmentedControl
                         radius="xl"
                         size="md"
-                        data={[payOption1, payOption2]}
+                        fullWidth
+                        data={[
+                            {
+                                value: payOption1,
+                                label: (
+                                    <Center style={{ gap: 5 }}>
+                                        <IconCreditCard />
+                                        <span style={{fontWeight: '600'}}>{payOption1}</span>
+                                    </Center>
+                                )
+                            },
+                            {
+                                value: payOption2,
+                                label: (
+                                    <Center >
+                                        <span style={{fontWeight: '600'}}>{payOption2}</span>
+                                    </Center>
+                                )
+                            }
+                            ]}
                         defaultValue={payOption1}
                         classNames={classes}
                         onChange={(value) => setPayMethod(value)}
