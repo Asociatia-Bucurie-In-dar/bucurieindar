@@ -5,7 +5,7 @@ export const MyRoutePaths = {
     Projects: "/projects",
     About: "/about",
     Gallery: "/gallery",
-    Blog: "/blog",
+    // Blog: "/blog",
     Contact: "/contact",
     Terms: "/terms",
     Privacy: "/privacy",

@@ -2,7 +2,7 @@
   "COMMON":
   {
     "DONATE": "Donează",
-    "DONATE_NOW": "Donează Acum",
+    "DONATE_NOW": "Donează acum",
     "ASSOCIATION": "Bucurie în Dar",
     "ASSOCIATION_FULL": "Asociația Bucurie în Dar",
     "NON_PROFIT": "Organizație Nonguvernamentală",
@@ -18,12 +18,12 @@
   {
     "MOTTO_FIRST_PART": "Din această viață plecăm doar cu",
     "MOTTO_SECOND_PART": "faptele noastre",
-    "DESCRIPTION": "Suntem sprijin cu tot ce ne stă în putere, pentru cei care nu mai au pe cine să se sprijine. Misiunea noastră este să aducem bucurie acolo unde nu mai este, în inimile cât mai multor oameni, mari și mici, tineri și bătrâni, împreună cu voi."
+    "DESCRIPTION": "Îi sprijinim cu tot ce ne stă în putere pe cei ce nu mai au pe cine să se sprijine. Misiunea noastră este să aducem bucurie acolo unde nu mai este bucurie, în inimile cât mai multor oameni, mari și mici, tineri și bătrâni, împreună cu voi."
   },
   
   "HOME_ACTIVITY": {
-    "TITLE": "Activitatea noastră",
-    "DESCRIPTION": "Oameni dragi, toată activitatea noastră, toate bunurile, inclusiv existența acestei asociații vi se datorează vouă, sunt ale voastre, noi doar le folosim cu grijă, ințelepciune și într-un scop nobil. Așa că toate laudele și felicitările pe care ni le adresați le împărțim cu voi, pentru că noi fără voi nu am exista și unii fără alții nu am fi realizat nimic din tot ce am realizat!",
+    "TITLE": "Lucrarea noastră",
+    "DESCRIPTION": "Oameni dragi, toată lucrarea noastră, toate bunurile, inclusiv existența acestei asociații vi se datorează vouă, sunt ale voastre! Noi doar le folosim cu grijă, înțelepciune și într-un scop nobil. Așa că toate laudele pe care ni le adresați le împărțim cu voi, pentru că noi fără voi nu am exista, și unii fără alții nu am fi realizat nimic din tot ce am realizat!",
     "ACTIVITIES": {
       "FIRST": {
         "TITLE": "Porții de hrană",
@@ -45,25 +45,25 @@
   },
   
   "SAINT_JOHN": {
-    "TITLE": "Centrul Sf. Ioan Cel Milostiv",
+    "TITLE": "Centrul „Sf. Ioan Cel Milostiv”",
     "SUBTITLE": "pentru tratarea dependențelor",
-    "DESCRIPTION": "Împreună salvăm vieți, schimbăm destine, vindecăm suflete. Fiecare dintre noi am trecut cel puțin o dată în viață printr-o perioadă neagră din care nu mai știam cum să ieșim sau când se va termina. I-am văzut pe cei din familie, pe prieteni, pe oamenii dragi din viața nostră suferind și nu aveam cum să-i ajutăm. Cât de mult contează ajutorul oferit cu empatie, cu drag și dragoste. În acele momente ai nevoie de un sprijin și cred cu tărie că echipa Centrului Sf. Ioan Cel Milostiv se va strădui să aducă alinare, vindecare și să fie sprijin celor ce spun: \"Ajută-mă!\".",
+    "DESCRIPTION": "Împreună salvăm vieți, schimbăm destine, vindecăm suflete. Fiecare dintre noi am trecut cel puțin o dată în viață printr-o perioadă neagră, din care nu mai știam cum să ieșim. I-am văzut pe cei din familie, pe prieteni, pe oamenii dragi din viața nostră suferind și am înțeles atunci ce înseamnă o mână întinsă sau un umăr pe care să plângi. Cât de mult contează ajutorul oferit cu empatie, cu drag și dragoste! În astfel de momente, ai nevoie de un sprijin ‒ și cred cu tărie că echipa Centrului „Sf. Ioan Cel Milostiv” se va strădui să aducă alinare, vindecare și sprijin celor ce spun: „Ajută-mă!\".",
     "IMAGE_ALT": "Icoana Sfântul Ioan cel Milostiv"
   },
   
   "HOME_POTENTIAL": {
-    "TITLE": "Și ei sunt tot ai noștri",
-    "DESCRIPTION": "Am cunoscut sute de copii, unii dintre ei locuiesc la oraș, alții în sate, unii pe câmp sau în canale, sau suferă de cancer, leucemie sau forme grave de paralizie. DAR cu toții au același lucru în comun, sunt NEVINOVAȚI și își doresc cu toții același lucru, să fie iubiți, așa cum fiecare dintre noi își dorește. Ajutați-ne să îi ajutăm!",
+    "TITLE": "Și ei sunt tot ai noștri!",
+    "DESCRIPTION": "Am cunoscut sute de copii, unii dintre ei locuiesc la oraș, alții în sate, unii pe câmp sau în canale, unii sănătoși, alții suferinzi de cancer, leucemie sau forme grave de paralizie. DAR cu toții au ceva în comun: sunt NEVINOVAȚI și își doresc cu toții același lucru, să fie iubiți, așa cum fiecare dintre noi își dorește. Ajutați-ne să-i ajutăm!",
     "IMAGE_ALT": "Portretul unui copil"
   },
 
   "HOME_HELP": {
     "BADGE": "Ajută altfel",
     "TITLE": "Alte moduri de a ajuta",
-    "DESCRIPTION": "Există și alte moduri de a ajuta. Iată câteva modalități prin care poți contribui:",
+    "DESCRIPTION": "Există și alte moduri de a ajuta. Iată cum poți contribui:",
     "FIRST": {
       "TITLE": "Bunuri materiale",
-      "DESCRIPTION": "Donează îmbrăcăminte, alimente, medicamente, produse de igienă, cărți, jucării, mobilier, sau alte bunuri care pot fi de folos unor familii sau copii!"
+      "DESCRIPTION": "Donează îmbrăcăminte, alimente, medicamente, produse de igienă, cărți, jucării, mobilier sau alte bunuri care pot fi de folos unor familii sau copii!"
     },
     "SECOND": {
       "TITLE": "Formulare",
@@ -71,7 +71,7 @@
     },
     "THIRD": {
       "TITLE": "Voluntariat",
-      "DESCRIPTION": "Dacă ai timp liber și vrei să te implici, poți deveni voluntar și să ne ajuți în activitățile noastre. Fiecare ajutor contează!"
+      "DESCRIPTION": "Dacă ai timp liber și vrei să te implici, poți deveni voluntar ca să ne ajuți în activitățile noastre. Fiecare ajutor contează!"
     }
   },
   
@@ -122,28 +122,28 @@
     "DESCRIPTION": "Descoperă o parte dintre proiectele noastre și află cum poți să-i ajuți pe cei care au nevoie de tine.",
     "TABLE_OF_JOY": {
       "TITLE": "Masa Bucuriei",
-      "DESCRIPTION": "Ați fost în situația de a nu avea ce să mâncați, cel puțin o zi? Prin acest program, Masa bucuriei, oferim mâncare la mii de persoane. Oferă și tu o porție de mâncare unui om sărman și vei primi în schimb cel mai onest MULȚUMESC din viața ta. Pe cine ajutăm? Familii cu mulți copii, persoane fără venit, femei văduve, bolnave și care își cresc singure copiii, persoane nedeplasabile, adulți sau copii, copii asistați social, bătrâni singuri, oameni ai străzii. Ei postesc și când nu este post.",
-      "SECOND_DESCRIPTION": "NOTĂ: Într-un fel sau altul cu toții cerem câte ceva și cu toții avem nevoie de ajutor. Ajută-i cu o porție de mâncare!"
+      "DESCRIPTION": "Ați fost vreodată în situația de-a nu avea ce să mâncați, măcar o zi? Prin programul „Masa bucuriei”, oferim mâncare la mii de persoane. Dăruiește și tu o porție de mâncare unui om sărman și vei primi în schimb cel mai onest „MULȚUMESC!” din viața ta. Pe cine ajutăm? Familii cu mulți copii, persoane fără venit, femei văduve, bolnave sau mame singure, persoane imobilizate, adulți sau copii, copii asistați social, bătrâni singuri, oameni ai străzii. Ei postesc și când nu este post.",
+      "SECOND_DESCRIPTION": "Într-un fel sau altul cu toții cerem câte ceva și cu toții avem nevoie de ajutor. Ajută-i cu o porție de mâncare!"
     },
     "LOVE_AND_MEDICINE": {
       "TITLE": "Dragoste & medicamente",
-      "DESCRIPTION": "Vrei sa fim prieteni? Acești copii se hrănesc cu dragostea noastră și trăiesc cu medicamente. Ce nevoi au acești copii? Unii tratament, alții proteze, alții cărucior mobil sau operație. Ajută-i să nu mai aibă nevoie de tratament și să rămână doar cu dragostea și bucuria că s-au vindecat cu ajutorul oferit de tine. NOTĂ - banii obținuți din donații vor fi redirecționați doar in contul spitalului sau clinicii și, postarea facturilor/costurilor aferente pe site-ul Asociației Bucurie În Dar.",
-      "SECOND_DESCRIPTION": "NOTĂ: \"Dragostea îndelung rabdă; dragostea este binevoitoare, dragostea nu pizmuieşte, nu se laudă, nu se trufeşte. Dragostea nu se poartă cu necuviinţă, nu caută ale sale, nu se aprinde de mânie, nu gândeşte răul. Nu se bucură de nedreptate, ci se bucură de adevăr. Toate le suferă, toate le crede, toate le nădăjduieşte, toate le rabdă. Dragostea nu cade niciodată.\" - 1 Corinteni 13:4-8"
+      "DESCRIPTION": "Vrei sa fim prieteni? Acești copii se hrănesc cu dragostea noastră și trăiesc cu medicamente. Care sunt nevoile acestor copii? Unii au nevoie de tratament, alții de proteze, alții de cărucioare mobile sau operații. Ajută-i să nu scape de tratament și să rămână doar cu dragostea și bucuria că s-au vindecat datorită ajutorului oferit de tine. Banii obținuți din donații vor fi redirecționați doar în contul spitalului sau clinicii, iar noi vom posta facturile/costurile aferente pe site-ul Asociației Bucurie în Dar",
+      "SECOND_DESCRIPTION": "\"Dragostea îndelung rabdă; dragostea este binevoitoare, dragostea nu pizmuieşte, nu se laudă, nu se trufeşte. Dragostea nu se poartă cu necuviinţă, nu caută ale sale, nu se aprinde de mânie, nu gândeşte răul. Nu se bucură de nedreptate, ci se bucură de adevăr. Toate le suferă, toate le crede, toate le nădăjduieşte, toate le rabdă. Dragostea nu cade niciodată.\""
     },
     "SCHOOL_OF_JOY": {
       "TITLE": "Şcoala Bucuriei",
-      "DESCRIPTION": "Copiii ajutați azi sunt adulții educați de mâine. Educația este fundamentală. Iar prin susținerea și accesul acestor copii la educație, ajutați și comunitatea și susțineți aportul pe care ei îl vor aduce la rândul lor comunității și acestei țări. Prin ajutorul dumneavoastră acești copii vor descoperi lumea, o lume diferită de cea în care trăiesc acum. Prin ei te vei bucura și tu! De asemenea, cu toții știm că în România fenomenul bullying-ului a luat amploare, iar foarte mulți copii sunt victime. Noi credem că este mai ușor să previi decât să combați un fenomen și că împreună îi putem ajuta pe cei mici să aibă relații sănătoase cu semenii lor. Vă împărtășim proiectul de atelier „Școala bucuriei”, care pornește de la o poveste – „Inima ariciului. O aventură în căutarea prietenilor adevărați” (autor: Mariana Buric). Atelierul conține jocuri și activități care pot fi realizate cu copiii atât de cadre didactice, în grădinițe și în școli, dar și de părinți, acasă. Ne-am bucura dacă printre dumneavoastră sunt cadre didactice și părinți care vor să ni se alăture în acest proiect. Haideți să-i ajutăm pe cei mici să meargă cu drag la grădiniță sau la școală și să se bucure de prietenia semenilor lor. Din cei 300 de copii pe care îi susținem la școală cu ajutorul vostru, nici unul nu a abandonat școala!",
+      "DESCRIPTION": "Copiii ajutați azi sunt adulții educați de mâine. Iar prin susținerea accesului acestor copii la educație, ajutați și comunitatea și susțineți contribuția pe care o vor aduce ei, la rândul lor, la viața comunității și a acestei țări. Prin ajutorul dumneavoastră, acești copii vor descoperi lumea, o lume diferită de cea în care trăiesc acum. Prin ei te vei bucura și tu! De asemenea, cu toții știm că în România fenomenul bullying-ului a luat amploare, iar foarte mulți copii îi cad victime. Știm cu toții că e mai ușor să previi decât să combați, de aceea noi credem că împreună îi putem ajuta pe cei mici să aibă relații sănătoase cu semenii lor. Vă împărtășim proiectul de atelier „Școala bucuriei”, care pornește de la o poveste – „Inima ariciului. O aventură în căutarea prietenilor adevărați”, scrisă de Mariana Buric. Atelierul conține jocuri și activități care pot fi realizate cu copiii atât de cadre didactice, în grădinițe și în școli, cât și de părinți, acasă. Ne-am bucura dacă printre dumneavoastră sunt cadre didactice și părinți care vor să ni se alăture în acest proiect. Haideți să-i ajutăm pe cei mici să meargă cu drag la grădiniță și la școală, bucurându-se de prietenia semenilor lor. Din cei 300 de copii pe care îi susținem la școală cu ajutorul vostru, nici unul nu a abandonat școala!",
       "SECOND_DESCRIPTION": "NOTĂ: Nu-i lăsați să se piardă!"
     },
     "STREET_PEOPLE": {
       "TITLE": "Oameni ai străzii",
-      "DESCRIPTION": "Oameni ai străzii sau boschetari! Așa îi numim pe acești oameni și așa le spuneam și eu cândva, acum îi numesc prietenii mei, da, da, prietenii mei. Acești oameni care trăiesc pe străzi, unii dintre ei au fost profesori, intelectuali, alții prea buni cu copiii lor și dați afară din casă, unii ca urmare a decepțiilor, moartea copiilor, au ajuns sub cerul liber, dar sunt mai liberi decât mulți dintre noi. O parte dintre ei, abandonați în spital, crescuți în case de copii sau lăsați în voia sorții. De regulă nu te privesc în ochi când le dai de mâncare, lasă privirea în jos, dar când ajung să te privească și să îți mulțumească, să știi că este cel mai sincer mulțumesc primit de la un om și mare milostenie ai făcut în fața lui Dumnezeu! Oricând ni se poate schimba viața, să mulțumim pentru ce avem și să nu îi uitam. Ajutați voi prin noi. Împreună cu First Risponder, îi hrănim și îi tratăm medical pe cât ne stă în putere. Ajutați-ne să îi ajutăm!",
-      "SECOND_DESCRIPTION": "NOTĂ: \"Căci flămând am fost și nu Mi-ați dat să mănânc; însetat am fost și nu Mi-ați dat să beau; străin am fost și nu M-ați primit; gol, și nu M-ați îmbrăcat; bolnav și în temniță, și nu M-ați cercetat.\" - Matei 25:42-43"
+      "DESCRIPTION": "„Oamenii străzii” sau „boschetari”! Așa îi numim pe acești oameni și așa le spuneam și eu cândva. Acum îi numesc „prietenii mei” ‒ da, da, prietenii mei! Poate nu știați, dar unii dintre oamenii care trăiesc pe străzi au fost cândva profesori, intelectuali; alții au fost prea buni cu copiii lor, ajungând să fie dați afară din casă; alții în urma decepțiilor, a morții copiilor, au ajuns sub cerul liber, dar sunt mai liberi decât mulți dintre noi. O parte dintre ei din cauza problemelor psihice, alții au fost abandonați în spital, alții au crescut în case de copii sau au fost lăsați în voia sorții. De regulă, nu se uită în ochii tăi când le dai de mâncare, lasă privirea în jos, dar când ajung să te privească și să-ți mulțumească, să știi că este cel mai sincer „mulțumesc” pe care l-ai primit vreodată! Și mare milostenie ai făcut în fața lui Dumnezeu! Oricând ni se poate schimba și nouă viața, de aceea să mulțumim pentru ce avem și să nu-i uitam. Ajutați voi prin noi. Împreună cu „First Responder”, îi hrănim și îi tratăm medical pe cât ne stă în putere. Ajutați-ne să-i ajutăm!",
+      "SECOND_DESCRIPTION": "\"Căci flămând am fost și nu Mi-ați dat să mănânc; însetat am fost și nu Mi-ați dat să beau; străin am fost și nu M-ați primit; gol, și nu M-ați îmbrăcat; bolnav și în temniță, și nu M-ați cercetat.\""
     },
     "ADOPT_A_FAMILY": {
       "TITLE": "Adoptă o familie",
-      "DESCRIPTION": "Ajută pe cel puțin unul dintre prietenii noștri mici și mari, tineri sau bătrâni. Oameni dragi, aveți posibilitatea să adoptați o familie de care să aveți grijă, ajutându-i în nevoile și neputințele lor. Orice ajutor, cât de puțin este binevenit. Sunați-ne pentru a vă oferi datele lor de contact. Asigură ce poți din nevoile unei familii defavorizate: un medicament sau o cutie de lapte praf, alimente de primă necesitate, un caiet sau un creion pentru un elev, sunt lucruri pe care, din păcate, unii nu și le pot permite în mod constant. Noi îți facem cunoscute cazurile, voi alegeți familia pe care doriți să o vizitați și să o ajutați pe termen mediu sau lung.",
-      "SECOND_DESCRIPTION": "NOTĂ: Lăsați-ne un mesaj pentru a vă oferi datele de contact ale familiei pe care doriți să o ajutați.",
+      "DESCRIPTION": "Ajută măcar pe unul dintre prietenii noștri mici și mari, tineri sau bătrâni. Oameni dragi, aveți posibilitatea să adoptați o familie de care să aveți grijă, ajutându-i în nevoile și neputințele lor. Orice ajutor, oricât de puțin, este binevenit. Sunați-ne pentru a vă oferi datele lor de contact. Asigură ce poți din nevoile unei familii defavorizate: un medicament sau o cutie de lapte praf, alimente de primă necesitate, un caiet sau un creion pentru un elev, toate acestea sunt lucruri pe care, din păcate, nu toți și le pot permite în mod constant. Noi îți facem cunoscute cazurile, voi alegeți familia pe care doriți să o vizitați și să o ajutați pe termen mediu sau lung.",
+      "SECOND_DESCRIPTION": "Lăsați-ne un mesaj pentru a vă oferi datele de contact ale familiei pe care doriți să o ajutați.",
       "PHOTOS": {
         "1": "Această familie este formată din patru membri, mama, bunicul și cei doi copii, Ionuț, în vârstă de 14 ani, clasa a VI-a, a învățat la o școala ajutătoare din Bragadiru, iar Iulian, 8 ani, clasa a II-a, învață la școala din comuna Plătărești. Băiețelul Ionuț, în vârstă de 14 ani, are probleme mari de sănătate și nenumărate operații. Diagnosticul principal - tulburări de dezvoltare specifice mixte. Diagnostic secundar: mielomeningocel sacrat operat, hidrocefalie internă, picior convex bilateral, displazie scheletală, microcefalie, focar frontal stâng decelat, atitudine scoliotică, strabism divergent, astigmatism hipermetropic, retard mental sever, ulcerație de decubitus plante picior drept, agenezia deget fm1 stâng, hipotrofie statură ponderală, dificultăți nutriționale, hipovitaminoză. Copilul beneficiază de pensie de handicap, iar mama de însoțitor, nu poate merge la serviciu deoarece trebuie să fie alături de Ionuț 24 de ore din 24. Ionuț poartă Pampers numărul 6 din cauza problemelor pe care le are și a mers la o școală ajutătoare din Bragadiru. Acum din cauza operației de la începutul anului și a stării de sănătate șubrede este momentan acasă. Au nevoie de ajutor pentru tratamentul lui Ionuț, alimente, Pampers, hăinuțe, rechizite pentru el și fratele lui.",
         "2": "Familia este formată din cinci membri, mama, tatăl și cei trei copii, Alex, 11 ani, clasa a VI-a, Ștefan, 10 ani, clasa a IV-a, Nicol, 5 ani, grădiniță. Trăiesc într-o cameră de 4 metri pătrați împreună cu părinții lor în casa bunicii materne. Cu câțiva ani din urmă au strâns niște bănuți și anul trecut Dumnezeu le-a ajutat  și și-au ridicat o căsuță, dar nu s-au mutat deoarece mai au foarte multe lucruri de terminat la ea. Au trebuit să facă multe sacrificii pentru a putea ridica căsuța. Tatăl lucrează pe șantier, iar mama ca femeie de serviciu la scări de bloc, fără carte de muncă. Copiii se duc zilnic la școală, sunt educați, curați și îngrijiți.",
@@ -159,8 +159,8 @@
     },
     "HELP_A_COMMUNITY": {
       "TITLE": "Ajută o comunitate",
-      "DESCRIPTION": "Suntem implicați în ajutorarea multor comunități, prieteni ai noștri spunem acum cu bucurie, sunt sute de familii, oameni minunați și mulți copii frumoși. Orice lucru bun aveți de oferit, cum ar fi alimente, medicamente (siropuri impotriva tusei, antifebrile, pamperși, etc), încălțăminte, îmbrăcăminte, produse de igienă și igienă intimă, jucării, electrocasnice, mobilier și alte bunuri, vă așteptăm în fiecare zi la cele două puncte de colectă situate la următoarele adrese: Supermarket La Cocoș, în interiorul magazinului. Adresa Sos. Vitan Bârzești 7A. Program luni - sâmbătă 07.30 – 20.30, duminică 07.30 – 18-30. Sau Str. Poteraș nr. 14, în intervalul orar 09.00 – 16.00. Pentru cantități mai mari de produse și bunuri, vă rugăm să ne contactați la telefon.",
-      "SECOND_DESCRIPTION": "NOTĂ: Banii care sunt strânși din donații, ii folosim pentru a cumpăra medicamente pentru copii și adulți. Ex. Nurofen, Panadol, creme cicatrizante, ceaiuri, pansamente, pamperși, ochelari de vedere și multe altele: Produse de igienă și mai ales de igienă intimă. Cunoaștem copile minunte și frumoase care au mare nevoie de aceste bunuri. Lemne pentru foc, butelii, sobe și alte multe bunuri imperios necesare. Vă mulțumim!"
+      "DESCRIPTION": "Suntem implicați în ajutorarea multor comunități. Prietenii noștri sunt sute de familii, oameni minunați și mulți copii frumoși. Orice lucru bun aveți de oferit ‒ alimente, medicamente (siropuri împotriva tusei, antifebrile, pamperși etc.), încălțăminte, îmbrăcăminte, produse de igienă și igienă intimă, jucării, electrocasnice, mobilier și alte bunuri. Vă așteptăm în fiecare zi la cele două puncte de colectă situate la următoarele adrese: Supermarket „La Cocoș”, în interiorul magazinului, Șoseaua Vitan Bârzești 7A, de Luni-Sâmbătă 07.30 – 20.30, Duminică 07.30 – 18-30) SAU la sediul nostru din Str. Poterași nr. 14, în intervalul orar 09.00 – 16.00. Pentru cantități mai mari de produse sau bunuri, vă rugăm să ne contactați la telefon.",
+      "SECOND_DESCRIPTION": "Banii strânși din donații sunt folosiți pentru a cumpăra medicamente pentru copii și adulți, creme cicatrizante, ceaiuri, pansamente, pamperși, ochelari de vedere, produse de igienă și mai ales de igienă intimă (cunoaștem copile minunate care au mare nevoie de aceste bunuri), lemne de foc, butelii, sobe și alte multe bunuri imperios necesare. Vă mulțumim!"
     }
   },
   
@@ -186,11 +186,11 @@
     "DESCRIPTION": "Cine suntem, ce facem și de ce să ajutăm.",
     "WHO_ARE_WE": {
       "TITLE": "Cine suntem?",
-      "DESCRIPTION": "Suntem voluntari care, după câțiva ani de activități umanitare, am înființat Asociația Bucurie în Dar, pentru a ajuta la o scară mai mare. Suntem oameni care trăiesc și pentru alții, nu doar pentru noi înșine. Cu ajutorul Bunului Dumnezeu și cu sprijinul vostru, într-o împreună lucrare, vrem să aducem bucurie în inimile multor oameni, mari și mici, tineri și bătrâni. Avem libertatea de a alege ce facem în această viață, iar noi am ales să ajutăm și o facem cu toata bucuria și cu toată dragostea. Dăruiește și tu bucurie, împreună cu noi."
+      "DESCRIPTION": "Suntem voluntari care, după câțiva ani de activități umanitare, am înființat Asociația „Bucurie în Dar” pentru a ajuta la o scară mai mare. Suntem oameni care trăiesc și pentru alții, nu doar pentru noi înșine. Cu ajutorul Bunului Dumnezeu și cu sprijinul vostru, într-o împreună lucrare, vrem să aducem bucurie în inimile multor oameni, mari și mici, tineri și bătrâni. Avem libertatea de a alege ce facem în această viață, iar noi am ales să ajutăm ‒ și o facem cu toata bucuria și cu toată dragostea. Dăruiește și tu bucurie, împreună cu noi!"
     },
     "WHAT_WE_DO": {
       "TITLE": "Ce facem?",
-      "DESCRIPTION": "Ascultăm poveștile de viață ale celor care sunt mai puțin importanți pentru o parte a societății. Suntem sprijin, cu tot ce ne stă în putere, pentru cei care nu mai au pe cine să se sprijine. Îi ajutăm pe cei care strigă: ajutați-ne! Alege să ajuți împreună cu noi! Este atât de simplu. Doar alege."
+      "DESCRIPTION": "Ascultăm poveștile de viață ale celor care sunt mai puțin importanți în ochii unei părți din lume. Îi sprijinim, cu tot ce ne stă în putere, pe cei ce nu mai au pe cine să se sprijine. Îi ajutăm pe cei care strigă: „Ajutați-mă!”. Alege să ajuți împreună cu noi! Este atât de simplu. Nu trebuie decât să vrei."
     },
     "WHY_WE_HELP": {
       "TITLE": "De ce să ajutăm?",

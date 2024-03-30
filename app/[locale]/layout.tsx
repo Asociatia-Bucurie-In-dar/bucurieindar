@@ -39,7 +39,7 @@ export default function RootLayout({children, params: {locale}}: { children: Rea
         projects: { label: headerT('PROJECTS.LABEL'), link: headerT('PROJECTS.LINK') },
         about: { label: headerT('ABOUT.LABEL'), link: headerT('ABOUT.LINK') },
         gallery: { label: headerT('GALLERY.LABEL'), link: headerT('GALLERY.LINK') },
-        blog: { label: headerT('BLOG.LABEL'), link: headerT('BLOG.LINK') },
+        // blog: { label: headerT('BLOG.LABEL'), link: headerT('BLOG.LINK') },
         contact: { label: headerT('CONTACT.LABEL'), link: headerT('CONTACT.LINK') },
         donate: commonT('DONATE'),
         burgerMenuLabel: commonT('BURGER_MENU_LABEL')

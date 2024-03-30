@@ -42,7 +42,7 @@ export function Header({ headerTranslations, locale }: { headerTranslations: any
     links.push({ label: headerTranslations.projects.label, link: headerTranslations.projects.link });
     links.push({ label: headerTranslations.about.label, link: headerTranslations.about.link });
     links.push({ label: headerTranslations.gallery.label, link: headerTranslations.gallery.link });
-    links.push({ label: headerTranslations.blog.label, link: headerTranslations.blog.link });
+    // links.push({ label: headerTranslations.blog.label, link: headerTranslations.blog.link });
     links.push({ label: headerTranslations.contact.label, link: headerTranslations.contact.link });
 
     const headerItems = renderLinks(links);
@@ -70,7 +70,7 @@ export function Header({ headerTranslations, locale }: { headerTranslations: any
                     </Group>
                     
                     
-                    <Group h="100%" gap={5} visibleFrom="sm">
+                    <Group h="100%" gap="sm" visibleFrom="sm">
                         {headerItems}
                     </Group>
                     <Group visibleFrom="sm">

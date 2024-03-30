@@ -2,7 +2,7 @@
   "COMMON": 
   {
     "DONATE": "Donate",
-    "DONATE_NOW": "Donate Now",
+    "DONATE_NOW": "Donate now",
     "ASSOCIATION": "Bucurie în Dar (Gift of Joy)",
     "ASSOCIATION_FULL": "Bucurie în Dar (Gift of Joy) Association",
     "NON_PROFIT": "Nonprofit Organization",
@@ -18,12 +18,12 @@
   {
     "MOTTO_FIRST_PART": "From this life we leave only with",
     "MOTTO_SECOND_PART": "our deeds",
-    "DESCRIPTION": "We are support, with all our might, for those who have no one else to lean on. Our mission is to bring joy to the hearts of as many people as possible, both young and old, together with you."
+    "DESCRIPTION": "We support with all our power those who have no one else to rely on. Our mission is to bring joy where there is no more joy, in the hearts of as many people as possible, young and old, together with you."
   },
   
   "HOME_ACTIVITY": {
     "TITLE": "Our Activity",
-    "DESCRIPTION": "Dear people, all our activity, all assets, including the existence of this association are due to you, they are yours, we only use them carefully, wisely and for a noble purpose. So all the praise and congratulations on which you address to us, we share them with you, because without you we would not exist and without each other we would not have achieved anything of all that we have achieved!",
+    "DESCRIPTION": "Dear people, all our work and goods, including the existence of this association, are owed to you, they are yours! We just use them carefully, wisely, and for a noble purpose. So, all the praise you address to us, we share with you, because without you we would not exist, and without each other, we would have achieved none of what we have achieved!",
     "ACTIVITIES": {
       "FIRST": {
         "TITLE": "Meals",
@@ -45,25 +45,25 @@
   },
   
   "SAINT_JOHN": {
-    "TITLE": "Saint John The Merciful Center",
+    "TITLE": "\"St. John The Merciful\" Center",
     "SUBTITLE": "for addiction treatment",
-    "DESCRIPTION": "Together we save lives, change destinies, heal souls. Each of us has gone through a dark period at least once in our life from which we no longer knew how to get out or when it would end. We saw our family, friends, loved ones in our lives suffering and we had no way to help them. How much help is given with empathy, with affection and love. In those moments you need support and I strongly believe that the team of the St. John The Merciful Center will strive to bring relief, healing and be a support to those who will tell us: \"Help!\".",
+    "DESCRIPTION": "Together we save lives, change destinies, heal souls. Each of us has gone through a dark period at least once in life, from which we didn't know how to escape. We've seen family members, friends, loved ones in our life suffering, and then we understood what a helping hand or a shoulder to cry on means. How much the help offered with empathy, with care and love, counts! In such moments, you need support - and I firmly believe that the team of the \"St. John the Merciful\" Center will strive to bring solace, healing, and support to those who say: \"Help me!\"",
     "IMAGE_ALT": "Icon of Saint John the Merciful Center"
   },
   
   "HOME_POTENTIAL": {
-    "TITLE": "They are also ours",
-    "DESCRIPTION": "I have met hundreds of children, some of them live in the city, others in the villages, some in the fields or in the canals, or suffer from cancer, leukemia or severe forms of paralysis. HOWEVER, they all have the same thing in common, they are INNOCENT, and they all want the same thing, to be loved, as each of us wants. Help us help them!",
+    "TITLE": "They are also ours!",
+    "DESCRIPTION": "We've met hundreds of children, some of them live in the city, others in villages, some in the fields or in channels, some healthy, others suffering from cancer, leukemia, or severe forms of paralysis. BUT they all have something in common: they are INNOCENT and all they want is the same thing, to be loved, just like each of us desires. Help us to help them!",
     "IMAGE_ALT": "Portrait of a child"
   },
 
   "HOME_HELP": {
     "BADGE": "HELP DIFFERENTLY",
     "TITLE": "Other ways of helping",
-    "DESCRIPTION": "There are other ways of helping. Here are some ways you can contribute:",
+    "DESCRIPTION": "There are other ways to help also. Here's how you can contribute:",
     "FIRST": {
       "TITLE": "Material goods",
-      "DESCRIPTION": "Donate clothing, food, medicine, hygiene products, books, toys, furniture, or other goods that could benefit families or children!",
+      "DESCRIPTION": "Donate clothes, food, medicines, hygiene products, books, toys, furniture, or other goods that can be useful to families or children!",
       "BUTTONS": [
         "Contact us"
       ]
@@ -92,7 +92,7 @@
   
   "OUR_TEAM": {
     "TITLE": "Our Team",
-    "DESCRIPTION": "Meet our team! We are passionate people when it comes to our work and we wish to bring a positive impact in the world.",
+    "DESCRIPTION": "Meet our team! We are people who are passionate about what we do and wish to bring a positive impact in the world.",
     "TEAM_MEMBERS": {
       "FIRST": { "NAME": "Alexandru Ionescu", "ROLE": "President" },
         "SECOND": { "NAME": "Andreea Constantinescu", "ROLE": "VP & Marketing coordinator" },
@@ -132,28 +132,28 @@
     "DESCRIPTION": "Discover some of our projects and find out how you can help those who need you.",
     "TABLE_OF_JOY": {
       "TITLE": "Table of Joy",
-      "DESCRIPTION": "Have you ever been in a situation where you had nothing to eat, for at least a day? Through this program, 'Meals of Joy', we offer food to thousands of people. You too can offer a meal to a needy person and in return, you will receive the most sincere THANK YOU of your life. Who do we help? Families with many children, people without income, widowed women, sick individuals raising their children alone, people with mobility issues, both adults and children, socially assisted children, lonely elderly, homeless people. They fast even when it is not the fasting season.",
-      "SECOND_DESCRIPTION": "NOTE: In one way or another, we all ask for something and we all need help. Help them with a portion of food!"
+      "DESCRIPTION": "Have you ever been in a situation where you had nothing to eat, even for a day? Through the 'Table of Joy' program, we provide food to thousands of people. Donate a meal to a needy person and you will receive in return the most sincere 'THANK YOU!' of your life. Whom do we help? Families with many children, people without income, widowed or sick women, single mothers, bedridden individuals, adults or children, children in foster care, lonely elderly, homeless people. They fast even when it's not the fasting season.",
+      "SECOND_DESCRIPTION": "In one way or another, all of us ask for something and we all need help. Help them with a portion of food!"
     },
     "LOVE_AND_MEDICINE": {
       "TITLE": "Love & medicine",
-      "DESCRIPTION": "Do you want to be friends? These children feed on our love and live on medicine. What needs do these children have? Some need treatment, others prostheses, others mobile cart or surgery. Help them to stop needing treatment and be left with only love and joy that they have healed with your help. NOTE - the money obtained from donations will only be redirected to the account of the hospital or clinic and the posting of related invoices/costs on the website of the Bucurie În Dar (Gift of Joy) Association.",
-      "SECOND_DESCRIPTION": " \"NOTE: 'Love is patient, love is kind. It does not envy, it does not boast, it is not proud. It does not dishonor others, it is not self-seeking, it is not easily angered, it keeps no record of wrongs. Love does not delight in evil but rejoices with the truth. It always protects, always trusts, always hopes, always perseveres. Love never fails.\" - 1 Corinthians 13:4-8"
+      "DESCRIPTION": "Do you want to be friends? These children feed on our love and live with medications. What are the needs of these children? Some need treatment, others need prostheses, others need mobile wheelchairs or surgery. Help them to not miss out on treatment and to remain only with the love and joy of having been cured thanks to the help you provided. The money obtained from donations will be redirected only to the account of the hospital or clinic, and we will post the invoices/costs on the website of the Bucurie În Dar (Gift of Joy) Association.",
+      "SECOND_DESCRIPTION": " \"'Love is patient, love is kind. It does not envy, it does not boast, it is not proud. It does not dishonor others, it is not self-seeking, it is not easily angered, it keeps no record of wrongs. Love does not delight in evil but rejoices with the truth. It always protects, always trusts, always hopes, always perseveres. Love never fails.\" - 1 Corinthians 13:4-8"
     },
     "SCHOOL_OF_JOY": {
       "TITLE": "School of Joy",
-      "DESCRIPTION": "The children helped today are the educated adults of tomorrow. Education is fundamental. And by supporting these children and their access to education, you also help the community and support the contribution they will bring to the community and to this country. With your help these children will discover the world, a world different from the one they live in now. Through them you will be happy too! Also, we all know that in Romania the phenomenon of bullying has increased, and many children are victims. We believe that it is easier to prevent than to fight a phenomenon and that together we can help the little ones to have healthy relationships with their peers. We share with you the workshops project \"School of Joy\", which starts from a story - \"The Heart of the Hedgehog\". An adventure in search of true friends\" (author: Mariana Buric). The workshop contains games and activities that can be done with children by teachers, in kindergartens and schools, but also by parents at home. We would be happy if among you there are teachers and parents who want to join us in this project. Let's help the little ones enjoy going to kindergarten or school and enjoy the friendship of their peers. Of the 300 children we support at school with your help, not one has dropped out of school!",
-      "SECOND_DESCRIPTION": "NOTĂ: Don't let them get lost!"
+      "DESCRIPTION": "The children helped today are the educated adults of tomorrow. By supporting these children's access to education, you're also helping the community and supporting the contribution they will, in turn, make to the life of the community and this country. With your help, these children will discover the world, a world different from the one they live in now. Through them, you will also find joy! Moreover, we all know that in Romania, the phenomenon of bullying has escalated, with many children falling victim to it. We all know it's easier to prevent than to combat, which is why we believe that together we can help the little ones to have healthy relationships with their peers. We share with you the workshop project \"School of Joy\", which starts from a story - \"The Hedgehog's Heart. An Adventure in Search of True Friends\", written by Mariana Buric. The workshop includes games and activities that can be carried out with children by teachers in kindergartens and schools, as well as by parents at home. We would be delighted if among you there are teachers and parents who want to join us in this project. Let's help the little ones look forward to going to kindergarten and school, enjoying the friendship of their peers. Of the 300 children we support in school with your help, not one has dropped out of school!",
+      "SECOND_DESCRIPTION": "Don't let them get lost!"
     },
     "STREET_PEOPLE": {
       "TITLE": "Street people",
-      "DESCRIPTION": "People of the street or bums! That's what we call these people and that's what I used to call them, now I call them my friends, yes, yes, my friends. These people who live on the streets, some of them were teachers, intellectuals, others were too good with their children and kicked out of the house, some as a result of disappointments, the death of children, they ended up under the open sky, but they are freer than many of us. Some of them, abandoned in the hospital, raised in children's homes or left to their own devices. They usually don't look you in the eye when you give them food, they look down, but when they get to look at you and thank you, know that it's the most sincere thank you received from a human and you've done a merciful deed before God! Whenever our life can change, let's be thankful for what we have and not forget them. You help through us. Together with the First Responder, we feed and treat them as best we can. Help us help them!",
-      "SECOND_DESCRIPTION": "NOTE: \"For I was hungry and you gave me something to eat, I was thirsty and you gave me something to drink, I was a stranger and you invited me in, I needed clothes and you clothed me, I was sick and you looked after me, I was in prison and you came to visit me.\" - Matthew 25:35-36"
+      "DESCRIPTION": "\"The homeless\" or \"vagrants\"! That's what we call these people, and that's what I used to call them too. Now I call them \"my friends\" - yes, yes, my friends! Perhaps you didn't know, but some of the people living on the streets were once teachers, intellectuals; others were too good to their children, ending up being thrown out of their homes; others, following disappointments, the death of their children, ended up under the open sky, but are freer than many of us. Some of them because of mental health issues, others were abandoned in hospitals, others grew up in orphanages or were left to fate. Usually, they don't look into your eyes when you give them food, they look down, but when they come to look at you and thank you, know that it is the most sincere \"thank you\" you have ever received! And you have done a great charity in the eyes of God! Our lives can change at any moment, so let's be thankful for what we have and not forget them. Help through us. Together with \"First Responder\", we feed them and provide medical treatment as much as we can. Help us to help them!",
+      "SECOND_DESCRIPTION": "\"For I was hungry and you gave me something to eat, I was thirsty and you gave me something to drink, I was a stranger and you invited me in, I needed clothes and you clothed me, I was sick and you looked after me, I was in prison and you came to visit me.\" - Matthew 25:35-36"
     },
     "ADOPT_A_FAMILY": {
       "TITLE": "Adopt a family",
-      "DESCRIPTION": "Help at least one of our small and large friends, young or old. Dear people, you have the opportunity to adopt a family to take care of, helping them in their needs and helplessness. Any help, no matter how small, is welcome. Call us to provide you with their contact details. Ensure what you can from the needs of a disadvantaged family: a medicine or a box of milk powder, basic food items, a notebook or a pencil for a student, are things that, unfortunately, some cannot afford on a constant basis. We make the cases known to you, and you choose the family you wish to visit and help in the medium or long term.",
-      "SECOND_DESCRIPTION": "NOTE: If you want the contact details of a family, please leave us a message!",
+      "DESCRIPTION": "Help at least one of our friends, young or old, big or small. Dear people, you have the opportunity to adopt a family to take care of, helping them in their needs and difficulties. Any help, no matter how small, is welcome. Call us to provide you with their contact details. Provide what you can for the needs of a disadvantaged family: a medication or a box of milk powder, basic food items, a notebook or a pencil for a student; all these are things that, unfortunately, not everyone can afford consistently. We make you aware of the cases, and you choose the family you wish to visit and help in the medium or long term.",
+      "SECOND_DESCRIPTION": "If you want the contact details of a family, please leave us a message!",
       "PHOTOS": {
         "1": "This family consists of four members: the mother, the grandfather, and the two children, Ionuț, 14 years old, in 6th grade, who attended a special school in Bragadiru, and Iulian, 8 years old, in 2nd grade, who studies at the school in the Plătărești commune. The boy Ionuț, 14 years old, has serious health problems and numerous surgeries. The main diagnosis - mixed specific developmental disorders. Secondary diagnosis: operated sacral myelomeningocele, internal hydrocephalus, bilateral convex foot, skeletal dysplasia, microcephaly, detected left frontal focus, scoliotic posture, divergent strabismus, hypermetropic astigmatism, severe mental retardation, decubitus ulceration of the right foot sole, agenesis of the left fm1 finger, weight stature hypotrophy, nutritional difficulties, hypovitaminosis. The child receives a disability pension, and the mother has a caretaker, she cannot go to work because she needs to be with Ionuț 24 hours a day. Ionuț wears size 6 Pampers due to his issues and attended a special school in Bragadiru. Now, due to the surgery at the beginning of the year and his frail health condition, he is temporarily at home. They need help for Ionuț's treatment, food, Pampers, clothes, and school supplies for him and his brother.",
         "2": "The family consists of five members: the mother, the father, and the three children, Alex, 11 years old, in 6th grade, Ștefan, 10 years old, in 4th grade, Nicol, 5 years old, kindergarten. They live in a 4 square meter room with their parents in the maternal grandmother's house. A few years ago, they saved some money, and last year God helped them to build a small house, but they have not moved because they still have a lot to finish on it. They had to make many sacrifices to be able to build the house. The father works on construction sites, and the mother as a janitor in apartment buildings, without a work contract. The children go to school daily, are educated, clean, and well cared for.",
@@ -169,7 +169,8 @@
     },
     "HELP_A_COMMUNITY": {
       "TITLE": "Help a community",
-      "DESCRIPTION": "We are involved in helping many communities, our friends we now say with joy, are hundreds of families, wonderful people, and many beautiful children. Whatever good thing you have to offer, such as food, medicine (cough syrups, fever reducers, diapers, etc.), footwear, clothing, personal hygiene and intimate hygiene products, toys, appliances, furniture, and other goods, we await you every day at the two collection points located at the following addresses: Supermarket La Cocoș, inside the store. Address Sos. Vitan Bârzești 7A. Hours Monday - Saturday 07:30 – 20:30, Sunday 07:30 – 18:30. Or Str. Poteraș nr. 14, between 09:00 – 16:00. For larger quantities of products and goods, please contact us by phone."
+      "DESCRIPTION": "We are involved in helping many communities. Our friends are hundreds of families, wonderful people, and many beautiful children. Any useful thing you have to offer - food, medicines (cough syrups, antipyretics, diapers, etc.), footwear, clothing, hygiene and intimate hygiene products, toys, appliances, furniture, and other goods. We look forward to seeing you every day at our two collection points located at the following addresses: Supermarket \"La Cocoș\", inside the store, Vitan Bârzești Road 7A, from Monday to Saturday 07:30 – 20:30, Sunday 07:30 – 18:30) OR at our headquarters on Poterași St. no. 14, between 09:00 – 16:00. For larger quantities of products or goods, please contact us by phone.",
+      "SECOND_DESCRIPTION": "NOTE: The funds raised from donations are used to purchase medicines for children and adults, healing creams, teas, dressings, diapers, eyeglasses, hygiene products, and especially intimate hygiene products (we know wonderful girls who are in great need of these goods), firewood, gas cylinders, stoves, and many other absolutely necessary goods. Thank you!"
     }
   },
 
@@ -195,11 +196,11 @@
     "DESCRIPTION": "Who we are, what we do, and why we do it.",
     "WHO_ARE_WE": {
       "TITLE": "Who are we?",
-      "DESCRIPTION": "We are volunteers who, after several years of humanitarian activities, founded the Bucurie în Dar (Gift of Joy) Association to help on a larger scale. We are people who live for others, not just for ourselves. With the help of The Good Lord and with your support, in a joint work, we want to bring joy to the hearts of many people, big and small, young and old. We have the freedom to choose what we do in this life, and we chose to help, and we do it with all the joy and love. Give joy too, together with us."
+      "DESCRIPTION": "We are volunteers who, after a few years of humanitarian activities, founded the Bucurie în Dar (Gift oj Joy) Association to help on a larger scale. We are people who live for others, not just for ourselves. With God's help and with your support, in a joint effort, we want to bring joy to the hearts of many people, both big and small, young and old. We have the freedom to choose what we do in this life, and we have chosen to help - and we do it with all our joy and all our love. Share joy with us too!"
     },
     "WHAT_WE_DO": {
       "TITLE": "What we do?",
-      "DESCRIPTION": "We listen to the life stories of those who are less important to a part of society. We are support, with everything in our power, for those who have no one left to lean on. We help those who shout: help us! Choose to help with us! It's that simple. Just choose."
+      "DESCRIPTION": "We listen to the life stories of those who are less important in the eyes of a part of the world. We support, with all our power, those who no longer have anyone to rely on. We help those who cry out: \"Help me!\" Choose to help along with us! It's so simple. You just have to want to."
     },
     "WHY_WE_HELP": {
       "TITLE": "Why we help?",

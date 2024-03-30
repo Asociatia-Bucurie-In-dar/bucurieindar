@@ -39,12 +39,12 @@ export function Footer() {
             <Divider color="transparent" mb="lg" />
             <Container size="md">
                 <Center>
-            <SimpleGrid cols={6}>
+            <SimpleGrid cols={5}>
                 {link(MyRoutePaths.Home, t('HOME.LABEL'))}
                 {link(MyRoutePaths.Projects, t('PROJECTS.LABEL'))}
                 {link(MyRoutePaths.About, t('ABOUT.LABEL'))}
                 {link(MyRoutePaths.Gallery, t('GALLERY.LABEL'))}
-                {link(MyRoutePaths.Blog, t('BLOG.LABEL'))}
+                {/*{link(MyRoutePaths.Blog, t('BLOG.LABEL'))}*/}
                 {link(MyRoutePaths.Contact, t('CONTACT.LABEL'))}
             </SimpleGrid>
                 </Center>

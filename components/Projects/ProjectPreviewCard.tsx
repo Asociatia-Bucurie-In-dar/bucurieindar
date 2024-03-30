@@ -11,6 +11,7 @@ import {useTranslations} from "next-intl";
 export function ProjectPreviewCard(props: { project: ProjectType, title: string, description: string} ) {
     const t = useTranslations('COMMON');
     const donateT = useTranslations('PROJECTS_MORE');
+    const headerT = useTranslations('HEADER');
     const donatePopupTranslations : ProjectTranslationsType = {
         Donate: donateT('DONATE'),
         CardOption: donateT('CARD_OPTION'),
@@ -24,8 +25,10 @@ export function ProjectPreviewCard(props: { project: ProjectType, title: string,
         PrivacyPolicy: donateT('PRIVACY_POLICY')
     };
     
+    const hrefPrefix = headerT('PROJECTS.LINK');
+    
     const linkProps = {
-        href: MyRoutePaths.Projects + '/' + props.project.slug
+        href: hrefPrefix + '/' + props.project.slug
     };
     
     return (
