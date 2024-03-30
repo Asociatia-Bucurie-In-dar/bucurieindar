@@ -29,7 +29,7 @@ export function BlogPostPreviewCard(props: { article: BlogArticleType }) {
                         {articleT('TITLE')}
                     </Text>
                     <Group wrap="nowrap" gap="xs">
-                        <Button variant="light">{t('READ_ARTICLE')}</Button>
+                        <Button variant="light">{t('READ_ARTICLE')}</Button> 
                     </Group>
                 </div>
             </Group>
