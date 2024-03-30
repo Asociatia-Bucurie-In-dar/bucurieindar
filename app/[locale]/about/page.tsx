@@ -94,7 +94,7 @@ export default function AboutPage( {params: {locale}} : {params: {locale: string
     </div>
           
 <Container size="full" className={commonClasses.darkerBackground}>
-          <Divider mt={division} my="sm" color="transparent" pt={25}/>
+          <Divider mt={division} my="sm" color="transparent" pt={10}/>
         
           <OurTeam />
 

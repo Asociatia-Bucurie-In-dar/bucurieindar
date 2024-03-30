@@ -1,11 +1,12 @@
 import classes from './HomeAboutGeneral.module.css';
 import {Container, Avatar, Title, Text, Divider, Center, Image, rem} from "@mantine/core";
 import {useTranslations} from "next-intl";
+import commonClasses from "@/utils/commonClasses.module.css";
 
 export function HomeAboutGeneral() {
     const t = useTranslations('HOME_POTENTIAL');
-    return <>
-        <Container size="lg" mt={35} mb={45} className={classes.wrapper}>
+    return <Container size="full" pt={35} pb={35} className={commonClasses.darkerBackground}>
+        <Container size="lg" className={classes.wrapper}>
                     <div className={classes.body}>
                         <Center>
                         <Title className={classes.titleBig} >
@@ -25,5 +26,5 @@ export function HomeAboutGeneral() {
                     </div>
                 </Center>
         </Container>
-    </>;
+    </Container>;
 }

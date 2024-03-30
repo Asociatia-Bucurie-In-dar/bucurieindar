@@ -131,7 +131,7 @@ export function HomeAboutProjects() {
     // </div>
 
     return (
-        <Container size="full" py="xl" className={commonClasses.darkerBackground}>
+        <Container size="full" pt="xl" pb={35}>
             <Container size="lg" mt="md">
                 <Group justify="center">
                     <Badge variant="gradient" size="lg" gradient={{from: 'yellow', to: 'orange', deg: -60}}>
