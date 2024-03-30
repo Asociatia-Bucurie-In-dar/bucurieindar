@@ -91,7 +91,9 @@
       "FIFTH": { "NAME": "Alina Cernea", "ROLE": "Asistent & coordonator principal" },
       "SIXTH": { "NAME": "Cristian Simionescu", "ROLE": "Specialist comunicare & relații publice" },
       "SEVENTH": { "NAME": "Evelin", "ROLE": "Asistent social principal" },
-      "EIGHTH": { "NAME": "Ovidiu Horațiu", "ROLE": "Doctor arhitect" }
+      "EIGHTH": { "NAME": "Ovidiu Horațiu", "ROLE": "Doctor arhitect" },
+      "NINTH": { "NAME": "Titus Necea", "ROLE": "Dezvoltator software" },
+      "TENTH": { "NAME": "Fabian Ghenof", "ROLE": "Dezvoltator software" }
     }
   },
 
@@ -133,7 +135,7 @@
     "SCHOOL_OF_JOY": {
       "TITLE": "Şcoala Bucuriei",
       "DESCRIPTION": "Copiii ajutați azi sunt adulții educați de mâine. Iar prin susținerea accesului acestor copii la educație, ajutați și comunitatea și susțineți contribuția pe care o vor aduce ei, la rândul lor, la viața comunității și a acestei țări. Prin ajutorul dumneavoastră, acești copii vor descoperi lumea, o lume diferită de cea în care trăiesc acum. Prin ei te vei bucura și tu! De asemenea, cu toții știm că în România fenomenul bullying-ului a luat amploare, iar foarte mulți copii îi cad victime. Știm cu toții că e mai ușor să previi decât să combați, de aceea noi credem că împreună îi putem ajuta pe cei mici să aibă relații sănătoase cu semenii lor. Vă împărtășim proiectul de atelier „Școala bucuriei”, care pornește de la o poveste – „Inima ariciului. O aventură în căutarea prietenilor adevărați”, scrisă de Mariana Buric. Atelierul conține jocuri și activități care pot fi realizate cu copiii atât de cadre didactice, în grădinițe și în școli, cât și de părinți, acasă. Ne-am bucura dacă printre dumneavoastră sunt cadre didactice și părinți care vor să ni se alăture în acest proiect. Haideți să-i ajutăm pe cei mici să meargă cu drag la grădiniță și la școală, bucurându-se de prietenia semenilor lor. Din cei 300 de copii pe care îi susținem la școală cu ajutorul vostru, nici unul nu a abandonat școala!",
-      "SECOND_DESCRIPTION": "NOTĂ: Nu-i lăsați să se piardă!"
+      "SECOND_DESCRIPTION": "Nu-i lăsați să se piardă!"
     },
     "STREET_PEOPLE": {
       "TITLE": "Oameni ai străzii",

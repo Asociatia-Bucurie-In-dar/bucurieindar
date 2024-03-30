@@ -101,7 +101,9 @@
         "FIFTH": { "NAME": "Alina Cernea", "ROLE": "Assistant & Principal coordinator" },
         "SIXTH": { "NAME": "Cristian Simionescu", "ROLE": "Communications & Public relations specialist" },
         "SEVENTH": { "NAME": "Evelin", "ROLE": "Principal social assistant" },
-        "EIGHTH": { "NAME": "Ovidiu Horațiu", "ROLE": "Doctor architect" }
+        "EIGHTH": { "NAME": "Ovidiu Horațiu", "ROLE": "Doctor architect" },
+        "NINTH": { "NAME": "Titus Necea", "ROLE": "Software developer" },
+        "TENTH": { "NAME": "Fabian Ghenof", "ROLE": "Software developer" }
     }
   },
   

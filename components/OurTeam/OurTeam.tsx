@@ -46,6 +46,16 @@ export function OurTeam() {
             avatar: '/team/5.png',
             name: t('TEAM_MEMBERS.EIGHTH.NAME'),
             job: t('TEAM_MEMBERS.EIGHTH.ROLE'),
+        },
+        {
+            avatar: '/team/6.jpeg',
+            name: t('TEAM_MEMBERS.NINTH.NAME'),
+            job: t('TEAM_MEMBERS.NINTH.ROLE'),
+        },
+        {
+            avatar: '/team/7.jpg',
+            name: t('TEAM_MEMBERS.TENTH.NAME'),
+            job: t('TEAM_MEMBERS.TENTH.ROLE'),
         }
     ];
     
@@ -66,7 +76,7 @@ export function OurTeam() {
     
     return (
         <Container mt={40} mb={55} size="full">
-            <Container className={classes.wrapper}>
+            <Container size="lg">
                 
                 <TitleWithDescription title={t('TITLE')} 
                                       description={t('DESCRIPTION')}/>
@@ -74,7 +84,7 @@ export function OurTeam() {
                 <Divider mt="xl" mb="sm" color="transparent" />
                 
                 <SimpleGrid
-                    cols={{ base: 2, sm: 4, md: 4 }}
+                    cols={{ base: 2, sm: 5, md: 5 }}
                     spacing={{ base: 'xl', md: 50 }}
                     verticalSpacing={{ base: 'xl', md: 50 }} className={classes.grid}
                 >
