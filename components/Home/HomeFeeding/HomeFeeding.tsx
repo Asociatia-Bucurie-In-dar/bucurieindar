@@ -50,7 +50,7 @@ export function HomeFeeding() {
         </div>
     ));
     return <>
-        <Container size="full" pt="xl">
+        <Container size="full" pt="xl" id="ourActivitySection">
         <Container size="lg" py="xl">
             
             <TitleWithDescription title={activityT('TITLE')} 

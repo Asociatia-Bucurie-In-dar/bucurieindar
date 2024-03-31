@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32e33542-bd06-42e3-bf1b-3883da34adf9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/components/CoolEffects/TeleportButton/TeleportButton.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/CoolEffects/TeleportButton/TeleportButton.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.bucurieindar.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.bucurieindar.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/OurTeam/OurTeam.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/OurTeam/OurTeam.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Home/Hero/HomeHero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/Hero/HomeHero.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Home/HomeFeeding/HomeFeeding.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/HomeFeeding/HomeFeeding.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Home/HomeProjects/HomeProjects.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/HomeProjects/HomeProjects.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/messages/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/messages/en.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/messages/ro.json" beforeDir="false" afterPath="$PROJECT_DIR$/messages/ro.json" afterDir="false" />
     </list>
@@ -37,31 +41,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "yarn",
-    "npm.dev.executor": "Run",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "/Users/mac/wkspaces/bucurieindar/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/mac/wkspaces/bucurieindar/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "/Users/mac/Library/Application Support/JetBrains/Rider2023.3/resharper-host/DecompilerCache",
-      "/Users/mac/Library/Application Support/JetBrains/Rider2023.3/resharper-host/SourcesCache",
-      "/Users/mac/.local/share/Symbols/src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;/Users/mac/Library/Application Support/JetBrains/Rider2023.3/resharper-host/DecompilerCache&quot;,
+      &quot;/Users/mac/Library/Application Support/JetBrains/Rider2023.3/resharper-host/SourcesCache&quot;,
+      &quot;/Users/mac/.local/share/Symbols/src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="dev" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
@@ -107,7 +111,8 @@
       <workItem from="1711238322647" duration="914000" />
       <workItem from="1711440039060" duration="342000" />
       <workItem from="1711479770837" duration="3995000" />
-      <workItem from="1711751058878" duration="25209000" />
+      <workItem from="1711751058878" duration="26540000" />
+      <workItem from="1711920800347" duration="2315000" />
     </task>
     <servers />
   </component>
@@ -124,7 +129,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/components/Footer/Footer.tsx</url>
           <line>27</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

@@ -11,7 +11,7 @@ export function HomeProjects() {
     const t = useTranslations('PROJECTS');
     
     return (
-        <Container size="full" className={commonClasses.darkerBackground} pt="sm" pb="sm">
+        <Container size="full" className={commonClasses.darkerBackground} pt="sm" pb="sm" id="projectsSection">
             
             <Divider mt="xl" color="transparent" />
             
