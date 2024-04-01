@@ -1,10 +1,9 @@
 import '@mantine/core/styles.css';
 import React from 'react';
-import { MantineProvider, ColorSchemeScript } from '@mantine/core';
 import { Header } from '@/components/Header/Header';
 import { Footer } from '@/components/Footer/Footer';
 import { ChatButton } from '@/components/ChatButton/ChatButton';
-import { theme } from '@/theme';
+import { createTheme, MantineProvider, rem, ColorSchemeScript } from '@mantine/core';
 import FirstTimeConfetti from "@/components/CoolEffects/FirstTimeConfetti";
 import {locales} from "@/middleware";
 import {getTranslations, unstable_setRequestLocale} from 'next-intl/server';
@@ -44,6 +43,23 @@ export default function RootLayout({children, params: {locale}}: { children: Rea
         donate: commonT('DONATE'),
         burgerMenuLabel: commonT('BURGER_MENU_LABEL')
     };
+    
+    const theme = createTheme({
+        colors: {
+            customDimmed: [
+                '#000000', // Lightest
+                '#000000',
+                '#000000',
+                '#000000', // Light
+                '#000000', 
+                '#000000', // Dark
+                '#677480', // Normal - this will be the primary 'dimmed' color
+                '#000000',
+                '#000000',
+                '#000000', // Darkest
+            ],
+        }
+    });
     
   return (
     <html lang={"ro"}>

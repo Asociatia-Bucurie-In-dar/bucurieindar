@@ -17,8 +17,8 @@ export function SfIoan(props: { disableBackground?: boolean }) {
     };
     
     return (
-        <Container className={props.disableBackground ? '' : commonClasses.darkerBackground} size="full" pt={0} pb={53}>
-            <Container size="md" className={classes.wrapper}>
+        <Container className={props.disableBackground ? '' : commonClasses.darkerBackground} size="full" pt={47} pb={47}>
+            <Container size="lg" className={classes.wrapper}>
                 <Center>
                     <div className={classes.roundedImageWrapper}>
                         <Image src="/sfIoan.png" alt={t('IMAGE_ALT')} 

@@ -5,7 +5,7 @@ import commonClasses from "@/utils/commonClasses.module.css";
 
 export function HomeAboutGeneral() {
     const t = useTranslations('HOME_POTENTIAL');
-    return <Container size="full" pt={35} pb={35} className={commonClasses.darkerBackground}>
+    return <Container size="full" pt={35} pb={35}>
         <Container size="lg" className={classes.wrapper}>
                     <div className={classes.body}>
                         <Center>

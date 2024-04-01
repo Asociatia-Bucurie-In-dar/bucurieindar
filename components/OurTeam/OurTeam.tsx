@@ -2,6 +2,7 @@ import {Avatar, Container, Divider, Group, SimpleGrid, Text, Title} from '@manti
 import classes from './OurTeam.module.css';
 import {TitleWithDescription} from "@/components/Common/TitleWithDescription";
 import {useTranslations} from "next-intl";
+import commonClasses from "@/utils/commonClasses.module.css";
 
 export function OurTeam() {
     const t = useTranslations('OUR_TEAM');
@@ -75,7 +76,7 @@ export function OurTeam() {
     });
     
     return (
-        <Container mt={40} mb={55} size="full">
+        <Container pt={40} pb={55} size="full" className={commonClasses.darkerBackground}>
             <Container size="lg">
                 
                 <TitleWithDescription title={t('TITLE')} 

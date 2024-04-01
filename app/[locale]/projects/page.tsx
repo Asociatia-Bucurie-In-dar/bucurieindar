@@ -5,6 +5,7 @@ import {ProjectPreviewCardsSlider} from "@/components/Projects/ProjectPreviewCar
 import {getTranslations, unstable_setRequestLocale} from "next-intl/server";
 import {SfIoan} from "@/components/SfIoan/SfIoan";
 import {useTranslations} from "next-intl";
+import {HomeAboutProjects} from "@/components/Home/HomeAboutProjects/HomeAboutProjects";
 
 export async function generateMetadata({params: {locale}}:{ params: { locale: string } }) {
     const t = await getTranslations({ locale, namespace: 'PROJECTS' });

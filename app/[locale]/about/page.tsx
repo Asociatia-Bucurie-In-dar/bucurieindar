@@ -93,13 +93,12 @@ export default function AboutPage( {params: {locale}} : {params: {locale: string
       </Container>
     </div>
           
-<Container size="full" className={commonClasses.darkerBackground}>
-          <Divider mt={division} my="sm" color="transparent" pt={10}/>
+          <Divider mt={division} my="sm" color="transparent"/>
         
           <OurTeam />
-
-          <Divider color="transparent" pb="xl"/>
-</Container>
+          <Container size="full" className={commonClasses.darkerBackground}>
+              <Divider pb="lg" color="transparent"/>
+          </Container>
       </>
   );
 }

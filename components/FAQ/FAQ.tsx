@@ -48,7 +48,7 @@ export function FAQ() {
     ));
     
     return (
-        <Container className={commonClasses.darkerBackground} size="full">
+        <Container size="full">
             <Container size="lg" className={classes.wrapper}>
                 <Grid id="faq-grid" gutter={50}>
                     <GridCol span={{ base: 12, md: 6 }}>

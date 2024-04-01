@@ -9,7 +9,7 @@
     padding: calc(var(--mantine-spacing-xl) * 2.5);
 
     @media (max-width: $mantine-breakpoint-sm) {
-        padding: calc(var(--mantine-spacing-xl) * 1.5);
+        padding: calc(var(--mantine-spacing-xl));
     }
 }
 
@@ -36,6 +36,10 @@
     padding: var(--mantine-spacing-xl);
     border-radius: var(--mantine-radius-md);
     box-shadow: var(--mantine-shadow-lg);
+
+    @media (max-width: $mantine-breakpoint-sm) {
+        padding: var(--mantine-spacing-sm);
+    }
 }
 
 .social {

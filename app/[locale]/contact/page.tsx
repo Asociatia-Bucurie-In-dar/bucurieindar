@@ -30,6 +30,8 @@ export default function ContactPage( {params: {locale}} : {params: {locale: stri
         Send: t('FORM.SEND'),
         Success: t('FORM.SUCCESS'),
         Error: t('FORM.ERROR'),
+        MaterialGoodsTitle: t('MATERIAL_GOODS.TITLE'),
+        MaterialGoodsDescription: t('MATERIAL_GOODS.DESCRIPTION'),
     };
         
     

@@ -18,8 +18,8 @@ export default function HomePage({params: {locale}}:{ params: { locale: string }
           <HomeHero/>
           <HomeFeeding/>
           <HomeProjects/>
-          <SfIoan/>
           <HomeAboutProjects/>
+          <SfIoan/>
           <HomeAboutGeneral/>
           <OurTeam/>
           <FAQ/>

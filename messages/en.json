@@ -267,6 +267,10 @@
   "CONTACT": {
     "TITLE": "Contact",
     "DESCRIPTION": "Contact us for any questions or suggestions.",
+    "MATERIAL_GOODS": {
+      "TITLE": "Material goods",
+      "DESCRIPTION": "Dear people, for donations of goods, food, hygiene products, medicine, clothing, shoes, toys and any other goods: You can find us every day, inside La Cocoș Supermarket, Monday - Friday 07:30 - 20:30 , Sunday 07:30 - 18:30 - Address: Road Vitan Bărzești-7A, Bucharest."
+    },
     "FORM": {
       "TITLE": "Contact us!",
       "DISCLAIMER": "Please call before visiting us. Thank you!",

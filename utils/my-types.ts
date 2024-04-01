@@ -61,6 +61,8 @@ export type ContactTranslationType = {
     Send: string;
     Success: string;
     Error: string;
+    MaterialGoodsTitle: string;
+    MaterialGoodsDescription: string;
 };
 
 export type GalleryVideo = {
