@@ -7,7 +7,7 @@ import {
     Button,
     Center,
     Divider,
-    Modal, NativeSelect, Text, TextInput, rem, SegmentedControl, Paper, UnstyledButton, Checkbox
+    Modal, NativeSelect, Text, TextInput, rem, SegmentedControl, Paper, UnstyledButton, Checkbox, Title
 } from "@mantine/core";
 import {Form} from "@storybook/components";
 import {MyZIndexes} from "@/utils/my-constants";
@@ -192,9 +192,18 @@ export function DonatePopupButton(props: {projectId: string,
     
     const forRevolut = <>
         <Paper withBorder p="lg" radius="md" shadow="md">
-            <Center>
-                <Text size="lg"><b>IBAN</b> - RO09BREL0005521824760100</Text>
-            </Center>
+            <span style={{fontSize: 30}}>🇷🇴</span>
+            <Text size="lg" ta="left"><b>IBAN</b> - RO09 BREL 0005 5218 2476 0100</Text>
+            <Divider mb="md" color="transparent"/>
+            <span style={{fontSize: 30}}>🌎</span>
+            <Text size="lg" ta="left"><b>IBAN</b> - LT89 3250 0480 7561 8520</Text>
+            <Text size="lg" ta="left"><b>BIC/SWIFT</b> -  REVOLT21</Text>
+            <Divider mb="xs" color="transparent"/>
+            <Text size="lg" ta="left">
+                Revolut Bank UAB <br/>
+                Konstitucijos ave. 21B, 08130, Vilnius, Lithuania<br/>
+                BIC bancă corespondentă: BARCGB22
+            </Text>
         </Paper>
     </>;
     
