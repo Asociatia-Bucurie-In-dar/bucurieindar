@@ -16,15 +16,7 @@ import { useDisclosure } from '@mantine/hooks';
 import {ProjectTranslationsType} from "@/utils/my-types";
 import Link from "next/link";
 import {MyRoutePaths} from "@/utils/route-paths";
-import {
-    IconArrowBigRight,
-    IconArrowRight, IconBounceRight,
-    IconBrandApple,
-    IconBrandGoogle,
-    IconBuildingBank, IconCaretRight, IconChevronRight, IconChevronsRight,
-    IconCreditCard, IconCreditCardPay,
-    IconDownload
-} from "@tabler/icons-react";
+import {IconBrandRevolut, IconBuildingBank, IconChevronRight, IconCreditCard} from "@tabler/icons-react";
 // import {
 //     IconBrandApple,
 //     IconBrandGoogle,
@@ -39,7 +31,8 @@ export function DonatePopupButton(props: {projectId: string,
     fullWidth?: boolean}) {
 
     const payOption1 = props.translations.CardOption;
-    const payOption2 = props.translations.BankTransferOption;
+    const payOption2 = 'Revolut';
+    const payOption3 = props.translations.BankTransferOption;
     
     const [loading, setLoading] = useState(false);
     const [badSum, setBadSum] = useState(true);
@@ -197,6 +190,14 @@ export function DonatePopupButton(props: {projectId: string,
         </Paper>
     </>;
     
+    const forRevolut = <>
+        <Paper withBorder p="lg" radius="md" shadow="md">
+            <Center>
+                <Text size="lg"><b>IBAN</b> - RO09BREL0005521824760100</Text>
+            </Center>
+        </Paper>
+    </>;
+    
     return <>
         <Modal opened={opened} onClose={close} withCloseButton={false} zIndex={MyZIndexes.DonateModal}
                size="auto" transitionProps={{ transition: 'slide-up' }}>
@@ -226,8 +227,18 @@ export function DonatePopupButton(props: {projectId: string,
                             {
                                 value: payOption2,
                                 label: (
-                                    <Center >
+                                    <Center style={{ gap: 5 }}>
+                                        <IconBrandRevolut />
                                         <span style={{fontWeight: '600'}}>{payOption2}</span>
+                                    </Center>
+                                )
+                            },
+                            {
+                                value: payOption3,
+                                label: (
+                                    <Center style={{ gap: 5 }}>
+                                        <IconBuildingBank />
+                                        <span style={{fontWeight: '600'}}>{payOption3}</span>
                                     </Center>
                                 )
                             }
@@ -239,7 +250,9 @@ export function DonatePopupButton(props: {projectId: string,
                     
                     <Divider mt="sm" mb="sm" color="transparent"/>
 
-                    {payMethod === payOption1 ? forCard : forBank}
+                    {payMethod === payOption1 ? forCard : null}
+                    {payMethod === payOption2 ? forRevolut : null}
+                    {payMethod === payOption3 ? forBank : null}
                     
                 </Form>
             </>

@@ -9,7 +9,7 @@
     "INDEPENDENT_NON_PROFIT": "Independent Nonprofit Organization",
     "NECESSARY_AMOUNT": "Necessary amount",
     "TONS": "Tons",
-    "SHOW_MORE": "Show more",
+    "SHOW_MORE": "Read more",
     "HIDE": "Hide",
     "BURGER_MENU_LABEL": "Open menu button"
   },
@@ -180,7 +180,7 @@
   "PROJECTS_MORE": {
     "DONATE": "Donate",
     "CARD_OPTION": "Card",
-    "BANK_TRANSFER_OPTION": "Bank Transfer",
+    "BANK_TRANSFER_OPTION": "Transfer",
     "DESIRED_AMOUNT": "Desired amount",
     "CONTINUE": "To Payment",
     "DONATE_FOR": "Donate to",

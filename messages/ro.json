@@ -9,7 +9,7 @@
     "INDEPENDENT_NON_PROFIT": "Organizație Nonguvernamentală Independentă",
     "NECESSARY_AMOUNT": "Suma necesară",
     "TONS": "Tone",
-    "SHOW_MORE": "Mai mult",
+    "SHOW_MORE": "Citeşte mai mult...",
     "HIDE": "Ascunde",
     "BURGER_MENU_LABEL": "Buton deschidere meniu"
   },
@@ -170,7 +170,7 @@
   "PROJECTS_MORE": {
     "DONATE": "Donează",
     "CARD_OPTION": "Card",
-    "BANK_TRANSFER_OPTION": "Transfer Bancar",
+    "BANK_TRANSFER_OPTION": "Transfer",
     "DESIRED_AMOUNT": "Suma dorită",
     "CONTINUE": "Spre plată",
     "DONATE_FOR": "Donează pentru",
