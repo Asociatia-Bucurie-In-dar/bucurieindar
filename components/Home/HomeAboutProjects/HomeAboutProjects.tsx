@@ -4,7 +4,7 @@ import {
     Card,
     SimpleGrid,
     Container,
-    rem, DEFAULT_THEME, Divider, Button,
+    rem, DEFAULT_THEME, Divider, Button, Spoiler,
 } from '@mantine/core';
 import {IconBasketHeart, IconUsersGroup, IconScript, IconDownload, IconExternalLink} from '@tabler/icons-react';
 import classes from './HomeAboutProjects.module.css';
@@ -20,6 +20,7 @@ const iconSize = 17;
 export function HomeAboutProjects() {
     const t = useTranslations('HOME_HELP');
     const headerT = useTranslations('HEADER');
+    const commonT = useTranslations('COMMON');
 
     const data = [
         {
@@ -102,10 +103,13 @@ export function HomeAboutProjects() {
                     >{link.title}{link.icon}</Button>
                 ))}
             </div>
-            
+
+            <Spoiler maxHeight={100} showLabel={commonT('SHOW_MORE')+ '...'} hideLabel={commonT('HIDE')}>
             <Text fz="sm" c="dimmed" mt="sm" fw={500}>
                 {feature.description}
             </Text>
+                {/* Content here */}
+            </Spoiler>
         </Card>
     ));
     
