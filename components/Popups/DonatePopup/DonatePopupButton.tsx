@@ -16,7 +16,7 @@ import { useDisclosure } from '@mantine/hooks';
 import {ProjectTranslationsType} from "@/utils/my-types";
 import Link from "next/link";
 import {MyRoutePaths} from "@/utils/route-paths";
-import {IconChevronRight} from "@tabler/icons-react";
+import {IconChevronRight, IconDots, IconDotsCircleHorizontal, IconMaximize} from "@tabler/icons-react";
 // import {
 //     IconBrandApple,
 //     IconBrandGoogle,
@@ -213,12 +213,14 @@ export function DonatePopupButton(props: {projectId: string,
                size="auto" transitionProps={{ transition: 'slide-up' }}>
             <>
                 <Form onSubmit={callDonateAPI}>
-                    <Center><Text size="lg">
-                        {props.translations.DonateFor} <b>{props.projectTile}</b>
-                    </Text></Center>
+                    <Center>
+                        <Text size="lg" ta="center">
+                            {props.translations.DonateFor} <br/><b>{props.projectTile}</b> ?
+                        </Text>
+                    </Center>
 
-                    <Divider mt="sm" mb="sm" color="transparent"/>
-
+                    <Divider mt="xs" mb="xs" color="transparent"/>
+                    
                     {/* SEGMENTED CONTROL */}
                     <SegmentedControl
                         radius="xl"
