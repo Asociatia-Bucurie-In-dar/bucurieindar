@@ -36,8 +36,7 @@ export default async function ResultPage({searchParams, params}: { searchParams:
     {
         try {
             await track('Donation', {
-                project:  projectName,
-                amount: amountDonated
+                amount: amountDonated + ' EUR ' + ' pt. ' + projectName,
             });
         }
         catch (error) {
