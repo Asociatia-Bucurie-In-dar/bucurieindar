@@ -8,7 +8,7 @@ import {TitleWithDescription} from "@/components/Common/TitleWithDescription";
 import {MyZIndexes} from "@/utils/my-constants";
 import {ConfettiButton} from "@/components/ConfettiButton/ConfettiButton";
 import DonationConfetti from "@/components/CoolEffects/DonationConfetti";
-import {track} from "@vercel/analytics";
+import {track} from "@vercel/analytics/server";
 import {getTranslations, unstable_setRequestLocale} from "next-intl/server";
 //import confetti from "canvas-confetti";
 
@@ -27,19 +27,21 @@ export default async function ResultPage({searchParams, params}: { searchParams:
         });
 
     const paymentIntent = checkoutSession.payment_intent as Stripe.PaymentIntent;
-    const items = checkoutSession.line_items?.data as Stripe.Checkout.SessionCreateParams.LineItem[] | undefined;
-
-
+    
+    const amountDonated = paymentIntent.amount_received / 100;
+    // Assuming there's only one line item and that's the one you need
+    const projectName = checkoutSession?.line_items?.data[0].description ?? 'Unknown'; // or `name` depending on how it's stored
+    
     if (paymentIntent.status === 'succeeded')
     {
         try {
-            const amount = items?.pop()?.price_data?.unit_amount ?? 0;
             track('Donation', {
-                project: items?.pop()?.price_data?.product_data?.name ?? "Unknown",
-                amount: amount / 100});
+                project:  projectName,
+                amount: amountDonated
+            });
         }
         catch (error) {
-            console.error(`Error tracking donation`);
+            console.error(`Error tracking event: ${error}`);
         }
 
         return (
