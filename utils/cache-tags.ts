@@ -1,1 +1,1 @@
-export const revalidateDonationsProgressTag = 'donationsprogresstag';
+export const revalidateDonationsProgressTag = 'donationsprogresstag1';

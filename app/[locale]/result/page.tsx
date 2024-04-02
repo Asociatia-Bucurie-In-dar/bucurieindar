@@ -59,6 +59,15 @@ export default async function ResultPage({searchParams, params}: { searchParams:
         );
     }
     else {
+        try {
+            await track('DonationFAILED', {
+                amount: '' + projectName,
+            });
+        }
+        catch (error) {
+            console.error(`Error tracking event: ${error}`);
+        }
+        
         return (
             <Container className={commonClasses.container}>
                 <TitleWithDescription title={t('ERROR_TITLE')}

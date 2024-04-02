@@ -12,6 +12,7 @@ export function ProjectDonationProgress (props :{id: string, goalAmount: number,
         const fetchDonationAmount = async () => {
             setLoading(true);
             try {
+                console.log('try');
                 const response = await fetch(`/api/projects/${props.id}`);
                 
                 const data = await response.json();
