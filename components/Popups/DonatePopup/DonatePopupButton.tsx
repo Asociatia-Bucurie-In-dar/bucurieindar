@@ -16,7 +16,7 @@ import { useDisclosure } from '@mantine/hooks';
 import {ProjectTranslationsType} from "@/utils/my-types";
 import Link from "next/link";
 import {MyRoutePaths} from "@/utils/route-paths";
-import {IconBrandRevolut, IconBuildingBank, IconChevronRight, IconCreditCard} from "@tabler/icons-react";
+import {IconChevronRight} from "@tabler/icons-react";
 // import {
 //     IconBrandApple,
 //     IconBrandGoogle,
@@ -202,7 +202,7 @@ export function DonatePopupButton(props: {projectId: string,
             <Text size="lg" ta="left">
                 Revolut Bank UAB <br/>
                 Konstitucijos ave. 21B, 08130, Vilnius, Lithuania<br/>
-                BIC bancă corespondentă: BARCGB22
+                BIC: BARCGB22
             </Text>
         </Paper>
     </>;
@@ -228,7 +228,6 @@ export function DonatePopupButton(props: {projectId: string,
                                 value: payOption1,
                                 label: (
                                     <Center style={{ gap: 5 }}>
-                                        <IconCreditCard />
                                         <span style={{fontWeight: '600'}}>{payOption1}</span>
                                     </Center>
                                 )
@@ -237,7 +236,6 @@ export function DonatePopupButton(props: {projectId: string,
                                 value: payOption2,
                                 label: (
                                     <Center style={{ gap: 5 }}>
-                                        <IconBrandRevolut />
                                         <span style={{fontWeight: '600'}}>{payOption2}</span>
                                     </Center>
                                 )
@@ -246,7 +244,6 @@ export function DonatePopupButton(props: {projectId: string,
                                 value: payOption3,
                                 label: (
                                     <Center style={{ gap: 5 }}>
-                                        <IconBuildingBank />
                                         <span style={{fontWeight: '600'}}>{payOption3}</span>
                                     </Center>
                                 )

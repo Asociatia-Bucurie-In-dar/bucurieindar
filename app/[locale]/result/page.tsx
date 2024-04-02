@@ -8,9 +8,14 @@ import {TitleWithDescription} from "@/components/Common/TitleWithDescription";
 import {MyZIndexes} from "@/utils/my-constants";
 import {ConfettiButton} from "@/components/ConfettiButton/ConfettiButton";
 import DonationConfetti from "@/components/CoolEffects/DonationConfetti";
+import {track} from "@vercel/analytics";
+import {useTranslations} from "next-intl";
 //import confetti from "canvas-confetti";
 
 export default async function ResultPage({searchParams}: { searchParams: { session_id: string } }) {
+    
+    const t = useTranslations("DONATIONS");
+    
     if (!searchParams.session_id)
         throw new Error("Please provide a valid session_id (`cs_test_...`)");
 
@@ -20,37 +25,28 @@ export default async function ResultPage({searchParams}: { searchParams: { sessi
         });
 
     const paymentIntent = checkoutSession.payment_intent as Stripe.PaymentIntent;
-
-
-    //const fireAllConfettis = () => {
-    //    fire(0.25, {spread: 26, startVelocity: 55,});
-    //    fire(0.2, {spread: 60,});
-    //    fire(0.1, {spread: 120, startVelocity: 25, decay: 0.92, scalar: 1.2});
-    //    fire(0.1, {spread: 120, startVelocity: 45,});
-    //};
-//
-    //const defaults = { origin: { y: 0.6 } };
-    //const zIndex = MyZIndexes.Confetti;
-
-    //function fire(particleRatio: any, opts: any) {
-    //    confetti({...defaults, ...opts,
-    //        particleCount: Math.floor(150 * particleRatio),
-    //        zIndex: zIndex,
-    //    });
-    //}
+    const items = checkoutSession.line_items?.data as Stripe.Checkout.SessionCreateParams.LineItem[] | undefined;
     
-    //if (paymentIntent.status === 'succeeded'){
-    //    fireAllConfettis();
-    //}
 
     if (paymentIntent.status === 'succeeded')
+    {
+        try {
+            const amount = items?.pop()?.price_data?.unit_amount ?? 0;
+            track('Donation', {
+                project: items?.pop()?.price_data?.product_data?.name ?? "Unknown",
+                amount: amount / 100});
+        }
+        catch (error) {
+            console.error(`Error tracking donation`);
+        }
+        
         return (
         <Container className={commonClasses.container}>
-            <TitleWithDescription title={"Mulțumim!"} 
-                                  description={"Plata a fost efectuată cu succes."} />
+            <TitleWithDescription title={t('SUCCESS_TITLE')} 
+                                  description={t('SUCCESS_DESCRIPTION')} />
             
             <Center>
-            <ConfettiButton text={"Înapoi la proiecte"} size={"lg"} mt={"xl"} />
+            <ConfettiButton text={t('BACK')} size={"lg"} mt={"xl"} />
             </Center>
             
             <DonationConfetti />
@@ -58,16 +54,19 @@ export default async function ResultPage({searchParams}: { searchParams: { sessi
             <Divider color="transparent" mb={150}/>
         </Container>
     );
-    else return (
-        <Container className={commonClasses.container}>
-            <TitleWithDescription title={"Ups!"}
-                                  description={"Plata nu a reuşit."} />
+        }
+    else {
+        return (
+            <Container className={commonClasses.container}>
+                <TitleWithDescription title={t('ERROR_TITLE')}
+                                      description={t('ERROR_DESCRIPTION')}/>
 
-            <Center>
-                <ConfettiButton text={"Înapoi la proiecte"} size={"lg"} mt={"xl"} />
-            </Center>
+                <Center>
+                    <ConfettiButton text={t('BACK')} size={"lg"} mt={"xl"}/>
+                </Center>
 
-            <Divider color="transparent" mb={150}/>
-        </Container>
-    );
+                <Divider color="transparent" mb={150}/>
+            </Container>
+        );
+    }
 };
