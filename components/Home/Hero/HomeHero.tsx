@@ -1,6 +1,5 @@
 import {Container, Title, Text, Button, Image, Divider} from '@mantine/core';
 import classes from './HomeHero.module.css';
-import { ConfettiButton } from '@/components/ConfettiButton/ConfettiButton';
 import {useTranslations} from "next-intl";
 import {TeleportButton} from "@/components/CoolEffects/TeleportButton/TeleportButton";
 

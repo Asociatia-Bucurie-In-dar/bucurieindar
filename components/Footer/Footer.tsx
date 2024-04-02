@@ -40,12 +40,12 @@ export function Footer() {
             <Container size="md">
                 <Center>
             <SimpleGrid cols={5}>
-                {link(MyRoutePaths.Home, t('HOME.LABEL'))}
-                {link(MyRoutePaths.Projects, t('PROJECTS.LABEL'))}
-                {link(MyRoutePaths.About, t('ABOUT.LABEL'))}
-                {link(MyRoutePaths.Gallery, t('GALLERY.LABEL'))}
+                {link(t('HOME.LINK'), t('HOME.LABEL'))}
+                {link(t('PROJECTS.LINK'), t('PROJECTS.LABEL'))}
+                {link(t('ABOUT.LINK'), t('ABOUT.LABEL'))}
+                {link(t('GALLERY.LINK'), t('GALLERY.LABEL'))}
                 {/*{link(MyRoutePaths.Blog, t('BLOG.LABEL'))}*/}
-                {link(MyRoutePaths.Contact, t('CONTACT.LABEL'))}
+                {link(t('CONTACT.LINK'), t('CONTACT.LABEL'))}
             </SimpleGrid>
                 </Center>
             </Container>

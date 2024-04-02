@@ -74,11 +74,11 @@ export function Header({ headerTranslations, locale }: { headerTranslations: any
                         {headerItems}
                     </Group>
                     <Group visibleFrom="sm">
-                        <ConfettiButton text={headerTranslations.donate} disabled={isDonateDisabled}/>
+                        <ConfettiButton text={headerTranslations.donate} link={headerTranslations.projects.link} disabled={isDonateDisabled}/>
                         <ThemeSwitcher/>
                     </Group>
                     <Group hiddenFrom="sm">
-                        <ConfettiButton text={headerTranslations.donate} disabled={isDonateDisabled}/> 
+                        <ConfettiButton text={headerTranslations.donate} link={headerTranslations.projects.link} disabled={isDonateDisabled}/> 
                         <Burger opened={drawerOpened} onClick={toggleDrawer} size="sm" aria-label={headerTranslations.burgerMenuLabel}/>
                     </Group>
                 </div>

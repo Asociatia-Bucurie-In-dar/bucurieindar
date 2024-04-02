@@ -2,11 +2,10 @@
 import Link from "next/link";
 import {Button} from "@mantine/core";
 import confetti from "canvas-confetti";
-import {MyRoutePaths} from "@/utils/route-paths";
 import {MyZIndexes} from "@/utils/my-constants";
 
 
-export function ConfettiButton(props: {text: string, size?: string, mt?: string, disabled?: boolean }) {
+export function ConfettiButton(props: {text: string, link: string, size?: string, mt?: string, disabled?: boolean }) {
     const handleButtonClicked = () => {
         fire(0.25, {spread: 26, startVelocity: 55,});
         fire(0.2, {spread: 60,});
@@ -25,7 +24,7 @@ export function ConfettiButton(props: {text: string, size?: string, mt?: string,
     }
     
     return (
-        <Link href={MyRoutePaths.Projects} passHref onClick={handleButtonClicked}>
+        <Link href={props.link} passHref onClick={handleButtonClicked}>
                 <Button variant="gradient"
                         gradient={{ from: 'pink', to: 'yellow', deg: 90 }}
                         name={props.text}

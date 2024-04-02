@@ -3,7 +3,6 @@ import classes from './HomeProjects.module.css';
 import { ProjectPreviewCardsSlider } from '@/components/Projects/ProjectPreviewCardsSlider';
 import {TitleWithDescription} from "@/components/Common/TitleWithDescription";
 import {Center, Container, Divider, Group} from "@mantine/core";
-import {ConfettiButton} from "@/components/ConfettiButton/ConfettiButton";
 import commonClasses from "@/utils/commonClasses.module.css";
 import {useTranslations} from "next-intl";
 
