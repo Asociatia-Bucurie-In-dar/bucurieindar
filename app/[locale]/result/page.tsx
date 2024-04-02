@@ -35,7 +35,7 @@ export default async function ResultPage({searchParams, params}: { searchParams:
     if (paymentIntent.status === 'succeeded')
     {
         try {
-            await track('Donation', {
+            await track('DonationSimpler', {
                 amount: amountDonated + ' EUR ' + ' pt. ' + projectName,
             });
         }
