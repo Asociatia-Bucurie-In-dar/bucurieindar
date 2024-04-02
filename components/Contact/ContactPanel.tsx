@@ -74,10 +74,10 @@ export function ContactPanel(props: { translations: ContactTranslationType }) {
         <>
             <Paper shadow="sm" radius="md" p="lg" withBorder>
                 
-            <Title mb="sm">
+            <Text mb="sm" style={{fontWeight: 600, fontSize: 27}}>
                 <span style={{color: iconColor}}> ⚠️ </span> {props.translations.MaterialGoodsTitle}
-            </Title>
-            <Text mt="sm" mb={30} c="dimmed" fw={600}>
+            </Text>
+            <Text mt="sm" mb={30} c="dimmed" fw={500}>
                 {props.translations.MaterialGoodsDescription}
             </Text>
             </Paper>
@@ -146,12 +146,22 @@ export function ContactPanel(props: { translations: ContactTranslationType }) {
                     </SimpleGrid>
                 </div>
 
-                
-                <iframe style={{marginTop: '2em', borderRadius: '10px', overflow: 'hidden'}} className="harta"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3273.715046465186!2d26.1003211232213!3d44.41909811727515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff054d93ee99%3A0x78dbca9d7d548692!2sStrada%20Potera%C8%99i%2014%2C%20Bucure%C8%99ti!5e0!3m2!1sen!2sro!4v1710400959087!5m2!1sen!2sro"
-                        width="100%" height="450" allowFullScreen={false} loading="lazy"
-                        referrerPolicy="no-referrer-when-downgrade"></iframe>
-                </div>
+                <SimpleGrid cols={{ base: 1, sm: 2 }}>
+                    <div>
+                        <iframe style={{marginTop: '2em', borderRadius: '10px', overflow: 'hidden'}} className="harta"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3273.715046465186!2d26.1003211232213!3d44.41909811727515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff054d93ee99%3A0x78dbca9d7d548692!2sStrada%20Potera%C8%99i%2014%2C%20Bucure%C8%99ti!5e0!3m2!1sen!2sro!4v1710400959087!5m2!1sen!2sro"
+                                width="100%" height="450" allowFullScreen={false} loading="lazy"
+                                referrerPolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div>
+                        <iframe style={{marginTop: '2em', borderRadius: '10px', overflow: 'hidden'}} className="harta"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2850.62473698673!2d26.143562476719847!3d44.3998245038222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1fffd5af14a01%3A0xa0e43719ece2878f!2sSupermarket%20La%20Coco%C8%99%20Vitantis!5e0!3m2!1sen!2sro!4v1712068828400!5m2!1sen!2sro"
+                                width="100%" height="450" allowFullScreen={false} loading="lazy"
+                                referrerPolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </SimpleGrid>
+
+            </div>
         </>
     )
         ;
