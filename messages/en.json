@@ -295,6 +295,7 @@
   },
   
   "HEADER": {
+    "LOCALE": "en",
     "HOME": { "LABEL": "Home", "LINK": "/en" },
     "PROJECTS": { "LABEL": "Projects", "LINK": "/en/projects" },
     "ABOUT": { "LABEL": "About", "LINK": "/en/about" },

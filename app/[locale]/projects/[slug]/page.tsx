@@ -77,7 +77,8 @@ export default function FullProjectPage({params: {locale, slug}}:{ params: { loc
         IAgreeWith: donateT('I_AGREE_TO_THE'),
         TermsAndConditions: donateT('TERMS_AND_CONDITIONS'),
         And: donateT('AND'),
-        PrivacyPolicy: donateT('PRIVACY_POLICY')
+        PrivacyPolicy: donateT('PRIVACY_POLICY'),
+        Locale: locale,
     };
     
     return (

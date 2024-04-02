@@ -22,7 +22,8 @@ export function ProjectPreviewCard(props: { project: ProjectType, title: string,
         IAgreeWith: donateT('I_AGREE_TO_THE'),
         TermsAndConditions: donateT('TERMS_AND_CONDITIONS'),
         And: donateT('AND'),
-        PrivacyPolicy: donateT('PRIVACY_POLICY')
+        PrivacyPolicy: donateT('PRIVACY_POLICY'),
+        Locale: headerT('LOCALE'),
     };
     
     const hrefPrefix = headerT('PROJECTS.LINK');

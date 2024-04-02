@@ -285,6 +285,7 @@
   },
   
   "HEADER": {
+    "LOCALE": "ro",
     "HOME": { "LABEL": "Acasă", "LINK": "/" },
     "PROJECTS": { "LABEL": "Proiecte", "LINK": "/projects" },
     "ABOUT": { "LABEL": "Despre", "LINK": "/about" },

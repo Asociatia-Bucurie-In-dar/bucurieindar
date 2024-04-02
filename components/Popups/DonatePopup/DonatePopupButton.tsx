@@ -55,6 +55,7 @@ export function DonatePopupButton(props: {projectId: string,
                 currencyAmount: Number(input.customDonation),
                 //email: input.email,
                 agreed: agreeValue,
+                locale: props.translations.Locale
             };
         const { client_secret, url } = await createCheckoutSession(data);
         
