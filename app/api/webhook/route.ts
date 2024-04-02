@@ -63,8 +63,8 @@ export async function POST(req: Request) {
 
                     // Save the donation data to the database
                     try {
-                        const savedDonation = await saveDonation(donationData);
                         revalidateTag(revalidateDonationsProgressTag);
+                        const savedDonation = await saveDonation(donationData);
                         console.log(`Donation saved: ${savedDonation.id}`);
                         //await sendEmail(savedDonation.amount);
                     } catch (error: any) {
