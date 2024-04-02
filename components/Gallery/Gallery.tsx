@@ -6,7 +6,7 @@ import {namedTypes} from "ast-types";
 import {useDisclosure} from "@mantine/hooks";
 import {MyZIndexes} from "@/utils/my-constants";
 import {useState} from "react";
-import {IconArrowsMaximize, IconZoomIn, IconZoomInFilled} from "@tabler/icons-react";
+import {IconArrowsDiagonal, IconArrowsMaximize, IconZoomIn, IconZoomInFilled} from "@tabler/icons-react";
 
 export function Gallery(props: { videosData: GalleryVideo[], imagesData: GalleryImage[], translations: GalleryTranslations }) {
 
@@ -26,14 +26,14 @@ export function Gallery(props: { videosData: GalleryVideo[], imagesData: Gallery
                 <Image src={imagePath.image}
                        loading="lazy"
                        onClick={openModal(imagePath.image)}
-                       style={{cursor: 'pointer'}} radius="sm"/>
+                       style={{cursor: 'pointer', layout: 'fill', objectFit: 'cover', objectPosition: 'center ' + imagePath.positionPercent}} radius="sm" />
                 <div style={{
                     justifyContent: 'end',
                     alignItems: 'end',
                     justifyItems: 'start',
                     padding: '1.5rem'
                 }} onClick={openModal(imagePath.image)}>
-                    <IconZoomIn size={30} color="white" style={{boxShadow: '0 0 20px 0 rgba(0,0,0,0.25)', borderRadius: '20%', backgroundColor: 'rgba(0, 0, 0, 0.25)'}}/>
+                    <IconArrowsMaximize size={30} color="white" style={{boxShadow: '0 0 20px 0 rgba(0,0,0,0.25)', borderRadius: '20%', backgroundColor: 'rgba(0, 0, 0, 0.25)'}}/>
                 </div>
             </AspectRatio>
             <Spoiler maxHeight={110} showLabel={props.translations.ShowMore}

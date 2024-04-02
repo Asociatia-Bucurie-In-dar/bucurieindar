@@ -30,6 +30,7 @@ export default function GalleryPage( {params: {locale}} : {params: {locale: stri
         {
             title: t('VIDEOS.1.DESCRIPTION'),
             youtubeId: 'FKUvxS3grqg',
+            
         },
         {
             title: t('VIDEOS.2.DESCRIPTION'),

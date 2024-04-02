@@ -74,6 +74,7 @@ export type GalleryVideo = {
 export type GalleryImage = {
     title: string;
     image: string;
+    positionPercent?: string;
 };
 
 export type GalleryTranslations = {
