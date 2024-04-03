@@ -50,14 +50,14 @@ export function ProjectPreviewCard(props: { project: ProjectType, title: string,
                 {/*    outstanding*/}
                 {/*</Badge>*/}
 
-                <Text className={classes.title} fw={rem(500)} component={Link} {...linkProps}>
+                <Text className={classes.title} fw={500} component={Link} {...linkProps}>
                     {props.title}
                 </Text>
 
-                <Text fz="sm" c="customDimmed" fw={rem(500)} lineClamp={4} component={Link} {...linkProps}>
+                <Text fz="sm" c="customDimmed" fw={500} lineClamp={4} component={Link} {...linkProps}>
                     {props.description}
                 </Text>
-                {/*<Text c="orange" fw={rem(500)} mt={3} component={Link} {...linkProps}>*/}
+                {/*<Text c="orange" fw={500} mt={3} component={Link} {...linkProps}>*/}
                 {/*    {commonT('SHOW_MORE')}*/}
                 {/*</Text>*/}
 

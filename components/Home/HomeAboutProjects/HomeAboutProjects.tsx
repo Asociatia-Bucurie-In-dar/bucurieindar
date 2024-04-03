@@ -85,7 +85,7 @@ export function HomeAboutProjects() {
                 stroke={2}
                 color={iconColor}
             />
-            <Text fz="lg" fw={rem(600)} className={classes.cardTitle} mt="md">
+            <Text fz="lg" fw={600} className={classes.cardTitle} mt="md">
                 {feature.title}
             </Text>
 
@@ -99,13 +99,13 @@ export function HomeAboutProjects() {
                         color="orange"
                         mr="xs"
                         size="sm"
-                        fw={rem(600)}
+                        fw={600}
                     >{link.title}{link.icon}</Button>
                 ))}
             </div>
 
             <Spoiler maxHeight={100} showLabel={commonT('SHOW_MORE')} hideLabel={commonT('HIDE')}>
-            <Text fz="sm" c="customDimmed" mt="sm" fw={rem(500)}>
+            <Text fz="sm" c="customDimmed" mt="sm" fw={500}>
                 {feature.description}
             </Text>
                 {/* Content here */}

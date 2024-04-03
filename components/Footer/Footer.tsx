@@ -7,7 +7,7 @@ import {MyRoutePaths} from "@/utils/route-paths";
 
 function link(link: string, label: string) {
     return (
-        <Text component={Link} href={link} c="customDimmed" size="sm" fw={rem(500)}>
+        <Text component={Link} href={link} c="customDimmed" size="sm" fw={500}>
             <Center>{label}</Center>
         </Text>
     );
@@ -28,10 +28,10 @@ export function Footer() {
                             </Link>
                         </Text>
                     </Title>
-                    <Text size="sm" c="customDimmed" className={classes.description} fw={rem(500)} mt={5} mb="md">
+                    <Text size="sm" c="customDimmed" className={classes.description} fw={500} mt={5} mb="md">
                         {commonT('INDEPENDENT_NON_PROFIT')}
                     </Text>
-                    <Text size="md" c="customDimmed" className={classes.description} fw={rem(500)}>
+                    <Text size="md" c="customDimmed" className={classes.description} fw={500}>
                         {heroT('MOTTO_FIRST_PART')}{' '}{heroT('MOTTO_SECOND_PART')}.
                     </Text>
                 </div>

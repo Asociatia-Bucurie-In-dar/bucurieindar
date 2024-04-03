@@ -74,7 +74,7 @@ export function HeaderMegaMenu() {
                     <item.icon style={{ width: rem(22), height: rem(22) }} color={theme.colors.blue[6]} />
                 </ThemeIcon>
                 <div>
-                    <Text size="sm" fw={rem(500)}>
+                    <Text size="sm" fw={500}>
                         {item.title}
                     </Text>
                     <Text size="xs" c="customDimmed">
@@ -89,7 +89,7 @@ export function HeaderMegaMenu() {
         <Box pb={120}>
             <header className={classes.header}>
                 <Group justify="space-between" h="100%">
-                    <Text size="xl" fw={rem(500)} className={classes.logo}>
+                    <Text size="xl" fw={500} className={classes.logo}>
                         Mantine
                     </Text>
 
@@ -114,7 +114,7 @@ export function HeaderMegaMenu() {
 
                             <HoverCard.Dropdown style={{ overflow: 'hidden' }}>
                                 <Group justify="space-between" px="md">
-                                    <Text fw={rem(500)}>Features</Text>
+                                    <Text fw={500}>Features</Text>
                                     <Anchor href="#" fz="xs">
                                         View all
                                     </Anchor>
@@ -129,7 +129,7 @@ export function HeaderMegaMenu() {
                                 <div className={classes.dropdownFooter}>
                                     <Group justify="space-between">
                                         <div>
-                                            <Text fw={rem(500)} fz="sm">
+                                            <Text fw={500} fz="sm">
                                                 Get started
                                             </Text>
                                             <Text size="xs" c="customDimmed">

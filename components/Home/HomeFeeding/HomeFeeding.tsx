@@ -40,7 +40,7 @@ export function HomeFeeding() {
         <div key={stat.title} className={classes.stat}>
             <AnimatedThing thing={stat.stats.toLocaleString()} class={classes.count}/>
             <Text className={classes.title}>{stat.title}</Text>
-            <Text className={classes.description} fw={rem(500)}>{stat.description}</Text>
+            <Text className={classes.description} fw={500}>{stat.description}</Text>
             <Progress animated value={stat.progress} mt="md" size="lg" radius="xl"
                       aria-label={stat.title}
                       classNames={{

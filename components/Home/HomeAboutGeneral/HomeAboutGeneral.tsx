@@ -15,7 +15,7 @@ export function HomeAboutGeneral() {
                         </Center>
                         
                         <Center>
-                        <Text fz="md" c="customDimmed" style={{textAlign: "center"}} fw={rem(500)}>
+                        <Text fz="md" c="customDimmed" style={{textAlign: "center"}} fw={500}>
                             {t('DESCRIPTION')}
                         </Text>
                         </Center>

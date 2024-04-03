@@ -156,10 +156,10 @@ export function DonatePopupButton(props: {projectId: string,
                     onClick={() => onAgreeChange(!agreeValue)}
                 />
                 <div>
-                    <Text fw={rem(500)} mb={7} lh={1}>
+                    <Text fw={500} mb={7} lh={1}>
                         {props.translations.IAgreeWith}:
                     </Text>
-                    <Text fz="sm" fw={rem(600)}>
+                    <Text fz="sm" fw={600}>
                         <Link href={'/' + props.translations.Locale + MyRoutePaths.Terms} target="_blank" onClick={stopPropagation} className={classes.link}>{props.translations.TermsAndConditions}</Link> {props.translations.And} <Link href={'/' + props.translations.Locale + MyRoutePaths.Privacy} target="_blank"  onClick={stopPropagation} className={classes.link}>{props.translations.PrivacyPolicy}</Link>
                     </Text>
                 </div>
@@ -276,7 +276,7 @@ export function DonatePopupButton(props: {projectId: string,
             <Button style={{width: props.fullWidth ? 'auto' : 'max-content', minWidth: rem(100)}}
                     variant="gradient"
                     gradient={{from: 'pink', to: 'yellow', deg: 90}}
-                    size="sm" fw={rem(600)}
+                    size="sm" fw={600}
                     mt="md" onClick={open}>
                 {props.translations.Donate}&nbsp;<span style={{fontWeight: 500}}>({props.translations.Options})</span>
             </Button>

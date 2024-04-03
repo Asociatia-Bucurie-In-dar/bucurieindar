@@ -31,7 +31,7 @@ export function ConfettiButton(props: {text: string, link: string, size?: string
                         size={props.size}
                         mt={props.mt}
                         aria-label={props.text}
-                        fw={rem(600)}
+                        fw={600}
                         disabled={props.disabled ?? false}
                 >
                     {props.text}
