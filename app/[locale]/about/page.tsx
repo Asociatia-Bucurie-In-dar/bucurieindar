@@ -48,7 +48,7 @@ export default function AboutPage( {params: {locale}} : {params: {locale: string
               <Center>
               <Stack>
                       <AnimatedThing thing={t('WHO_ARE_WE.TITLE')} class={commonClasses.titleBigLight} />
-                      <Text c="customDimmed" fw={500}>
+                      <Text c="customDimmed" className={commonClasses.description}>
                           {t('WHO_ARE_WE.DESCRIPTION')}
                       </Text>
                   </Stack>
@@ -62,7 +62,7 @@ export default function AboutPage( {params: {locale}} : {params: {locale: string
               <Center>
                   <Stack>
                       <AnimatedThing thing={t('WHAT_WE_DO.TITLE')} class={commonClasses.titleBigLight} />
-                      <Text c="customDimmed" fw={500}>
+                      <Text c="customDimmed" className={commonClasses.description}>
                           {t('WHAT_WE_DO.DESCRIPTION')}
                       </Text>
                   </Stack>
@@ -84,7 +84,7 @@ export default function AboutPage( {params: {locale}} : {params: {locale: string
               <Center>
                   <Stack>
                       <AnimatedThing thing={t('WHY_WE_HELP.TITLE')} class={commonClasses.titleBigLight} />
-                      <Text c="customDimmed" fw={500}>
+                      <Text c="customDimmed" className={commonClasses.description}>
                           {t('WHY_WE_HELP.DESCRIPTION')}
                       </Text>
                   </Stack>

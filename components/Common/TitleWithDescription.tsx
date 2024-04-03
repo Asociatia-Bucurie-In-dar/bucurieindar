@@ -8,7 +8,7 @@ export function TitleWithDescription(props: {title: string, description?: string
                 {props.title}
             </Title>
     
-            <Text ta="center" mt="md" c="customDimmed" fw={500}
+            <Text ta="center" mt="md" c="customDimmed" className={commonClasses.description}
             style={{maxWidth: props.maxWidth ?? rem(600), margin: 'auto'}}>
                 {props.description}
             </Text>

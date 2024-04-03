@@ -16,6 +16,15 @@
     }
 }
 
+.description {
+    font-size: rem(16px);
+    font-weight: 500;
+
+    @media (max-width: $mantine-breakpoint-sm) {
+        font-size: rem(15px);
+    }
+}
+
 .titleBigLight {
     font-size: rem(32px);
     font-weight: var(--mantine-h1-font-weight);

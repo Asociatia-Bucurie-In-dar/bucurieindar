@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32e33542-bd06-42e3-bf1b-3883da34adf9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.bucurieindar.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.bucurieindar.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Common/TitleWithDescription.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Common/TitleWithDescription.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Home/HomeAboutGeneral/HomeAboutGeneral.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/HomeAboutGeneral/HomeAboutGeneral.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Popups/DonatePopup/DonatePopupButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Popups/DonatePopup/DonatePopupButton.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/SfIoan/SfIoan.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/SfIoan/SfIoan.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/commonClasses.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/utils/commonClasses.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

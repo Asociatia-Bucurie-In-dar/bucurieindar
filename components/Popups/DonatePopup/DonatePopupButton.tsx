@@ -7,7 +7,7 @@ import {
     Button,
     Center,
     Divider,
-    Modal, NativeSelect, Text, TextInput, rem, SegmentedControl, Paper, UnstyledButton, Checkbox, Title
+    Modal, NativeSelect, Text, TextInput, rem, SegmentedControl, Paper, UnstyledButton, Checkbox, Title, Radio
 } from "@mantine/core";
 import {Form} from "@storybook/components";
 import {MyZIndexes} from "@/utils/my-constants";
@@ -237,7 +237,10 @@ export function DonatePopupButton(props: {projectId: string,
                                 value: payOption1,
                                 label: (
                                     <Center style={{ gap: 5 }}>
-                                        <span style={{fontWeight: '500'}}>{payOption1}</span>
+                                        <Radio
+                                            color={payMethod === payOption1 ? 'white' : 'gray'}
+                                            variant="outline" checked={payMethod === payOption1} size="xs" defaultChecked={false}/>
+                                        <span style={{fontWeight: '550'}}>{payOption1}</span>
                                     </Center>
                                 )
                             },
@@ -245,7 +248,10 @@ export function DonatePopupButton(props: {projectId: string,
                                 value: payOption2,
                                 label: (
                                     <Center style={{ gap: 5 }}>
-                                        <span style={{fontWeight: '500'}}>{payOption2}</span>
+                                        <Radio
+                                            color={payMethod === payOption2 ? 'white' : 'gray'}
+                                            variant="outline" checked={payMethod === payOption2} size="xs" defaultChecked={false}/>
+                                        <span style={{fontWeight: '550'}}>{payOption2}</span>
                                     </Center>
                                 )
                             },
@@ -253,7 +259,10 @@ export function DonatePopupButton(props: {projectId: string,
                                 value: payOption3,
                                 label: (
                                     <Center style={{ gap: 5 }}>
-                                        <span style={{fontWeight: '500'}}>{payOption3}</span>
+                                        <Radio
+                                            color={payMethod === payOption3 ? 'white' : 'gray'}
+                                            variant="outline" checked={payMethod === payOption3} size="xs" defaultChecked={false}/>
+                                        <span style={{fontWeight: '550'}}>{payOption3}</span>
                                     </Center>
                                 )
                             }
