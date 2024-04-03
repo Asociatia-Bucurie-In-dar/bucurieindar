@@ -24,6 +24,8 @@ export function ProjectPreviewCard(props: { project: ProjectType, title: string,
         And: donateT('AND'),
         PrivacyPolicy: donateT('PRIVACY_POLICY'),
         Locale: headerT('LOCALE'),
+        TransferWarningFirstPart: donateT('TRANSFER_WARNING_FIRST_PART'),
+        TransferWarningSecondPart: donateT('TRANSFER_WARNING_SECOND_PART')
     };
     
     const hrefPrefix = headerT('PROJECTS.LINK');

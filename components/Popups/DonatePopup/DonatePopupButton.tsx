@@ -177,6 +177,9 @@ export function DonatePopupButton(props: {projectId: string,
 
     const forBank = <>
         <Paper withBorder p="lg" radius="md" shadow="md">
+            <Text ta="center" fw="600" c="red" size="lg" mb="md">
+                {props.translations.TransferWarningFirstPart} <b>"{props.projectId}"</b> {props.translations.TransferWarningSecondPart}!
+            </Text>
             <Center>
                 <Text size="lg"><b>RON</b> - RO42BTRLRONCRT0610749701</Text>
             </Center>
@@ -193,6 +196,9 @@ export function DonatePopupButton(props: {projectId: string,
     
     const forRevolut = <>
         <Paper withBorder p="lg" radius="md" shadow="md">
+            <Text ta="center" fw="600" c="red" size="lg" mb="sm">
+                {props.translations.TransferWarningFirstPart} <b>"{props.projectId}"</b> {props.translations.TransferWarningSecondPart}!
+            </Text>
             <span style={{fontSize: 30}}>🇷🇴</span>
             <Text size="lg" ta="left"><b>IBAN</b> - RO09 BREL 0005 5218 2476 0100</Text>
             <Divider mb="md" color="transparent"/>

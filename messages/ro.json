@@ -185,7 +185,9 @@
     "I_AGREE_TO_THE": "Sunt de acord cu",
     "TERMS_AND_CONDITIONS": "Termenii și Condițiile",
     "AND": "și",
-    "PRIVACY_POLICY": "Politica de Confidențialitate"
+    "PRIVACY_POLICY": "Politica de Confidențialitate",
+    "TRANSFER_WARNING_FIRST_PART": "Vă rugăm să specificați",
+    "TRANSFER_WARNING_SECOND_PART": "în detaliile plății"
   },
 
   "SHARE": {

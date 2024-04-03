@@ -79,6 +79,8 @@ export default function FullProjectPage({params: {locale, slug}}:{ params: { loc
         And: donateT('AND'),
         PrivacyPolicy: donateT('PRIVACY_POLICY'),
         Locale: locale,
+        TransferWarningFirstPart: donateT('TRANSFER_WARNING_FIRST_PART'),
+        TransferWarningSecondPart: donateT('TRANSFER_WARNING_SECOND_PART'),
     };
     
     return (

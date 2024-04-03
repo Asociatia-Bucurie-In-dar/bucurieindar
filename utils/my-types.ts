@@ -37,6 +37,8 @@ export type Donation = {
 };
 
 export type ProjectTranslationsType = {
+    TransferWarningSecondPart: string;
+    TransferWarningFirstPart: string;
     Donate: string;
     CardOption: string;
     BankTransferOption: string;
