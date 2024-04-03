@@ -16,7 +16,11 @@ import { useDisclosure } from '@mantine/hooks';
 import {ProjectTranslationsType} from "@/utils/my-types";
 import Link from "next/link";
 import {MyRoutePaths} from "@/utils/route-paths";
-import {IconChevronRight, IconDots, IconDotsCircleHorizontal, IconMaximize} from "@tabler/icons-react";
+import {
+    IconChevronRight,
+    IconCircle,
+    IconCircleDot
+} from "@tabler/icons-react";
 // import {
 //     IconBrandApple,
 //     IconBrandGoogle,
@@ -214,6 +218,9 @@ export function DonatePopupButton(props: {projectId: string,
         </Paper>
     </>;
     
+    const radioOn = <IconCircleDot size={18} stroke={2.5} />;
+    const radioOff = <IconCircle size={18} stroke={1} />;
+    
     return <>
         <Modal opened={opened} onClose={close} withCloseButton={false} zIndex={MyZIndexes.DonateModal}
                size="auto" transitionProps={{ transition: 'slide-up' }}>
@@ -237,10 +244,10 @@ export function DonatePopupButton(props: {projectId: string,
                                 value: payOption1,
                                 label: (
                                     <Center style={{ gap: 5 }}>
-                                        <Radio
-                                            color={payMethod === payOption1 ? 'white' : 'gray'}
-                                            variant="outline" checked={payMethod === payOption1} size="xs" defaultChecked={false}/>
-                                        <span style={{fontWeight: '550'}}>{payOption1}</span>
+                                        {/*<Radio*/}
+                                        {/*    color={payMethod === payOption1 ? 'white' : 'gray'}*/}
+                                        {/*    variant="outline" checked={payMethod === payOption1} size="xs" defaultChecked={false} />*/}
+                                        {payMethod === payOption1 ? radioOn : radioOff} <span style={{fontWeight: '550'}}>{payOption1}</span>
                                     </Center>
                                 )
                             },
@@ -248,10 +255,7 @@ export function DonatePopupButton(props: {projectId: string,
                                 value: payOption2,
                                 label: (
                                     <Center style={{ gap: 5 }}>
-                                        <Radio
-                                            color={payMethod === payOption2 ? 'white' : 'gray'}
-                                            variant="outline" checked={payMethod === payOption2} size="xs" defaultChecked={false}/>
-                                        <span style={{fontWeight: '550'}}>{payOption2}</span>
+                                        {payMethod === payOption2 ? radioOn : radioOff} <span style={{fontWeight: '550'}}>{payOption2}</span>
                                     </Center>
                                 )
                             },
@@ -259,10 +263,7 @@ export function DonatePopupButton(props: {projectId: string,
                                 value: payOption3,
                                 label: (
                                     <Center style={{ gap: 5 }}>
-                                        <Radio
-                                            color={payMethod === payOption3 ? 'white' : 'gray'}
-                                            variant="outline" checked={payMethod === payOption3} size="xs" defaultChecked={false}/>
-                                        <span style={{fontWeight: '550'}}>{payOption3}</span>
+                                        {payMethod === payOption3 ? radioOn : radioOff} <span style={{fontWeight: '550'}}>{payOption3}</span>
                                     </Center>
                                 )
                             }
