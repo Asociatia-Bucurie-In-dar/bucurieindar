@@ -237,7 +237,7 @@ export function DonatePopupButton(props: {projectId: string,
                                 value: payOption1,
                                 label: (
                                     <Center style={{ gap: 5 }}>
-                                        <span style={{fontWeight: '600'}}>{payOption1}</span>
+                                        <span style={{fontWeight: '500'}}>{payOption1}</span>
                                     </Center>
                                 )
                             },
@@ -245,7 +245,7 @@ export function DonatePopupButton(props: {projectId: string,
                                 value: payOption2,
                                 label: (
                                     <Center style={{ gap: 5 }}>
-                                        <span style={{fontWeight: '600'}}>{payOption2}</span>
+                                        <span style={{fontWeight: '500'}}>{payOption2}</span>
                                     </Center>
                                 )
                             },

@@ -5,23 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32e33542-bd06-42e3-bf1b-3883da34adf9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/app/[locale]/about/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/[locale]/about/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/[locale]/blog/[slug]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/[locale]/blog/[slug]/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/[locale]/projects/[slug]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/[locale]/projects/[slug]/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Common/TitleWithDescription.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Common/TitleWithDescription.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ConfettiButton/ConfettiButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ConfettiButton/ConfettiButton.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Contact/ContactPanel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Contact/ContactPanel.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/FAQ/FAQ.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/FAQ/FAQ.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Footer/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Footer/Footer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Header/TestExampleHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Header/TestExampleHeader.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Home/HomeAboutGeneral/HomeAboutGeneral.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/HomeAboutGeneral/HomeAboutGeneral.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Home/HomeAboutProjects/HomeAboutProjects.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/HomeAboutProjects/HomeAboutProjects.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Home/HomeFeeding/HomeFeeding.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/HomeFeeding/HomeFeeding.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/OurTeam/OurTeam.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/OurTeam/OurTeam.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Popups/DonatePopup/DonatePopupButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Popups/DonatePopup/DonatePopupButton.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Projects/ProjectDonationProgress.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Projects/ProjectDonationProgress.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Projects/ProjectPreviewCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Projects/ProjectPreviewCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/SfIoan/SfIoan.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/SfIoan/SfIoan.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
