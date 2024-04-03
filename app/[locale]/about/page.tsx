@@ -1,6 +1,6 @@
 import commonClasses from "@/utils/commonClasses.module.css";
 import {TitleWithDescription} from "@/components/Common/TitleWithDescription";
-import {Center, Container, Divider, Image, SimpleGrid, Stack, Text, Title} from "@mantine/core";
+import {Center, Container, Divider, Image, rem, SimpleGrid, Stack, Text, Title} from "@mantine/core";
 import {OurTeam} from "@/components/OurTeam/OurTeam";
 import {AnimatedThing} from "@/components/CoolEffects/AnimatedNumber/AnimatedThing";
 import {getTranslations, unstable_setRequestLocale} from "next-intl/server";
@@ -48,7 +48,7 @@ export default function AboutPage( {params: {locale}} : {params: {locale: string
               <Center>
               <Stack>
                       <AnimatedThing thing={t('WHO_ARE_WE.TITLE')} class={commonClasses.titleBigLight} />
-                      <Text c="customDimmed" fw={500}>
+                      <Text c="customDimmed" fw={rem(500)}>
                           {t('WHO_ARE_WE.DESCRIPTION')}
                       </Text>
                   </Stack>
@@ -62,7 +62,7 @@ export default function AboutPage( {params: {locale}} : {params: {locale: string
               <Center>
                   <Stack>
                       <AnimatedThing thing={t('WHAT_WE_DO.TITLE')} class={commonClasses.titleBigLight} />
-                      <Text c="customDimmed" fw={500}>
+                      <Text c="customDimmed" fw={rem(500)}>
                           {t('WHAT_WE_DO.DESCRIPTION')}
                       </Text>
                   </Stack>
@@ -84,7 +84,7 @@ export default function AboutPage( {params: {locale}} : {params: {locale: string
               <Center>
                   <Stack>
                       <AnimatedThing thing={t('WHY_WE_HELP.TITLE')} class={commonClasses.titleBigLight} />
-                      <Text c="customDimmed" fw={500}>
+                      <Text c="customDimmed" fw={rem(500)}>
                           {t('WHY_WE_HELP.DESCRIPTION')}
                       </Text>
                   </Stack>

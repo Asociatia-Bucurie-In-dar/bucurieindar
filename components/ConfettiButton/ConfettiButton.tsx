@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import {Button} from "@mantine/core";
+import {Button, rem} from "@mantine/core";
 import confetti from "canvas-confetti";
 import {MyZIndexes} from "@/utils/my-constants";
 
@@ -31,7 +31,7 @@ export function ConfettiButton(props: {text: string, link: string, size?: string
                         size={props.size}
                         mt={props.mt}
                         aria-label={props.text}
-                        fw={600}
+                        fw={rem(600)}
                         disabled={props.disabled ?? false}
                 >
                     {props.text}

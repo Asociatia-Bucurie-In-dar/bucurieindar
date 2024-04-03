@@ -1,4 +1,4 @@
-import {Container, Divider, Title, Grid, GridCol, Card, Image, Text } from "@mantine/core";
+import {Container, Divider, Title, Grid, GridCol, Card, Image, Text, rem} from "@mantine/core";
 import commonClasses from "@/utils/commonClasses.module.css";
 import {GetProjectStaticContentWithSlug, GetAllProjectsStaticContent} from "@/content/projects/projects-content";
 import {ProjectDonationProgress} from "@/components/Projects/ProjectDonationProgress";
@@ -98,11 +98,11 @@ export default function FullProjectPage({params: {locale, slug}}:{ params: { loc
                     <Image src={projectContent.image_path} alt={title} />
                 </div>
                 <Divider color="transparent" mb="xl"/>
-                <Text c="customDimmed" fw={500}>
+                <Text c="customDimmed" fw={rem(500)}>
                     {description}
                 </Text>
                 <Divider color="transparent" mb="xl"/>
-                <Text c="customDimmed" fw={500}>
+                <Text c="customDimmed" fw={rem(500)}>
                     {secondDescription}
                 </Text>
             </GridCol>

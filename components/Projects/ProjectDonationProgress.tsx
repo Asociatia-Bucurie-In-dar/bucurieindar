@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from 'react';
 import classes from './ProjectDonationProgress.module.css';
-import {Progress, Skeleton, Text} from "@mantine/core";
+import {Progress, rem, Skeleton, Text} from "@mantine/core";
 
 export function ProjectDonationProgress (props :{id: string, goalAmount: number, sumTranslation: string } ) {
     const [currentAmount, setCurrentAmount] = useState(0);
@@ -46,7 +46,7 @@ export function ProjectDonationProgress (props :{id: string, goalAmount: number,
         <Text fz="xs" tt="uppercase" fw={700} c="customDimmed" mt="sm">
             {props.sumTranslation}
         </Text>
-        <Text fz="lg" fw={500}>
+        <Text fz="lg" fw={rem(500)}>
             {currentAmount.toLocaleString()} EUR / {props.goalAmount.toLocaleString()} EUR
         </Text>
         <Progress animated value={progressValue} mt="sm" size="lg" radius="xl"

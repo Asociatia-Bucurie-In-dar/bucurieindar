@@ -78,11 +78,11 @@ export function ContactPanel(props: { translations: ContactTranslationType }) {
             <Text mb="sm" style={{fontWeight: 600, fontSize: 27}}>
                 <span style={{color: iconColor}}> ⚠️ </span> {props.translations.MaterialGoodsTitle}
             </Text>
-            <Text mt="sm" c="customDimmed" fw={500}>
+            <Text mt="sm" c="customDimmed" fw={rem(500)}>
                 {props.translations.MaterialGoodsDescription}
             </Text>
                 <Divider color="transparent" mb="md"/>
-                <TeleportButton targetID="mapLaCocos" text={props.translations.SeeCocosMap} variant="light" size="sm" disableConfetti={true}/>
+                <TeleportButton targetID="mapLaCocos" text={props.translations.SeeCocosMap} variant="light" size="sm" disableConfetti={true} color="lime"/>
             </Paper>
             
             <div>

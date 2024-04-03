@@ -1,4 +1,4 @@
-import {Avatar, Container, Divider, Group, SimpleGrid, Text, Title} from '@mantine/core';
+import {Avatar, Container, Divider, Group, rem, SimpleGrid, Text, Title} from '@mantine/core';
 import classes from './OurTeam.module.css';
 import {TitleWithDescription} from "@/components/Common/TitleWithDescription";
 import {useTranslations} from "next-intl";
@@ -65,10 +65,10 @@ export function OurTeam() {
                 <Avatar size="xl" src={item.avatar} radius={40} placeholder="blur" alt={item.name + " " + item.job}/>
             <br/>
                 <div>
-                    <Title fz="md" fw={500}>
+                    <Title fz="md" fw={rem(500)}>
                         {item.name}
                     </Title>
-                    <Text c="customDimmed" fz="sm" fw={500}>
+                    <Text c="customDimmed" fz="sm" fw={rem(500)}>
                         {item.job}
                     </Text>
                 </div>

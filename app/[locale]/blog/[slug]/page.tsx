@@ -1,4 +1,4 @@
-import {Center, Container, Divider, Image, Text} from "@mantine/core";
+import {Center, Container, Divider, Image, rem, Text} from "@mantine/core";
 import commonClasses from "@/utils/commonClasses.module.css";
 import {TitleWithDescription} from "@/components/Common/TitleWithDescription";
 import {GetArticleStaticContentWithSlug, GetAllArticlesStaticContent} from "@/content/blog/blog-content";
@@ -43,7 +43,7 @@ export default function BlogPage({params: {locale, slug}}:{ params: { locale: st
 
               <Divider mb="xl" mt="md" color="transparent"/>
               
-                  <Text c="customDimmed" style={{textAlign: 'center'}} fw={500}>
+                  <Text c="customDimmed" style={{textAlign: 'center'}} fw={rem(500)}>
                       {t('DESCRIPTION')}
                   </Text>
 
