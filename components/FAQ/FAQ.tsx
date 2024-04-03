@@ -40,7 +40,7 @@ export function FAQ() {
                 <Text fw={550}>{item.question}</Text>
             </AccordionControl>
             <AccordionPanel>
-                <Text fz={rem(14)} fw={500} c="dimmed">
+                <Text fz={rem(14)} fw={500} c="customDimmed">
                     {item.answer}
                 </Text>
             </AccordionPanel>

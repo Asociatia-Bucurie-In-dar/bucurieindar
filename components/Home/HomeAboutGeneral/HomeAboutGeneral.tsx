@@ -5,7 +5,7 @@ import commonClasses from "@/utils/commonClasses.module.css";
 
 export function HomeAboutGeneral() {
     const t = useTranslations('HOME_POTENTIAL');
-    return <Container size="full" pt={35} pb={35}>
+    return <Container size="full" pt={35} pb={35} className={commonClasses.darkerBackground}>
         <Container size="lg" className={classes.wrapper}>
                     <div className={classes.body}>
                         <Center>
@@ -15,7 +15,7 @@ export function HomeAboutGeneral() {
                         </Center>
                         
                         <Center>
-                        <Text fz="md" c="dimmed" style={{textAlign: "center"}} fw={500}>
+                        <Text fz="md" c="customDimmed" style={{textAlign: "center"}} fw={500}>
                             {t('DESCRIPTION')}
                         </Text>
                         </Center>

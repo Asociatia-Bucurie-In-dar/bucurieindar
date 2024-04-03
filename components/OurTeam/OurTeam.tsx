@@ -68,7 +68,7 @@ export function OurTeam() {
                     <Title fz="md" fw={500}>
                         {item.name}
                     </Title>
-                    <Text c="dimmed" fz="sm" fw={500}>
+                    <Text c="customDimmed" fz="sm" fw={500}>
                         {item.job}
                     </Text>
                 </div>

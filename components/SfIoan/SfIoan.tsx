@@ -40,7 +40,7 @@ export function SfIoan(props: { disableBackground?: boolean }) {
                     {/*</Center>*/}
 
                     <Center>
-                        <Text fz="md" c="dimmed" fw={500} style={{textAlign: "center"}} >
+                        <Text fz="md" c="customDimmed" fw={500} style={{textAlign: "center"}} >
                                {/*component={Link} {...linkProps}>*/}
                             {t('DESCRIPTION')}
                         </Text>

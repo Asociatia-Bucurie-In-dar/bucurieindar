@@ -278,7 +278,7 @@ export function DonatePopupButton(props: {projectId: string,
                     gradient={{from: 'pink', to: 'yellow', deg: 90}}
                     size="sm" fw={600}
                     mt="md" onClick={open}>
-                {props.translations.Donate}
+                {props.translations.Donate}&nbsp;<span style={{fontWeight: 500}}>({props.translations.Options})</span>
             </Button>
         </>;
 }

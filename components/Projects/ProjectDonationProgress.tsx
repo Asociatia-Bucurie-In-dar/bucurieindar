@@ -33,7 +33,7 @@ export function ProjectDonationProgress (props :{id: string, goalAmount: number,
     
     if (loading) {
         return <>
-            <Text fz="xs" tt="uppercase" fw={700} c="dimmed" mt="sm">
+            <Text fz="xs" tt="uppercase" fw={700} c="customDimmed" mt="sm">
                 {props.sumTranslation}
             </Text>
             <Skeleton height={8} mt={12} radius="xl" />
@@ -43,7 +43,7 @@ export function ProjectDonationProgress (props :{id: string, goalAmount: number,
     }
     
     return <>
-        <Text fz="xs" tt="uppercase" fw={700} c="dimmed" mt="sm">
+        <Text fz="xs" tt="uppercase" fw={700} c="customDimmed" mt="sm">
             {props.sumTranslation}
         </Text>
         <Text fz="lg" fw={500}>

@@ -14,6 +14,7 @@ export function ProjectPreviewCard(props: { project: ProjectType, title: string,
     const headerT = useTranslations('HEADER');
     const donatePopupTranslations : ProjectTranslationsType = {
         Donate: donateT('DONATE'),
+        Options: donateT('OPTIONS'),
         CardOption: donateT('CARD_OPTION'),
         BankTransferOption: donateT('BANK_TRANSFER_OPTION'),
         DesiredAmount: donateT('DESIRED_AMOUNT'),
@@ -53,7 +54,7 @@ export function ProjectPreviewCard(props: { project: ProjectType, title: string,
                     {props.title}
                 </Text>
 
-                <Text fz="sm" c="dimmed" fw={500} lineClamp={4} component={Link} {...linkProps}>
+                <Text fz="sm" c="customDimmed" fw={500} lineClamp={4} component={Link} {...linkProps}>
                     {props.description}
                 </Text>
                 {/*<Text c="orange" fw={500} mt={3} component={Link} {...linkProps}>*/}

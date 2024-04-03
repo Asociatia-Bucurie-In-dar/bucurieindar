@@ -51,9 +51,9 @@ export default function RootLayout({children, params: {locale}}: { children: Rea
                 '#000000',
                 '#000000',
                 '#000000', // Light
-                '#000000', 
+                '#9297A0', //When dark theme
                 '#000000', // Dark
-                '#677480', // Normal - this will be the primary 'dimmed' color
+                '#727A83', // Normal - this will be the primary 'dimmed' color
                 '#000000',
                 '#000000',
                 '#000000', // Darkest

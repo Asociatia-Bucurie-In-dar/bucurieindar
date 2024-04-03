@@ -19,8 +19,8 @@ export default function HomePage({params: {locale}}:{ params: { locale: string }
           <HomeFeeding/>
           <HomeProjects/>
           <HomeAboutProjects/>
-          <SfIoan/>
           <HomeAboutGeneral/>
+          <SfIoan disableBackground={true}/>
           <OurTeam/>
           <FAQ/>
           {/*<HomeBlogPosts/>*/}

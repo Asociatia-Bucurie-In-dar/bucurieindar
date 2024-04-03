@@ -77,7 +77,7 @@ export function ContactPanel(props: { translations: ContactTranslationType }) {
             <Text mb="sm" style={{fontWeight: 600, fontSize: 27}}>
                 <span style={{color: iconColor}}> ⚠️ </span> {props.translations.MaterialGoodsTitle}
             </Text>
-            <Text mt="sm" mb={30} c="dimmed" fw={500}>
+            <Text mt="sm" mb={30} c="customDimmed" fw={500}>
                 {props.translations.MaterialGoodsDescription}
             </Text>
             </Paper>
@@ -111,7 +111,7 @@ export function ContactPanel(props: { translations: ContactTranslationType }) {
                             <Group mt="xl">{icons}</Group>
                         </div>
                         <form className={classes.form} onSubmit={handleSubmit}>
-                            {/*<Center> <Text c="dimmed"><b>În construcție</b></Text> </Center>*/}
+                            {/*<Center> <Text c="customDimmed"><b>În construcție</b></Text> </Center>*/}
                             <Divider color="transparent" mb="md"/>
                             <TextInput
                                 value={email}

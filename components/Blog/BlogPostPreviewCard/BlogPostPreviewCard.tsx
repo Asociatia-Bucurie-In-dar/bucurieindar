@@ -22,7 +22,7 @@ export function BlogPostPreviewCard(props: { article: BlogArticleType }) {
                     height={160}
                 />
                 <div className={classes.body}>
-                    <Text tt="uppercase" c="dimmed" fw={700} size="xs">
+                    <Text tt="uppercase" c="customDimmed" fw={700} size="xs">
                         {articleT('TAG')}
                     </Text>
                     <Text className={classes.title} mt="xs" mb="md" lineClamp={2}>

@@ -69,6 +69,7 @@ export default function FullProjectPage({params: {locale, slug}}:{ params: { loc
     
     const donatePopupTranslations : ProjectTranslationsType = {
         Donate: donateT('DONATE'),
+        Options: donateT('OPTIONS'),
         CardOption: donateT('CARD_OPTION'),
         BankTransferOption: donateT('BANK_TRANSFER_OPTION'),
         DesiredAmount: donateT('DESIRED_AMOUNT'),
@@ -97,11 +98,11 @@ export default function FullProjectPage({params: {locale, slug}}:{ params: { loc
                     <Image src={projectContent.image_path} alt={title} />
                 </div>
                 <Divider color="transparent" mb="xl"/>
-                <Text c="dimmed" fw={500}>
+                <Text c="customDimmed" fw={500}>
                     {description}
                 </Text>
                 <Divider color="transparent" mb="xl"/>
-                <Text c="dimmed" fw={500}>
+                <Text c="customDimmed" fw={500}>
                     {secondDescription}
                 </Text>
             </GridCol>
