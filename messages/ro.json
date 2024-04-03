@@ -71,7 +71,7 @@
     "TITLE": "Alte moduri de a ajuta",
     "DESCRIPTION": "Există și alte moduri de a ajuta. Iată cum poți contribui:",
     "FIRST": {
-      "TITLE": "Bunuri materiale",
+      "TITLE": "Donează bunuri",
       "DESCRIPTION": "Donează îmbrăcăminte, alimente, medicamente, produse de igienă, cărți, jucării, mobilier sau alte bunuri care pot fi de folos unor familii sau copii!"
     },
     "SECOND": {
@@ -272,6 +272,7 @@
       "TITLE": "Bunuri materiale",
       "DESCRIPTION": "Oameni dragi, pentru donații de bunuri, alimente, produse de igienă, medicamente, îmbrăcăminte,  încălțăminte, jucării și oricare alte bunuri: Ne găsiți în fiecare zi, in interiorul Supermarket  La Cocoș in intervalul orar Luni - Vineri 07:30 - 20:30, Duminică 07:30 - 18:30 - Adresa: Șos. Vitan Bărzești-7A, București."
     },
+    "SEE_COCOS_MAP": "Vezi harta (Supermarket La Cocoș)",
     "FORM": {
       "TITLE": "Contactează-ne",
       "DISCLAIMER": "Vă rugăm să sunați inainte de a veni la sediul nostru. Vă mulțumim!",

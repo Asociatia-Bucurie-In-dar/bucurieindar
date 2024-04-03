@@ -71,7 +71,7 @@
     "TITLE": "Other ways of helping",
     "DESCRIPTION": "There are other ways to help also. Here's how you can contribute:",
     "FIRST": {
-      "TITLE": "Material goods",
+      "TITLE": "Donate goods",
       "DESCRIPTION": "Donate clothes, food, medicines, hygiene products, books, toys, furniture, or other goods that can be useful to families or children!",
       "BUTTONS": [
         "Contact us"
@@ -282,6 +282,7 @@
       "TITLE": "Material goods",
       "DESCRIPTION": "Dear people, for donations of goods, food, hygiene products, medicine, clothing, shoes, toys and any other goods: You can find us every day, inside La Cocoș Supermarket, Monday - Friday 07:30 - 20:30 , Sunday 07:30 - 18:30 - Address: Road Vitan Bărzești-7A, Bucharest."
     },
+    "SEE_COCOS_MAP": "See map (La Cocoș Supermarket)",
     "FORM": {
       "TITLE": "Contact us!",
       "DISCLAIMER": "Please call before visiting us. Thank you!",

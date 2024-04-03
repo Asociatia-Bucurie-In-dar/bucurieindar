@@ -67,6 +67,7 @@ export type ContactTranslationType = {
     Error: string;
     MaterialGoodsTitle: string;
     MaterialGoodsDescription: string;
+    SeeCocosMap: string;
 };
 
 export type GalleryVideo = {
