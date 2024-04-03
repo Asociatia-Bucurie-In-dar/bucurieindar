@@ -66,7 +66,9 @@ export function Gallery(props: { videosData: GalleryVideo[], imagesData: Gallery
             <SimpleGrid cols={{ base: 1, sm: 2, md: 2 }} spacing="lg" verticalSpacing="xl">
                 {allVideoCards}
             </SimpleGrid>
+
             <Divider  mb="xl" color="transparent"/>
+            
             <SimpleGrid cols={{base: 1, sm: 2, md: 2}} spacing="lg" verticalSpacing="xl">
                 {allImageCards}
             </SimpleGrid>

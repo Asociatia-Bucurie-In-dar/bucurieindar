@@ -28,14 +28,22 @@ export default function GalleryPage( {params: {locale}} : {params: {locale: stri
 
     const videosData = [
         {
-            title: t('VIDEOS.1.DESCRIPTION'),
+            title: '',
+            youtubeId: 'melxSaysHyM',
+        },
+        {
+            title: '',
             youtubeId: 'FKUvxS3grqg',
             
         },
         {
-            title: t('VIDEOS.2.DESCRIPTION'),
+            title: '',
             youtubeId: 'OBcBR5o5TpM',
-        }
+        },
+        {
+            title: '',
+            youtubeId: 'eJYPYBxaOYk',
+        },
     ];
 
     const imgPrepath = '/gallery/';

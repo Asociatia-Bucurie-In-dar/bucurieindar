@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="32e33542-bd06-42e3-bf1b-3883da34adf9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.bucurieindar.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.bucurieindar.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Popups/DonatePopup/DonatePopupButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Popups/DonatePopup/DonatePopupButton.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/[locale]/gallery/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/[locale]/gallery/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Gallery/Gallery.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Gallery/Gallery.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
