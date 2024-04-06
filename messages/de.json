@@ -1,0 +1,301 @@
+{
+  "COMMON": {
+    "DONATE": "Spenden",
+    "DONATE_NOW": "Jetzt spenden",
+    "ASSOCIATION": "Bucurie în Dar (Freude im Geschenk)",
+    "ASSOCIATION_FULL": "Verein Bucurie în Dar (Freude im Geschenk)",
+    "NON_PROFIT": "Nichtregierungsorganisation",
+    "INDEPENDENT_NON_PROFIT": "Unabhängige Nichtregierungsorganisation",
+    "NECESSARY_AMOUNT": "Notwendiger Betrag",
+    "TONS": "Tonnen",
+    "SHOW_MORE": "Mehr lesen...",
+    "HIDE": "Verbergen",
+    "BURGER_MENU_LABEL": "Menü öffnen Knopf"
+  },
+
+  "DONATIONS": {
+    "SUCCESS_TITLE": "Danke!",
+    "SUCCESS_MESSAGE": "Die Spende war erfolgreich.",
+    "ERROR_TITLE": "Ups!",
+    "ERROR_MESSAGE": "Die Spende ist fehlgeschlagen. Bitte versuchen Sie es später noch einmal.",
+    "BACK": "Zurück zu den Projekten"
+  },
+
+  "HOME_HERO": {
+    "MOTTO_FIRST_PART": "Aus diesem Leben nehmen wir nur mit",
+    "MOTTO_SECOND_PART": "unsere Taten",
+    "DESCRIPTION": "Wir unterstützen mit all unserer Macht diejenigen, die niemanden mehr haben, auf den sie sich stützen können. Unsere Mission ist es, Freude dort zu bringen, wo keine Freude mehr ist, in die Herzen von so vielen Menschen wie möglich, groß und klein, jung und alt, zusammen mit euch.",
+    "SEE_MORE": "Erfahre mehr"
+  },
+
+  "HOME_ACTIVITY": {
+    "TITLE": "Unsere Arbeit",
+    "DESCRIPTION": "Liebe Leute, all unsere Arbeit, alle Güter, einschließlich der Existenz dieser Vereinigung, verdanken wir euch, sie gehören euch! Wir verwenden sie nur sorgfältig, weise und zu einem edlen Zweck. Also teilen wir all das Lob, das ihr uns zollt, mit euch, denn ohne euch würden wir nicht existieren, und ohne einander hätten wir nichts von dem erreicht, was wir erreicht haben!",
+    "ACTIVITIES": {
+      "FIRST": {
+        "TITLE": "Essensportionen",
+        "DESCRIPTION": "für Bedürftige."
+      },
+      "SECOND": {
+        "TITLE": "Nicht verderbliche Waren",
+        "DESCRIPTION": "bisher gespendet."
+      },
+      "THIRD": {
+        "TITLE": "Hygieneprodukte",
+        "DESCRIPTION": "bisher geschenkt."
+      },
+      "FOURTH": {
+        "TITLE": "Kleidung",
+        "DESCRIPTION": "für die Bedürftigen."
+      }
+    }
+  },
+
+  "SAINT_JOHN": {
+    "TITLE": "Zentrum „St. Johannes der Barmherzige“",
+    "SUBTITLE": "zur Behandlung von Abhängigkeiten",
+    "DESCRIPTION": "Gemeinsam retten wir Leben, ändern Schicksale, heilen Seelen. Jeder von uns hat mindestens einmal im Leben eine dunkle Zeit durchgemacht, aus der wir keinen Ausweg wussten. Wir haben Familienmitglieder, Freunde, geliebte Menschen in unserem Leben leiden sehen und verstanden, was eine ausgestreckte Hand oder eine Schulter zum Weinen bedeutet. Wie viel zählt die Hilfe, die mit Empathie, Liebe und Zuneigung angeboten wird! In solchen Momenten brauchst du Unterstützung – und ich glaube fest daran, dass das Team des Zentrums „St. Johannes der Barmherzige“ sich bemühen wird, Trost, Heilung und Unterstützung denen zu bringen, die sagen: „Hilf mir!“.",
+    "IMAGE_ALT": "Ikone des Heiligen Johannes des Barmherzigen"
+  },
+
+  "HOME_POTENTIAL": {
+    "TITLE": "Sie gehören auch zu uns!",
+    "DESCRIPTION": "Wir haben Hunderte von Kindern kennengelernt, manche leben in der Stadt, andere auf dem Land, manche auf dem Feld oder in Kanälen, manche gesund, andere leiden an Krebs, Leukämie oder schweren Formen der Lähmung. ABER sie alle haben etwas gemeinsam: Sie sind UNSCHULDIG und wünschen sich alle dasselbe, geliebt zu werden, so wie jeder von uns es sich wünscht. Helfen Sie uns, ihnen zu helfen!",
+    "IMAGE_ALT": "Porträt eines Kindes"
+  },
+
+  "HOME_HELP": {
+    "BADGE": "Hilf anders",
+    "TITLE": "Andere Wege zu helfen",
+    "DESCRIPTION": "Es gibt auch andere Wege zu helfen. Hier sind Möglichkeiten, wie du beitragen kannst:",
+    "FIRST": {
+      "TITLE": "Spende Waren",
+      "DESCRIPTION": "Spende Kleidung, Lebensmittel, Medikamente, Hygieneartikel, Bücher, Spielzeuge, Möbel oder andere Güter, die für Familien oder Kinder nützlich sein können!"
+    },
+    "SECOND": {
+      "TITLE": "Formulare",
+      "DESCRIPTION": "Fülle das Formular 230 online aus, um uns 3,5% deiner Einkommensteuer kostenlos umzuleiten, oder lade den Sponsoringvertrag herunter."
+    },
+    "THIRD": {
+      "TITLE": "Freiwilligenarbeit",
+      "DESCRIPTION": "Wie kannst du helfen? Es gibt so viele alleinstehende Senioren, Menschen mit Behinderungen, Gefangene in ihren eigenen Wohnungen, verlassene Frauen, die ihre Kinder alleine großziehen, und viele andere Fälle, die deine Hilfe benötigen. Wir stellen die Lebensmittel, Medikamente und alles, was diese Seelen benötigen, zur Verfügung, und du musst sie nur zu ihnen nach Hause bringen. \nUnd natürlich in vielen unserer Aktivitäten, die Vorbereitung der Geschenke für die heiligen Feiertage, das Arrangieren der erhaltenen Spenden und vieles mehr. Wir erwarten dich mit Freude und Begeisterung!"
+    }
+  },
+
+  "OUR_TEAM": {
+    "TITLE": "Unser Team",
+    "DESCRIPTION": "Lerne unser Team kennen. Wir sind leidenschaftliche Menschen, die lieben, was sie tun, und die einen positiven Einfluss in der Welt hinterlassen möchten.",
+    "TEAM_MEMBERS": {
+      "FIRST": { "NAME": "Alexandru Ionescu", "ROLE": "Präsident" },
+      "SECOND": { "NAME": "Andreea Constantinescu", "ROLE": "VP & Marketingkoordinator" },
+      "THIRD": { "NAME": "Cioltan Marius", "ROLE": "VP & Logistikkoordinator" },
+      "FOURTH": { "NAME": "Teodor Nemțeanu", "ROLE": "Hauptkoordinator für Notfallsituationen" },
+      "FIFTH": { "NAME": "Alina Cernea", "ROLE": "Assistentin & Hauptkoordinator" },
+      "SIXTH": { "NAME": "Cristian Simionescu", "ROLE": "Spezialist für Kommunikation & Öffentlichkeitsarbeit" },
+      "SEVENTH": { "NAME": "Evelin", "ROLE": "Hauptsozialarbeiter" },
+      "EIGHTH": { "NAME": "Ovidiu Horațiu", "ROLE": "Architekt" },
+      "NINTH": { "NAME": "Titus Necea", "ROLE": "Softwareentwickler" },
+      "TENTH": { "NAME": "Fabian Ghenof", "ROLE": "Softwareentwickler" }
+    }
+  },
+
+  "FAQ": {
+    "TITLE": "Antworten",
+    "QUESTIONS": {
+      "FIRST": {
+        "QUESTION": "Erste Frage?",
+        "ANSWER": "Erste Antwort."
+      },
+      "SECOND": {
+        "QUESTION": "Zweite Frage?",
+        "ANSWER": "Zweite Antwort."
+      },
+      "THIRD": {
+        "QUESTION": "Dritte Frage?",
+        "ANSWER": "Dritte Antwort."
+      },
+      "FOURTH": {
+        "QUESTION": "Vierte Frage?",
+        "ANSWER": "Vierte Antwort."
+      }
+    }
+  },
+
+  "PROJECTS": {
+    "TITLE": "Projekte",
+    "DESCRIPTION": "Entdecke einige unserer Projekte und finde heraus, wie du denen helfen kannst, die dich brauchen.",
+    "TABLE_OF_JOY": {
+      "TITLE": "Tafel der Freude",
+      "DESCRIPTION": "Waren Sie jemals in der Situation, nichts zu essen zu haben, auch nur für einen Tag? Durch das Programm „Tafel der Freude“ bieten wir tausenden von Menschen Essen an. Schenke auch du einem bedürftigen Menschen eine Mahlzeit und du wirst im Gegenzug das ehrlichste „DANKE!“ deines Lebens erhalten. Wen helfen wir? Familien mit vielen Kindern, Personen ohne Einkommen, verwitwete Frauen, Kranke oder alleinerziehende Mütter, bettlägerige Personen, Erwachsene oder Kinder, sozial betreute Kinder, einsame Ältere, Obdachlose. Sie fasten, auch wenn es keine Fastenzeit ist.",
+      "SECOND_DESCRIPTION": "Auf die eine oder andere Weise bitten wir alle um etwas und wir alle brauchen Hilfe. Hilf ihnen mit einer Mahlzeit!"
+    },
+    "LOVE_AND_MEDICINE": {
+      "TITLE": "Liebe & Medikamente",
+      "DESCRIPTION": "Möchtest du unser Freund sein? Diese Kinder nähren sich von unserer Liebe und leben mit Medikamenten. Was sind die Bedürfnisse dieser Kinder? Einige benötigen Behandlungen, andere Prothesen, Rollstühle oder Operationen. Hilf ihnen, nicht ohne Behandlung auskommen zu müssen und nur mit Liebe und der Freude zu bleiben, geheilt zu sein, dank deiner Hilfe. Die durch Spenden erhaltenen Gelder werden direkt auf das Konto des Krankenhauses oder der Klinik umgeleitet, und wir werden die Rechnungen/Kosten auf der Website der Assoziation Freude im Schenken veröffentlichen",
+      "SECOND_DESCRIPTION": "\"Die Liebe ist langmütig und freundlich; die Liebe eifert nicht, sie prahlt nicht, sie bläht sich nicht auf. Sie verhält sich nicht ungehörig, sucht nicht ihren eigenen Vorteil, wird nicht verbittert, rechnet das Böse nicht zu. Sie freut sich nicht über die Ungerechtigkeit, sondern freut sich mit der Wahrheit. Sie erträgt alles, glaubt alles, hofft alles, duldet alles. Die Liebe fällt niemals.\""
+    },
+    "SCHOOL_OF_JOY": {
+      "TITLE": "Schule der Freude",
+      "DESCRIPTION": "Die Kinder, die wir heute unterstützen, sind die gebildeten Erwachsenen von morgen. Indem du den Zugang dieser Kinder zur Bildung unterstützt, hilfst du auch der Gemeinschaft und förderst den Beitrag, den sie ihrerseits zum Leben der Gemeinschaft und dieses Landes leisten werden. Mit deiner Hilfe werden diese Kinder die Welt entdecken, eine andere Welt als die, in der sie jetzt leben. Durch sie wirst auch du Freude haben! Außerdem wissen wir alle, dass in Rumänien das Phänomen des Mobbing zugenommen hat und viele Kinder dessen Opfer sind. Wir alle wissen, dass es einfacher ist vorzubeugen, als zu bekämpfen, deshalb glauben wir, dass wir gemeinsam den Kleinen helfen können, gesunde Beziehungen zu ihren Mitmenschen zu haben. Wir teilen das Projekt der Werkstatt „Schule der Freude“, die mit einer Geschichte beginnt – „Das Herz des Igels. Ein Abenteuer auf der Suche nach wahren Freunden“, geschrieben von Mariana Buric. Die Werkstatt beinhaltet Spiele und Aktivitäten, die mit den Kindern sowohl von Lehrern in Kindergärten und Schulen als auch von Eltern zu Hause durchgeführt werden können. Wir würden uns freuen, wenn unter Ihnen Lehrer und Eltern sind, die sich uns in diesem Projekt anschließen möchten. Lasst uns den Kleinen helfen, gerne in den Kindergarten und die Schule zu gehen, und sich über die Freundschaft ihrer Mitmenschen zu freuen. Von den 300 Kindern, die wir mit eurer Hilfe in der Schule unterstützen, hat keines die Schule abgebrochen!",
+      "SECOND_DESCRIPTION": "Lasst sie nicht verloren gehen!"
+    },
+    "STREET_PEOPLE": {
+      "TITLE": "Straßenmenschen",
+      "DESCRIPTION": "\"Obdachlose\" oder \"Penner\"! So nennen wir diese Menschen und so nannte ich sie auch einst. Jetzt nenne ich sie „meine Freunde“ – ja, ja, meine Freunde! Vielleicht wusstet ihr es nicht, aber einige der Menschen, die auf der Straße leben, waren einst Lehrer, Intellektuelle; andere waren zu gut zu ihren Kindern und wurden aus dem Haus geworfen; wieder andere sind aufgrund von Enttäuschungen, dem Tod ihrer Kinder, unter freiem Himmel gelandet, aber sie sind freier als viele von uns. Einige von ihnen wegen psychischer Probleme, andere wurden im Krankenhaus verlassen, einige wuchsen in Kinderheimen auf oder wurden ihrem Schicksal überlassen. In der Regel schauen sie dir nicht in die Augen, wenn du ihnen Essen gibst, sie senken den Blick, aber wenn sie dich ansehen und sich bedanken, wisse, dass es das aufrichtigste „Danke“ ist, das du je erhalten hast! Und eine große Wohltat hast du vor Gott getan! Jederzeit kann sich unser Leben auch ändern, deshalb lasst uns dankbar für das sein, was wir haben, und sie nicht vergessen. Helft durch uns. Zusammen mit „First Responder“ füttern und behandeln wir sie medizinisch, so gut wir können. Helft uns, ihnen zu helfen!",
+      "SECOND_DESCRIPTION": "\"Denn ich war hungrig und ihr habt mir nichts zu essen gegeben; ich war durstig und ihr habt mir nichts zu trinken gegeben; ich war ein Fremder und ihr habt mich nicht aufgenommen; nackt und ihr habt mich nicht gekleidet; krank und im Gefängnis, und ihr habt mich nicht besucht.\""
+    },
+    "ADOPT_A_FAMILY": {
+      "TITLE": "Adoptiere eine Familie",
+      "DESCRIPTION": "Hilf mindestens einem unserer Freunde, ob klein oder groß, jung oder alt. Liebe Leute, ihr habt die Möglichkeit, eine Familie zu adoptieren und für sie zu sorgen, indem ihr ihnen in ihren Bedürfnissen und Schwächen helft. Jede noch so kleine Hilfe ist willkommen. Ruft uns an, um ihre Kontaktdaten zu erhalten. Decke, was du kannst, von den Bedürfnissen einer benachteiligten Familie: ein Medikament oder eine Packung Babymilch, Grundnahrungsmittel, ein Heft oder einen Stift für einen Schüler, all das sind Dinge, die sich leider nicht alle leisten können. Wir stellen euch die Fälle vor, ihr entscheidet, welche Familie ihr besuchen und mittel- bis langfristig unterstützen möchtet.",
+      "SECOND_DESCRIPTION": "Hinterlasst uns eine Nachricht, um die Kontaktdaten der Familie zu erhalten, die ihr unterstützen möchtet.",
+      "PHOTOS": {
+        "1": "Diese Familie besteht aus vier Mitgliedern, der Mutter, dem Großvater und den zwei Kindern, Ionuț, 14 Jahre alt, 6. Klasse, hat eine Sonderschule in Bragadiru besucht, und Iulian, 8 Jahre alt, 2. Klasse, besucht die Schule in der Gemeinde Plătărești. Der 14-jährige Ionuț hat ernsthafte Gesundheitsprobleme und zahlreiche Operationen hinter sich. Hauptdiagnose - spezifische gemischte Entwicklungsstörungen. Sekundärdiagnose: operierte sakrale Myelomeningozele, interne Hydrozephalie, bilateraler konvexer Fuß, skelettale Dysplasie, Mikrozephalie, festgestellter linker frontaler Fokus, skoliotische Haltung, divergenter Strabismus, hypermetropischer Astigmatismus, schwerer geistiger Rückstand, Dekubitusulzeration der rechten Fußsohle, Agenesie des linken Daumens, Wachstums- und Gewichtsunterernährung, Ernährungsschwierigkeiten, Hypovitaminose. Das Kind erhält eine Behindertenrente, und die Mutter eine Begleitperson, kann nicht arbeiten, da sie rund um die Uhr bei Ionuț sein muss. Ionuț trägt Windeln Größe 6 aufgrund seiner Probleme und hat eine Sonderschule in Bragadiru besucht. Jetzt ist er aufgrund der Operation zu Beginn des Jahres und seines schwachen Gesundheitszustands vorübergehend zu Hause. Sie benötigen Unterstützung für die Behandlung von Ionuț, Lebensmittel, Windeln, Kleidung, Schulmaterial für ihn und seinen Bruder.",
+        "2": "Die Familie besteht aus fünf Mitgliedern, der Mutter, dem Vater und den drei Kindern, Alex, 11 Jahre alt, 6. Klasse, Ștefan, 10 Jahre alt, 4. Klasse, Nicol, 5 Jahre alt, Kindergarten. Sie leben zusammen mit ihren Eltern in einem 4-Quadratmeter-Zimmer im Haus der Großmutter mütterlicherseits. Vor einigen Jahren haben sie etwas Geld gespart, und letztes Jahr hat Gott ihnen geholfen, und sie haben ein kleines Haus gebaut, sind aber noch nicht umgezogen, da es noch viel zu tun gibt. Sie mussten viele Opfer bringen, um das Haus zu errichten. Der Vater arbeitet auf der Baustelle und die Mutter als Reinigungskraft in Wohnblöcken ohne Arbeitsvertrag. Die Kinder gehen täglich zur Schule, sind gut erzogen, sauber und gepflegt.",
+        "3": "Eine Familie mit acht Mitgliedern: Vater, Mutter, Großmutter und fünf Kinder, wobei die Mutter erneut schwanger ist. Alle Kinder gehen zur Schule, haben sehr gute Noten, sind gut erzogen, ruhig und gehorsam, Kinder, die ihren Eltern bei den Hausarbeiten helfen. Der Vater geht zum Schilfschneiden, das für Kränze verwendet wird, und schneidet es von einem Fluss oder See. Wenn die Kinder von der Schule nach Hause kommen und der Vater Schilf schneidet, helfen sie ihm, es herauszuholen. Sie erhalten auch Sozialhilfe, das ist ihr einziges Einkommen. Ihr kleines Haus besteht aus zwei bewohnbaren Zimmern, eines, in dem die Eltern schlafen, und eines für die Kinder. Es gibt noch ein unfertiges Zimmer. Trotz ihrer minimalen Verhältnisse sind sie sehr sauber, gut erzogen und fleißig. Die Kinder benötigen alles Notwendige: Kleidung, Schuhe, Schulmaterial, Lebensmittel, jede Hilfe ist willkommen. Wie Sie auf den Fotos oben sehen können, gibt es keine Decken im Flur des Hauses, nur die Dachsparren und das Dach sind sichtbar.",
+        "4": "Die Familie besteht aus sechs Mitgliedern, den Eltern und vier Kindern. Auf diesem Bild ist auch ein Enkelkind zu sehen, das mit ihnen im Hof lebt. Die vier Kinder sind Viorel, 9 Jahre alt, 2. Klasse, Maria, 10 Jahre alt, 2. Klasse, Cătălina, 4 Jahre alt, Kindergarten, und Andreea, 5 Jahre alt, Kindergarten. Das Haus, in dem sie leben, besteht aus zwei Zimmern, einem bewohnbaren und einem unfertigen. Die Kinder Viorel und Maria sind gehörlos, sie benötigen Untersuchungen und Hörgeräte. Alle gehen zu einer normalen Schule in der Gemeinde Plătărești, wo sie leben. Es ist für die Kinder sehr schwierig in der Schule, da sie nicht hören können, was die Lehrer sagen, und Hörgeräte wären ihnen eine große Hilfe. Nur der Vater arbeitet, und Viorel und Maria erhalten eine Behindertenrente. Schöne Kinder, aber mit so vielen Problemen und einem so bescheidenen Zuhause.",
+        "5": "Die Familie besteht aus fünf Mitgliedern: Mutter, Vater und drei Kinder, Andrei, 9 Jahre alt, 2. Klasse, ein weiteres Kind, 8 Jahre alt, 1. Klasse, und Darius, 5 Jahre alt, Kindergarten. Das einzige Einkommen der Familie ist das Gehalt des Vaters, der bei einem Abfallwirtschaftsunternehmen arbeitet. Die Mutter ist Hausfrau und kümmert sich um die Kinder, die zur Schule gehen und sehr gute Noten haben. Sie haben ein bescheidenes Zuhause und viele Bedürfnisse. Der Vater hat eine Handverletzung von einem Unfall, setzt sich aber für seine Kinder ein, um ihnen das Nötigste zu bieten.",
+        "6": "Frau Ionela Tănase ist 36 Jahre alt, geschieden und hat zwei Kinder, Ștefan, 11 Jahre alt, 5. Klasse, und Diana, 8 Jahre alt, 2. Klasse. Die Familie lebt bei den mütterlichen Großeltern. Ștefan trägt aufgrund von Problemen, die er hatte, als er sehr klein war, ein Hörgerät, und Diana befindet sich in Behandlung für eine vorübergehende Depression. Trotz ihrer Probleme gehen die Kinder zur Schule und haben hohe Noten. Gelegentlich besuchen die Kinder auch ihren Vater. Es ist sehr schwer für sie, aber die Mutter gibt ihr Bestes, um das Nötigste zu bieten.",
+        "7": "Das sind die Kinder der Familie Androne. Diese Familie besteht aus fünf Mitgliedern: Mutter, Vater und drei Kinder, Mario, 13 Jahre alt, 6. Klasse, Mihai, 4 Jahre alt, Kindergarten, und Eric, 3 Jahre alt, Kindergarten. Das einzige Einkommen dieser Familie ist das Gehalt des Ehemanns, das nicht vollständig ist, da Lohnpfändungen wegen unbezahlter Raten bestehen. Der Vater versuchte, ein guter Mensch zu sein, indem er anderen als Bürge diente, aber leider haben diese Menschen ihn im Stich gelassen und nicht bezahlt, und wie Sie wissen, bleibt der Bürge am Ende für den Schuldner bezahlen. Sie leben in einem kleinen Haus mit zwei bewohnbaren Zimmern und einem kleinen unfertigen Zimmer. Das Haus, in dem sie leben, gehörte der Urgroßmutter, und sowohl der Vater der Kinder Androne als auch ein Cousin haben dort Rechte, so dass das Haus halbiert ist. Die Kinder gehen zur Schule und in den Kindergarten, und die Mutter kümmert sich um die kleinen Kinder, das Haus und den Haushalt. Die Mutter arbeitet nicht mehr, weil sie sich um die Kinder kümmern muss.",
+        "8": "Die Familie besteht aus drei erwachsenen Mitgliedern. Toma Maria, Rentnerin, Țincu Mirel, krank mit Behinderung, Matei Lică, auch krank mit Behinderung. Frau Toma Maria ist die Mutter von Țincu Mirel und die Schwester von Matei Lică. Mirel und Lică erhalten beide eine Behindertenrente, Mirel Grad 1 - 600 RON, Lică Grad 2 - 400 RON, und Frau Toma Maria ist Rentnerin mit einer Rente von 1250 RON. Sie haben ein Haus mit drei Zimmern, das mit Pappe bedeckt ist, und es regnet an Regentagen hinein. Ein großer Teil ihres Geldes geht für Rechnungen, Behandlung usw.",
+        "9": "Die Familie besteht aus vier Mitgliedern, der Mutter und den drei Kindern. Der Junge auf dem obigen Bild ist das jüngste Kind der Familie. Die drei Kinder sind Emil, 17 Jahre alt, 11. Klasse, George, 15 Jahre alt, 5. Klasse, und Ștefan, 11 Jahre alt, 4. Klasse. Die Familie hat letztes Jahr einen großen Verlust erlitten, als der Vater der Kinder im Alter von 36 Jahren bei einem Unfall starb. Sie hinterließen nur Tränen, Schmerz und drei wunderbare Kinder mit einer exemplarischen Mutter und vielen Bedürfnissen. Die Kinder gehen zur Schule und haben sehr gute Noten, besonders Emil, der 17-jährige Junge, möchte eine gute Karriere haben, um seiner Mutter und seinen Geschwistern zu helfen. Er möchte die Stütze der Familie sein, auf die sich die anderen Mitglieder verlassen können, und ihnen so viel wie möglich helfen. Die Mutter arbeitet bei einem Reinigungsunternehmen, wo sie ein Nettoeinkommen von 2200 RON und Essensgutscheine im Wert von 600 RON verdient, von denen 1100 RON direkt für Bankverpflichtungen abgehen. Die Kinder erhalten eine Waisenrente in Höhe von 3000 RON. Sie haben Schwierigkeiten, die Rechnungen für Strom, Wasser, Kanalisation, Internet, TV, die Zugfahrten der Mutter, Lebensmittel, Kleidung und Schulsachen zu bezahlen.",
+        "10": "Eine 60-jährige Witwe, die an Gebärmutterhalskrebs leidet. Sie wurde 2020 operiert, und ihr Gesundheitszustand umfasst Bauchschmerzen, eine seit vier Jahren nicht verheilte Wunde im Operationsbereich, Rückenschmerzen und Bluthochdruck. Ihr einziges Einkommen beträgt 1200 RON: Rechnungen (Strom, Gasflasche, Fernsehen) und Medikamente sind ihre größten Ausgabenposten, und ihre dringendste Notwendigkeit ist Nahrung; sie lebt allein."
+      }
+    },
+    "HELP_A_COMMUNITY": {
+      "TITLE": "Hilf einer Gemeinschaft",
+      "DESCRIPTION": "Wir sind engagiert in der Unterstützung vieler Gemeinschaften. Unsere Freunde sind Hunderte von Familien, wundervolle Menschen und viele schöne Kinder. Was auch immer Gutes ihr zu bieten habt – Lebensmittel, Medikamente (Hustensaft, Fiebersenkende Mittel, Windeln etc.), Schuhe, Kleidung, Hygiene- und Intimpflegeprodukte, Spielzeug, Elektrogeräte, Möbel und andere Güter. Wir erwarten euch täglich an unseren zwei Sammelstellen: im Supermarkt „La Cocoș“, im Ladeninneren, Șoseaua Vitan Bârzești 7A, Montag bis Samstag von 07:30 bis 20:30 Uhr, Sonntag von 07:30 bis 18:30 Uhr) ODER an unserem Hauptsitz in der Strada Poterași Nr. 14, von 09:00 bis 16:00 Uhr. Für größere Mengen von Produkten oder Gütern, bitte kontaktiert uns telefonisch.",
+      "SECOND_DESCRIPTION": "Die durch Spenden gesammelten Gelder werden verwendet, um Medikamente für Kinder und Erwachsene, heilende Cremes, Tees, Verbände, Windeln, Sehhilfen, Hygieneprodukte und insbesondere Intimhygieneprodukte (wir kennen wundervolle Mädchen, die diese Güter dringend benötigen), Brennholz, Gasflaschen, Öfen und viele andere dringend benötigte Güter zu kaufen. Wir danken euch!"
+    }
+  },
+
+  "PROJECTS_MORE": {
+    "DONATE": "Spenden",
+    "OPTIONS": "Optionen",
+    "CARD_OPTION": "Karte",
+    "BANK_TRANSFER_OPTION": "Überweisung",
+    "DESIRED_AMOUNT": "Gewünschter Betrag",
+    "CONTINUE": "Zur Zahlung",
+    "DONATE_FOR": "Wie möchtest du spenden für",
+    "I_AGREE_TO_THE": "Ich stimme den",
+    "TERMS_AND_CONDITIONS": "Geschäftsbedingungen",
+    "AND": "und",
+    "PRIVACY_POLICY": "Datenschutzbestimmungen",
+    "TRANSFER_WARNING_FIRST_PART": "Bitte geben Sie",
+    "TRANSFER_WARNING_SECOND_PART": "in den Zahlungsdetails an"
+  },
+
+  "SHARE": {
+    "MAIN": "Ajută distribuind!"
+  },
+
+  "ABOUT": {
+    "TITLE": "Despre noi",
+    "DESCRIPTION": "Cine suntem, ce facem și de ce să ajutăm.",
+    "WHO_ARE_WE": {
+      "TITLE": "Cine suntem?",
+      "DESCRIPTION": "Suntem voluntari care, după câțiva ani de activități umanitare, am înființat Asociația „Bucurie în Dar” pentru a ajuta la o scară mai mare. Suntem oameni care trăiesc și pentru alții, nu doar pentru noi înșine. Cu ajutorul Bunului Dumnezeu și cu sprijinul vostru, într-o împreună lucrare, vrem să aducem bucurie în inimile multor oameni, mari și mici, tineri și bătrâni. Avem libertatea de a alege ce facem în această viață, iar noi am ales să ajutăm ‒ și o facem cu toata bucuria și cu toată dragostea. Dăruiește și tu bucurie, împreună cu noi!"
+    },
+    "WHAT_WE_DO": {
+      "TITLE": "Ce facem?",
+      "DESCRIPTION": "Ascultăm poveștile de viață ale celor care sunt mai puțin importanți în ochii unei părți din lume. Îi sprijinim, cu tot ce ne stă în putere, pe cei ce nu mai au pe cine să se sprijine. Îi ajutăm pe cei care strigă: „Ajutați-mă!”. Alege să ajuți împreună cu noi! Este atât de simplu. Nu trebuie decât să vrei."
+    },
+    "WHY_WE_HELP": {
+      "TITLE": "De ce să ajutăm?",
+      "DESCRIPTION": "Pentru că avem puterea să alegem ce facem cu timpul nostru, cu viața noastră. Moștenirea pe care o lăsăm copiilor noștri sunt faptele noastre, pe care le transmit și ei mai departe. Oameni buni, din această viață plecăm doar cu faptele noastre! Voi, cei ce veniți și ajutați, sunteți cei ce ați ales să sacrificați din timpul vostru, din confortul și banii voștri în favoarea unor oameni pe care nu-i cunoașteți. Ați ales să dăruiți din viața voastră aproapelui vostru. Aceasta este darul ‒ și el vine din iubire."
+    }
+  },
+
+  "GALLERY": {
+    "TITLE": "Unsere Arbeit",
+    "DESCRIPTION": "Foto- und Videogalerie unserer Aktivitäten.",
+    "VIDEOS": {
+      "1": { "DESCRIPTION": "Video - Bericht, Universum des Glaubens" },
+      "2": { "DESCRIPTION": "Video - Gründer Freude im Geschenk" }
+    },
+    "PHOTOS": {
+      "1": { "DESCRIPTION": "Der gute Gott wirkt durch Menschen, durch euch alle, die ihr zum Glück dieser Kinder beigetragen habt." },
+      "2": { "DESCRIPTION": "Wir danken Frau Monica und der Vereinigung Amprenta, dass sie uns ihr Vertrauen und ihre Unterstützung gegeben haben, und so konnten wir mindestens 300 Kinder unterstützen." },
+      "3": { "DESCRIPTION": "Wir dachten, wir machen den Kindern aus der Gemeinde Budești eine Überraschung, indem wir ihnen 30 Trainingsanzüge zum Trainieren anbieten. Aber ihre Überraschung war viel größer als unsere. Wir fanden die Mädchen vor, wie sie uns Märzchen vorbereiteten." },
+      "4": { "DESCRIPTION": "Wir geben bekannt, dass wir auch in diesem Jahr mit Gottes Hilfe und eurer Unterstützung 16 Kinder ans Meer schicken konnten! Vielen Dank an die Gastgeber von CASA DEXTER, Vali und Cami, dass sie sich um die Kinder gekümmert haben!" },
+      "5": { "DESCRIPTION": "Danke an die Vereinigung Medicover für die gespendeten Hygieneprodukte!" },
+      "6": { "DESCRIPTION": "Wir danken euch für euer Engagement und eure Fürsorge!" },
+      "7": { "DESCRIPTION": "In den letzten Jahren haben wir gemeinsam mit euch vielen Menschen, Familien, Kindern, Obdachlosen geholfen, ich glaube, wir haben niemanden ausgelassen, wir haben bedingungslos und ohne Vorbehalt geholfen und tun dies weiterhin." },
+      "8": { "DESCRIPTION": "Die Kinder, die wir heute unterstützen, sind die gebildeten Erwachsenen von morgen. Bildung ist grundlegend. Durch die Unterstützung dieser Kinder und den Zugang zur Bildung helft ihr nicht nur der Gemeinschaft, sondern auch dem Beitrag, den sie ihrerseits der Gemeinschaft und diesem Land leisten werden." },
+      "9": { "DESCRIPTION": "Danke für euer Engagement im Projekt TAFEL DER FREUDE 🌺 Es ist so leicht, durch uns zu helfen!" },
+      "10": { "DESCRIPTION": "Heute waren wir im Dorf Podul Pitarului, Bezirk Călărași. Wir danken Gina für ihr Engagement und ihre Fürsorge für die Familien in der Gemeinschaft!" },
+      "11": { "DESCRIPTION": "Der Supermarkt La Cocoș 🐓 hat uns einen weiteren Sammelplatz 🎉 zur Verfügung gestellt. Dieser ist ausschließlich für Spenden von Kleidung, Schuhen, Spielzeug und Hygieneprodukten bestimmt." },
+      "12": { "DESCRIPTION": "Lasst uns die Kranken und Einsamen und die im Krankenhaus internierten Kinder nicht vergessen." },
+      "13": { "DESCRIPTION": "Freut euch über Kinderschuhe und danke den Spendern" },
+      "14": { "DESCRIPTION": "...❤️" }
+    }
+  },
+
+  "BLOG": {
+    "TITLE": "Unsere Artikel",
+    "DESCRIPTION": "Blogartikel",
+    "READ_ARTICLE": "Lese den Artikel",
+    "ARTICLES": {
+      "1": {
+        "TITLE": "",
+        "DESCRIPTION": "",
+        "TAG": "Wohltätigkeit"
+      },
+      "2": {
+        "TITLE": "",
+        "DESCRIPTION": "",
+        "TAG": "Gesundheit"
+      },
+      "3": {
+        "TITLE": "",
+        "DESCRIPTION": "",
+        "TAG": ""
+      },
+      "4": {
+        "TITLE": "",
+        "DESCRIPTION": "",
+        "TAG": ""
+      }
+    }
+  },
+
+  "CONTACT": {
+    "TITLE": "Kontakt",
+    "DESCRIPTION": "Kontaktieren Sie uns bei Fragen oder Vorschlägen.",
+    "MATERIAL_GOODS": {
+      "TITLE": "Spende von Waren",
+      "DESCRIPTION": "Liebe Leute, für Spenden von Waren, Lebensmitteln, Hygieneprodukten, Medikamenten, Kleidung, Schuhen, Spielzeug und anderen Gütern: Sie finden uns täglich im Supermarkt La Cocoș, Montag bis Freitag von 07:30 bis 20:30, Sonntag von 07:30 bis 18:30 - Adresse: Șos. Vitan Bărzești-7A, Bukarest."
+    },
+    "SEE_COCOS_MAP": "Siehe Karte (Supermarkt La Cocoș)",
+    "FORM": {
+      "TITLE": "Kontaktiere uns",
+      "DISCLAIMER": "Bitte rufen Sie an, bevor Sie zu unserem Büro kommen. Danke!",
+      "NAME": "Name",
+      "EMAIL": "E-Mail",
+      "PHONE": "Telefon",
+      "ADDRESS": "Adresse",
+      "WORKING_HOURS": "Arbeitszeiten",
+      "YOUR_MESSAGE": "Deine Nachricht",
+      "SEND": "Senden",
+      "SUCCESS": "Deine Nachricht wurde erfolgreich gesendet!",
+      "ERROR": "Es ist ein Fehler aufgetreten. Bitte versuche es erneut."
+    }
+  },
+
+  "HEADER": {
+    "LOCALE": "de",
+    "HOME": { "LABEL": "Startseite", "LINK": "/de" },
+    "PROJECTS": { "LABEL": "Projekte", "LINK": "/de/projects" },
+    "ABOUT": { "LABEL": "Über uns", "LINK": "/de/about" },
+    "GALLERY": { "LABEL": "Galerie", "LINK": "/de/gallery"},
+    "BLOG": { "LABEL": "Blog", "LINK": "/de/blog" },
+    "CONTACT": { "LABEL": "Kontakt", "LINK": "/de/contact" },
+    "TERMS": { "LABEL": "Geschäftsbedingungen", "LINK": "/de/terms" },
+    "PRIVACY": { "LABEL": "Datenschutzrichtlinie", "LINK": "/de/privacy" }
+  }
+}
+  
+
+
+
+
+

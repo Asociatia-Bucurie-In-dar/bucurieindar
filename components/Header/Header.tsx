@@ -2,7 +2,7 @@
 
 import { usePathname } from 'next/navigation'
 import Link from 'next/link';
-import { Group, Burger, Container, Drawer, Divider, rem } from '@mantine/core';
+import {Group, Burger, Container, Drawer, Divider, rem, MantineSize} from '@mantine/core';
 import { ThemeSwitcher } from '@/components/ThemeSwitcher';
 import { useDisclosure, useHeadroom } from '@mantine/hooks';
 import {LanguagePicker} from "@/components/LanguagePicker/LanguagePicker";
@@ -47,6 +47,7 @@ export function Header({ headerTranslations, locale }: { headerTranslations: any
 
     const headerItems = renderLinks(links);
     const headerZIndex = MyZIndexes.Header;
+    const responsive:MantineSize = 'md';
 
     return (
         <header className={classes.header} style={{
@@ -70,14 +71,14 @@ export function Header({ headerTranslations, locale }: { headerTranslations: any
                     </Group>
                     
                     
-                    <Group h="100%" gap="sm" visibleFrom="sm">
+                    <Group h="100%" gap='sm' visibleFrom={responsive}>
                         {headerItems}
                     </Group>
-                    <Group visibleFrom="sm">
+                    <Group visibleFrom={responsive}>
                         <ConfettiButton text={headerTranslations.donate} link={headerTranslations.projects.link} disabled={isDonateDisabled}/>
                         <ThemeSwitcher/>
                     </Group>
-                    <Group hiddenFrom="sm">
+                    <Group hiddenFrom={responsive}>
                         <ConfettiButton text={headerTranslations.donate} link={headerTranslations.projects.link} disabled={isDonateDisabled}/> 
                         <Burger opened={drawerOpened} onClick={toggleDrawer} size="sm" aria-label={headerTranslations.burgerMenuLabel}/>
                     </Group>
@@ -88,7 +89,7 @@ export function Header({ headerTranslations, locale }: { headerTranslations: any
                 onClose={closeDrawer}
                 size="60%"
                 padding="lg"
-                hiddenFrom="sm"
+                hiddenFrom={responsive}
                 zIndex={MyZIndexes.MobileMenu}
             >
                 <Divider my="sm" />

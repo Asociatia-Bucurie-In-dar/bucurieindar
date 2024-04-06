@@ -11,7 +11,9 @@
     "TONS": "Tons",
     "SHOW_MORE": "Read more",
     "HIDE": "Hide",
-    "BURGER_MENU_LABEL": "Open menu button"
+    "BURGER_MENU_LABEL": "Open menu button",
+    "REMAINING": "Left",
+    "DAYS": "days"
   },
   
   "DONATIONS": {
@@ -139,8 +141,8 @@
   },
 
   "PROJECTS": {
-    "TITLE": "Projects",
-    "DESCRIPTION": "Discover some of our projects and find out how you can help those who need you.",
+    "TITLE": "Campaigns & Projects",
+    "DESCRIPTION": "Discover some of our campaigns and projects, and find out how you can help those who need you.",
     "TABLE_OF_JOY": {
       "TITLE": "Table of Joy",
       "DESCRIPTION": "Have you ever been in a situation where you had nothing to eat, even for a day? Through the 'Table of Joy' program, we provide food to thousands of people. Donate a meal to a needy person and you will receive in return the most sincere 'THANK YOU!' of your life. Whom do we help? Families with many children, people without income, widowed or sick women, single mothers, bedridden individuals, adults or children, children in foster care, lonely elderly, homeless people. They fast even when it's not the fasting season.",
@@ -182,6 +184,11 @@
       "TITLE": "Help a community",
       "DESCRIPTION": "We are involved in helping many communities. Our friends are hundreds of families, wonderful people, and many beautiful children. Any useful thing you have to offer - food, medicines (cough syrups, antipyretics, diapers, etc.), footwear, clothing, hygiene and intimate hygiene products, toys, appliances, furniture, and other goods. We look forward to seeing you every day at our two collection points located at the following addresses: Supermarket \"La Cocoș\", inside the store, Vitan Bârzești Road 7A, from Monday to Saturday 07:30 – 20:30, Sunday 07:30 – 18:30) OR at our headquarters on Poterași St. no. 14, between 09:00 – 16:00. For larger quantities of products or goods, please contact us by phone.",
       "SECOND_DESCRIPTION": "NOTE: The funds raised from donations are used to purchase medicines for children and adults, healing creams, teas, dressings, diapers, eyeglasses, hygiene products, and especially intimate hygiene products (we know wonderful girls who are in great need of these goods), firewood, gas cylinders, stoves, and many other absolutely necessary goods. Thank you!"
+    },
+    "CAMPAIGN_RESURRECTION": {
+        "TITLE": "Campaign of The Resurrection - 300 packages for 300 children",
+        "DESCRIPTION": "",
+        "SECOND_DESCRIPTION": ""
     }
   },
 
@@ -301,7 +308,7 @@
   "HEADER": {
     "LOCALE": "en",
     "HOME": { "LABEL": "Home", "LINK": "/en" },
-    "PROJECTS": { "LABEL": "Projects", "LINK": "/en/projects" },
+    "PROJECTS": { "LABEL": "Campaigns & Projects", "LINK": "/en/projects" },
     "ABOUT": { "LABEL": "About", "LINK": "/en/about" },
     "GALLERY": { "LABEL": "Gallery", "LINK": "/en/gallery" },
     "BLOG": { "LABEL": "Blog", "LINK": "/en/blog" },

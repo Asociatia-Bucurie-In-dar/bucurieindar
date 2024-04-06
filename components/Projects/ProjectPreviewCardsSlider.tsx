@@ -1,4 +1,4 @@
-import { SimpleGrid, Container } from '@mantine/core';
+import {SimpleGrid, Container, Divider, Center} from '@mantine/core';
 import {ProjectPreviewCard} from "@/components/Projects/ProjectPreviewCard";
 import classes from './ProjectPreviewCardsSlider.module.css';
 import {ProjectType} from "@/utils/my-types";
@@ -8,11 +8,22 @@ import {useTranslations} from "next-intl";
 export function ProjectPreviewCardsSlider(props: {amount: number}) {
 
     const projectsStaticContent: ProjectType[] = GetAllProjectsStaticContent(props.amount);
-    const t = useTranslations('PROJECTS');
+    const projT = useTranslations('PROJECTS');
+    const projects = projectsStaticContent
+        .filter(proj => !proj.is_campaign)
+        .map((proj) => {
+        const title = projT(proj.translation_key + '.TITLE');
+        const description = projT(proj.translation_key + '.DESCRIPTION');
+        return (
+            <ProjectPreviewCard project={proj} title={title} description={description}/>
+        );
+    });
     
-    const cards = projectsStaticContent.map((proj) => {
-        const title = t(proj.translation_key + '.TITLE');
-        const description = t(proj.translation_key + '.DESCRIPTION');
+    const campaigns = projectsStaticContent
+        .filter(proj => proj.is_campaign)
+        .map((proj) => {
+        const title = projT(proj.translation_key + '.TITLE');
+        const description = projT(proj.translation_key + '.DESCRIPTION');
         return (
             <ProjectPreviewCard project={proj} title={title} description={description}/>
         );
@@ -21,10 +32,15 @@ export function ProjectPreviewCardsSlider(props: {amount: number}) {
     return (
         <Container className={classes.container} size="lg">
             
-            <SimpleGrid cols={{ base: 1, sm: 3, md: 3 }} spacing={45} verticalSpacing={45}>
-                {cards}
+            <SimpleGrid cols={{ base: 1, sm: 1, md: 1 }} spacing="xl">
+                {campaigns}
             </SimpleGrid>
             
+            <Divider color="transparent" mb={45} />
+            
+            <SimpleGrid cols={{ base: 1, sm: 3, md: 3 }} spacing={45} verticalSpacing={45}>
+                {projects}
+            </SimpleGrid>
         </Container>
     );
 }

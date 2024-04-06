@@ -1,4 +1,4 @@
-import {Card, Image, Text, Progress, CardSection, Button, Container, rem} from '@mantine/core';
+import {Card, Image, Text, Progress, CardSection, Button, Container, rem, SimpleGrid, Group} from '@mantine/core';
 
 import classes from './ProjectPreviewCard.module.css';
 import Link from "next/link";
@@ -7,6 +7,7 @@ import {MyRoutePaths} from "@/utils/route-paths";
 import {DonatePopupButton} from "@/components/Popups/DonatePopup/DonatePopupButton";
 import {ProjectDonationProgress} from "@/components/Projects/ProjectDonationProgress";
 import {useTranslations} from "next-intl";
+import {DaysLeft} from "@/components/DaysLeft/DaysLeft";
 
 export function ProjectPreviewCard(props: { project: ProjectType, title: string, description: string} ) {
     const t = useTranslations('COMMON');
@@ -65,9 +66,21 @@ export function ProjectPreviewCard(props: { project: ProjectType, title: string,
                     
                     <ProjectDonationProgress id={props.project.id} goalAmount={props.project.goalAmount}
                         sumTranslation={t('NECESSARY_AMOUNT')}/> 
-
+                    
+                    
                     <DonatePopupButton projectId={props.project.id} projectTile={props.title} 
                                        translations={donatePopupTranslations}/>
+
+                    {props.project.is_campaign ? (
+                        <Text style={{
+                            position: 'absolute',
+                            bottom: '0',
+                            right: '0',
+                            margin: '5px' // Adjust as needed for spacing from the edges
+                        }} fz="sm" tt="uppercase" fw={700} c="darkred" mt="sm">
+                            <DaysLeft leftTranslation={t('REMAINING')} endDate={props.project.campaign_end_date} daysTranslation={t('DAYS')}/>
+                        </Text>
+                    ) : (<span></span>)}
                 </Card>
             </Card>
     );

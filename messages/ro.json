@@ -1,6 +1,5 @@
 {
-  "COMMON":
-  {
+  "COMMON": {
     "DONATE": "Donează",
     "DONATE_NOW": "Donează acum",
     "ASSOCIATION": "Bucurie în Dar",
@@ -11,7 +10,9 @@
     "TONS": "Tone",
     "SHOW_MORE": "Citeşte mai mult...",
     "HIDE": "Ascunde",
-    "BURGER_MENU_LABEL": "Buton deschidere meniu"
+    "BURGER_MENU_LABEL": "Buton deschidere meniu",
+    "REMAINING": "Încă",
+    "DAYS": "zile"
   },
 
   "DONATIONS": {
@@ -22,8 +23,7 @@
     "BACK": "Înapoi la proiecte"
   },
   
-  "HOME_HERO":
-  {
+  "HOME_HERO": {
     "MOTTO_FIRST_PART": "Din această viață plecăm doar cu",
     "MOTTO_SECOND_PART": "faptele noastre",
     "DESCRIPTION": "Îi sprijinim cu tot ce ne stă în putere pe cei ce nu mai au pe cine să se sprijine. Misiunea noastră este să aducem bucurie acolo unde nu mai este bucurie, în inimile cât mai multor oameni, mari și mici, tineri și bătrâni, împreună cu voi.",
@@ -129,8 +129,8 @@
   },
 
   "PROJECTS": {
-    "TITLE": "Proiecte",
-    "DESCRIPTION": "Descoperă o parte dintre proiectele noastre și află cum poți să-i ajuți pe cei care au nevoie de tine.",
+    "TITLE": "Campanii & Proiecte",
+    "DESCRIPTION": "Descoperă o parte dintre campaniile şi proiectele noastre și află cum poți să-i ajuți pe cei care au nevoie de tine.",
     "TABLE_OF_JOY": {
       "TITLE": "Masa Bucuriei",
       "DESCRIPTION": "Ați fost vreodată în situația de-a nu avea ce să mâncați, măcar o zi? Prin programul „Masa bucuriei”, oferim mâncare la mii de persoane. Dăruiește și tu o porție de mâncare unui om sărman și vei primi în schimb cel mai onest „MULȚUMESC!” din viața ta. Pe cine ajutăm? Familii cu mulți copii, persoane fără venit, femei văduve, bolnave sau mame singure, persoane imobilizate, adulți sau copii, copii asistați social, bătrâni singuri, oameni ai străzii. Ei postesc și când nu este post.",
@@ -172,6 +172,11 @@
       "TITLE": "Ajută o comunitate",
       "DESCRIPTION": "Suntem implicați în ajutorarea multor comunități. Prietenii noștri sunt sute de familii, oameni minunați și mulți copii frumoși. Orice lucru bun aveți de oferit ‒ alimente, medicamente (siropuri împotriva tusei, antifebrile, pamperși etc.), încălțăminte, îmbrăcăminte, produse de igienă și igienă intimă, jucării, electrocasnice, mobilier și alte bunuri. Vă așteptăm în fiecare zi la cele două puncte de colectă situate la următoarele adrese: Supermarket „La Cocoș”, în interiorul magazinului, Șoseaua Vitan Bârzești 7A, de Luni-Sâmbătă 07.30 – 20.30, Duminică 07.30 – 18-30) SAU la sediul nostru din Str. Poterași nr. 14, în intervalul orar 09.00 – 16.00. Pentru cantități mai mari de produse sau bunuri, vă rugăm să ne contactați la telefon.",
       "SECOND_DESCRIPTION": "Banii strânși din donații sunt folosiți pentru a cumpăra medicamente pentru copii și adulți, creme cicatrizante, ceaiuri, pansamente, pamperși, ochelari de vedere, produse de igienă și mai ales de igienă intimă (cunoaștem copile minunate care au mare nevoie de aceste bunuri), lemne de foc, butelii, sobe și alte multe bunuri imperios necesare. Vă mulțumim!"
+    },
+    "CAMPAIGN_RESURRECTION": {
+      "TITLE": "Campania Învierii - 300 pachete pentru 300 de copii",
+      "DESCRIPTION": "Ziua bună, oameni dragi! Dorim să pregatim 300 de pachete pentru 300 de copii. Pachetul conține: 1 cozonac, 15 ouă, dulciuri si fructe! Să ne bucurăm împreună de sărbătoarea Învierii Domnului Hristos! Suma alocată este de 50 de lei/copil. În plus, puteți dona alimente și bunuri de orice fel. Pentru alimente şi bunuri, vă așteptăm în fiecare zi in interiorul Supermarket La Cocoș - Calea Vitan Bârzești 7A, lângă Târgul Auto Vitan.",
+      "SECOND_DESCRIPTION": ""
     }
   },
   
@@ -243,13 +248,13 @@
     "READ_ARTICLE": "Citește articolul",
     "ARTICLES": {
       "1": {
-        "TITLE": "Importanța Donațiilor de Caritate",
-        "DESCRIPTION": "Într-o lume plină de nesiguranță și provocări, actele de caritate strălucesc ca faruri de speranță și umanitate. Caritatea nu este doar un gest de compasiune; este o punte care leagă sufletele, oferindu-le celor mai puțin norocoși o șansă la o viață mai bună. Donațiile de caritate sunt vitale pentru a susține această cauză nobilă, și iată de ce. Impactul Direct asupra Vieților Oamenilor Prin donațiile făcute către organizațiile de caritate, contribuim direct la îmbunătățirea vieții celor aflați în nevoie. Fie că este vorba de hrană, adăpost, educație sau acces la servicii medicale, fiecare leu donat poate face diferența între disperare și speranță pentru cineva. Consolidarea Comunității Donațiile noastre ajută la construirea și consolidarea comunității. Când susținem cauze caritabile, ne unim forțele cu ceilalți donatori și voluntari pentru a lupta împotriva inegalităților și pentru a crea o societate mai justă și mai compasivă. Educația pentru Generațiile Viitoare Donațiile în domeniul educațional asigură că generațiile viitoare vor avea resursele necesare pentru a învăța și a prospera. Educația este fundamentul pe care se construiește viitorul, iar sprijinul nostru poate deschide uși care altfel ar rămâne închise. Împlinirea Personală Donațiile nu sunt doar despre a da; sunt și despre a primi. Împlinirea personală și pacea interioară pe care o simțim atunci când ajutăm pe alții sunt neprețuite. Este o dovadă că, indiferent de dificultățile proprii, putem face o diferență pozitivă în lume. Influența Pozitivă Prin exemplul nostru, îi inspirăm și pe alții să fie generoși și să se implice în acte de caritate. Generozitatea este contagioasă, și atunci când ne arătăm susținerea pentru cauzele caritabile, îi motivăm pe cei din jur să facă același lucru. În concluzie, donațiile de caritate sunt mult mai mult decât un simplu transfer de resurse financiare. Ele sunt expresia noastră de solidaritate și empatie față de cei care au nevoie. Fiecare contribuție, indiferent de mărime, contează și are puterea de a transforma vieți. Așadar, să ne deschidem inimile și să fim generoși. Fiecare gest de caritate este o sămânță de bine plantată pentru un viitor mai luminos.",
+        "TITLE": "",
+        "DESCRIPTION": "",
         "TAG": "Caritate"
       },
       "2": {
-        "TITLE": "Importanța Menținerii Sănătății Mintale și a Bunăstării",
-        "DESCRIPTION": "În vremurile agitate de astăzi, sănătatea mintală a devenit un subiect crucial în discuțiile despre bunăstare. Menținerea sănătății mintale nu este doar despre a preveni sau trata condiții specifice, ci este despre crearea unui echilibru în viața noastră zilnică care să ne permită să ne realizăm potențialul și să facem față stresului cotidian. Sănătatea mintală influențează modul în care gândim, simțim și acționăm. Prin urmare, este esențial să ne acordăm timp pentru auto-îngrijire și să căutăm sprijin atunci când este necesar. Crearea unui mediu susținător în jurul nostru, unde dialogul deschis despre emoții și luptele interioare este încurajat, poate avea un impact semnificativ asupra stării noastre de bine. Activități precum meditația, exercițiile fizice și hobby-urile creative pot contribui la îmbunătățirea sănătății mintale. De asemenea, este important să recunoaștem că solicitarea de ajutor profesional este un semn de forță, nu de slăbiciune. În final, sănătatea mintală nu este o destinație, ci un proces continuu de creștere și adaptare, și fiecare pas pe care îl facem pentru a ne îngriji mintea este un pas către o viață mai împlinită și mai fericită.",
+        "TITLE": "",
+        "DESCRIPTION": "",
         "TAG": "Sănătate"
       },
       "3": {
@@ -291,7 +296,7 @@
   "HEADER": {
     "LOCALE": "ro",
     "HOME": { "LABEL": "Acasă", "LINK": "/" },
-    "PROJECTS": { "LABEL": "Proiecte", "LINK": "/projects" },
+    "PROJECTS": { "LABEL": "Campanii & Proiecte", "LINK": "/projects" },
     "ABOUT": { "LABEL": "Despre", "LINK": "/about" },
     "GALLERY": { "LABEL": "Galerie", "LINK": "/gallery"},
     "BLOG": { "LABEL": "Blog", "LINK": "/blog" },

@@ -11,6 +11,7 @@ import {GalleryTranslations, ProjectTranslationsType} from "@/utils/my-types";
 import {MyRoutePaths} from "@/utils/route-paths";
 import {locales} from "@/middleware";
 import {Gallery} from "@/components/Gallery/Gallery";
+import {DaysLeft} from "@/components/DaysLeft/DaysLeft";
 
 export function generateStaticParams() {
     const allProjects = GetAllProjectsStaticContent(99);
@@ -27,7 +28,15 @@ export async function generateMetadata({params: {locale, slug}}:{ params: { loca
     
     return {
         title: title,
-        description: description.slice(0, 100),
+        description: description.slice(0, 160),
+        openGraph: {
+            images: [
+                {
+                    url: projectContent.image_path,
+                    alt: title,
+                }
+            ],
+        }
     };
 }
 
@@ -114,6 +123,12 @@ export default function FullProjectPage({params: {locale, slug}}:{ params: { loc
                         sumTranslation={commonT('NECESSARY_AMOUNT')}/>
 
                     <Divider color="transparent" mb={10}/>
+
+                    {projectContent.is_campaign ? (
+                        <Text fz="sm" tt="uppercase" fw={700} c="darkred">
+                            <DaysLeft leftTranslation={commonT('REMAINING')} endDate={projectContent.campaign_end_date} daysTranslation={commonT('DAYS')}/>
+                        </Text>
+                    ) : (<span></span>)}
                     
                     <DonatePopupButton projectId={projectContent.id} 
                                        projectTile={title}

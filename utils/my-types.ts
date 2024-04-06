@@ -10,6 +10,9 @@ export type ProjectType = {
     id: string; //Primary Key
     slug: string;
     
+    is_campaign: boolean;
+    campaign_end_date?: string;
+    
     translation_key: string;
     image_path: string;
     other_images: GalleryImage[];

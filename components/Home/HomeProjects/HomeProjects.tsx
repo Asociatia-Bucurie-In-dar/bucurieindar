@@ -19,7 +19,7 @@ export function HomeProjects() {
 
             <Divider mb={45} color="transparent" />
             
-            <ProjectPreviewCardsSlider amount={6}/>
+            <ProjectPreviewCardsSlider amount={100}/>
     
             {/*<Group justify="center" mt="xl" mb={52}>*/}
             {/*    <ConfettiButton text={"Vezi toate proiectele"} size="md"/>*/}

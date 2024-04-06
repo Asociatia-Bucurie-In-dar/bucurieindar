@@ -8,6 +8,7 @@ const projectsData : ProjectType[] = [
     {
         id: '2',
         slug: 'masa-bucuriei',
+        is_campaign: false,
         image_path: imagesPath + 'hrana.png',
         other_images: [
             {title: '', image: imagesPath + 'masa1.jpeg'},
@@ -27,7 +28,8 @@ const projectsData : ProjectType[] = [
     },
     {
         id: '1', 
-        slug: 'ajuta-o-comunitate', 
+        slug: 'ajuta-o-comunitate',
+        is_campaign: false,
         image_path: imagesPath + 'comunitate.png',
         other_images: [
             {title: '', image: imagesPath + 'comunitate1.jpeg'},
@@ -56,6 +58,7 @@ const projectsData : ProjectType[] = [
     {
         id: '3',
         slug: 'cazuri-medicale',
+        is_campaign: false,
         image_path: imagesPath + 'medical.png',
         other_images: [],
         other_videos: [],
@@ -66,6 +69,7 @@ const projectsData : ProjectType[] = [
     {
         id: '4',
         slug: 'oameni-ai-strazii',
+        is_campaign: false,
         image_path: imagesPath + 'beggar.jpeg',
         other_images: [],
         other_videos: [],
@@ -76,6 +80,7 @@ const projectsData : ProjectType[] = [
     {
         id: '5',
         slug: 'scoala-bucuriei',
+        is_campaign: false,
         image_path: imagesPath + 'scoala.png',
         other_images: [
             {title: '', image: imagesPath + 'scoala1.jpeg'},
@@ -93,6 +98,7 @@ const projectsData : ProjectType[] = [
     {
         id: '6',
         slug: 'adopta-o-familie',
+        is_campaign: false,
         image_path: imagesPath + 'adopta.jpeg',
         other_images: [
             {title: '1', image: imagesPath + 'fam11.jpeg', positionPercent: '38%'},
@@ -109,6 +115,20 @@ const projectsData : ProjectType[] = [
         other_videos: [],
         translation_key: 'ADOPT_A_FAMILY',
         goalAmount: 5000,
+        currentAmount: 0,
+    },
+    {
+        id: '300',
+        slug: 'campania-invierii',
+        
+        is_campaign: true,
+        campaign_end_date: '2024-04-24',
+        
+        image_path: imagesPath + 'invierii.webp',
+        other_images: [],
+        other_videos: [],
+        translation_key: 'CAMPAIGN_RESURRECTION',
+        goalAmount: 3000,
         currentAmount: 0,
     },
 ];
