@@ -35,8 +35,8 @@ export function DonatePopupButton(props: {projectId: string,
     fullWidth?: boolean}) {
 
     const payOption1 = props.translations.CardOption;
-    const payOption2 = 'Revolut';
-    const payOption3 = props.translations.BankTransferOption;
+    const payOption2 = props.translations.BankTransferOption;
+    const payOption3 = 'Revolut';
     
     const [loading, setLoading] = useState(false);
     const [badSum, setBadSum] = useState(true);
@@ -276,8 +276,8 @@ export function DonatePopupButton(props: {projectId: string,
                     <Divider mt="sm" mb="sm" color="transparent"/>
 
                     {payMethod === payOption1 ? forCard : null}
-                    {payMethod === payOption2 ? forRevolut : null}
-                    {payMethod === payOption3 ? forBank : null}
+                    {payMethod === payOption2 ? forBank : null}
+                    {payMethod === payOption3 ? forRevolut : null}
                     
                 </Form>
             </>
