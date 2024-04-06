@@ -107,11 +107,11 @@ export default function FullProjectPage({params: {locale, slug}}:{ params: { loc
                     <Image src={projectContent.image_path} alt={title} />
                 </div>
                 <Divider color="transparent" mb="xl"/>
-                <Text c="customDimmed" fw={500}>
+                <Text c="customDimmed" fw={500} className={commonClasses.description}>
                     {description}
                 </Text>
                 <Divider color="transparent" mb="xl"/>
-                <Text c="customDimmed" fw={500}>
+                <Text c="customDimmed" fw={500} className={commonClasses.description}>
                     {secondDescription}
                 </Text>
             </GridCol>

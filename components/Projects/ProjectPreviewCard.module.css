@@ -10,4 +10,10 @@
     display: block;
     margin-top: var(--mantine-spacing-md);
     margin-bottom: rem(5px);
+    
+    font-size: rem(17px);
+}
+
+.text {
+    font-size: rem(16px);
 }

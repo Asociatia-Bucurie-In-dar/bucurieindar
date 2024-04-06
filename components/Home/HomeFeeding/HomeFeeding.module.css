@@ -34,7 +34,7 @@
 
 .description {
     color: var(--mantine-color-green-0);
-    font-size: var(--mantine-font-size-sm);
+    font-size: var(--mantine-font-size-md);
     margin-top: rem(5px);
 }
 

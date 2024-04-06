@@ -5,23 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32e33542-bd06-42e3-bf1b-3883da34adf9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/components/DaysLeft/DaysLeft.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/DaysLeft/DaysLeft.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/messages/de.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/projects/invierii.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/team/434069611_3837547849824647_2565008589509098480_n.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.bucurieindar.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.bucurieindar.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/[locale]/projects/[slug]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/[locale]/projects/[slug]/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Header/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/FAQ/FAQ.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/FAQ/FAQ.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Home/Hero/HomeHero.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/Hero/HomeHero.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Home/HomeAboutProjects/HomeAboutProjects.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/HomeAboutProjects/HomeAboutProjects.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Home/HomeFeeding/HomeFeeding.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/HomeFeeding/HomeFeeding.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Home/HomeProjects/HomeProjects.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/HomeProjects/HomeProjects.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/OurTeam/OurTeam.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/OurTeam/OurTeam.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Projects/ProjectPreviewCard.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/Projects/ProjectPreviewCard.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Projects/ProjectPreviewCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Projects/ProjectPreviewCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Projects/ProjectPreviewCardsSlider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Projects/ProjectPreviewCardsSlider.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/projects/projects-content.ts" beforeDir="false" afterPath="$PROJECT_DIR$/content/projects/projects-content.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/messages/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/messages/en.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/messages/ro.json" beforeDir="false" afterPath="$PROJECT_DIR$/messages/ro.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/my-types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/utils/my-types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/commonClasses.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/utils/commonClasses.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +118,7 @@
       <workItem from="1712319771190" duration="656000" />
       <workItem from="1712341785393" duration="3452000" />
       <workItem from="1712390330204" duration="663000" />
-      <workItem from="1712392173780" duration="16931000" />
+      <workItem from="1712392173780" duration="20103000" />
     </task>
     <servers />
   </component>

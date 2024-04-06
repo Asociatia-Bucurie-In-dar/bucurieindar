@@ -55,7 +55,7 @@ export function ProjectPreviewCard(props: { project: ProjectType, title: string,
                     {props.title}
                 </Text>
 
-                <Text fz="sm" c="customDimmed" fw={500} lineClamp={4} component={Link} {...linkProps}>
+                <Text c="customDimmed" className={classes.text} fw={500} lineClamp={4} component={Link} {...linkProps}>
                     {props.description}
                 </Text>
                 {/*<Text c="orange" fw={500} mt={3} component={Link} {...linkProps}>*/}

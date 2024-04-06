@@ -39,7 +39,7 @@ export function Footer() {
             <Divider color="transparent" mb="lg" />
             <Container size="md">
                 <Center>
-            <SimpleGrid cols={5}>
+            <SimpleGrid cols={5} spacing={0}>
                 {link(t('HOME.LINK'), t('HOME.LABEL'))}
                 {link(t('PROJECTS.LINK'), t('PROJECTS.LABEL'))}
                 {link(t('ABOUT.LINK'), t('ABOUT.LABEL'))}

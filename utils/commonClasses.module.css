@@ -17,11 +17,11 @@
 }
 
 .description {
-    font-size: rem(16px);
+    font-size: rem(17px);
     font-weight: 500;
 
     @media (max-width: $mantine-breakpoint-sm) {
-        font-size: rem(15px);
+        font-size: rem(16px);
     }
 }
 

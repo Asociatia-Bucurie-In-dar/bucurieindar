@@ -104,8 +104,8 @@ export function HomeAboutProjects() {
                 ))}
             </div>
 
-            <Spoiler maxHeight={100} showLabel={commonT('SHOW_MORE')} hideLabel={commonT('HIDE')}>
-            <Text fz="sm" c="customDimmed" mt="sm" fw={500}>
+            <Spoiler maxHeight={140} showLabel={commonT('SHOW_MORE')} hideLabel={commonT('HIDE')}>
+            <Text fz="md" c="customDimmed" mt="sm" fw={500}>
                 {feature.description}
             </Text>
                 {/* Content here */}
