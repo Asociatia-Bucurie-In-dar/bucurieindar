@@ -77,7 +77,7 @@ export function ProjectPreviewCard(props: { project: ProjectType, title: string,
                             bottom: '0',
                             right: '0',
                             margin: '5px' // Adjust as needed for spacing from the edges
-                        }} fz="sm" tt="uppercase" fw={700} c="darkred" mt="sm">
+                        }} fz="md" tt="uppercase" fw={700} c="darkred" mt="sm">
                             <DaysLeft leftTranslation={t('REMAINING')} endDate={props.project.campaign_end_date} daysTranslation={t('DAYS')}/>
                         </Text>
                     ) : (<span></span>)}

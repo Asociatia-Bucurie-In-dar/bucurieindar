@@ -220,7 +220,12 @@ export function DonatePopupButton(props: {projectId: string,
     
     const radioOn = <IconCircleDot size={18} stroke={2.5} />;
     const radioOff = <IconCircle size={18} stroke={1} />;
-    
+
+    function prepAndOpen() {
+        setPayMethod(payOption1);
+        open();
+    }
+
     return <>
         <Modal opened={opened} onClose={close} withCloseButton={false} zIndex={MyZIndexes.DonateModal}
                size="auto" transitionProps={{ transition: 'slide-up' }}>
@@ -287,7 +292,7 @@ export function DonatePopupButton(props: {projectId: string,
                     variant="gradient"
                     gradient={{from: 'pink', to: 'yellow', deg: 90}}
                     size="sm" fw={600}
-                    mt="md" onClick={open}>
+                    mt="md" onClick={prepAndOpen}>
                 {props.translations.Donate}&nbsp;<span style={{fontWeight: 500}}>({props.translations.Options})</span>
             </Button>
         </>;

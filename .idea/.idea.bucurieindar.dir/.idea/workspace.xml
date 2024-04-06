@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32e33542-bd06-42e3-bf1b-3883da34adf9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/components/SfIoan/SfIoan.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/SfIoan/SfIoan.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Projects/ProjectPreviewCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Projects/ProjectPreviewCard.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +109,7 @@
       <workItem from="1712319771190" duration="656000" />
       <workItem from="1712341785393" duration="3452000" />
       <workItem from="1712390330204" duration="663000" />
-      <workItem from="1712392173780" duration="20546000" />
+      <workItem from="1712392173780" duration="20898000" />
     </task>
     <servers />
   </component>
