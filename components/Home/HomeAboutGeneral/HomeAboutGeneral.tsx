@@ -2,23 +2,14 @@ import classes from './HomeAboutGeneral.module.css';
 import {Container, Avatar, Title, Text, Divider, Center, Image, rem} from "@mantine/core";
 import {useTranslations} from "next-intl";
 import commonClasses from "@/utils/commonClasses.module.css";
+import {TitleWithDescription} from "@/components/Common/TitleWithDescription";
 
 export function HomeAboutGeneral() {
     const t = useTranslations('HOME_POTENTIAL');
     return <Container size="full" pt={35} pb={35} className={commonClasses.darkerBackground}>
         <Container size="lg" className={classes.wrapper}>
                     <div className={classes.body}>
-                        <Center>
-                        <Title className={classes.titleBig} >
-                            {t('TITLE')}
-                        </Title>
-                        </Center>
-                        
-                        <Center>
-                        <Text fz="md" c="customDimmed" ta="center" className={commonClasses.description}>
-                            {t('DESCRIPTION')}
-                        </Text>
-                        </Center>
+                        <TitleWithDescription title={t('TITLE')} description={t('DESCRIPTION')} maxWidth='100%'/>
                     </div>
                 <Center>
                     <div className={classes.roundedImageWrapper}>

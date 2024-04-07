@@ -27,24 +27,7 @@ export function SfIoan(props: { disableBackground?: boolean }) {
                     </div>
                 </Center>
                 <div className={classes.body}>
-                    <Center>
-                        <Title className={classes.titleBig} >
-                                {/*component={Link} {...linkProps}>*/}
-                            {t('TITLE')} {/*<IconExternalLink color="green"/>*/}
-                        </Title>
-                    </Center>
-                    {/*<Center>*/}
-                    {/*    <Title className={classes.subTitle} component={Link} {...linkProps}>*/}
-                    {/*        {t('SUBTITLE')}*/}
-                    {/*    </Title>*/}
-                    {/*</Center>*/}
-
-                    <Center>
-                        <Text fz="md" c="customDimmed" ta="center" className={commonClasses.description}>
-                               {/*component={Link} {...linkProps}>*/}
-                            {t('DESCRIPTION')}
-                        </Text>
-                    </Center>
+                    <TitleWithDescription title={t('TITLE')} description={t('DESCRIPTION')} maxWidth='100%'/>
                 </div>
             </Container>
         </Container>
