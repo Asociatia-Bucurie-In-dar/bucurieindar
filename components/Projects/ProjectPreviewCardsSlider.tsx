@@ -31,16 +31,17 @@ export function ProjectPreviewCardsSlider(props: {amount: number}) {
 
     return (
         <Container className={classes.container} size="lg">
+
+            <SimpleGrid cols={{ base: 1, sm: 3, md: 3 }} spacing={45} verticalSpacing={45}>
+                {projects}
+            </SimpleGrid>
             
+            <Divider color="transparent" mb={45} />
+
             <SimpleGrid cols={{ base: 1, sm: 1, md: 1 }} spacing="xl">
                 {campaigns}
             </SimpleGrid>
             
-            <Divider color="transparent" mb={45} />
-            
-            <SimpleGrid cols={{ base: 1, sm: 3, md: 3 }} spacing={45} verticalSpacing={45}>
-                {projects}
-            </SimpleGrid>
         </Container>
     );
 }
