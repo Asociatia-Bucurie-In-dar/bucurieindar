@@ -129,8 +129,8 @@
   },
 
   "PROJECTS": {
-    "TITLE": "Campanii & Proiecte",
-    "DESCRIPTION": "Descoperă o parte dintre campaniile şi proiectele noastre și află cum poți să-i ajuți pe cei care au nevoie de tine.",
+    "TITLE": "Proiecte & Campanii",
+    "DESCRIPTION": "Descoperă o parte dintre proiectele şi campaniile noastre și află cum poți să-i ajuți pe cei care au nevoie de tine.",
     "TABLE_OF_JOY": {
       "TITLE": "Masa Bucuriei",
       "DESCRIPTION": "Ați fost vreodată în situația de-a nu avea ce să mâncați, măcar o zi? Prin programul „Masa bucuriei”, oferim mâncare la mii de persoane. Dăruiește și tu o porție de mâncare unui om sărman și vei primi în schimb cel mai onest „MULȚUMESC!” din viața ta. Pe cine ajutăm? Familii cu mulți copii, persoane fără venit, femei văduve, bolnave sau mame singure, persoane imobilizate, adulți sau copii, copii asistați social, bătrâni singuri, oameni ai străzii. Ei postesc și când nu este post.",
@@ -296,7 +296,7 @@
   "HEADER": {
     "LOCALE": "ro",
     "HOME": { "LABEL": "Acasă", "LINK": "/" },
-    "PROJECTS": { "LABEL": "Campanii & Proiecte", "LINK": "/projects" },
+    "PROJECTS": { "LABEL": "Proiecte & Campanii", "LINK": "/projects" },
     "ABOUT": { "LABEL": "Despre", "LINK": "/about" },
     "GALLERY": { "LABEL": "Galerie", "LINK": "/gallery"},
     "BLOG": { "LABEL": "Blog", "LINK": "/blog" },

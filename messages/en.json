@@ -141,8 +141,8 @@
   },
 
   "PROJECTS": {
-    "TITLE": "Campaigns & Projects",
-    "DESCRIPTION": "Discover some of our campaigns and projects, and find out how you can help those who need you.",
+    "TITLE": "Projects & Campaigns",
+    "DESCRIPTION": "Discover some of our projects and campaigns, and find out how you can help those who need you.",
     "TABLE_OF_JOY": {
       "TITLE": "Table of Joy",
       "DESCRIPTION": "Have you ever been in a situation where you had nothing to eat, even for a day? Through the 'Table of Joy' program, we provide food to thousands of people. Donate a meal to a needy person and you will receive in return the most sincere 'THANK YOU!' of your life. Whom do we help? Families with many children, people without income, widowed or sick women, single mothers, bedridden individuals, adults or children, children in foster care, lonely elderly, homeless people. They fast even when it's not the fasting season.",
@@ -308,7 +308,7 @@
   "HEADER": {
     "LOCALE": "en",
     "HOME": { "LABEL": "Home", "LINK": "/en" },
-    "PROJECTS": { "LABEL": "Campaigns & Projects", "LINK": "/en/projects" },
+    "PROJECTS": { "LABEL": "Projects & Campaigns", "LINK": "/en/projects" },
     "ABOUT": { "LABEL": "About", "LINK": "/en/about" },
     "GALLERY": { "LABEL": "Gallery", "LINK": "/en/gallery" },
     "BLOG": { "LABEL": "Blog", "LINK": "/en/blog" },
