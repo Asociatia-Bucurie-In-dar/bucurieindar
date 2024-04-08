@@ -128,7 +128,7 @@ const projectsData : ProjectType[] = [
         other_images: [],
         other_videos: [],
         translation_key: 'CAMPAIGN_RESURRECTION',
-        goalAmount: 3000,
+        goalAmount: 4550,
         currentAmount: 0,
     },
 ];
