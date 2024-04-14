@@ -76,7 +76,7 @@ export default function RootLayout({children, params: {locale}}: { children: Rea
         <Footer/>
     </MantineProvider>
     <Analytics />
-    <FirstTimeConfetti/>
+    {/*<FirstTimeConfetti/>*/}
     </body>
     </html>
   );
