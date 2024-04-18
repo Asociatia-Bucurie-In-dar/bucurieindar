@@ -1,32 +1,42 @@
 import { MetadataRoute } from "next";
 import { MyRoutePaths } from "@/utils/route-paths";
 import { GetAllProjectsStaticContent } from "@/content/projects/projects-content";
-import { GetAllArticlesStaticContent } from "@/content/blog/blog-content";
-import { locales, defaultLocale } from "@/middleware";
+import {SitemapEntry} from "@/utils/my-types";
 
-function getUrlsOfLocale(localeAsString: string): { url: string, alternates: { hreflang: string, href: string }[] }[] {
-    const locale = localeAsString === "" ? "" : "/" + localeAsString;
-    const baseUrl = "https://bucurieindar.org" + locale;
+
+
+function getAllURLs(): MetadataRoute.Sitemap
+{
+    const baseUrl = "https://bucurieindar.org";
 
     const paths = Object.values(MyRoutePaths).map(x => x);
     let urls = paths.map(link => {
         const url = baseUrl + link;
-        const alternates = locales.map((loc) => {
-            const locPrefix = loc === defaultLocale ? "" : "/" + loc;
-            return { hreflang: loc, href: `https://bucurieindar.org${locPrefix}${link}` };
-        });
-        return { url, alternates };
+        const lastModified = new Date();
+        const priority = 1;
+        const alternates = {
+            languages: {
+                ro: `${baseUrl}/ro${link}`,
+                en: `${baseUrl}/en${link}`
+            }
+        }
+        return { url, lastModified, priority, alternates };
     });
 
     // Add projects
     const projects = GetAllProjectsStaticContent(99);
     projects.forEach(x => {
         const projectUrl = baseUrl + MyRoutePaths.Projects + "/" + x.slug;
-        const alternates = locales.map((loc) => {
-            const locPrefix = loc === defaultLocale ? "" : "/" + loc;
-            return { hreflang: loc, href: `https://bucurieindar.org${locPrefix}${MyRoutePaths.Projects}/${x.slug}` };
-        });
-        urls.push({ url: projectUrl, alternates });
+        const lastModified = new Date();
+        const changeFrequency: string|undefined = "monthly";
+        const priority = 1;
+        const alternates = {
+            languages: {
+                ro: `${baseUrl}/ro${MyRoutePaths.Projects}/${x.slug}`,
+                en: `${baseUrl}/en${MyRoutePaths.Projects}/${x.slug}`
+            }
+        }
+        urls.push({ url: projectUrl, lastModified, priority, alternates });
     });
 
     // Add articles
@@ -43,17 +53,7 @@ function getUrlsOfLocale(localeAsString: string): { url: string, alternates: { h
     return urls;
 }
 
-export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-    let allUrls: { url: string, alternates: { hreflang: string, href: string }[] }[] = [];
-
-    for (let locale of locales) {
-        if (locale === defaultLocale) locale = "";
-        const urls = getUrlsOfLocale(locale);
-        urls.forEach(x => allUrls.push(x));
-    }
-
-    // Logic to convert allUrls to the desired sitemap format goes here
-    // This part depends on how you plan to serialize or output the sitemap with hreflang annotations
-
-    return allUrls;
+export default function sitemap(): MetadataRoute.Sitemap {
+    
+    return getAllURLs();
 }

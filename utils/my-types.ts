@@ -6,6 +6,19 @@ export type BlogArticleType = {
     translation_key: string;
 };
 
+export type SitemapEntry ={
+    url: string;
+    lastModified: Date;
+    changeFrequency: string;
+    priority: number;
+    alternates: {
+        languages: {
+            ro: string;
+            en: string;
+        };
+    };
+};
+
 export type ProjectType = {
     id: string; //Primary Key
     slug: string;
