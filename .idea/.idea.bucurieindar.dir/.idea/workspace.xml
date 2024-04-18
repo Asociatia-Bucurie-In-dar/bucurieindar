@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="32e33542-bd06-42e3-bf1b-3883da34adf9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.bucurieindar.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.bucurieindar.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/[locale]/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/[locale]/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/projects/[id]/route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/projects/[id]/route.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/webhook/route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/webhook/route.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +50,7 @@
     "nodejs_package_manager_path": "yarn",
     "npm.dev.executor": "Run",
     "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "/Applications/Rider.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
+    "ts.external.directory.path": "/Users/fabianghenof/Documents/GitHub/bucurieindar/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -114,7 +115,8 @@
       <workItem from="1712392173780" duration="22721000" />
       <workItem from="1712556526918" duration="1803000" />
       <workItem from="1713116888908" duration="27000" />
-      <workItem from="1713429637255" duration="372000" />
+      <workItem from="1713429637255" duration="1001000" />
+      <workItem from="1713430972347" duration="541000" />
     </task>
     <servers />
   </component>

@@ -63,13 +63,14 @@ export async function POST(req: Request) {
 
                     // Save the donation data to the database
                     try {
-                        revalidateTag(revalidateDonationsProgressTag);
                         const savedDonation = await saveDonation(donationData);
                         console.log(`Donation saved: ${savedDonation.id}`);
                         //await sendEmail(savedDonation.amount);
                     } catch (error: any) {
                         console.error(`Error saving donation: ${error.message}`);
                     }
+
+                    revalidateTag(revalidateDonationsProgressTag);
                     
                     break;
                 case "payment_intent.payment_failed":
@@ -77,6 +78,8 @@ export async function POST(req: Request) {
                     console.log(`❌ Payment failed: ${data.last_payment_error?.message}`);
                     break;
                 case "payment_intent.succeeded":
+
+                    revalidateTag(revalidateDonationsProgressTag);
                     data = event.data.object as Stripe.PaymentIntent;
                     console.log(`💰 PaymentIntent status: ${data.status}`);
                     break;
