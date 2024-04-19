@@ -6,8 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="32e33542-bd06-42e3-bf1b-3883da34adf9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.bucurieindar.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.bucurieindar.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/[locale]/projects/[slug]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/[locale]/projects/[slug]/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/sitemap.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/sitemap.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/my-types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/utils/my-types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +120,7 @@
       <workItem from="1713116888908" duration="27000" />
       <workItem from="1713429637255" duration="1001000" />
       <workItem from="1713430972347" duration="1157000" />
-      <workItem from="1713432175062" duration="2009000" />
+      <workItem from="1713432175062" duration="6446000" />
     </task>
     <servers />
   </component>

@@ -30,8 +30,9 @@ export type ProjectType = {
     image_path: string;
     other_images: GalleryImage[];
     other_videos: GalleryVideo[];
-    currentAmount: number;
     goalAmount: number;
+    currentAmount: number;
+    currentAmountExtra: number;
 };
 
 export type Donation = {

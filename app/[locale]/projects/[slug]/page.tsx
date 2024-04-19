@@ -120,6 +120,7 @@ export default function FullProjectPage({params: {locale, slug}}:{ params: { loc
             <GridCol span={{base: 12, sm: 4}}>
                 <Card shadow="sm" padding="lg">
                     <ProjectDonationProgress id={projectContent.id} goalAmount={projectContent.goalAmount}
+                                             extraAmountDonated={projectContent.currentAmountExtra}
                         sumTranslation={commonT('NECESSARY_AMOUNT')}/>
 
                     <Divider color="transparent" mb={10}/>

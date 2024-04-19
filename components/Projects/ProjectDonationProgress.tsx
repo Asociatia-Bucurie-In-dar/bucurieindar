@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import classes from './ProjectDonationProgress.module.css';
 import {Progress, rem, Skeleton, Text} from "@mantine/core";
 
-export function ProjectDonationProgress (props :{id: string, goalAmount: number, sumTranslation: string } ) {
+export function ProjectDonationProgress (props :{id: string, goalAmount: number, sumTranslation: string, extraAmountDonated: number } ) {
     const [currentAmount, setCurrentAmount] = useState(0);
     const [loading, setLoading] = useState(true);
     const [progressValue, setProgressValue] = useState(0);
@@ -16,8 +16,9 @@ export function ProjectDonationProgress (props :{id: string, goalAmount: number,
                 const response = await fetch(`/api/projects/${props.id}`);
                 
                 const data = await response.json();
-                setCurrentAmount(data.totalDonated);
-                let progress = (data.totalDonated / props.goalAmount) * 100;
+                const totalDonated = data.totalDonated + props.extraAmountDonated;
+                setCurrentAmount(totalDonated);
+                let progress = (totalDonated / props.goalAmount) * 100;
                 if (progress < 5 && progress > 0)
                     setProgressValue(5);
                 else setProgressValue(progress);

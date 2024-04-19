@@ -25,6 +25,7 @@ const projectsData : ProjectType[] = [
         translation_key: 'TABLE_OF_JOY',
         goalAmount: 12000,
         currentAmount: 0,
+        currentAmountExtra: 0,
     },
     {
         id: '1', 
@@ -54,6 +55,7 @@ const projectsData : ProjectType[] = [
         translation_key: 'HELP_A_COMMUNITY',
         goalAmount: 7000, 
         currentAmount: 0,
+        currentAmountExtra: 0,
     },
     {
         id: '3',
@@ -65,6 +67,7 @@ const projectsData : ProjectType[] = [
         translation_key: 'LOVE_AND_MEDICINE',
         goalAmount: 20000,
         currentAmount: 0,
+        currentAmountExtra: 0,
     },
     {
         id: '4',
@@ -76,6 +79,7 @@ const projectsData : ProjectType[] = [
         translation_key: 'STREET_PEOPLE',
         goalAmount: 10000,
         currentAmount: 0,
+        currentAmountExtra: 0,
     },
     {
         id: '5',
@@ -94,6 +98,7 @@ const projectsData : ProjectType[] = [
         translation_key: 'SCHOOL_OF_JOY',
         goalAmount: 7000,
         currentAmount: 0,
+        currentAmountExtra: 0,
     },
     {
         id: '6',
@@ -116,6 +121,7 @@ const projectsData : ProjectType[] = [
         translation_key: 'ADOPT_A_FAMILY',
         goalAmount: 5000,
         currentAmount: 0,
+        currentAmountExtra: 0,
     },
     {
         id: '300',
@@ -130,6 +136,7 @@ const projectsData : ProjectType[] = [
         translation_key: 'CAMPAIGN_RESURRECTION',
         goalAmount: 4550,
         currentAmount: 0,
+        currentAmountExtra: 0,
     },
 ];
 
