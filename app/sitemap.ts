@@ -15,7 +15,7 @@ function getUrlsOfLocale(localeAsString: string): { url: string, alternates: { h
             const locPrefix = loc === defaultLocale ? "" : "/" + loc;
             return { hreflang: loc, href: `https://bucurieindar.org${locPrefix}${link}` };
         });
-        return { url, alternates };
+        return { url, alternates};
     });
 
     // Add projects
