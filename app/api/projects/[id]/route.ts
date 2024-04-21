@@ -10,9 +10,9 @@ const getTotalDonations = unstable_cache(async (projectId: any) => {
     return await prisma.donation.aggregate({
         _sum: { amount: true },
         where: { causeId: projectId} }).then(r => r._sum.amount ?? 0);
-},
-    [(revalidateDonationsProgressTag)],
-    { tags: [revalidateDonationsProgressTag]});
+});
+    //[(revalidateDonationsProgressTag)],
+    //{ tags: [revalidateDonationsProgressTag]});
 
 export async function GET(req: NextRequest) {
     
