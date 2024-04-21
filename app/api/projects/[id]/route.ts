@@ -18,7 +18,9 @@ export async function GET(req: NextRequest) {
     
     const projectId = req.nextUrl.pathname.split('/').pop();
     
-    const totalAmount = await getTotalDonations(projectId);
+    const totalAmount = await prisma.donation.aggregate({
+        _sum: { amount: true },
+        where: { causeId: projectId} }).then(r => r._sum.amount ?? 0);
     
     return NextResponse.json({ totalDonated: totalAmount }, { status: 200 });
 }
