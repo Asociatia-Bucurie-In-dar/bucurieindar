@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32e33542-bd06-42e3-bf1b-3883da34adf9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.bucurieindar.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.bucurieindar.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/[locale]/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/[locale]/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
-    </list>
+    <list default="true" id="32e33542-bd06-42e3-bf1b-3883da34adf9" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -119,7 +114,7 @@
       <workItem from="1713429637255" duration="1001000" />
       <workItem from="1713430972347" duration="1157000" />
       <workItem from="1713432175062" duration="6446000" />
-      <workItem from="1713812743553" duration="1130000" />
+      <workItem from="1713812743553" duration="1523000" />
     </task>
     <servers />
   </component>
