@@ -128,7 +128,7 @@ const projectsData : ProjectType[] = [
         slug: 'campania-invierii',
         
         is_campaign: true,
-        campaign_end_date: '2024-04-24',
+        campaign_end_date: '2024-05-1',
         
         image_path: imagesPath + 'invierii.webp',
         other_images: [],
