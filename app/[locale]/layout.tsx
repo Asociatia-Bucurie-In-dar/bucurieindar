@@ -9,6 +9,7 @@ import {locales} from "@/middleware";
 import {getTranslations, unstable_setRequestLocale} from 'next-intl/server';
 import {useTranslations} from "next-intl";
 import {Analytics} from "@vercel/analytics/next";
+import { GoogleTagManager } from '@next/third-parties/google'
 //import WavySeparator from '@/components/WavySeparator/WavySeparator';
 
 export function generateStaticParams() {
@@ -63,6 +64,7 @@ export default function RootLayout({children, params: {locale}}: { children: Rea
     
   return (
     <html lang={"ro"}>
+    <GoogleTagManager gtmId="GTM-T6X3VKMD" />
     <head>
         <ColorSchemeScript/>
         <link rel="shortcut icon" href="/logoPng.png"/>
