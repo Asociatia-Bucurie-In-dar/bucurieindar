@@ -18,6 +18,7 @@ export async function generateMetadata({params: {locale}}:{ params: { locale: st
 export default function ContactPage( {params: {locale}} : {params: {locale: string}} ) {
     unstable_setRequestLocale(locale);
     const t = useTranslations('CONTACT');
+    const commonT = useTranslations('COMMON');
     const translations:ContactTranslationType = {
         FormTitle: t('FORM.TITLE'),
         Disclaimer: t('FORM.DISCLAIMER'),
@@ -32,7 +33,8 @@ export default function ContactPage( {params: {locale}} : {params: {locale: stri
         Error: t('FORM.ERROR'),
         MaterialGoodsTitle: t('MATERIAL_GOODS.TITLE'),
         MaterialGoodsDescription: t('MATERIAL_GOODS.DESCRIPTION'),
-        SeeCocosMap: t('SEE_COCOS_MAP')
+        SeeCocosMap: t('SEE_COCOS_MAP'),
+        InConstruction: commonT('IN_CONSTRUCTION')
     };
         
     
