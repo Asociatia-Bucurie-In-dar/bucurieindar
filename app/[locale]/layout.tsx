@@ -4,12 +4,12 @@ import { Header } from '@/components/Header/Header';
 import { Footer } from '@/components/Footer/Footer';
 import { ChatButton } from '@/components/ChatButton/ChatButton';
 import { createTheme, MantineProvider, rem, ColorSchemeScript } from '@mantine/core';
-import FirstTimeConfetti from "@/components/CoolEffects/FirstTimeConfetti";
+// import FirstTimeConfetti from "@/components/CoolEffects/FirstTimeConfetti";
 import {locales} from "@/middleware";
 import {getTranslations, unstable_setRequestLocale} from 'next-intl/server';
 import {useTranslations} from "next-intl";
-import {Analytics} from "@vercel/analytics/next";
-import { GoogleTagManager } from '@next/third-parties/google'
+// import {Analytics} from "@vercel/analytics/next";
+import CookieConsent from "@/components/CookieConsent/CookieConsent";
 //import WavySeparator from '@/components/WavySeparator/WavySeparator';
 
 export function generateStaticParams() {
@@ -64,7 +64,7 @@ export default function RootLayout({children, params: {locale}}: { children: Rea
     
   return (
     <html lang={"ro"}>
-    <GoogleTagManager gtmId="GTM-T6X3VKMD" />
+    {/*<GoogleTagManager gtmId="GTM-T6X3VKMD" />*/}
     <head>
         <ColorSchemeScript/>
         <link rel="shortcut icon" href="/logoPng.png"/>
@@ -75,11 +75,13 @@ export default function RootLayout({children, params: {locale}}: { children: Rea
         <Header headerTranslations={headerTranslations} locale={locale}/>
         {children}
         <ChatButton />
+        <CookieConsent />
         <Footer/>
     </MantineProvider>
-    <Analytics />
+    {/*<Analytics />*/}
     {/*<FirstTimeConfetti/>*/}
     </body>
+    {/*<GoogleAnalytics gaId="G-CNEHG29ZXM" />*/}
     </html>
   );
 }
