@@ -1,12 +1,15 @@
 'use client';
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import {Button, Center, Group, Modal, Text} from '@mantine/core';
 import loadScript from './loadScript';
 import {CookiesTranslationType} from "@/utils/my-types";
 import {LanguagePicker} from "@/components/LanguagePicker/LanguagePicker";
-import {MyZIndexes} from "@/utils/my-constants"; // Make sure this is correctly imported
+import {MyZIndexes} from "@/utils/my-constants";
+import {MyRoutePaths} from "@/utils/route-paths";
+import classes from "@/components/Popups/DonatePopup/DonatePopupButton.module.css";
+import Link from "next/link"; // Make sure this is correctly imported
 
-const localStorageKEY = 'bucurieindar_org_cookie_consent_v1s';
+const localStorageKEY = 'bucurieindar_org_cookie_consent_v1';
 
 function LoadAllScripts() {
     // Load Google Tag Manager
@@ -57,7 +60,7 @@ export default function CookieConsent ( props: { translations: CookiesTranslatio
             centered
             closeOnClickOutside={false}
         >
-            <Text>{props.translations.TextFirst}, {props.translations.PrivacyPolicy}, {props.translations.And} {props.translations.TermsAndConditions}.</Text>
+            <Text>{props.translations.TextFirst}, <Link href={props.translations.PrivacyPolicyLink} target="_blank" className={classes.link}>{props.translations.PrivacyPolicy}</Link>, {props.translations.And} <Link href={props.translations.TermsAndConditionsLink} target="_blank" className={classes.link}>{props.translations.TermsAndConditions}</Link>.</Text>
             <Group mt="md">
                 <Button onClick={handleAccept}>{props.translations.Accept}</Button>
                 <LanguagePicker />
