@@ -16,6 +16,13 @@
     "DAYS": "days",
     "IN_CONSTRUCTION": "Under construction! Email: "
   },
+
+  "COOKIES": {
+    "TITLE": "Cookie Consent",
+    "TEXT_FIRST": "We use cookies to improve your experience. By continuing to use our site, you accept our use of cookies",
+    "AND": "and",
+    "ACCEPT": "Accept"
+  },
   
   "DONATIONS": {
     "SUCCESS_TITLE": "Thank you!",
@@ -314,7 +321,7 @@
     "GALLERY": { "LABEL": "Gallery", "LINK": "/en/gallery" },
     "BLOG": { "LABEL": "Blog", "LINK": "/en/blog" },
     "CONTACT": { "LABEL": "Contact", "LINK": "/en/contact" },
-    "TERMS": { "LABEL": "Terms and Conditions", "LINK": "/terms" },
-    "PRIVACY": { "LABEL": "Privacy Policy", "LINK": "/privacy" }
+    "TERMS": { "LABEL": "Terms and Conditions", "LINK": "/en/terms" },
+    "PRIVACY": { "LABEL": "Privacy Policy", "LINK": "/en/privacy" }
   }
 }

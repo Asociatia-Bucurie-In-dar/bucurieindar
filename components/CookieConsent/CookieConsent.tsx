@@ -1,13 +1,26 @@
 'use client';
 import { useState, useEffect } from 'react';
-import { Button, Modal, Text } from '@mantine/core';
+import {Button, Center, Group, Modal, Text} from '@mantine/core';
 import loadScript from './loadScript';
-import {CookiesTranslationType} from "@/utils/my-types"; // Make sure this is correctly imported
+import {CookiesTranslationType} from "@/utils/my-types";
+import {LanguagePicker} from "@/components/LanguagePicker/LanguagePicker";
+import {MyZIndexes} from "@/utils/my-constants"; // Make sure this is correctly imported
 
-const localStorageKEY = 'bucurieindar_org_cookie_consent_v1';
+const localStorageKEY = 'bucurieindar_org_cookie_consent_v1s';
 
+function LoadAllScripts() {
+    // Load Google Tag Manager
+    loadScript('https://www.googletagmanager.com/gtm.js?id=GTM-T6X3VKMD', 'gtm-script');
+    // Load Google Analytics and initialize it after the script is loaded
+    loadScript('https://www.googletagmanager.com/gtag/js?id=G-D2H2GZ54SM', 'ga-script', () => {
+        if (window !== undefined) {
+            window.gtag('js', new Date());
+            window.gtag('config', 'G-D2H2GZ54SM', {'anonymize_ip': true});
+        }
+    });
+}
 
-export function CookieConsent ( props: { translations: CookiesTranslationType } ) {
+export default function CookieConsent ( props: { translations: CookiesTranslationType } ) {
     const [isVisible, setIsVisible] = useState(false);
 
     useEffect(() => {
@@ -17,20 +30,13 @@ export function CookieConsent ( props: { translations: CookiesTranslationType } 
             window.dataLayer.push(arguments);
         };
         
-        function LoadAllScripts() {
-            // Load Google Tag Manager
-            loadScript('https://www.googletagmanager.com/gtm.js?id=GTM-T6X3VKMD', 'gtm-script');
-            // Load Google Analytics and initialize it after the script is loaded
-            loadScript('https://www.googletagmanager.com/gtag/js?id=G-D2H2GZ54SM', 'ga-script', () => {
-                if (window !== undefined) {
-                    window.gtag('js', new Date());
-                    window.gtag('config', 'G-D2H2GZ54SM', {'anonymize_ip': true});
-                }
-            });
-        }
-        
         const consent = localStorage.getItem(localStorageKEY);
-        if (!consent) {
+        const isOnPrivacyPage = window.location.pathname === props.translations.PrivacyPolicyLink;
+        const isOnTermsPage = window.location.pathname === props.translations.TermsAndConditionsLink;
+        if (isOnPrivacyPage || isOnTermsPage) {
+            setIsVisible(false);
+        }
+        else if (!consent) {
             setIsVisible(true);
         } else {
            LoadAllScripts();
@@ -40,20 +46,22 @@ export function CookieConsent ( props: { translations: CookiesTranslationType } 
     const handleAccept = () => {
         localStorage.setItem(localStorageKEY, 'true'); // Store consent status
         setIsVisible(false); // Hide consent modal
-        //LoadAllScripts();
+        LoadAllScripts();
     };
 
     return (
-        <Modal
+        <Modal zIndex={MyZIndexes.CookieConsent}
             opened={isVisible}
             onClose={() => setIsVisible(false)}
             title={props.translations.Title}
             centered
             closeOnClickOutside={false}
         >
-            We use cookies to improve your experience. By continuing to use our site, you accept our use of cookies
             <Text>{props.translations.TextFirst}, {props.translations.PrivacyPolicy}, {props.translations.And} {props.translations.TermsAndConditions}.</Text>
-            <Button onClick={handleAccept}>{props.translations.Accept}</Button>
+            <Group mt="md">
+                <Button onClick={handleAccept}>{props.translations.Accept}</Button>
+                <LanguagePicker />
+            </Group>
         </Modal>
     );
-};
+}

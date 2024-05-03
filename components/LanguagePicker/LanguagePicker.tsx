@@ -24,7 +24,7 @@ export function LanguagePicker() {
 return (
     <>
         <Menu trigger="click-hover"  transitionProps={{ exitDuration: 0 }}
-              closeDelay={200} withinPortal zIndex={MyZIndexes.HeaderDropdown}>
+              closeDelay={200} withinPortal zIndex={MyZIndexes.LanguagePicker}>
             <Menu.Target>
                     <Center className={classes.flagHover}>
                         <div style={{borderRadius: '3px', overflow: 'hidden', marginRight: '5px'}}>

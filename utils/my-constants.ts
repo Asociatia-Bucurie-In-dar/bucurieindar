@@ -4,5 +4,7 @@ export const MyZIndexes  = {
     HeaderDropdown: 100010,
     MobileMenu: 100015,
     Confetti: 100020,
-    DonateModal: 100025,
+    DonateModal: 100025, 
+    CookieConsent: 100030,
+    LanguagePicker: 100035,
 }

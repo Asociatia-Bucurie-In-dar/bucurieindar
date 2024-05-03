@@ -10,6 +10,7 @@ import {getTranslations, unstable_setRequestLocale} from 'next-intl/server';
 import {useTranslations} from "next-intl";
 // import {Analytics} from "@vercel/analytics/next";
 import CookieConsent from "@/components/CookieConsent/CookieConsent";
+import {CookiesTranslationType} from "@/utils/my-types";
 //import WavySeparator from '@/components/WavySeparator/WavySeparator';
 
 export function generateStaticParams() {
@@ -33,6 +34,7 @@ export default function RootLayout({children, params: {locale}}: { children: Rea
 
     const headerT = useTranslations('HEADER');
     const commonT = useTranslations('COMMON');
+    const cookiesT = useTranslations('COOKIES');
 
     const headerTranslations = {
         home: { label: headerT('HOME.LABEL'), link: headerT('HOME.LINK') },
@@ -43,6 +45,17 @@ export default function RootLayout({children, params: {locale}}: { children: Rea
         contact: { label: headerT('CONTACT.LABEL'), link: headerT('CONTACT.LINK') },
         donate: commonT('DONATE'),
         burgerMenuLabel: commonT('BURGER_MENU_LABEL')
+    };
+    
+    const cookiesTranslations : CookiesTranslationType = {
+        Title: cookiesT('TITLE'),
+        TextFirst: cookiesT('TEXT_FIRST'),
+        And: cookiesT('AND'),
+        Accept: cookiesT('ACCEPT'),
+        PrivacyPolicy: headerT('PRIVACY.LABEL'),
+        PrivacyPolicyLink: headerT('PRIVACY.LINK'),
+        TermsAndConditions: headerT('TERMS.LABEL'),
+        TermsAndConditionsLink: headerT('TERMS.LINK'),
     };
     
     const theme = createTheme({
@@ -75,7 +88,7 @@ export default function RootLayout({children, params: {locale}}: { children: Rea
         <Header headerTranslations={headerTranslations} locale={locale}/>
         {children}
         <ChatButton />
-        {/*<CookieConsent translations={}/>*/}
+        <CookieConsent translations={cookiesTranslations}/>
         <Footer/>
     </MantineProvider>
     {/*<Analytics />*/}

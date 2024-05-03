@@ -15,6 +15,13 @@
     "DAYS": "zile",
     "IN_CONSTRUCTION": "În construcție! Email la adresa: "
   },
+  
+  "COOKIES": {
+    "TITLE": "Consimțământ Cookie-uri",
+    "TEXT_FIRST": "Folosim cookie-uri pentru a vă îmbunătăți experiența. Continuând să utilizați site-ul nostru, acceptați utilizarea cookie-urilor",
+    "AND": "și",
+    "ACCEPT": "Accept"
+  },
 
   "DONATIONS": {
     "SUCCESS_TITLE": "Mulțumim!",
