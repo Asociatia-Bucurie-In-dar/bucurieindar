@@ -4,7 +4,7 @@ import { Header } from '@/components/Header/Header';
 import { Footer } from '@/components/Footer/Footer';
 import { ChatButton } from '@/components/ChatButton/ChatButton';
 import { createTheme, MantineProvider, rem, ColorSchemeScript } from '@mantine/core';
-// import FirstTimeConfetti from "@/components/CoolEffects/FirstTimeConfetti";
+import FirstTimeConfetti from "@/components/CoolEffects/FirstTimeConfetti";
 import {locales} from "@/middleware";
 import {getTranslations, unstable_setRequestLocale} from 'next-intl/server';
 import {useTranslations} from "next-intl";
@@ -92,7 +92,7 @@ export default function RootLayout({children, params: {locale}}: { children: Rea
         <Footer/>
     </MantineProvider>
     {/*<Analytics />*/}
-    {/*<FirstTimeConfetti/>*/}
+    <FirstTimeConfetti/>
     </body>
     {/*<GoogleAnalytics gaId="G-CNEHG29ZXM" />*/}
     </html>

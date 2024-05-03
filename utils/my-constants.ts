@@ -3,8 +3,8 @@ export const MyZIndexes  = {
     Header: 100005,
     HeaderDropdown: 100010,
     MobileMenu: 100015,
-    Confetti: 100020,
-    DonateModal: 100025, 
-    CookieConsent: 100030,
-    LanguagePicker: 100035,
+    DonateModal: 100020, 
+    CookieConsent: 100025,
+    LanguagePicker: 100030,
+    Confetti: 100035,
 }
