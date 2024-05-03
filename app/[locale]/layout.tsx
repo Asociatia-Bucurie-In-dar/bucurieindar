@@ -75,7 +75,7 @@ export default function RootLayout({children, params: {locale}}: { children: Rea
         <Header headerTranslations={headerTranslations} locale={locale}/>
         {children}
         <ChatButton />
-        <CookieConsent />
+        {/*<CookieConsent translations={}/>*/}
         <Footer/>
     </MantineProvider>
     {/*<Analytics />*/}

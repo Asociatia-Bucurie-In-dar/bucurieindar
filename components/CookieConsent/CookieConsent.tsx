@@ -1,12 +1,13 @@
 'use client';
 import { useState, useEffect } from 'react';
 import { Button, Modal, Text } from '@mantine/core';
-import loadScript from './loadScript'; // Make sure this is correctly imported
+import loadScript from './loadScript';
+import {CookiesTranslationType} from "@/utils/my-types"; // Make sure this is correctly imported
 
 const localStorageKEY = 'bucurieindar_org_cookie_consent_v1';
 
 
-const CookieConsent = () => {
+export function CookieConsent ( props: { translations: CookiesTranslationType } ) {
     const [isVisible, setIsVisible] = useState(false);
 
     useEffect(() => {
@@ -46,14 +47,13 @@ const CookieConsent = () => {
         <Modal
             opened={isVisible}
             onClose={() => setIsVisible(false)}
-            title="Cookie Consent"
+            title={props.translations.Title}
             centered
             closeOnClickOutside={false}
         >
-            <Text>We use cookies to improve your experience. By continuing to use our site, you accept our use of cookies, Privacy Policy, and Terms of Service.</Text>
-            <Button onClick={handleAccept}>Accept</Button>
+            We use cookies to improve your experience. By continuing to use our site, you accept our use of cookies
+            <Text>{props.translations.TextFirst}, {props.translations.PrivacyPolicy}, {props.translations.And} {props.translations.TermsAndConditions}.</Text>
+            <Button onClick={handleAccept}>{props.translations.Accept}</Button>
         </Modal>
     );
 };
-
-export default CookieConsent;

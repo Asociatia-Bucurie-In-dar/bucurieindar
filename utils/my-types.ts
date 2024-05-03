@@ -88,6 +88,17 @@ export type ContactTranslationType = {
     InConstruction: string;
 };
 
+export type CookiesTranslationType = {
+    Title: string;
+    TextFirst: string;
+    PrivacyPolicy: string;
+    PrivacyPolicyLink: string;
+    And: string;
+    TermsAndConditions: string;
+    TermsAndConditionsLink: string;
+    Accept: string;
+};
+
 export type GalleryVideo = {
     title: string;
     youtubeId: string;
