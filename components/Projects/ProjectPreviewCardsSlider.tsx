@@ -19,15 +19,15 @@ export function ProjectPreviewCardsSlider(props: {amount: number}) {
         );
     });
     
-    const campaigns = projectsStaticContent
-        .filter(proj => proj.is_campaign)
-        .map((proj) => {
-        const title = projT(proj.translation_key + '.TITLE');
-        const description = projT(proj.translation_key + '.DESCRIPTION');
-        return (
-            <ProjectPreviewCard project={proj} title={title} description={description}/>
-        );
-    });
+    // const campaigns = projectsStaticContent
+    //     .filter(proj => proj.is_campaign)
+    //     .map((proj) => {
+    //     const title = projT(proj.translation_key + '.TITLE');
+    //     const description = projT(proj.translation_key + '.DESCRIPTION');
+    //     return (
+    //         <ProjectPreviewCard project={proj} title={title} description={description}/>
+    //     );
+    // });
 
     return (
         <Container className={classes.container} size="lg">
@@ -38,9 +38,9 @@ export function ProjectPreviewCardsSlider(props: {amount: number}) {
             
             <Divider color="transparent" mb={45} />
 
-            <SimpleGrid cols={{ base: 1, sm: 1, md: 1 }} spacing="xl">
-                {campaigns}
-            </SimpleGrid>
+            {/*<SimpleGrid cols={{ base: 1, sm: 1, md: 1 }} spacing="xl">*/}
+            {/*    {campaigns}*/}
+            {/*</SimpleGrid>*/}
             
         </Container>
     );

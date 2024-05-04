@@ -123,21 +123,21 @@ const projectsData : ProjectType[] = [
         currentAmount: 0,
         currentAmountExtra: 0,
     },
-    {
-        id: '300',
-        slug: 'campania-invierii',
-        
-        is_campaign: true,
-        campaign_end_date: '2024-05-1',
-        
-        image_path: imagesPath + 'invierii.webp',
-        other_images: [],
-        other_videos: [],
-        translation_key: 'CAMPAIGN_RESURRECTION',
-        goalAmount: 4550,
-        currentAmount: 0,
-        currentAmountExtra: 0,
-    },
+    // {
+    //     id: '300',
+    //     slug: 'campania-invierii',
+    //    
+    //     is_campaign: true,
+    //     campaign_end_date: '2024-05-1',
+    //    
+    //     image_path: imagesPath + 'invierii.webp',
+    //     other_images: [],
+    //     other_videos: [],
+    //     translation_key: 'CAMPAIGN_RESURRECTION',
+    //     goalAmount: 4550,
+    //     currentAmount: 0,
+    //     currentAmountExtra: 0,
+    // },
 ];
 
 export function GetAllProjectsStaticContent(amount: number): ProjectType[] {
