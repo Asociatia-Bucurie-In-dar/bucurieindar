@@ -6,7 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="32e33542-bd06-42e3-bf1b-3883da34adf9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.bucurieindar.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.bucurieindar.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/[locale]/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/[locale]/layout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/CookieConsent/CookieConsent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/CookieConsent/CookieConsent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/messages/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/messages/en.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/messages/ro.json" beforeDir="false" afterPath="$PROJECT_DIR$/messages/ro.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/my-types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/utils/my-types.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +131,7 @@
       <workItem from="1713812743553" duration="1523000" />
       <workItem from="1714224985218" duration="6655000" />
       <workItem from="1714723313770" duration="8106000" />
-      <workItem from="1714731950690" duration="6390000" />
+      <workItem from="1714731950690" duration="11305000" />
     </task>
     <servers />
   </component>

@@ -19,9 +19,10 @@
 
   "COOKIES": {
     "TITLE": "Cookie Consent",
-    "TEXT_FIRST": "We use cookies to improve your experience. By continuing to use our site, you accept our use of cookies",
+    "TEXT_FIRST": "We use cookies to improve your experience and analyze our traffic. By clicking \"Accept\", you accept our use of cookies",
     "AND": "and",
-    "ACCEPT": "Accept"
+    "ACCEPT": "Accept",
+    "MORE_INFO": "Learn more by reading our"
   },
   
   "DONATIONS": {

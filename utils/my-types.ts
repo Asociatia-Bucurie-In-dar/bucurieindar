@@ -97,6 +97,7 @@ export type CookiesTranslationType = {
     TermsAndConditions: string;
     TermsAndConditionsLink: string;
     Accept: string;
+    MoreInfo: string;
 };
 
 export type GalleryVideo = {

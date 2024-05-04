@@ -18,9 +18,10 @@
   
   "COOKIES": {
     "TITLE": "Consimțământ Cookie-uri",
-    "TEXT_FIRST": "Folosim cookie-uri pentru a vă îmbunătăți experiența. Continuând să utilizați site-ul nostru, acceptați utilizarea cookie-urilor",
+    "TEXT_FIRST": "Folosim cookie-uri pentru a îmbunătăți experiența si analiza traficul. Prin apăsarea butonului \"Accept\", sunteți de acord cu utilizarea cookie-urilor",
     "AND": "și",
-    "ACCEPT": "Accept"
+    "ACCEPT": "Accept",
+    "MORE_INFO": "Aflați mai multe citind"
   },
 
   "DONATIONS": {

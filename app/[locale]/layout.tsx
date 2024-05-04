@@ -56,6 +56,7 @@ export default function RootLayout({children, params: {locale}}: { children: Rea
         PrivacyPolicyLink: headerT('PRIVACY.LINK'),
         TermsAndConditions: headerT('TERMS.LABEL'),
         TermsAndConditionsLink: headerT('TERMS.LINK'),
+        MoreInfo: cookiesT('MORE_INFO')
     };
     
     const theme = createTheme({

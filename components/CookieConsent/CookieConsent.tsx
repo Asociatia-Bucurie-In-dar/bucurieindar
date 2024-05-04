@@ -60,10 +60,11 @@ export default function CookieConsent ( props: { translations: CookiesTranslatio
             centered
             closeOnClickOutside={false}
         >
-            <Text>{props.translations.TextFirst}, <Link href={props.translations.PrivacyPolicyLink} target="_blank" className={classes.link}>{props.translations.PrivacyPolicy}</Link>, {props.translations.And} <Link href={props.translations.TermsAndConditionsLink} target="_blank" className={classes.link}>{props.translations.TermsAndConditions}</Link>.</Text>
+            <Text>{props.translations.TextFirst}. {props.translations.MoreInfo} <Link href={props.translations.PrivacyPolicyLink} target="_blank" className={classes.link}>{props.translations.PrivacyPolicy}</Link></Text>
+                {/*<Link href={props.translations.PrivacyPolicyLink} target="_blank" className={classes.link}>{props.translations.PrivacyPolicy}</Link>, {props.translations.And} <Link href={props.translations.TermsAndConditionsLink} target="_blank" className={classes.link}>{props.translations.TermsAndConditions}</Link>*/}
             <Group mt="md">
-                <Button onClick={handleAccept}>{props.translations.Accept}</Button>
                 <LanguagePicker />
+                <Button onClick={handleAccept}>{props.translations.Accept}</Button>
             </Group>
         </Modal>
     );
