@@ -3,24 +3,36 @@ import {NextRequest, NextResponse} from "next/server";
 import { PrismaClient } from '@prisma/client';
 import {unstable_cache} from "next/cache";
 import {revalidateDonationsProgressTag} from "@/utils/cache-tags";
+import RedisClient from "@redis/client";
+
+
+//const getTotalDonations = unstable_cache(async (projectId: any) => {
+//    return await prisma.donation.aggregate({
+//        _sum: { amount: true },
+//        where: { causeId: projectId} }).then(r => r._sum.amount ?? 0);
+//});
+//[(revalidateDonationsProgressTag)],
+//{ tags: [revalidateDonationsProgressTag]});
 
 const prisma = new PrismaClient();
-
-const getTotalDonations = unstable_cache(async (projectId: any) => {
-    return await prisma.donation.aggregate({
-        _sum: { amount: true },
-        where: { causeId: projectId} }).then(r => r._sum.amount ?? 0);
-});
-    //[(revalidateDonationsProgressTag)],
-    //{ tags: [revalidateDonationsProgressTag]});
+const client = RedisClient.createClient();
 
 export async function GET(req: NextRequest) {
     
-    const projectId = req.nextUrl.pathname.split('/').pop();
-    
-    const totalAmount = await prisma.donation.aggregate({
-        _sum: { amount: true },
-        where: { causeId: projectId} }).then(r => r._sum.amount ?? 0);
+    const projectId:string = req.nextUrl.pathname.split('/').pop() ?? '';
+
+    // Try to get the cached total amount
+    let totalAmount = await client.get(projectId) as number|null;
+
+    if (totalAmount === null) {
+        totalAmount = await prisma.donation.aggregate({
+            _sum: { amount: true },
+            where: { causeId: projectId }
+        }).then(r => r._sum.amount ?? 0);
+
+        // Update the cache with the new value
+        await client.set(projectId, totalAmount ?? 0);
+    }
     
     return NextResponse.json({ totalDonated: totalAmount }, { status: 200 });
 }

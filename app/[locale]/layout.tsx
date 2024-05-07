@@ -8,7 +8,7 @@ import FirstTimeConfetti from "@/components/CoolEffects/FirstTimeConfetti";
 import {locales} from "@/middleware";
 import {getTranslations, unstable_setRequestLocale} from 'next-intl/server';
 import {useTranslations} from "next-intl";
-// import {Analytics} from "@vercel/analytics/next";
+import {Analytics} from "@vercel/analytics/next";
 import CookieConsent from "@/components/CookieConsent/CookieConsent";
 import {CookiesTranslationType} from "@/utils/my-types";
 //import WavySeparator from '@/components/WavySeparator/WavySeparator';
@@ -92,10 +92,9 @@ export default function RootLayout({children, params: {locale}}: { children: Rea
         <CookieConsent translations={cookiesTranslations}/>
         <Footer/>
     </MantineProvider>
-    {/*<Analytics />*/}
+    <Analytics />
     <FirstTimeConfetti/>
     </body>
-    {/*<GoogleAnalytics gaId="G-CNEHG29ZXM" />*/}
     </html>
   );
 }

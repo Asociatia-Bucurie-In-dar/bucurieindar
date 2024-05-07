@@ -26,6 +26,7 @@
     "@next/bundle-analyzer": "^14.0.1",
     "@next/third-parties": "^14.2.2",
     "@prisma/client": "5.9.1",
+    "@redis/client": "^1.5.14",
     "@stripe/react-stripe-js": "^2.5.0",
     "@stripe/stripe-js": "^3.0.3",
     "@tabler/icons-react": "^2.40.0",

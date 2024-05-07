@@ -2,11 +2,11 @@ import type { Stripe } from "stripe";
 import { NextResponse } from "next/server";
 import {stripe} from "@/utils/stripe/stripe";
 import {Donation, PrismaClient} from '@prisma/client';
-import {revalidateTag} from "next/cache";
-import {revalidateDonationsProgressTag} from "@/utils/cache-tags";
 import {contactInfo} from "@/content/contact/my-contact";
+import RedisClient from "@redis/client";
 
 const prisma = new PrismaClient();
+const redisClient = RedisClient.createClient();
 
 async function saveDonation(donationData: any) {
     return prisma.donation.create({
@@ -70,7 +70,8 @@ export async function POST(req: Request) {
                         console.error(`Error saving donation: ${error.message}`);
                     }
 
-                    revalidateTag(revalidateDonationsProgressTag);
+                    // @ts-ignore
+                    await redisClient.del(data.metadata.projectId);
                     
                     break;
                 case "payment_intent.payment_failed":
@@ -79,7 +80,9 @@ export async function POST(req: Request) {
                     break;
                 case "payment_intent.succeeded":
 
-                    revalidateTag(revalidateDonationsProgressTag);
+                    // @ts-ignore
+                    await redisClient.del(data.metadata.projectId);
+                    
                     data = event.data.object as Stripe.PaymentIntent;
                     console.log(`💰 PaymentIntent status: ${data.status}`);
                     break;
