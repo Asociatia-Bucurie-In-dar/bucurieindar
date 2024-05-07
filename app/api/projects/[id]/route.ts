@@ -21,9 +21,12 @@ export async function GET(req: NextRequest) {
     const projectId:string = req.nextUrl.pathname.split('/').pop() ?? '';
 
     // Try to get the cached total amount
-    let totalAmount = cache.get(projectId);
+    let totalAmount:number|null|undefined = null;
+    if (cache.has(projectId))
+        totalAmount = cache.get(projectId);
+    
 
-    if (totalAmount === null) {
+    if (totalAmount === null || totalAmount === undefined) {
         totalAmount = await prisma.donation.aggregate({
             _sum: { amount: true },
             where: { causeId: projectId }
