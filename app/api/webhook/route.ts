@@ -1,12 +1,11 @@
 import type { Stripe } from "stripe";
 import { NextResponse } from "next/server";
 import {stripe} from "@/utils/stripe/stripe";
-import {Donation, PrismaClient} from '@prisma/client';
+import {PrismaClient} from '@prisma/client';
 import {contactInfo} from "@/content/contact/my-contact";
-import RedisClient from "@redis/client";
+import cache from 'memory-cache';
 
 const prisma = new PrismaClient();
-const redisClient = RedisClient.createClient();
 
 async function saveDonation(donationData: any) {
     return prisma.donation.create({
@@ -71,7 +70,7 @@ export async function POST(req: Request) {
                     }
 
                     // @ts-ignore
-                    await redisClient.del(data.metadata.projectId);
+                    cache.del(data.metadata.projectId);
                     
                     break;
                 case "payment_intent.payment_failed":
@@ -81,7 +80,7 @@ export async function POST(req: Request) {
                 case "payment_intent.succeeded":
 
                     // @ts-ignore
-                    await redisClient.del(data.metadata.projectId);
+                    cache.del(data.metadata.projectId);
                     
                     data = event.data.object as Stripe.PaymentIntent;
                     console.log(`💰 PaymentIntent status: ${data.status}`);

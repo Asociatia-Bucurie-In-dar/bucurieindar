@@ -3,7 +3,7 @@ import {NextRequest, NextResponse} from "next/server";
 import { PrismaClient } from '@prisma/client';
 import {unstable_cache} from "next/cache";
 import {revalidateDonationsProgressTag} from "@/utils/cache-tags";
-import RedisClient from "@redis/client";
+import cache from 'memory-cache';
 
 
 //const getTotalDonations = unstable_cache(async (projectId: any) => {
@@ -15,14 +15,13 @@ import RedisClient from "@redis/client";
 //{ tags: [revalidateDonationsProgressTag]});
 
 const prisma = new PrismaClient();
-const client = RedisClient.createClient();
 
 export async function GET(req: NextRequest) {
     
     const projectId:string = req.nextUrl.pathname.split('/').pop() ?? '';
 
     // Try to get the cached total amount
-    let totalAmount = await client.get(projectId) as number|null;
+    let totalAmount = cache.get(projectId);
 
     if (totalAmount === null) {
         totalAmount = await prisma.donation.aggregate({
@@ -31,7 +30,7 @@ export async function GET(req: NextRequest) {
         }).then(r => r._sum.amount ?? 0);
 
         // Update the cache with the new value
-        await client.set(projectId, totalAmount ?? 0);
+        await cache.put(projectId, totalAmount);
     }
     
     return NextResponse.json({ totalDonated: totalAmount }, { status: 200 });
