@@ -3,7 +3,7 @@ import {NextRequest, NextResponse} from "next/server";
 import { PrismaClient } from '@prisma/client';
 import {unstable_cache} from "next/cache";
 import {revalidateDonationsProgressTag} from "@/utils/cache-tags";
-import cache from 'memory-cache';
+import cache from '@/utils/cache';
 
 
 //const getTotalDonations = unstable_cache(async (projectId: any) => {
@@ -30,7 +30,7 @@ export async function GET(req: NextRequest) {
         }).then(r => r._sum.amount ?? 0);
 
         // Update the cache with the new value
-        await cache.put(projectId, totalAmount);
+        cache.set(projectId, totalAmount);
     }
     
     return NextResponse.json({ totalDonated: totalAmount }, { status: 200 });

@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 import {stripe} from "@/utils/stripe/stripe";
 import {PrismaClient} from '@prisma/client';
 import {contactInfo} from "@/content/contact/my-contact";
-import cache from 'memory-cache';
+import cache from '@/utils/cache';
 
 const prisma = new PrismaClient();
 
@@ -69,8 +69,7 @@ export async function POST(req: Request) {
                         console.error(`Error saving donation: ${error.message}`);
                     }
 
-                    // @ts-ignore
-                    cache.del(data.metadata.projectId);
+                    cache.flushAll();
                     
                     break;
                 case "payment_intent.payment_failed":
@@ -79,8 +78,7 @@ export async function POST(req: Request) {
                     break;
                 case "payment_intent.succeeded":
 
-                    // @ts-ignore
-                    cache.del(data.metadata.projectId);
+                    cache.flushAll();
                     
                     data = event.data.object as Stripe.PaymentIntent;
                     console.log(`💰 PaymentIntent status: ${data.status}`);

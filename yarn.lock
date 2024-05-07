@@ -7196,6 +7196,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"clone@npm:2.x":
+  version: 2.1.2
+  resolution: "clone@npm:2.1.2"
+  checksum: ed0601cd0b1606bc7d82ee7175b97e68d1dd9b91fd1250a3617b38d34a095f8ee0431d40a1a611122dcccb4f93295b4fdb94942aa763392b5fe44effa50c2d5e
+  languageName: node
+  linkType: hard
+
 "clone@npm:^1.0.2":
   version: 1.0.4
   resolution: "clone@npm:1.0.4"
@@ -12838,10 +12845,10 @@ __metadata:
     gray-matter: "npm:^4.0.3"
     jest: "npm:^29.7.0"
     jest-environment-jsdom: "npm:^29.7.0"
-    memory-cache: "npm:^0.2.0"
     next: "npm:14.1.4"
     next-intl: "npm:^3.9.1"
     next-share: "npm:^0.27.0"
+    node-cache: "npm:^5.1.2"
     postcss: "npm:^8.4.31"
     postcss-preset-mantine: "npm:1.13.0"
     postcss-simple-vars: "npm:^7.0.1"
@@ -13028,13 +13035,6 @@ __metadata:
   dependencies:
     map-or-similar: "npm:^1.5.0"
   checksum: 661bf69b7afbfad57f0208f0c63324f4c96087b480708115b78ee3f0237d86c7f91347f6db31528740b2776c2e34c709bcb034e1e910edee2270c9603a0a469e
-  languageName: node
-  linkType: hard
-
-"memory-cache@npm:^0.2.0":
-  version: 0.2.0
-  resolution: "memory-cache@npm:0.2.0"
-  checksum: d4fe58865dfdc252db18ae152ab6c9d62868cfc42d5e7f6cf30732fcf27f5f1f8d7b179c3b6f26f31a28ab1cc5c3937215c60aa9e8ad7ea8ff35e79f69ef14da
   languageName: node
   linkType: hard
 
@@ -13817,6 +13817,15 @@ __metadata:
   dependencies:
     node-gyp: "npm:latest"
   checksum: d2699c4ad15740fd31482a3b6fca789af7723ab9d393adc6ac45250faaee72edad8f0b10b2b9d087df0de93f1bdc16d97afdd179b26b9ebc9ed68b569faa4bac
+  languageName: node
+  linkType: hard
+
+"node-cache@npm:^5.1.2":
+  version: 5.1.2
+  resolution: "node-cache@npm:5.1.2"
+  dependencies:
+    clone: "npm:2.x"
+  checksum: 2f91907510a1276415ae5898269d0765934d5a4f3682c8b1b19964694a9b841c8bd791e1a125d1f89050f412e1da5dd982179d714252b3a7223abb05b8cb24d5
   languageName: node
   linkType: hard
 
