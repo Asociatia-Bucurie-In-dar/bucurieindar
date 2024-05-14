@@ -53,7 +53,7 @@ const projectsData : ProjectType[] = [
         ],
         other_videos: [],
         translation_key: 'HELP_A_COMMUNITY',
-        goalAmount: 7000, 
+        goalAmount: 10000, 
         currentAmount: 0,
         currentAmountExtra: 0,
     },
