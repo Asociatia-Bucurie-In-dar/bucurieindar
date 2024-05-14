@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="32e33542-bd06-42e3-bf1b-3883da34adf9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.bucurieindar.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.bucurieindar.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/webhook/route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/webhook/route.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/projects/[id]/route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/projects/[id]/route.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Home/HomeFeeding/HomeFeeding.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/HomeFeeding/HomeFeeding.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,9 +25,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/../VIRTUOUS/Assets/__STUFF/Scripts/Player/PlayerAnimationFunctions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/messages/en.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/package-lock.json" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/package.json" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -128,7 +129,9 @@
       <workItem from="1714224985218" duration="6655000" />
       <workItem from="1714723313770" duration="8106000" />
       <workItem from="1714731950690" duration="17857000" />
-      <workItem from="1715110876507" duration="7186000" />
+      <workItem from="1715110876507" duration="8836000" />
+      <workItem from="1715688283024" duration="57000" />
+      <workItem from="1715688396798" duration="1219000" />
     </task>
     <servers />
   </component>

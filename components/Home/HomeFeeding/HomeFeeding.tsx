@@ -12,25 +12,25 @@ export function HomeFeeding() {
     const data = [
         {
             title: activityT('ACTIVITIES.THIRD.TITLE'),
-            stats: '3' + ' ' + commonT('TONS') + '+',
+            stats: '200' + ' ' + 'Kg' + '+',
             progress: 45,
             description: activityT('ACTIVITIES.THIRD.DESCRIPTION'),
         },
         {
             title: activityT('ACTIVITIES.FIRST.TITLE'),
-            stats: '38,000+',
+            stats: '41,000+',
             progress: 45,
             description: activityT('ACTIVITIES.FIRST.DESCRIPTION'),
         },
         {
             title: activityT('ACTIVITIES.SECOND.TITLE'),
-            stats: '24' + ' ' + commonT('TONS') + '+',
+            stats: '27' + ' ' + commonT('TONS') + '+',
             progress: 34,
             description: activityT('ACTIVITIES.SECOND.DESCRIPTION'),
         },
         {
             title: activityT('ACTIVITIES.FOURTH.TITLE'),
-            stats: '26' + ' ' + commonT('TONS') + '+',
+            stats: '28' + ' ' + commonT('TONS') + '+',
             progress: 45,
             description: activityT('ACTIVITIES.FOURTH.DESCRIPTION'),
         },

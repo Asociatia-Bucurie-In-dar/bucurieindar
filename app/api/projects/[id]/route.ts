@@ -22,15 +22,21 @@ export async function GET(req: NextRequest) {
 
     // Try to get the cached total amount
     let totalAmount:number|null|undefined = null;
-    if (cache.has(projectId))
+    if (cache.has(projectId)) 
+    {
         totalAmount = cache.get(projectId);
+        console.log('GOT FROM CACHE! (' + projectId + ')');
+    }
     
 
     if (totalAmount === null || totalAmount === undefined) {
         totalAmount = await prisma.donation.aggregate({
             _sum: { amount: true },
             where: { causeId: projectId }
-        }).then(r => r._sum.amount ?? 0);
+        }).then(r => {
+            console.log('GOT FROM DB :( (' + projectId + ')');
+            return r._sum.amount ?? 0;
+        });
 
         // Update the cache with the new value
         cache.set(projectId, totalAmount);
