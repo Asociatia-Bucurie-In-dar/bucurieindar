@@ -1,9 +1,7 @@
-import {Text, Container, ActionIcon, Group, rem, Title, Center, SimpleGrid, Divider} from '@mantine/core';
-import { IconBrandTwitter, IconBrandYoutube, IconBrandInstagram } from '@tabler/icons-react';
+import {Text, Container, Group, Title, Center, SimpleGrid, Divider} from '@mantine/core';
 import classes from './Footer.module.css';
 import Link from "next/link";
 import {useTranslations} from "next-intl";
-import {MyRoutePaths} from "@/utils/route-paths";
 
 function link(link: string, label: string) {
     return (
