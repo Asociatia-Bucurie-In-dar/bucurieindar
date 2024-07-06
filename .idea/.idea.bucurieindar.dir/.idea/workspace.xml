@@ -5,14 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32e33542-bd06-42e3-bf1b-3883da34adf9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.yarn/releases/yarn-4.2.2.cjs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.bucurieindar.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.bucurieindar.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/releases/yarn-4.0.1.cjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarnrc.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.yarnrc.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Folder.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/Folder.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Contact/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Common/TitleWithDescription.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Common/TitleWithDescription.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/OurTeam/OurTeam.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/OurTeam/OurTeam.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/SfIoan/SfIoan.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/SfIoan/SfIoan.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/messages/ro.json" beforeDir="false" afterPath="$PROJECT_DIR$/messages/ro.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +59,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "yarn",
-    "npm.dev.executor": "Debug",
+    "npm.dev.executor": "Run",
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "ts.external.directory.path": "/Users/fabianghenof/Documents/GitHub/bucurieindar/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
@@ -139,6 +136,8 @@
       <workItem from="1715110876507" duration="8836000" />
       <workItem from="1715688283024" duration="57000" />
       <workItem from="1715688396798" duration="1988000" />
+      <workItem from="1720155052839" duration="154000" />
+      <workItem from="1720242138053" duration="1531000" />
     </task>
     <servers />
   </component>

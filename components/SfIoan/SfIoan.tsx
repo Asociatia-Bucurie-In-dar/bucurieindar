@@ -17,7 +17,7 @@ export function SfIoan(props: { disableBackground?: boolean }) {
     };
     
     return (
-        <Container className={props.disableBackground ? '' : commonClasses.darkerBackground} size="full" pt={47} pb={47}>
+        <Container className={props.disableBackground ? '' : commonClasses.darkerBackground} size="full" pt={47} pb={40}>
             <Container size="lg" className={classes.wrapper}>
                 <Center>
                     <div className={classes.roundedImageWrapper}>
@@ -28,6 +28,11 @@ export function SfIoan(props: { disableBackground?: boolean }) {
                 </Center>
                 <div className={classes.body}>
                     <TitleWithDescription title={t('TITLE')} description={t('DESCRIPTION')} maxWidth='100%'/>
+                    <Link {...linkProps} style={{textDecoration: 'none'}}>
+                        <Text ta="center" mt="md" c="blue">
+                            CentrulSfantulIoanCelMilostiv.org <IconExternalLink size={18} />
+                        </Text>
+                    </Link>
                 </div>
             </Container>
         </Container>
