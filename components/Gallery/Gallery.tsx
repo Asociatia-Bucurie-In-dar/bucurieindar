@@ -1,12 +1,11 @@
 'use client';
-import {Card, Text, SimpleGrid, Image, AspectRatio, Divider, Modal, Spoiler, rem} from '@mantine/core';
+import {Card, Text, SimpleGrid, Image, AspectRatio, Divider, Modal, Spoiler} from '@mantine/core';
 import classes from './Gallery.module.css';
 import {GalleryImage, GalleryTranslations, GalleryVideo} from "@/utils/my-types";
-import {namedTypes} from "ast-types";
 import {useDisclosure} from "@mantine/hooks";
 import {MyZIndexes} from "@/utils/my-constants";
 import {useState} from "react";
-import {IconArrowsDiagonal, IconArrowsMaximize, IconZoomIn, IconZoomInFilled} from "@tabler/icons-react";
+import {IconArrowsMaximize} from "@tabler/icons-react";
 
 export function Gallery(props: { videosData: GalleryVideo[], imagesData: GalleryImage[], translations: GalleryTranslations }) {
 

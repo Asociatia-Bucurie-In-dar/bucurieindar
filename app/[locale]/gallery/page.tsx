@@ -29,20 +29,28 @@ export default function GalleryPage( {params: {locale}} : {params: {locale: stri
     const videosData = [
         {
             title: '',
-            youtubeId: 'melxSaysHyM',
-        },
-        {
-            title: '',
             youtubeId: 'FKUvxS3grqg',
-            
-        },
-        {
-            title: '',
-            youtubeId: 'OBcBR5o5TpM',
+
         },
         {
             title: '',
             youtubeId: 'eJYPYBxaOYk',
+        },
+        {
+            title: '',
+            youtubeId: 'melxSaysHyM',
+        },
+        // {
+        //     title: '',
+        //     youtubeId: 'ED4jCuQjUmM',
+        // },
+        // {
+        //     title: '',
+        //     youtubeId: 'OBcBR5o5TpM',
+        // },
+        {
+            title: '',
+            youtubeId: 'lci40DH0kv4',
         },
     ];
 
