@@ -4,18 +4,19 @@ import { GetAllProjectsStaticContent } from "@/content/projects/projects-content
 import { GetAllArticlesStaticContent } from "@/content/blog/blog-content";
 import { locales, defaultLocale } from "@/middleware";
 
-function getUrlsOfLocale(localeAsString: string): { url: string, alternates: { hreflang: string, href: string }[] }[] {
+function getUrlsOfLocale(localeAsString: string): { url: string, priority:number, alternates: { hreflang: string, href: string }[] }[] {
     const locale = localeAsString === "" ? "" : "/" + localeAsString;
     const baseUrl = "https://bucurieindar.org" + locale;
 
     const paths = Object.values(MyRoutePaths).map(x => x);
-    let urls = paths.map(link => {
+    let urls = paths.map((link, index) => {
         const url = baseUrl + link;
         const alternates = locales.map((loc) => {
             const locPrefix = loc === defaultLocale ? "" : "/" + loc;
             return { hreflang: loc, href: `https://bucurieindar.org${locPrefix}${link}` };
         });
-        return { url, alternates};
+        const priority = index === 0 ? 1 : 0.5;
+        return { url, priority, alternates};
     });
 
     // Add projects
@@ -26,7 +27,8 @@ function getUrlsOfLocale(localeAsString: string): { url: string, alternates: { h
             const locPrefix = loc === defaultLocale ? "" : "/" + loc;
             return { hreflang: loc, href: `https://bucurieindar.org${locPrefix}${MyRoutePaths.Projects}/${x.slug}` };
         });
-        urls.push({ url: projectUrl, alternates });
+        const priority = 0.7;
+        urls.push({ url: projectUrl, priority, alternates });
     });
 
     // Add articles
@@ -44,7 +46,7 @@ function getUrlsOfLocale(localeAsString: string): { url: string, alternates: { h
 }
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-    let allUrls: { url: string, alternates: { hreflang: string, href: string }[] }[] = [];
+    let allUrls: { url: string, priority: number, alternates: { hreflang: string, href: string }[] }[] = [];
 
     for (let locale of locales) {
         if (locale === defaultLocale) locale = "";
