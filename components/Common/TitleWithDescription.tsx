@@ -1,6 +1,5 @@
 import commonClasses from "@/utils/commonClasses.module.css";
-import {Container, rem, StyleProp, Text, Title} from "@mantine/core";
-import Link from "next/link";
+import {rem, Text, Title} from "@mantine/core";
 
 export function TitleWithDescription(props: {title: string, description?: string, maxWidth?: string }) {
     
