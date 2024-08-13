@@ -29,16 +29,16 @@ export default function GalleryPage( {params: {locale}} : {params: {locale: stri
     const videosData = [
         {
             title: '',
-            youtubeId: 'FKUvxS3grqg',
+            youtubeId: 'lci40DH0kv4',
 
         },
         {
             title: '',
-            youtubeId: 'eJYPYBxaOYk',
+            youtubeId: 'melxSaysHyM',
         },
         {
             title: '',
-            youtubeId: 'melxSaysHyM',
+            youtubeId: 'ED4jCuQjUmM',
         },
         // {
         //     title: '',
@@ -50,7 +50,7 @@ export default function GalleryPage( {params: {locale}} : {params: {locale: stri
         // },
         {
             title: '',
-            youtubeId: 'lci40DH0kv4',
+            youtubeId: 'FKUvxS3grqg',
         },
     ];
 

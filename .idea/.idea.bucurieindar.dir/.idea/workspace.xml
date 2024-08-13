@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="32e33542-bd06-42e3-bf1b-3883da34adf9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.bucurieindar.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.bucurieindar.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/messages/ro.json" beforeDir="false" afterPath="$PROJECT_DIR$/messages/ro.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +135,8 @@
       <workItem from="1720155052839" duration="154000" />
       <workItem from="1720242138053" duration="1772000" />
       <workItem from="1720244321264" duration="73000" />
-      <workItem from="1720770369363" duration="1056000" />
+      <workItem from="1720770369363" duration="2927000" />
+      <workItem from="1721243349892" duration="2390000" />
     </task>
     <servers />
   </component>
@@ -147,5 +147,17 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/components/Popups/DonatePopup/DonatePopupButton.tsx</url>
+          <line>124</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
