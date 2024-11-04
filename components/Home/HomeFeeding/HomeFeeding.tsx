@@ -8,7 +8,6 @@ import {useTranslations} from "next-intl";
 export function HomeFeeding() {
     const activityT = useTranslations('HOME_ACTIVITY');
     const commonT = useTranslations('COMMON');
-
     const data = [
         {
             title: activityT('ACTIVITIES.THIRD.TITLE'),
