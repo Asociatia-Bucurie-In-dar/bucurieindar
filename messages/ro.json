@@ -48,8 +48,8 @@
         "DESCRIPTION": "pentru cei nevoiași."
       },
       "SECOND": {
-        "TITLE": "Neperisabile",
-        "DESCRIPTION": "donate până acum."
+        "TITLE": "Alimente",
+        "DESCRIPTION": "neperisabile donate."
       },
       "THIRD": {
         "TITLE": "Produse igienă",
@@ -57,7 +57,7 @@
       },
       "FOURTH": {
         "TITLE": "Îmbrăcăminte",
-        "DESCRIPTION": "celor în nevoie."
+        "DESCRIPTION": "şi încălţăminte."
       }
     }
   },

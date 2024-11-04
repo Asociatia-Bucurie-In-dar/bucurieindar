@@ -51,7 +51,7 @@
       },
       "SECOND": {
         "TITLE": "Non-perishable",
-        "DESCRIPTION": "items donated until now."
+        "DESCRIPTION": "items donated."
       },
       "THIRD": {
         "TITLE": "Hygiene",
@@ -59,7 +59,7 @@
       },
       "FOURTH": {
         "TITLE": "Clothing",
-        "DESCRIPTION": "for the ones in need."
+        "DESCRIPTION": "and footwear."
       }
     }
   },
