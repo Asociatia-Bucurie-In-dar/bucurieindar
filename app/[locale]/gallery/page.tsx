@@ -29,6 +29,11 @@ export default function GalleryPage( {params: {locale}} : {params: {locale: stri
     const videosData = [
         {
             title: '',
+            youtubeId: 'a7eoQZ1lsMs',
+
+        },
+        {
+            title: '',
             youtubeId: 'lci40DH0kv4',
 
         },
@@ -40,18 +45,14 @@ export default function GalleryPage( {params: {locale}} : {params: {locale: stri
             title: '',
             youtubeId: 'ED4jCuQjUmM',
         },
-        // {
-        //     title: '',
-        //     youtubeId: 'ED4jCuQjUmM',
-        // },
-        // {
-        //     title: '',
-        //     youtubeId: 'OBcBR5o5TpM',
-        // },
         {
             title: '',
             youtubeId: 'FKUvxS3grqg',
         },
+        {
+            title: '',
+            youtubeId: 'OBcBR5o5TpM',
+        }
     ];
 
     const imgPrepath = '/gallery/';
