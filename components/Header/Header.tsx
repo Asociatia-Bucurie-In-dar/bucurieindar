@@ -64,7 +64,7 @@ export function Header({ headerTranslations, locale }: { headerTranslations: any
                 <div className={classes.inner}>
                     <Group>
                         <Link href={headerTranslations.home.link} key={headerTranslations.home.label}>
-                            <Image src={logo.src} alt="Logo" width={50} height={50} />
+                            <Image src={logo.src} alt="Logo" width={50} height={50} style={{ objectFit: 'contain' }}/>
                         </Link>
                         <Divider orientation="vertical" color="transparent"/>
                         <LanguagePicker />
