@@ -52,9 +52,7 @@ export function Header({ headerTranslations, locale }: { headerTranslations: any
     return (
         <header className={classes.header} style={{
             position: 'fixed',
-            top: 0,
-            left: 0,
-            right: 0,
+            top: 0, left: 0, right: 0,
             zIndex: headerZIndex,
             transform: `translate3d(0, ${pinned ? 0 : rem(-110)}, 0)`,
             transition: 'transform 400ms ease',
