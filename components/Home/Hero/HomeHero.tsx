@@ -41,7 +41,7 @@ export function HomeHero() {
                         
                         {/*<ConfettiButton size={"lg"} mt="xl" text={commonT('DONATE_NOW')}/>*/}
                         <Divider color="transparent" mt="xl"/>
-                        <TeleportButton targetID="ourActivitySection" text={heroT('SEE_MORE')}/>
+                        <TeleportButton targetID="otherHelpSection" text={heroT('SEE_MORE')}/>
                     </div>
                 </div>
             </Container>
