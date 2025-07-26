@@ -12,7 +12,7 @@ export async function GET(req: NextRequest) {
     let totalAmount:number|null|undefined = null;
     // if (cache.has(projectId)) 
     // {
-    //     totalAmount = cache.get(projectId);
+    //     totalAmount = cache.get(projectId); 
     // }
 
     if (totalAmount === null || totalAmount === undefined) {
