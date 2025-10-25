@@ -63,6 +63,13 @@ export type ProjectTranslationsType = {
     DesiredAmount: string;
     Continue: string;
     DonateFor: string;
+    HowToDonate: string;
+    BankTransferDescription: string;
+    RevolutDescription: string;
+    Beneficiary: string;
+    Swift: string;
+    IbanRomania: string;
+    IbanInternational: string;
     IAgreeWith: string;
     TermsAndConditions: string;
     And: string;

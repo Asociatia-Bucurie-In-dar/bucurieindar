@@ -1,20 +1,28 @@
 .root {
     background-color: light-dark(var(--mantine-color-white), var(--mantine-color-dark-6));
-    box-shadow: var(--mantine-shadow-md);
+    box-shadow: var(--mantine-shadow-lg);
     border: rem(1px) solid light-dark(var(--mantine-color-gray-1), var(--mantine-color-dark-4));
+    border-radius: var(--mantine-radius-lg);
 }
 
 .indicator {
     background-image: linear-gradient(
             to right,
-            var(--mantine-color-green-filled),
-            var(--mantine-color-lime-filled)
+            var(--mantine-color-yellow-filled),
+            var(--mantine-color-orange-filled)
     );
+    border-radius: var(--mantine-radius-md);
 }
 
 .control {
     &::before {
         display: none;
+    }
+    
+    transition: all 0.2s ease;
+    
+    &:hover {
+        transform: translateY(-1px);
     }
 }
 
@@ -31,16 +39,105 @@
     display: flex;
     width: 100%;
     border: rem(1px) solid light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-8));
-    border-radius: var(--mantine-radius-sm);
+    border-radius: var(--mantine-radius-md);
     padding: var(--mantine-spacing-lg);
     background-color: light-dark(var(--mantine-color-white), var(--mantine-color-dark-8));
+    transition: all 0.2s ease;
+    cursor: pointer;
 
     @mixin hover {
         background-color: light-dark(var(--mantine-color-gray-0), var(--mantine-color-dark-9));
+        transform: translateY(-1px);
+        box-shadow: var(--mantine-shadow-sm);
     }
 }
 
 .link {
     text-decoration: none;
     color: var(--mantine-color-blue-8);
+    transition: color 0.2s ease;
+    
+    &:hover {
+        color: var(--mantine-color-blue-6);
+    }
+}
+
+/* Payment method tabs */
+.paymentTabs {
+    display: flex;
+    gap: rem(8px);
+    padding: rem(4px);
+    background-color: light-dark(var(--mantine-color-gray-1), var(--mantine-color-dark-7));
+    border-radius: var(--mantine-radius-md);
+    margin-bottom: var(--mantine-spacing-lg);
+}
+
+.paymentTab {
+    flex: 1;
+    transition: all 0.2s ease;
+    
+    &:hover {
+        transform: translateY(-1px);
+    }
+}
+
+/* Bank details styling */
+.bankDetailCard {
+    border-radius: var(--mantine-radius-md);
+    transition: all 0.2s ease;
+    
+    &:hover {
+        transform: translateY(-1px);
+        box-shadow: var(--mantine-shadow-sm);
+    }
+}
+
+.copyButton {
+    transition: all 0.2s ease;
+    
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+/* Suggested amounts grid */
+.amountGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: rem(8px);
+    margin-bottom: var(--mantine-spacing-md);
+}
+
+.amountButton {
+    transition: all 0.2s ease;
+    font-weight: 600;
+    
+    &:hover {
+        transform: translateY(-1px);
+    }
+}
+
+/* Modal header */
+.modalHeader {
+    display: flex;
+    align-items: center;
+    gap: var(--mantine-spacing-md);
+    margin-bottom: var(--mantine-spacing-xl);
+}
+
+.headerIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: rem(48px);
+    height: rem(48px);
+    border-radius: 50%;
+    background-color: light-dark(var(--mantine-color-yellow-1), var(--mantine-color-yellow-9));
+}
+
+/* Footer */
+.modalFooter {
+    margin-top: var(--mantine-spacing-xl);
+    padding-top: var(--mantine-spacing-md);
+    border-top: rem(1px) solid light-dark(var(--mantine-color-gray-2), var(--mantine-color-dark-4));
 }
