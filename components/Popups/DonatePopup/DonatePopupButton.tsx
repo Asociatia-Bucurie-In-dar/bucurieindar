@@ -22,7 +22,8 @@ import {
     IconBuildingBank,
     IconCreditCard,
     IconCopy,
-    IconCheck
+    IconCheck,
+    IconCurrencyDollar
 } from "@tabler/icons-react";
 
 
@@ -522,7 +523,7 @@ export function DonatePopupButton(props: {projectId: string,
                             size="sm"
                             fullWidth
                             onClick={() => setPayMethod(payOption3)}
-                            leftSection={<IconHeart size={20} />}
+                            leftSection={<IconCurrencyDollar size={20} />}
                             style={{ fontWeight: 600 }}
                             aria-pressed={payMethod === payOption3}
                             aria-label={`Selectează ${payOption3} ca metodă de plată`}
