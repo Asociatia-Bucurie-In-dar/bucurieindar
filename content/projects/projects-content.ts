@@ -42,7 +42,7 @@ const projectsData : ProjectType[] = [
         ],
         other_videos: [],
         translation_key: 'TABLE_OF_JOY',
-        goalAmount: 15000,
+        goalAmount: 16000,
         currentAmount: 0,
         currentAmountExtra: 0,
     },

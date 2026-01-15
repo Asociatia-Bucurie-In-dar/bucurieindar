@@ -548,8 +548,7 @@ export function DonatePopupButton(props: {projectId: string,
                 size="sm" 
                 fw={600}
                 mt="md" 
-                onClick={prepAndOpen}
-                leftSection={<IconHeart size={18} />}
+                onClick={prepAndOpen}}
             >
                 {props.translations.Donate}&nbsp;<span style={{fontWeight: 500}}>({props.translations.Options})</span>
             </Button>
