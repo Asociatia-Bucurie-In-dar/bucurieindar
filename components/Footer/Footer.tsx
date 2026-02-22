@@ -1,3 +1,5 @@
+"use client";
+
 import {Text, Container, Group, Title, Center, SimpleGrid, Divider} from '@mantine/core';
 import classes from './Footer.module.css';
 import Link from "next/link";

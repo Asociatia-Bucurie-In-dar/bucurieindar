@@ -28,7 +28,7 @@ export function SfIoan(props: { disableBackground?: boolean }) {
                 </Center>
                 <div className={classes.body}>
                     <TitleWithDescription title={t('TITLE')} description={t('DESCRIPTION')} maxWidth='100%'/>
-                    <Link {...linkProps} style={{textDecoration: 'none'}}>
+                    <Link {...linkProps} style={{textDecoration: 'none', color: 'inherit'}}>
                         <Text ta="center" mt="md" c="blue">
                             CentrulSfantulIoanCelMilostiv.org <IconExternalLink size={18} />
                         </Text>

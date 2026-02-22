@@ -1,26 +1,18 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
-import { createCheckoutSession } from "@/utils/stripe/stripe-actions";
 import {
     Button,
-    Center,
     Divider,
-    Modal, Text, TextInput, rem, Paper, UnstyledButton, Checkbox
+    Modal, Text, rem, Paper
 } from "@mantine/core";
-import {Form} from "@storybook/components";
 import {MyZIndexes} from "@/utils/my-constants";
 import classes from "./DonatePopupButton.module.css";
 import { useDisclosure } from '@mantine/hooks';
 import {ProjectTranslationsType} from "@/utils/my-types";
-import Link from "next/link";
-import {MyRoutePaths} from "@/utils/route-paths";
 import {
-    IconChevronRight,
-    IconHeart,
     IconBuildingBank,
-    IconCreditCard,
     IconCopy,
     IconCheck,
     IconCurrencyDollar
@@ -32,89 +24,11 @@ export function DonatePopupButton(props: {projectId: string,
     translations: ProjectTranslationsType,
     fullWidth?: boolean}) {
 
-    // Feature flag to easily enable/disable card payments
-    const CARD_PAYMENTS_ENABLED = false;
-    
-    const payOption1 = props.translations.CardOption;
     const payOption2 = props.translations.BankTransferOption;
     const payOption3 = 'Revolut';
     
-    const [loading, setLoading] = useState(false);
-    const [badSum, setBadSum] = useState(true);
-    const [payMethod, setPayMethod] = useState(CARD_PAYMENTS_ENABLED ? payOption1 : payOption2);
-    const [redirectTo, setRedirectTo] = useState('');
+    const [payMethod, setPayMethod] = useState(payOption2);
     const [copiedField, setCopiedField] = useState<string | null>(null);
-    const [donationAmount, setDonationAmount] = useState<number>(50);
-    const [customAmount, setCustomAmount] = useState<string>('');
-    useEffect(() => {
-        if (redirectTo) {
-            window.location.assign(redirectTo);
-        }
-    }, [redirectTo]);
-    
-    const callDonateAPI = async (event: any) => {
-        event.preventDefault();
-        
-        // Validation
-        if (donationAmount < 10) {
-            alert('Suma minimă este 10 EUR');
-            return;
-        }
-        
-        if (!agreeValue) {
-            alert('Te rugăm să accepți termenii și condițiile');
-            return;
-        }
-        
-        setLoading(true);
-        try {
-        const data = 
-            {
-                projectId: props.projectId,
-                projectTitle: props.projectTile,
-                    currencyAmount: donationAmount,
-                //email: input.email,
-                agreed: agreeValue,
-                locale: props.translations.Locale
-            };
-        const { client_secret, url } = await createCheckoutSession(data);
-        
-            if (url) {
-                setRedirectTo(url as string);
-            } else {
-                throw new Error('No checkout URL received');
-            }
-        } catch (error) {
-            console.error('Checkout error:', error);
-            alert('A apărut o eroare. Te rugăm să încerci din nou.');
-        } finally {
-        setLoading(false);
-        }
-    }
-    
-    // Clean up unused handlers and state
-    // const [input, setInput] = useState<{ customDonation: string, email: string }> ({ customDonation: '', email: '' } );
-    // const handleMoneyChange: React.ChangeEventHandler<HTMLInputElement> = (
-    //     e
-    // ): void => {
-    //     let numberAsString = e.target.value;
-    //     if (numberAsString.length > 0 && numberAsString[0] === '0') {
-    //         numberAsString = numberAsString.slice(1);
-    //     }
-    //     numberAsString = numberAsString.replace(/\D/g, '');
-        
-    //     setBadSum(Number(numberAsString) < 1);
-        
-    //     setInput({customDonation: numberAsString, email: input.email});
-    // };
-    
-    // const handleEmailChange: React.ChangeEventHandler<HTMLInputElement> = (e): void => {
-    //     setInput({customDonation: input.customDonation, email: e.target.value});
-    // };
-
-    const [agreeValue, onAgreeChange] = useState(false);
-    
-    // Removed unused currency data
     
     // Bank details
     const bankDetails = {
@@ -153,112 +67,6 @@ export function DonatePopupButton(props: {projectId: string,
     const stopPropagation = (e: React.MouseEvent<HTMLAnchorElement>) => e.stopPropagation();
     
         const [opened, {open, close}] = useDisclosure(false);
-        
-        const forCard = <>
-            <Text size="sm" c="dimmed" mb="md">
-                Donează rapid și sigur cu cardul tău bancar prin Stripe.
-            </Text>
-
-            {/* Suggested Amounts */}
-            <div>
-                <Text size="sm" fw={500} mb="md">
-                    Alege suma
-                </Text>
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '8px', marginBottom: '16px' }}>
-                    {[50, 100, 200].map((amount) => (
-                        <Button
-                            key={amount}
-                            variant={donationAmount === amount && !customAmount ? "filled" : "outline"}
-                            color={donationAmount === amount && !customAmount ? "yellow" : "gray"}
-                            size="sm"
-                            onClick={() => {
-                                setDonationAmount(amount);
-                                setCustomAmount('');
-                            }}
-                            style={{ 
-                                fontWeight: 600,
-                                border: donationAmount === amount && !customAmount ? '2px solid var(--mantine-color-yellow-4)' : undefined
-                            }}
-                        >
-                            {amount} EUR
-                        </Button>
-                    ))}
-                </div>
-            </div>
-
-            {/* Custom Amount */}
-            <div>
-                <Text size="sm" fw={500} mb="xs">
-                    Sau introdu o altă sumă
-                </Text>
-                <TextInput 
-                    type="number"
-                    placeholder="50"
-                    min="10"
-                    value={customAmount}
-                    onChange={(e) => {
-                        setCustomAmount(e.target.value);
-                        const value = parseInt(e.target.value);
-                        if (!isNaN(value)) {
-                            setDonationAmount(value);
-                        }
-                    }}
-                    rightSection={<Text size="sm" fw={600} c="dimmed">EUR</Text>}
-                    rightSectionWidth={50}
-                       size="md"
-                    mb="md"
-                />
-            </div>
-
-            <Divider mb="sm" color="transparent"/>
-            {/* AGREE CHECK */}
-            <UnstyledButton onClick={() => onAgreeChange(!agreeValue)} className={classes.button}>
-                <Checkbox
-                    checked={agreeValue}
-                    required
-                    onChange={() => {}}
-                    tabIndex={-1}
-                    size="md"
-                    mr="md"
-                    styles={{ input: { cursor: 'pointer' } }}
-                    aria-hidden
-                    onClick={() => onAgreeChange(!agreeValue)}
-                />
-                <div>
-                    <Text fw={500} mb={7} lh={1}>
-                        {props.translations.IAgreeWith}:
-                    </Text>
-                    <Text fz="sm" fw={600}>
-                        <Link href={'/' + props.translations.Locale + MyRoutePaths.Terms} target="_blank" onClick={stopPropagation} className={classes.link}>{props.translations.TermsAndConditions}</Link> {props.translations.And} <Link href={'/' + props.translations.Locale + MyRoutePaths.Privacy} target="_blank"  onClick={stopPropagation} className={classes.link}>{props.translations.PrivacyPolicy}</Link>
-                    </Text>
-                </div>
-            </UnstyledButton>
-
-            <Divider mb="md" color="transparent"/>
-            {/* CONTINUE BUTTON */}
-            <Center>
-                <Button 
-                    type="submit" 
-                    variant="gradient" 
-                    gradient={{from: 'yellow', to: 'orange', deg: 60}} 
-                    size="md"
-                    disabled={loading || donationAmount < 10 || !agreeValue}
-                    mb="xs"
-                    leftSection={<IconCreditCard size={20} />}
-                    rightSection={<IconChevronRight size={20} />}
-                >
-                    {loading ? 'Se încarcă…' : 'Donează cu Cardul'}
-                </Button>
-            </Center>
-
-            {/* Security Badge */}
-            <Center>
-                <Text size="xs" c="dimmed" style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
-                    <IconCheck size={16} />
-                    Plăți securizate prin Stripe
-                </Text>
-            </Center>
-        </>;
 
     const forBank = <>
         <Text size="sm" c="dimmed" mb="md">
@@ -349,12 +157,11 @@ export function DonatePopupButton(props: {projectId: string,
             </Paper>
         </div>
 
-        {/* Warning */}
-        {/*<Paper withBorder p="md" radius="md" mt="md" style={{ backgroundColor: 'light-dark(var(--mantine-color-red-0), var(--mantine-color-red-9))', borderColor: 'light-dark(var(--mantine-color-red-2), var(--mantine-color-red-7))' }}>*/}
-        {/*    <Text ta="center" fw={600} c="red" size="sm">*/}
-        {/*        {props.translations.TransferWarningFirstPart} <b>"{props.projectId}"</b> {props.translations.TransferWarningSecondPart}!*/}
-        {/*    </Text>*/}
-        {/*</Paper>*/}
+        <Paper withBorder p="md" radius="md" mt="md" style={{ backgroundColor: 'light-dark(var(--mantine-color-red-0), var(--mantine-color-red-9))', borderColor: 'light-dark(var(--mantine-color-red-2), var(--mantine-color-red-7))' }}>
+            <Text ta="center" fw={600} c="red" size="sm">
+                {props.translations.TransferWarningFirstPart} <b>"{props.projectId}"</b> {props.translations.TransferWarningSecondPart}!
+            </Text>
+        </Paper>
     </>;
     
     const forRevolut = <>
@@ -428,18 +235,15 @@ export function DonatePopupButton(props: {projectId: string,
 
         </div>
 
-        {/* Warning */}
-        {/*<Paper withBorder p="md" radius="md" mt="md" style={{ backgroundColor: 'light-dark(var(--mantine-color-red-0), var(--mantine-color-red-9))', borderColor: 'light-dark(var(--mantine-color-red-2), var(--mantine-color-red-7))' }}>*/}
-        {/*    <Text ta="center" fw={600} c="red" size="sm">*/}
-        {/*        {props.translations.TransferWarningFirstPart} <b>"{props.projectId}"</b> {props.translations.TransferWarningSecondPart}!*/}
-        {/*    </Text>*/}
-        {/*</Paper>*/}
+        <Paper withBorder p="md" radius="md" mt="md" style={{ backgroundColor: 'light-dark(var(--mantine-color-red-0), var(--mantine-color-red-9))', borderColor: 'light-dark(var(--mantine-color-red-2), var(--mantine-color-red-7))' }}>
+            <Text ta="center" fw={600} c="red" size="sm">
+                {props.translations.TransferWarningFirstPart} <b>"{props.projectId}"</b> {props.translations.TransferWarningSecondPart}!
+            </Text>
+        </Paper>
     </>;
     
-    // Removed unused radio icons
-
     function prepAndOpen() {
-        setPayMethod(CARD_PAYMENTS_ENABLED ? payOption1 : payOption2);
+        setPayMethod(payOption2);
         open();
     }
 
@@ -455,8 +259,7 @@ export function DonatePopupButton(props: {projectId: string,
             aria-describedby="donate-modal-description"
         >
             <>
-                <Form onSubmit={callDonateAPI}>
-                    {/* Header */}
+                <div>
                     <div style={{ 
                         textAlign: 'center', 
                         marginBottom: '16px',
@@ -480,7 +283,6 @@ export function DonatePopupButton(props: {projectId: string,
 
                     <Divider mt="xs" mb="sm" color="transparent"/>
                     
-                    {/* Payment Method Tabs */}
                     <div style={{ 
                         display: 'flex', 
                         gap: '8px', 
@@ -489,21 +291,6 @@ export function DonatePopupButton(props: {projectId: string,
                         borderRadius: '8px', 
                         marginBottom: '16px' 
                     }}>
-                        {CARD_PAYMENTS_ENABLED && (
-                            <Button
-                                variant={payMethod === payOption1 ? "filled" : "subtle"}
-                                color={payMethod === payOption1 ? "yellow" : "gray"}
-                                size="sm"
-                                fullWidth
-                                onClick={() => setPayMethod(payOption1)}
-                                leftSection={<IconCreditCard size={20} />}
-                                style={{ fontWeight: 600 }}
-                                aria-pressed={payMethod === payOption1}
-                                aria-label={`Selectează ${payOption1} ca metodă de plată`}
-                            >
-                                {payOption1}
-                            </Button>
-                        )}
                         <Button
                             variant={payMethod === payOption2 ? "filled" : "subtle"}
                             color={payMethod === payOption2 ? "yellow" : "gray"}
@@ -534,10 +321,9 @@ export function DonatePopupButton(props: {projectId: string,
                     
                     <Divider mt="sm" mb="sm" color="transparent"/>
 
-                    {CARD_PAYMENTS_ENABLED && payMethod === payOption1 ? forCard : null}
                     {payMethod === payOption2 ? forBank : null}
                     {payMethod === payOption3 ? forRevolut : null}
-                </Form>
+                </div>
             </>
             </Modal>
 
@@ -548,7 +334,7 @@ export function DonatePopupButton(props: {projectId: string,
                 size="sm" 
                 fw={600}
                 mt="md" 
-                onClick={prepAndOpen}}
+                onClick={prepAndOpen}
             >
                 {props.translations.Donate}&nbsp;<span style={{fontWeight: 500}}>({props.translations.Options})</span>
             </Button>

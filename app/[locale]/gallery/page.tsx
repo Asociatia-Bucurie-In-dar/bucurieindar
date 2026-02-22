@@ -2,12 +2,12 @@ import { Container, Divider } from "@mantine/core";
 import commonClasses from "@/utils/commonClasses.module.css";
 import {TitleWithDescription} from "@/components/Common/TitleWithDescription";
 import {Gallery} from "@/components/Gallery/Gallery";
-import {getTranslations, unstable_setRequestLocale} from "next-intl/server";
-import {useTranslations} from "next-intl";
+import {getTranslations, setRequestLocale} from "next-intl/server";
 import {contactInfo} from "@/content/contact/my-contact";
 import {GalleryTranslations} from "@/utils/my-types";
 
-export async function generateMetadata({params: {locale}}:{ params: { locale: string } }) {
+export async function generateMetadata({params}:{ params: Promise<{ locale: string }> }) {
+    const {locale} = await params;
     const t = await getTranslations({ locale, namespace: 'GALLERY' });
     const title = t('TITLE');
     const description = t('DESCRIPTION');
@@ -17,10 +17,11 @@ export async function generateMetadata({params: {locale}}:{ params: { locale: st
     };
 }
 
-export default function GalleryPage( {params: {locale}} : {params: {locale: string}} ) {
-    unstable_setRequestLocale(locale);
-    const t = useTranslations('GALLERY');
-    const commonT = useTranslations('COMMON');
+export default async function GalleryPage( {params} : {params: Promise<{locale: string}>} ) {
+    const {locale} = await params;
+    setRequestLocale(locale);
+    const t = await getTranslations('GALLERY');
+    const commonT = await getTranslations('COMMON');
     const translations: GalleryTranslations = {
         ShowMore: commonT('SHOW_MORE'),
         Hide: commonT('HIDE'),

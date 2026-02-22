@@ -6,13 +6,15 @@ import matter from "gray-matter";
 import commonClasses from "@/utils/commonClasses.module.css";
 import {TitleWithDescription} from "@/components/Common/TitleWithDescription";
 
-export async function generateMetadata({params: {locale}}:{ params: { locale: string } }) {
+export async function generateMetadata({params}:{ params: Promise<{ locale: string }> }) {
+    const {locale} = await params;
     return {
         title: 'Privacy Policy',
         description: 'Privacy Policy',
     };
 }
-export default async function TermsPage( {params: {locale}} : {params: {locale: string}} ) {
+export default async function TermsPage( {params} : {params: Promise<{locale: string}>} ) {
+    const {locale} = await params;
 
     const fullPath:string = './messages/privacy/' + locale + '.md';
     const fileContents = fs.readFileSync(fullPath, 'utf8');

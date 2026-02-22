@@ -2,19 +2,20 @@ import {Container, Divider} from "@mantine/core";
 import commonClasses from "@/utils/commonClasses.module.css";
 import {TitleWithDescription} from "@/components/Common/TitleWithDescription";
 import {BlogPostsGrid} from "@/components/Blog/BlogPostsGrid/BlogPostsGrid";
-import {getTranslations, unstable_setRequestLocale} from "next-intl/server";
-import {useTranslations} from "next-intl";
+import {getTranslations, setRequestLocale} from "next-intl/server";
 
-export async function generateMetadata({params: {locale}}:{ params: { locale: string } }) {
+export async function generateMetadata({params}:{ params: Promise<{ locale: string }> }) {
+    const {locale} = await params;
     const t = await getTranslations({ locale, namespace: 'BLOG' });
     const title = t('TITLE');
     const description = t('DESCRIPTION');
     return { title: title, description: description };
 }
 
-export default function BlogPage( {params: {locale}} : {params: {locale: string}} ) {
-    unstable_setRequestLocale(locale);
-    const t = useTranslations('BLOG');
+export default async function BlogPage( {params} : {params: Promise<{locale: string}>} ) {
+    const {locale} = await params;
+    setRequestLocale(locale);
+    const t = await getTranslations('BLOG');
     
   return (
       <div>

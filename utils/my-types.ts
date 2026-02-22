@@ -36,10 +36,9 @@ export type ProjectType = {
 };
 
 export type Donation = {
-    id: string; //Primary Key
-    project_id: string; //Foreign Key
-    donor_id: string; //Foreign Key
-    stripe_payment_id: string;
+    id: string;
+    project_id: string;
+    donor_id: string;
     
     amount: number;
     message: string;

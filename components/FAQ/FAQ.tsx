@@ -1,4 +1,3 @@
-
 import {
     Image,
     Accordion,
@@ -54,7 +53,7 @@ export function FAQ() {
                     <GridCol span={{ base: 12, md: 6 }}>
                         
                         <Image src="/faq.svg" alt={t('TITLE')} 
-                            loading="lazy" placeholder="blur"/>
+                            loading="lazy"/>
                        
                     </GridCol>
                     <GridCol span={{ base: 12, md: 6 }}>

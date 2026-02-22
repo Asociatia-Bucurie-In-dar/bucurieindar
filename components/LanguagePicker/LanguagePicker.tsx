@@ -1,3 +1,5 @@
+"use client";
+
 import {Button, Center, Image, Menu, rem} from '@mantine/core';
 import { IconChevronDown } from '@tabler/icons-react';
 import {MyLocales} from "@/utils/my-lanaguages";

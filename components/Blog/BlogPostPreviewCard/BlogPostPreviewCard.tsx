@@ -12,8 +12,8 @@ export function BlogPostPreviewCard(props: { article: BlogArticleType }) {
     const articleT = useTranslations('BLOG.ARTICLES.' + props.article.translation_key);
     
     return (
-        <Card withBorder radius="md" p={0} className={classes.card}
-            component={Link} href={'MyRoutePaths.Blog-TODOOOOOOO' + '/' + props.article.slug}>
+        <Link href={'MyRoutePaths.Blog-TODOOOOOOO' + '/' + props.article.slug} style={{textDecoration: 'none', color: 'inherit'}}>
+        <Card withBorder radius="md" p={0} className={classes.card}>
             <Group wrap="nowrap" gap={0}>
                 <Image
                     src={imageFolder + props.article.image_name}
@@ -34,5 +34,6 @@ export function BlogPostPreviewCard(props: { article: BlogArticleType }) {
                 </div>
             </Group>
         </Card>
+        </Link>
     );
 }

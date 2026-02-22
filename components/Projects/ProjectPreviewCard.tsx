@@ -49,8 +49,7 @@ export function ProjectPreviewCard(props: { project: ProjectType, title: string,
                     <Link {...linkProps}>
                         <Image src={props.project.image_path} 
                                height={200}
-                               loading="lazy"
-                            placeholder="blur"/>
+                               loading="lazy"/>
                     </Link>
                 </CardSection>
 
@@ -58,13 +57,17 @@ export function ProjectPreviewCard(props: { project: ProjectType, title: string,
                 {/*    outstanding*/}
                 {/*</Badge>*/}
 
-                <Text className={classes.title} fw={500} component={Link} {...linkProps}>
-                    {props.title}
-                </Text>
+                <Link {...linkProps} style={{textDecoration: 'none', color: 'inherit'}}>
+                    <Text className={classes.title} fw={500}>
+                        {props.title}
+                    </Text>
+                </Link>
 
-                <Text c="customDimmed" className={classes.text} fw={500} lineClamp={4} component={Link} {...linkProps}>
-                    {props.description}
-                </Text>
+                <Link {...linkProps} style={{textDecoration: 'none', color: 'inherit'}}>
+                    <Text c="customDimmed" className={classes.text} fw={500} lineClamp={4}>
+                        {props.description}
+                    </Text>
+                </Link>
                 {/*<Text c="orange" fw={500} mt={3} component={Link} {...linkProps}>*/}
                 {/*    {commonT('SHOW_MORE')}*/}
                 {/*</Text>*/}

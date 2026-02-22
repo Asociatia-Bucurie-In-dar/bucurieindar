@@ -4,23 +4,22 @@ import {GetProjectStaticContentWithSlug, GetAllProjectsStaticContent} from "@/co
 import {ProjectDonationProgress} from "@/components/Projects/ProjectDonationProgress";
 import {ShareButton} from "@/components/Popups/SharePopup/ShareButton";
 import {DonatePopupButton} from "@/components/Popups/DonatePopup/DonatePopupButton";
-import {unstable_setRequestLocale} from "next-intl/server";
-import {getTranslations} from "next-intl/server";
-import {useTranslations} from "next-intl";
+import {setRequestLocale, getTranslations} from "next-intl/server";
 import {GalleryTranslations, ProjectTranslationsType} from "@/utils/my-types";
 import {MyRoutePaths} from "@/utils/route-paths";
-import {locales} from "@/middleware";
+import {routing} from "@/routing";
 import {Gallery} from "@/components/Gallery/Gallery";
 import {DaysLeft} from "@/components/DaysLeft/DaysLeft";
 
 export function generateStaticParams() {
     const allProjects = GetAllProjectsStaticContent(99);
-    return allProjects.flatMap(project => locales.map(locale => ({
-        params: { locale, slug: project.slug }
+    return allProjects.flatMap(project => routing.locales.map(locale => ({
+        locale, slug: project.slug
     })));
 }
 
-export async function generateMetadata({params: {locale, slug}}:{ params: { locale: string, slug: string } }) {
+export async function generateMetadata({params}:{ params: Promise<{ locale: string, slug: string }> }) {
+    const {locale, slug} = await params;
     const projectContent = GetProjectStaticContentWithSlug(slug);
     const t = await getTranslations({locale: locale, namespace: 'PROJECTS'});
     const title = t(projectContent.translation_key + '.TITLE');
@@ -40,15 +39,16 @@ export async function generateMetadata({params: {locale, slug}}:{ params: { loca
     };
 }
 
-export default function FullProjectPage({params: {locale, slug}}:{ params: { locale: string, slug: string } }) {
-    unstable_setRequestLocale(locale);
+export default async function FullProjectPage({params}:{ params: Promise<{ locale: string, slug: string }> }) {
+    const {locale, slug} = await params;
+    setRequestLocale(locale);
 
     const projectContent = GetProjectStaticContentWithSlug(slug);
-    const t = useTranslations('PROJECTS');
-    const projT = useTranslations('PROJECTS.' + projectContent.translation_key);
-    const commonT = useTranslations('COMMON');
-    const donateT = useTranslations('PROJECTS_MORE');
-    const shareT = useTranslations('SHARE');
+    const t = await getTranslations('PROJECTS');
+    const projT = await getTranslations('PROJECTS.' + projectContent.translation_key);
+    const commonT = await getTranslations('COMMON');
+    const donateT = await getTranslations('PROJECTS_MORE');
+    const shareT = await getTranslations('SHARE');
     const title = projT('TITLE');
     const description = projT('DESCRIPTION');
     const secondDescription = projT('SECOND_DESCRIPTION');

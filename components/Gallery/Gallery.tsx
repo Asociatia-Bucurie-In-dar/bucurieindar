@@ -21,20 +21,20 @@ export function Gallery(props: { videosData: GalleryVideo[], imagesData: Gallery
     
     const allImageCards = props.imagesData ? props.imagesData.map((imagePath, index) => (
         <Card p="md" radius="md" className={classes.card} key={index}>
-            <AspectRatio ratio={16 / 10} style={{position: 'relative'}}>
+            <div style={{position: 'relative', aspectRatio: '16 / 10', overflow: 'hidden', borderRadius: 'var(--mantine-radius-sm)'}}>
                 <Image src={imagePath.image}
                        loading="lazy"
                        onClick={openModal(imagePath.image)}
-                       style={{cursor: 'pointer', layout: 'fill', objectFit: 'cover', objectPosition: 'center ' + imagePath.positionPercent}} radius="sm" />
+                       style={{cursor: 'pointer', width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center ' + imagePath.positionPercent}} />
                 <div style={{
-                    justifyContent: 'end',
-                    alignItems: 'end',
-                    justifyItems: 'start',
-                    padding: '1.5rem'
+                    position: 'absolute',
+                    bottom: 0,
+                    left: 0,
+                    padding: '0.5rem'
                 }} onClick={openModal(imagePath.image)}>
-                    <IconArrowsMaximize size={30} color="white" style={{boxShadow: '0 0 20px 0 rgba(0,0,0,0.25)', borderRadius: '20%', backgroundColor: 'rgba(0, 0, 0, 0.25)'}}/>
+                    <IconArrowsMaximize size={30} color="white" style={{cursor: 'pointer', boxShadow: '0 0 20px 0 rgba(0,0,0,0.25)', borderRadius: '20%', backgroundColor: 'rgba(0, 0, 0, 0.25)'}}/>
                 </div>
-            </AspectRatio>
+            </div>
             <Spoiler maxHeight={110} showLabel={props.translations.ShowMore}
                      hideLabel={props.translations.Hide}
                      transitionDuration={100}>

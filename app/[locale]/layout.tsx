@@ -5,18 +5,19 @@ import { Footer } from '@/components/Footer/Footer';
 import { ChatButton } from '@/components/ChatButton/ChatButton';
 import { createTheme, MantineProvider, rem, ColorSchemeScript } from '@mantine/core';
 import FirstTimeConfetti from "@/components/CoolEffects/FirstTimeConfetti";
-import {locales} from "@/middleware";
-import {getTranslations, unstable_setRequestLocale} from 'next-intl/server';
-import {useTranslations} from "next-intl";
+import {routing} from "@/routing";
+import {getTranslations, setRequestLocale, getMessages} from 'next-intl/server';
+import {NextIntlClientProvider} from 'next-intl';
 import {Analytics} from "@vercel/analytics/next";
 import CookieConsent from "@/components/CookieConsent/CookieConsent";
 import {CookiesTranslationType} from "@/utils/my-types";
 //import WavySeparator from '@/components/WavySeparator/WavySeparator';
 
 export function generateStaticParams() {
-    return locales.map((locale:string) => ({locale}));
+    return routing.locales.map((locale:string) => ({locale}));
 }
-export async function generateMetadata({children, params: {locale}}: { children: React.ReactNode; params: {locale: string}; }) {
+export async function generateMetadata({params}: { params: Promise<{locale: string}> }) {
+    const {locale} = await params;
     const commonT = await getTranslations({locale: locale, namespace: 'COMMON'});
     const heroT = await getTranslations({locale: locale, namespace: 'HOME_HERO'});
     const association = commonT('ASSOCIATION_FULL');
@@ -29,12 +30,14 @@ export async function generateMetadata({children, params: {locale}}: { children:
     };
 }
 
-export default function RootLayout({children, params: {locale}}: { children: React.ReactNode; params: {locale: string}; }) {
-    unstable_setRequestLocale(locale);
+export default async function RootLayout({children, params}: { children: React.ReactNode; params: Promise<{locale: string}>; }) {
+    const {locale} = await params;
+    setRequestLocale(locale);
 
-    const headerT = useTranslations('HEADER');
-    const commonT = useTranslations('COMMON');
-    const cookiesT = useTranslations('COOKIES');
+    const headerT = await getTranslations('HEADER');
+    const commonT = await getTranslations('COMMON');
+    const cookiesT = await getTranslations('COOKIES');
+    const messages = await getMessages();
 
     const headerTranslations = {
         home: { label: headerT('HOME.LABEL'), link: headerT('HOME.LINK') },
@@ -86,11 +89,13 @@ export default function RootLayout({children, params: {locale}}: { children: Rea
     </head>
     <body>
     <MantineProvider theme={theme} defaultColorScheme="light">
+        <NextIntlClientProvider locale={locale} messages={messages}>
         <Header headerTranslations={headerTranslations} locale={locale}/>
         {children}
         <ChatButton />
         <CookieConsent translations={cookiesTranslations}/>
         <Footer/>
+        </NextIntlClientProvider>
     </MantineProvider>
     <Analytics />
     <FirstTimeConfetti/>

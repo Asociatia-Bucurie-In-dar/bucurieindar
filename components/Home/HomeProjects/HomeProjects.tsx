@@ -1,4 +1,3 @@
-
 import classes from './HomeProjects.module.css';
 import { ProjectPreviewCardsSlider } from '@/components/Projects/ProjectPreviewCardsSlider';
 import {TitleWithDescription} from "@/components/Common/TitleWithDescription";

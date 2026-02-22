@@ -1,8 +1,9 @@
-import {unstable_setRequestLocale} from "next-intl/server";
+import {setRequestLocale} from "next-intl/server";
 
 
-export default function DashPage( {params: {locale}} : {params: {locale: string}} ) {
-  unstable_setRequestLocale(locale);
+export default async function DashPage( {params} : {params: Promise<{locale: string}>} ) {
+  const {locale} = await params;
+  setRequestLocale(locale);
   
   return (
     <>

@@ -8,10 +8,11 @@ import {FAQ} from '@/components/FAQ/FAQ';
 import {HomeBlogPosts} from '@/components/Home/HomeBlogPosts/HomeBlogPosts';
 import {SfIoan} from "@/components/SfIoan/SfIoan";
 import {Divider} from "@mantine/core";
-import {unstable_setRequestLocale} from "next-intl/server";
+import {setRequestLocale} from "next-intl/server";
 
-export default function HomePage({params: {locale}}:{ params: { locale: string } }) {
-    unstable_setRequestLocale(locale);
+export default async function HomePage({params}:{ params: Promise<{ locale: string }> }) {
+    const {locale} = await params;
+    setRequestLocale(locale);
     
   return (
       <>

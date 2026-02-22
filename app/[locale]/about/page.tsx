@@ -3,14 +3,14 @@ import {TitleWithDescription} from "@/components/Common/TitleWithDescription";
 import {Center, Container, Divider, Image, rem, SimpleGrid, Stack, Text, Title} from "@mantine/core";
 import {OurTeam} from "@/components/OurTeam/OurTeam";
 import {AnimatedThing} from "@/components/CoolEffects/AnimatedNumber/AnimatedThing";
-import {getTranslations, unstable_setRequestLocale} from "next-intl/server";
-import {useTranslations} from "next-intl";
+import {getTranslations, setRequestLocale} from "next-intl/server";
 
 const spacing = "xl";
 const division = 75;
 const cols = { base: 1, sm: 2, md: 2, lg: 2, xl: 2 };
 
-export async function generateMetadata({params: {locale}}:{ params: { locale: string } }) {
+export async function generateMetadata({params}:{ params: Promise<{ locale: string }> }) {
+    const {locale} = await params;
     const t = await getTranslations({locale: locale, namespace: 'ABOUT'});
     const title = t('TITLE');
     const description = t('DESCRIPTION');
@@ -19,10 +19,11 @@ export async function generateMetadata({params: {locale}}:{ params: { locale: st
         description: description.slice(0, 100),
     };
 }
-export default function AboutPage( {params: {locale}} : {params: {locale: string}} ) {
-    unstable_setRequestLocale(locale);
+export default async function AboutPage( {params} : {params: Promise<{locale: string}>} ) {
+    const {locale} = await params;
+    setRequestLocale(locale);
     
-    const t = useTranslations('ABOUT');
+    const t = await getTranslations('ABOUT');
     
     const roundedImage = (src: string) => {
         return (

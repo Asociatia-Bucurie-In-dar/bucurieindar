@@ -1,11 +1,11 @@
 import commonClasses from "@/utils/commonClasses.module.css";
 import {Container, Divider} from "@mantine/core";
 import {ContactPanel} from "@/components/Contact/ContactPanel";
-import {getTranslations, unstable_setRequestLocale} from "next-intl/server";
+import {getTranslations, setRequestLocale} from "next-intl/server";
 import {ContactTranslationType} from "@/utils/my-types";
-import {useTranslations} from "next-intl";
 
-export async function generateMetadata({params: {locale}}:{ params: { locale: string } }) {
+export async function generateMetadata({params}:{ params: Promise<{ locale: string }> }) {
+    const {locale} = await params;
     const t = await getTranslations({ locale, namespace: 'CONTACT' });
     const title = t('TITLE');
     const description = t('DESCRIPTION');
@@ -15,10 +15,11 @@ export async function generateMetadata({params: {locale}}:{ params: { locale: st
     };
 }
 
-export default function ContactPage( {params: {locale}} : {params: {locale: string}} ) {
-    unstable_setRequestLocale(locale);
-    const t = useTranslations('CONTACT');
-    const commonT = useTranslations('COMMON');
+export default async function ContactPage( {params} : {params: Promise<{locale: string}>} ) {
+    const {locale} = await params;
+    setRequestLocale(locale);
+    const t = await getTranslations('CONTACT');
+    const commonT = await getTranslations('COMMON');
     const translations:ContactTranslationType = {
         FormTitle: t('FORM.TITLE'),
         Disclaimer: t('FORM.DISCLAIMER'),

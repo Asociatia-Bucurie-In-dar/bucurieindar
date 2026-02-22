@@ -3,32 +3,33 @@ import commonClasses from "@/utils/commonClasses.module.css";
 import {TitleWithDescription} from "@/components/Common/TitleWithDescription";
 import {GetArticleStaticContentWithSlug, GetAllArticlesStaticContent} from "@/content/blog/blog-content";
 import {Metadata} from "next";
-import {getTranslations, unstable_setRequestLocale} from "next-intl/server";
-import {locales} from "@/middleware";
-import {useTranslations} from "next-intl";
+import {getTranslations, setRequestLocale} from "next-intl/server";
+import {routing} from "@/routing";
 
 export function generateStaticParams() {
     const allArticles = GetAllArticlesStaticContent(99);
-    return allArticles.flatMap(article => locales.map(locale => ({
-        params: { locale, slug: article.slug }
+    return allArticles.flatMap(article => routing.locales.map(locale => ({
+        locale, slug: article.slug
     })));
 }
 
-export async function generateMetadata({params: {locale, slug}}:{ params: { locale: string, slug: string } }) : Promise<Metadata> {
+export async function generateMetadata({params}:{ params: Promise<{ locale: string, slug: string }> }) : Promise<Metadata> {
+    const {locale, slug} = await params;
     const article = GetArticleStaticContentWithSlug(slug);
     const t = await getTranslations({locale, namespace: 'BLOG.ARTICLES.' + article.translation_key });
     return {
         title: t('TITLE'),
-        description: t('DESCRIPITION').slice(0, 100)
+        description: t('DESCRIPTION').slice(0, 100)
     };
 }
 
-export default function BlogPage({params: {locale, slug}}:{ params: { locale: string, slug: string } }) {
-    unstable_setRequestLocale(locale);
+export default async function BlogPage({params}:{ params: Promise<{ locale: string, slug: string }> }) {
+    const {locale, slug} = await params;
+    setRequestLocale(locale);
     
     const imageFolder = '/blog/';
     const article = GetArticleStaticContentWithSlug(slug);
-    const t = useTranslations('BLOG.ARTICLES.' + article.translation_key);
+    const t = await getTranslations('BLOG.ARTICLES.' + article.translation_key);
     
   return (
       <div>

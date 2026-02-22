@@ -91,16 +91,15 @@ export function HomeAboutProjects() {
 
             <div className={classes.cardButtons}>
                 {feature.links.map((link) => (
-                    <Button
-                        component={Link}
-                        href={link.href}
-                        target={link.newTab ? '_blank' : '_self'}
-                        variant="outline"
-                        color="orange"
-                        mr="xs"
-                        size="sm"
-                        fw={600}
-                    >{link.title}{link.icon}</Button>
+                    <Link href={link.href} target={link.newTab ? '_blank' : '_self'} key={link.title} style={{textDecoration: 'none', color: 'inherit'}}>
+                        <Button
+                            variant="outline"
+                            color="orange"
+                            mr="xs"
+                            size="sm"
+                            fw={600}
+                        >{link.title}{link.icon}</Button>
+                    </Link>
                 ))}
             </div>
 
