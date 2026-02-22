@@ -3,7 +3,6 @@ import Link from "next/link";
 import {Button, rem} from "@mantine/core";
 import confetti from "canvas-confetti";
 import {MyZIndexes} from "@/utils/my-constants";
-import {IconHeart} from "@tabler/icons-react";
 
 
 export function ConfettiButton(props: {text: string, link: string, size?: string, mt?: string, disabled?: boolean }) {
@@ -34,7 +33,6 @@ export function ConfettiButton(props: {text: string, link: string, size?: string
                         aria-label={props.text}
                         fw={600}
                         disabled={props.disabled ?? false}
-                        leftSection={<IconHeart size={18} />}
                 >
                     {props.text}
                 </Button>
