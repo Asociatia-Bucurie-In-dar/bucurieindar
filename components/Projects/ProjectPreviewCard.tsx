@@ -71,9 +71,9 @@ export function ProjectPreviewCard(props: { project: ProjectType, title: string,
 
                 <Card padding={0} mt="sm" key={props.project.id}>
                     
-                    <ProjectDonationProgress id={props.project.id} goalAmount={props.project.goalAmount}
-                                             extraAmountDonated={props.project.currentAmountExtra}
-                        sumTranslation={t('NECESSARY_AMOUNT')}/> 
+                    {/*<ProjectDonationProgress id={props.project.id} goalAmount={props.project.goalAmount}*/}
+                    {/*                         extraAmountDonated={props.project.currentAmountExtra}*/}
+                    {/*    sumTranslation={t('NECESSARY_AMOUNT')}/>*/}
                     
                     
                     <DonatePopupButton projectId={props.project.id} projectTile={props.title} 

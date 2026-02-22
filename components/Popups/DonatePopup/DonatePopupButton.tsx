@@ -350,11 +350,11 @@ export function DonatePopupButton(props: {projectId: string,
         </div>
 
         {/* Warning */}
-        <Paper withBorder p="md" radius="md" mt="md" style={{ backgroundColor: 'light-dark(var(--mantine-color-red-0), var(--mantine-color-red-9))', borderColor: 'light-dark(var(--mantine-color-red-2), var(--mantine-color-red-7))' }}>
-            <Text ta="center" fw={600} c="red" size="sm">
-                {props.translations.TransferWarningFirstPart} <b>"{props.projectId}"</b> {props.translations.TransferWarningSecondPart}!
-            </Text>
-        </Paper>
+        {/*<Paper withBorder p="md" radius="md" mt="md" style={{ backgroundColor: 'light-dark(var(--mantine-color-red-0), var(--mantine-color-red-9))', borderColor: 'light-dark(var(--mantine-color-red-2), var(--mantine-color-red-7))' }}>*/}
+        {/*    <Text ta="center" fw={600} c="red" size="sm">*/}
+        {/*        {props.translations.TransferWarningFirstPart} <b>"{props.projectId}"</b> {props.translations.TransferWarningSecondPart}!*/}
+        {/*    </Text>*/}
+        {/*</Paper>*/}
     </>;
     
     const forRevolut = <>
@@ -429,11 +429,11 @@ export function DonatePopupButton(props: {projectId: string,
         </div>
 
         {/* Warning */}
-        <Paper withBorder p="md" radius="md" mt="md" style={{ backgroundColor: 'light-dark(var(--mantine-color-red-0), var(--mantine-color-red-9))', borderColor: 'light-dark(var(--mantine-color-red-2), var(--mantine-color-red-7))' }}>
-            <Text ta="center" fw={600} c="red" size="sm">
-                {props.translations.TransferWarningFirstPart} <b>"{props.projectId}"</b> {props.translations.TransferWarningSecondPart}!
-            </Text>
-        </Paper>
+        {/*<Paper withBorder p="md" radius="md" mt="md" style={{ backgroundColor: 'light-dark(var(--mantine-color-red-0), var(--mantine-color-red-9))', borderColor: 'light-dark(var(--mantine-color-red-2), var(--mantine-color-red-7))' }}>*/}
+        {/*    <Text ta="center" fw={600} c="red" size="sm">*/}
+        {/*        {props.translations.TransferWarningFirstPart} <b>"{props.projectId}"</b> {props.translations.TransferWarningSecondPart}!*/}
+        {/*    </Text>*/}
+        {/*</Paper>*/}
     </>;
     
     // Removed unused radio icons
