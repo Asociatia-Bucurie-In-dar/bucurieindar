@@ -137,6 +137,15 @@
     }
   },
 
+  "BANK_ACCOUNTS": {
+    "TITLE": "Conturile noastre bancare",
+    "DESCRIPTION": "Poți dona direct prin transfer bancar folosind unul dintre conturile de mai jos.",
+    "CURRENCY_RON": "Lei (RON)",
+    "CURRENCY_EUR": "Euro (EUR)",
+    "CURRENCY_USD": "Dolari (USD)",
+    "BANK": "Banca Transilvania"
+  },
+
   "PROJECTS": {
     "TITLE": "Proiecte & Campanii",
     "DESCRIPTION": "Descoperă o parte dintre proiectele şi campaniile noastre și află cum poți să-i ajuți pe cei care au nevoie de tine.",

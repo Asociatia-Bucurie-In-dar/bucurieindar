@@ -149,6 +149,15 @@
     }
   },
 
+  "BANK_ACCOUNTS": {
+    "TITLE": "Our bank accounts",
+    "DESCRIPTION": "You can donate directly by bank transfer using one of the accounts below.",
+    "CURRENCY_RON": "Lei (RON)",
+    "CURRENCY_EUR": "Euro (EUR)",
+    "CURRENCY_USD": "US Dollar (USD)",
+    "BANK": "Banca Transilvania"
+  },
+
   "PROJECTS": {
     "TITLE": "Projects & Campaigns",
     "DESCRIPTION": "Discover some of our projects and campaigns, and find out how you can help those who need you.",

@@ -5,6 +5,7 @@ import {HomeAboutGeneral} from '@/components/Home/HomeAboutGeneral/HomeAboutGene
 import {HomeAboutProjects} from '@/components/Home/HomeAboutProjects/HomeAboutProjects';
 import {OurTeam} from '@/components/OurTeam/OurTeam';
 import {FAQ} from '@/components/FAQ/FAQ';
+import {BankAccounts} from '@/components/BankAccounts/BankAccounts';
 import {HomeBlogPosts} from '@/components/Home/HomeBlogPosts/HomeBlogPosts';
 import {SfIoan} from "@/components/SfIoan/SfIoan";
 import {Divider} from "@mantine/core";
@@ -24,6 +25,7 @@ export default async function HomePage({params}:{ params: Promise<{ locale: stri
           <SfIoan disableBackground={true}/>
           <OurTeam/>
           <FAQ/>
+          <BankAccounts/>
           {/*<HomeBlogPosts/>*/}
       </>
   );

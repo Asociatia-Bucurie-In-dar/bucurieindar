@@ -121,6 +121,15 @@
     }
   },
 
+  "BANK_ACCOUNTS": {
+    "TITLE": "Unsere Bankkonten",
+    "DESCRIPTION": "Du kannst direkt per Banküberweisung auf eines der folgenden Konten spenden.",
+    "CURRENCY_RON": "Lei (RON)",
+    "CURRENCY_EUR": "Euro (EUR)",
+    "CURRENCY_USD": "US-Dollar (USD)",
+    "BANK": "Banca Transilvania"
+  },
+
   "PROJECTS": {
     "TITLE": "Projekte",
     "DESCRIPTION": "Entdecke einige unserer Projekte und finde heraus, wie du denen helfen kannst, die dich brauchen.",
