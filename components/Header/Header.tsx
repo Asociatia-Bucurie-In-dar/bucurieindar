@@ -60,9 +60,9 @@ export function Header({ headerTranslations, locale }: { headerTranslations: any
         }}>
             <Container size="lg">
                 <div className={classes.inner}>
-                    <Group>
-                        <Link href={headerTranslations.home.link} key={headerTranslations.home.label}>
-                            <Image src={logo.src} alt="Logo" width={50} height={50} style={{ objectFit: 'contain' }}/>
+                    <Group wrap="nowrap">
+                        <Link href={headerTranslations.home.link} key={headerTranslations.home.label} style={{ display: 'block', flex: 'none' }}>
+                            <Image src={logo.src} alt="Logo" w={50} h={50} fit="contain" style={{ flex: 'none' }}/>
                         </Link>
                         <Divider orientation="vertical" color="transparent"/>
                         <LanguagePicker />
@@ -76,7 +76,7 @@ export function Header({ headerTranslations, locale }: { headerTranslations: any
                         <ConfettiButton text={headerTranslations.donate} link={headerTranslations.projects.link} disabled={isDonateDisabled}/>
                         <ThemeSwitcher/>
                     </Group>
-                    <Group hiddenFrom={responsive}>
+                    <Group hiddenFrom={responsive} wrap="nowrap">
                         <ConfettiButton text={headerTranslations.donate} link={headerTranslations.projects.link} disabled={isDonateDisabled}/> 
                         <Burger opened={drawerOpened} onClick={toggleDrawer} size="sm" aria-label={headerTranslations.burgerMenuLabel}/>
                     </Group>

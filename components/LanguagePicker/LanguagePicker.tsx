@@ -18,7 +18,7 @@ export function LanguagePicker() {
     const menuItems = MyLocales.map((locale: any) => (
         <Menu.Item component={Link} locale={locale.locale} href={'/'} key={locale.locale}>
             <div style={{borderRadius: '3px', overflow: 'hidden'}}>
-                <Image src={locale.image} width={20} height={20} alt={locale.locale} style={{ objectFit: 'contain' }}/>
+                <Image src={locale.image} w={20} h={20} alt={locale.locale} fit="contain"/>
             </div>
         </Menu.Item>
 ));
@@ -28,9 +28,9 @@ return (
         <Menu trigger="click-hover"  transitionProps={{ exitDuration: 0 }}
               closeDelay={200} withinPortal zIndex={MyZIndexes.LanguagePicker}>
             <Menu.Target>
-                    <Center className={classes.flagHover}>
-                        <div style={{borderRadius: '3px', overflow: 'hidden', marginRight: '5px'}}>
-                            <Image src={curImage} width={22} height={22} alt={curLocale} style={{ objectFit: 'contain' }}/>
+                    <Center className={classes.flagHover} style={{ flex: 'none' }}>
+                        <div style={{borderRadius: '3px', overflow: 'hidden', marginRight: '5px', flex: 'none'}}>
+                            <Image src={curImage} w={22} h={22} alt={curLocale} fit="contain"/>
                         </div>
                         <IconChevronDown size="0.9rem" stroke={1.5} />
                     </Center>
