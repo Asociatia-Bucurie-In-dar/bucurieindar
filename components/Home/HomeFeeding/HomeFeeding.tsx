@@ -1,4 +1,4 @@
-import {Container, Divider, Progress, rem, Space, Text} from '@mantine/core';
+import {Container, Divider, rem, Text} from '@mantine/core';
 import classes from './HomeFeeding.module.css';
 import commonClasses from '@/utils/commonClasses.module.css';
 import {TitleWithDescription} from "@/components/Common/TitleWithDescription";
@@ -12,25 +12,21 @@ export function HomeFeeding() {
         {
             title: activityT('ACTIVITIES.THIRD.TITLE'),
             stats: '6' + ' ' + commonT('TONS') + '+',
-            progress: 45,
             description: activityT('ACTIVITIES.THIRD.DESCRIPTION'),
         },
         {
             title: activityT('ACTIVITIES.FIRST.TITLE'),
             stats: '105,000+',
-            progress: 45,
             description: activityT('ACTIVITIES.FIRST.DESCRIPTION'),
         },
         {
             title: activityT('ACTIVITIES.SECOND.TITLE'),
             stats: '51' + ' ' + commonT('TONS') + '+',
-            progress: 34,
             description: activityT('ACTIVITIES.SECOND.DESCRIPTION'),
         },
         {
             title: activityT('ACTIVITIES.FOURTH.TITLE'),
             stats: '58' + ' ' + commonT('TONS') + '+',
-            progress: 45,
             description: activityT('ACTIVITIES.FOURTH.DESCRIPTION'),
         },
     ];
@@ -40,12 +36,6 @@ export function HomeFeeding() {
             <AnimatedThing thing={stat.stats.toLocaleString()} class={classes.count}/>
             <Text className={classes.title}>{stat.title}</Text>
             <Text className={classes.description} fw={500}>{stat.description}</Text>
-            <Progress animated value={stat.progress} mt="md" size="lg" radius="xl"
-                      aria-label={stat.title}
-                      classNames={{
-                          root: classes.progressTrack,
-                          section: classes.progressSection,
-                      }}/>
         </div>
     ));
     return <>
