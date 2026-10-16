@@ -16,7 +16,7 @@ export function BankAccounts() {
     const projectsMoreT = useTranslations('PROJECTS_MORE');
 
     return (
-        <Container size="full" className={commonClasses.darkerBackground}>
+        <Container size="full" className={commonClasses.darkerBackground} id="bankAccountsSection">
             <Container size="lg" className={classes.wrapper}>
                 <TitleWithDescription title={t('TITLE')} description={t('DESCRIPTION')}/>
 

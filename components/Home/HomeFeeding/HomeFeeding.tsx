@@ -4,6 +4,7 @@ import commonClasses from '@/utils/commonClasses.module.css';
 import {TitleWithDescription} from "@/components/Common/TitleWithDescription";
 import {AnimatedThing} from "@/components/CoolEffects/AnimatedNumber/AnimatedThing";
 import {useTranslations} from "next-intl";
+import {IconBasket, IconBath, IconShirt, IconSoup} from "@tabler/icons-react";
 
 export function HomeFeeding() {
     const activityT = useTranslations('HOME_ACTIVITY');
@@ -12,27 +13,32 @@ export function HomeFeeding() {
         {
             title: activityT('ACTIVITIES.THIRD.TITLE'),
             stats: '6' + ' ' + commonT('TONS') + '+',
+            icon: IconBath,
             description: activityT('ACTIVITIES.THIRD.DESCRIPTION'),
         },
         {
             title: activityT('ACTIVITIES.FIRST.TITLE'),
             stats: '105,000+',
+            icon: IconSoup,
             description: activityT('ACTIVITIES.FIRST.DESCRIPTION'),
         },
         {
             title: activityT('ACTIVITIES.SECOND.TITLE'),
             stats: '51' + ' ' + commonT('TONS') + '+',
+            icon: IconBasket,
             description: activityT('ACTIVITIES.SECOND.DESCRIPTION'),
         },
         {
             title: activityT('ACTIVITIES.FOURTH.TITLE'),
             stats: '58' + ' ' + commonT('TONS') + '+',
+            icon: IconShirt,
             description: activityT('ACTIVITIES.FOURTH.DESCRIPTION'),
         },
     ];
     
     const stats = data.map((stat) => (
         <div key={stat.title} className={classes.stat}>
+            <stat.icon size={36} stroke={1.5} className={classes.icon} aria-hidden/>
             <AnimatedThing thing={stat.stats.toLocaleString()} class={classes.count}/>
             <Text className={classes.title}>{stat.title}</Text>
             <Text className={classes.description} fw={500}>{stat.description}</Text>

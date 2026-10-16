@@ -12,8 +12,7 @@
     "HIDE": "Ascunde",
     "BURGER_MENU_LABEL": "Buton deschidere meniu",
     "REMAINING": "Încă",
-    "DAYS": "zile",
-    "IN_CONSTRUCTION": "În construcție! Email la adresa: "
+    "DAYS": "zile"
   },
   
   "COOKIES": {
@@ -103,11 +102,11 @@
     "DESCRIPTION": "Fă cunoștință cu echipa noastră. Suntem oameni pasionați de ceea ce facem și ne dorim să fim de folos în lumea în care trăim. Suntem oameni care trăiesc şi pentru alții, nu doar pentru noi înşine!",
     "TEAM_MEMBERS": {
       "FIRST": { "NAME": "Alexandru Ionescu", "ROLE": "Președinte" },
-      "SECOND": { "NAME": "Andreea Constantinescu", "ROLE": "VP & Coordonator marketing" },
-      "THIRD": { "NAME": "Cioltan Marius", "ROLE": "VP & Coordonator logistică" },
+      "SECOND": { "NAME": "Andreea Constantinescu", "ROLE": "VP și coordonator marketing" },
+      "THIRD": { "NAME": "Cioltan Marius", "ROLE": "VP și coordonator logistică" },
       "FOURTH": { "NAME": "Teodor Nemțeanu", "ROLE": "Coordonator principal situații de urgență" },
-      "FIFTH": { "NAME": "Alina Cernea", "ROLE": "Asistent & coordonator principal" },
-      "SIXTH": { "NAME": "Cristian Simionescu", "ROLE": "Specialist comunicare & relații publice" },
+      "FIFTH": { "NAME": "Alina Cernea", "ROLE": "Asistent și coordonator principal" },
+      "SIXTH": { "NAME": "Cristian Simionescu", "ROLE": "Specialist comunicare și relații publice" },
       "SEVENTH": { "NAME": "Evelin", "ROLE": "Asistent social principal" },
       "EIGHTH": { "NAME": "Ovidiu Horațiu", "ROLE": "Doctor arhitect" },
       "NINTH": { "NAME": "Titus Necea", "ROLE": "Dezvoltator software" },
@@ -147,7 +146,7 @@
   },
 
   "PROJECTS": {
-    "TITLE": "Proiecte & Campanii",
+    "TITLE": "Proiecte și campanii",
     "DESCRIPTION": "Descoperă o parte dintre proiectele şi campaniile noastre și află cum poți să-i ajuți pe cei care au nevoie de tine.",
     "TABLE_OF_JOY": {
       "TITLE": "Masa Bucuriei",
@@ -155,7 +154,7 @@
       "SECOND_DESCRIPTION": "Într-un fel sau altul cu toții cerem câte ceva și cu toții avem nevoie de ajutor. Ajută-i cu o porție de mâncare!"
     },
     "LOVE_AND_MEDICINE": {
-      "TITLE": "Dragoste & medicamente",
+      "TITLE": "Dragoste și medicamente",
       "DESCRIPTION": "Vrei sa fim prieteni? Acești copii se hrănesc cu dragostea noastră și trăiesc cu medicamente. Care sunt nevoile acestor copii? Unii au nevoie de tratament, alții de proteze, alții de cărucioare mobile sau operații. Ajută-i să scape de tratament și să rămână doar cu dragostea și bucuria că s-au vindecat datorită ajutorului oferit de tine. Banii obținuți din donații vor fi redirecționați doar în contul spitalului sau clinicii, iar noi vom posta facturile/costurile aferente pe site-ul Asociației Bucurie în Dar",
       "SECOND_DESCRIPTION": "\"Dragostea îndelung rabdă; dragostea este binevoitoare, dragostea nu pizmuieşte, nu se laudă, nu se trufeşte. Dragostea nu se poartă cu necuviinţă, nu caută ale sale, nu se aprinde de mânie, nu gândeşte răul. Nu se bucură de nedreptate, ci se bucură de adevăr. Toate le suferă, toate le crede, toate le nădăjduieşte, toate le rabdă. Dragostea nu cade niciodată.\""
     },
@@ -298,7 +297,13 @@
 
   "CONTACT": {
     "TITLE": "Contact",
-    "DESCRIPTION": "Contact us for any questions or suggestions.",
+    "DESCRIPTION": "Contactează-ne pentru orice întrebare sau sugestie.",
+    "DIRECT": {
+      "TITLE": "Sună-ne sau scrie-ne",
+      "TEXT": "Cel mai repede ne găsești la telefon sau pe WhatsApp. Îți răspundem și pe email.",
+      "CALL": "Sună acum",
+      "WHATSAPP": "Scrie pe WhatsApp"
+    },
     "MATERIAL_GOODS": {
       "TITLE": "Donează bunuri",
       "DESCRIPTION": "Oameni dragi, pentru donații de bunuri, alimente, produse de igienă, medicamente, îmbrăcăminte,  încălțăminte, jucării și oricare alte bunuri: Ne găsiți în fiecare zi, in interiorul Supermarket  La Cocoș in intervalul orar Luni - Sâmbătă 07:30 - 20:30, Duminică 07:30 - 18:30 - Adresa: Șos. Vitan Bărzești-7A, București."
@@ -322,7 +327,7 @@
   "HEADER": {
     "LOCALE": "ro",
     "HOME": { "LABEL": "Acasă", "LINK": "/" },
-    "PROJECTS": { "LABEL": "Proiecte & Campanii", "LINK": "/projects" },
+    "PROJECTS": { "LABEL": "Proiecte și campanii", "LINK": "/projects" },
     "ABOUT": { "LABEL": "Despre", "LINK": "/about" },
     "GALLERY": { "LABEL": "Galerie", "LINK": "/gallery"},
     "BLOG": { "LABEL": "Blog", "LINK": "/blog" },

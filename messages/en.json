@@ -13,8 +13,7 @@
     "HIDE": "Hide",
     "BURGER_MENU_LABEL": "Open menu button",
     "REMAINING": "Left",
-    "DAYS": "days",
-    "IN_CONSTRUCTION": "Under construction! Email: "
+    "DAYS": "days"
   },
 
   "COOKIES": {
@@ -311,6 +310,12 @@
   "CONTACT": {
     "TITLE": "Contact",
     "DESCRIPTION": "Contact us for any questions or suggestions.",
+    "DIRECT": {
+      "TITLE": "Call or write to us",
+      "TEXT": "The fastest way to reach us is by phone or WhatsApp. We also answer emails.",
+      "CALL": "Call now",
+      "WHATSAPP": "Message on WhatsApp"
+    },
     "MATERIAL_GOODS": {
       "TITLE": "Donate goods",
       "DESCRIPTION": "Dear people, for donations of goods, food, hygiene products, medicine, clothing, shoes, toys and any other goods: You can find us every day, inside La Cocoș Supermarket, Monday - Saturday 07:30 - 20:30 , Sunday 07:30 - 18:30 - Address: Road Vitan Bărzești-7A, Bucharest."

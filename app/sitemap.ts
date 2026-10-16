@@ -9,7 +9,7 @@ const defaultLocale = routing.defaultLocale;
 
 function getUrlsOfLocale(localeAsString: string): MetadataRoute.Sitemap {
     const locale = localeAsString === "" ? "" : "/" + localeAsString;
-    const baseUrl = "https://bucurieindar.org" + locale;
+    const baseUrl = "https://bucurieindar.ro" + locale;
 
     const paths = Object.values(MyRoutePaths).map(x => x);
     let urls: MetadataRoute.Sitemap = paths.map((link, index) => {
@@ -17,7 +17,7 @@ function getUrlsOfLocale(localeAsString: string): MetadataRoute.Sitemap {
         const languages: Record<string, string> = {};
         for (const loc of locales) {
             const locPrefix = loc === defaultLocale ? "" : "/" + loc;
-            languages[loc] = `https://bucurieindar.org${locPrefix}${link}`;
+            languages[loc] = `https://bucurieindar.ro${locPrefix}${link}`;
         }
         const priority = index === 0 ? 1 : 0.5;
         return { url, priority, alternates: { languages } };
@@ -29,7 +29,7 @@ function getUrlsOfLocale(localeAsString: string): MetadataRoute.Sitemap {
         const languages: Record<string, string> = {};
         for (const loc of locales) {
             const locPrefix = loc === defaultLocale ? "" : "/" + loc;
-            languages[loc] = `https://bucurieindar.org${locPrefix}${MyRoutePaths.Projects}/${x.slug}`;
+            languages[loc] = `https://bucurieindar.ro${locPrefix}${MyRoutePaths.Projects}/${x.slug}`;
         }
         urls.push({ url: projectUrl, priority: 0.7, alternates: { languages } });
     });
@@ -40,7 +40,7 @@ function getUrlsOfLocale(localeAsString: string): MetadataRoute.Sitemap {
     //     const articleUrl = baseUrl + MyRoutePaths.Blog + "/" + x.slug;
     //     const alternates = locales.map((loc) => {
     //         const locPrefix = loc === defaultLocale ? "" : "/" + loc;
-    //         return { hreflang: loc, href: `https://bucurieindar.org${locPrefix}${MyRoutePaths.Blog }/${x.slug}` };
+    //         return { hreflang: loc, href: `https://bucurieindar.ro${locPrefix}${MyRoutePaths.Blog }/${x.slug}` };
     //     });
     //     urls.push({ url: articleUrl, alternates });
     // });

@@ -69,3 +69,7 @@
         }
     }
 }
+.icon {
+    color: var(--mantine-color-white);
+    margin-bottom: var(--mantine-spacing-xs);
+}

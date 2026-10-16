@@ -19,7 +19,6 @@ export default async function ContactPage( {params} : {params: Promise<{locale: 
     const {locale} = await params;
     setRequestLocale(locale);
     const t = await getTranslations('CONTACT');
-    const commonT = await getTranslations('COMMON');
     const translations:ContactTranslationType = {
         FormTitle: t('FORM.TITLE'),
         Disclaimer: t('FORM.DISCLAIMER'),
@@ -35,7 +34,10 @@ export default async function ContactPage( {params} : {params: Promise<{locale: 
         MaterialGoodsTitle: t('MATERIAL_GOODS.TITLE'),
         MaterialGoodsDescription: t('MATERIAL_GOODS.DESCRIPTION'),
         SeeCocosMap: t('SEE_COCOS_MAP'),
-        InConstruction: commonT('IN_CONSTRUCTION')
+        DirectTitle: t('DIRECT.TITLE'),
+        DirectText: t('DIRECT.TEXT'),
+        Call: t('DIRECT.CALL'),
+        WhatsApp: t('DIRECT.WHATSAPP'),
     };
         
     

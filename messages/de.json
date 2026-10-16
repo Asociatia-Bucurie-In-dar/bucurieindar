@@ -270,6 +270,12 @@
   "CONTACT": {
     "TITLE": "Kontakt",
     "DESCRIPTION": "Kontaktieren Sie uns bei Fragen oder Vorschlägen.",
+    "DIRECT": {
+      "TITLE": "Rufen Sie uns an oder schreiben Sie uns",
+      "TEXT": "Am schnellsten erreichen Sie uns telefonisch oder per WhatsApp. Wir antworten auch auf E-Mails.",
+      "CALL": "Jetzt anrufen",
+      "WHATSAPP": "Auf WhatsApp schreiben"
+    },
     "MATERIAL_GOODS": {
       "TITLE": "Spende von Waren",
       "DESCRIPTION": "Liebe Leute, für Spenden von Waren, Lebensmitteln, Hygieneprodukten, Medikamenten, Kleidung, Schuhen, Spielzeug und anderen Gütern: Sie finden uns täglich im Supermarkt La Cocoș, Montag bis Freitag von 07:30 bis 20:30, Sonntag von 07:30 bis 18:30 - Adresse: Șos. Vitan Bărzești-7A, Bukarest."

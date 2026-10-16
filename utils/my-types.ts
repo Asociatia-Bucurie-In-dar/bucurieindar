@@ -91,7 +91,10 @@ export type ContactTranslationType = {
     MaterialGoodsTitle: string;
     MaterialGoodsDescription: string;
     SeeCocosMap: string;
-    InConstruction: string;
+    DirectTitle: string;
+    DirectText: string;
+    Call: string;
+    WhatsApp: string;
 };
 
 export type CookiesTranslationType = {

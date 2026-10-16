@@ -4,17 +4,15 @@ import {
     Text,
     Title,
     SimpleGrid,
-    TextInput,
-    Textarea,
     Button,
     Group,
-    ActionIcon, Divider, Paper, DEFAULT_THEME, rem
+    Stack,
+    ActionIcon, Divider, Paper, DEFAULT_THEME
 } from '@mantine/core';
-import {IconBasketHeart, IconBrandFacebook, IconBrandInstagram, IconBrandWhatsapp} from '@tabler/icons-react';
+import {IconBrandFacebook, IconBrandInstagram, IconBrandWhatsapp, IconMail, IconPhone} from '@tabler/icons-react';
 import { ContactIcons } from './ContactIcons';
 import classes from './ContactPanel.module.css';
 import Link from "next/link";
-import {useState} from "react";
 import {contactInfo} from "@/content/contact/my-contact";
 import {ContactTranslationType} from "@/utils/my-types";
 import {TeleportButton} from "@/components/CoolEffects/TeleportButton/TeleportButton";
@@ -32,41 +30,6 @@ export function ContactPanel(props: { translations: ContactTranslationType }) {
         </ActionIcon>
     ));
     
-    //SUBMISSION STUFF
-
-    const [email, setEmail] = useState('');
-    const [name, setName] = useState('');
-    const [message, setMessage] = useState('');
-    const [loading, setLoading] = useState(false);
-
-    const handleSubmit = async (e: any) => {
-        e.preventDefault();
-        setLoading(true);
-
-        // POST form data to API route
-        const response = await fetch('/api/sendemail', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ email, name, message }),
-        });
-
-        const data = await response.json();
-        
-        if (response.ok) {
-            alert(props.translations.Success);
-            setEmail('');
-            setName('');
-            setMessage('');
-        } else {
-            alert(props.translations.Error);
-        }
-        
-        setLoading(false);
-    };
-
-    //END SUBMISSION STUFF
     
     const iconColor = DEFAULT_THEME.colors.orange[6];
 
@@ -112,43 +75,24 @@ export function ContactPanel(props: { translations: ContactTranslationType }) {
 
                             <Group mt="xl">{icons}</Group>
                         </div>
-                        <form className={classes.form} onSubmit={handleSubmit}>
-                            <Text c="customDimmed" ta="center" fw={600}>{props.translations.InConstruction} {contactInfo.email}</Text>
-                            <Divider color="transparent" mb="md"/>
-                            <TextInput
-                                value={email}
-                                onChange={(e) => setEmail(e.currentTarget.value)}
-                                label={props.translations.Email}
-                                required
-                                classNames={{input: classes.input, label: classes.inputLabel}}
-                                disabled
-                            />
-                            <TextInput
-                                value={name}
-                                onChange={(e) => setName(e.currentTarget.value)}
-                                label={props.translations.Name}
-                                mt="md"
-                                classNames={{input: classes.input, label: classes.inputLabel}}
-                                disabled
-                            />
-                            <Textarea
-                                value={message}
-                                onChange={(e) => setMessage(e.currentTarget.value)}
-                                required
-                                label={props.translations.YourMessage}
-                                minRows={4}
-                                mt="md"
-                                classNames={{input: classes.input, label: classes.inputLabel}}
-                                disabled
-                            />
-
-                            <Group justify="flex-end" mt="md">
-                                <Button className={classes.control} type="submit" disabled> 
-                                    {/*disabled={loading}>*/}
-                                    {props.translations.Send}
+                        <div className={classes.form}>
+                            <Title order={3}>{props.translations.DirectTitle}</Title>
+                            <Text mt="sm" mb="lg" fw={500}>{props.translations.DirectText}</Text>
+                            <Stack gap="sm">
+                                <Button component="a" href={'tel:' + contactInfo.phone.replace(/[^\d+]/g, '')} size="md"
+                                        leftSection={<IconPhone size={18}/>} fw={600}>
+                                    {props.translations.Call}
                                 </Button>
-                            </Group>
-                        </form>
+                                <Button component="a" href={'https://wa.me/' + contactInfo.phoneForWhatsapp} target="_blank" rel="noopener noreferrer"
+                                        size="md" variant="light" color="green" leftSection={<IconBrandWhatsapp size={18}/>} fw={600}>
+                                    {props.translations.WhatsApp}
+                                </Button>
+                                <Button component="a" href={'mailto:' + contactInfo.email} size="md" variant="light"
+                                        leftSection={<IconMail size={18}/>} fw={600}>
+                                    {contactInfo.email}
+                                </Button>
+                            </Stack>
+                        </div>
                     </SimpleGrid>
                 </div>
 

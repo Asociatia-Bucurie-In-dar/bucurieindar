@@ -11,7 +11,7 @@ export async function POST(req: Request)
         const {data} = await resend.emails.send({
             from: 'Bucurie in Dar <office@bucurieindar.ro>',
             to: 'office@bucurieindar.ro',
-            subject: `Mesaj pe bucurieindar.org, de la ${body.name}`,
+            subject: `Mesaj pe bucurieindar.ro, de la ${body.name}`,
             html: '<p>' + body.message + ' ---- de la: ' + body.email + '</p>',
         });
 

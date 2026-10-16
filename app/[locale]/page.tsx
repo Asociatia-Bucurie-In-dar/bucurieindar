@@ -17,11 +17,12 @@ export default async function HomePage({params}:{ params: Promise<{ locale: stri
     
   return (
       <>
+          {/* Story order: what we do -> impact -> how you can help -> why trust us -> donate */}
           <HomeHero/>
           <HomeFeeding/>
+          <HomeAboutGeneral/>
           <HomeProjects/>
           <HomeAboutProjects/>
-          <HomeAboutGeneral/>
           <SfIoan disableBackground={true}/>
           <OurTeam/>
           <FAQ/>

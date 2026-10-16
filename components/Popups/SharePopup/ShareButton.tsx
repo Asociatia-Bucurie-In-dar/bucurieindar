@@ -16,7 +16,7 @@ import {IconShare} from "@tabler/icons-react";
 
 export function ShareButton(props: { quote: string, translation: string, path:string } ) {
     const [opened, { open, close }] = useDisclosure(false);
-    const pathname =  'https://bucurieindar.org' + props.path;
+    const pathname =  'https://bucurieindar.ro' + props.path;
     
     return <>
         <Modal opened={opened} onClose={close} withCloseButton={false} zIndex={MyZIndexes.DonateModal}

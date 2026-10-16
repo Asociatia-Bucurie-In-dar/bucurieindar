@@ -1,4 +1,4 @@
-import {Container, Title, Text, Button, Image, Divider} from '@mantine/core';
+import {Container, Title, Text, Button, Image, Divider, Group} from '@mantine/core';
 import classes from './HomeHero.module.css';
 import {useTranslations} from "next-intl";
 import {TeleportButton} from "@/components/CoolEffects/TeleportButton/TeleportButton";
@@ -41,7 +41,10 @@ export function HomeHero() {
                         
                         {/*<ConfettiButton size={"lg"} mt="xl" text={commonT('DONATE_NOW')}/>*/}
                         <Divider color="transparent" mt="xl"/>
-                        <TeleportButton targetID="otherHelpSection" text={heroT('SEE_MORE')}/>
+                        <Group gap="md">
+                            <TeleportButton targetID="bankAccountsSection" text={commonT('DONATE_NOW')}/>
+                            <TeleportButton targetID="otherHelpSection" text={heroT('SEE_MORE')} variant="white" disableConfetti={true}/>
+                        </Group>
                     </div>
                 </div>
             </Container>
